@@ -19,6 +19,7 @@ export interface OperaRecording {
   musicalKey?: string;
   tempo?: number;
   movements?: Movement[];
+  acts?: Act[];
   duration?: string;
   genre?: string[];
   instrumentation?: string[];
@@ -81,4 +82,35 @@ export interface Movement {
   tempo?: number;
   trackNumber?: number;
   description?: string;
+}
+
+export interface Act {
+  actNumber: number;
+  title: string;
+  key: string;
+  tempo: number;
+  timeSignature: string;
+  duration: string;
+  tempoMarking: string;
+  description?: string;
+  sections: Section[];
+}
+
+export interface Section {
+  title: string;
+  sectionNumber: number;
+  sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble';
+  musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
+  complexity: 'simple' | 'moderate' | 'complex';
+  key: string;
+  tempo: number;
+  timeSignature: string;
+  duration: string;
+  tempoMarking: string;
+  description?: string;
+  musicalElements: {
+    mood: string[];
+    instrumentation: string[];
+    dynamics: string;
+  };
 }
