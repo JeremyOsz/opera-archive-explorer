@@ -22,22 +22,37 @@ interface ArchiveCache {
   works: LightweightOpera[];
 }
 
+// Memoized cache instance to avoid repeated processing
+let memoizedCache: ArchiveCache | null = null;
+let cacheLoaded = false;
+
 /**
  * Load cached archive data from bundled JSON file
+ * Memoized to avoid repeated processing for better performance
  */
 export function loadArchiveCache(): ArchiveCache | null {
+  // Return memoized cache if already loaded
+  if (cacheLoaded && memoizedCache) {
+    return memoizedCache;
+  }
+
   try {
     if (!archiveCache || !archiveCache.works || archiveCache.works.length === 0) {
       console.log('📁 No cache data available');
+      cacheLoaded = true;
       return null;
     }
 
-    console.log(`📁 Loaded cache with ${archiveCache.works.length} works`);
-    console.log(`📅 Cache generated: ${archiveCache.metadata.generatedAt}`);
+    memoizedCache = archiveCache as ArchiveCache;
+    cacheLoaded = true;
     
-    return archiveCache as ArchiveCache;
+    console.log(`📁 Loaded cache with ${memoizedCache.works.length} works`);
+    console.log(`📅 Cache generated: ${memoizedCache.metadata.generatedAt}`);
+    
+    return memoizedCache;
   } catch (error) {
     console.error('❌ Error loading cache:', error);
+    cacheLoaded = true;
     return null;
   }
 }
@@ -63,6 +78,7 @@ export function getCacheMetadata(): { exists: boolean; metadata?: any } {
 
 /**
  * Search cached works for autocomplete
+ * Optimized to use a single filter pass for better performance
  */
 export function searchCachedWorks(query: string, filters?: {
   creator?: string;
@@ -74,37 +90,39 @@ export function searchCachedWorks(query: string, filters?: {
     return [];
   }
 
-  let results = cache.works;
+  // Prepare filter values once
+  const queryTerm = query?.toLowerCase();
+  const creatorFilter = filters?.creator?.toLowerCase();
+  const dateFilter = filters?.date;
+  const languageFilter = filters?.language?.toLowerCase();
 
-  // Apply text search
-  if (query) {
-    const searchTerm = query.toLowerCase();
-    results = results.filter(work => 
-      work.title.toLowerCase().includes(searchTerm) ||
-      work.creator?.toLowerCase().includes(searchTerm)
-    );
-  }
+  // Single pass filtering for better performance
+  return cache.works.filter(work => {
+    // Apply text search
+    if (queryTerm) {
+      const matchesQuery = 
+        work.title.toLowerCase().includes(queryTerm) ||
+        work.creator?.toLowerCase().includes(queryTerm);
+      if (!matchesQuery) return false;
+    }
 
-  // Apply filters
-  if (filters?.creator) {
-    results = results.filter(work => 
-      work.creator?.toLowerCase().includes(filters.creator!.toLowerCase())
-    );
-  }
+    // Apply creator filter
+    if (creatorFilter) {
+      if (!work.creator?.toLowerCase().includes(creatorFilter)) return false;
+    }
 
-  if (filters?.date) {
-    results = results.filter(work => 
-      work.date?.includes(filters.date!)
-    );
-  }
+    // Apply date filter
+    if (dateFilter) {
+      if (!work.date?.includes(dateFilter)) return false;
+    }
 
-  if (filters?.language) {
-    results = results.filter(work => 
-      work.language?.toLowerCase().includes(filters.language!.toLowerCase())
-    );
-  }
+    // Apply language filter
+    if (languageFilter) {
+      if (!work.language?.toLowerCase().includes(languageFilter)) return false;
+    }
 
-  return results;
+    return true;
+  });
 }
 
 /**

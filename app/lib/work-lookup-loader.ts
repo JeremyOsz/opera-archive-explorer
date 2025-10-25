@@ -34,6 +34,7 @@ export function getWorkByTitle(normalizedTitle: string): WorkLookupEntry | undef
 
 /**
  * Search works in the lookup table
+ * Optimized to search the lookup map directly for better performance
  */
 export function searchWorks(query: string): WorkLookupEntry[] {
   const lookup = loadWorkLookup();
@@ -43,13 +44,19 @@ export function searchWorks(query: string): WorkLookupEntry[] {
   }
   
   const searchTerm = query.toLowerCase();
+  const results: WorkLookupEntry[] = [];
   
-  return Object.values(lookup.works).filter(work => {
-    return (
+  // Iterate through values once and collect matches
+  for (const work of Object.values(lookup.works)) {
+    if (
       work.workTitle.toLowerCase().includes(searchTerm) ||
       work.composer.toLowerCase().includes(searchTerm)
-    );
-  });
+    ) {
+      results.push(work);
+    }
+  }
+  
+  return results;
 }
 
 /**
