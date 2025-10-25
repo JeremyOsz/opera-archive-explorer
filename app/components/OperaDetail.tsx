@@ -976,7 +976,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                               }}
                             >
                               <ExternalLink className="w-4 h-4 mr-1" />
-                              Open
+                              Download
                             </Button>
                           </div>
                         </div>
