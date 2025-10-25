@@ -1,11 +1,68 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { ArchiveAPI } from '@/app/lib/archive-api';
+import { loadArchiveCache, searchCachedWorks } from '@/app/lib/cache-loader';
 import { groupRecordingsByWork } from '@/app/lib/work-grouper';
 import { SearchFilters } from '@/app/types/opera';
 
-// Cache for search results (in-memory, simple implementation)
-const searchCache = new Map<string, { data: any; timestamp: number }>();
-const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+// Server-side caching with Next.js cache
+import { unstable_cache } from 'next/cache';
+
+// Create a cached search function
+const getCachedSearchResults = unstable_cache(
+  async (query: string, creator: string, date: string, language: string, page: number, rows: number) => {
+    console.log('🔍 Server-side search:', { query, creator, date, language, page, rows });
+    
+    // Use cached data for fast server-side search
+    const cache = loadArchiveCache();
+    if (!cache) {
+      throw new Error('Cache not available');
+    }
+
+    // Perform search using cached data
+    const cachedResults = searchCachedWorks(query, {
+      creator: creator || undefined,
+      date: date || undefined,
+      language: language || undefined
+    });
+    
+    // Apply pagination
+    const start = (page - 1) * rows;
+    const end = start + rows;
+    const paginatedResults = cachedResults.slice(start, end);
+    
+    // Convert to OperaRecording format (server-side processing)
+    const convertedResults = paginatedResults.map((work) => ({
+      ...work,
+      // Use cached image URLs, will be optimized by client
+      imageUrl: work.imageUrl || `https://archive.org/services/img/${work.identifier}`,
+      thumbnailUrl: work.thumbnailUrl || `https://archive.org/services/img/${work.identifier}`,
+      mediatype: 'audio',
+      publicdate: work.date || '',
+      addeddate: work.date || '',
+      collection: [],
+      format: [],
+      files: [],
+      metadata: {}
+    }));
+
+    // Group recordings by work (server-side)
+    const groupedWorks = groupRecordingsByWork(convertedResults);
+
+    return {
+      works: groupedWorks,
+      pagination: {
+        total: cachedResults.length,
+        page,
+        rows,
+        totalPages: Math.ceil(cachedResults.length / rows)
+      }
+    };
+  },
+  ['search-results'],
+  {
+    revalidate: 300, // 5 minutes
+    tags: ['search']
+  }
+);
 
 export async function GET(request: NextRequest) {
   try {
@@ -17,45 +74,8 @@ export async function GET(request: NextRequest) {
     const page = parseInt(searchParams.get('page') || '1');
     const rows = parseInt(searchParams.get('rows') || '50');
 
-    // Create cache key
-    const cacheKey = JSON.stringify({ query, creator, date, language, page, rows });
-    
-    // Check cache first
-    const cached = searchCache.get(cacheKey);
-    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
-      console.log('📁 Using cached search results');
-      return NextResponse.json(cached.data);
-    }
-
-    // Build search filters
-    const filters: SearchFilters = {
-      query,
-      creator: creator || undefined,
-      date: date || undefined,
-      language: language || undefined
-    };
-
-    // Perform search
-    const response = await ArchiveAPI.searchOperas(filters, page, rows);
-    
-    // Group recordings by work
-    const groupedWorks = groupRecordingsByWork(response.docs);
-
-    const result = {
-      works: groupedWorks,
-      pagination: {
-        total: response.numFound,
-        page,
-        rows,
-        totalPages: Math.ceil(response.numFound / rows)
-      }
-    };
-
-    // Cache the result
-    searchCache.set(cacheKey, {
-      data: result,
-      timestamp: Date.now()
-    });
+    // Use Next.js caching for server-side performance
+    const result = await getCachedSearchResults(query, creator, date, language, page, rows);
 
     return NextResponse.json(result);
   } catch (error) {

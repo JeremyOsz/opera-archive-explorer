@@ -1,9 +1,41 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { ArchiveAPI } from '@/app/lib/archive-api';
+import { unstable_cache } from 'next/cache';
 
-// Cache for image URLs (in-memory, simple implementation)
-const imageCache = new Map<string, { imageUrl: string; thumbnailUrl: string; timestamp: number }>();
-const IMAGE_CACHE_TTL = 60 * 60 * 1000; // 1 hour
+// Server-side image URL caching with Next.js
+const getCachedImageUrls = unstable_cache(
+  async (identifier: string) => {
+    console.log(`🖼️ Server-side image optimization for ${identifier}`);
+    
+    try {
+      // Get optimized image URLs using our improved logic
+      const imageUrls = await ArchiveAPI.getBestImageUrl(identifier);
+      
+      // Return optimized URLs that can be processed by Next.js Image component
+      return {
+        imageUrl: imageUrls.imageUrl,
+        thumbnailUrl: imageUrls.thumbnailUrl,
+        // Add Next.js Image optimization hints
+        optimized: true,
+        serverOptimized: true
+      };
+    } catch (error) {
+      console.warn(`Failed to get optimized images for ${identifier}:`, error);
+      // Fallback to Archive.org image service
+      return {
+        imageUrl: `https://archive.org/services/img/${identifier}`,
+        thumbnailUrl: `https://archive.org/services/img/${identifier}`,
+        optimized: false,
+        serverOptimized: false
+      };
+    }
+  },
+  ['image-urls'],
+  {
+    revalidate: 3600, // 1 hour
+    tags: ['images']
+  }
+);
 
 export async function GET(request: NextRequest) {
   try {
@@ -17,26 +49,10 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    // Check cache first
-    const cached = imageCache.get(identifier);
-    if (cached && Date.now() - cached.timestamp < IMAGE_CACHE_TTL) {
-      console.log(`📁 Using cached image URLs for ${identifier}`);
-      return NextResponse.json({
-        imageUrl: cached.imageUrl,
-        thumbnailUrl: cached.thumbnailUrl
-      });
-    }
+    // Use Next.js server-side caching
+    const result = await getCachedImageUrls(identifier);
 
-    // Get image URLs (this will use the improved logic we just implemented)
-    const imageUrls = await ArchiveAPI.getBestImageUrl(identifier);
-    
-    // Cache the result
-    imageCache.set(identifier, {
-      ...imageUrls,
-      timestamp: Date.now()
-    });
-
-    return NextResponse.json(imageUrls);
+    return NextResponse.json(result);
   } catch (error) {
     console.error('Image API error:', error);
     return NextResponse.json(
