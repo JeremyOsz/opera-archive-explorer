@@ -2563,5 +2563,124 @@ export const VERDI_METADATA: Record<string, WorkMusicalMetadata> = {
       }
     ],
     notes: 'Collection of the most famous highlights from Verdi\'s Il Trovatore. Features the "Anvil Chorus", "Stride la vampa", "Di quella pira", and the "Miserere" quartet.'
+  },
+
+  'lp_arias-from-bellini-ponchielli-verdi-and_maria-callas-orchestra-sinfonica-di-tor': {
+    identifier: 'lp_arias-from-bellini-ponchielli-verdi-and_maria-callas-orchestra-sinfonica-di-tor',
+    metadataComplete: true,
+    overallKey: 'Various',
+    overallTempo: 100,
+    genre: ['Opera', 'Romantic', 'Classical', 'Arias'],
+    instrumentation: ['Full Orchestra', 'Soprano'],
+    mood: ['Dramatic', 'Romantic', 'Passionate', 'Melancholic'],
+    duration: '50:00',
+    acts: [
+      {
+        actNumber: 1,
+        title: 'Arias from Bellini, Ponchielli, Verdi and Wagner',
+        key: 'Various',
+        tempo: 100,
+        timeSignature: '4/4',
+        duration: '50:00',
+        tempoMarking: 'Various',
+        description: 'Collection of famous arias from multiple composers',
+        sections: [
+          {
+            title: 'Verdi Arias',
+            sectionNumber: 1,
+            sectionType: 'aria',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'Various',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '20:00',
+            tempoMarking: 'Various',
+            description: 'Collection of famous Verdi arias',
+            musicalElements: {
+              mood: ['Dramatic', 'Romantic', 'Passionate'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Bellini Arias',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'Various',
+            tempo: 95,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Various',
+            description: 'Collection of famous Bellini arias',
+            musicalElements: {
+              mood: ['Romantic', 'Tender', 'Beautiful'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Ponchielli Arias',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'Various',
+            tempo: 105,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Various',
+            description: 'Collection of famous Ponchielli arias',
+            musicalElements: {
+              mood: ['Dramatic', 'Passionate', 'Intense'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'Wagner Arias',
+            sectionNumber: 4,
+            sectionType: 'aria',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'Various',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '5:00',
+            tempoMarking: 'Various',
+            description: 'Collection of famous Wagner arias',
+            musicalElements: {
+              mood: ['Dramatic', 'Intense', 'Powerful'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Mezzo-forte to Fortissimo'
+            }
+          }
+        ]
+      }
+    ],
+    musicalAnalysis: {
+      keySignature: 'Various',
+      timeSignature: '4/4',
+      harmonicComplexity: 'moderate',
+      melodicStyle: 'dramatic'
+    },
+    notablePerformances: [
+      {
+        year: 1956,
+        conductor: 'Various',
+        orchestra: 'Orchestra Sinfonica Di Torino Della RAI',
+        venue: 'Turin',
+        singers: [
+          { name: 'Maria Callas', role: 'Soprano' }
+        ],
+        significance: 'Collection of arias from multiple composers',
+        historicalContext: 'This recording features Maria Callas in some of her most famous arias from different composers.',
+        recordingLabel: 'EMI',
+        notes: 'Callas\'s interpretations are considered definitive, combining vocal perfection with deep emotional understanding.'
+      }
+    ],
+    notes: 'Collection of famous arias from Bellini, Ponchielli, Verdi, and Wagner performed by Maria Callas. Features some of the most celebrated soprano arias in the operatic repertoire.'
   }
 };
