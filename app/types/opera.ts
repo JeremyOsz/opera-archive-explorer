@@ -1,3 +1,12 @@
+export interface SheetMusicLink {
+  title: string;
+  composer: string;
+  catalogNumber?: string;
+  imslpUrl: string;
+  pageId: string;
+  workType: string;
+}
+
 export interface NotablePerformance {
   year: number;
   conductor?: string;
@@ -43,6 +52,8 @@ export interface OperaRecording {
   recordingInfo?: RecordingInfo;
   // Notable performances
   notablePerformances?: NotablePerformance[];
+  // Sheet music links
+  sheetMusicLinks?: SheetMusicLink[];
 }
 
 export interface RecordingInfo {

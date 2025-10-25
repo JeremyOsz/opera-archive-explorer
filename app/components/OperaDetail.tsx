@@ -48,6 +48,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
   const [audioFilesExpanded, setAudioFilesExpanded] = useState(false);
   const [aboutExpanded, setAboutExpanded] = useState(true);
   const [musicalInfoExpanded, setMusicalInfoExpanded] = useState(true);
+  const [movementsExpanded, setMovementsExpanded] = useState(true);
   const [activePlayerIndex, setActivePlayerIndex] = useState<number | null>(null);
 
   useEffect(() => {
@@ -101,7 +102,12 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
         ArchiveAPI.enhanceWithRecordingInfo(operaWithMusicalData)
           .then(enhancedWithRecording => {
             console.log('Enhanced with recording info:', enhancedWithRecording);
-            setEnhancedOpera(enhancedWithRecording);
+            // Also enhance with sheet music links
+            return ArchiveAPI.enhanceWithSheetMusic(enhancedWithRecording);
+          })
+          .then(enhancedWithSheetMusic => {
+            console.log('Enhanced with sheet music:', enhancedWithSheetMusic);
+            setEnhancedOpera(enhancedWithSheetMusic);
           })
           .catch(console.error)
           .finally(() => setMusicalDataLoading(false));
@@ -115,7 +121,12 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
           })
           .then(enhancedWithRecording => {
             console.log('Enhanced with recording info:', enhancedWithRecording);
-            setEnhancedOpera(enhancedWithRecording);
+            // Also enhance with sheet music links
+            return ArchiveAPI.enhanceWithSheetMusic(enhancedWithRecording);
+          })
+          .then(enhancedWithSheetMusic => {
+            console.log('Enhanced with sheet music:', enhancedWithSheetMusic);
+            setEnhancedOpera(enhancedWithSheetMusic);
           })
           .catch(console.error)
           .finally(() => setMusicalDataLoading(false));
@@ -425,7 +436,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                     <Button
                       variant="ghost"
                       size="sm"
-                      className="h-8 w-8 p-0"
+                      className="h-8 w-8 p-0 cursor-pointer"
                     >
                       {aboutExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                     </Button>
@@ -564,6 +575,57 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
             );
           })()}
 
+          {/* Sheet Music Section - Prominent */}
+          {enhancedOpera.sheetMusicLinks && enhancedOpera.sheetMusicLinks.length > 0 && (
+            <Card className="border-blue-200 bg-blue-50/50">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <BookOpen className="w-5 h-5 text-blue-600" />
+                    <CardTitle className="text-blue-900">Sheet Music Available</CardTitle>
+                    <Badge variant="default" className="bg-blue-600">
+                      IMSLP
+                    </Badge>
+                  </div>
+                  <div className="text-sm text-blue-700">
+                    {enhancedOpera.sheetMusicLinks.length} score{enhancedOpera.sheetMusicLinks.length !== 1 ? 's' : ''} found
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  {enhancedOpera.sheetMusicLinks.slice(0, 3).map((link, index) => (
+                    <div key={index} className="flex items-center justify-between p-4 bg-white border border-blue-200 rounded-lg hover:bg-blue-50 transition-colors">
+                      <div className="flex-1">
+                        <p className="font-medium text-gray-900">{link.title}</p>
+                        <p className="text-sm text-gray-600">{link.composer}</p>
+                        {link.catalogNumber && (
+                          <p className="text-xs text-gray-500">Catalog: {link.catalogNumber}</p>
+                        )}
+                      </div>
+                      <Button
+                        variant="default"
+                        size="sm"
+                        onClick={() => window.open(link.imslpUrl, '_blank')}
+                        className="cursor-pointer bg-blue-600 hover:bg-blue-700"
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View Score
+                      </Button>
+                    </div>
+                  ))}
+                  {enhancedOpera.sheetMusicLinks.length > 3 && (
+                    <div className="text-center pt-2">
+                      <p className="text-sm text-blue-700">
+                        +{enhancedOpera.sheetMusicLinks.length - 3} more scores available in Musical Information section
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
           {/* Musical Information - Collapsible */}
           {(musicalDataLoading || enhancedOpera.musicalKey || enhancedOpera.tempo || enhancedOpera.duration || enhancedOpera.genre?.length || enhancedOpera.instrumentation?.length || enhancedOpera.metadata?.fallback) && (
             <Card>
@@ -590,7 +652,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                     <Button
                       variant="ghost"
                       size="sm"
-                      className="h-8 w-8 p-0"
+                      className="h-8 w-8 p-0 cursor-pointer"
                     >
                       {musicalInfoExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                     </Button>
@@ -708,6 +770,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                         </div>
                       </div>
                     )}
+
                     
                     {/* Data source information */}
                     {(enhancedOpera.metadata?.mockData || enhancedOpera.metadata?.fallback) && (
@@ -732,100 +795,116 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
           {/* Movements & Acts */}
           {enhancedOpera.acts && enhancedOpera.acts.length > 0 && (
             <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Music className="w-5 h-5" />
-                  Movements & Tracks
-                </CardTitle>
-                <CardDescription>
-                  {enhancedOpera.acts.reduce((total, act) => total + act.sections.length, 0)} movement{enhancedOpera.acts.reduce((total, act) => total + act.sections.length, 0) !== 1 ? 's' : ''} across {enhancedOpera.acts.length} act{enhancedOpera.acts.length !== 1 ? 's' : ''}
-                  {enhancedOpera.metadata?.isMapped && (
-                    <span className="ml-2 text-green-600">• Actual work structure</span>
-                  )}
-                </CardDescription>
+              <CardHeader 
+                className="cursor-pointer hover:bg-muted/50 transition-colors"
+                onClick={() => setMovementsExpanded(!movementsExpanded)}
+              >
+                <div className="flex items-center justify-between">
+                  <div>
+                    <CardTitle className="flex items-center gap-2">
+                      <Music className="w-5 h-5" />
+                      Movements & Tracks
+                    </CardTitle>
+                    <CardDescription>
+                      {enhancedOpera.acts.reduce((total, act) => total + act.sections.length, 0)} movement{enhancedOpera.acts.reduce((total, act) => total + act.sections.length, 0) !== 1 ? 's' : ''} across {enhancedOpera.acts.length} act{enhancedOpera.acts.length !== 1 ? 's' : ''}
+                      {enhancedOpera.metadata?.isMapped && (
+                        <span className="ml-2 text-green-600">• Actual work structure</span>
+                      )}
+                    </CardDescription>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="h-8 w-8 p-0 cursor-pointer"
+                  >
+                    {movementsExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                  </Button>
+                </div>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-6">
-                  {enhancedOpera.acts.map((act, actIndex) => (
-                    <div key={actIndex} className="space-y-3">
-                      {/* Act Header */}
-                      <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg">
-                        <div className="flex items-center gap-3 mb-2">
-                          <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <span className="text-primary font-bold text-sm">{act.actNumber}</span>
+              {movementsExpanded && (
+                <CardContent>
+                  <div className="space-y-6">
+                    {enhancedOpera.acts.map((act, actIndex) => (
+                      <div key={actIndex} className="space-y-3">
+                        {/* Act Header */}
+                        <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg">
+                          <div className="flex items-center gap-3 mb-2">
+                            <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+                              <span className="text-primary font-bold text-sm">{act.actNumber}</span>
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-lg">{act.title}</h3>
+                              {act.description && (
+                                <p className="text-sm text-muted-foreground">{act.description}</p>
+                              )}
+                            </div>
                           </div>
-                          <div>
-                            <h3 className="font-semibold text-lg">{act.title}</h3>
-                            {act.description && (
-                              <p className="text-sm text-muted-foreground">{act.description}</p>
-                            )}
+                          <div className="flex flex-wrap items-center gap-3 text-sm ml-11">
+                            <Badge variant="outline" className="flex items-center gap-1">
+                              <span className="text-primary">♫</span>
+                              {act.key}
+                            </Badge>
+                            <Badge variant="outline" className="flex items-center gap-1">
+                              <span className="text-primary">♪</span>
+                              {act.tempo} BPM
+                            </Badge>
+                            <Badge variant="outline" className="flex items-center gap-1">
+                              <Clock className="w-3 h-3" />
+                              {act.duration}
+                            </Badge>
+                            <Badge variant="outline" className="text-xs">
+                              {act.tempoMarking}
+                            </Badge>
                           </div>
                         </div>
-                        <div className="flex flex-wrap items-center gap-3 text-sm ml-11">
-                          <Badge variant="outline" className="flex items-center gap-1">
-                            <span className="text-primary">♫</span>
-                            {act.key}
-                          </Badge>
-                          <Badge variant="outline" className="flex items-center gap-1">
-                            <span className="text-primary">♪</span>
-                            {act.tempo} BPM
-                          </Badge>
-                          <Badge variant="outline" className="flex items-center gap-1">
-                            <Clock className="w-3 h-3" />
-                            {act.duration}
-                          </Badge>
-                          <Badge variant="outline" className="text-xs">
-                            {act.tempoMarking}
-                          </Badge>
-                        </div>
-                      </div>
-                      
-                      {/* Act Sections */}
-                      <div className="ml-6 space-y-2">
-                        {act.sections.map((section, sectionIndex) => (
-                          <div key={sectionIndex} className="p-3 border rounded-lg hover:bg-muted/30 transition-colors bg-white/50">
-                            <div className="flex items-start gap-3">
-                              <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
-                                <span className="text-muted-foreground font-medium text-sm">{section.sectionNumber}</span>
-                              </div>
-                              <div className="flex-1 min-w-0">
-                                <div className="flex items-start justify-between gap-4 mb-2">
-                                  <div>
-                                    <p className="font-medium">{section.title}</p>
-                                    {section.description && (
-                                      <p className="text-sm text-muted-foreground mt-1">{section.description}</p>
-                                    )}
-                                  </div>
+                        
+                        {/* Act Sections */}
+                        <div className="ml-6 space-y-2">
+                          {act.sections.map((section, sectionIndex) => (
+                            <div key={sectionIndex} className="p-3 border rounded-lg hover:bg-muted/30 transition-colors bg-white/50">
+                              <div className="flex items-start gap-3">
+                                <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
+                                  <span className="text-muted-foreground font-medium text-sm">{section.sectionNumber}</span>
                                 </div>
-                                <div className="flex flex-wrap items-center gap-2 text-sm">
-                                  <Badge variant="outline" className="flex items-center gap-1 text-xs">
-                                    <span className="text-primary">♫</span>
-                                    {section.key}
-                                  </Badge>
-                                  <Badge variant="outline" className="flex items-center gap-1 text-xs">
-                                    <span className="text-primary">♪</span>
-                                    {section.tempo} BPM
-                                  </Badge>
-                                  <Badge variant="outline" className="flex items-center gap-1 text-xs">
-                                    <Clock className="w-3 h-3" />
-                                    {section.duration}
-                                  </Badge>
-                                  <Badge variant="secondary" className="text-xs">
-                                    {section.sectionType}
-                                  </Badge>
-                                  <Badge variant="outline" className="text-xs">
-                                    {section.tempoMarking}
-                                  </Badge>
+                                <div className="flex-1 min-w-0">
+                                  <div className="flex items-start justify-between gap-4 mb-2">
+                                    <div>
+                                      <p className="font-medium">{section.title}</p>
+                                      {section.description && (
+                                        <p className="text-sm text-muted-foreground mt-1">{section.description}</p>
+                                      )}
+                                    </div>
+                                  </div>
+                                  <div className="flex flex-wrap items-center gap-2 text-sm">
+                                    <Badge variant="outline" className="flex items-center gap-1 text-xs">
+                                      <span className="text-primary">♫</span>
+                                      {section.key}
+                                    </Badge>
+                                    <Badge variant="outline" className="flex items-center gap-1 text-xs">
+                                      <span className="text-primary">♪</span>
+                                      {section.tempo} BPM
+                                    </Badge>
+                                    <Badge variant="outline" className="flex items-center gap-1 text-xs">
+                                      <Clock className="w-3 h-3" />
+                                      {section.duration}
+                                    </Badge>
+                                    <Badge variant="secondary" className="text-xs">
+                                      {section.sectionType}
+                                    </Badge>
+                                    <Badge variant="outline" className="text-xs">
+                                      {section.tempoMarking}
+                                    </Badge>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
+                    ))}
+                  </div>
+                </CardContent>
+              )}
             </Card>
           )}
 
@@ -843,7 +922,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="h-8 w-8 p-0"
+                  className="h-8 w-8 p-0 cursor-pointer"
                 >
                   {audioFilesExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                 </Button>
@@ -890,6 +969,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                             <Button
                               variant="outline"
                               size="sm"
+                              className="cursor-pointer"
                               onClick={() => {
                                 const url = `https://archive.org/download/${opera.identifier}/${file.name}`;
                                 window.open(url, '_blank');
@@ -947,6 +1027,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                 </div>
                 <Button
                   variant="outline"
+                  className="cursor-pointer"
                   onClick={(e) => {
                     e.stopPropagation();
                     window.open(`https://archive.org/details/${opera.identifier}`, '_blank');

@@ -113,7 +113,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
                     key={suggestion.identifier}
                     type="button"
                     onClick={() => handleSuggestionClick(suggestion)}
-                    className="w-full text-left px-4 py-3 hover:bg-accent hover:text-accent-foreground transition-colors border-b last:border-b-0"
+                    className="w-full text-left px-4 py-3 hover:bg-accent hover:text-accent-foreground transition-colors border-b last:border-b-0 cursor-pointer"
                   >
                     <div className="font-medium">{suggestion.title}</div>
                     {suggestion.creator && (

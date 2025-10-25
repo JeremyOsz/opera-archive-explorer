@@ -10,7 +10,8 @@ interface LightweightOpera {
   imageUrl?: string;
   thumbnailUrl?: string;
 }
-import { getWorkMusicalMetadata, WorkMusicalMetadata } from './work-musical-metadata';
+import { getWorkMusicalMetadata, getWorkMusicalMetadataByTitle } from './metadata';
+import { WorkMusicalMetadata } from './metadata/types';
 
 /**
  * Enhanced Musical Metadata Library
@@ -39,7 +40,7 @@ export interface MusicalWork extends LightweightOpera {
       sections: Array<{
         title: string;
         sectionNumber: number;
-        sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble';
+        sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble' | 'melodrama' | 'theater piece' | 'romances' | 'symphony' | 'requiem' | 'lieder' | 'waltz' | 'vocal' | 'opera';
         musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
         complexity: 'simple' | 'moderate' | 'complex';
         key: string;
@@ -94,8 +95,13 @@ export class EnhancedMusicalMetadataLibrary {
     const work = cache.works.find(w => w.identifier === identifier);
     if (!work) return null;
 
-    // Check if we have actual mapped metadata for this work
-    const mappedMetadata = getWorkMusicalMetadata(identifier);
+    // First try to get metadata by specific identifier
+    let mappedMetadata = getWorkMusicalMetadata(identifier);
+    
+    // If not found by identifier, try to get metadata by work title
+    if (!mappedMetadata || !mappedMetadata.metadataComplete) {
+      mappedMetadata = getWorkMusicalMetadataByTitle(work.title);
+    }
     
     if (mappedMetadata && mappedMetadata.metadataComplete) {
       // Use the actual mapped metadata

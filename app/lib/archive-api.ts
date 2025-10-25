@@ -1,12 +1,14 @@
-import { OperaRecording, ArchiveResponse, SearchFilters, RecordingInfo } from '@/app/types/opera';
+import { OperaRecording, ArchiveResponse, SearchFilters, RecordingInfo, SheetMusicLink } from '@/app/types/opera';
 import { MockMusicalDataGenerator } from './mock-musical-data';
 import { loadArchiveCache, searchCachedWorks, getCachedWorkById } from './cache-loader';
 import { DiscogsAPI } from './discogs-api';
+import { IMSLPAPI } from './imslp-api';
 
 const ARCHIVE_API_BASE = 'https://archive.org/advancedsearch.php';
 
 // Configuration for external API integrations
 const ENABLE_DISCOGS_INTEGRATION = false; // Disabled by default to avoid API key requirements
+const ENABLE_IMSLP_INTEGRATION = true; // Enabled by default - no API key required
 
 export class ArchiveAPI {
   /**
@@ -364,6 +366,50 @@ export class ArchiveAPI {
       console.warn('Discogs API unavailable, using fallback recording info:', error instanceof Error ? error.message : 'Unknown error');
       // Return with basic fallback data even on error
       return this.addFallbackRecordingInfo(opera);
+    }
+  }
+
+  /**
+   * Enhance opera recording with sheet music links from IMSLP
+   */
+  static async enhanceWithSheetMusic(opera: OperaRecording): Promise<OperaRecording> {
+    // Check if IMSLP integration is enabled
+    if (!ENABLE_IMSLP_INTEGRATION) {
+      console.log('🎼 IMSLP integration disabled, skipping sheet music lookup');
+      return opera;
+    }
+
+    try {
+      console.log('🎼 Enhancing opera with sheet music links:', opera.title);
+      
+      // Extract composer from creator field
+      const composer = IMSLPAPI.extractComposerFromCreator(opera.creator || '');
+      
+      // Clean the work title for better matching
+      const cleanTitle = IMSLPAPI.cleanWorkTitle(opera.title);
+      
+      // Search for sheet music
+      const sheetMusicLinks = await IMSLPAPI.findSheetMusic(cleanTitle, composer);
+      
+      if (sheetMusicLinks.length > 0) {
+        console.log('🎼 Found sheet music links:', sheetMusicLinks.length);
+        
+        return {
+          ...opera,
+          sheetMusicLinks,
+          metadata: {
+            ...opera.metadata,
+            imslpEnhanced: true,
+            note: `Found ${sheetMusicLinks.length} sheet music links from IMSLP`
+          }
+        };
+      } else {
+        console.log('🎼 No sheet music links found');
+        return opera;
+      }
+    } catch (error) {
+      console.warn('IMSLP API unavailable, skipping sheet music lookup:', error instanceof Error ? error.message : 'Unknown error');
+      return opera;
     }
   }
 

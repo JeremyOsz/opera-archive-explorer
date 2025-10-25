@@ -42,6 +42,52 @@ export function getWorkMusicalMetadata(identifier: string): WorkMusicalMetadata 
 }
 
 /**
+ * Work-based metadata mapping
+ * Maps normalized work titles to their musical metadata
+ */
+const WORK_METADATA_MAPPING: Record<string, string> = {
+  // Madama Butterfly - all recordings map to the same metadata
+  'madama butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'madama butterfly, sc 74': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'highlights from madama butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  
+  // Manon Lescaut - all recordings map to the same metadata
+  'manon lescaut': 'lp_manon-lescaut_giacomo-puccini_4',
+  
+  // La Bohème - all recordings map to the same metadata
+  'la bohème': 'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d',
+  'la boheme': 'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d',
+  
+  // Rigoletto - all recordings map to the same metadata
+  'rigoletto': 'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g',
+  
+  // Add more work mappings as needed...
+};
+
+/**
+ * Get musical metadata for a work by title
+ * This allows multiple recordings of the same work to share metadata
+ */
+export function getWorkMusicalMetadataByTitle(title: string): WorkMusicalMetadata | null {
+  const normalizedTitle = title.toLowerCase().trim();
+  
+  // First try exact match
+  if (WORK_METADATA_MAPPING[normalizedTitle]) {
+    const mappedIdentifier = WORK_METADATA_MAPPING[normalizedTitle];
+    return ALL_MUSICAL_METADATA[mappedIdentifier] || null;
+  }
+  
+  // Try partial matches for common variations
+  for (const [workTitle, identifier] of Object.entries(WORK_METADATA_MAPPING)) {
+    if (normalizedTitle.includes(workTitle) || workTitle.includes(normalizedTitle)) {
+      return ALL_MUSICAL_METADATA[identifier] || null;
+    }
+  }
+  
+  return null;
+}
+
+/**
  * Check if work has complete metadata
  */
 export function hasCompleteMetadata(identifier: string): boolean {
