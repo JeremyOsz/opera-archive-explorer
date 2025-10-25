@@ -184,15 +184,15 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
                   Language
                 </label>
                 <Select
-                  value={filters.language}
-                  onValueChange={(value) => handleInputChange('language', value)}
+                  value={filters.language || 'any'}
+                  onValueChange={(value) => handleInputChange('language', value === 'any' ? '' : value)}
                   disabled={loading}
                 >
                   <SelectTrigger>
                     <SelectValue placeholder="Any Language" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Any Language</SelectItem>
+                    <SelectItem value="any">Any Language</SelectItem>
                     <SelectItem value="Italian">Italian</SelectItem>
                     <SelectItem value="German">German</SelectItem>
                     <SelectItem value="French">French</SelectItem>
@@ -208,15 +208,15 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
                   Format
                 </label>
                 <Select
-                  value={filters.format}
-                  onValueChange={(value) => handleInputChange('format', value)}
+                  value={filters.format || 'any'}
+                  onValueChange={(value) => handleInputChange('format', value === 'any' ? '' : value)}
                   disabled={loading}
                 >
                   <SelectTrigger>
                     <SelectValue placeholder="Any Format" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Any Format</SelectItem>
+                    <SelectItem value="any">Any Format</SelectItem>
                     <SelectItem value="VBR MP3">VBR MP3</SelectItem>
                     <SelectItem value="64Kbps MP3">64Kbps MP3</SelectItem>
                     <SelectItem value="128Kbps MP3">128Kbps MP3</SelectItem>
