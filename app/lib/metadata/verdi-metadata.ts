@@ -4,52 +4,7 @@
  * Musical metadata for Verdi operas in the collection
  */
 
-// Define the interface locally to avoid circular imports
-interface WorkMusicalMetadata {
-  identifier: string;
-  metadataComplete: boolean;
-  overallKey: string;
-  overallTempo: number;
-  genre: string[];
-  instrumentation: string[];
-  mood: string[];
-  duration: string;
-  acts: Array<{
-    actNumber: number;
-    title: string;
-    key: string;
-    tempo: number;
-    timeSignature: string;
-    duration: string;
-    tempoMarking: string;
-    description?: string;
-    sections: Array<{
-      title: string;
-      sectionNumber: number;
-      sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble';
-      musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
-      complexity: 'simple' | 'moderate' | 'complex';
-      key: string;
-      tempo: number;
-      timeSignature: string;
-      duration: string;
-      tempoMarking: string;
-      description?: string;
-      musicalElements: {
-        mood: string[];
-        instrumentation: string[];
-        dynamics: string;
-      };
-    }>;
-  }>;
-  musicalAnalysis: {
-    keySignature: string;
-    timeSignature: string;
-    harmonicComplexity: 'simple' | 'moderate' | 'complex';
-    melodicStyle: 'lyrical' | 'dramatic' | 'decorative' | 'rhapsodic';
-  };
-  notes?: string;
-}
+import { WorkMusicalMetadata } from './types';
 
 export const VERDI_METADATA: Record<string, WorkMusicalMetadata> = {
   'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g': {
@@ -159,6 +114,37 @@ export const VERDI_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'moderate',
       melodicStyle: 'dramatic'
     },
+    notablePerformances: [
+      {
+        year: 1851,
+        conductor: 'Luigi Ricci',
+        orchestra: 'Teatro La Fenice Orchestra',
+        venue: 'Teatro La Fenice, Venice',
+        singers: [
+          { name: 'Raffaele Mirate', role: 'Duke of Mantua' },
+          { name: 'Felice Varesi', role: 'Rigoletto' },
+          { name: 'Teresa Brambilla', role: 'Gilda' }
+        ],
+        significance: 'World premiere of Verdi\'s revolutionary opera',
+        historicalContext: 'This was Verdi\'s first major success after a period of struggle, establishing him as the leading Italian composer of his time.',
+        notes: 'The premiere was a triumph, with the famous quartet becoming one of the most celebrated moments in opera.'
+      },
+      {
+        year: 1955,
+        conductor: 'Tullio Serafin',
+        orchestra: 'Orchestra of La Scala',
+        venue: 'La Scala, Milan',
+        singers: [
+          { name: 'Maria Callas', role: 'Gilda' },
+          { name: 'Giuseppe Di Stefano', role: 'Duke of Mantua' },
+          { name: 'Tito Gobbi', role: 'Rigoletto' }
+        ],
+        significance: 'Legendary recording with dream cast',
+        historicalContext: 'This recording features three of the greatest singers of the 20th century in their prime.',
+        recordingLabel: 'EMI',
+        notes: 'Callas\'s Gilda is considered definitive, combining vocal perfection with deep emotional understanding.'
+      }
+    ],
     notes: 'Verdi\'s masterpiece featuring the famous quartet "Bella figlia dell\'amore" and the curse theme. One of his most dramatic works.'
   }
 };

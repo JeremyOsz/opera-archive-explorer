@@ -1,8 +1,12 @@
+import { NotablePerformance } from './metadata/types';
+import { getWorkMusicalMetadata } from './metadata';
+
 export interface WorkAboutInfo {
   description: string;
   history: string;
   themes: string[];
   trivia: string[];
+  notablePerformances?: NotablePerformance[];
 }
 
 export interface WorkAboutData {
@@ -30,9 +34,38 @@ export const WORK_ABOUT_DATA: WorkAboutData = {
       'The opera features authentic Japanese folk songs, particularly in the first act.',
       'Butterfly\'s suicide is one of opera\'s most famous and tragic moments.',
       'The "Humming Chorus" is one of the most famous orchestral interludes in all of opera.'
+    ],
+    notablePerformances: [
+      {
+        year: 1904,
+        conductor: 'Cleofonte Campanini',
+        orchestra: 'La Scala Orchestra',
+        venue: 'La Scala, Milan',
+        singers: [
+          { name: 'Rosina Storchio', role: 'Cio-Cio-San (Butterfly)' },
+          { name: 'Giovanni Zenatello', role: 'Pinkerton' }
+        ],
+        significance: 'World premiere that initially failed but became a masterpiece',
+        historicalContext: 'The premiere was a disaster due to poor preparation, but Puccini revised the work and it became one of his greatest successes.',
+        notes: 'The original version was in two acts; Puccini later split it into three acts for better dramatic flow.'
+      },
+      {
+        year: 1974,
+        conductor: 'Herbert von Karajan',
+        orchestra: 'Vienna Philharmonic',
+        venue: 'Salzburg Festival',
+        singers: [
+          { name: 'Mirella Freni', role: 'Cio-Cio-San (Butterfly)' },
+          { name: 'Luciano Pavarotti', role: 'Pinkerton' }
+        ],
+        significance: 'Legendary recording with dream cast',
+        historicalContext: 'This recording is considered one of the finest interpretations of the work, featuring two of the greatest voices of the era.',
+        recordingLabel: 'Decca',
+        notes: 'Freni\'s Butterfly is considered definitive, combining vocal perfection with deep emotional understanding of the character.'
+      }
     ]
   },
-  'la bohème': {
+  'la boheme': {
     description: 'Puccini\'s beloved opera about a group of struggling artists in 19th-century Paris. The story centers on the romance between Rodolfo, a poet, and Mimì, a seamstress, and their bohemian friends Marcello, Musetta, Colline, and Schaunard.',
     history: 'Premiered in Turin in 1896, conducted by Arturo Toscanini. Based on Henri Murger\'s novel "Scènes de la vie de bohème," the opera combines comedy and tragedy in equal measure. Despite initial mixed reviews, it quickly became one of the most popular operas ever written.',
     themes: [
@@ -49,6 +82,39 @@ export const WORK_ABOUT_DATA: WorkAboutData = {
       'Act II\'s Café Momus scene is one of the most spectacular crowd scenes in opera.',
       'The opera takes place over several months, from Christmas Eve to spring.',
       'Jonathan Larson\'s musical "Rent" is loosely based on La Bohème.'
+    ],
+    notablePerformances: [
+      {
+        year: 1896,
+        conductor: 'Arturo Toscanini',
+        orchestra: 'Teatro Regio Orchestra',
+        venue: 'Teatro Regio, Turin',
+        singers: [
+          { name: 'Evan Gorga', role: 'Rodolfo' },
+          { name: 'Cesira Ferrani', role: 'Mimì' },
+          { name: 'Antonio Pini-Corsi', role: 'Marcello' },
+          { name: 'Camilla Pasini', role: 'Musetta' }
+        ],
+        significance: 'World premiere of Puccini\'s beloved opera',
+        historicalContext: 'This premiere established La Bohème as one of the most popular operas ever written, despite initial mixed reviews.',
+        notes: 'Toscanini was only 29 when he conducted this premiere, beginning his legendary career.'
+      },
+      {
+        year: 1956,
+        conductor: 'Thomas Beecham',
+        orchestra: 'Royal Philharmonic Orchestra',
+        venue: 'Kingsway Hall, London',
+        singers: [
+          { name: 'Jussi Björling', role: 'Rodolfo' },
+          { name: 'Victoria de los Ángeles', role: 'Mimì' },
+          { name: 'Robert Merrill', role: 'Marcello' },
+          { name: 'Lucine Amara', role: 'Musetta' }
+        ],
+        significance: 'Legendary recording considered definitive',
+        historicalContext: 'This recording features some of the greatest voices of the era in their prime.',
+        recordingLabel: 'EMI',
+        notes: 'Björling\'s Rodolfo and de los Ángeles\' Mimì are considered among the finest interpretations ever recorded.'
+      }
     ]
   },
   'rigoletto': {
@@ -67,6 +133,37 @@ export const WORK_ABOUT_DATA: WorkAboutData = {
       'Gilda is one of the most demanding soprano roles in opera, requiring both coloratura and dramatic skills.',
       'The opera was originally going to be called "La maledizione" (The Curse).',
       'Rigoletto\'s deformity and his dual nature (funny jester, loving father) make him one of opera\'s most complex characters.'
+    ],
+    notablePerformances: [
+      {
+        year: 1851,
+        conductor: 'Luigi Ricci',
+        orchestra: 'Teatro La Fenice Orchestra',
+        venue: 'Teatro La Fenice, Venice',
+        singers: [
+          { name: 'Raffaele Mirate', role: 'Duke of Mantua' },
+          { name: 'Felice Varesi', role: 'Rigoletto' },
+          { name: 'Teresa Brambilla', role: 'Gilda' }
+        ],
+        significance: 'World premiere of Verdi\'s revolutionary opera',
+        historicalContext: 'This was Verdi\'s first major success after a period of struggle, establishing him as the leading Italian composer of his time.',
+        notes: 'The premiere was a triumph, with the famous quartet becoming one of the most celebrated moments in opera.'
+      },
+      {
+        year: 1955,
+        conductor: 'Tullio Serafin',
+        orchestra: 'Orchestra of La Scala',
+        venue: 'La Scala, Milan',
+        singers: [
+          { name: 'Maria Callas', role: 'Gilda' },
+          { name: 'Giuseppe Di Stefano', role: 'Duke of Mantua' },
+          { name: 'Tito Gobbi', role: 'Rigoletto' }
+        ],
+        significance: 'Legendary recording with dream cast',
+        historicalContext: 'This recording features three of the greatest singers of the 20th century in their prime.',
+        recordingLabel: 'EMI',
+        notes: 'Callas\'s Gilda is considered definitive, combining vocal perfection with deep emotional understanding.'
+      }
     ]
   },
   'manon lescaut': {
@@ -114,7 +211,33 @@ export const WORK_ABOUT_DATA: WorkAboutData = {
  */
 export function getWorkAboutInfo(workTitle: string): WorkAboutInfo | null {
   const normalized = normalizeTitle(workTitle);
-  return WORK_ABOUT_DATA[normalized] || null;
+  const baseInfo = WORK_ABOUT_DATA[normalized];
+  
+  if (!baseInfo) return null;
+  
+  // Try to get notable performances from musical metadata
+  const notablePerformances = getNotablePerformancesForWork(workTitle);
+  
+  return {
+    ...baseInfo,
+    notablePerformances: notablePerformances.length > 0 ? notablePerformances : undefined
+  };
+}
+
+/**
+ * Get notable performances for a work from musical metadata
+ */
+export function getNotablePerformancesForWork(workTitle: string): NotablePerformance[] {
+  // For now, we'll use the notable performances that are directly embedded in the work-about-data
+  // In the future, this could be enhanced to look up from musical metadata by work title
+  const normalized = normalizeTitle(workTitle);
+  const baseInfo = WORK_ABOUT_DATA[normalized];
+  
+  if (baseInfo && baseInfo.notablePerformances) {
+    return baseInfo.notablePerformances;
+  }
+  
+  return [];
 }
 
 /**
@@ -129,7 +252,11 @@ export function hasWorkAboutInfo(workTitle: string): boolean {
  * Normalize work title for lookup
  */
 function normalizeTitle(title: string): string {
-  return title.toLowerCase().trim();
+  return title
+    .toLowerCase()
+    .normalize('NFD') // Decompose accented characters
+    .replace(/[\u0300-\u036f]/g, '') // Remove diacritical marks
+    .trim();
 }
 
 /**

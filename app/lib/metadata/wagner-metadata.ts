@@ -4,52 +4,7 @@
  * Musical metadata for Wagner operas in the collection
  */
 
-// Define the interface locally to avoid circular imports
-interface WorkMusicalMetadata {
-  identifier: string;
-  metadataComplete: boolean;
-  overallKey: string;
-  overallTempo: number;
-  genre: string[];
-  instrumentation: string[];
-  mood: string[];
-  duration: string;
-  acts: Array<{
-    actNumber: number;
-    title: string;
-    key: string;
-    tempo: number;
-    timeSignature: string;
-    duration: string;
-    tempoMarking: string;
-    description?: string;
-    sections: Array<{
-      title: string;
-      sectionNumber: number;
-      sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble';
-      musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
-      complexity: 'simple' | 'moderate' | 'complex';
-      key: string;
-      tempo: number;
-      timeSignature: string;
-      duration: string;
-      tempoMarking: string;
-      description?: string;
-      musicalElements: {
-        mood: string[];
-        instrumentation: string[];
-        dynamics: string;
-      };
-    }>;
-  }>;
-  musicalAnalysis: {
-    keySignature: string;
-    timeSignature: string;
-    harmonicComplexity: 'simple' | 'moderate' | 'complex';
-    melodicStyle: 'lyrical' | 'dramatic' | 'decorative' | 'rhapsodic';
-  };
-  notes?: string;
-}
+import { WorkMusicalMetadata } from './types';
 
 export const WAGNER_METADATA: Record<string, WorkMusicalMetadata> = {
   'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto': {
@@ -177,6 +132,35 @@ export const WAGNER_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'complex',
       melodicStyle: 'dramatic'
     },
+    notablePerformances: [
+      {
+        year: 1865,
+        conductor: 'Hans von Bülow',
+        orchestra: 'Court Opera Orchestra',
+        venue: 'Court Theatre, Munich',
+        singers: [
+          { name: 'Ludwig Schnorr von Carolsfeld', role: 'Tristan' },
+          { name: 'Malvina Schnorr von Carolsfeld', role: 'Isolde' }
+        ],
+        significance: 'World premiere of Wagner\'s revolutionary music drama',
+        historicalContext: 'This premiere marked a turning point in Western music, introducing the Tristan chord and endless melody.',
+        notes: 'Ludwig Schnorr died shortly after the premiere, making this one of the most tragic opera premieres in history.'
+      },
+      {
+        year: 1952,
+        conductor: 'Wilhelm Furtwängler',
+        orchestra: 'Philharmonia Orchestra',
+        venue: 'Kingsway Hall, London',
+        singers: [
+          { name: 'Kirsten Flagstad', role: 'Isolde' },
+          { name: 'Ludwig Suthaus', role: 'Tristan' }
+        ],
+        significance: 'Legendary recording considered definitive',
+        historicalContext: 'This recording captures Flagstad in her prime, with Furtwängler\'s masterful conducting.',
+        recordingLabel: 'EMI',
+        notes: 'Considered one of the greatest opera recordings ever made, featuring Flagstad\'s definitive Isolde.'
+      }
+    ],
     notes: 'Wagner\'s revolutionary music drama that changed the course of Western music. Features the famous Tristan chord and endless melody technique.'
   },
 

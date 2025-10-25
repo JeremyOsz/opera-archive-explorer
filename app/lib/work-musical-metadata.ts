@@ -5,6 +5,21 @@
  * We're working in batches to map real metadata to each work.
  */
 
+export interface NotablePerformance {
+  year: number;
+  conductor?: string;
+  orchestra?: string;
+  venue?: string;
+  singers?: Array<{
+    name: string;
+    role: string;
+  }>;
+  significance: string;
+  historicalContext?: string;
+  recordingLabel?: string;
+  notes?: string;
+}
+
 export interface WorkMusicalMetadata {
   identifier: string;
   metadataComplete: boolean;
@@ -48,6 +63,7 @@ export interface WorkMusicalMetadata {
     harmonicComplexity: 'simple' | 'moderate' | 'complex';
     melodicStyle: 'lyrical' | 'dramatic' | 'decorative' | 'rhapsodic';
   };
+  notablePerformances?: NotablePerformance[];
   notes?: string;
 }
 

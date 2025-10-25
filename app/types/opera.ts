@@ -1,3 +1,18 @@
+export interface NotablePerformance {
+  year: number;
+  conductor?: string;
+  orchestra?: string;
+  venue?: string;
+  singers?: Array<{
+    name: string;
+    role: string;
+  }>;
+  significance: string;
+  historicalContext?: string;
+  recordingLabel?: string;
+  notes?: string;
+}
+
 export interface OperaRecording {
   identifier: string;
   title: string;
@@ -24,6 +39,32 @@ export interface OperaRecording {
   genre?: string[];
   instrumentation?: string[];
   mood?: string[];
+  // Recording information
+  recordingInfo?: RecordingInfo;
+  // Notable performances
+  notablePerformances?: NotablePerformance[];
+}
+
+export interface RecordingInfo {
+  performers: Array<{
+    name: string;
+    role: string;
+    instrument?: string;
+  }>;
+  conductor?: string;
+  orchestra?: string;
+  venue?: string;
+  recordingDate?: string;
+  releaseDate?: string;
+  label?: string;
+  catalogNumber?: string;
+  country?: string;
+  format?: string[];
+  genres?: string[];
+  styles?: string[];
+  notes?: string;
+  discogsUrl?: string;
+  coverImage?: string;
 }
 
 export interface ArchiveFile {

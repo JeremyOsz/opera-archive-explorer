@@ -1,8 +1,12 @@
-import { OperaRecording, ArchiveResponse, SearchFilters } from '@/app/types/opera';
+import { OperaRecording, ArchiveResponse, SearchFilters, RecordingInfo } from '@/app/types/opera';
 import { MockMusicalDataGenerator } from './mock-musical-data';
 import { loadArchiveCache, searchCachedWorks, getCachedWorkById } from './cache-loader';
+import { DiscogsAPI } from './discogs-api';
 
 const ARCHIVE_API_BASE = 'https://archive.org/advancedsearch.php';
+
+// Configuration for external API integrations
+const ENABLE_DISCOGS_INTEGRATION = false; // Disabled by default to avoid API key requirements
 
 export class ArchiveAPI {
   /**
@@ -321,6 +325,49 @@ export class ArchiveAPI {
   }
 
   /**
+   * Enhance opera recording with Discogs recording information
+   */
+  static async enhanceWithRecordingInfo(opera: OperaRecording): Promise<OperaRecording> {
+    // Check if Discogs integration is enabled
+    if (!ENABLE_DISCOGS_INTEGRATION) {
+      console.log('🎵 Discogs integration disabled, using fallback recording info');
+      return this.addFallbackRecordingInfo(opera);
+    }
+
+    try {
+      console.log('🎵 Enhancing opera with recording information:', opera.title);
+      
+      // Try to find recording information from Discogs
+      const recordingInfo = await DiscogsAPI.findOperaRecording(
+        opera.title,
+        opera.creator,
+        opera.date ? parseInt(opera.date) : undefined
+      );
+      
+      if (recordingInfo) {
+        console.log('🎵 Found recording info from Discogs:', recordingInfo);
+        
+        return {
+          ...opera,
+          recordingInfo,
+          metadata: {
+            ...opera.metadata,
+            discogsEnhanced: true,
+            note: 'Recording information enhanced with Discogs data'
+          }
+        };
+      } else {
+        console.log('🎵 No Discogs recording info found, using fallback');
+        return this.addFallbackRecordingInfo(opera);
+      }
+    } catch (error) {
+      console.warn('Discogs API unavailable, using fallback recording info:', error instanceof Error ? error.message : 'Unknown error');
+      // Return with basic fallback data even on error
+      return this.addFallbackRecordingInfo(opera);
+    }
+  }
+
+  /**
    * Enhance opera recording with mock musical data
    */
   static async enhanceWithMusicDatabases(opera: OperaRecording): Promise<OperaRecording> {
@@ -355,6 +402,50 @@ export class ArchiveAPI {
       // Return with basic fallback data even on error
       return this.addFallbackMusicalData(opera);
     }
+  }
+
+  /**
+   * Add fallback recording information when Discogs data is not available
+   */
+  private static addFallbackRecordingInfo(opera: OperaRecording): OperaRecording {
+    // Generate basic recording info based on available data
+    const recordingInfo: RecordingInfo = {
+      performers: [],
+      conductor: undefined,
+      orchestra: undefined,
+      venue: undefined,
+      recordingDate: opera.date,
+      releaseDate: opera.publicdate,
+      label: 'Unknown Label',
+      catalogNumber: opera.identifier,
+      country: 'Unknown',
+      format: opera.format || ['Vinyl'],
+      genres: opera.genre || ['Classical'],
+      styles: ['Opera'],
+      notes: opera.description,
+      discogsUrl: undefined,
+      coverImage: opera.imageUrl
+    };
+
+    // Try to extract conductor/orchestra from creator field
+    if (opera.creator) {
+      const creator = opera.creator.toLowerCase();
+      if (creator.includes('conducted by') || creator.includes('dirigent')) {
+        recordingInfo.conductor = opera.creator;
+      } else if (creator.includes('orchestra') || creator.includes('symphony')) {
+        recordingInfo.orchestra = opera.creator;
+      }
+    }
+
+    return {
+      ...opera,
+      recordingInfo,
+      metadata: {
+        ...opera.metadata,
+        fallbackRecording: true,
+        note: 'Recording information not available from external sources - showing basic data'
+      }
+    };
   }
 
   /**

@@ -4,52 +4,7 @@
  * Musical metadata for Puccini operas in the collection
  */
 
-// Define the interface locally to avoid circular imports
-interface WorkMusicalMetadata {
-  identifier: string;
-  metadataComplete: boolean;
-  overallKey: string;
-  overallTempo: number;
-  genre: string[];
-  instrumentation: string[];
-  mood: string[];
-  duration: string;
-  acts: Array<{
-    actNumber: number;
-    title: string;
-    key: string;
-    tempo: number;
-    timeSignature: string;
-    duration: string;
-    tempoMarking: string;
-    description?: string;
-    sections: Array<{
-      title: string;
-      sectionNumber: number;
-      sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble';
-      musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
-      complexity: 'simple' | 'moderate' | 'complex';
-      key: string;
-      tempo: number;
-      timeSignature: string;
-      duration: string;
-      tempoMarking: string;
-      description?: string;
-      musicalElements: {
-        mood: string[];
-        instrumentation: string[];
-        dynamics: string;
-      };
-    }>;
-  }>;
-  musicalAnalysis: {
-    keySignature: string;
-    timeSignature: string;
-    harmonicComplexity: 'simple' | 'moderate' | 'complex';
-    melodicStyle: 'lyrical' | 'dramatic' | 'decorative' | 'rhapsodic';
-  };
-  notes?: string;
-}
+import { WorkMusicalMetadata } from './types';
 
 export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
   'lp_manon-lescaut_giacomo-puccini_4': {
@@ -207,6 +162,35 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'moderate',
       melodicStyle: 'dramatic'
     },
+    notablePerformances: [
+      {
+        year: 1893,
+        conductor: 'Alessandro Pomè',
+        orchestra: 'Teatro Regio Orchestra',
+        venue: 'Teatro Regio, Turin',
+        singers: [
+          { name: 'Cesira Ferrani', role: 'Manon Lescaut' },
+          { name: 'Giuseppe Cremonini', role: 'Des Grieux' }
+        ],
+        significance: 'World premiere of Puccini\'s first major success',
+        historicalContext: 'This was Puccini\'s breakthrough opera, establishing him as a major composer in the verismo tradition.',
+        notes: 'The premiere was a triumph and marked Puccini\'s emergence as a leading Italian composer.'
+      },
+      {
+        year: 1954,
+        conductor: 'Tullio Serafin',
+        orchestra: 'Orchestra of La Scala',
+        venue: 'La Scala, Milan',
+        singers: [
+          { name: 'Maria Callas', role: 'Manon Lescaut' },
+          { name: 'Giuseppe Di Stefano', role: 'Des Grieux' }
+        ],
+        significance: 'Legendary Callas performance that revived interest in the work',
+        historicalContext: 'Callas\'s interpretation of Manon Lescaut became one of her most celebrated roles, showcasing her dramatic intensity.',
+        recordingLabel: 'EMI',
+        notes: 'This performance is considered one of the greatest recordings of the opera.'
+      }
+    ],
     notes: 'One of Puccini\'s early masterpieces. The score shows Wagnerian influences with lush orchestration.'
   },
 
@@ -335,6 +319,366 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'moderate',
       melodicStyle: 'dramatic'
     },
+    notablePerformances: [
+      {
+        year: 1904,
+        conductor: 'Cleofonte Campanini',
+        orchestra: 'La Scala Orchestra',
+        venue: 'La Scala, Milan',
+        singers: [
+          { name: 'Rosina Storchio', role: 'Cio-Cio-San (Butterfly)' },
+          { name: 'Giovanni Zenatello', role: 'Pinkerton' }
+        ],
+        significance: 'World premiere that initially failed but became a masterpiece',
+        historicalContext: 'The premiere was a disaster due to poor preparation, but Puccini revised the work and it became one of his greatest successes.',
+        notes: 'The original version was in two acts; Puccini later split it into three acts for better dramatic flow.'
+      },
+      {
+        year: 1955,
+        conductor: 'Dimitri Mitropoulos',
+        orchestra: 'Metropolitan Opera Orchestra',
+        venue: 'Metropolitan Opera, New York',
+        singers: [
+          { name: 'Dorothy Kirsten', role: 'Cio-Cio-San (Butterfly)' },
+          { name: 'Richard Tucker', role: 'Pinkerton' }
+        ],
+        significance: 'Historic Metropolitan Opera performance',
+        historicalContext: 'This performance showcased the work\'s popularity in America and featured one of the great Butterfly interpreters.',
+        recordingLabel: 'Columbia',
+        notes: 'Kirsten was renowned for her portrayal of Butterfly, bringing both vocal beauty and dramatic intensity to the role.'
+      },
+      {
+        year: 1974,
+        conductor: 'Herbert von Karajan',
+        orchestra: 'Vienna Philharmonic',
+        venue: 'Salzburg Festival',
+        singers: [
+          { name: 'Mirella Freni', role: 'Cio-Cio-San (Butterfly)' },
+          { name: 'Luciano Pavarotti', role: 'Pinkerton' }
+        ],
+        significance: 'Legendary recording with dream cast',
+        historicalContext: 'This recording is considered one of the finest interpretations of the work, featuring two of the greatest voices of the era.',
+        recordingLabel: 'Decca',
+        notes: 'Freni\'s Butterfly is considered definitive, combining vocal perfection with deep emotional understanding of the character.'
+      }
+    ],
     notes: 'Puccini\'s exotic masterpiece inspired by Japanese themes. Features the famous "Humming Chorus" and Butterfly\'s aria "Un bel dì vedremo".'
+  },
+
+  'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d': {
+    identifier: 'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d',
+    metadataComplete: true,
+    overallKey: 'C Major',
+    overallTempo: 120,
+    genre: ['Opera', 'Romantic', 'Classical'],
+    instrumentation: ['Full Orchestra', 'Soprano', 'Tenor', 'Baritone', 'Mezzo-Soprano', 'Bass'],
+    mood: ['Romantic', 'Melancholic', 'Joyful', 'Tragic'],
+    duration: '2:00:00',
+    acts: [
+      {
+        actNumber: 1,
+        title: 'Act I - The Garret (Christmas Eve)',
+        key: 'C Major',
+        tempo: 120,
+        timeSignature: '4/4',
+        duration: '30:00',
+        tempoMarking: 'Allegro',
+        description: 'The bohemian artists in their cold garret on Christmas Eve',
+        sections: [
+          {
+            title: 'Opening Scene',
+            sectionNumber: 1,
+            sectionType: 'scene',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'C Major',
+            tempo: 120,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Allegro',
+            description: 'Rodolfo and Marcello working in the cold garret',
+            musicalElements: {
+              mood: ['Melancholic', 'Comic'],
+              instrumentation: ['Orchestra', 'Tenor', 'Baritone'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Che gelida manina',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'C Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'Rodolfo\'s famous aria "Your tiny hand is frozen"',
+            musicalElements: {
+              mood: ['Romantic', 'Lyrical'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Sì, mi chiamano Mimì',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'A Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'Mimì\'s aria "Yes, they call me Mimì"',
+            musicalElements: {
+              mood: ['Romantic', 'Delicate'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'O soave fanciulla',
+            sectionNumber: 4,
+            sectionType: 'duet',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'C Major',
+            tempo: 105,
+            timeSignature: '4/4',
+            duration: '4:00',
+            tempoMarking: 'Andante',
+            description: 'Rodolfo and Mimì\'s love duet',
+            musicalElements: {
+              mood: ['Romantic', 'Passionate'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          }
+        ]
+      },
+      {
+        actNumber: 2,
+        title: 'Act II - Café Momus (Christmas Eve)',
+        key: 'D Major',
+        tempo: 130,
+        timeSignature: '4/4',
+        duration: '25:00',
+        tempoMarking: 'Allegro Vivace',
+        description: 'The bustling Café Momus scene with Musetta\'s waltz',
+        sections: [
+          {
+            title: 'Café Momus Scene',
+            sectionNumber: 1,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'complex',
+            key: 'D Major',
+            tempo: 130,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Allegro Vivace',
+            description: 'The bustling street scene with vendors and crowds',
+            musicalElements: {
+              mood: ['Joyful', 'Energetic', 'Festive'],
+              instrumentation: ['Full Orchestra', 'Chorus', 'All Soloists'],
+              dynamics: 'Fortissimo'
+            }
+          },
+          {
+            title: 'Quando m\'en vo',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'D Major',
+            tempo: 120,
+            timeSignature: '3/4',
+            duration: '5:00',
+            tempoMarking: 'Moderato',
+            description: 'Musetta\'s famous waltz "When I go along"',
+            musicalElements: {
+              mood: ['Coquettish', 'Charming'],
+              instrumentation: ['Orchestra', 'Mezzo-Soprano'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'Finale',
+            sectionNumber: 3,
+            sectionType: 'ensemble',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'D Major',
+            tempo: 140,
+            timeSignature: '4/4',
+            duration: '5:00',
+            tempoMarking: 'Allegro',
+            description: 'The grand ensemble finale with all characters',
+            musicalElements: {
+              mood: ['Triumphant', 'Joyful'],
+              instrumentation: ['Full Orchestra', 'All Voices', 'Chorus'],
+              dynamics: 'Fortissimo'
+            }
+          }
+        ]
+      },
+      {
+        actNumber: 3,
+        title: 'Act III - The Barrière d\'Enfer (February)',
+        key: 'E Minor',
+        tempo: 90,
+        timeSignature: '4/4',
+        duration: '20:00',
+        tempoMarking: 'Andante',
+        description: 'The snow scene where Mimì and Rodolfo part',
+        sections: [
+          {
+            title: 'Snow Scene',
+            sectionNumber: 1,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'E Minor',
+            tempo: 90,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'The atmospheric snow scene',
+            musicalElements: {
+              mood: ['Melancholic', 'Cold', 'Desolate'],
+              instrumentation: ['Orchestra'],
+              dynamics: 'Piano to Mezzo-piano'
+            }
+          },
+          {
+            title: 'Mimì and Rodolfo Duet',
+            sectionNumber: 2,
+            sectionType: 'duet',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'E Minor',
+            tempo: 85,
+            timeSignature: '4/4',
+            duration: '12:00',
+            tempoMarking: 'Andante Sostenuto',
+            description: 'The emotional parting scene between Mimì and Rodolfo',
+            musicalElements: {
+              mood: ['Tragic', 'Heartbreaking', 'Poignant'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor'],
+              dynamics: 'Piano to Forte'
+            }
+          }
+        ]
+      },
+      {
+        actNumber: 4,
+        title: 'Act IV - The Garret (Spring)',
+        key: 'C Major',
+        tempo: 100,
+        timeSignature: '4/4',
+        duration: '25:00',
+        tempoMarking: 'Allegro',
+        description: 'Mimì\'s death scene in the garret',
+        sections: [
+          {
+            title: 'Opening Scene',
+            sectionNumber: 1,
+            sectionType: 'scene',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'C Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Allegro',
+            description: 'The bohemians in their garret, trying to be cheerful',
+            musicalElements: {
+              mood: ['Melancholic', 'Forced Cheer'],
+              instrumentation: ['Orchestra', 'All Soloists'],
+              dynamics: 'Mezzo-forte'
+            }
+          },
+          {
+            title: 'Mimì\'s Return',
+            sectionNumber: 2,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'C Major',
+            tempo: 95,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'Mimì returns, dying, to the garret',
+            musicalElements: {
+              mood: ['Tragic', 'Heartbreaking'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Death Scene',
+            sectionNumber: 3,
+            sectionType: 'scene',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'C Major',
+            tempo: 80,
+            timeSignature: '4/4',
+            duration: '7:00',
+            tempoMarking: 'Andante Sostenuto',
+            description: 'Mimì\'s death and the final farewell',
+            musicalElements: {
+              mood: ['Tragic', 'Devastating', 'Poignant'],
+              instrumentation: ['Orchestra', 'All Voices'],
+              dynamics: 'Pianissimo to Forte'
+            }
+          }
+        ]
+      }
+    ],
+    musicalAnalysis: {
+      keySignature: 'C Major',
+      timeSignature: '4/4',
+      harmonicComplexity: 'moderate',
+      melodicStyle: 'lyrical'
+    },
+    notablePerformances: [
+      {
+        year: 1896,
+        conductor: 'Arturo Toscanini',
+        orchestra: 'Teatro Regio Orchestra',
+        venue: 'Teatro Regio, Turin',
+        singers: [
+          { name: 'Evan Gorga', role: 'Rodolfo' },
+          { name: 'Cesira Ferrani', role: 'Mimì' },
+          { name: 'Antonio Pini-Corsi', role: 'Marcello' },
+          { name: 'Camilla Pasini', role: 'Musetta' }
+        ],
+        significance: 'World premiere of Puccini\'s beloved opera',
+        historicalContext: 'This premiere established La Bohème as one of the most popular operas ever written, despite initial mixed reviews.',
+        notes: 'Toscanini was only 29 when he conducted this premiere, beginning his legendary career.'
+      },
+      {
+        year: 1956,
+        conductor: 'Thomas Beecham',
+        orchestra: 'Royal Philharmonic Orchestra',
+        venue: 'Kingsway Hall, London',
+        singers: [
+          { name: 'Jussi Björling', role: 'Rodolfo' },
+          { name: 'Victoria de los Ángeles', role: 'Mimì' },
+          { name: 'Robert Merrill', role: 'Marcello' },
+          { name: 'Lucine Amara', role: 'Musetta' }
+        ],
+        significance: 'Legendary recording considered definitive',
+        historicalContext: 'This recording features some of the greatest voices of the era in their prime.',
+        recordingLabel: 'EMI',
+        notes: 'Björling\'s Rodolfo and de los Ángeles\' Mimì are considered among the finest interpretations ever recorded.'
+      }
+    ],
+    notes: 'Puccini\'s beloved opera about bohemian artists in Paris. Features some of the most famous arias in opera, including "Che gelida manina" and "Sì, mi chiamano Mimì".'
   }
 };

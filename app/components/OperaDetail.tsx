@@ -24,7 +24,8 @@ import {
   Info,
   BookOpen,
   Lightbulb,
-  Sparkles
+  Sparkles,
+  Users
 } from 'lucide-react';
 import Image from 'next/image';
 import { ArchiveAPI } from '@/app/lib/archive-api';
@@ -70,7 +71,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
         setWorkMetadata(enhanced);
         
         // Enhance the opera with this metadata
-        setEnhancedOpera({
+        const operaWithMusicalData = {
           ...opera,
           musicalKey: enhanced.musicalMetadata.overallKey,
           tempo: enhanced.musicalMetadata.overallTempo,
@@ -94,18 +95,31 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
             source: enhanced.musicalMetadata.source,
             musicalAnalysis: enhanced.musicalMetadata.musicalAnalysis
           }
-        });
+        };
+        
+        // Enhance with recording information
+        ArchiveAPI.enhanceWithRecordingInfo(operaWithMusicalData)
+          .then(enhancedWithRecording => {
+            console.log('Enhanced with recording info:', enhancedWithRecording);
+            setEnhancedOpera(enhancedWithRecording);
+          })
+          .catch(console.error)
+          .finally(() => setMusicalDataLoading(false));
       } else {
         // Fallback to original enhancement
         ArchiveAPI.enhanceWithMusicDatabases(opera)
           .then(enhanced => {
             console.log('Enhanced opera data:', enhanced);
-            setEnhancedOpera(enhanced);
+            // Also enhance with recording information
+            return ArchiveAPI.enhanceWithRecordingInfo(enhanced);
           })
-          .catch(console.error);
+          .then(enhancedWithRecording => {
+            console.log('Enhanced with recording info:', enhancedWithRecording);
+            setEnhancedOpera(enhancedWithRecording);
+          })
+          .catch(console.error)
+          .finally(() => setMusicalDataLoading(false));
       }
-      
-      setMusicalDataLoading(false);
     }
   }, [isOpen, opera.identifier, opera]);
 
@@ -198,59 +212,172 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Music className="w-5 h-5" />
-                Opera Information
+                Recording Information
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {opera.creator && (
-                  <div className="flex items-center gap-2">
-                    <User className="w-4 h-4 text-muted-foreground" />
+              {opera.recordingInfo ? (
+                <>
+                  {/* Performers */}
+                  {opera.recordingInfo.performers && opera.recordingInfo.performers.length > 0 && (
                     <div>
-                      <p className="text-sm font-medium">Creator</p>
-                      <p className="text-sm text-muted-foreground">{opera.creator}</p>
+                      <p className="text-sm font-medium mb-2">Performers</p>
+                      <div className="space-y-1">
+                        {opera.recordingInfo.performers.map((performer, index) => (
+                          <div key={index} className="flex items-center gap-2">
+                            <User className="w-4 h-4 text-muted-foreground" />
+                            <span className="text-sm text-muted-foreground">
+                              {performer.name} - {performer.role}
+                              {performer.instrument && ` (${performer.instrument})`}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
+                  )}
+
+                  {/* Conductor */}
+                  {opera.recordingInfo.conductor && (
+                    <div className="flex items-center gap-2">
+                      <Music className="w-4 h-4 text-muted-foreground" />
+                      <div>
+                        <p className="text-sm font-medium">Conductor</p>
+                        <p className="text-sm text-muted-foreground">{opera.recordingInfo.conductor}</p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Orchestra */}
+                  {opera.recordingInfo.orchestra && (
+                    <div className="flex items-center gap-2">
+                      <Volume2 className="w-4 h-4 text-muted-foreground" />
+                      <div>
+                        <p className="text-sm font-medium">Orchestra</p>
+                        <p className="text-sm text-muted-foreground">{opera.recordingInfo.orchestra}</p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Recording Details */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {opera.recordingInfo.recordingDate && (
+                      <div className="flex items-center gap-2">
+                        <Calendar className="w-4 h-4 text-muted-foreground" />
+                        <div>
+                          <p className="text-sm font-medium">Recording Date</p>
+                          <p className="text-sm text-muted-foreground">{opera.recordingInfo.recordingDate}</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {opera.recordingInfo.venue && (
+                      <div className="flex items-center gap-2">
+                        <Globe className="w-4 h-4 text-muted-foreground" />
+                        <div>
+                          <p className="text-sm font-medium">Venue</p>
+                          <p className="text-sm text-muted-foreground">{opera.recordingInfo.venue}</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {opera.recordingInfo.label && (
+                      <div className="flex items-center gap-2">
+                        <Tag className="w-4 h-4 text-muted-foreground" />
+                        <div>
+                          <p className="text-sm font-medium">Label</p>
+                          <p className="text-sm text-muted-foreground">{opera.recordingInfo.label}</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {opera.recordingInfo.country && (
+                      <div className="flex items-center gap-2">
+                        <Globe className="w-4 h-4 text-muted-foreground" />
+                        <div>
+                          <p className="text-sm font-medium">Country</p>
+                          <p className="text-sm text-muted-foreground">{opera.recordingInfo.country}</p>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                )}
-                
-                {opera.date && (
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-muted-foreground" />
+
+                  {/* Additional Info */}
+                  {opera.recordingInfo.notes && (
                     <div>
-                      <p className="text-sm font-medium">Date</p>
-                      <p className="text-sm text-muted-foreground">{opera.date}</p>
+                      <p className="text-sm font-medium mb-2">Recording Notes</p>
+                      <div className="text-sm text-muted-foreground leading-relaxed max-h-32 overflow-y-auto">
+                        {opera.recordingInfo.notes}
+                      </div>
                     </div>
-                  </div>
-                )}
-                
-                {opera.language && (
-                  <div className="flex items-center gap-2">
-                    <Globe className="w-4 h-4 text-muted-foreground" />
-                    <div>
-                      <p className="text-sm font-medium">Language</p>
-                      <p className="text-sm text-muted-foreground">{opera.language}</p>
+                  )}
+
+                  {/* Discogs Link */}
+                  {opera.recordingInfo.discogsUrl && (
+                    <div className="flex items-center gap-2">
+                      <ExternalLink className="w-4 h-4 text-muted-foreground" />
+                      <a 
+                        href={opera.recordingInfo.discogsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-primary hover:underline"
+                      >
+                        View on Discogs
+                      </a>
                     </div>
-                  </div>
-                )}
-                
-                {opera.publicdate && (
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-muted-foreground" />
-                    <div>
-                      <p className="text-sm font-medium">Published</p>
-                      <p className="text-sm text-muted-foreground">
-                        {(() => {
-                          try {
-                            return new Date(opera.publicdate).toLocaleDateString();
-                          } catch {
-                            return opera.publicdate;
-                          }
-                        })()}
-                      </p>
+                  )}
+                </>
+              ) : (
+                /* Fallback to basic information when no recording info available */
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {opera.creator && (
+                    <div className="flex items-center gap-2">
+                      <User className="w-4 h-4 text-muted-foreground" />
+                      <div>
+                        <p className="text-sm font-medium">Creator</p>
+                        <p className="text-sm text-muted-foreground">{opera.creator}</p>
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
+                  )}
+                  
+                  {opera.date && (
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 text-muted-foreground" />
+                      <div>
+                        <p className="text-sm font-medium">Date</p>
+                        <p className="text-sm text-muted-foreground">{opera.date}</p>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {opera.language && (
+                    <div className="flex items-center gap-2">
+                      <Globe className="w-4 h-4 text-muted-foreground" />
+                      <div>
+                        <p className="text-sm font-medium">Language</p>
+                        <p className="text-sm text-muted-foreground">{opera.language}</p>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {opera.publicdate && (
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-muted-foreground" />
+                      <div>
+                        <p className="text-sm font-medium">Published</p>
+                        <p className="text-sm text-muted-foreground">
+                          {(() => {
+                            try {
+                              return new Date(opera.publicdate).toLocaleDateString();
+                            } catch {
+                              return opera.publicdate;
+                            }
+                          })()}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {opera.description && (
                 <div>
@@ -360,6 +487,75 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                             </li>
                           ))}
                         </ul>
+                      </div>
+                    )}
+
+                    {/* Notable Performances */}
+                    {aboutInfo.notablePerformances && aboutInfo.notablePerformances.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 mb-3">
+                          <Users className="w-4 h-4 text-primary" />
+                          <h4 className="font-semibold">Notable Performances</h4>
+                        </div>
+                        <div className="space-y-4">
+                          {aboutInfo.notablePerformances.map((performance, index) => (
+                            <div key={index} className="border rounded-lg p-4 bg-muted/30">
+                              <div className="flex items-start justify-between mb-2">
+                                <div className="flex items-center gap-2">
+                                  <span className="font-semibold text-sm">{performance.year}</span>
+                                  {performance.venue && (
+                                    <span className="text-xs text-muted-foreground">• {performance.venue}</span>
+                                  )}
+                                </div>
+                                {performance.recordingLabel && (
+                                  <Badge variant="secondary" className="text-xs">
+                                    {performance.recordingLabel}
+                                  </Badge>
+                                )}
+                              </div>
+                              
+                              <div className="space-y-2">
+                                <p className="text-sm font-medium text-foreground">{performance.significance}</p>
+                                
+                                {performance.historicalContext && (
+                                  <p className="text-xs text-muted-foreground leading-relaxed">
+                                    {performance.historicalContext}
+                                  </p>
+                                )}
+                                
+                                {(performance.conductor || performance.orchestra) && (
+                                  <div className="text-xs text-muted-foreground">
+                                    {performance.conductor && (
+                                      <span>Conductor: {performance.conductor}</span>
+                                    )}
+                                    {performance.conductor && performance.orchestra && <span> • </span>}
+                                    {performance.orchestra && (
+                                      <span>Orchestra: {performance.orchestra}</span>
+                                    )}
+                                  </div>
+                                )}
+                                
+                                {performance.singers && performance.singers.length > 0 && (
+                                  <div className="text-xs text-muted-foreground">
+                                    <span className="font-medium">Cast: </span>
+                                    {performance.singers.map((singer, singerIndex) => (
+                                      <span key={singerIndex}>
+                                        {singer.name} ({singer.role})
+                                        {singerIndex < performance.singers!.length - 1 ? ', ' : ''}
+                                      </span>
+                                    ))}
+                                  </div>
+                                )}
+                                
+                                {performance.notes && (
+                                  <p className="text-xs text-muted-foreground italic">
+                                    {performance.notes}
+                                  </p>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </CardContent>

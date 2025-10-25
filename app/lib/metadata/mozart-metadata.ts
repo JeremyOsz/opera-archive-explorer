@@ -4,52 +4,7 @@
  * Musical metadata for Mozart operas and works in the collection
  */
 
-// Define the interface locally to avoid circular imports
-interface WorkMusicalMetadata {
-  identifier: string;
-  metadataComplete: boolean;
-  overallKey: string;
-  overallTempo: number;
-  genre: string[];
-  instrumentation: string[];
-  mood: string[];
-  duration: string;
-  acts: Array<{
-    actNumber: number;
-    title: string;
-    key: string;
-    tempo: number;
-    timeSignature: string;
-    duration: string;
-    tempoMarking: string;
-    description?: string;
-    sections: Array<{
-      title: string;
-      sectionNumber: number;
-      sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble';
-      musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
-      complexity: 'simple' | 'moderate' | 'complex';
-      key: string;
-      tempo: number;
-      timeSignature: string;
-      duration: string;
-      tempoMarking: string;
-      description?: string;
-      musicalElements: {
-        mood: string[];
-        instrumentation: string[];
-        dynamics: string;
-      };
-    }>;
-  }>;
-  musicalAnalysis: {
-    keySignature: string;
-    timeSignature: string;
-    harmonicComplexity: 'simple' | 'moderate' | 'complex';
-    melodicStyle: 'lyrical' | 'dramatic' | 'decorative' | 'rhapsodic';
-  };
-  notes?: string;
-}
+import { WorkMusicalMetadata } from './types';
 
 export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
   'lp_manuel-ausensi-sings-mozart-and-cimaros_manuel-ausensi-wolfgang-amadeus-mozart': {
@@ -425,6 +380,36 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'complex',
       melodicStyle: 'dramatic'
     },
+    notablePerformances: [
+      {
+        year: 1787,
+        conductor: 'Mozart',
+        orchestra: 'Prague Opera Orchestra',
+        venue: 'Estates Theatre, Prague',
+        singers: [
+          { name: 'Luigi Bassi', role: 'Don Giovanni' },
+          { name: 'Caterina Bondini', role: 'Zerlina' }
+        ],
+        significance: 'World premiere of Mozart\'s operatic masterpiece',
+        historicalContext: 'The Prague premiere was a triumph, establishing Don Giovanni as one of the greatest operas ever written.',
+        notes: 'Mozart conducted the premiere himself, and the work was immediately recognized as a masterpiece.'
+      },
+      {
+        year: 1955,
+        conductor: 'Wilhelm Furtwängler',
+        orchestra: 'Vienna Philharmonic',
+        venue: 'Salzburg Festival',
+        singers: [
+          { name: 'Cesare Siepi', role: 'Don Giovanni' },
+          { name: 'Elisabeth Schwarzkopf', role: 'Donna Elvira' },
+          { name: 'Anton Dermota', role: 'Don Ottavio' }
+        ],
+        significance: 'Legendary Salzburg Festival performance',
+        historicalContext: 'This performance at the Salzburg Festival featured some of the greatest Mozart singers of the era.',
+        recordingLabel: 'EMI',
+        notes: 'Siepi\'s Don Giovanni is considered one of the greatest interpretations of the role.'
+      }
+    ],
     notes: 'Mozart\'s dramatic masterpiece about the legendary seducer Don Giovanni, featuring some of his most powerful music.'
   }
 };
