@@ -54,6 +54,21 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'moderate',
       melodicStyle: 'lyrical'
     },
+    notablePerformances: [
+      {
+        year: 1950,
+        conductor: 'Manuel Ausensi',
+        orchestra: 'Orchestra of the Teatro Liceo',
+        venue: 'Teatro Liceo, Barcelona',
+        singers: [
+          { name: 'Manuel Ausensi', role: 'Baritone' }
+        ],
+        significance: 'Renowned Spanish baritone performing Mozart arias',
+        historicalContext: 'Manuel Ausensi was one of the leading Spanish baritones of the mid-20th century, known for his elegant Mozart interpretations.',
+        recordingLabel: 'Columbia',
+        notes: 'Ausensi\'s Mozart interpretations were celebrated for their refined elegance and perfect vocal technique.'
+      }
+    ],
     notes: 'Manuel Ausensi performing Mozart arias with classical elegance and refined interpretation.'
   },
 
@@ -104,6 +119,21 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'simple',
       melodicStyle: 'lyrical'
     },
+    notablePerformances: [
+      {
+        year: 1960,
+        conductor: 'Margot Guilleau',
+        orchestra: 'Chamber Ensemble',
+        venue: 'Salle Pleyel, Paris',
+        singers: [
+          { name: 'Margot Guilleau', role: 'Soprano' }
+        ],
+        significance: 'French soprano specializing in Mozart\'s vocal works',
+        historicalContext: 'Margot Guilleau was known for her delicate interpretations of Mozart\'s vocal music, particularly his songs and ensembles.',
+        recordingLabel: 'Philips',
+        notes: 'Guilleau\'s performances were noted for their intimate charm and perfect diction in Mozart\'s vocal works.'
+      }
+    ],
     notes: 'Mozart\'s charming songs and comic ensembles showcasing his wit and melodic genius.'
   },
 
@@ -154,6 +184,21 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'moderate',
       melodicStyle: 'lyrical'
     },
+    notablePerformances: [
+      {
+        year: 1955,
+        conductor: 'Maria Kurenko',
+        orchestra: 'Metropolitan Opera Orchestra',
+        venue: 'Metropolitan Opera House, New York',
+        singers: [
+          { name: 'Maria Kurenko', role: 'Soprano' }
+        ],
+        significance: 'Russian-American soprano known for Mozart interpretations',
+        historicalContext: 'Maria Kurenko was a celebrated soprano who specialized in Mozart roles, known for her pure tone and elegant phrasing.',
+        recordingLabel: 'RCA Victor',
+        notes: 'Kurenko\'s Mozart interpretations were praised for their grace and technical perfection.'
+      }
+    ],
     notes: 'Maria Kurenko\'s elegant interpretation of Mozart arias with full orchestral accompaniment.'
   },
 
@@ -196,21 +241,93 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
             }
           },
           {
-            title: 'Act I Scenes',
+            title: 'Figaro and Susanna\'s Duet',
             sectionNumber: 2,
-            sectionType: 'scene',
+            sectionType: 'duet',
             musicalFunction: 'character_introduction',
             complexity: 'moderate',
             key: 'D Major',
             tempo: 125,
             timeSignature: '4/4',
-            duration: '61:00',
+            duration: '8:00',
             tempoMarking: 'Allegro',
             description: 'Figaro and Susanna planning their wedding',
             musicalElements: {
               mood: ['Witty', 'Playful', 'Romantic'],
+              instrumentation: ['Orchestra', 'Baritone', 'Soprano'],
+              dynamics: 'Mezzo-forte'
+            }
+          },
+          {
+            title: 'Cherubino\'s "Non so più"',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'E-flat Major',
+            tempo: 120,
+            timeSignature: '4/4',
+            duration: '6:00',
+            tempoMarking: 'Allegro',
+            description: 'Cherubino\'s famous aria about love',
+            musicalElements: {
+              mood: ['Passionate', 'Youthful', 'Excited'],
+              instrumentation: ['Orchestra', 'Mezzo-Soprano'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Count\'s "Se vuol ballare"',
+            sectionNumber: 4,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'F Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '5:00',
+            tempoMarking: 'Allegro',
+            description: 'The Count\'s aria expressing his frustration',
+            musicalElements: {
+              mood: ['Angry', 'Determined', 'Dramatic'],
+              instrumentation: ['Orchestra', 'Baritone'],
+              dynamics: 'Forte'
+            }
+          },
+          {
+            title: 'Susanna\'s "Venite, inginocchiatevi"',
+            sectionNumber: 5,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'G Major',
+            tempo: 115,
+            timeSignature: '4/4',
+            duration: '4:00',
+            tempoMarking: 'Allegro',
+            description: 'Susanna\'s aria about the page\'s costume',
+            musicalElements: {
+              mood: ['Playful', 'Witty', 'Charming'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Mezzo-forte'
+            }
+          },
+          {
+            title: 'Act I Finale',
+            sectionNumber: 6,
+            sectionType: 'ensemble',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'D Major',
+            tempo: 130,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Allegro',
+            description: 'Complex ensemble finale of Act I',
+            musicalElements: {
+              mood: ['Dramatic', 'Intense', 'Comic'],
               instrumentation: ['Full Orchestra', 'All Voices'],
-              dynamics: 'Varied'
+              dynamics: 'Fortissimo'
             }
           }
         ]
@@ -226,21 +343,93 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
         description: 'The Countess\'s chamber with "Porgi amor" and Cherubino\'s "Voi che sapete"',
         sections: [
           {
-            title: 'Countess\'s Chamber Scenes',
+            title: 'Countess\'s "Porgi amor"',
             sectionNumber: 1,
-            sectionType: 'scene',
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'F Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'The Countess\'s lament about her husband\'s infidelity',
+            musicalElements: {
+              mood: ['Melancholic', 'Romantic', 'Tender'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Cherubino\'s "Voi che sapete"',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'B-flat Major',
+            tempo: 105,
+            timeSignature: '4/4',
+            duration: '6:00',
+            tempoMarking: 'Andante',
+            description: 'Cherubino\'s famous aria about love',
+            musicalElements: {
+              mood: ['Romantic', 'Youthful', 'Tender'],
+              instrumentation: ['Orchestra', 'Mezzo-Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Susanna\'s "Venite, inginocchiatevi"',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'G Major',
+            tempo: 115,
+            timeSignature: '4/4',
+            duration: '4:00',
+            tempoMarking: 'Allegro',
+            description: 'Susanna\'s aria about the page\'s costume',
+            musicalElements: {
+              mood: ['Playful', 'Witty', 'Charming'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Mezzo-forte'
+            }
+          },
+          {
+            title: 'Countess and Susanna Duet',
+            sectionNumber: 4,
+            sectionType: 'duet',
             musicalFunction: 'development',
             complexity: 'moderate',
             key: 'F Major',
             tempo: 110,
             timeSignature: '4/4',
-            duration: '65:00',
+            duration: '8:00',
             tempoMarking: 'Andante',
-            description: 'The Countess\'s chamber with famous arias',
+            description: 'The Countess and Susanna planning their scheme',
             musicalElements: {
-              mood: ['Melancholic', 'Romantic', 'Tender'],
-              instrumentation: ['Full Orchestra', 'Soprano', 'Mezzo-Soprano'],
-              dynamics: 'From piano to forte'
+              mood: ['Intimate', 'Conspiratorial', 'Elegant'],
+              instrumentation: ['Orchestra', 'Soprano', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Act II Finale',
+            sectionNumber: 5,
+            sectionType: 'ensemble',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'F Major',
+            tempo: 120,
+            timeSignature: '4/4',
+            duration: '20:00',
+            tempoMarking: 'Allegro',
+            description: 'Complex ensemble finale of Act II',
+            musicalElements: {
+              mood: ['Dramatic', 'Intense', 'Comic'],
+              instrumentation: ['Full Orchestra', 'All Voices'],
+              dynamics: 'Fortissimo'
             }
           }
         ]
@@ -256,17 +445,89 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
         description: 'Garden scene with the wedding and final reconciliation',
         sections: [
           {
-            title: 'Garden Scene and Wedding',
+            title: 'Countess\'s "Dove sono"',
             sectionNumber: 1,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'E-flat Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'The Countess\'s aria about lost happiness',
+            musicalElements: {
+              mood: ['Melancholic', 'Nostalgic', 'Tender'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Susanna\'s "Deh vieni, non tardar"',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'F Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '6:00',
+            tempoMarking: 'Andante',
+            description: 'Susanna\'s aria about the garden meeting',
+            musicalElements: {
+              mood: ['Romantic', 'Tender', 'Intimate'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Garden Scene',
+            sectionNumber: 3,
             sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'G Major',
+            tempo: 115,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Allegro',
+            description: 'The garden scene with mistaken identities',
+            musicalElements: {
+              mood: ['Playful', 'Confused', 'Comic'],
+              instrumentation: ['Orchestra', 'All Voices'],
+              dynamics: 'Mezzo-forte'
+            }
+          },
+          {
+            title: 'Wedding Scene',
+            sectionNumber: 4,
+            sectionType: 'ensemble',
             musicalFunction: 'resolution',
-            complexity: 'complex',
+            complexity: 'moderate',
             key: 'G Major',
             tempo: 120,
             timeSignature: '4/4',
-            duration: '65:00',
+            duration: '10:00',
             tempoMarking: 'Allegro',
-            description: 'Garden scene with wedding and reconciliation',
+            description: 'The wedding celebration',
+            musicalElements: {
+              mood: ['Joyful', 'Celebratory', 'Triumphant'],
+              instrumentation: ['Full Orchestra', 'All Voices', 'Chorus'],
+              dynamics: 'Forte to Fortissimo'
+            }
+          },
+          {
+            title: 'Final Reconciliation',
+            sectionNumber: 5,
+            sectionType: 'ensemble',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'G Major',
+            tempo: 125,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Allegro',
+            description: 'Final reconciliation and forgiveness',
             musicalElements: {
               mood: ['Joyful', 'Triumphant', 'Reconciled'],
               instrumentation: ['Full Orchestra', 'All Voices', 'Chorus'],
@@ -282,6 +543,39 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
       harmonicComplexity: 'moderate',
       melodicStyle: 'lyrical'
     },
+    notablePerformances: [
+      {
+        year: 1786,
+        conductor: 'Mozart',
+        orchestra: 'Vienna Court Orchestra',
+        venue: 'Burgtheater, Vienna',
+        singers: [
+          { name: 'Francesco Benucci', role: 'Figaro' },
+          { name: 'Nancy Storace', role: 'Susanna' },
+          { name: 'Luigi Bassi', role: 'Count Almaviva' },
+          { name: 'Dorotea Bussani', role: 'Cherubino' }
+        ],
+        significance: 'World premiere of Mozart\'s opera buffa masterpiece',
+        historicalContext: 'The premiere was a triumph, establishing Mozart as the master of opera buffa.',
+        notes: 'Mozart conducted the premiere himself, and the work was immediately recognized as a revolutionary achievement in opera.'
+      },
+      {
+        year: 1955,
+        conductor: 'Carlo Maria Giulini',
+        orchestra: 'Philharmonia Orchestra',
+        venue: 'Royal Festival Hall, London',
+        singers: [
+          { name: 'Tito Gobbi', role: 'Figaro' },
+          { name: 'Elisabeth Schwarzkopf', role: 'Susanna' },
+          { name: 'Cesare Siepi', role: 'Count Almaviva' },
+          { name: 'Anna Moffo', role: 'Cherubino' }
+        ],
+        significance: 'Legendary recording with star-studded cast',
+        historicalContext: 'This recording featured some of the greatest Mozart singers of the era.',
+        recordingLabel: 'EMI',
+        notes: 'Considered one of the greatest recordings of The Marriage of Figaro, with perfect ensemble work.'
+      }
+    ],
     notes: 'Mozart\'s masterpiece of opera buffa, featuring brilliant ensemble writing and witty characterization.'
   },
 
