@@ -30,6 +30,7 @@ import Image from 'next/image';
 import { ArchiveAPI } from '@/app/lib/archive-api';
 import { EnhancedMusicalMetadataLibrary } from '@/app/lib/musical-metadata-enhanced';
 import { getWorkAboutInfo } from '@/app/lib/work-about-data';
+import AudioPlayer, { AudioPlayerControls } from './AudioPlayer';
 
 interface OperaDetailProps {
   opera: OperaRecording;
@@ -44,8 +45,9 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
   const [musicalDataLoading, setMusicalDataLoading] = useState(false);
   const [workMetadata, setWorkMetadata] = useState<any>(null);
   const [audioFilesExpanded, setAudioFilesExpanded] = useState(false);
-  const [aboutExpanded, setAboutExpanded] = useState(false);
-  const [musicalInfoExpanded, setMusicalInfoExpanded] = useState(false);
+  const [aboutExpanded, setAboutExpanded] = useState(true);
+  const [musicalInfoExpanded, setMusicalInfoExpanded] = useState(true);
+  const [activePlayerIndex, setActivePlayerIndex] = useState<number | null>(null);
 
   useEffect(() => {
     if (isOpen && opera.identifier) {
@@ -656,77 +658,80 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
             </CardHeader>
             {audioFilesExpanded && (
               <CardContent>
-              {loading ? (
-                <div className="space-y-3">
-                  {Array.from({ length: 3 }).map((_, i) => (
-                    <div key={i} className="h-16 bg-muted rounded animate-pulse"></div>
-                  ))}
-                </div>
-              ) : audioFiles.length > 0 ? (
-                <div className="space-y-3">
-                  {audioFiles.map((file, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                          <Music className="w-5 h-5 text-primary" />
-                        </div>
-                        <div>
-                          <p className="font-medium">{file.name}</p>
-                          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                            <span>{file.format}</span>
-                            <span>{formatFileSize(file.size)}</span>
-                            {file.length && (
-                              <span>{formatDuration(file.length)}</span>
-                            )}
+                {loading ? (
+                  <div className="space-y-3">
+                    {Array.from({ length: 3 }).map((_, i) => (
+                      <div key={i} className="h-16 bg-muted rounded animate-pulse"></div>
+                    ))}
+                  </div>
+                ) : audioFiles.length > 0 ? (
+                  <div className="space-y-3">
+                    {audioFiles.map((file, index) => (
+                      <div key={index}>
+                        <div className="flex items-center justify-between p-3 border rounded-lg">
+                          <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                              <Music className="w-5 h-5 text-primary" />
+                            </div>
+                            <div>
+                              <p className="font-medium">{file.name}</p>
+                              <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                                <span>{file.format}</span>
+                                <span>{formatFileSize(file.size)}</span>
+                                {file.length && (
+                                  <span>{formatDuration(file.length)}</span>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                          <div className="flex gap-2">
+                            <AudioPlayer 
+                              audioFile={file}
+                              identifier={opera.identifier}
+                              title={opera.title}
+                              onClick={() => setActivePlayerIndex(activePlayerIndex === index ? null : index)}
+                            />
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => {
+                                const url = `https://archive.org/download/${opera.identifier}/${file.name}`;
+                                window.open(url, '_blank');
+                              }}
+                            >
+                              <ExternalLink className="w-4 h-4 mr-1" />
+                              Open
+                            </Button>
                           </div>
                         </div>
+                        <AudioPlayerControls 
+                          audioFile={file}
+                          identifier={opera.identifier}
+                          isVisible={activePlayerIndex === index}
+                          onClose={() => setActivePlayerIndex(null)}
+                        />
                       </div>
-                      <div className="flex gap-2">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => {
-                            const url = ArchiveAPI.getStreamUrl(opera.identifier, file.name);
-                            window.open(url, '_blank');
-                          }}
-                        >
-                          <Play className="w-4 h-4 mr-1" />
-                          Play
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => {
-                            const url = ArchiveAPI.getDownloadUrl(opera.identifier, file.name);
-                            window.open(url, '_blank');
-                          }}
-                        >
-                          <Download className="w-4 h-4 mr-1" />
-                          Download
-                        </Button>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-8">
+                    <p className="text-muted-foreground mb-4">
+                      No audio files detected for this recording.
+                    </p>
+                    {files.length > 0 && (
+                      <div className="text-sm text-muted-foreground">
+                        <p>Found {files.length} files total. Available formats:</p>
+                        <div className="mt-2 flex flex-wrap gap-1 justify-center">
+                          {Array.from(new Set(files.map(f => f.format).filter(Boolean))).slice(0, 10).map((format, i) => (
+                            <Badge key={i} variant="outline" className="text-xs">
+                              {format}
+                            </Badge>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-8">
-                  <p className="text-muted-foreground mb-4">
-                    No audio files detected for this recording.
-                  </p>
-                  {files.length > 0 && (
-                    <div className="text-sm text-muted-foreground">
-                      <p>Found {files.length} files total. Available formats:</p>
-                      <div className="mt-2 flex flex-wrap gap-1 justify-center">
-                        {Array.from(new Set(files.map(f => f.format).filter(Boolean))).slice(0, 10).map((format, i) => (
-                          <Badge key={i} variant="outline" className="text-xs">
-                            {format}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
+                    )}
+                  </div>
+                )}
               </CardContent>
             )}
           </Card>
