@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/services/img/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'archive.org',
+        port: '',
+        pathname: '/download/**',
+      },
     ],
   },
 };

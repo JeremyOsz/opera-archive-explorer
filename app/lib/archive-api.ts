@@ -20,23 +20,47 @@ export class ArchiveAPI {
         const data = await response.json();
         const files = data.files || [];
         
-        // Find the largest image file
+        // Find the best image file - prioritize thumbnails and album artwork
         const imageFiles = files
-          .filter((file: any) => 
-            file.format === 'JPEG' || 
-            file.format === 'PNG' || 
-            file.format === 'GIF' ||
-            file.name?.toLowerCase().includes('cover') ||
-            file.name?.toLowerCase().includes('front') ||
-            file.name?.toLowerCase().includes('back') ||
-            file.name?.toLowerCase().includes('jacket') ||
-            file.name?.toLowerCase().includes('folder')
-          )
+          .filter((file: any) => {
+            const name = file.name?.toLowerCase() || '';
+            const format = file.format?.toLowerCase() || '';
+            
+            // Prioritize Archive.org thumbnails and album artwork
+            return (
+              // Archive.org generated thumbnails (highest priority)
+              name.includes('__ia_thumb') ||
+              name.includes('_thumb') ||
+              name.includes('thumbnail') ||
+              // Album artwork keywords
+              name.includes('cover') ||
+              name.includes('front') ||
+              name.includes('back') ||
+              name.includes('jacket') ||
+              name.includes('folder') ||
+              name.includes('artwork') ||
+              name.includes('album') ||
+              // Image formats
+              format === 'jpeg' ||
+              format === 'png' ||
+              format === 'gif' ||
+              format === 'item tile'
+            );
+          })
           .map((file: any) => ({
             ...file,
-            size: parseInt(file.size) || 0
+            size: parseInt(file.size) || 0,
+            // Prioritize Archive.org thumbnails
+            priority: file.name?.toLowerCase().includes('__ia_thumb') ? 0 : 
+                     file.name?.toLowerCase().includes('_thumb') ? 1 : 2
           }))
-          .sort((a: any, b: any) => b.size - a.size);
+          .sort((a: any, b: any) => {
+            // First sort by priority (thumbnails first), then by size
+            if (a.priority !== b.priority) {
+              return a.priority - b.priority;
+            }
+            return b.size - a.size;
+          });
         
         if (imageFiles.length > 0) {
           const bestImage = imageFiles[0];
