@@ -76,14 +76,16 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
           genre: enhanced.musicalMetadata.genre,
           instrumentation: enhanced.musicalMetadata.instrumentation,
           mood: enhanced.musicalMetadata.mood,
-          movements: enhanced.musicalMetadata.movements.map(m => ({
-            title: m.title,
-            duration: m.duration,
-            musicalKey: m.key,
-            tempo: m.tempo,
-            trackNumber: m.movementNumber,
-            description: m.description
-          })),
+          movements: enhanced.musicalMetadata.acts.flatMap(act => 
+            act.sections.map(section => ({
+              title: `${act.title} - ${section.title}`,
+              duration: section.duration,
+              musicalKey: section.key,
+              tempo: section.tempo,
+              trackNumber: section.sectionNumber,
+              description: section.description
+            }))
+          ),
           metadata: {
             isMapped: enhanced.musicalMetadata.isMapped,
             source: enhanced.musicalMetadata.source,
@@ -156,11 +158,11 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
 
         <div className="space-y-6">
           {/* Opera Image and Basic Info - Two Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Opera Image */}
-            <Card>
-              <CardContent className="p-0">
-                <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-muted">
+            <Card className="lg:col-span-4">
+              <CardContent className="p-8">
+                <div className="relative aspect-square w-full max-w-xs mx-auto overflow-hidden rounded-lg bg-muted">
                   {opera.imageUrl ? (
                     <Image
                       src={opera.imageUrl}
@@ -189,7 +191,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
             </Card>
 
             {/* Basic Information */}
-            <Card>
+            <Card className="lg:col-span-8">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Music className="w-5 h-5" />

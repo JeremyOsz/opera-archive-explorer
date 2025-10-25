@@ -27,7 +27,34 @@ export interface MusicalWork extends LightweightOpera {
     instrumentation: string[];
     mood: string[];
     duration: string;
-    movements: MovementDetail[];
+    acts: Array<{
+      actNumber: number;
+      title: string;
+      key: string;
+      tempo: number;
+      timeSignature: string;
+      duration: string;
+      tempoMarking: string;
+      description?: string;
+      sections: Array<{
+        title: string;
+        sectionNumber: number;
+        sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble';
+        musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
+        complexity: 'simple' | 'moderate' | 'complex';
+        key: string;
+        tempo: number;
+        timeSignature: string;
+        duration: string;
+        tempoMarking: string;
+        description?: string;
+        musicalElements: {
+          mood: string[];
+          instrumentation: string[];
+          dynamics: string;
+        };
+      }>;
+    }>;
     musicalAnalysis: {
       keySignature: string;
       timeSignature: string;
@@ -92,7 +119,7 @@ export class EnhancedMusicalMetadataLibrary {
         instrumentation: mapped.instrumentation,
         mood: mapped.mood,
         duration: mapped.duration,
-        movements: mapped.movements,
+        acts: mapped.acts,
         musicalAnalysis: mapped.musicalAnalysis,
         isMapped: true,
         source: 'mapped'
@@ -115,7 +142,7 @@ export class EnhancedMusicalMetadataLibrary {
         instrumentation: ['Orchestra'],
         mood: ['Dramatic'],
         duration: '0:00:00',
-        movements: [],
+        acts: [],
         musicalAnalysis: {
           keySignature: 'C Major',
           timeSignature: '4/4',

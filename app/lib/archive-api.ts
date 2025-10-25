@@ -131,15 +131,21 @@ export class ArchiveAPI {
       const paginatedResults = cachedResults.slice(start, end);
       
       // Convert lightweight results to OperaRecording format for compatibility
-      const convertedResults = paginatedResults.map(work => ({
-        ...work,
-        mediatype: 'audio',
-        publicdate: work.date || '',
-        addeddate: work.date || '',
-        collection: [],
-        format: [],
-        files: [],
-        metadata: {}
+      // and enhance with higher resolution images
+      const convertedResults = await Promise.all(paginatedResults.map(async (work) => {
+        const imageUrls = await this.getBestImageUrl(work.identifier);
+        return {
+          ...work,
+          imageUrl: imageUrls.imageUrl,
+          thumbnailUrl: imageUrls.thumbnailUrl,
+          mediatype: 'audio',
+          publicdate: work.date || '',
+          addeddate: work.date || '',
+          collection: [],
+          format: [],
+          files: [],
+          metadata: {}
+        };
       }));
 
       return {
@@ -166,9 +172,15 @@ export class ArchiveAPI {
     const cachedWork = getCachedWorkById(identifier);
     if (cachedWork) {
       console.log('📁 Using bundled cache for opera:', identifier);
+      
+      // Always fetch higher resolution images for detail view
+      const imageUrls = await this.getBestImageUrl(identifier);
+      
       // Convert lightweight work to OperaRecording format
       return {
         ...cachedWork,
+        imageUrl: imageUrls.imageUrl,
+        thumbnailUrl: imageUrls.thumbnailUrl,
         mediatype: 'audio',
         publicdate: cachedWork.date || '',
         addeddate: cachedWork.date || '',
