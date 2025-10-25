@@ -603,15 +603,15 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                           <p className="text-xs text-gray-500">Catalog: {link.catalogNumber}</p>
                         )}
                       </div>
-                      <Button
-                        variant="default"
-                        size="sm"
-                        onClick={() => window.open(link.imslpUrl, '_blank')}
-                        className="cursor-pointer bg-blue-600 hover:bg-blue-700"
+                      <a
+                        href={link.imslpUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3 cursor-pointer bg-blue-600 hover:bg-blue-700"
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
                         View Score
-                      </Button>
+                      </a>
                     </div>
                   ))}
                   {enhancedOpera.sheetMusicLinks.length > 3 && (
@@ -966,18 +966,15 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                               title={opera.title}
                               onClick={() => setActivePlayerIndex(activePlayerIndex === index ? null : index)}
                             />
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              className="cursor-pointer"
-                              onClick={() => {
-                                const url = `https://archive.org/download/${opera.identifier}/${file.name}`;
-                                window.open(url, '_blank');
-                              }}
+                            <a
+                              href={`https://archive.org/download/${opera.identifier}/${file.name}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 cursor-pointer"
                             >
                               <ExternalLink className="w-4 h-4 mr-1" />
                               Download
-                            </Button>
+                            </a>
                           </div>
                         </div>
                         <AudioPlayerControls 
@@ -1025,17 +1022,15 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                     Access the full recording details and additional metadata
                   </CardDescription>
                 </div>
-                <Button
-                  variant="outline"
-                  className="cursor-pointer"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open(`https://archive.org/details/${opera.identifier}`, '_blank');
-                  }}
+                <a
+                  href={`https://archive.org/details/${opera.identifier}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 cursor-pointer"
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Open Archive
-                </Button>
+                </a>
               </div>
             </CardHeader>
           </Card>

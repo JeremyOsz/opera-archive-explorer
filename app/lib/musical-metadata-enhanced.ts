@@ -40,7 +40,7 @@ export interface MusicalWork extends LightweightOpera {
       sections: Array<{
         title: string;
         sectionNumber: number;
-        sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble' | 'melodrama' | 'theater piece' | 'romances' | 'symphony' | 'requiem' | 'lieder' | 'waltz' | 'vocal' | 'opera';
+        sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble' | 'opera' | 'melodrama' | 'theater piece' | 'romances' | 'vocal' | 'orchestral' | 'march' | 'symphony' | 'requiem' | 'lieder' | 'waltz';
         musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
         complexity: 'simple' | 'moderate' | 'complex';
         key: string;

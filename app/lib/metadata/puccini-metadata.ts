@@ -54,13 +54,49 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
             key: 'D Major',
             tempo: 115,
             timeSignature: '4/4',
-            duration: '30:00',
+            duration: '15:00',
             tempoMarking: 'Allegro',
             description: "Opening scene introducing Des Grieux and Manon",
             musicalElements: {
               mood: ['Passionate', 'Lyrical'],
               instrumentation: ['Orchestra', 'Soprano', 'Tenor'],
               dynamics: 'Marked'
+            }
+          },
+          {
+            title: 'Des Grieux\'s "Donna non vidi mai"',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'D Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: "Des Grieux's famous aria 'I have never seen such a woman'",
+            musicalElements: {
+              mood: ['Romantic', 'Passionate', 'Lyrical'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Manon\'s "In quelle trine morbide"',
+            sectionNumber: 4,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'A Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '7:00',
+            tempoMarking: 'Andante',
+            description: "Manon's aria about her luxurious surroundings",
+            musicalElements: {
+              mood: ['Melancholic', 'Nostalgic', 'Tender'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
             }
           }
         ]
@@ -84,13 +120,49 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
             key: 'A Major',
             tempo: 100,
             timeSignature: '4/4',
-            duration: '40:00',
+            duration: '20:00',
             tempoMarking: 'Andante',
             description: 'Manon in luxury, reunion with Des Grieux',
             musicalElements: {
               mood: ['Romantic', 'Melancholic'],
               instrumentation: ['Full Orchestra', 'Soprano', 'Tenor', 'Baritone'],
               dynamics: 'Varied'
+            }
+          },
+          {
+            title: 'Des Grieux\'s "Ah, Manon, mi tradisce"',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'F Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Allegro',
+            description: "Des Grieux's aria about Manon's betrayal",
+            musicalElements: {
+              mood: ['Angry', 'Passionate', 'Dramatic'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Forte to Fortissimo'
+            }
+          },
+          {
+            title: 'Manon\'s "Sola, perduta, abbandonata"',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'complex',
+            key: 'A Major',
+            tempo: 95,
+            timeSignature: '4/4',
+            duration: '12:00',
+            tempoMarking: 'Andante Sostenuto',
+            description: "Manon's aria about being alone and abandoned",
+            musicalElements: {
+              mood: ['Tragic', 'Melancholic', 'Poignant'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Forte'
             }
           }
         ]
@@ -114,13 +186,49 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
             key: 'G Minor',
             tempo: 110,
             timeSignature: '4/4',
-            duration: '30:00',
+            duration: '15:00',
             tempoMarking: 'Allegro Moderato',
             description: 'Gambling scene and arrest',
             musicalElements: {
               mood: ['Dramatic', 'Tense'],
               instrumentation: ['Full Orchestra', 'Chorus', 'Soloists'],
               dynamics: 'Fortissimo'
+            }
+          },
+          {
+            title: 'Manon\'s Arrest',
+            sectionNumber: 2,
+            sectionType: 'scene',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'G Minor',
+            tempo: 120,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Allegro',
+            description: 'Manon\'s arrest and Des Grieux\'s despair',
+            musicalElements: {
+              mood: ['Dramatic', 'Tragic', 'Intense'],
+              instrumentation: ['Full Orchestra', 'Soprano', 'Tenor', 'Chorus'],
+              dynamics: 'Fortissimo'
+            }
+          },
+          {
+            title: 'Des Grieux\'s "No, pazzo son!"',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'G Minor',
+            tempo: 115,
+            timeSignature: '4/4',
+            duration: '7:00',
+            tempoMarking: 'Allegro',
+            description: "Des Grieux's aria of despair and madness",
+            musicalElements: {
+              mood: ['Desperate', 'Mad', 'Tragic'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Forte to Fortissimo'
             }
           }
         ]
@@ -136,20 +244,56 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
         description: 'Tragic ending - Manon dying in Des Grieux arms',
         sections: [
           {
-            title: 'Manon\'s Death',
+            title: 'Manon\'s Death Scene',
             sectionNumber: 1,
-            sectionType: 'aria',
+            sectionType: 'scene',
             musicalFunction: 'resolution',
             complexity: 'complex',
             key: 'D Minor',
             tempo: 90,
             timeSignature: '4/4',
-            duration: '30:00',
+            duration: '15:00',
             tempoMarking: 'Andante Sostenuto',
             description: 'Tragic ending - Manon dying in Des Grieux arms',
             musicalElements: {
               mood: ['Tragic', 'Melancholic', 'Poignant'],
               instrumentation: ['Orchestra', 'Soprano', 'Tenor'],
+              dynamics: 'Pianissimo to Forte'
+            }
+          },
+          {
+            title: 'Manon\'s Final Aria',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'D Minor',
+            tempo: 85,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante Sostenuto',
+            description: "Manon's final aria before death",
+            musicalElements: {
+              mood: ['Tragic', 'Heartbreaking', 'Poignant'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Des Grieux\'s Final Lament',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'D Minor',
+            tempo: 80,
+            timeSignature: '4/4',
+            duration: '7:00',
+            tempoMarking: 'Andante Sostenuto',
+            description: "Des Grieux's final lament over Manon's death",
+            musicalElements: {
+              mood: ['Devastating', 'Tragic', 'Heartbreaking'],
+              instrumentation: ['Orchestra', 'Tenor'],
               dynamics: 'Pianissimo to Forte'
             }
           }
@@ -241,13 +385,49 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
             key: 'C Major',
             tempo: 115,
             timeSignature: '4/4',
-            duration: '35:00',
+            duration: '20:00',
             tempoMarking: 'Allegro',
             description: 'Wedding ceremony and first meeting',
             musicalElements: {
               mood: ['Exotic', 'Joyous', 'Passionate'],
               instrumentation: ['Orchestra with Eastern touches', 'Soprano', 'Tenor', 'Baritone'],
               dynamics: 'Vivid'
+            }
+          },
+          {
+            title: 'Pinkerton\'s "Dovunque al mondo"',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'C Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Allegro',
+            description: "Pinkerton's aria about his carefree attitude",
+            musicalElements: {
+              mood: ['Carefree', 'Confident', 'Romantic'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'Butterfly\'s Entrance',
+            sectionNumber: 4,
+            sectionType: 'scene',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'A Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '7:00',
+            tempoMarking: 'Andante',
+            description: 'Butterfly\'s entrance and first meeting with Pinkerton',
+            musicalElements: {
+              mood: ['Exotic', 'Delicate', 'Romantic'],
+              instrumentation: ['Orchestra with Eastern touches', 'Soprano', 'Tenor'],
+              dynamics: 'Piano to Mezzo-forte'
             }
           }
         ]
@@ -265,19 +445,73 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
           {
             title: 'Butterfly\'s Vigil',
             sectionNumber: 1,
-            sectionType: 'aria',
+            sectionType: 'scene',
             musicalFunction: 'development',
-            complexity: 'complex',
+            complexity: 'moderate',
             key: 'A Major',
             tempo: 95,
             timeSignature: '4/4',
-            duration: '50:00',
+            duration: '20:00',
             tempoMarking: 'Andante',
-            description: 'Butterfly\'s vigil - "Un bel dì vedremo" aria',
+            description: 'Butterfly\'s vigil and waiting for Pinkerton',
             musicalElements: {
               mood: ['Hopeful', 'Melancholic', 'Lyrically Dramatic'],
               instrumentation: ['Orchestra', 'Soprano', 'Mezzo-Soprano'],
               dynamics: 'Subtle to Powerful'
+            }
+          },
+          {
+            title: 'Un bel dì vedremo',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'complex',
+            key: 'A Major',
+            tempo: 90,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: "Butterfly's famous aria 'One fine day we shall see'",
+            musicalElements: {
+              mood: ['Hopeful', 'Romantic', 'Dreamy'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Humming Chorus',
+            sectionNumber: 3,
+            sectionType: 'chorus',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'A Major',
+            tempo: 85,
+            timeSignature: '4/4',
+            duration: '12:00',
+            tempoMarking: 'Andante Sostenuto',
+            description: 'The famous humming chorus as Butterfly waits',
+            musicalElements: {
+              mood: ['Mystical', 'Ethereal', 'Melancholic'],
+              instrumentation: ['Orchestra', 'Chorus'],
+              dynamics: 'Pianissimo to Mezzo-piano'
+            }
+          },
+          {
+            title: 'Butterfly\'s Despair',
+            sectionNumber: 4,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'A Major',
+            tempo: 95,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Andante',
+            description: 'Butterfly\'s growing despair and loneliness',
+            musicalElements: {
+              mood: ['Despairing', 'Lonely', 'Melancholic'],
+              instrumentation: ['Orchestra', 'Soprano', 'Mezzo-Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
             }
           }
         ]
@@ -293,19 +527,73 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
         description: 'Pinkerton returns with American wife, Butterfly\'s suicide',
         sections: [
           {
-            title: 'Tragic Finale',
+            title: 'Pinkerton\'s Return',
             sectionNumber: 1,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'D Minor',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Moderato',
+            description: 'Pinkerton returns with his American wife',
+            musicalElements: {
+              mood: ['Dramatic', 'Tense', 'Foreboding'],
+              instrumentation: ['Orchestra', 'Tenor', 'Soprano', 'Baritone'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'Butterfly\'s Discovery',
+            sectionNumber: 2,
+            sectionType: 'scene',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'D Minor',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Allegro',
+            description: 'Butterfly discovers Pinkerton\'s betrayal',
+            musicalElements: {
+              mood: ['Devastating', 'Tragic', 'Heartbreaking'],
+              instrumentation: ['Full Orchestra', 'Soprano', 'Tenor', 'Mezzo-Soprano'],
+              dynamics: 'Forte to Fortissimo'
+            }
+          },
+          {
+            title: 'Butterfly\'s Suicide',
+            sectionNumber: 3,
             sectionType: 'scene',
             musicalFunction: 'resolution',
             complexity: 'complex',
             key: 'D Minor',
-            tempo: 100,
+            tempo: 95,
             timeSignature: '4/4',
-            duration: '50:00',
-            tempoMarking: 'Moderato',
-            description: 'Pinkerton returns with American wife, Butterfly\'s suicide',
+            duration: '10:00',
+            tempoMarking: 'Andante Sostenuto',
+            description: 'Butterfly\'s tragic suicide',
             musicalElements: {
               mood: ['Tragic', 'Devastating', 'Poignant'],
+              instrumentation: ['Full Orchestra', 'Soprano'],
+              dynamics: 'Pianissimo to Forte'
+            }
+          },
+          {
+            title: 'Final Lament',
+            sectionNumber: 4,
+            sectionType: 'scene',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'D Minor',
+            tempo: 85,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Andante Sostenuto',
+            description: 'The final lament and Pinkerton\'s grief',
+            musicalElements: {
+              mood: ['Devastating', 'Tragic', 'Heartbreaking'],
               instrumentation: ['Full Orchestra', 'All Voices', 'Chorus'],
               dynamics: 'From Whispered to Forte'
             }
