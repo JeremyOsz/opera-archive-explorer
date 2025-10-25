@@ -2372,5 +2372,196 @@ export const VERDI_METADATA: Record<string, WorkMusicalMetadata> = {
       }
     ],
     notes: 'Collection of the most famous arias and duets from Verdi\'s Rigoletto. Features the famous "Caro nome", "La donna è mobile", and the quartet "Bella figlia dell\'amore".'
+  },
+
+  'lp_il-trovatore-highlights_giuseppe-verdi-orchestra-del-teatro-del': {
+    identifier: 'lp_il-trovatore-highlights_giuseppe-verdi-orchestra-del-teatro-del',
+    metadataComplete: true,
+    overallKey: 'C Minor',
+    overallTempo: 110,
+    genre: ['Opera', 'Romantic', 'Classical', 'Highlights'],
+    instrumentation: ['Full Orchestra', 'Soprano', 'Tenor', 'Baritone', 'Mezzo-Soprano', 'Chorus'],
+    mood: ['Dramatic', 'Tragic', 'Passionate', 'Mysterious'],
+    duration: '60:00',
+    acts: [
+      {
+        actNumber: 1,
+        title: 'Highlights from Il Trovatore',
+        key: 'C Minor',
+        tempo: 110,
+        timeSignature: '4/4',
+        duration: '60:00',
+        tempoMarking: 'Various',
+        description: 'Collection of the most famous highlights from Il Trovatore',
+        sections: [
+          {
+            title: 'Anvil Chorus',
+            sectionNumber: 1,
+            sectionType: 'chorus',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'F Major',
+            tempo: 105,
+            timeSignature: '4/4',
+            duration: '6:00',
+            tempoMarking: 'Allegro',
+            description: 'The famous "Vedi! le fosche notturne spoglie"',
+            musicalElements: {
+              mood: ['Joyful', 'Celebratory', 'Festive'],
+              instrumentation: ['Orchestra', 'Chorus'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'Stride la vampa',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'F Minor',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'Azucena\'s aria "The flame crackles"',
+            musicalElements: {
+              mood: ['Dramatic', 'Passionate', 'Mysterious'],
+              instrumentation: ['Orchestra', 'Mezzo-Soprano'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'Tacea la notte placida',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'A-flat Major',
+            tempo: 90,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'Leonora\'s aria "The peaceful night was silent"',
+            musicalElements: {
+              mood: ['Romantic', 'Tender', 'Beautiful'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Di quella pira',
+            sectionNumber: 4,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'C Major',
+            tempo: 120,
+            timeSignature: '4/4',
+            duration: '4:00',
+            tempoMarking: 'Allegro',
+            description: 'Manrico\'s famous aria "From that pyre"',
+            musicalElements: {
+              mood: ['Heroic', 'Dramatic', 'Passionate'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Fortissimo'
+            }
+          },
+          {
+            title: 'Miserere',
+            sectionNumber: 5,
+            sectionType: 'quartet',
+            musicalFunction: 'development',
+            complexity: 'complex',
+            key: 'G Minor',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'The famous quartet "Miserere"',
+            musicalElements: {
+              mood: ['Dramatic', 'Intense', 'Passionate'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor', 'Mezzo-Soprano', 'Baritone'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'D\'amor sull\'ali rosee',
+            sectionNumber: 6,
+            sectionType: 'aria',
+            musicalFunction: 'resolution',
+            complexity: 'moderate',
+            key: 'A-flat Major',
+            tempo: 90,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'Leonora\'s aria "On the rosy wings of love"',
+            musicalElements: {
+              mood: ['Romantic', 'Tender', 'Beautiful'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Condotta ell\'era in ceppi',
+            sectionNumber: 7,
+            sectionType: 'aria',
+            musicalFunction: 'resolution',
+            complexity: 'moderate',
+            key: 'F Minor',
+            tempo: 95,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Andante',
+            description: 'Azucena\'s aria "She was led in chains"',
+            musicalElements: {
+              mood: ['Dramatic', 'Tragic', 'Passionate'],
+              instrumentation: ['Orchestra', 'Mezzo-Soprano'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Finale',
+            sectionNumber: 8,
+            sectionType: 'ensemble',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'C Minor',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Allegro',
+            description: 'The tragic finale with all characters',
+            musicalElements: {
+              mood: ['Tragic', 'Devastating', 'Final'],
+              instrumentation: ['Full Orchestra', 'All Voices'],
+              dynamics: 'Piano to Fortissimo'
+            }
+          }
+        ]
+      }
+    ],
+    musicalAnalysis: {
+      keySignature: 'C Minor',
+      timeSignature: '4/4',
+      harmonicComplexity: 'moderate',
+      melodicStyle: 'dramatic'
+    },
+    notablePerformances: [
+      {
+        year: 1962,
+        conductor: 'Arturo Basile',
+        orchestra: 'Orchestra Del Teatro Dell\'Opera Di Roma',
+        venue: 'Rome',
+        singers: [
+          { name: 'Coro Del Teatro Dell\'Opera Di Roma', role: 'Chorus' }
+        ],
+        significance: 'Collection of highlights from Il Trovatore',
+        historicalContext: 'This recording features the most famous moments from Verdi\'s Il Trovatore.',
+        recordingLabel: 'EMI',
+        notes: 'A comprehensive collection of the most celebrated moments from one of Verdi\'s most popular operas.'
+      }
+    ],
+    notes: 'Collection of the most famous highlights from Verdi\'s Il Trovatore. Features the "Anvil Chorus", "Stride la vampa", "Di quella pira", and the "Miserere" quartet.'
   }
 };
