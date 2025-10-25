@@ -1,5 +1,6 @@
 import { OperaRecording, ArchiveResponse, SearchFilters } from '@/app/types/opera';
 import { MockMusicalDataGenerator } from './mock-musical-data';
+import { loadArchiveCache, searchCachedWorks, getCachedWorkById } from './cache-loader';
 
 const ARCHIVE_API_BASE = 'https://archive.org/advancedsearch.php';
 
@@ -52,6 +53,42 @@ export class ArchiveAPI {
   }
 
   static async searchOperas(filters: SearchFilters, page: number = 1, rows: number = 50): Promise<ArchiveResponse> {
+    // Try to use cached data first
+    const cache = loadArchiveCache();
+    if (cache) {
+      console.log('📁 Using bundled cache for search');
+      const cachedResults = searchCachedWorks(filters.query, {
+        creator: filters.creator,
+        date: filters.date,
+        language: filters.language
+      });
+      
+      // Apply pagination to cached results
+      const start = (page - 1) * rows;
+      const end = start + rows;
+      const paginatedResults = cachedResults.slice(start, end);
+      
+      // Convert lightweight results to OperaRecording format for compatibility
+      const convertedResults = paginatedResults.map(work => ({
+        ...work,
+        mediatype: 'audio',
+        publicdate: work.date || '',
+        addeddate: work.date || '',
+        collection: [],
+        format: [],
+        files: [],
+        metadata: {}
+      }));
+
+      return {
+        numFound: cachedResults.length,
+        start: start,
+        docs: convertedResults
+      };
+    }
+    
+    // Fallback to live API if no cache
+    console.log('🌐 No cache found, fetching from live API');
     const query = this.buildQuery(filters);
     
     return this.fetchFromArchive({
@@ -63,6 +100,25 @@ export class ArchiveAPI {
   }
 
   static async getOperaById(identifier: string): Promise<OperaRecording | null> {
+    // Try to use cached data first
+    const cachedWork = getCachedWorkById(identifier);
+    if (cachedWork) {
+      console.log('📁 Using bundled cache for opera:', identifier);
+      // Convert lightweight work to OperaRecording format
+      return {
+        ...cachedWork,
+        mediatype: 'audio',
+        publicdate: cachedWork.date || '',
+        addeddate: cachedWork.date || '',
+        collection: [],
+        format: [],
+        files: [],
+        metadata: {}
+      };
+    }
+    
+    // Fallback to live API if not in cache
+    console.log('🌐 Opera not in cache, fetching from live API:', identifier);
     try {
       const response = await fetch(`https://archive.org/metadata/${identifier}`, {
         headers: {
