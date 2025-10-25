@@ -1,0 +1,3391 @@
+WORK AND COMPOSER ANALYSIS
+==========================
+
+TOTAL WORKS: 846
+
+ALL WORKS:
+==========
+1. lp_seattle-youth-symphony-orchestra-1967-1_vilem-sokol
+   Title: Seattle Youth Symphony Orchestra 1967-1968
+   Creator: Vilem Sokol
+
+2. lp_delightful-divertimentos-pretty-partit_johann-joachim-quantz-carl-stamitz-jan
+   Title: Delightful Divertimentos & Pretty Partitas By Stamitz, Quantz, Krumlovsky, Buoncini & Schmelzer
+   Creator: Johann Joachim Quantz, Carl Stamitz, Jan Krumlowský, Giovanni Bononcini, Johann Heinrich Schmelzer
+
+3. lp_shakespeare-songs-volume-iii_lawrence-chelsi-baritone
+   Title: Shakespeare Songs (Volume III)
+   Creator: Lawrence Chelsi, Baritone
+
+4. lp_shakespeare-songs-volume-ii_lawrence-chelsi-baritone
+   Title: Shakespeare Songs (Volume II)
+   Creator: Lawrence Chelsi, Baritone
+
+5. lp_manon-lescaut_giacomo-puccini_4
+   Title: Manon Lescaut
+   Creator: Giacomo Puccini
+
+6. lp_daphnis-et-chloe_charles-mouton-joseph-bodin-de-boismort
+   Title: Daphnis Et Chloe
+   Creator: Charles Mouton, Joseph Bodin de Boismortier, Michel De La Barre, Jean-Marie Leclair
+
+7. lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1
+   Title: Madama Butterfly
+   Creator: Giacomo Puccini, Dimitri Mitropoulos, Dorothy Kirsten, Daniele Barioni
+
+8. lp_echoes-of-budapest_imre-magyari-and-his-gypsy-orchestra
+   Title: Echoes Of Budapest
+   Creator: Imre Magyari And His Gypsy Orchestra
+
+9. lp_tosca_puccini
+   Title: Tosca
+   Creator: Puccini
+
+10. lp_polka-party-favorites_polish-american-string-band
+   Title: Polka Party Favorites
+   Creator: Polish-American String Band
+
+11. lp_a-german-requiem_johannes-brahms-elisabeth-schwarzkopf-d_2
+   Title: A German Requiem
+   Creator: Johannes Brahms, Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, Otto Klemperer, Philharmonia Orchestra, Philharmonia Chorus
+
+12. lp_normon-cordon-sings-kipling-songs-and-o_norman-cordon
+   Title: Normon Cordon Sings Kipling Songs And Oratorio Arias
+   Creator: Norman Cordon
+
+13. lp_belshazzar-complete-in-english_georg-friedrich-handel
+   Title: Belshazzar (Complete In English)
+   Creator: Georg Friedrich Händel
+
+14. lp_recorded-live-at-a-german-party-guten-t_paul-mann-and-his-musicians-and-singers
+   Title: Recorded Live At A German Party: "Guten Tag" Prosit
+   Creator: Paul Mann And His Musicians And Singers
+
+15. lp_voices-of-switzerland_various-bob-schneider-jodelklub-glarnis
+   Title: Voices of Switzerland
+   Creator: Various, Bob Schneider, Jodelklub Glärnisch, Margaret Eberle, Marie Scoller, New Glarus Men's Choir, Rene Planta, Robbie Schneider, Roger Brights Band, The Roger Bright Band
+
+16. lp_midnight-in-athens-new-songs-from-gre_takes-athenaios-yovanna-zoe-kouroukle
+   Title: Midnight In Athens - New Songs From Greece
+   Creator: Τάκης Αθηναίος, Yovanna, Ζωή Κουρούκλη
+
+17. lp_music-and-musicians-of-canada-centennia_r-murray-schafer-john-weinzweig-udo-kas
+   Title: Music And Musicians Of Canada Centennial Edition Vol VI / Musique Et Musiciens Du Canada Edition Du Centenaire Vol VI
+   Creator: R. Murray Schafer, John Weinzweig, Udo Kasemets, Phyllis Mailing, Toronto Woodwind Quintet
+
+18. lp_the-sound-of-the-sun_the-westland-steel-band
+   Title: The Sound Of The Sun
+   Creator: The Westland Steel Band
+
+19. lp_missa-paschalis-missa-pulcherrima_marcin-leopolita-bartlomiej-pekiel
+   Title: Missa Paschalis, Missa Pulcherrima
+   Creator: Marcin Leopolita, Bartłomiej Pękiel
+
+20. lp_millie-novak-sings-international-folk-s_millie-novak
+   Title: Millie Novak Sings International Folk Songs
+   Creator: Millie Novak
+
+21. lp_der-bettelstudent-gasparone_kolner-rundfunk-sinfonie-orchester-carl
+   Title: Der Bettelstudent / Gasparone
+   Creator: Kölner Rundfunk-Sinfonie-Orchester, Carl Millöcker
+
+22. lp_mario-basiola-baritone_huc-santana
+   Title: Mario Basiola, Baritone
+   Creator: Huc-Santana
+
+23. lp_rumania_alan-lomax-elena-constantinescu-florica
+   Title: Rumania
+   Creator: Alan Lomax, Elena Constantinescu, Florica Mîzgoi, Fănică Luca, Iosana Bud, Iosif Milu, Magdalena Biriescu, Maria Lătărețu, The Folk Orchestra Of The People's Council Of Bacău
+
+24. lp_international-song-collection_yaffa-yarkoni
+   Title: International Song Collection
+   Creator: Yaffa Yarkoni
+
+25. lp_recital-of-songs_patricia-neway-thomas-mayer-giuseppe-ve
+   Title: Recital Of Songs
+   Creator: Patricia Neway, Thomas Mayer, Giuseppe Verdi, Vincenzo Bellini, Pietro Mascagni
+
+26. lp_songs-of-italy_juan-oncina-carlo-sito
+   Title: Songs Of Italy
+   Creator: Juan Oncina, Carlo Sito
+
+27. lp_songs-of-brazil-clara-petraglia-accom_clara-petraglia
+   Title: Songs Of Brazil - Clara Petraglia Accompanying Herself On The Guitar
+   Creator: Clara Petraglia
+
+28. lp_laudario-91-di-cortone_societa-cameristica-di-lugano-edwin-loe
+   Title: Laudario 91 Di Cortone
+   Creator: Societa Cameristica Di Lugano, Edwin Loehrer
+
+29. lp_manuel-ausensi-sings-mozart-and-cimaros_manuel-ausensi-wolfgang-amadeus-mozart
+   Title: Manuel Ausensi Sings Mozart And Cimarosa
+   Creator: Manuel Ausensi, Wolfgang Amadeus Mozart, Domenico Cimarosa, Gran Orquesta Sinfónica, Ricard Lamote de Grignon
+
+30. lp_mario-ancona-and-g-mario-sammarco_mario-ancona-g-mario-sammarco
+   Title: Mario Ancona And G. Mario Sammarco
+   Creator: Mario Ancona, G. Mario Sammarco
+
+31. lp_la-rosa-del-azafran_romero-fernandez-shaw-guerrero-teresa-b
+   Title: La Rosa Del Azafran
+   Creator: Romero, Fernandez Shaw, Guerrero, Teresa Bergansa, Manuel Ausensi, Julita Bermejo, Gerardo Monreal
+
+32. lp_russian-songs-volume-2_oda-slobodskaya
+   Title: Russian Songs (Volume 2)
+   Creator: Oda Slobodskaya
+
+33. lp_gregorian-chants-the-feast-of-saint-mi_choeur-des-moniales-de-labbaye-notre-da
+   Title: Gregorian Chants ; The Feast Of Saint Michael
+   Creator: Choeur Des Moniales De L'Abbaye Notre-Dame D'Argentan
+
+34. lp_masses-and-motets_giovanni-pierluigi-da-palestrina-les-ch
+   Title: Masses And Motets
+   Creator: Giovanni Pierluigi da Palestrina, Les Chanteurs De Saint-Eustache, Emile Martin
+
+35. lp_the-music-of-josef-alexander-vol-1_josef-alexander-evelyn-mandac-ny-philmu
+   Title: The Music Of Josef Alexander Vol. 1
+   Creator: Josef Alexander, Evelyn Mandac, N.Y Philmusica Chamber Ensemble
+
+36. lp_masses-from-the-kyriale-and-ancient-lit_choeur-des-moines-de-labbaye-saint-pier
+   Title: Masses From The Kyriale And Ancient Litanies
+   Creator: Chœur Des Moines De L'Abbaye Saint-Pierre De Solesmes, Dom Joseph Gajard
+
+37. lp_singers-of-imperial-russia_feodor-chaliapin-lydia-lipkovska-antoni
+   Title: Singers Of Imperial Russia
+   Creator: Feodor Chaliapin, Lydia Lipkovska, Антонина Васильевна Нежданова, Дмитрий Смирнов, Леонид Витальевич Собинов, Olimpia Boronat
+
+38. lp_battle-victory_carl-maria-von-weber-rundfunk-sinfonie
+   Title: Battle & Victory
+   Creator: Carl Maria von Weber, Rundfunk-Sinfonie-Orchester Leipzig, Herbert Kegel
+
+39. lp_journey-to-love-voyage-vers-lamour-ball_rebekah-harkness-dartega-and-his-orches
+   Title: Journey to Love (Voyage vers l'Amour Ballet) The Symphony of the Air Conducted by D'Artega
+   Creator: Rebekah Harkness, D'Artega And His Orchestra, Blevins Davis
+
+40. lp_wagner-tannhauser-die-gotterdammerung-t_richard-wagner-rudolf-kempe-berliner-ph
+   Title: Wagner: Tannhauser, Die Gotterdammerung, The Flying Dutchman
+   Creator: Richard Wagner, Rudolf Kempe, Berliner Philharmoniker, Women's Chorus Of The Berlin State Opera
+
+41. lp_mongo-santamaria-explodes-at-the-villag_mongo-santamaria
+   Title: Mongo Santamaria Explodes At The Village Gate
+   Creator: Mongo Santamaria
+
+42. lp_persephone_igor-stravinsky-orchestre-de-la-societe
+   Title: Persephone
+   Creator: Igor Stravinsky, Orchestre De La Société Des Concerts Du Conservatoire, André Cluytens
+
+43. lp_music-at-the-court-of-leopold-i-1640-17_johann-joseph-fux-heinrich-ignaz-franz
+   Title: Music At The Court Of Leopold I (1640-1705)
+   Creator: Johann Joseph Fux, Heinrich Ignaz Franz Biber, Johann Heinrich Schmelzer, Giovanni Legrenzi, Concentus Musicus Wien, Nikolaus Harnoncourt
+
+44. lp_the-roaring-20s_the-charleston-city-all-stars
+   Title: The Roaring 20's
+   Creator: The Charleston City All-Stars
+
+45. lp_music-of-the-16th-and-17th-centuries-vo_thomas-tomkins-denis-stevens-martindale
+   Title: Music Of The 16th And 17th Centuries, Volume 5: Part 1: Musica Deo Sacra
+   Creator: Thomas Tomkins, Denis Stevens, Martindale Sidwell
+
+46. lp_a-childs-garden-of-verses_seymour-barab-russell-oberlin_0
+   Title: A Child's Garden Of Verses
+   Creator: Seymour Barab, Russell Oberlin
+
+47. lp_in-opera-and-song_hedwig-francillo-kauffmann
+   Title: In Opera And Song
+   Creator: Hedwig Francillo-Kauffmann
+
+48. lp_stabat-mater_gioacchino-rossini-rias-symphonie-orche
+   Title: Stabat Mater
+   Creator: Gioacchino Rossini, RIAS Symphonie-Orchester Berlin, RIAS-Kammerchor, Ferenc Fricsay, Chor Der St. Hedwigs-Kathedrale Berlin
+
+49. lp_moby-dick_bernard-herrmann
+   Title: Moby Dick
+   Creator: Bernard Herrmann
+
+50. lp_the-chinese-flute-transmutation-the-h_dorothy-renzi-ernst-toch-marga-richter
+   Title: The Chinese Flute / Transmutation / The Hermit / Fishing Picture
+   Creator: Dorothy Renzi, Ernst Toch, Marga Richter
+
+51. lp_comus-masque-by-john-milton_thomas-arne-margaret-ritchie-elsie-mori
+   Title: Comus - Masque by John Milton
+   Creator: Thomas Arne, Margaret Ritchie, Elsie Morison, William Herbert, St. Anthony Singers, Ensemble Orchestral De L'Oiseau-Lyre, Anthony Lewis, Ruggero Gerlin
+
+52. lp_jean-philippe-rameau_jean-philippe-rameau
+   Title: Jean Philippe Rameau
+   Creator: Jean Philippe Rameau
+
+53. lp_the-georgics-of-virgil_virgil-cecil-day-lewis
+   Title: The Georgics Of Virgil
+   Creator: Virgil, Cecil Day Lewis
+
+54. lp_music-for-voices-viols-in-the-time-of_elizabethan-consort-of-viols-golden-age
+   Title: Music for Voices & Viols in the Time of Shakespeare
+   Creator: Elizabethan Consort Of Viols, Golden Age Singers, Roger Pugh, Hermann Leeb
+
+55. lp_music-of-the-16th-and-17th-centuries-vo_the-new-york-catch-club-saville-clark
+   Title: Music Of The 16th And 17th Centuries Volume 8: Catch That Catch Can
+   Creator: The New York Catch Club, Saville Clark
+
+56. lp_the-trumpets-cantata-for-bass-chorus-br_gilbert-vinter
+   Title: The Trumpets: Cantata For Bass, Chorus, Brass And Percussion
+   Creator: Gilbert Vinter
+
+57. lp_highlights-handel-messiah_elisabeth-schwarzkopf-nicolai-gedda-jer_0
+   Title: Highlights Handel Messiah
+   Creator: Elisabeth Schwarzkopf, Nicolai Gedda, Jerome Hines, Philharmonia Orchestra, Philharmonia Chorus
+
+58. lp_gloria-kyrie-lauda-jerusalem_antonio-vivaldi-ensemble-vocal-stephane
+   Title: Gloria - Kyrie - Lauda Jerusalem
+   Creator: Antonio Vivaldi, Ensemble Vocal Stéphane Caillat, Orchestre De Chambre Jean-François Paillard, Stéphane Caillat
+
+59. lp_stabat-mater_giovanni-battista-pergolesi-evelyn-lear
+   Title: Stabat Mater
+   Creator: Giovanni Battista Pergolesi, Evelyn Lear, Christa Ludwig, Lorin Maazel
+
+60. lp_haydn-missa-solemnis-of-the-year-1799-i_clemens-krauss-anny-felbermayer-dagmar
+   Title: Haydn Missa Solemnis Of The Year 1799 In B Flat Major "Theresienmesse"
+   Creator: Clemens Krauss, Anny Felbermayer, Dagmar Hermann, Julius Patzak, Josef Mertin, Wiener Staatsopernchor, Wiener Symphoniker
+
+61. lp_la-contadina-astuta_giovanni-battista-pergolesi
+   Title: La Contadina Astuta
+   Creator: Giovanni Battista Pergolesi
+
+62. lp_greek-folk-songs-and-dances_panegyris
+   Title: Greek Folk Songs And Dances
+   Creator: Panegyris
+
+63. lp_zymanowski-art-songs-jestem-i-placze_karol-szymanowski-antonina-kawecka-alic
+   Title: Zymanowski: Art Songs. "Jestem I Placze"
+   Creator: Karol Szymanowski, Antonina Kawecka, Alice Wightman
+
+64. lp_the-beautiful-galatea-die-schone-galath_franz-von-suppe-elisabeth-roon-waldemar
+   Title: The Beautiful Galatea (Die Schöne Galathee)
+   Creator: Franz von Suppé, Elisabeth Roon, Waldemar Kmentt, Kurt Preger, Otto Wiener, Hans Hagen
+
+65. lp_romeo-and-juliet-duet-the-prayer_pyotr-ilyich-tchaikovsky-mikhail-ivanov
+   Title: Romeo And Juliet Duet, The Prayer
+   Creator: Pyotr Ilyich Tchaikovsky, Mikhail Ivanovich Glinka, Сергей Лемешев, Tatiana Lavrova, Іван Козловський, Moscow Philharmonic Orchestra, Bolshoi Theatre Orchestra
+
+66. lp_coral-island-water-music-vocalism-ai_toru-takemitsu-yomiuri-nippon-symphony
+   Title: Coral Island • Water Music • Vocalism Ai (Love)
+   Creator: Toru Takemitsu, Yomiuri Nippon Symphony Orchestra, Hiroshi Wakasugi
+
+67. lp_israeli-composers_various_0
+   Title: Israeli Composers
+   Creator: Various
+
+68. lp_romances-op-54-60-63-65-and-73-volume-i_pyotr-ilyich-tchaikovsky-sergei-lemeshe
+   Title: Romances Op. 54, 60, 63, 65 And 73, Volume II
+   Creator: Pyotr Ilyich Tchaikovsky, Сергей Лемешев, Іван Козловський, Надежда Обухова
+
+69. lp_requiem_giuseppe-verdi-igor-markevitch-moscow-p
+   Title: Requiem
+   Creator: Giuseppe Verdi, Igor Markevitch, Moscow Philharmonic Orchestra, Государственный Академический Русский Хор Им. А. В. Свешникова
+
+70. lp_mozart-coronation-mass-in-c-major-k-317_das-norddeutsche-symphonieorchester-ndr
+   Title: Mozart Coronation Mass in C major, K 317, Exsultate Jubilate K. 165, Ave Verum Corpus. K 618
+   Creator: Das Norddeutsche Symphonieorchester, NDR Chor, Walter Goehr
+
+71. lp_liszt_missa-choralis-franz-liszt-margit-laszl
+   Title: Liszt
+   Creator: Missa Choralis, Franz Liszt, Margit László, Zsuzsa Barlay, Alfonz Bartha, Sándor Palcsó, Bende Zsolt, Nádas Tibor, Sándor Margittay, Budapesti Kórus, Forrai Miklós
+
+72. lp_highlights-from-tosca_giacomo-puccini-gigliola-frazzoni-ferru
+   Title: Highlights From Tosca
+   Creator: Giacomo Puccini, Gigliola Frazzoni, Ferruccio Tagliavini, Gian Giacomo Guelfi, Antonio Zerbini, Alfredo Mariotti, Vittorio Pandano, Alberto Albertini, Editta Amedeo, Orchestra Sinfonica Di Torino Della RAI, Coro Di Torino Della RAI, Arturo Basile, Ruggero Maghini
+
+73. lp_el-matrero-le-fuirie-di-arlecchino-so_various-apollo-granforte-enzo-de-muro-l
+   Title: El Matrero / Le Fuirie Di Arlecchino / Sonnambula
+   Creator: Various, Apollo Granforte, Enzo De Muro Lomanto, Maria Gentile, Muria Zamboni, Nena Juarez, Pedro Mirassou
+
+74. lp_lhistoire-du-soldat_igor-stravinsky-igor-markevitch_1
+   Title: L'Histoire Du Soldat
+   Creator: Igor Stravinsky, Igor Markevitch
+
+75. lp_secular-spanish-music-of-the-sixteenth_ambrosian-consort-denis-stevens-roy-jes
+   Title: Secular Spanish Music Of The Sixteenth Century
+   Creator: Ambrosian Consort, Denis Stevens, Roy Jesson
+
+76. lp_das-lied-von-der-erde_gustav-mahler-hans-rosbaud_0
+   Title: Das Lied Von Der Erde
+   Creator: Gustav Mahler, Hans Rosbaud
+
+77. lp_das-grosse-abend-und-morgenlob-op37_sergei-vasilyevich-rachmaninoff
+   Title: Das Große Abend- Und Morgenlob, Op.37
+   Creator: Sergei Vasilyevich Rachmaninoff
+
+78. lp_choral-music-by-morales-victoria-and-by_cristobal-de-morales-tomas-luis-de-vict
+   Title: Choral Music By Morales, Victoria And Byrd; Madrigals And Dialogues By Giovanni Gabrieli
+   Creator: Cristóbal de Morales, Tomás Luis De Victoria, William Byrd, Giovanni Gabrieli, The Ambrosian Singers, The Ambrosian Consort, Denis Stevens
+
+79. lp_lawrence-tibbett-baritone_lawrence-tibbett-marcel-frank-hamburg-p
+   Title: Lawrence Tibbett, Baritone
+   Creator: Lawrence Tibbett, Marcel Frank, Hamburg Philharmonia Orchestra
+
+80. lp_light-cavalry-overture-the-beautiful-g_franz-von-suppe-franz-andre-orchestre-s
+   Title: Light Cavalry Overture / The Beautiful Galathea Overture
+   Creator: Franz von Suppé, Franz André, Orchestre Symphonique De La Radiodiffusion Nationale Belge, Bruxelles
+
+81. lp_carmen-preludes_artur-rother-orchester-der-stadtischen
+   Title: Carmen Preludes
+   Creator: Artur Rother, Orchester Der Städtischen Oper Berlin, Georges Bizet
+
+82. lp_matthaus-passion_johann-sebastian-bach-elly-ameling-marg
+   Title: Matthäus - Passion
+   Creator: Johann Sebastian Bach, Elly Ameling, Marga Höffgen, Peter Pears, Fritz Wunderlich, Hermann Prey, Tom Krause, Stuttgarter Hymnus-Chorknaben, Stuttgarter Kammerorchester, Karl Münchinger
+
+83. lp_saison-in-salzburg-hochzeitsnacht-im-p_friedrich-schroder-fred-raymond-herta-t_0
+   Title: Saison In Salzburg / Hochzeitsnacht Im Paradies (Grosse Operetten-Querschnitte)
+   Creator: Friedrich Schröder, Fred Raymond, Herta Talmar, Renate Holm, Peter Alexander, Franz Fehringer
+
+84. lp_chorus-organ-brass-and-percussion_columbia-university-chapel-choir-brass
+   Title: Chorus, Organ, Brass and Percussion
+   Creator: Columbia University Chapel Choir, Brass and Percussion Ensemble
+
+85. lp_2nd-essay-for-orchestra-and-other-works_samuel-barber-vladimir-golschmann-symph
+   Title: 2nd Essay For Orchestra And Other Works
+   Creator: Samuel Barber, Vladimir Golschmann, Symphony Of The Air, The Robert DeCormier Chorale, Patricia Neway, Eunice Alberts, William Lewis, Philip Maero
+
+86. lp_hermine-bosetti-1875-1936_hermine-bosetti
+   Title: Hermine Bosetti 1875-1936
+   Creator: Hermine Bosetti
+
+87. lp_meta-seinemeyer-vol-ii_meta-seinemeyer
+   Title: Meta Seinemeyer - Vol. II
+   Creator: Meta Seinemeyer
+
+88. lp_malcolm-mceachern-bass-1883-1945_malcolm-mceachern-bentley-hilliam-flots
+   Title: Malcolm McEachern (Bass) 1883-1945
+   Creator: Malcolm McEachern, Bentley Hilliam, Flotsam & Jetsam
+
+89. lp_folk-songs-of-hungary_bela-bartok-zoltan-kodaly-laszlo-csabay
+   Title: Folk Songs Of Hungary
+   Creator: Béla Bartók, Zoltán Kodály, László Csabay, Tibor Kozma
+
+90. lp_magnificat-nisi-dominus-benedictus-mo_henry-dumont-jocelyne-chamonin-gladys-f
+   Title: Magnificat / Nisi Dominus / Benedictus (Motets For The King's Chapel)
+   Creator: Henry Dumont, Jocelyne Chamonin, Gladys Félix, André Meurant, André Mallabrera, Daniel Marty, Georges Abdoun, Jacques Mars, Marie-Claire Alain, Jean Lamy, Chorale Philippe Caillard, Orchestre De Chambre Jean-François Paillard, Louis Frémaux
+
+91. lp_a-choral-concert_elaine-brown-syracuse-music-festival-ch
+   Title: A Choral Concert
+   Creator: Elaine Brown, Syracuse Music Festival Chorus
+
+92. lp_tenor-1875-1955-vol-1_leon-campagnola
+   Title: Tenor 1875-1955, Vol. 1
+   Creator: Leon Campagnola
+
+93. lp_cantata-profana_bela-bartok-walter-susskind-the-new-sym
+   Title: Cantata Profana
+   Creator: Béla Bartók, Walter Susskind, The New Symphony Orchestra Of London, The New Symphony Chorus Of London, Marko Rothmuller, Richard Lewis
+
+94. lp_the-nelson-mass_joseph-haydn-sylvia-stahlman-wilfred-br
+   Title: The Nelson Mass
+   Creator: Joseph Haydn, Sylvia Stahlman, Wilfred Brown, Helen Watts, Tom Krause, The King's College Choir Of Cambridge, The London Symphony Orchestra, David Willcocks
+
+95. lp_coloratura-soprano_sofia-del-campo
+   Title: Coloratura Soprano
+   Creator: Sofía del Campo
+
+96. lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d
+   Title: La Bohème
+   Creator: Giacomo Puccini, Maria Callas, Giuseppe di Stefano, Anna Moffo, Rolando Panerai, Orchestra Del Teatro Alla Scala, Coro Del Teatro Alla Scala, Antonino Votto
+
+97. lp_facade-music-for-a-farce_edith-sitwell-sir-william-walton-paul-b
+   Title: Facade / Music For A Farce
+   Creator: Edith Sitwell, Sir William Walton, Paul Bowles
+
+98. lp_rathgeberseyfert-11-lieder-from-ohren-v_margot-guilleaume-lotte-wolf-matthaus-b
+   Title: Rathgeber/Seyfert: 11 Lieder From Ohren-Vergnugendes Und Gemuth-Ergotzendes Tafelconfect
+   Creator: Margot Guilleaume, Lotte Wolf-Matthäus, Bernhard Michaelis, Horst Günter, Hans-Olaf Hudemann, Ilse Brix-Meinert, Rosemarie Lahrs, Josef Ulsamer, Willy Spilling
+
+99. lp_the-passion-of-jesus-according-to-mark_georg-philipp-telemann-choeur-des-jeune
+   Title: The Passion Of Jesus According To Mark
+   Creator: Georg Philipp Telemann, Chœur Des Jeunes, Lausanne, Orchestre Pro Arte De Munich, Kurt Redel
+
+100. lp_continental-songs_john-hendrik
+   Title: Continental Songs
+   Creator: John Hendrik
+
+101. lp_falstaff-1799_antonio-salieri
+   Title: Falstaff (1799)
+   Creator: Antonio Salieri
+
+102. lp_gluck-opera-recital_various-artist
+   Title: Gluck Opera Recital
+   Creator: Various Artist
+
+103. lp_elektra_richard-strauss-elisabeth-hongen-walbur
+   Title: Elektra
+   Creator: Richard Strauss, Elisabeth Höngen, Walburga Wegner, Set Svanholm, Paul Schöffler, Astrid Varnay
+
+104. lp_otello_giuseppe-verdi-carlo-maria-guichandut-c
+   Title: Otello
+   Creator: Giuseppe Verdi, Carlo Maria Guichandut, Cesy Broggini, Giuseppe Taddei, Angelo Mercuriali, Rina Corsi, Tommaso Soley, Marco Stefanoni, Alberto Albertini, Mario Conte, Orchestra Sinfonica Di Torino Della RAI, Coro Di Torino Della RAI, Franco Capuana, Ruggero Maghini
+
+105. lp_la-forza-del-destino_dimitri-mitropoulos-giuseppe-verdi-rena
+   Title: La Forza Del Destino
+   Creator: Dimitri Mitropoulos, Giuseppe Verdi, Renata Tebaldi, Mario del Monaco, Aldo Protti, Cesare Siepi, Fedora Barbieri
+
+106. lp_the-elixir-of-love_gaetano-donizetti-rosanna-carteri-luigi
+   Title: The Elixir of Love
+   Creator: Gaetano Donizetti, Rosanna Carteri, Luigi Alva, Giuseppe Taddei, Rolando Panerai, Tullio Serafin, Orchestra Del Teatro Alla Scala
+
+107. lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g
+   Title: Rigoletto
+   Creator: Maria Callas, Giuseppe di Stefano, Tito Gobbi, Giuseppe Verdi, Orchestra Del Teatro Alla Scala, Tullio Serafin
+
+108. lp_rigoletto-giuseppe-verdi_giuseppe-verdi-patagonia-festival-choru
+   Title: Rigoletto (Giuseppe Verdi)
+   Creator: Giuseppe Verdi, Patagonia Festival Chorus, Patagonia Festival Orchestra, Ralph De Cross
+
+109. lp_fantasie-in-f-minor-for-oboe-and-organ_johann-ludwig-krebs
+   Title: Fantasie in F Minor for Oboe and Organ Clavierubung
+   Creator: Johann Ludwig Krebs
+
+110. lp_songs-of-the-ghetto_sarah-gorby
+   Title: Songs Of The Ghetto
+   Creator: Sarah Gorby
+
+111. lp_the-love-for-three-oranges_d-dagat
+   Title: The Love For Three Oranges
+   Creator: D. Dagat
+
+112. lp_12-songs-and-2-comic-ensembles_wolfgang-amadeus-mozart-margot-guilleau
+   Title: 12 Songs And 2 Comic Ensembles
+   Creator: Wolfgang Amadeus Mozart, Margot Guilleaume, Lotte Wolf-Matthäus, Helmut Krebs, Fritz Wunderlich, Hans Günter Nöcker, Fritz Neumeyer
+
+113. lp_king-arthur_henry-purcell_0
+   Title: King Arthur
+   Creator: Henry Purcell
+
+114. lp_the-kiss_bedrich-smetana
+   Title: The Kiss
+   Creator: Bedrich Smetana
+
+115. lp_dido-and-aeneas_henry-purcell-victoria-de-los-angeles-p
+   Title: Dido And Aeneas
+   Creator: Henry Purcell, Victoria De Los Angeles, Peter Glossop, Heather Harper, Patricia Johnson, Elizabeth Robson, Clare Walmesley, Sybil Michelow, Robert Tear, The Ambrosian Singers, English Chamber Orchestra, Raymond Leppard, Sir John Barbirolli
+
+116. lp_la-serva-padrona_giovanni-battista-pergolesi-anna-moffo
+   Title: La Serva Padrona
+   Creator: Giovanni Battista Pergolesi, Anna Moffo, Orchestra Filarmonica Di Roma, Franco Ferrara
+
+117. lp_completorium-missa-paschalis_grzegorz-gerwazy-gorczycki_0
+   Title: Completorium / Missa Paschalis
+   Creator: Grzegorz Gerwazy Gorczycki
+
+118. lp_a-heros-life_richard-strauss-minneapolis-symphony-or
+   Title: A Hero's Life
+   Creator: Richard Strauss, Minneapolis Symphony Orchestra, Antal Dorati
+
+119. lp_symphony-no-7-in-e-major-original-vers_anton-bruckner-sudwestfunkorchester-bad_0
+   Title: Symphony No. 7 In E Major (Original Version)
+   Creator: Anton Bruckner, Südwestfunkorchester Baden-Baden, Hans Rosbaud
+
+120. lp_dalibor_bedrich-smetana-sbor-narodniho-divadla
+   Title: Dalibor
+   Creator: Bedřich Smetana, Sbor Národního Divadla, Orchestr Národního Divadla, Jaroslav Krombholc
+
+121. lp_norwegian-dances-lyric-suite-holberg_edvard-grieg-bamberger-symphoniker-edou
+   Title: Norwegian Dances: Lyric Suite - Holberg Suite - Wedding Day At Troldhaugen
+   Creator: Edvard Grieg, Bamberger Symphoniker, Edouard Van Remoortel
+
+122. lp_loeuvre-pour-orgue-3_johann-sebastian-bach-marie-claire-alai
+   Title: L'Œuvre Pour Orgue - 3
+   Creator: Johann Sebastian Bach, Marie-Claire Alain
+
+123. lp_saturn_alan-hovhaness-the-long-island-chamber
+   Title: Saturn
+   Creator: Alan Hovhaness, The Long Island Chamber Ensemble of New York
+
+124. lp_famous-voices-of-the-past_georgette-brejean-silver
+   Title: Famous Voices Of The Past
+   Creator: Georgette Brejean-Silver
+
+125. lp_before-and-after-the-summer-till-earth_gerald-finzi-john-carol-case-robert-tea
+   Title: Before And After The Summer, Till Earth Outwears, I Said To Love
+   Creator: Gerald Finzi, John Carol Case, Robert Tear, Howard Ferguson
+
+126. lp_arias-and-duet-from-rigoletto_giuseppe-verdi-lina-pagliughi-sandor-sv
+   Title: Arias And Duet From Rigoletto
+   Creator: Giuseppe Verdi, Lina Pagliughi, Sándor Svéd, Orchestra Sinfonica della Radiotelevisione Italiana, Alfredo Simonetto
+
+127. lp_theodor-bertram-1869-1907_theodor-bertram
+   Title: Theodor Bertram 1869-1907
+   Creator: Theodor Bertram
+
+128. lp_scenen-aus-gotterdammerung_richard-wagner-kirsten-flagstad-wilhelm
+   Title: Scenen Aus Götterdämmerung
+   Creator: Richard Wagner, Kirsten Flagstad, Wilhelm Furtwängler
+
+129. lp_isabeau-pagine-scelte_pietro-mascagni-marcella-pobbe-pier-mir_0
+   Title: Isabeau (Pagine Scelte)
+   Creator: Pietro Mascagni, Marcella Pobbe, Pier Miranda Ferraro, Rinaldo Rola, Orchestra Sinfonica Di Sanremo, Tullio Serafin
+
+130. lp_anniversary-album-vol-1_antonio-paoli_0
+   Title: Anniversary Album, Vol. 1
+   Creator: Antonio Paoli
+
+131. lp_jan-peerce-sings-handel-arias_jan-peerce-georg-friedrich-handel-orche
+   Title: Jan Peerce Sings Handel Arias
+   Creator: Jan Peerce, Georg Friedrich Händel, Orchester Der Wiener Staatsoper, Hans Schwieger
+
+132. lp_libusa-the-two-widows-dalibor-the-devis_smetana
+   Title: Libusa/ The Two Widows/ Dalibor/ The Devi's Wall
+   Creator: Smetana
+
+133. lp_exerpts-from-tristan-und-isolde_birgit-nilsson-richard-wagner-wiener-ph_0
+   Title: Exerpts From Tristan Und Isolde
+   Creator: Birgit Nilsson, Richard Wagner, Wiener Philharmoniker
+
+134. lp_music-from-mahler-morawetz-and-shostako_jeannette-zarou-john-coveart-helene-gag
+   Title: Music From Mahler, Morawetz and Shostakovich
+   Creator: Jeannette Zarou, John Coveart, Helene Gagne, John Newmark
+
+135. lp_brahms-four-serious-songs-op-121-dvorka_dietrich-fischer-dieskau-jorg-demus-joh
+   Title: Brahms: Four Serious Songs, Op. 121 Dvorka: Biblical Songs, Op. 99
+   Creator: Dietrich Fischer-Dieskau, Jörg Demus, Johannes Brahms, Antonín Dvořák
+
+136. lp_maria-kurenko-sings-with-orchestra_maria-kurenko-wolfgang-amadeus-mozart-g
+   Title: Maria Kurenko Sings With Orchestra
+   Creator: Maria Kurenko, Wolfgang Amadeus Mozart, Georg Friedrich Händel, Luigi Cherubini, Hector Berlioz
+
+137. lp_mlada-highlights_nikolai-rimsky-korsakov-aleksei-korolio
+   Title: Mlada (Highlights)
+   Creator: Nikolai Rimsky-Korsakov, Алексей Королёв, Tatiana Tugarinova, Владимир Махов, Нина Кулагина, Большой Хор Всесоюзного Радио, Большой Симфонический Оркестр Всесоюзного Радио, Evgeni Svetlanov
+
+138. lp_highlights-from-romeo-et-juliette_raoul-jobin-janine-micheau
+   Title: Highlights From "Roméo Et Juliette"
+   Creator: Raoul Jobin, Janine Micheau
+
+139. lp_les-huguenots_giacomo-meyerbeer-amelia-talexis-antoni
+   Title: Les Huguenots
+   Creator: Giacomo Meyerbeer, Amelia Talexis, Antonio Magini-Coletti, Emmy Destinn, Enrico Caruso, Ferruccio Corradetti, Giuseppe Sala, Jean Francois Delmas, Juste Nivette, Karl Jörn, Leon Escalais, Louise Homer, Oreste Luppi
+
+140. lp_les-illuminations-glockenlieder_benjamin-britten-max-von-schillings-hel
+   Title: Les Illuminations / Glockenlieder
+   Creator: Benjamin Britten, Max von Schillings, Helmut Krebs, Symphony Orchestra Of Radio Berlin, Arthur Rother, Peter Anders, Prussian State Orchestra, Robert Heger
+
+141. lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte
+   Title: Verdi, La Traviata
+   Creator: Victoria De Los Angeles, Carlo Del Monte, Mario Sereni, Orchestra Del Teatro Dell'Opera Di Roma, Coro Del Teatro Dell'Opera Di Roma, Tullio Serafin
+
+142. lp_excerpts-from-the-widow-la-veuve_calixa-lavallee-cbc-winnipeg-chorus-and
+   Title: Excerpts From The Widow (La Veuve)
+   Creator: Calixa Lavallée, CBC Winnipeg Chorus And Orchestra
+
+143. lp_il-trovatore_giuseppe-verdi-giacomo-lauri-volpi-cate
+   Title: Il Trovatore
+   Creator: Giuseppe Verdi, Giacomo Lauri-Volpi, Caterina Mancini, Carlo Tagliabue, Miriam Pirazzini, Fernando Previtali, Alfredo Colella, Graziella Sciutti, Mario Carlin, Ezio Achilli
+
+144. lp_david-beg-armenian-opera-in-three-act_armen-tigranian-orchestra-of-the-armeni_0
+   Title: David-Beg - Armenian Opera In Three Acts
+   Creator: Armen Tigranian, Orchestra Of The Armenian State Theater Of Opera And Ballet, Mikhail Tavrizian
+
+145. lp_anush-armenian-opera-in-five-acts_armen-tigranian-mikhail-tavrizian
+   Title: Anush (Armenian Opera in Five Acts)
+   Creator: Armen Tigranian, Mikhail Tavrizian
+
+146. lp_music-by-ernst-bacon_ernst-bacon
+   Title: Music By Ernst Bacon
+   Creator: Ernst Bacon
+
+147. lp_johannes-uppenbarelse-symfoni-nr-4-for_hilding-rosenberg_0
+   Title: Johannes Uppenbarelse. Symfoni Nr 4 For Barytonsolo, Kor Och Orkester (1940)
+   Creator: Hilding Rosenberg
+
+148. lp_melodies-of-gabriel-faure_gerard-souzay-dalton-baldwin_0
+   Title: Melodies of Gabriel Fauré
+   Creator: Gérard Souzay, Dalton Baldwin
+
+149. lp_music-for-christmas_karl-michael-komma
+   Title: Music For Christmas
+   Creator: Karl Michael Komma
+
+150. lp_euryanthe_carl-maria-von-weber_0
+   Title: Euryanthe
+   Creator: Carl Maria von Weber
+
+151. lp_der-jasager-an-opera-in-two-acts_kurt-weill-bertolt-brecht
+   Title: Der Jasager - An Opera In Two Acts
+   Creator: Kurt Weill, Bertolt Brecht
+
+152. lp_max-lichtegg-sings-from-lehar-operettas_max-lichtegg-tonhalle-orchester-zurich
+   Title: Max Lichtegg Sings From Lehar Operettas
+   Creator: Max Lichtegg, Tonhalle-Orchester Zürich, Victor Reinshagen
+
+153. lp_songs-and-dances-of-spain-volume-2-majo_various
+   Title: Songs And Dances Of Spain Volume 2: Majorca And Ibiza
+   Creator: Various
+
+154. lp_il-maestro-di-musica-the-music-master-c_giovanni-battista-pergolesi
+   Title: Il Maestro Di Musica ("The Music Master") (Complete)
+   Creator: Giovanni Battista Pergolesi
+
+155. lp_the-wind-remains_paul-bowles_0
+   Title: The Wind Remains
+   Creator: Paul Bowles
+
+156. lp_divine-liturgy-of-st-john-chrysostom_nikolai-p-afonsky-cathedral-choir-of-th
+   Title: Divine Liturgy of St. John Chrysostom
+   Creator: Nikolai P. Afonsky, Cathedral Choir of the Holy Virgin Protection Cathedral of New York
+
+157. lp_the-play-of-daniel-a-twelfth-century-mu_new-york-pro-musica-noah-greenberg
+   Title: The Play Of Daniel (A Twelfth Century Musical Drama)
+   Creator: New York Pro Musica, Noah Greenberg
+
+158. lp_la-fida-ninfa_antonio-vivaldi_1
+   Title: La Fida Ninfa
+   Creator: Antonio Vivaldi
+
+159. lp_an-eighteenth-century-vocal-recital_bethany-beardslee-joseph-haydn-giovanni
+   Title: An Eighteenth Century Vocal Recital
+   Creator: Bethany Beardslee, Joseph Haydn, Giovanni Battista Pergolesi, Stephen Storace
+
+160. lp_djamileh_georges-bizet-andrea-guiot-guy-fouche
+   Title: Djamileh
+   Creator: Georges Bizet, Andréa Guiot, Guy Fouché
+
+161. lp_lieder-recital_florence-easton-dusolina-giannini
+   Title: Lieder Recital
+   Creator: Florence Easton, Dusolina Giannini
+
+162. lp_christ-on-the-mount-of-olives_ludwig-van-beethoven-orchester-der-wien
+   Title: Christ On The Mount Of Olives
+   Creator: Ludwig van Beethoven, Orchester Der Wiener Staatsoper, Hermann Scherchen, Jan Peerce, Maria Stader, Otto Wiener
+
+163. lp_prs-80th-birthday-presentation_arthur-bliss-the-london-symphony-orches
+   Title: PRS 80th Birthday Presentation
+   Creator: Arthur Bliss, The London Symphony Orchestra, Brian Priestman, Philip Ledger
+
+164. lp_organ-music-by-liszt-volume-3_richard-ellsasser
+   Title: Organ Music By Liszt - Volume 3
+   Creator: Richard Ellsasser
+
+165. lp_piccolo-magnificat-le-rossignol-cantata_magda-laszlo-johann-sebastian-bach-geor
+   Title: Piccolo Magnificat, Le Rossignol, Cantata
+   Creator: Magda Laszlo, Johann Sebastian Bach, Georg Friedrich Händel, Alessandro Scarlatti
+
+166. lp_music-of-buxtehude-lutenist-songs_dieterich-buxtehude-various-alfred-dell
+   Title: Music Of Buxtehude & Lutenist Songs
+   Creator: Dieterich Buxtehude, Various, Alfred Deller, Denis Vaughan, Eileen McLoughlin, Maurice Bevan, Eli Goren, Leonard Friedman, Anna Shuttleworth, Desmond Dupré
+
+167. lp_the-english-madrigal-school-madrigals-o_john-wilbye-thomas-morley-deller-consor
+   Title: The English Madrigal School (Madrigals Of John Willbye And Thomas Morley)
+   Creator: John Wilbye, Thomas Morley, Deller Consort, Alfred Deller
+
+168. lp_die-bernauerin-ein-bairisches-stuck-q_carl-orff
+   Title: Die Bernauerin (Ein Bairisches Stück) - Querschnitt
+   Creator: Carl Orff
+
+169. lp_lament-for-the-death-of-a-bullfighter_maurice-ohana-ataulfo-argenta-orchestre
+   Title: Lament For The Death Of A Bullfighter
+   Creator: Maurice Ohana, Ataúlfo Argenta, Orchestre Des Cento Soli
+
+170. lp_contralto-1875-1932-tenot-1858-1921_marie-delna-agustarello-affre
+   Title: Contralto 1875-1932 Tenot 1858-1921
+   Creator: Marie Delna, Agustarello Affre
+
+171. lp_cantata-no-4-christ-lag-in-todesbanden_johann-sebastian-bach-thomanerchor-gewa
+   Title: Cantata No. 4, 'Christ Lag In Todesbanden', Cantata No. 111, 'Was Mein Gott Will, Das G'Scheh' Allzeit'
+   Creator: Johann Sebastian Bach, Thomanerchor, Gewandhausorchester Leipzig, Kurt Thomas
+
+172. lp_the-unknown-century-of-american-classic_the-moravian-festival-chorus-and-orches_0
+   Title: The Unknown Century Of American Classical Music (1760-1860): Arias, Anthems And Chorales Of The American Moravians, Vol. 2
+   Creator: The Moravian Festival Chorus And Orchestra, Thor Martin Johnson
+
+173. lp_maria-stuarda_gaetano-donizetti-carlo-felice-cillario
+   Title: Maria Stuarda
+   Creator: Gaetano Donizetti, Carlo Felice Cillario
+
+174. lp_lucia-di-lammermoor_gaetano-donizetti-maria-callas-giuseppe
+   Title: Lucia di Lammermoor
+   Creator: Gaetano Donizetti, Maria Callas, Giuseppe di Stefano, Tito Gobbi, Orchestra Del Maggio Musicale Fiorentino, Coro Del Maggio Musicale Fiorentino, Tullio Serafin
+
+175. lp_cavalleria-rusticana_pietro-mascagni-orchestra-del-teatro-de_0
+   Title: Cavalleria Rusticana
+   Creator: Pietro Mascagni, Orchestra Del Teatro Dell'Opera Di Roma, Coro Del Teatro Dell'Opera Di Roma, Victoria De Los Angeles, Franco Corelli, Mario Sereni, Adriana Lazzarini, Corinna Vozza, Gabriele Santini
+
+176. lp_rusalka-opus-114-opera-in-3-acts_antonin-dvorak-orchestr-narodniho-divad
+   Title: Rusalka, Opus. 114, Opera In 3 Acts
+   Creator: Antonín Dvořák, Orchestr Národního Divadla, Zdeněk Chalabala
+
+177. lp_la-calesera_francisco-alonso-the-madrid-singers-and
+   Title: La Calesera
+   Creator: Francisco Alonso, The Madrid Singers And Symphony Orchestra, Indalecio Cisneros
+
+178. lp_opera-daran_gilbert-becaud_0
+   Title: Opera D'Aran
+   Creator: Gilbert Bécaud
+
+179. lp_la-picara-molinera_pablo-luna
+   Title: La Picara Molinera
+   Creator: Pablo Luna
+
+180. lp_the-dream-of-gerontius-op38_sir-edward-elgar-sir-john-barbirolli-ja_0
+   Title: The Dream Of Gerontius, Op.38
+   Creator: Sir Edward Elgar, Sir John Barbirolli, Janet Baker, Richard Lewis, Kim Borg, Hallé Orchestra, Sheffield Philharmonic Chorus
+
+181. lp_leoncavallo-i-pagliacci-francesco-merli_francesco-merli-leoncavallo
+   Title: Leoncavallo: I Pagliacci/ Francesco Merli: Recital
+   Creator: Francesco Merli, Leoncavallo
+
+182. lp_i-puritani_vincenzo-bellini-maria-callas-tullio-se
+   Title: I Puritani
+   Creator: Vincenzo Bellini, Maria Callas, Tullio Serafin, Giuseppe Di Stefano
+
+183. lp_giuditta-complete-operetta_franz-lehar-hilde-guden-emmy-loose-murr
+   Title: Giuditta (Complete Operetta)
+   Creator: Franz Lehár, Hilde Güden, Emmy Loose, Murray Dickie, Waldemar Kmentt, Harald Pröglhoff, Wiener Staatsopernchor, Orchester Der Wiener Staatsoper, Rudolf Moralt
+
+184. lp_judas-maccabaeus_georg-friedrich-handel_0
+   Title: Judas Maccabaeus
+   Creator: Georg Friedrich Händel
+
+185. lp_julius-caesar_georg-friedrich-handel-norman-treigle-b
+   Title: Julius Caesar
+   Creator: Georg Friedrich Händel, Norman Treigle, Beverly Sills, Maureen Forrester, Beverly Wolff, Spiro Malas, Dominic Cossa, Michael Devlin, William Beck, New York City Opera Chorus, New York City Opera Orchestra, Julius Rudel
+
+186. lp_sapho_jules-massenet-orchestra-and-chorus-of
+   Title: Sapho
+   Creator: Jules Massenet, Orchestra and Chorus Of French Radio, Pierre Michel Le Comte
+
+187. lp_kodaly-zoltan_hary-janos
+   Title: Kodaly Zoltan
+   Creator: Hary Janos
+
+188. lp_the-elixir-of-love_gaetano-donizetti-alda-noni-cesare-vall
+   Title: The Elixir Of Love
+   Creator: Gaetano Donizetti, Alda Noni, Cesare Valletti, Afro Poli, Sesto Bruscantini, Bruna Rizzoli
+
+189. lp_prince-igor_boris-christoff-sofia-national-opera-ch
+   Title: Prince Igor
+   Creator: Boris Christoff, Sofia National Opera Chorus, The Sofia National Opera Orchestra, Alexander Borodin
+
+190. lp_cunning-little-vixen_leos-janacek-hana-bohmova-libuse-domani_0
+   Title: Cunning Little Vixen
+   Creator: Leoš Janáček, Hana Böhmová, Libuše Domanínská, Rudolf Asmus, Sbor Národního Divadla, Orchestr Národního Divadla, Václav Neumann
+
+191. lp_carmen_georges-bizet-raoul-jobin-solange-miche
+   Title: Carmen
+   Creator: Georges Bizet, Raoul Jobin, Solange Michel, Michel Dens, Martha Angelici, Chœurs Du Théâtre National De L'Opéra Comique, Orchestre Du Théâtre National De L'Opéra-Comique, André Cluytens
+
+192. lp_une-education-manquee_emmanuel-chabrier-charles-bruck-christi
+   Title: Une Education Manquée
+   Creator: Emmanuel Chabrier, Charles Bruck, Christiane Castelli, Caudine Collart, Xavier Depraz
+
+193. lp_cardillac_paul-hindemith-dietrich-fischer-dieskau
+   Title: Cardillac
+   Creator: Paul Hindemith, Dietrich Fischer-Dieskau, Leonore Kirschstein, Donald Grobe, Karl Kohn, Kölner Rundfunkchor, Kölner Rundfunk-Sinfonie-Orchester, Joseph Keilberth
+
+194. lp_boris-godounov_modest-mussorgsky-boris-christoff-sofia
+   Title: Boris Godounov
+   Creator: Modest Mussorgsky, Boris Christoff, Sofia National Opera Chorus, Orchestre De La Société Des Concerts Du Conservatoire, André Cluytens
+
+195. lp_boris-godunov_modest-mussorgsky_1
+   Title: Boris Godunov
+   Creator: Modest Mussorgsky
+
+196. lp_collection-des-cinq-siecles-music-of-f_joseph-haydn_0
+   Title: Collection des cinq siecles * music of five centuries
+   Creator: Joseph Haydn
+
+197. lp_elisabetta-regina-dinghilterra_gioacchino-rossini_0
+   Title: Elisabetta, Regina D'Inghilterra
+   Creator: Gioacchino Rossini
+
+198. lp_boris-godunov_modest-mussorgsky-giorgio-tozzi-the-met
+   Title: Boris Godunov
+   Creator: Modest Mussorgsky, Giorgio Tozzi, The Metropolitan Opera House Orchestra, Dimitri Mitropoulos
+
+199. lp_la-cenerentola-cinderella_gioacchino-rossini-giulietta-simionato
+   Title: La Cenerentola = Cinderella
+   Creator: Gioacchino Rossini, Giulietta Simionato, Sesto Bruscantini, Ugo Benelli, Paolo Montarsolo, Coro Del Maggio Musicale Fiorentino, Orchestra Del Maggio Musicale Fiorentino, Oliviero De Fabritiis
+
+200. lp_khovanschina_modest-mussorgsky-miroslav-cangalovic-m
+   Title: Khovanschina
+   Creator: Modest Mussorgsky, Miroslav Čangalović, Melanija Bugarinović, Dušan Popović, Nikola Cvejić, Orkestar Beogradske Opere, Hor Beogradske Opere, Krešimir Baranović
+
+201. lp_the-barber-of-seville_gioacchino-rossini-alceo-galliera-philh
+   Title: The Barber Of Seville
+   Creator: Gioacchino Rossini, Alceo Galliera, Philharmonic Orchestra And Chorus
+
+202. lp_le-comte-ory_gioacchino-rossini-glyndebourne-festiva
+   Title: Le Comte Ory
+   Creator: Gioacchino Rossini, Glyndebourne Festival Chorus, Vittorio Gui
+
+203. lp_the-marriage-of-figaro_wolfgang-amadeus-mozart-fernando-previt
+   Title: The Marriage Of Figaro
+   Creator: Wolfgang Amadeus Mozart, Fernando Previtali
+
+204. lp_don-giovanni_wolfgang-amadeus-mozart-wiener-symphoni_0
+   Title: Don Giovanni
+   Creator: Wolfgang Amadeus Mozart, Wiener Symphoniker, Rudolf Moralt, George London, Leopold Simoneau, Walter Berry, Sena Jurinac, Graziella Sciutti
+
+205. lp_la-resurrezione-complete-oratorio_georg-friedrich-handel-edith-kertesz_0
+   Title: La Resurrezione (Complete Oratorio)
+   Creator: Georg Friedrich Händel, Edith Kertész - Gabry, Annemarie Töpler-Marizy, Emmy Lisken, Alfred Fackert, Erich Wenk, Santini Chamber Orchestra, Santini-Kammerchor, Rudolf Ewerhart
+
+206. lp_tiefland_eugen-dalbert-isabel-strauss-angelika-f
+   Title: Tiefland
+   Creator: Eugen D'Albert, Isabel Strauss, Angelika Fischer, Rudolf Schock, Gerd Feldhoff, Ivan Sardi, Hans Zanotelli
+
+207. lp_sosarme_georg-friedrich-handel-st-anthony-singe
+   Title: Sosarme
+   Creator: Georg Friedrich Händel, St. Anthony Singers, Anthony Lewis, The Saint Cecilia Orchestra
+
+208. lp_der-apotheker-the-apothecary-a-one-act_haydn
+   Title: Der Apotheker (The Apothecary): A One Act Comic Opera In English
+   Creator: Haydn
+
+209. lp_la-dogaresa_antonio-lopez-monis-y-rafael-millan
+   Title: La Dogaresa
+   Creator: Antonio Lopez Monis Y Rafael Millan
+
+210. lp_le-prophete_giacomo-meyerbeer_0
+   Title: Le Prophete
+   Creator: Giacomo Meyerbeer
+
+211. lp_haydn-the-man-in-the-moon-il-mondo-dell_joseph-haydn-orchester-der-kammeroper-m_0
+   Title: Haydn; The Man In The Moon (Il Mondo Della Luna)
+   Creator: Joseph Haydn, Orchester Der Kammeroper München, Johannes Weissenbach, Walter Hagner, Karl Schwert, Albert Gassner, Willibald Lindner, Friedel Schneider, Hanne Münch, Karl Kreile
+
+212. lp_giordano-andrea-chenier_paolo-pedani-mario-sereni-antonietta-st
+   Title: Giordano: "Andrea Chénier"
+   Creator: Paolo Pedani, Mario Sereni, Antonietta Stella, Luciana Moneta, Stefania Malagù, Dino Mantovani, Piero De Palma, Franco Corelli, Gabriele Santini
+
+213. lp_the-consul_gian-carlo-menotti-marie-powers-patrici
+   Title: The Consul
+   Creator: Gian Carlo Menotti, Marie Powers, Patricia Neway
+
+214. lp_nielsen-and-maskarade_carl-nielsen
+   Title: Nielsen And Maskarade
+   Creator: Carl Nielsen
+
+215. lp_the-magic-flute_wolfgang-amadeus-mozart-lisa-otto-maria
+   Title: The Magic Flute
+   Creator: Wolfgang Amadeus Mozart, Lisa Otto, Maria Stader, Rita Streich, Dietrich Fischer-Dieskau, Josef Greindl, Ernst Haefliger, RIAS-Kammerchor, RIAS Symphonie-Orchester Berlin, Ferenc Fricsay
+
+216. lp_la-grande-duchesse-de-gerolstein_jacques-offenbach-eugenia-zareska-gisel
+   Title: La Grande Duchesse De Gerolstein
+   Creator: Jacques Offenbach, Eugenia Zareska, Gisèle Prevet, André Dran, John Riley, Georges Lacour, Jean Mollien, Choeur Lyrique De Paris, Orchestre De L'Association Des Concerts Pasdeloup, René Leibowitz
+
+217. lp_la-serva-padrona_renata-scotto-sesto-bruscantini-virtuos_0
+   Title: La Serva Padrona
+   Creator: Renata Scotto, Sesto Bruscantini, Virtuosi Di Roma "Collegium Musicum Italicum", Renato Fasano
+
+218. lp_don-giovanni-complete_wolfgang-amadeus-mozart-orchestre-de-la
+   Title: Don Giovanni (Complete)
+   Creator: Wolfgang Amadeus Mozart, Orchestre De La Société Des Concerts Du Conservatoire, Hans Rosbaud
+
+219. lp_the-beggar-student-der-bettelstudent_carl-millocker-hilde-guden-rudolf-schoc
+   Title: The Beggar Student (Der Bettelstudent)
+   Creator: Carl Millöcker, Hilde Güden, Rudolf Schock, Hilde Konetzni, Fritz Ollendorff, Lotte Schädle, Peter Minich, Robert Stolz
+
+220. lp_lincoronazione-di-poppea_claudio-monteverdi-magda-laszlo-richard
+   Title: L'Incoronazione DI Poppea
+   Creator: Claudio Monteverdi, Magda Laszlo, Richard Lewis, John Pritchard
+
+221. lp_bastien-und-bastienne-complete-k50_wolfgang-amadeus-mozart-ilse-hollweg-wa
+   Title: Bastien Und Bastienne (Complete), K.50
+   Creator: Wolfgang Amadeus Mozart, Ilse Hollweg, Waldemar Kmentt, Walter Berry, Wiener Symphoniker, John Pritchard
+
+222. lp_der-rosenkavalier_richard-strauss_0
+   Title: Der Rosenkavalier
+   Creator: Richard Strauss
+
+223. lp_don-giovanni_wolfgang-amadeus-mozart-otto-klemperer
+   Title: Don Giovanni
+   Creator: Wolfgang Amadeus Mozart, Otto Klemperer, Nicolai Ghiaurov, Franz Crass, Claire Watson, Nicolai Gedda, Christa Ludwig, Walter Berry, Mirella Freni, Paolo Montarsolo, New Philharmonia Orchestra, New Philharmonia Chorus
+
+224. lp_martha-highlights_friedrich-von-flotow_0
+   Title: Martha Highlights
+   Creator: Friedrich von Flotow
+
+225. lp_composers-forum_charles-c-cushing-gordon-cyr-jonathan-e
+   Title: Composers' Forum
+   Creator: Charles C. Cushing, Gordon Cyr, Jonathan Elkus, Charles Cushing
+
+226. lp_the-liebeslieder-waltses-op-52-and-op-6_johannes-brahms-the-robert-shaw-chorale
+   Title: The Liebeslieder Waltses, Op. 52 And Op. 65
+   Creator: Johannes Brahms, The Robert Shaw Chorale
+
+227. lp_louise_gustave-charpentier_2
+   Title: Louise
+   Creator: Gustave Charpentier
+
+228. lp_bellini-norma_maria-callas-orchestra-del-teatro-alla
+   Title: Bellini - Norma
+   Creator: Maria Callas, Orchestra Del Teatro Alla Scala, Tullio Serafin
+
+229. lp_an-evening-of-elizabethan-verse-and-its_w-h-auden-the-new-york-pro-musica-antiq
+   Title: An Evening Of Elizabethan Verse And Its Music
+   Creator: W. H. Auden, The New York Pro Musica Antiqua, Noah Greenberg
+
+230. lp_medea-highlights_luigi-cherubini-gwyneth-jones-lamberto
+   Title: Medea Highlights
+   Creator: Luigi Cherubini, Gwyneth Jones, Lamberto Gardelli, Orchestra dell'Accademia Nazionale di Santa Cecilia
+
+231. lp_romeo-and-juliet-op-17-mefistofele-pro_arturo-toscanini-hector-berlioz-arrigo
+   Title: Romeo and Juliet Op. 17 / Mefistofele: Prologue
+   Creator: Arturo Toscanini, Hector Berlioz, Arrigo Boito, NBC Symphony Orchestra, Nicola Moscona, The Robert Shaw Chorale
+
+232. lp_il-trovatore-highlights_giuseppe-verdi-orchestra-del-teatro-del
+   Title: Il Trovatore Highlights
+   Creator: Giuseppe Verdi, Orchestra Del Teatro Dell'Opera Di Roma, Coro Del Teatro Dell'Opera Di Roma, Arturo Basile
+
+233. lp_the-magic-flute_wolfgang-amadeus-mozart-lucine-amara-la
+   Title: The Magic Flute
+   Creator: Wolfgang Amadeus Mozart, Lucine Amara, Laurel Hurley, Mildred Allen, Brian Sullivan, Theodor Uppman, Jerome Hines, The Metropolitan Opera House Orchestra, Metropolitan Opera Chorus, Tibor Kozma
+
+234. lp_orfeo-ed-euridice-abridged-version_christoph-willibald-gluck-kathleen-ferr
+   Title: Orfeo Ed Euridice (Abridged Version)
+   Creator: Christoph Willibald Gluck, Kathleen Ferrier, Ann Ayars, Zoë Vlachopoulos, Glyndebourne Festival Chorus, Southern Philharmonic Orchestra, Fritz Stiedry
+
+235. lp_the-tales-of-hoffmann-les-contes-des-ho_jacques-offenbach-the-metropolitan-oper_0
+   Title: The Tales Of Hoffmann Les Contes Des Hoffman
+   Creator: Jacques Offenbach, The Metropolitan Opera House Orchestra, Metropolitan Opera Chorus, Jean Morel
+
+236. lp_norma_vincenzo-bellini-gina-cigna-ebe-stignan
+   Title: Norma
+   Creator: Vincenzo Bellini, Gina Cigna, Ebe Stignani, Tancredi Pasero, Giovanni Breviaro, Adriana Perris, Emilio Renzi, Orchestra Sinfonica Di Torino Della RAI, Vittorio Gui, Achille Consoli
+
+237. lp_arabella-the-great-scenes_richard-strauss-josef-metternich-elisab
+   Title: Arabella: The Great Scenes
+   Creator: Richard Strauss, Josef Metternich, Elisabeth Schwarzkopf, Nicolai Gedda, Philharmonia Orchestra, Lovro Von Matacic
+
+238. lp_samson-et-dalila_camille-saint-saens-orchestre-du-theatr
+   Title: Samson Et Dalila
+   Creator: Camille Saint-Saëns, Orchestre Du Théâtre National De L'Opéra-Comique
+
+239. lp_sounds-of-roundup_the-girl-scouts-of-the-united-states-of
+   Title: Sounds Of Roundup
+   Creator: The Girl Scouts Of The United States Of America, Bette Roberts, Candy Sutton, Claire Smith, Fred L. Todd, Gail Ransom, Johnny Desmond, Lloyd Stone, Lynne Ransom, Marie Gaudette, Mrs. Aurelia Young, Mrs. B London, Mrs. Holton R. Price Jr.
+
+240. lp_arias-from-bellini-ponchielli-verdi-and_maria-callas-orchestra-sinfonica-di-tor
+   Title: Arias From Bellini, Ponchielli, Verdi And Wagner
+   Creator: Maria Callas, Orchestra Sinfonica Di Torino Della RAI
+
+241. lp_das-lied-von-der-erde_gustav-mahler-eugen-jochum-concertgebou
+   Title: Das Lied Von Der Erde
+   Creator: Gustav Mahler, Eugen Jochum, Concertgebouw Orkest
+
+242. lp_symphony-no-3-in-a-minor-fantasy-for-o_sergei-vasilyevich-rachmaninoff-andre-p
+   Title: Symphony No. 3 In A Minor / Fantasy For Orchestra, Op. 7 ("The Rock")
+   Creator: Sergei Vasilyevich Rachmaninoff, André Previn, The London Symphony Orchestra
+
+243. lp_the-bells-poem-for-solo-voices-chorus-a_sergei-vasilyevich-rachmaninoff-mikhail
+   Title: The Bells (Poem For Solo Voices, Chorus And Orchestra)
+   Creator: Sergei Vasilyevich Rachmaninoff, Михаил Довенман, Елизавета Шумская, Алексей Большаков, Государственная Республиканская Академическая Русская Хоровая Капелла, Moscow Philharmonic Orchestra, Kiril Kondrashin
+
+244. lp_carmen-abridged_georges-bizet-fritz-reiner-rca-victor-s
+   Title: Carmen (Abridged)
+   Creator: Georges Bizet, Fritz Reiner, RCA Victor Symphony Orchestra, The Robert Shaw Chorale, Children's Chorus From L'Elysée Francaise, Robert Shaw
+
+245. lp_manon-lescaut_giacomo-puccini-maria-meneghini-callas
+   Title: Manon Lescaut
+   Creator: Giacomo Puccini, Maria Meneghini-Callas, Tullio Serafin
+
+246. lp_kurt-weills-lady-in-the-dark_various_0
+   Title: Kurt Weill's "Lady In The Dark"
+   Creator: Various
+
+247. lp_flamenco_carmen-amaya-sabicas-diego-castellon-do
+   Title: Flamenco!
+   Creator: Carmen Amaya, Sabicas, Diego Castellon, Domingo Alvarado
+
+248. lp_the-gallows-songs_christian-morgenstern
+   Title: The Gallows Songs
+   Creator: Christian Morgenstern
+
+249. lp_un-ballo-in-maschera-a-masked-ball_birgit-nilsson-carlo-bergonzi-cornell-m
+   Title: Un Ballo In Maschera (A Masked Ball)
+   Creator: Birgit Nilsson, Carlo Bergonzi, Cornell MacNeil, Giulietta Simionato, Sylvia Stahlman, Georg Solti, Coro dell'Accademia Nazionale di Santa Cecilia, Orchestra dell'Accademia Nazionale di Santa Cecilia
+
+250. lp_nagy-magyar-eloadomuveszek-great-hunga_pallo-imre
+   Title: Nagy Magyar Előadóművészek / Great Hungarian Performers
+   Creator: Palló Imre
+
+251. lp_snegurochka-the-snow-maiden_pyotr-ilyich-tchaikovsky-zara-dolukhano
+   Title: Snegurochka - The Snow Maiden
+   Creator: Pyotr Ilyich Tchaikovsky, Зара Долуханова, Alexander Orfenov, Alexander Gauk
+
+252. lp_kathleen-ferrier-broadcast-recital-from_kathleen-ferrier-phyllis-spurr_0
+   Title: Kathleen Ferrier Broadcast Recital From Norway
+   Creator: Kathleen Ferrier, Phyllis Spurr
+
+253. lp_tsar-sultan-complete-opera_nikolai-rimsky-korsakov_1
+   Title: Tsar Sultan Complete Opera
+   Creator: Nikolai Rimsky-Korsakov
+
+254. lp_verdi-attila_boris-christoff-margherita-roberti-gast
+   Title: Verdi: Attila
+   Creator: Boris Christoff, Margherita Roberti, Gastone Limarilli, Giangiacomo Guelfi, Bruno Bartoletti, Gianfranco Manganotti, Mario Frosini
+
+255. lp_hansel-und-gretel_engelbert-humperdinck-irmgard-seefried_0
+   Title: Hänsel Und Gretel
+   Creator: Engelbert Humperdinck, Irmgard Seefried, Anneliese Rothenberger, Grace Hoffman, Elisabeth Höngen, Walter Berry, Liselotte Maikl, André Cluytens
+
+256. lp_katiuska_pablo-sorozabal-pilar-lorengar-alfredo
+   Title: Katiuska
+   Creator: Pablo Sorozábal, Pilar Lorengar, Alfredo Kraus, Renato Cesari, Coros Cantores De Madrid, Orquesta De Conciertos De Madrid
+
+257. lp_lecons-de-tenebres-complete_francois-couperin-hugues-cuenod-gino-si
+   Title: Leçons De Ténèbres (Complete)
+   Creator: François Couperin, Hugues Cuénod, Gino Sinimberghi, Franz Holetschek, Richard Harand
+
+258. lp_la-boheme_giacomo-puccini_6
+   Title: La Bohème
+   Creator: Giacomo Puccini
+
+259. lp_the-unicorn-the-gorgon-and-the-manticor_thomas-schippers-gian-carlo-menotti-new
+   Title: The Unicorn, The Gorgon And The Manticore
+   Creator: Thomas Schippers, Gian Carlo Menotti, New York City Ballet
+
+260. lp_a-treasury-of-music-of-the-renaissance_pierre-chaille-la-societe-de-musique-da
+   Title: A Treasury Of Music Of The Renaissance
+   Creator: Pierre Chaillé, La Société De Musique D'Autrefois
+
+261. lp_la-traviata_giuseppe-verdi-rosanna-carteri-cesare-v
+   Title: La Traviata
+   Creator: Giuseppe Verdi, Rosanna Carteri, Cesare Valletti, Leonard Warren, Orchestra Del Teatro Dell'Opera Di Roma, Coro Del Teatro Dell'Opera Di Roma, Pierre Monteux
+
+262. lp_cavalleria-rusticana-i-pagliacci_mario-del-monaco
+   Title: Cavalleria Rusticana - I Pagliacci
+   Creator: Mario del Monaco
+
+263. lp_the-brandenburgers-in-bohemia_bedrich-smetana-orchestr-narodniho-diva
+   Title: The Brandenburgers In Bohemia
+   Creator: Bedřich Smetana, Orchestr Národního Divadla, Jan Hus Tichý
+
+264. lp_land-du-valsignade_nicolai-gedda-nils-grevillius-stockholm
+   Title: Land du välsignade
+   Creator: Nicolai Gedda, Nils Grevillius, Stockholms Filharmoniska Orkester
+
+265. lp_manon-lescaut-reszletek-excerpts_giacomo-puccini-hazy-erzsebet-ilosfalvy
+   Title: Manon Lescaut - Részletek / Excerpts
+   Creator: Giacomo Puccini, Házy Erzsébet, Ilosfalvy Róbert, Melis György, Miklós Erdélyi
+
+266. lp_vernasz-blood-wedding_sandor-szokolay-federico-garcia-lorca-i
+   Title: Vérnász - Blood Wedding
+   Creator: Sándor Szokolay, Federico García Lorca, Illyés Gyula
+
+267. lp_a-magyar-operaszinpad-csillagai-the-s_various-anna-medek-aranka-fodorne-berna
+   Title: A Magyar Operaszínpad Csillagai - The Stars Of The Hungarian Opera House
+   Creator: Various, Anna Medek, Aranka Fodorné, Bernát Ney, Béla Környei, Béla Venczell, Dávid Ney, Erzsi Radnai, Erzsi Sándor, Ferenc Szende, Gitta Alpar, Gábor Arnold, Ilonka Szabó, Itália Vasquez, János Halmos, Kálmán Pataky, Lajos S. Rózsa, Lujza Szabó, Mária Basilides, Mária Németh, Nagy Izabella, Oszkár Kálmán, Richárd Erdős, Rosette Anday, Szamosi Elza, Takáts Mihály, Teréz Krammer, Zsigmond Pilinszky, dr. Ferenc Székelyhidi
+
+268. lp_madama-butterfly_giacomo-puccini-victoria-de-los-angeles_0
+   Title: Madama Butterfly
+   Creator: Giacomo Puccini, Victoria De Los Angeles, Giuseppe di Stefano, Tito Gobbi, Anna Maria Canali, Maria Huder, Renato Ercolani, Arturo La Porta, Orchestra Del Teatro Dell'Opera Di Roma, Coro Del Teatro Dell'Opera Di Roma, Gianandrea Gavazzeni
+
+269. lp_operatic-recital_margaret-tynes-varga-pal-the-budapest-p
+   Title: Operatic Recital
+   Creator: Margaret Tynes, Varga Pál, The Budapest Philharmonic Orchestra, Strauss, Verdi
+
+270. lp_contemporary-opera-vocal-selections-ol_emanuel-list-hilde-zadek-kurt-baum-vitt
+   Title: Contemporary Opera Vocal Selections / Old Italian Opera Overtures
+   Creator: Emanuel List, Hilde Zadek, Kurt Baum, Vittorio Gui, Anton Dermota, Else Schurhoff
+
+271. lp_katerina-ismailova-complete-opera-in-fo_dmitri-shostakovich
+   Title: Katerina Ismailova (Complete Opera In Four Acts)
+   Creator: Dmitri Shostakovich
+
+272. lp_carmen-complete_georges-bizet_0
+   Title: Carmen Complete
+   Creator: Georges Bizet
+
+273. lp_sings-spirituals-and-sacred-songs_dorothy-maynor
+   Title: Sings Spirituals And Sacred Songs
+   Creator: Dorothy Maynor
+
+274. lp_from-the-land-of-the-golden-fleece_the-greek-folk-dances-and-songs-society
+   Title: From The Land Of The Golden Fleece
+   Creator: The Greek Folk Dances And Songs Society
+
+275. lp_a-gala-performance-of-die-fledermaus_hilde-guden-erika-koth-regina-resnik-gi
+   Title: A Gala Performance Of -Die Fledermaus- With Guest Performances
+   Creator: Hilde Güden, Erika Köth, Regina Resnik, Giuseppe Zampieri, Waldemar Kmentt, Walter Berry, Eberhard Wächter, Erich Kunz, Herbert Von Karajan, Wiener Philharmoniker
+
+276. lp_monitor-presents-famous-soloists-of-the_pavel-lisitsian-galina-vishnevskaya-iva
+   Title: Monitor Presents Famous Soloists Of The Bolshoi Theatre In Russian Operatic Arias
+   Creator: Павел Лисициан, Galina Vishnevskaya, Іван Козловський, Вера Фирсова, Сергей Лемешев, Марк Рейзен, Лидия Мясникова, Иван Петров, Antonia Kleshcheva, Ivan Kozlovsky, Ivan Petrov, Lydia Myasnikova, Mark Reizen, Pavel Lisitsian, Vera Firsova
+
+277. lp_merrie-england-henry-viii-nell-gwyn_edward-german
+   Title: Merrie England / Henry VIII / Nell Gwyn
+   Creator: Edward German
+
+278. lp_the-only-jealousy-of-emer_lou-harrison-william-butler-yeats_0
+   Title: The Only Jealousy Of Emer
+   Creator: Lou Harrison, William Butler Yeats
+
+279. lp_das-land-des-lachelns_franz-lehar-anneliese-rothenberger-nico
+   Title: Das Land Des Lächelns
+   Creator: Franz Lehár, Anneliese Rothenberger, Nicolai Gedda, Renate Holm, Harry Friedauer, Jobst Moeller, Chor Des Bayerischen Rundfunks, Symphonie-Orchester Graunke, Willy Mattes
+
+280. lp_wenn-ich-konig-war-grosser-querschnitt_adolphe-c-adam-georg-volker-rudolf-scho
+   Title: Wenn Ich König Wär' (Großer Querschnitt)
+   Creator: Adolphe C. Adam, Georg Völker, Rudolf Schock, Stina-Britta Melander, Ernst Märzendorfer
+
+281. lp_tiefland_eugen-dalbert_0
+   Title: Tiefland
+   Creator: Eugen D'Albert
+
+282. lp_bank-ban_the-budapest-philharmonic-orchestra-vil
+   Title: Bánk Bán
+   Creator: The Budapest Philharmonic Orchestra, Vilmos Komor, Jámbor László, Delly Rózsi, Laszlo Kulkei, Joviczky József, Osváth Júlia, Fodor János, Melis György, Radnai György
+
+283. lp_martha_friedrich-von-flotow-erna-berger-else-t
+   Title: Martha
+   Creator: Friedrich von Flotow, Erna Berger, Else Tegetthoff, Eugen Fuchs, Josef Greindl, Peter Anders, Franz Sauer, Artur Rother
+
+284. lp_fra-diavolo_daniel-francois-esprit-auber-chor-der-s
+   Title: Fra Diavolo
+   Creator: Daniel-Francois-Esprit Auber, Chor der Staatsoper Dresden, Staatskapelle Dresden, Karl Elmendorff, Irma Beilke, Hans Hopf, Gottlob Frick, Kurt Böhme
+
+285. lp_the-flaming-angel-lange-de-feu_sergei-prokofiev
+   Title: The Flaming Angel = L'Ange De Feu
+   Creator: Sergei Prokofiev
+
+286. lp_cavalleria-rusticana-abridged_pietro-mascagni-renata-tebaldi-jussi-bj
+   Title: Cavalleria Rusticana (Abridged)
+   Creator: Pietro Mascagni, Renata Tebaldi, Jussi Björling, Ettore Bastianini, Orchestra Del Maggio Musicale Fiorentino, Alberto Erede
+
+287. lp_el-amor-brujo_manuel-de-falla-the-hollywood-bowl-symp
+   Title: El Amor Brujo
+   Creator: Manuel De Falla, The Hollywood Bowl Symphony Orchestra, Leopold Stokowski, Nan Merriman
+
+288. lp_werther_jules-massenet-victoria-de-los-angeles
+   Title: Werther
+   Creator: Jules Massenet, Victoria De Los Angeles, Nicolai Gedda, Mady Mesplé, Roger Soyer, Jean-Christophe Benoit, Georges Prêtre, Orchestre De Paris
+
+289. lp_messiah-complete-version_georg-friedrich-handel-jennifer-vyvyan
+   Title: Messiah - Complete Version
+   Creator: Georg Friedrich Händel, Jennifer Vyvyan, Norma Procter, George Maran, Owen Brannigan, The London Philharmonic Choir, The London Philharmonic Orchestra, Sir Adrian Boult
+
+290. lp_the-devil-kate_antonin-dvorak-orchestr-narodniho-divad
+   Title: The Devil & Kate
+   Creator: Antonín Dvořák, Orchestr Národního Divadla, Sbor Národního Divadla, Zdeněk Chalabala
+
+291. lp_otello_giuseppe-verdi-james-mccracken-gwyneth
+   Title: Otello
+   Creator: Giuseppe Verdi, James McCracken, Gwyneth Jones, Dietrich Fischer-Dieskau, The Ambrosian Opera Chorus, New Philharmonia Orchestra, Sir John Barbirolli
+
+292. lp_rigoletto_giuseppe-verdi-cornell-macneil-reri-gri
+   Title: Rigoletto
+   Creator: Giuseppe Verdi, Cornell MacNeil, Reri Grist, Nicolai Gedda, Francesco Molinari-Pradelli
+
+293. lp_martha_friedrich-von-flotow-anneliese-rothenbe
+   Title: Martha
+   Creator: Friedrich von Flotow, Anneliese Rothenberger, Brigitte Fassbaender, Nicolai Gedda, Hermann Prey, Bayerisches Staatsorchester, Chor Der Bayerischen Staatsoper, Robert Heger
+
+294. lp_das-rheingold-highlights_richard-wagner-orchester-der-deutschen
+   Title: Das Rheingold Highlights
+   Creator: Richard Wagner, Orchester Der Deutschen Oper Berlin, Rudolf Kempe, Rudolf Schock, Lisa Otto, Sieglinde Wagner
+
+295. lp_regina_marc-blitzstein-brenda-lewis-elisabeth
+   Title: Regina
+   Creator: Marc Blitzstein, Brenda Lewis, Elisabeth Carron, Carol Brice, Joshua Hecht, New York City Opera Orchestra, New York City Opera Chorus, Samuel Krachmalnick
+
+296. lp_orphee_christoph-willibald-gluck-orchestre-de
+   Title: Orphee
+   Creator: Christoph Willibald Gluck, Orchestre De La Société Des Concerts Du Conservatoire, Louis De Froment
+
+297. lp_dialogues-des-carmelites_francis-poulenc-orchestre-national-de-l
+   Title: Dialogues Des Carmélites
+   Creator: Francis Poulenc, Orchestre National De L'Opéra De Paris, Pierre Dervaux
+
+298. lp_madama-butterfly_renata-scotto-carlo-bergonzi-anna-di-st
+   Title: Madama Butterfly
+   Creator: Renata Scotto, Carlo Bergonzi, Anna Di Stasio, Rolando Panerai, Paolo Montarsolo, Orchestra Del Teatro Dell'Opera Di Roma, Coro Del Teatro Dell'Opera Di Roma, Sir John Barbirolli
+
+299. lp_the-fabulous-edison-cylinder_various-alessandro-bonci-ambroise-thoma
+   Title: The Fabulous Edison Cylinder
+   Creator: Various, Alessandro Bonci, Ambroise Thomas, Blanche Arral, Carlo Albani, Florencio Constantino, Frieda Hempel, Giacomo Meyerbeer, Giacomo Puccini, Giuseppe Verdi, Heinrich Proch, Jules Massenet, Julia Heinrich, Leo Slezak, Lucrezia Bori, Marie Delna, Mario Laurenti, P. Asselin
+
+300. lp_le-roi-david-sheherazade-deux-melodie_arthur-honegger-maurice-ravel-suzanne-d
+   Title: Le Roi David / Shéhérazade / Deux Mélodies Hébraïques
+   Creator: Arthur Honegger, Maurice Ravel, Suzanne Danco, Marie Lise De Montmollin, Michel Hamel, Pauline Martin, Stephane Audel, L'Orchestre De La Suisse Romande, Ernest Ansermet, Chœur Des Jeunes De L'Église National Vaudoise
+
+301. lp_le-coq-dor_nikolai-rimsky-korsakov-beverly-sills-n
+   Title: Le Coq D’Or
+   Creator: Nikolai Rimsky-Korsakov, Beverly Sills, Norman Treigle, Enrico Di Giuseppe, Julius Rudel
+
+302. lp_la-traviata-highlights-sung-in-german_giuseppe-verdi-hilde-guden-fritz-wunder
+   Title: La Traviata Highlights, Sung In German
+   Creator: Giuseppe Verdi, Hilde Güden, Fritz Wunderlich, Dietrich Fischer-Dieskau, Bruno Bartoletti
+
+303. lp_the-ballad-of-baby-doe_douglas-moore-john-latouche-beverly-sil
+   Title: The Ballad Of Baby Doe
+   Creator: Douglas Moore, John Latouche, Beverly Sills, Walter Cassel, Frances Bible, New York City Opera Orchestra, New York City Opera Chorus, Emerson Buckley
+
+304. lp_il-barbiere-di-siviglia_gioacchino-rossini-gianna-dangelo-renat
+   Title: Il Barbiere Di Siviglia
+   Creator: Gioacchino Rossini, Gianna D'Angelo, Renato Capecchi, Nicola Monti, Giorgio Tadeo, Symphonie-Orchester Des Bayerischen Rundfunks, Bruno Bartoletti
+
+305. lp_bizet-spectacular_tutti-camarata-the-kingsway-symphony-or
+   Title: Bizet Spectacular
+   Creator: Tutti Camarata, The Kingsway Symphony Orchestra
+
+306. lp_the-young-brahms_dietrich-fischer-dieskau-gerald-moore
+   Title: The Young Brahms
+   Creator: Dietrich Fischer-Dieskau, Gerald Moore
+
+307. lp_canadian-centennial-issue-vol-2_emma-albani-pauline-donalda-canadian-ce
+   Title: Canadian Centennial Issue Vol. 2
+   Creator: Emma Albani, Pauline Donalda, Canadian Centennial Issue
+
+308. lp_via-crucis-the-fourteen-stations-of-t_franz-liszt-bbc-northern-singers-franci
+   Title: Via Crucis - The Fourteen Stations Of The Cross For Mixed Choir, Soloists And Organ
+   Creator: Franz Liszt, BBC Northern Singers, Francis Jackson, Gordon Thorne
+
+309. lp_oratorios-jephte-judicium-salomonis_giacomo-carissimi-spandauer-kantorei-helmu_0
+   Title: Oratorios: "Jephte" - "Judicium Salomonis"
+   Creator: Giacomo Carissimi, Spandauer Kantorei, Helmuth Rilling
+
+310. lp_brahmswolf-songs_lotte-lehmann_0
+   Title: Brahms/Wolf Songs
+   Creator: Lotte Lehmann
+
+311. lp_the-land-of-smiles-das-land-des-lchelns_elisabeth-schvarzkopf-erich-kunz-nicolai-g
+   Title: The Land Of Smiles (Das Land Des Lächelns)
+   Creator: Elisabeth Schwarzkopf, Erich Kunz, Nicolai Gedda, Philharmonia Orchestra, Philharmonia Chorus, Otto Ackermann, Franz Lehár
+
+312. lp_le-rossignol_igor-stravinsky-andr-cluytens-orchestre-na
+   Title: Le Rossignol
+   Creator: Igor Stravinsky, André Cluytens, Orchestre National De France
+
+313. lp_boris-godounov-russian-operatic-arias_feodor-chaliapin
+   Title: Boris Godounov - Russian Operatic Arias
+   Creator: Feodor Chaliapin
+
+314. lp_vagner-die-valkure-gtterdmmerung_frida-leider-lauritz-melchior-friedrich-sc
+   Title: Wagner: Die Walküre, Götterdämmerung
+   Creator: Frida Leider, Lauritz Melchior, Friedrich Schorr, Otto Helgers, The London Symphony Orchestra, Robert Heger, Leo Blech, Staatskapelle Berlin
+
+315. lp_opera-arias-and-songs_nellie-melba
+   Title: Opera Arias and Songs
+   Creator: Nellie Melba
+
+316. lp_the-young-caruso_enrico-caruso
+   Title: The Young Caruso
+   Creator: Enrico Caruso
+
+317. lp_schubert-songs-volume-1_elisabeth-schumann
+   Title: Schubert Songs Volume 1
+   Creator: Elisabeth Schumann
+
+318. lp_operatic-scenes-and-arias_frida-leider-lauritz-melchior
+   Title: Operatic Scenes And Arias
+   Creator: Frida Leider, Lauritz Melchior
+
+319. lp_french-songs-volume-ii_maggie-teyte
+   Title: French Songs - Volume II
+   Creator: Maggie Teyte
+
+320. lp_hugo-wolf-songs_elena-gerhardt-coenraad-bos-hugo-wolf
+   Title: Hugo Wolf Songs
+   Creator: Elena Gerhardt, Coenraad Bos, Hugo Wolf
+
+321. lp_from-a-far-far-country-a-program-of-russia
+   Title: From A Far, Far Country, A Program Of Russian Songs
+   Creator: Государственный Академический Русский Хор Им. А. В. Свешникова
+
+322. lp_recital_kim-borg
+   Title: Recital
+   Creator: Kim Borg
+
+323. lp_capriccio_richard-strauss-volfgang-savallisch-elisab
+   Title: Capriccio
+   Creator: Richard Strauss, Wolfgang Sawallisch, Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, Eberhard Wächter, Nicolai Gedda, Hans Hotter, Christa Ludwig, Karl Schmitt-Walter
+
+324. lp_sea-pictures_sir-edward-elgar-gladys-ripley-the-london
+   Title: Sea Pictures
+   Creator: Sir Edward Elgar, Gladys Ripley, The London Symphony Orchestra, George Weldon
+
+325. lp_lelisir-damore_gaetano-donizetti-rosanna-carteri-luigi-al
+   Title: L'Elisir D'Amore
+   Creator: Gaetano Donizetti, Rosanna Carteri, Luigi Alva, Rolando Panerai, Giuseppe Taddei, Angela Vercelli, Tullio Serafin
+
+326. lp_st-matthew-passion_johann-sebastian-bach-philharmonia-orchest_0
+   Title: St. Matthew Passion
+   Creator: Johann Sebastian Bach, Philharmonia Orchestra, Philharmonia Chorus, Otto Klemperer, Boys Of The Hampstead Parish Church Choir, Dietrich Fischer-Dieskau, Peter Pears, Elisabeth Schwarzkopf, Christa Ludwig, Nicolai Gedda, Walter Berry
+
+327. lp_jewish-religious-songs_the-asaph-vocal-quartet
+   Title: Jewish Religious Songs
+   Creator: The Asaph Vocal Quartet
+
+328. lp_il-turco-in-italia_gioacchino-rossini-maria-callas-nicolai-ge_0
+   Title: Il Turco In Italia
+   Creator: Gioacchino Rossini, Maria Callas, Nicolai Gedda, Nicola Rossi-Lemeni, Jolanda Gardino, Franco Calabrese, Mariano Stabile, Coro Del Teatro Alla Scala, Orchestra Del Teatro Alla Scala, Gianandrea Gavazzeni
+
+329. lp_der-mond-ein-kleines-welt-theater_carl-orff-philharmonia-opera-company-wolfg
+   Title: Der Mond - Ein Kleines Welt-Theater
+   Creator: Carl Orff, Philharmonia Opera Company, Wolfgang Sawallisch, Philharmonia Orchestra
+
+330. lp_der-rosenkavalier_elisabeth-schvarzkopf-otto-edelmann-christ
+   Title: Der Rosenkavalier
+   Creator: Elisabeth Schwarzkopf, Otto Edelmann, Christa Ludwig, Teresa Stich-Randall, Eberhard Wächter, Philharmonia Orchestra, Herbert Von Karajan, Richard Strauss
+
+331. lp_cavalleria-rusticana-and-pagliacci_pietro-mascagni-ruggiero-leoncavallo-maria
+   Title: Cavalleria Rusticana And Pagliacci
+   Creator: Pietro Mascagni, Ruggiero Leoncavallo, Maria Meneghini-Callas, Giuseppe di Stefano, Anna Maria Canali, Rolando Panerai, Ebe Ticozzi, Tito Gobbi, Nicola Monti, Tullio Serafin, Vittore Veneziani
+
+332. lp_litaliana-in-algeri_gioacchino-rossini-orchestra-del-teatro-al
+   Title: L'Italiana In Algeri
+   Creator: Gioacchino Rossini, Orchestra Del Teatro Alla Scala, Coro Del Teatro Alla Scala
+
+333. lp_missa-solemnis_ludwig-van-beethoven-eugen-jochum-agnes-gi
+   Title: Missa Solemnis
+   Creator: Ludwig Van Beethoven, Eugen Jochum, Agnes Giebel, Marga Höffgen, Ernst Haefliger, Karl Ridderbusch, Groot Omroepkoor, Concertgebouworkest
+
+334. lp_dido-aeneas_henry-purcell-josephine-veasey-elizabeth-b
+   Title: Dido & Aeneas
+   Creator: Henry Purcell, Josephine Veasey, Elizabeth Bainbridge, Helen Donath, Frank Patterson, John Shirley-Quirk, The Academy Of St. Martin-in-the-Fields, Sir Colin Davis
+
+335. lp_penderecki-dies-irae-auschwitz-oratorium_henryk-czyzh-orkiestra-filharmonii-im-karo
+   Title: Penderecki: Dies Irae (Auschwitz Oratorium) / Polymorphia / De Natura Sonoris
+   Creator: Henryk Czyż, Orkiestra Filharmonii Im. Karola Szymanowskiego W Krakowie
+
+336. lp_the-great-moments-from-die-fledermaus-in-e_johann-strauss-jr-anna-moffo-sergio-franch_0
+   Title: The Great Moments From Die Fledermaus (In English)
+   Creator: Johann Strauss Jr., Anna Moffo, Sergio Franchi, Risë Stevens, Jeanette Scovotti, Richard Lewis, George London, John Hauxvell, Oskar Danon, Orchester Der Wiener Staatsoper, Wiener Staatsopernchor
+
+337. lp_lohengrin-complete_richard-wagner-boston-symphony-orchestra-e_0
+   Title: Lohengrin Complete
+   Creator: Richard Wagner, Boston Symphony Orchestra, Erich Leinsdorf, Sándor Kónya, Lucine Amara, Rita Gorr, William Dooley, Jerome Hines, Calvin Marsh
+
+338. lp_rossini-la-scala-di-seta-graziella-sciutti_franco-ferrara-orchestra-filarmonica-di-ro
+   Title: Rossini: La Scala Di Seta Graziella Sciutti
+   Creator: Franco Ferrara, Orchestra Filarmonica Di Roma
+
+339. lp_a-portrait-of-manon_jules-massenet-giacomo-puccini-anna-moffo_1
+   Title: A Portrait Of Manon
+   Creator: Jules Massenet, Giacomo Puccini, Anna Moffo
+
+340. lp_the-marriage-of-figaro-le-nozze-di-figa_wolfgang-amadeus-mozart-wiener-philharmoni_0
+   Title: The Marriage Of Figaro - Le Nozze Di Figaro
+   Creator: Wolfgang Amadeus Mozart, Wiener Philharmoniker, Erich Leinsdorf, Lorenzo da Ponte, Pierre-Augustin Caron De Beaumarchais
+
+341. lp_the-mother_alois-hba
+   Title: The Mother
+   Creator: Alois Hába
+
+342. lp_francesca-da-rimini_riccardo-zandonai_3
+   Title: Francesca Da Rimini
+   Creator: Riccardo Zandonai
+
+343. lp_il-trovatore_giuseppe-verdi-leontyne-price-placido-domi
+   Title: Il Trovatore
+   Creator: Giuseppe Verdi, Leontyne Price, Placido Domingo, Sherrill Milnes, Fiorenza Cossotto, Zubin Mehta
+
+344. lp_verdi-requiem_erich-leinsdorf
+   Title: Verdi - Requiem
+   Creator: Erich Leinsdorf
+
+345. lp_la-gioconda_amilcare-ponchielli-renata-tebaldi-marilyn
+   Title: La Gioconda
+   Creator: Amilcare Ponchielli, Renata Tebaldi, Marilyn Horne, Carlo Bergonzi, Robert Merrill, Lamberto Gardelli
+
+346. lp_lallegro-ed-il-penseroso_georg-friedrich-hndel_1
+   Title: L'Allegro Ed Il Penseroso
+   Creator: Georg Friedrich Händel
+
+347. lp_scenes-from-acis-galatea_georg-friedrich-hndel-joan-sutherland-pete
+   Title: Scenes from Acis & Galatea
+   Creator: Georg Friedrich Händel, Joan Sutherland, Peter Pears, Sir Adrian Boult, St. Anthony Singers
+
+348. lp_cesare-valletti-town-hall-recital_cesare-valletti-bernardo-pasquini-wolfgang
+   Title: Cesare Valletti / Town Hall Recital
+   Creator: Cesare Valletti, Bernardo Pasquini, Wolfgang Amadeus Mozart, Hugo Wolf, Hector Berlioz, Fernando Obradors
+
+349. lp_journey-through-opera_jan-peerce_0
+   Title: Journey Through Opera
+   Creator: Jan Peerce
+
+350. lp_elgar-the-music-makers-op-69-parry-blest-p_janet-baker-london-philharmonic-orchestra
+   Title: Elgar: The Music Makers, Op. 69/ Parry: Blest Pair Of Sirens
+   Creator: Janet Baker, London Philharmonic Orchestra
+
+351. lp_a-german-requiem-kindertotenlieder_johannes-brahms-gustav-mahler-rudolf-kempe_0
+   Title: A German Requiem / Kindertotenlieder
+   Creator: Johannes Brahms, Gustav Mahler, Rudolf Kempe, Berliner Philharmoniker
+
+352. lp_mefistofele_arrigo-boito-boris-christoff-giacinto-pran
+   Title: Mefistofele
+   Creator: Arrigo Boito, Boris Christoff, Giacinto Prandelli, Orietta Moscucci, Rome Opera House Orchestra & Chorus, Vittorio Gui
+
+353. lp_macbeth_giuseppe-verdi_0
+   Title: Macbeth
+   Creator: Giuseppe Verdi
+
+354. lp_thais_jules-massenet-choeur-national-de-lopra-de_0
+   Title: Thaïs
+   Creator: Jules Massenet, Choeur National De L'Opéra De Paris, Orchestre National De L'Opéra De Paris
+
+355. lp_favorite-songs-from-his-town-hall-recital_cesare-valletti
+   Title: Favorite Songs from his Town Hall Recital, October 28, 1960
+   Creator: Cesare Valletti
+
+356. lp_der-corregidor_hugo-wolf_0
+   Title: Der Corregidor
+   Creator: Hugo Wolf
+
+357. lp_gypsy-love_franz-lehar-herbert-ernst-groh_0
+   Title: Gypsy Love
+   Creator: Franz Lehár, Herbert Ernst Groh
+
+358. lp_a-lieder-recital_tiana-lemnitz
+   Title: A Lieder Recital
+   Creator: Tiana Lemnitz
+
+359. lp_rhapsodies_franz-liszt-george-enescu-bedich-smetana-r
+   Title: Rhapsodies
+   Creator: Franz Liszt, George Enescu, Bedřich Smetana, RCA Victor Symphony Orchestra, Leopold Stokowski
+
+360. lp_taillefer-and-divertimento-after-couperin_richard-strauss-maria-cebotari-walther-lud
+   Title: Taillefer And Divertimento After Couperin
+   Creator: Richard Strauss, Maria Cebotari, Walther Ludwig, Hans Hotter, Der Rudolf Lamy-Chor
+
+361. lp_orpheus-eurydice-act-ii_christoph-willibald-gluck-arturo-toscanini
+   Title: Orpheus & Eurydice: Act II
+   Creator: Christoph Willibald Gluck, Arturo Toscanini, NBC Symphony Orchestra
+
+362. lp_samson-and-delilah-highlights_ris-stevens-jan-peerce-robert-merrill-cami
+   Title: Samson And Delilah (Highlights)
+   Creator: Risë Stevens, Jan Peerce, Robert Merrill, Camille Saint-Saëns, Leopold Stokowski
+
+363. lp_famous-operatic-arias_roberta-peters-orchestra-del-teatro-dellop
+   Title: Famous Operatic Arias
+   Creator: Roberta Peters, Orchestra Del Teatro Dell'Opera Di Roma, Vincenzo Bellezza, Jonel Perlea
+
+364. lp_the-flying-dutchman_richard-wagner-antal-dorati-george-london_1
+   Title: The Flying Dutchman
+   Creator: Richard Wagner, Antal Dorati, George London, Leonie Rysanek, Rosalind Elias, Karl Liebl, Richard Lewis, Orchestra Of The Royal Opera House, Covent Garden, Chorus Of The Royal Opera House, Covent Garden
+
+365. lp_fairy-spell-op-30-opera-ballet_niels-wilhelm-gade
+   Title: Fairy Spell, Op. 30 (Opera-Ballet)
+   Creator: Niels Wilhelm Gade
+
+366. lp_roberto-devereux-elizabeth-and-essex_gaetano-donizetti-beverly-sills_0
+   Title: Roberto Devereux (Elizabeth And Essex)
+   Creator: Gaetano Donizetti, Beverly Sills
+
+367. lp_stabat-mater-le-bal-masqu_francis-poulenc-stabat-mater-le-bal-masqu
+   Title: Stabat Mater / Le Bal Masqué
+   Creator: Francis Poulenc, "Stabat Mater / Le Bal Masque" Soloists, Chorale De L'Alauda, L'Orchestre de I'Association des Concert Colonne, Instrumental Ensemble Of L'Orchestra Du Théâtre National De L'Opéra, Louis Frémaux
+
+368. lp_the-armenian-mass_the-cosmopolitan-chorale-florence-mardiros
+   Title: The Armenian Mass
+   Creator: The Cosmopolitan Chorale, Florence Mardirosian
+
+369. lp_music-to-goethes-egmont-op-84-complete_ludwig-van-beethoven-hermann-scherchen-orc
+   Title: Music To Goethe's "Egmont", Op. 84 (Complete)
+   Creator: Ludwig van Beethoven, Hermann Scherchen, Orchester Der Wiener Staatsoper, Magda Laszlo
+
+370. lp_fourteen-songs_hugo-wolf-alfred-poell-franz-holetschek
+   Title: Fourteen Songs
+   Creator: Hugo Wolf, Alfred Poell, Franz Holetschek
+
+371. lp_from-the-italienisches-liederbuch-two-mri_hugo-wolf-elly-ameling-dalton-baldwin_0
+   Title: From The Italienisches Liederbuch / Two Mörike-Lieder
+   Creator: Hugo Wolf, Elly Ameling, Dalton Baldwin
+
+372. lp_requiem-k626_wolfgang-amadeus-mozart-hofmusikkapelle-wi
+   Title: Requiem K626
+   Creator: Wolfgang Amadeus Mozart, Hofmusikkapelle Wien, Josef Krips
+
+373. lp_alceste_christoph-willibald-gluck-kirsten-flagstad_0
+   Title: Alceste
+   Creator: Christoph Willibald Gluck, Kirsten Flagstad, Raoul Jobin, Alexander Young, Geraint Jones
+
+374. lp_a-memorable-evening-at-the-lyric-opera-of_georg-solti-renata-tebaldi-giulietta-simio
+   Title: A Memorable Evening At The Lyric Opera Of Chicago
+   Creator: Georg Solti, Renata Tebaldi, Giulietta Simionato, Ettore Bastianini, Chicago Lyric Opera Orchestra
+
+375. lp_the-three-cornered-hat-complete-ballet_manuel-de-falla-ernest-ansermet-lorchestre_1
+   Title: The Three Cornered Hat (Complete Ballet)
+   Creator: Manuel De Falla, Ernest Ansermet, L'Orchestre De La Suisse Romande, Suzanne Danco
+
+376. lp_salome_richard-strauss-christel-goltz-julius-patz_0
+   Title: Salome
+   Creator: Richard Strauss, Christel Goltz, Julius Patzak, Anton Dermota, Clemens Krauss, Wiener Philharmoniker
+
+377. lp_otello_giuseppe-verdi-mario-del-monaco-renata-teb_2
+   Title: Otello
+   Creator: Giuseppe Verdi, Mario Del Monaco, Renata Tebaldi, Aldo Protti, Fernando Corena, Orchestra dell'Accademia Nazionale di Santa Cecilia, Coro dell'Accademia Nazionale di Santa Cecilia, Alberto Erede
+
+378. lp_tosca_giacomo-puccini-renata-tebaldi
+   Title: Tosca
+   Creator: Giacomo Puccini, Renata Tebaldi
+
+379. lp_dona-nobis-pacem-flos-campi_ralph-vaughan-williams-utah-symphony-orche
+   Title: Dona Nobis Pacem, Flos Campi
+   Creator: Ralph Vaughan Williams, Utah Symphony Orchestra, Maurice de Abravanel
+
+380. lp_la-bohme-renata-tebaldi-as-mimi_giacomo-puccini-renata-tebaldi
+   Title: La Bohème: Renata Tebaldi As Mimi
+   Creator: Giacomo Puccini, Renata Tebaldi
+
+381. lp_jephtha_georg-friedrich-hndel
+   Title: Jephtha
+   Creator: Georg Friedrich Händel
+
+382. lp_nocturnal-ecuatorial-structures-sonores_edgard-varse-henri-lazarof-utah-symphony-o
+   Title: Nocturnal / Ecuatorial / Structures Sonores
+   Creator: Edgard Varèse, Henri Lazarof, Utah Symphony Orchestra, Maurice de Abravanel, Ariel Bybee, Bass Ensemble Of The University Of Utah Civic Chorale, Newell Weight
+
+383. lp_celestial-music-now-does-the-glorious-day_henry-purcell-accademia-monteverdiana-deni
+   Title: "Celestial Music"/ "Now Does The Glorious Day Appear"
+   Creator: Henry Purcell, Accademia Monteverdiana, Denis Stevens
+
+384. lp_requiem_hector-berlioz-the-london-symphony-orchest
+   Title: Requiem
+   Creator: Hector Berlioz, The London Symphony Orchestra, London Symphony Chorus, Sir Colin Davis
+
+385. lp_favorite-arias_mirella-freni
+   Title: Favorite Arias
+   Creator: Mirella Freni
+
+386. lp_the-barber-of-seville_gioacchino-rossini-the-metropolitan-opera_0
+   Title: The Barber Of Seville
+   Creator: Gioacchino Rossini, The Metropolitan Opera House Orchestra, Metropolitan Opera Chorus, Erich Leinsdorf
+
+387. lp_the-five-beethoven-piano-concertos_arthur-rubinstein-boston-symphony-orchestr
+   Title: The Five Beethoven Piano Concertos
+   Creator: Arthur Rubinstein, Boston Symphony Orchestra, Erich Leinsdorf
+
+388. lp_la-forza-del-destino_leontyne-price-giuseppe-verdi-richard-tuck_1
+   Title: La Forza Del Destino
+   Creator: Leontyne Price, Giuseppe Verdi, Richard Tucker, Robert Merrill, Shirley Verrett, Giorgio Tozzi, Ezio Flagello, RCA Italiana Opera Orchestra, RCA Italiana Opera Chorus, Thomas Schippers
+
+389. lp_i-pagliacci_ruggiero-leoncavallo-iva-pacetti-beniamino
+   Title: I Pagliacci
+   Creator: Ruggiero Leoncavallo, Iva Pacetti, Beniamino Gigli, Coro Del Teatro Alla Scala, Orchestra Del Teatro Alla Scala, Franco Ghione
+
+390. lp_la-boheme_giacomo-puccini-arturo-toscanini-licia-alb
+   Title: La Bohème
+   Creator: Giacomo Puccini, Arturo Toscanini, Licia Albanese, Jan Peerce, Anne McKnight, Francesco Valentino, NBC Symphony Orchestra
+
+391. lp_music-of-shakespeares-time_various-august-wenzinger-christopher-keyte
+   Title: Music Of Shakespeare's Time
+   Creator: Various, August Wenzinger, Christopher Keyte, Darien Angadi, David Channon, Diana Poulton, Dietrich Kessler, Eileen Poulter, Gerald English, Hannalore Muller, Layton Ring, Margaret Hodsdon, Mary Phillips, Mary Thomas, Michael Walton, Raymond Leppard, Rosemary Phillips, Schola Cantorum Basiliensis, The Dolmetsch Consort, Wilfred Brown
+
+392. lp_kingdom-of-the-sun-perus-inca-heritage_david-lewiston
+   Title: Kingdom Of The Sun (Peru's Inca Heritage)
+   Creator: David Lewiston
+
+393. lp_mass-in-b-flat-major-deutsche-messe_franz-schubert-vienna-pro-musica-orchestra
+   Title: Mass In B-Flat Major / Deutsche Messe
+   Creator: Franz Schubert, Vienna Pro Musica Orchestra, Wiener Kammerchor, Hans Gillesberger
+
+394. lp_laud-to-the-nativity-the-magnificat_ottorino-respighi-claudio-monteverdi-the-r_0
+   Title: Laud To The Nativity / The Magnificat
+   Creator: Ottorino Respighi, Claudio Monteverdi, The Roger Wagner Chorale, Los Angeles Philharmonic Orchestra, Alfred Wallenstein
+
+395. lp_lamico-fritz_gianandrea-gavazzeni-pietro-mascagni-lucia
+   Title: L'Amico Fritz
+   Creator: Gianandrea Gavazzeni, Pietro Mascagni, Luciano Pavarotti, Mirella Freni
+
+396. lp_hippolyte-et-aricie-excerpts_jeanphilippe-rameau-roger-dsormiere
+   Title: Hippolyte et Aricie (Excerpts)
+   Creator: Jean-Philippe Rameau, Roger Désormière
+
+397. lp_ariadne-auf-naxos_richard-strauss-gundula-janowitz-james-kin_0
+   Title: Ariadne Auf Naxos
+   Creator: Richard Strauss, Gundula Janowitz, James King, Teresa Żylis-Gara, Sylvia Geszty, Theo Adam, Peter Schreier, Hermann Prey, Staatskapelle Dresden, Rudolf Kempe
+
+398. lp_lulu-die-gunther-rennertinszenierung_alban-berg-anneliese-rothenberger-elisabet
+   Title: Lulu - Die Günther Rennert-Inszenierung
+   Creator: Alban Berg, Anneliese Rothenberger, Elisabeth Steiner, Kerstin Meyer, Toni Blankenheim, Erwin Wohlfahrt, Gerhard Unger, Kim Borg, Benno Kusche, Leopold Ludwig
+
+399. lp_la-fida-ninfa_antonio-vivaldi
+   Title: La Fida Ninfa
+   Creator: Antonio Vivaldi
+
+400. lp_missa-solemnis_otto-klemperer-ludwig-van-beethoven-ilona
+   Title: Missa Solemnis
+   Creator: Otto Klemperer, Ludwig van Beethoven, Ilona Steingruber, Else Schürhoff, Erich Majkut, Otto Wiener, Wiener Akademie Kammerchor, Wiener Symphoniker
+
+401. lp_requiem-for-mignon-op-98b-wesendonk-liede_robert-schumann-johannes-brahms-richard-wa
+   Title: Requiem For Mignon Op. 98b / Wesendonk Lieder / Alto Rhapsody Op. 53 / Rückert Lieder
+   Creator: Robert Schumann, Johannes Brahms, Richard Wagner, Gustav Mahler, Maura Moreira, Edith Mathis, Christa Lehnert, Margarete Witte-Waldbauer, Robert Titze, Symphonieorchester Innsbruck, Innsbruck Symphony Chorus, Robert Wagner
+
+402. lp_medieval-and-renaissance-music-for-the-iri_elena-polonska-guy-durand-roger-cotte
+   Title: Medieval And Renaissance Music For The Irish And Medieval Harps, Vièle, Recorders And Tambourin
+   Creator: Elena Polonska, Guy Durand, Roger Cotte
+
+403. lp_purcell-songs_henry-purcell-frank-patterson-john-beckett
+   Title: Purcell Songs
+   Creator: Henry Purcell, Frank Patterson, John Beckett, Adam Skeaping
+
+404. lp_ma-tante-aurore-comic-opera-in-2-acts_franois-adrien-boieldieu
+   Title: Ma Tante Aurore (Comic Opera In 2 Acts)
+   Creator: François-Adrien Boieldieu
+
+405. lp_la-zingara_rinaldo-da-capua-gnter-kehr
+   Title: La Zingara
+   Creator: Rinaldo da Capua, Günter Kehr
+
+406. lp_abu-hassan_carl-maria-von-weber-elisabeth-schwarzkopf
+   Title: Abu Hassan
+   Creator: Carl Maria von Weber, Elisabeth Schwarzkopf, Michael Bohnen, Erich Witte, Radio-Symphonie-Orchester Berlin, Leopold Ludwig
+
+407. lp_sings-wagner_tiana-lemnitz-michael-raucheisen-franz-vlk
+   Title: Sings Wagner
+   Creator: Tiana Lemnitz, Michael Raucheisen, Franz Völker
+
+408. lp_romo-et-juliette_hector-berlioz-patricia-kern-robert-tear-j
+   Title: Roméo Et Juliette
+   Creator: Hector Berlioz, Patricia Kern, Robert Tear, John Shirley-Quirk, The London Symphony Orchestra, Sir Colin Davis
+
+409. lp_rigoletto_giuseppe-verdi-mario-del-monaco-aldo-prott
+   Title: Rigoletto
+   Creator: Giuseppe Verdi, Mario Del Monaco, Aldo Protti, Hilde Güden, Cesare Siepi, Alberto Erede, Giulietta Simionato, Fernando Corena, Piero De Palma, Luisa Ribacchi, Pier Luigi Latinucci, Orchestra dell'Accademia Nazionale di Santa Cecilia, Coro dell'Accademia Nazionale di Santa Cecilia
+
+410. lp_the-barber-of-seville_gioacchino-rossini_2
+   Title: The Barber Of Seville
+   Creator: Gioacchino Rossini
+
+411. lp_kindertotenlieder-lieder-eines-fahrenden_gustav-mahler-vera-soukupova-the-czech-phi
+   Title: Kindertotenlieder - Lieder Eines Fahrenden Gesellen - Wo Die Schönen Trompeten Blasen
+   Creator: Gustav Mahler, Věra Soukupová, The Czech Philharmonic Orchestra, Václav Neumann
+
+412. lp_final-scene-from-salome-and-other-opera-fa_ljuba-welitsch-fritz-reiner-max-rudolf
+   Title: Final Scene From Salome And Other Opera Favorites
+   Creator: Ljuba Welitsch, Fritz Reiner, Max Rudolf
+
+413. lp_zoroastre-excerpts-a-lyric-tragedy_jean-philippe-rameau-hamburger-kammerorche
+   Title: Zoroastre (Excerpts) (A Lyric Tragedy)
+   Creator: Jean-Philippe Rameau, Hamburger Kammerorchester, Richard Kapp
+
+414. lp_the-flying-dutchman_richard-wagner-antal-dorati-orchestra-of-t
+   Title: The Flying Dutchman
+   Creator: Richard Wagner, Antal Dorati, Orchestra Of The Royal Opera House, Covent Garden, Chorus Of The Royal Opera House, Covent Garden, George London, Leonie Rysanek, Giorgio Tozzi
+
+415. lp_orpheus-and-eurydice-orphe-et-eurydice_christoph-willibald-gluck-hans-rosbaud-leo_0
+   Title: Orpheus And Eurydice (Orphée Et Eurydice)
+   Creator: Christoph Willibald Gluck, Hans Rosbaud, Leopold Simoneau, Suzanne Danco, Pierrette Alarie, Orchestre Des Concerts Lamoureux
+
+416. lp_the-triumph-of-maximilian-i_the-ambrosian-singers-john-mccarthy-the-vi
+   Title: The Triumph Of Maximilian I
+   Creator: The Ambrosian Singers, John McCarthy, The Vienna Renaissance Players
+
+417. lp_symphony-no-4-leonore-overture-no-3_robert-schumann-ludwig-van-beethoven-bosto
+   Title: Symphony No. 4 / Leonore Overture No. 3
+   Creator: Robert Schumann, Ludwig van Beethoven, Boston Symphony Orchestra, Erich Leinsdorf
+
+418. lp_la-prichole_jacques-offenbach_0
+   Title: La Périchole
+   Creator: Jacques Offenbach
+
+419. lp_twelve-concerti-grossi-opus-6-complete_arcangelo-corelli-max-goberman-the-vienna_0
+   Title: Twelve Concerti Grossi, Opus 6 Complete
+   Creator: Arcangelo Corelli, Max Goberman, The Vienna Sinfonietta
+
+420. lp_latraviata-complete-opera_giuseppe-verdi-arturo-toscanini-licia-alba
+   Title: LaTraviata (Complete Opera)
+   Creator: Giuseppe Verdi, Arturo Toscanini, Licia Albanese, Jan Peerce, Robert Merrill, NBC Symphony Orchestra
+
+421. lp_a-german-requiem-opus-45-alto-rhapsody-op_johannes-brahms-ndr-sinfonieorchester-ndr
+   Title: A German Requiem, Opus 45 / Alto Rhapsody, Opus 53 / Fest-Und Gedenksprüche, Opus 109
+   Creator: Johannes Brahms, NDR Sinfonieorchester, NDR Chor, Carl Bamberger, Teresa Stich-Randall, James Pease, Grace Hoffman, Boys' Choir Of St.-Michael's Church, Hamburg, Chorus Of The Singakademie, Hamburg, F. Brinkmann
+
+422. lp_a-recital-of-bach-and-handel-arias_kathleen-ferrier-the-london-philharmonic-o_0
+   Title: A Recital Of Bach And Handel Arias
+   Creator: Kathleen Ferrier, The London Philharmonic Orchestra, Sir Adrian Boult
+
+423. lp_la-traviata_giuseppe-verdi-montserrat-caball-carlo-ber
+   Title: La Traviata
+   Creator: Giuseppe Verdi, Montserrat Caballé, Carlo Bergonzi, Sherrill Milnes, Georges Prêtre
+
+424. lp_il-trovatore_giuseppe-verdi_3
+   Title: Il Trovatore
+   Creator: Giuseppe Verdi
+
+425. lp_julius-caesar_georg-friedrich-hndel-norman-treigle-bever
+   Title: Julius Caesar
+   Creator: Georg Friedrich Händel, Norman Treigle, Beverly Sills, Maureen Forrester, Beverly Wolff, Spiro Malas, Dominic Cossa, Michael Devlin, William Beck, New York City Opera Chorus, New York City Opera Orchestra, Julius Rudel
+
+426. lp_ernani_leontyne-price-carlo-bergonzi-mario-sereni
+   Title: Ernani
+   Creator: Leontyne Price, Carlo Bergonzi, Mario Sereni, Nicolas Flagello, Thomas Schippers, Giuseppe Verdi
+
+427. lp_the-damnation-of-faust_boston-symphony-orchestra-charles-munch-he
+   Title: The Damnation Of Faust
+   Creator: Boston Symphony Orchestra, Charles Munch, Hector Berlioz
+
+428. lp_lucrezia-borgia_gaetano-donizetti-montserrat-caball
+   Title: Lucrezia Borgia
+   Creator: Gaetano Donizetti, Montserrat Caballé
+
+429. lp_solomon_georg-friedrich-hndel-john-shirley-quirk-a
+   Title: Solomon
+   Creator: Georg Friedrich Händel, John Shirley-Quirk, Alexander Young, Saramae Endich, Patricia Brooks, Wiener Volksopernorchester, Wiener Jeunesse-Chor, Stephen Simon
+
+430. lp_a-solemn-pontifical-requiem-mass-in-memory_wolfgang-amadeus-mozart
+   Title: A Solemn Pontifical Requiem Mass In Memory Of John Fitzgerald Kennedy
+   Creator: Wolfgang Amadeus Mozart
+
+431. lp_the-threepenny-opera-die-dreigroschenoper_kurt-weill-marc-blitzstein
+   Title: The Threepenny Opera (Die Dreigroschenoper)
+   Creator: Kurt Weill, Marc Blitzstein
+
+432. lp_aida_leontyne-price-giuseppe-verdi-jon-vickers
+   Title: Aïda
+   Creator: Leontyne Price, Giuseppe Verdi, Jon Vickers, Rita Gorr, Robert Merrill, Giorgio Tozzi, Orchestra Del Teatro Dell'Opera Di Roma, Coro Del Teatro Dell'Opera Di Roma, Georg Solti
+
+433. lp_the-great-cantatas-of-johann-sebastian-bac_johann-sebastian-bach-friederike-sailer-cl_1
+   Title: The Great Cantatas Of Johann Sebastian Bach
+   Creator: Johann Sebastian Bach, Friederike Sailer, Claudia Hellmann, Helmut Krebs, Erich Wenk, Heinrich-Schütz-Chor Heilbronn, Südwestdeutsches Kammerorchester, Fritz Werner
+
+434. lp_messa-concertata_francesco-cavalli-orchestra-dellangelicum_0
+   Title: Messa Concertata
+   Creator: Francesco Cavalli, Orchestra Dell'Angelicum Di Milano
+
+435. lp_la-boheme-complete_giacomo-puccini-arturo-toscanini-licia-alb
+   Title: La Bohème (Complete)
+   Creator: Giacomo Puccini, Arturo Toscanini, Licia Albanese, Jan Peerce
+
+436. lp_il-trovatore-complete_giuseppe-verdi-zinka-milanov-jussi-bjrling
+   Title: Il Trovatore (Complete)
+   Creator: Giuseppe Verdi, Zinka Milanov, Jussi Björling, Fedora Barbieri, Leonard Warren, The Robert Shaw Chorale, Robert Shaw, RCA Victor Symphony Orchestra, Renato Cellini
+
+437. lp_missa-solemnis_ludwig-van-beethoven-nbc-symphony-orchestr
+   Title: Missa Solemnis
+   Creator: Ludwig van Beethoven, NBC Symphony Orchestra, Arturo Toscanini
+
+438. lp_don-pasquale_gaetano-donizetti-anna-maccianti-mario-bas
+   Title: Don Pasquale
+   Creator: Gaetano Donizetti, Anna Maccianti, Mario Basiola, Ugo Benelli, Augusto Frati, Alfredo Mariotti, Ettore Gracis
+
+439. lp_mozart-string-quartet-in-e-flat-major-kv_wolfgang-amadeus-mozart-joseph-haydn
+   Title: Mozart - String Quartet In E Flat Major Kv 428 - Haydn - String Quartet "Fifths" P. 76,2
+   Creator: Wolfgang Amadeus Mozart, Joseph Haydn
+
+440. lp_portrait-thomas-stewart_thomas-stewart
+   Title: Portrait: Thomas Stewart
+   Creator: Thomas Stewart
+
+441. lp_stravinsky-conducts-the-rakes-progress-an_igor-stravinsky_0
+   Title: Stravinsky Conducts The Rake´s Progress (An Opera In Three Acts)
+   Creator: Igor Stravinsky
+
+442. lp_du-fond-de-labime-psaume-24-psaume-129_lili-boulanger-igor-markevitch-orchestre-d
+   Title: Du Fond De L'Abîme · Psaume 24 · Psaume 129 · Vieille Prière Bouddhique · Pie Jesu
+   Creator: Lili Boulanger, Igor Markevitch, Orchestre Des Concerts Lamoureux, Choeurs Elisabeth Brasseur
+
+443. lp_pierrot-lunaire-melodrama-op-21_arnold-schoenberg-pierre-boulez-orchestre
+   Title: Pierrot Lunaire Melodrama, Op. 21
+   Creator: Arnold Schoenberg, Pierre Boulez, Orchestre Du Domaine Musical, Helga Pilarczyk, Maria Bergmann, Jacques Castagner, Guy Deplus, Louis Montaigne, Luben Yordanoff, Serge Collot, Jean Huchot
+
+444. lp_presenting-the-gregg-smith-singers-america_gregg-smith-singers
+   Title: Presenting The Gregg Smith Singers (American Folk Songs)
+   Creator: Gregg Smith Singers
+
+445. lp_symphony-no13_dmitri-shostakovich-moscow-philharmonic-or
+   Title: Symphony No.13
+   Creator: Dmitri Shostakovich, Moscow Philharmonic Orchestra, Kiril Kondrashin
+
+446. lp_great-arias-from-russian-operas_netania-davrath-wiener-staatsopernchor-wie
+   Title: Great Arias from Russian Operas
+   Creator: Netania Davrath, Wiener Staatsopernchor, Wiener Philharmoniker
+
+447. lp_best-loved-french-songs_martial-singher-anton-paulik
+   Title: Best Loved French Songs
+   Creator: Martial Singher, Anton Paulik
+
+448. lp_die-fledermaus_johann-strauss-jr-hilde-gden-julius-patzak_0
+   Title: Die Fledermaus
+   Creator: Johann Strauss Jr., Hilde Güden, Julius Patzak, Anton Dermota, August Jaresch, Alfred Poell, Wilma Lipp, Sieglinde Wagner, Kurt Preger, Wiener Philharmoniker, Wiener Staatsopernchor, Clemens Krauss
+
+449. lp_unforgettable-voices-in-unforgotten-perfor_various-eleanor-steber-elisabeth-rethberg
+   Title: Unforgettable Voices In Unforgotten Performances From The German Operatic Repertoire
+   Creator: Various, Eleanor Steber, Elisabeth Rethberg, Ernestine Schumann-Heink, Helen Traubel, Kerstin Thorborg, Kirsten Flagstad, Lauritz Melchior, Maria Jeritza, Set Svanholm
+
+450. lp_la-rondine_giacomo-puccini-anna-moffo-daniele-barioni
+   Title: La Rondine
+   Creator: Giacomo Puccini, Anna Moffo, Daniele Barioni, Mario Sereni, Graziella Sciutti, Piero De Palma, RCA Italiana Opera Orchestra, RCA Italiana Opera Chorus, Francesco Molinari-Pradelli
+
+451. lp_lucia-di-lammermoor_gaetano-donizetti-dolores-wilson-gianni-po
+   Title: Lucia Di Lammermoor
+   Creator: Gaetano Donizetti, Dolores Wilson, Gianni Poggi, Franco Capuana
+
+452. lp_orlando_georg-friedrich-hndel-viener-volksopernorc
+   Title: Orlando
+   Creator: Georg Friedrich Händel, Wiener Volksopernorchester
+
+453. lp_madama-butterfly_giacomo-puccini-renata-tebaldi-orchestra-d
+   Title: Madama Butterfly
+   Creator: Giacomo Puccini, Renata Tebaldi, Orchestra dell'Accademia Nazionale di Santa Cecilia, Coro dell'Accademia Nazionale di Santa Cecilia, Alberto Erede, Fernando Corena, Gianna Diozzi, Giovanni Inghilleri, Giuseppe Campora, Luigi Pizzeri, Melchiorre Luise, Michele Calvino, Nell Rankin, Piero De Palma
+
+454. lp_strauss-der-rosenkavalier-op-59_erich-kleiber-maria-reining-hilde-guden-se
+   Title: Strauss, Der Rosenkavalier OP. 59
+   Creator: Erich Kleiber, Maria Reining, Hilde Güden, Sena Jurinac, Ludwig Weber, Wiener Staatsopernchor, Wiener Philharmoniker
+
+455. lp_die-frau-ohne-schatten_richard-strauss-wiener-staatsopernchor-wie
+   Title: Die Frau Ohne Schatten
+   Creator: Richard Strauss, Wiener Staatsopernchor, Wiener Philharmoniker, Karl Böhm
+
+456. lp_cantata-no-6-die-himmel-erzhlen-die-ehre-g_johann-sebastian-bach-magda-laszlo-hilde-r
+   Title: Cantata No. 76: "Die Himmel Erzählen Die Ehre Gottes" / Cantata No. 84: "Ich Bin Vergnügt Mit Meinem Glücke"
+   Creator: Johann Sebastian Bach, Magda Laszlo, Hilde Rössel-Majdan, Petre Munteanu, Richard Standen, Wiener Akademie Kammerchor, Orchester Der Wiener Staatsoper, Hermann Scherchen
+
+457. lp_ballet-de-la-merlaison-messe-pour-plusieu_louis-xiii-marc-antoine-charpentier-le-gro_1
+   Title: Ballet De La Merlaison / Messe Pour Plusieurs Instruments Au Lieu Des Orgues
+   Creator: Louis XIII, Marc Antoine Charpentier, Le Groupe Des Instruments Anciens De Paris, Roger Cotte, Jacques Chailley
+
+458. lp_cantata-bwv-199-cantata-bwv-09_yohann-sebastian-bach-maria-stader-cologne_0
+   Title: Cantata BWV 199 • Cantata BWV 209
+   Creator: Johann Sebastian Bach, Maria Stader, Cologne Soloists Ensemble, Helmut Müller-Brühl
+
+459. lp_italian-canata-tu-fedel-tu-constante-cant_georg-friedrich-hndel-joseph-bodin-de-bois
+   Title: Italian Canata, Tu Fedel, Tu Constante? / Cantata, Diane Et Actéon
+   Creator: Georg Friedrich Händel, Joseph Bodin de Boismortier, New York Chamber Soloists
+
+460. lp_arabella-complete-recording_richard-strauss-hilde-gden-george-london-l
+   Title: Arabella (Complete Recording)
+   Creator: Richard Strauss, Hilde Güden, George London, Lisa Della Casa, Wiener Staatsopernchor, Wiener Philharmoniker, Georg Solti
+
+461. lp_works-of-shakespeare-henryvi-part-i_the-marlowe-dramatic-society-and-professio
+   Title: Works of Shakespeare HenryVI Part I
+   Creator: The Marlowe Dramatic Society And Professional Players, William Shakespeare
+
+462. lp_il-tabarro_renata-tebaldi-mario-del-monaco-robert-mer_0
+   Title: Il Tabarro
+   Creator: Renata Tebaldi, Mario del Monaco, Robert Merrill, Giacomo Puccini
+
+463. lp_verdi-scenes-from-falstaff_the-new-symphony-orchestra-of-london-edwar
+   Title: Verdi: Scenes From Falstaff
+   Creator: The New Symphony Orchestra Of London, Edward Downes
+
+464. lp_the-age-of-bel-canto_joan-sutherland-marilyn-horne-richard-conr_1
+   Title: The Age Of Bel Canto
+   Creator: Joan Sutherland, Marilyn Horne, Richard Conrad, Richard Bonynge, The London Symphony Orchestra, The New Symphony Orchestra Of London
+
+465. lp_cavalleria-rusticana-elena-suliotis-opera_pietro-mascagni-elena-souliotis-mario-del
+   Title: Cavalleria Rusticana / Elena Suliotis Operatic Recital
+   Creator: Pietro Mascagni, Elena Souliotis, Mario del Monaco, Tito Gobbi, Orchestra Di Roma, Coro Di Roma, Silvio Varviso
+
+466. lp_music-of-bulgaria_ensemble-of-the-bulgarian-republic-philip
+   Title: Music Of Bulgaria
+   Creator: Ensemble Of The Bulgarian Republic, Philip Koutev
+
+467. lp_litaliana-in-algeri_gioacchino-rossini-teresa-berganza-luigi-a
+   Title: L'Italiana In Algeri
+   Creator: Gioacchino Rossini, Teresa Berganza, Luigi Alva, Fernando Corena, Coro Del Maggio Musicale Fiorentino, Orchestra Del Maggio Musicale Fiorentino, Silvio Varviso
+
+468. lp_joan-sutherland-in-la-sonnambula-by-vincen_vincenzo-bellini-nicola-monti-sylvia-stahl
+   Title: Joan Sutherland In La Sonnambula By Vincenzo Bellini
+   Creator: Vincenzo Bellini, Nicola Monti, Sylvia Stahlman, Fernando Corena, Margreta Elkins, Joan Sutherland, Richard Bonynge
+
+469. lp_norma_vincenzo-bellini-elena-souliotis-fiorenza
+   Title: Norma
+   Creator: Vincenzo Bellini, Elena Souliotis, Fiorenza Cossotto, Mario Del Monaco, Carlo Cava, Orchestra dell'Accademia Nazionale di Santa Cecilia, Silvio Varviso
+
+470. lp_the-pirates-of-penzance_gilbert-sullivan-doyly-carte-opera-compan_1
+   Title: The Pirates Of Penzance
+   Creator: Gilbert & Sullivan, D'Oyly Carte Opera Company, Isidore Godfrey, The Royal Philharmonic Orchestra
+
+471. lp_symphoniae-sacrae-8-concertos-from-book-ii_various-helmuth-rilling-heinrich-schtz
+   Title: Symphoniae Sacrae (8 Concertos From Book II)
+   Creator: Various, Helmuth Rilling, Heinrich Schütz
+
+472. lp_music-at-drottningholm_johan-helmich-roman-johann-gottlieb-nauman
+   Title: Music at Drottningholm
+   Creator: Johan Helmich Roman, Johann Gottlieb Naumann, Francesco Uttini
+
+473. lp_missa-ave-maris-stella-four-motets_josquin-des-prs-university-of-illinois-cha
+   Title: Missa Ave Maris Stella / Four Motets
+   Creator: Josquin Des Prés, University Of Illinois Chamber Choir And Madrigal Singers, George Hunter
+
+474. lp_entfliehet-verschwindet-entweichet-ihr-sor_johann-sebastian-bach
+   Title: Entfliehet, Verschwindet, Entweichet, Ihr Sorgen: Shepherd Cantata BWV 249a
+   Creator: Johann Sebastian Bach
+
+475. lp_chansons_antoine-busnois-the-nonesuch-consort-joshu
+   Title: Chansons
+   Creator: Antoine Busnois, The Nonesuch Consort, Joshua Rifkin
+
+476. lp_bass-arias-from-russian-italian-operas_nicolai-ghiaurov-edward-downes-the-london_0
+   Title: Bass Arias From Russian & Italian Operas
+   Creator: Nicolai Ghiaurov, Edward Downes, The London Symphony Orchestra
+
+477. lp_music-from-the-court-of-burgundy_ensemble-vocal-roger-blanchard-pierre-poul
+   Title: Music From The Court Of Burgundy
+   Creator: Ensemble Vocal Roger Blanchard, Pierre Poulteau Recorder Trio
+
+478. lp_6-canzonettes-6-hlderlin-fragments_joseph-haydn-benjamin-britten-peter-pears
+   Title: 6 Canzonettes / 6 Hölderlin Fragments
+   Creator: Joseph Haydn, Benjamin Britten, Peter Pears, Britten
+
+479. lp_rhapsody-for-contralto-male-chorus-and-orc_johannes-brahms-kathleen-ferrier-clemens-k
+   Title: Rhapsody For Contralto, Male Chorus And Orchestra / Two Songs For Contralto With Viola Obbligato / Sapphisches Ode / Botschaft
+   Creator: Johannes Brahms, Kathleen Ferrier, Clemens Krauss
+
+480. lp_spring-symphony_benjamin-britten_0
+   Title: Spring Symphony
+   Creator: Benjamin Britten
+
+481. lp_das-marienleben-new-version-1948_paul-hindemith-gerda-lammers-gerhard-puche
+   Title: Das Marienleben (New Version, 1948)
+   Creator: Paul Hindemith, Gerda Lammers, Gerhard Puchelt
+
+482. lp_liturgical-music-from-the-russian-cathedra_the-johannes-damascenus-choir-of-essen
+   Title: Liturgical Music From The Russian Cathedral
+   Creator: The Johannes-Damascenus Choir Of Essen
+
+483. lp_military-fanfares-marches-choruses-from-t_batterie-fanfare-de-la-musique-des-gardien
+   Title: Military Fanfares, Marches & Choruses From The Time Of Napoleon
+   Creator: Batterie Fanfare De La Musique Des Gardiens De La Paix, Désiré Dondeyne, Unknown Artist, Jean Rollin
+
+484. lp_voices-of-the-middle-ages-music-from-the_capella-antiqua-mnchen-konrad-ruhland
+   Title: Voices Of The Middle Ages - Music From The Gothic Cathedral
+   Creator: Capella Antiqua München, Konrad Ruhland
+
+485. lp_st-john-passion-and-prophecy-of-the-suffer_christopher-demantius-ncrv-vocaal-ensemble
+   Title: St John Passion And Prophecy Of The Sufferings And Death Of Jesus Christ / History Of The Suffering And Death Of Jesus Christ
+   Creator: Christopher Demantius, NCRV Vocaal Ensemble, Marinus Voorberg
+
+486. lp_les-noces-pribaoutki-berceuses-du-chat_igor-stravinsky-choeur-national-de-lopra-d
+   Title: Les Noces / Pribaoutki • Berceuses Du Chat • Four Russian Songs • Four Russian Peasant Songs
+   Creator: Igor Stravinsky, Choeur National De L'Opéra De Paris, Orchestre National De L'Opéra De Paris, Pierre Boulez
+
+487. lp_chants-de-la-renaissance-de-claude-lejeune_jean-paul-kreder-ensemble
+   Title: Chants De La Renaissance De Claude Lejeune
+   Creator: Jean-Paul Kreder Ensemble
+
+488. lp_in-a-medieval-garden-instrumental-and-voca_stanley-buetens-lute-ensemble
+   Title: In A Medieval Garden (Instrumental And Vocal Music Of The Middle Ages And Renaissance)
+   Creator: Stanley Buetens Lute Ensemble
+
+489. lp_symphonies-and-fanfares-for-the-kings-supp_collegium-musicum-de-paris-roland-douatte
+   Title: Symphonies And Fanfares For The King's Supper
+   Creator: Collegium Musicum De Paris, Roland Douatte
+
+490. lp_court-and-ceremonial-music-of-the-early-16_ensemble-vocal-roger-blanchard-poulteau-co
+   Title: Court And Ceremonial Music Of The Early 16th Century
+   Creator: Ensemble Vocal Roger Blanchard, Poulteau Consort
+
+491. lp_die-kunst-der-fuge-bwv-1080-the-art-of-fug_johann-sebastian-bach-kammerorchester-des_0
+   Title: Die Kunst Der Fuge, BWV 1080 (The Art Of Fugue)
+   Creator: Johann Sebastian Bach, Kammerorchester Des Saarländischen Rundfunks, Saarbrücken, Karl Ristenpart
+
+492. lp_the-legacy-of-the-mannheim-school_carl-stamitz-johann-baptist-vanhal-peter-v
+   Title: The Legacy Of The Mannheim School
+   Creator: Carl Stamitz, Johann Baptist Vanhal, Peter Von Winter, Kammerorchester Des Saarländischen Rundfunks, Saarbrücken, Karl Ristenpart
+
+493. lp_tosca_leontyne-price-giacomo-puccini-giuseppe-di
+   Title: Tosca
+   Creator: Leontyne Price, Giacomo Puccini, Giuseppe Di Stefano, Giuseppe Taddei, Fernando Corena, Herbert Von Karajan, Wiener Philharmoniker
+
+494. lp_la-guirlande-the-enchanted-flowers_jean-philippe-rameau
+   Title: La Guirlande (The Enchanted Flowers)
+   Creator: Jean-Philippe Rameau
+
+495. lp_cantata-no-140-cantata-no-57_johann-sebastian-bach-ursula-buckel-prof-j
+   Title: Cantata No. 140 / Cantata No. 57
+   Creator: Johann Sebastian Bach, Ursula Buckel, Prof. Jakob Stämpfli, Chor Der Musikhochschule Saarbrücken, Herbert Schmolzi, Kammerorchester Des Saarländischen Rundfunks, Saarbrücken, Karl Ristenpart
+
+496. lp_ceremonial-music-of-the-french-baroque_ensemble-vocal-roger-blanchard-orchestre-d
+   Title: Ceremonial Music Of The French Baroque
+   Creator: Ensemble Vocal Roger Blanchard, Orchestre De La Société Des Concerts Du Conservatoire, Roger Blanchard, Marc Antoine Charpentier, Jean-Baptiste Lully, Michel Richard Delalande
+
+497. lp_mass-in-c-major-k317-coronation-vesperae_volfgang-amadeus-mozart-teresa-stichrandal
+   Title: Mass In C Major (K.317) "Coronation" / Vesperae Solennes De Confessore In C Major (K.339)
+   Creator: Wolfgang Amadeus Mozart, Teresa Stich-Randall, Bianca Maria Casoni, Pietro Bottazzo, György Littasy, Chor Der Musikhochschule Saarbrücken, Herbert Schmolzi, Kammerorchester Des Saarländischen Rundfunks, Saarbrücken, Karl Ristenpart
+
+498. lp_the-love-for-three-oranges-op-33_sergei-prokofiev-slovenian-national-opera
+   Title: The Love for Three Oranges, Op. 33
+   Creator: Sergei Prokofiev, Slovenian National Opera Company, Bogo Leskovic
+
+499. lp_famous-mozart-arias_wolfgang-amadeus-mozart-leopold-simoneau-i
+   Title: Famous Mozart Arias
+   Creator: Wolfgang Amadeus Mozart, Leopold Simoneau, Ilse Hollweg, Wiener Symphoniker, Bernhard Paumgartner
+
+500. lp_the-passion-according-to-saint-mark_johann-sebastian-bach-volfgang-gnnenvein-d
+   Title: The Passion According To Saint Mark
+   Creator: Johann Sebastian Bach, Wolfgang Gönnenwein, Der Süddeutsche Madrigalchor, Südwestdeutsches Kammerorchester
+
+501. lp_wozzeck_alban-berg-karl-bhm
+   Title: Wozzeck
+   Creator: Alban Berg, Karl Böhm
+
+502. lp_songs-of-a-wayfarer-sacred-arias_gustav-mahler-johann-sebastian-bach-carol
+   Title: Songs Of A Wayfarer ‧ Sacred Arias
+   Creator: Gustav Mahler, Johann Sebastian Bach, Carol Brice, Fritz Reiner, The Pittsburgh Symphony Orchestra, Columbia Broadcasting Concert Orchestra, Daniel Saidenberg
+
+503. lp_cantata-no-21-ich-hatte-viel-bekummernis_johann-sebastian-bach-rosl-schvaiger-lorna
+   Title: Cantata No. 21, 'Ich Hatte Viel Bekummernis'
+   Creator: Johann Sebastian Bach, Rosl Schwaiger, Lorna Sydney, Hugues Cuénod, Alois Pernerstorfer, Wiener Kammerchor, Wiener Symphoniker, Jonathan Sternberg, Karl Mayerhofer, Kurt Rapf, Daniel Pinkham
+
+504. lp_tamerlano_georg-friedrich-hndel
+   Title: Tamerlano
+   Creator: Georg Friedrich Händel
+
+505. lp_carmen_georges-bizet-victoria-de-los-angeles-nico
+   Title: Carmen
+   Creator: Georges Bizet, Victoria De Los Angeles, Nicolai Gedda, Ernest Blanc, Janine Micheau, Orchestre National De La R.T.F., Sir Thomas Beecham
+
+506. lp_music-at-notre-dame-1200-1375-notre-dame-m_guillaume-de-machaut-protin-alfred-deller
+   Title: Music At Notre Dame 1200-1375, Notre Dame Mass & Works Of Perotin
+   Creator: Guillaume de Machaut, Pérotin, Alfred Deller, Deller Consort, Medieval Chamber Ensemble
+
+507. lp_the-masque-in-dioclesian-and-instrumental_henry-purcell-alfred-deller
+   Title: The Masque In Dioclesian and Instrumental Music for the Play
+   Creator: Henry Purcell, Alfred Deller
+
+508. lp_peter-pan_james-matthew-barrie-jean-arthur-boris-kar
+   Title: Peter Pan
+   Creator: James Matthew Barrie, Jean Arthur, Boris Karloff, Leonard Bernstein
+
+509. lp_1909-1914-an-historic-recording-from-col_the-boston-opera-company
+   Title: 1909 - 1914. An Historic Recording From Columbia's Archives
+   Creator: The Boston Opera Company
+
+510. lp_prophecy-of-the-sufferings-and-death-of-je_christopher-demantius-leonhard-lechner
+   Title: Prophecy Of The Sufferings And Death Of Jesus Christ / History Of The Passion And Suffering Of Our Savior And Redeemer, Jesus Christ
+   Creator: Christopher Demantius, Leonhard Lechner
+
+511. lp_il-signor-bruschino-comic-opera-in-1-act_gioacchino-rossini-orchestra-filarmonica-d
+   Title: Il Signor Bruschino (Comic Opera In 1 Act)
+   Creator: Gioacchino Rossini, Orchestra Filarmonica Di Milano, Ennio Gerelli
+
+512. lp_biblical-oratorios_giacomo-carissimi-giovanni-francesco-aneri
+   Title: Biblical Oratorios
+   Creator: Giacomo Carissimi, Giovanni Francesco Anerio
+
+513. lp_pimpinone-or-the-mismatched-marriage_georg-philipp-telemann
+   Title: Pimpinone (Or "The Mismatched Marriage")
+   Creator: Georg Philipp Telemann
+
+514. lp_highlights-from-falstaff_giuseppe-verdi-arturo-toscanini-nbc-sympho
+   Title: Highlights From Falstaff
+   Creator: Giuseppe Verdi, Arturo Toscanini, NBC Symphony Orchestra
+
+515. lp_hnsel-und-gretel_engelbert-humperdinck-josef-metternich-mar
+   Title: Hänsel Und Gretel
+   Creator: Engelbert Humperdinck, Josef Metternich, Maria Von Ilosvay, Elisabeth Grümmer, Elisabeth Schwarzkopf, Else Schürhoff, Anny Felbermayer, Herbert Von Karajan
+
+516. lp_the-fabulous-forties-at-the-met_various
+   Title: The Fabulous Forties At The Met
+   Creator: Various
+
+517. lp_critics-choice_irving-kolodin
+   Title: Critic's Choice
+   Creator: Irving Kolodin
+
+518. lp_la-reine-de-saba-the-queen-of-sheba_suzanne-sarroca-gilbert-py-gerard-serkoyan
+   Title: La Reine De Saba (The Queen Of Sheba)
+   Creator: Suzanne Sarroca, Gilbert Py, Gerard Serkoyan
+
+519. lp_la-damnation-de-faust_hector-berlioz-georges-jouatte-paul-cabane
+   Title: La Damnation De Faust
+   Creator: Hector Berlioz, Georges Jouatte, Paul Cabanel, Mona Laurena, André Pactat, Emile Passani Chorus and Orchestra, Jean Fournet
+
+520. lp_la-battaglia-di-legnano_giuseppe-verdi
+   Title: La Battaglia Di Legnano
+   Creator: Giuseppe Verdi
+
+521. lp_larlesiana-the-girl-from-arles_francesco-cilea-pia-tassinari-ferruccio-ta
+   Title: L'Arlesiana (The Girl From Arles)
+   Creator: Francesco Cilea, Pia Tassinari, Ferruccio Tagliavini, Gianna Galli, Paolo Silveri, Orchestra Sinfonica Di Torino Della RAI, Coro Di Torino Della RAI, Arturo Basile, Ruggero Maghini
+
+522. lp_la-traviata_giuseppe-verdi-maria-callas-gabriele-santi
+   Title: La Traviata
+   Creator: Giuseppe Verdi, Maria Callas, Gabriele Santini, Francesco Albanese, Ugo Savarese, Ede Marietti Gandolfo, Ines Marietti, Mariano Caruso, Alberto Albertini, Mario Zorgniotti, Tommaso Soley, Orchestra Sinfonica Di Torino Della RAI, Coro Cetra, Giulio Mogliotti
+
+523. lp_elektra_richard-strauss_1
+   Title: Elektra
+   Creator: Richard Strauss
+
+524. lp_puccini-madame-butterfly_giacomo-puccini-clara-petrella-ferruccio-t
+   Title: Puccini : Madame Butterfly
+   Creator: Giacomo Puccini, Clara Petrella, Ferruccio Tagliavini, Giuseppe Taddei, Mafalda Masini, Maria Cristina Foscale, Mariano Caruso, Antonio Biancardo, Alberto Albertini, Franco Mariani, Carla Lazzari, Renata Pagetti, Maria Darbesi, Orchestra Sinfonica Di Torino Della RAI, Coro Cetra, Giulio Mogliotti, Angelo Questa
+
+525. lp_un-giorno-di-regno-king-for-a-day_giuseppe-verdi-renato-capecchi-sesto-brusc
+   Title: Un Giorno Di Regno (King For A Day)
+   Creator: Giuseppe Verdi, Renato Capecchi, Sesto Bruscantini, Lina Pagliughi, Orchestra Sinfonica Di Milano Della RAI, Coro Di Milano Della RAI, Alfredo Simonetto, Roberto Benaglio
+
+526. lp_the-daughter-of-the-regiment-la-figlia-del_gaetano-donizetti-lina-pagliughi-rina-cors
+   Title: The Daughter Of The Regiment (La Figlia Del Reggimento)
+   Creator: Gaetano Donizetti, Lina Pagliughi, Rina Corsi, Cesare Valletti, Sesto Bruscantini, Eraldo Coda, Orchestra Sinfonica Di Milano Della RAI, Coro Di Milano Della RAI, Mario Rossi, Roberto Benaglio
+
+527. lp_falstaff_giuseppe-verdi-arrigo-boito
+   Title: Falstaff
+   Creator: Giuseppe Verdi, Arrigo Boito
+
+528. lp_the-girl-of-the-golden-west_giacomo-puccini-carla-gavazzi-ugo-savarese
+   Title: The Girl Of The Golden West
+   Creator: Giacomo Puccini, Carla Gavazzi, Ugo Savarese, Arturo Basile
+
+529. lp_four-american-composers_mabel-daniels-miriam-gideon-julia-smith-lo
+   Title: Four American Composers
+   Creator: Mabel Daniels, Miriam Gideon, Julia Smith, Louise Talma
+
+530. lp_berlioz-requiem-op5_hector-berlioz-eugene-ormandy-the-temple-u
+   Title: Berlioz: Requiem, Op.5
+   Creator: Hector Berlioz, Eugene Ormandy, The Temple University Choirs, Robert Page, The Philadelphia Orchestra, Cesare Valletti
+
+531. lp_don-giovanni_wolfgang-amadeus-mozart-giuseppe-taddei-ma
+   Title: Don Giovanni
+   Creator: Wolfgang Amadeus Mozart, Giuseppe Taddei, Maria Curtis Verna, Cesare Valletti
+
+532. lp_la-boheme_giacomo-puccini_1
+   Title: La Bohème
+   Creator: Giacomo Puccini
+
+533. lp_trionfo-di-afrodite-concerto-scenico_eugen-jochum-annelies-kupper-elisabeth-lin
+   Title: Trionfo Di Afrodite, Concerto Scenico
+   Creator: Eugen Jochum, Annelies Kupper, Elisabeth Lindermeier, Elisabeth Wiese-Lange, Richard Holm, Ratko Delorko, Kurt Böhme
+
+534. lp_yemenite-and-other-israel-folk-songs_geula-gill-dov-seltzer
+   Title: Yemenite And Other Israel Folk Songs
+   Creator: Geula Gill, Dov Seltzer
+
+535. lp_the-devil-and-daniel-webster_douglas-moore-stephen-vincent-bent-the-fes
+   Title: The Devil And Daniel Webster
+   Creator: Douglas Moore, Stephen Vincent Benét, The Festival Choir And Orchestra
+
+536. lp_simon-boccanegra_giuseppe-verdi_1
+   Title: Simon Boccanegra
+   Creator: Giuseppe Verdi
+
+537. lp_canticle-of-canticles-prairie-songs-for_howard-swanson-roger-goeb-ben-weber
+   Title: Canticle Of Canticles - Prairie Songs For Woodwind Quintet - Seven Songs
+   Creator: Howard Swanson, Roger Goeb, Ben Weber
+
+538. lp_the-bartered-bride_bedich-smetana
+   Title: The Bartered Bride
+   Creator: Bedřich Smetana
+
+539. lp_operatic-excerpts_jean-philippe-rameau-nadia-boulanger-vocal
+   Title: Operatic Excerpts
+   Creator: Jean-Philippe Rameau, Nadia Boulanger Vocal And Instrumental Ensemble, Nadia Boulanger
+
+540. lp_an-die-ferne-geliebte-song-cycle-op-98-vi_ludwig-van-beethoven-heinrich-schlusnus-se
+   Title: An Die Ferne Geliebte (Song Cycle, Op. 98) / Vier Ernste Gesänge (Four Serious Songs, Op. 121)
+   Creator: Ludwig van Beethoven, Heinrich Schlusnus, Sebastian Peschko, Johannes Brahms, Dietrich Fischer-Dieskau, Hertha Klust
+
+541. lp_carmina-burana-secular-songs_carl-orff-symphonie-orchester-des-bayerisc
+   Title: Carmina Burana (Secular Songs)
+   Creator: Carl Orff, Symphonie-Orchester Des Bayerischen Rundfunks, Chor Des Bayerischen Rundfunks, Eugen Jochum
+
+542. lp_katya-kabanova_leo-janaek-sbor-narodniho-divadla-orchestr
+   Title: Katya Kabanova
+   Creator: Leoš Janáček, Sbor Národního Divadla, Orchestr Národního Divadla, Jaroslav Krombholc
+
+543. lp_scenes-from-richard-strauss-elektra-die-f_richard-strauss-christa-ludwig-walter-berr
+   Title: Scenes from Richard Strauss: Elektra / Die Frau Ohne Schatten / Der Rosenkavalier
+   Creator: Richard Strauss, Christa Ludwig, Walter Berry, Ochestra and Chorus of the German Opera, Berlin, Heinrich Hollreiser
+
+544. lp_three-italian-cantatas_collegium-aureum
+   Title: Three Italian Cantatas
+   Creator: Collegium Aureum
+
+545. lp_weichet-nur-betrubte-schatten-and-praise-o_johann-sebastian-bach-georg-friedrich-hnde
+   Title: Weichet Nur, Betrubte Schatten and Praise of Harmony
+   Creator: Johann Sebastian Bach, Georg Friedrich Händel, Collegium Aureum, Bach, Handel
+
+546. lp_martinelli-jepson-tibbett-in-the-great-sc_giovanni-martinelli-helen-jepson-lawrence
+   Title: Martinelli, Jepson, Tibbett In The Great Scenes From Verdi's Otello
+   Creator: Giovanni Martinelli, Helen Jepson, Lawrence Tibbett, Giuseppe Verdi
+
+547. lp_werther_jules-massenet-victoria-de-los-angeles-nic
+   Title: Werther
+   Creator: Jules Massenet, Victoria De Los Angeles, Nicolai Gedda, Mady Mesplé, Roger Soyer, Jean-Christophe Benoit, Georges Prêtre, Orchestre De Paris
+
+548. lp_great-scenes-from-wagner-gtterdmmerung_arturo-toscanini-helen-traubel-lauritz-mel
+   Title: Great Scenes From Wagner: Götterdämmerung
+   Creator: Arturo Toscanini, Helen Traubel, Lauritz Melchior
+
+549. lp_elijah_gwyneth-jones-janet-baker-nicolai-gedda-di
+   Title: Elijah
+   Creator: Gwyneth Jones, Janet Baker, Nicolai Gedda, Dietrich Fischer-Dieskau, Simon Woolf, Wandsworth School Boys' Choir, New Philharmonia Chorus, New Philharmonia Orchestra, Rafael Frühbeck De Burgos, Felix Mendelssohn-Bartholdy
+
+550. lp_the-art-of-galli-curci-vol-2_vincenzo-bellini-gaetano-donizetti-amelita
+   Title: The Art Of Galli-Curci, Vol. 2
+   Creator: Vincenzo Bellini, Gaetano Donizetti, Amelita Galli-Curci
+
+551. lp_the-mets-first-butterfly_geraldine-farrar-enrico-caruso-antonio-sco
+   Title: The Met's First Butterfly
+   Creator: Geraldine Farrar, Enrico Caruso, Antonio Scotti, Louise Homer
+
+552. lp_la-damnation-de-faust-fausts-verdammnis_hector-berlioz-igor-markevitch_0
+   Title: La Damnation De Faust (Fausts Verdammnis)
+   Creator: Hector Berlioz, Igor Markevitch
+
+553. lp_theodora-a-dramatic-oratorio-in-three-acts_georg-friedrich-hndel-heather-harper-maure
+   Title: Theodora: A Dramatic Oratorio In Three Acts
+   Creator: Georg Friedrich Händel, Heather Harper, Maureen Forrester, Alexander Young, Edgar Fleet, John Lawrenson, English Chamber Orchestra, Johannes Somary
+
+554. lp_haydn-mass-in-time-of-war_yoseph-haydn-mogens-wldike
+   Title: Haydn: Mass In Time Of War
+   Creator: Joseph Haydn, Mogens Wöldike
+
+555. lp_medieval-courtly-monody-arabian-andalusia_various
+   Title: Medieval Courtly Monody / Arabian-Andalusian Music
+   Creator: Various
+
+556. lp_puccini-tosca-highlights_coro-dellaccademia-nazionale-di-santa-ceci_0
+   Title: Puccini Tosca Highlights
+   Creator: Coro dell'Accademia Nazionale di Santa Cecilia, Anja Silja, Dietrich Fischer-Dieskau
+
+557. lp_le-cid-ballet-music-les-patineurs-the-ska_jean-martinon-israel-philharmonic-orchestr_0
+   Title: Le Cid (Ballet Music) / Les Patineurs (The Skaters)
+   Creator: Jean Martinon, Israel Philharmonic Orchestra, Jules Massenet, Giacomo Meyerbeer
+
+558. lp_rigoletto_cornell-macneil-joan-sutherland-nino-sanzo
+   Title: Rigoletto
+   Creator: Cornell MacNeil, Joan Sutherland, Nino Sanzogno, Giuseppe Verdi
+
+559. lp_verdi-spectacular_tutti-camarata-the-kingsway-symphony-orche
+   Title: Verdi Spectacular
+   Creator: Tutti Camarata, The Kingsway Symphony Orchestra
+
+560. lp_marilyn-horne-sings-carmen_marilyn-horne-the-royal-philharmonic-orche
+   Title: Marilyn Horne Sings Carmen
+   Creator: Marilyn Horne, The Royal Philharmonic Orchestra, The Royal Philharmonic Chorus, Henry Lewis
+
+561. lp_great-rhapsodies-for-orchestra_stanley-black-the-london-philharmonic-orch
+   Title: Great Rhapsodies For Orchestra
+   Creator: Stanley Black, The London Philharmonic Orchestra
+
+562. lp_puccini-spectacular_tutti-camarata-the-kingsway-symphony-orche
+   Title: Puccini Spectacular
+   Creator: Tutti Camarata, The Kingsway Symphony Orchestra
+
+563. lp_scheherazade_nikolai-rimsky-korsakov-leopold-stokowski_0
+   Title: Scheherazade
+   Creator: Nikolai Rimsky-Korsakov, Leopold Stokowski, The London Symphony Orchestra
+
+564. lp_gtterdmmerung_richard-wagner-birgit-nilsson-wolfgang-win_0
+   Title: Götterdämmerung
+   Creator: Richard Wagner, Birgit Nilsson, Wolfgang Windgassen, Gottlob Frick, Dietrich Fischer-Dieskau, Christa Ludwig, Claire Watson, Gustav Neidlinger, Helen Watts, Grace Hoffman, Anita Välkki, Lucia Popp, Gwyneth Jones, Maureen Guy, Georg Solti, Wiener Philharmoniker
+
+565. lp_russian-french-arias_nicolai-ghiaurov-the-london-symphony-orche
+   Title: Russian & French Arias
+   Creator: Nicolai Ghiaurov, The London Symphony Orchestra, London Symphony Chorus, Edward Downes
+
+566. lp_canto-a-sevilla_victoria-de-los-angeles
+   Title: Canto A Sevilla
+   Creator: Victoria De Los Angeles
+
+567. lp_four-last-songs-capriccio-op-85-closing_richard-strauss-elisabeth-schwarzkopf-phil
+   Title: Four Last Songs - "Capriccio" Op. 85 (Closing Scene)
+   Creator: Richard Strauss, Elisabeth Schwarzkopf, Philharmonia Orchestra, Otto Ackermann
+
+568. lp_highlights-from-iphignie-en-tauride_christoph-willibald-gluck-rita-gorr-nicola
+   Title: Highlights From Iphigénie En Tauride
+   Creator: Christoph Willibald Gluck, Rita Gorr, Nicolai Gedda, Ernest Blanc, Louis Quilico, Orchestre De La Société Des Concerts Du Conservatoire, Georges Prêtre
+
+569. lp_salve-regina-choral-music-of-the-spanish-n_the-roger-wagner-chorale
+   Title: Salve Regina: Choral Music Of The Spanish New World 1550-1750
+   Creator: The Roger Wagner Chorale
+
+570. lp_mass-no-3-in-f-minor_anton-bruckner-karl-forster
+   Title: Mass No. 3 In F Minor
+   Creator: Anton Bruckner, Karl Forster
+
+571. lp_chopin-waltzes-complete_witold-malcuzynsky
+   Title: Chopin Waltzes (Complete)
+   Creator: Witold Malcuzynsky
+
+572. lp_suor-angelica_giacomo-puccini-victoria-de-los-angeles-fe
+   Title: Suor Angelica
+   Creator: Giacomo Puccini, Victoria De Los Angeles, Fedora Barbieri, Tullio Serafin
+
+573. lp_tchakovsky-ballet-suites-swan-lake-the_pyotr-ilyich-tchaikovsky-herbert-von-karaj
+   Title: Tchaïkovsky Ballet Suites - Swan Lake / The Sleeping Beauty
+   Creator: Pyotr Ilyich Tchaikovsky, Herbert von Karajan, Philharmonia Orchestra
+
+574. lp_easter-oratorio-bwv249_johann-sebastian-bach-teresa-ylisgara-patr
+   Title: Easter Oratorio BWV249
+   Creator: Johann Sebastian Bach, Teresa Żylis-Gara, Patricia Johnson, Dietrich Fischer-Dieskau, Theo Altmeyer, Der Süddeutsche Madrigalchor, Südwestdeutsches Kammerorchester, Wolfgang Gönnenwein
+
+575. lp_schumann-liederkreis-and-other-eichendorff_dietrich-fischer-dieskau-gerald-moore-robe
+   Title: Schumann: Liederkreis And Other Eichendorff Songs
+   Creator: Dietrich Fischer-Dieskau, Gerald Moore, Robert Schumann
+
+576. lp_music-for-the-theatre_henry-purcell-bath-festival-orchestra-yehu
+   Title: Music For The Theatre
+   Creator: Henry Purcell, Bath Festival Orchestra, Yehudi Menuhin, Joan Carlyle
+
+577. lp_early-german-opera-from-the-goosemarket_georg-philipp-telemann-reinhard-keiser-geo
+   Title: Early German Opera From The Goosemarket
+   Creator: Georg Philipp Telemann, Reinhard Keiser, Georg Friedrich Händel, Johann Mattheson
+
+578. lp_operatic-arias_mirella-freni-orchestra-del-teatro-dellope
+   Title: Operatic Arias
+   Creator: Mirella Freni, Orchestra Del Teatro Dell'Opera Di Roma, Franco Ferraris
+
+579. lp_cantata-infirmata-vulnerata-cantata-die-h_alessandro-scarlatti-georg-philipp-teleman
+   Title: Cantata Infirmata Vulnerata / Cantata: Die Hoffnung Ist Mein Leben /​ Leco̧ns de Ténèbres
+   Creator: Alessandro Scarlatti, Georg Philipp Telemann, François Couperin
+
+580. lp_white-horse-inn-im-weissen-roessl_ralph-benatzky-robert-stolz-robert-gilbert
+   Title: White Horse Inn (Im Weissen Roessl)
+   Creator: Ralph Benatzky, Robert Stolz, Robert Gilbert
+
+581. lp_lilac-time_franz-schubert-june-bronhill-thomas-round
+   Title: Lilac Time
+   Creator: Franz Schubert, June Bronhill, Thomas Round, John Cameron, The Rita Williams Singers, Michael Collins And His Orchestra
+
+582. lp_hugo-wolf-from-the-spanish-song-book_dietrich-fischer-dieskau-gerald-moore-hugo
+   Title: Hugo Wolf - From The Spanish Song Book
+   Creator: Dietrich Fischer-Dieskau, Gerald Moore, Hugo Wolf
+
+583. lp_coloratura-arias_anna-moffo-philharmonia-orchestra-sir-coli_0
+   Title: Coloratura Arias
+   Creator: Anna Moffo, Philharmonia Orchestra, Sir Colin Davis
+
+584. lp_spanish-song-of-the-renaissance_victoria-de-los-angeles-ars-musicae-de-bar_0
+   Title: Spanish Song Of The Renaissance
+   Creator: Victoria De Los Angeles, Ars Musicae De Barcelona
+
+585. lp_alto-rhapsody-liebestod-from-tristan-und_johannes-brahms-richard-wagner-christa-lud
+   Title: Alto Rhapsody / Liebestod From Tristan Und Isolde / Wesendonck Lieder
+   Creator: Johannes Brahms, Richard Wagner, Christa Ludwig, Philharmonia Orchestra, Otto Klemperer, Brahms
+
+586. lp_cantos-de-espaa_victoria-de-los-angeles-orchestre-de-la-so
+   Title: Cantos De España
+   Creator: Victoria De Los Angeles, Orchestre De La Société Des Concerts Du Conservatoire, Rafael Frühbeck De Burgos, Manuel De Falla, Enrique Granados, Joaquín Rodrigo, Óscar Esplá, Xavier Montsalvatge
+
+587. lp_portuguese-baroque_ian-partridge-derek-stevens-the-tilford-ch
+   Title: Portuguese Baroque
+   Creator: Ian Partridge, Derek Stevens, The Tilford Choir And Orchestra, Denys Darlow
+
+588. lp_sweelinck-psalms-and-cantiones-sacrae_nederlands-kamerkoor
+   Title: Sweelinck Psalms And Cantiones Sacrae
+   Creator: Nederlands Kamerkoor
+
+589. lp_songs-of-verdi-and-italian-folk-songs_licia-albanese-rca-italiana-symphony-orche
+   Title: Songs Of Verdi And Italian Folk Songs
+   Creator: Licia Albanese, RCA Italiana Symphony Orchestra, René Leibowitz
+
+590. lp_four-saints-in-three-acts_virgil-thomson-gertrude-stein
+   Title: Four Saints In Three Acts
+   Creator: Virgil Thomson, Gertrude Stein
+
+591. lp_french-art-songs_cesare-valletti-leo-taubman
+   Title: French Art Songs
+   Creator: Cesare Valletti, Leo Taubman
+
+592. lp_mozart-le-nozze-di-figaro_wolfgang-amadeus-mozart-wiener-philharmoni
+   Title: Mozart: Le Nozze Di Figaro
+   Creator: Wolfgang Amadeus Mozart, Wiener Philharmoniker, Erich Kleiber, Wiener Staatsopernchor
+
+593. lp_parsifal_richard-wagner-hans-knappertsbusch-chor-de
+   Title: Parsifal
+   Creator: Richard Wagner, Hans Knappertsbusch, Chor der Bayreuther Festspiele, Orchester der Bayreuther Festspiele
+
+594. lp_tristan-and-isolde-love-duetlohengrin-brid_kirsten-flagstad-lauritz-melchior
+   Title: Tristan And Isolde: Love Duet/Lohengrin: Bridal Chamber Scene
+   Creator: Kirsten Flagstad, Lauritz Melchior
+
+595. lp_the-great-scenes-from-massenets-werther_cesare-valletti-rosalind-elias-grard-souza
+   Title: The Great Scenes From Massenet's Werther
+   Creator: Cesare Valletti, Rosalind Elias, Gérard Souzay, Orchestra Del Teatro Dell'Opera Di Roma, René Leibowitz
+
+596. lp_pastoral-symphony_ludwig-van-beethoven-fritz-reiner-the-chic_0
+   Title: "Pastoral" Symphony
+   Creator: Ludwig van Beethoven, Fritz Reiner, The Chicago Symphony Orchestra
+
+597. lp_sibelius-symphony-no-2-in-d-op-43_georges-prtre-new-philharmonia-orchestra
+   Title: Sibelius - Symphony No. 2 In D, Op. 43
+   Creator: Georges Prêtre, New Philharmonia Orchestra
+
+598. lp_symphony-no-8-unfinished-symphony-no-41-j_franz-schubert-wolfgang-amadeus-mozart-the
+   Title: Symphony No. 8 (Unfinished) / Symphony No. 41 (Jupiter)
+   Creator: Franz Schubert, Wolfgang Amadeus Mozart, The Philadelphia Orchestra, Eugene Ormandy
+
+599. lp_highlights-from-madama-butterfly_leontyne-price-richard-tucker-rosalind-eli
+   Title: Highlights From Madama Butterfly
+   Creator: Leontyne Price, Richard Tucker, Rosalind Elias, Philip Maero, Erich Leinsdorf
+
+600. lp_verdi-rarities_montserrat-caball-rca-italiana-opera-orche_0
+   Title: Verdi Rarities
+   Creator: Montserrat Caballé, RCA Italiana Opera Orchestra, RCA Italiana Opera Chorus, Anton Guadagno
+
+601. lp_handels-messiah-highlights_the-robert-shaw-chorale-the-robert-shaw-or_0
+   Title: Handel's Messiah (Highlights)
+   Creator: The Robert Shaw Chorale, The Robert Shaw Orchestra
+
+602. lp_musica-hungarica_various
+   Title: Musica Hungarica
+   Creator: Various
+
+603. lp_serenade_grard-souzay-dalton-baldwin
+   Title: Serenade
+   Creator: Gérard Souzay, Dalton Baldwin
+
+604. lp_le-bourgeois-gentilhomme-italian-serenade_richard-strauss-hugo-wolf-chamber-symphony
+   Title: Le Bourgeois Gentilhomme / Italian Serenade
+   Creator: Richard Strauss, Hugo Wolf, Chamber Symphony Of Philadelphia, Anshel Brusilow
+
+605. lp_requiem-c-moll_nbc-symphony-orchestra-arturo-toscanini-th
+   Title: Requiem C-moll
+   Creator: NBC Symphony Orchestra, Arturo Toscanini, The Robert Shaw Chorale, Luigi Cherubini
+
+606. lp_requiem_franz-liszt-male-chorus-of-the-hungarian-p
+   Title: Requiem
+   Creator: Franz Liszt, Male Chorus Of The Hungarian Peoples Army, János Ferencsik
+
+607. lp_the-midsummer-marriage_sir-michael-tippett-sir-colin-davis
+   Title: The Midsummer Marriage
+   Creator: Sir Michael Tippett, Sir Colin Davis
+
+608. lp_the-marriage-of-figaro-k-492-complete_wolfgang-amadeus-mozart-glyndebourne-festi
+   Title: The Marriage Of Figaro K, 492 Complete
+   Creator: Wolfgang Amadeus Mozart, Glyndebourne Festival Opera Company, The Mozart Opera Society
+
+609. lp_fidelio-complete_ludwig-van-beethoven-arturo-toscanini-rose
+   Title: Fidelio (Complete)
+   Creator: Ludwig van Beethoven, Arturo Toscanini, Rose Bampton, Jan Peerce, Eleanor Steber, NBC Symphony Orchestra
+
+610. lp_norma_joan-sutherland-vincenzo-bellini-marilyn-h
+   Title: Norma
+   Creator: Joan Sutherland, Vincenzo Bellini, Marilyn Horne, John Alexander, Richard Cross, Richard Bonynge, The London Symphony Orchestra
+
+611. lp_luisa-miller_cornell-macneil-anna-moffo-gabriella-cartu
+   Title: Luisa Miller
+   Creator: Cornell MacNeil, Anna Moffo, Gabriella Carturan, Carlo Bergonzi, Ezio Flagello, RCA Italiana Opera Orchestra, RCA Italiana Opera Chorus, Fausto Cleva, Giuseppe Verdi
+
+612. lp_thais_jules-massenet-rene-doria-robert-massard-m
+   Title: Thaïs
+   Creator: Jules Massenet, Renée Doria, Robert Massard, Michel Sénéchal, Françoise Louvay, Gérard Serkoyan, Jeannine Collard, Jacques Scellier, Lionel Gali, Jésus Etcheverry
+
+613. lp_gigli-in-carnegie-hall_beniamino-gigli
+   Title: Gigli In Carnegie Hall
+   Creator: Beniamino Gigli
+
+614. lp_sacred-service-avodath-hakodesh_ernest-bloch-marko-rothmuller-dorothy-bond
+   Title: Sacred Service (Avodath Hakodesh)
+   Creator: Ernest Bloch, Marko Rothmuller, Dorothy Bond, Doris Cowan
+
+615. lp_concerto-no-3-in-c-minor-op-37_ludwig-van-beethoven-walter-hendl-gary-gra_0
+   Title: Concerto No. 3 In C Minor, Op. 37
+   Creator: Ludwig Van Beethoven, Walter Hendl, Gary Graffman, The Chicago Symphony Orchestra
+
+616. lp_acis-and-galatea-deller-consort-stour-musi_georg-friedrich-hndel-stour-music-festival
+   Title: Acis And Galatea, Deller Consort, Stour Music Festival Chamber Orchestra
+   Creator: Georg Friedrich Händel, Stour Music Festival Chamber Orchestra
+
+617. lp_cavalleria-rusticana-and-first-lp-release_pietro-mascagni-zinka-milanov-jussi-bjrlin
+   Title: Cavalleria Rusticana And First LP Release : Milanov's Early Recordings
+   Creator: Pietro Mascagni, Zinka Milanov, Jussi Björling, Robert Merrill, RCA Victor Symphony Orchestra, Renato Cellini
+
+618. lp_madama-butterfly_giacomo-puccini-anna-moffo-cesare-valletti_0
+   Title: Madama Butterfly
+   Creator: Giacomo Puccini, Anna Moffo, Cesare Valletti, Rosalind Elias, Fernando Corena, Renato Cesari, Erich Leinsdorf
+
+619. lp_aida_giuseppe-verdi-orchestra-del-teatro-dellop
+   Title: Aida
+   Creator: Giuseppe Verdi, Orchestra Del Teatro Dell'Opera Di Roma, Jonel Perlea, Jussi Björling, Leonard Warren, Zinka Milanov
+
+620. lp_leontyne-price-sings-mozart_leontyne-price
+   Title: Leontyne Price Sings Mozart
+   Creator: Leontyne Price
+
+621. lp_la-betulia-liberata-k-118_wolfgang-amadeus-mozart
+   Title: La Betulia Liberata, K. 118
+   Creator: Wolfgang Amadeus Mozart
+
+622. lp_great-operatic-duets_montserrat-caball-shirley-verrett
+   Title: Great Operatic Duets
+   Creator: Montserrat Caballé, Shirley Verrett
+
+623. lp_symphony-no-13-babi-yar_dmitri-shostakovich-eugene-ormandy-the-phi
+   Title: Symphony No. 13 (Babi Yar)
+   Creator: Dmitri Shostakovich, Eugene Ormandy, The Philadelphia Orchestra, Tom Krause, Mendelssohn Club Of Philadelphia
+
+624. lp_andrea-chenier_umberto-giordano
+   Title: Andrea Chenier
+   Creator: Umberto Giordano
+
+625. lp_peter-grimes_benjamin-britten
+   Title: Peter Grimes
+   Creator: Benjamin Britten
+
+626. lp_la-traviata_giuseppe-verdi-pilar-lorengar-giacomo-arag_0
+   Title: La Traviata
+   Creator: Giuseppe Verdi, Pilar Lorengar, Giacomo Aragall, Dietrich Fischer-Dieskau, Lorin Maazel, Orchester Der Deutschen Oper Berlin
+
+627. lp_orfeo-ed-euridice_christoph-willibald-gluck-marilyn-horne-pi
+   Title: Orfeo Ed Euridice
+   Creator: Christoph Willibald Gluck, Marilyn Horne, Pilar Lorengar, Helen Donath, Georg Solti, Orchestra Of The Royal Opera House, Covent Garden, Chorus Of The Royal Opera House, Covent Garden
+
+628. lp_tosca_giacomo-puccini-birgit-nilsson-franco-core_0
+   Title: Tosca
+   Creator: Giacomo Puccini, Birgit Nilsson, Franco Corelli, Dietrich Fischer-Dieskau, Lorin Maazel
+
+629. lp_gianni-schicchi-opera-in-one-act_alfredo-simonetto-giuseppe-taddei-grete-ra
+   Title: Gianni Schicchi : Opera in One Act
+   Creator: Alfredo Simonetto, Giuseppe Taddei, Grete Rapisardi-Savio, Agnese Dubbini, Giuseppe Savio, Gino Del Signore, Renza Ferrari, Pier Luigi Latinucci, Fernando Corena, Alberto Albertini, Liana Avogadro, Franco Calabrese, Carlo Bacci, Mario Fanti
+
+630. lp_wolf-ferrari-the-secret-of-suzanne_angelo-questa-giuseppe-valdengo-elena-rizz
+   Title: Wolf-Ferrari, The Secret of Suzanne
+   Creator: Angelo Questa, Giuseppe Valdengo, Elena Rizzieri
+
+631. lp_the-chandos-anthems-ivi-six-english-psalms_georg-friedrich-hndel-the-collegium-musicu
+   Title: The Chandos Anthems, I–VI · Six English Psalms
+   Creator: Georg Friedrich Händel, The Collegium Musicum Of Rutgers University, Alfred Mann
+
+632. lp_messiah_georg-friedrich-hndel-english-chamber-orch_0
+   Title: Messiah
+   Creator: Georg Friedrich Händel, English Chamber Orchestra, Sir Charles Mackerras, Elizabeth Harwood, Janet Baker, Paul Esswood, Robert Tear, Raimund Herincx, The Ambrosian Singers
+
+633. lp_the-play-of-herod_new-york-pro-musica-noah-greenberg
+   Title: The Play Of Herod
+   Creator: New York Pro Musica, Noah Greenberg
+
+634. lp_lallegro-ed-il-penseroso_georg-friedrich-hndel-frederic-waldman-ade
+   Title: L'Allegro Ed Il Penseroso
+   Creator: Georg Friedrich Händel, Frederic Waldman, Adele Addison, John McCollum, John Reardon, Albert Fuller, Musica Æterna Orchestra
+
+635. lp_a-german-requiem-op-45_berliner-philharmoniker-fritz-lehmann-joha
+   Title: A German Requiem, Op. 45
+   Creator: Berliner Philharmoniker, Fritz Lehmann, Johannes Brahms
+
+636. lp_lucia-di-lammermoor_anna-moffo-carlo-bergonzi-georges-petre-ma
+   Title: Lucia Di Lammermoor
+   Creator: Anna Moffo, Carlo Bergonzi, Georges Petre, Mario Sereni, Ezio Flagello, Corinna Vozza, Vittorio Pandano
+
+637. lp_erich-kunz-sings-german-university-songs-o_erich-kunz-chor-der-wiener-volksoper-wiene
+   Title: Erich Kunz Sings German University Songs Of Wooing, Wit And Wanderlust
+   Creator: Erich Kunz, Chor Der Wiener Volksoper, Wiener Volksopernorchester
+
+638. lp_orfeo-and-euridice_christoph-willibald-gluck
+   Title: Orfeo And Euridice
+   Creator: Christoph Willibald Gluck
+
+639. lp_splitski-akvarel_ivo-tijardovi
+   Title: Splitski Akvarel
+   Creator: Ivo Tijardović
+
+640. lp_israels-finest-hour_honorable-abba-eban
+   Title: Israel's Finest Hour
+   Creator: Honorable Abba Eban
+
+641. lp_lenfance-du-christ_hector-berlioz
+   Title: L'Enfance Du Christ
+   Creator: Hector Berlioz
+
+642. lp_songs-of-the-spanish-civil-war-vol-2_various
+   Title: Songs Of The Spanish Civil War, Vol. 2
+   Creator: Various
+
+643. lp_mezzo-soprano-1860-1926_eugenia-mantelli
+   Title: Mezzo Soprano 1860-1926
+   Creator: Eugenia Mantelli
+
+644. lp_cosi-fan-tutti-women-are-like-that_wolfgang-amadeus-mozart-eleanor-steber-ric
+   Title: Cosi Fan Tutti / Women Are Like That
+   Creator: Wolfgang Amadeus Mozart, Eleanor Steber, Richard Tucker, Frank Guarrera, Blanche Thebom, Roberta Peters, Lorenzo Alvary, Fritz Stiedry, Chorus Of The Metropolitan Opera Association Of New York, The Metropolitan Opera House Orchestra
+
+645. lp_lulu-opera-in-3-acts_alban-berg-ilona-steingruber-otto-wiener-h
+   Title: Lulu: Opera In 3 Acts
+   Creator: Alban Berg, Ilona Steingruber, Otto Wiener, Herbert Häfner, Wiener Symphoniker
+
+646. lp_wozzeck_alban-berg-dimitri-mitropoulos
+   Title: Wozzeck
+   Creator: Alban Berg, Dimitri Mitropoulos
+
+647. lp_the-medium-and-the-telephone_gian-carlo-menotti
+   Title: The Medium And The Telephone
+   Creator: Gian Carlo Menotti
+
+648. lp_die-dreigroschenoper-the-threepenny-opera_kurt-veill-lotte-lenya-vilhelm-brucknerrug
+   Title: Die Dreigroschenoper / The Threepenny Opera / L'Opéra De Quat'Sous
+   Creator: Kurt Weill, Lotte Lenya, Wilhelm Brückner-Rüggeberg
+
+649. lp_a-mass-of-life_frederick-delius-sir-thomas-beecham-the-lo
+   Title: A Mass of Life
+   Creator: Frederick Delius, Sir Thomas Beecham, The London Philharmonic Choir
+
+650. lp_boris-gudunov_modest-mussorgsky-george-london
+   Title: Boris Gudunov
+   Creator: Modest Mussorgsky, George London
+
+651. lp_martyn-green-in-famous-gilbert-and-sulliva_martyn-green-gilbert-sullivan-lehman-enge
+   Title: Martyn Green In Famous Gilbert And Sullivan Songs
+   Creator: Martyn Green, Gilbert & Sullivan, Lehman Engel, Columbia Operetta Chorus, Columbia Operetta Orchestra
+
+652. lp_the-crucible_new-york-city-opera-emerson-buckley-arthur
+   Title: The Crucible
+   Creator: New York City Opera, Emerson Buckley, Arthur Miller, Robert Ward, Bernard Stambler, Frances Bible, Chester Ludgin, Patricia Brooks
+
+653. lp_the-canterbury-pilgrims_the-gabrieli-brass-john-hawkins-richard-hi
+   Title: The Canterbury Pilgrims
+   Creator: The Gabrieli Brass, John Hawkins, Richard Hill
+
+654. lp_gurre-lieder_arnold-schoenberg-inge-borkh-hertha-tpper
+   Title: Gurre Lieder
+   Creator: Arnold Schoenberg, Inge Borkh, Hertha Töpper, Kieth Engen, Lorenz Fehenberger, Herbert Schachtschneider, Hans Herbert Fiedler, Rafael Kubelik
+
+655. lp_missa-a-cappella-audi-domine-hymnum-deus_claudio-monteverdi-giovanni-gabrieli-andre
+   Title: Missa A Cappella / Audi Domine Hymnum / Deus In Nomine Tuo / Ricercar
+   Creator: Claudio Monteverdi, Giovanni Gabrieli, Andrea Gabrieli, Prague Madrigal Singers, Musica Antiqua Wien, Miroslav Venhoda
+
+656. lp_rarities-of-the-classical-era-parthias-and_frantiek-xaver-duek-josef-mysliveek-josef
+   Title: Rarities Of The Classical Era (Parthias And Notturnos By)
+   Creator: František Xaver Dušek, Josef Mysliveček, Josef Fiala, Leopold Koželuh, František Antonín Rössler, Czech Philharmonic Chorus, Musici Pragenses, Komorní Harmonie
+
+657. lp_missa-lhomme-arm-madrigals-and-motets_josquin-des-prs-musica-antiqua-wien-prague
+   Title: Missa "L'Homme Armé": Madrigals And Motets
+   Creator: Josquin Des Prés, Musica Antiqua Wien, Prague Madrigal Singers
+
+658. lp_symphony-of-psalms-the-prophecy-of-isiah_igor-stravinsky-bohuslav-martin
+   Title: Symphony Of Psalms / The Prophecy Of Isiah
+   Creator: Igor Stravinsky, Bohuslav Martinů
+
+659. lp_la-traviata_giuseppe-verdi-renata-scotto-gianni-raimon
+   Title: La Traviata
+   Creator: Giuseppe Verdi, Renata Scotto, Gianni Raimondi, Ettore Bastianini, Coro Del Teatro Alla Scala, Orchestra Del Teatro Alla Scala, Antonino Votto
+
+660. lp_erosion-origin-of-the-amazon-river-the-tr_heitor-villa-lobos-norman-dello-joio-the-l
+   Title: Erosion, Origin Of The Amazon River / The Triumph Of St. Joan Symphony
+   Creator: Heitor Villa-Lobos, Norman Dello Joio, The Louisville Orchestra, Robert Whitney
+
+661. lp_fra-diavolo_daniel-francois-esprit-auber-orchestra-del
+   Title: Fra Diavolo
+   Creator: Daniel-Francois-Esprit Auber, Orchestra Del Teatro Giuseppe Verdi Di Trieste, Coro Del Teatro Giuseppe Verdi Di Trieste, Arturo Basile
+
+662. lp_don-giovanni_wolfgang-amadeus-mozart-sena-jurinac-irmga
+   Title: Don Giovanni
+   Creator: Wolfgang Amadeus Mozart, Sena Jurinac, Irmgard SeeFried, Maria Stader, Dietrich Fischer-Dieskau, Ernst Haefliger, Karl Kohn, Radio-Symphonie-Orchester Berlin, Ferenc Fricsay
+
+663. lp_le-nozze-di-figaro_volfgang-amadeus-mozart-irmgard-seefried-m
+   Title: Le Nozze Di Figaro
+   Creator: Wolfgang Amadeus Mozart, Irmgard Seefried, Maria Stader, Hertha Töpper, Dietrich Fischer-Dieskau, Renato Capecchi, Ivan Sardi, Radio-Symphonie-Orchester Berlin, Ferenc Fricsay
+
+664. lp_falstaff_giuseppe-verdi-renato-bruson-katia-ricciar
+   Title: Falstaff
+   Creator: Giuseppe Verdi, Renato Bruson, Katia Ricciarelli, Leo Nucci, Barbara Hendricks, Dalmacio Gonzalez, Lucia Valentini Terrani, Los Angeles Philharmonic Orchestra, Carlo Maria Giulini
+
+665. lp_arias-by-puccini-mascagni-cila-and-catalan_renata-scotto-the-london-symphony-orchestr
+   Title: Arias By Puccini, Mascagni, Cilèa, And Catalani
+   Creator: Renata Scotto, The London Symphony Orchestra, Gianandrea Gavazzeni, Catalani, Cilèa, Mascagni, Puccini
+
+666. lp_te-deum-kindertotenlieder_anton-bruckner-gustav-mahler-bruno-walter
+   Title: Te Deum / Kindertotenlieder
+   Creator: Anton Bruckner, Gustav Mahler, Bruno Walter, Kathleen Ferrier, The New York Philharmonic Orchestra, Wiener Philharmoniker
+
+667. lp_te-deum_hector-berlioz-the-royal-philharmonic-orch
+   Title: Te Deum
+   Creator: Hector Berlioz, The Royal Philharmonic Orchestra, Sir Thomas Beecham, Alexander Young, The London Philharmonic Choir, Frederick Jackson, Dulwich College Boys Choir, Denis Vaughan
+
+668. lp_puccini-arias_eileen-farrell-giacomo-puccini-columbia-sy
+   Title: Puccini Arias
+   Creator: Eileen Farrell, Giacomo Puccini, Columbia Symphony Orchestra, Max Rudolf
+
+669. lp_chamber-music-from-marlboro_rudolf-serkin-felix-galimir-ernestine-brie
+   Title: Chamber Music From Marlboro
+   Creator: Rudolf Serkin, Felix Galimir, Ernestine Briesmeister, Harry Zaratzian, Samuel Rhodes, Michael Grebanier, Judith Davidoff, Martial Singher, Richard Goode, Michael Tree, Philipp Naegele, Gaetano Molieri, Arnold Schoenberg
+
+670. lp_jenufa_leo-janaek-libue-domaninska-vilm-pibyl-nad
+   Title: Jenufa
+   Creator: Leoš Janáček, Libuše Domanínská, Vilém Přibyl, Naděžda Kniplová, Ivo Žídek, Marie Mrázová, Bohumil Gregor
+
+671. lp_il-pirata_vincenzo-bellini
+   Title: Il Pirata
+   Creator: Vincenzo Bellini
+
+672. lp_fidelio_ludwig-van-beethoven-herbert-von-karajan
+   Title: Fidelio
+   Creator: Ludwig van Beethoven, Herbert von Karajan
+
+673. lp_la-traviata_giuseppe-verdi-john-alldis-choir-the-royal
+   Title: La Traviata
+   Creator: Giuseppe Verdi, John Alldis Choir, The Royal Philharmonic Orchestra, Aldo Ceccato
+
+674. lp_a-life-for-the-tsar_boris-christoff-nicolai-gedda-teresa-stich
+   Title: A Life For The Tsar
+   Creator: Boris Christoff, Nicolai Gedda, Teresa Stich-Randall, Mikhail Ivanovich Glinka
+
+675. lp_tzena-tzena-hava-nagila-and-other-wedding_harry-brown-ray-musiker-sonny-kippe-skippy
+   Title: Tzena Tzena, Hava Nagila And Other Wedding Dances
+   Creator: Harry Brown, Ray Musiker, Sonny Kippe, Skippy Sperling, Marvin Kutcher, Charles Karoll, Sam Kutcher
+
+676. lp_the-flying-dutchman_richard-wagner-dietrich-fischer-dieskau-go
+   Title: The Flying Dutchman
+   Creator: Richard Wagner, Dietrich Fischer-Dieskau, Gottlob Frick, Marianne Schech, Rudolf Schock, Orchester Der Deutschen Oper Berlin, Franz Konwitschny
+
+677. lp_simon-boccanegra_giuseppe-verdi
+   Title: Simon Boccanegra
+   Creator: Giuseppe Verdi
+
+678. lp_the-pearl-fishers_georges-bizet-janine-micheau-nicolai-gedda
+   Title: The Pearl Fishers
+   Creator: Georges Bizet, Janine Micheau, Nicolai Gedda, Ernest Blanc, Jacques Mars, Chœurs Du Théâtre National De L'Opéra Comique, Orchestre Du Théâtre National De L'Opéra-Comique, Pierre Dervaux
+
+679. lp_verdi-requiem_beniamino-gigli-ezio-pinza-maria-caniglia
+   Title: Verdi: Requiem
+   Creator: Beniamino Gigli, Ezio Pinza, Maria Caniglia, Ebe Stignani, Orchestra Del Teatro Dell'Opera Di Roma, Tullio Serafin
+
+680. lp_lenfance-du-christ_hector-berlioz-victoria-de-los-angeles-nic
+   Title: L'Enfance du Christ
+   Creator: Hector Berlioz, Victoria De Los Angeles, Nicolai Gedda, Ernest Blanc, Roger Soyer, Xavier Depraz, Les Chœurs René Duclos, Orchestre De La Société Des Concerts Du Conservatoire, André Cluytens
+
+681. lp_homage-to-gerald-moore_gerald-moore-dietrich-fischer-dieskau-vict
+   Title: Homage To Gerald Moore
+   Creator: Gerald Moore, Dietrich Fischer-Dieskau, Victoria De Los Angeles, Elisabeth Schwarzkopf
+
+682. lp_la-clemenza-di-tito_wolfgang-amadeus-mozart-the-swabian-choral
+   Title: La Clemenza Di Tito
+   Creator: Wolfgang Amadeus Mozart, The Swabian Choral Society, The Tonstudio Orchestra
+
+683. lp_french-chansons-and-dances-of-the-16th-cen_pro-musica-antiqua-of-brussels-safford-cap
+   Title: French Chansons And Dances Of The 16th Century
+   Creator: Pro Musica Antiqua Of Brussels, Safford Cape
+
+684. lp_loccasione-fa-il-ladro-il-cambio-della-val_gioacchino-rossini
+   Title: L'Occasione Fa Il Ladro (Il Cambio Della Valigia)
+   Creator: Gioacchino Rossini
+
+685. lp_four-villancicos_padre-antonio-soler
+   Title: Four Villancicos
+   Creator: Padre Antonio Soler
+
+686. lp_catulli-carmina_carl-orff-eugene-ormandy-the-philadelphia_1
+   Title: Catulli Carmina
+   Creator: Carl Orff, Eugene Ormandy, The Philadelphia Orchestra, The Temple University Choirs, Robert Page
+
+687. lp_la-boheme-for-orchestra_giacomo-puccini-andr-kostelanetz-and-his-o
+   Title: La Boheme For Orchestra
+   Creator: Giacomo Puccini, André Kostelanetz And His Orchestra
+
+688. lp_selections-from-2001-a-space-odyssey-suit_eugene-ormandy-the-philadelphia-orchestra
+   Title: Selections From "2001: A Space Odyssey" / Suite From "Aniara"
+   Creator: Eugene Ormandy, The Philadelphia Orchestra, Leonard Bernstein, The New York Philharmonic Orchestra, Werner Janssen, Wiener Volksopernorchester
+
+689. lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto
+   Title: Tristan Und Isolde, Love Music From Acts II And III (Stokowski Transcription) / El Amor Brujo
+   Creator: Richard Wagner, Manuel De Falla, Leopold Stokowski, The Philadelphia Orchestra
+
+690. lp_die-meistersinger-von-nurnberg-complete-op_herbert-von-karajan-richard-wagner
+   Title: Die Meistersinger Von Nürnberg (Complete Opera In Three Acts)
+   Creator: Herbert Von Karajan, Richard Wagner
+
+691. lp_la-boheme-193-recording_giacomo-puccini-beniamino-gigli-licia-alba
+   Title: La Bohème - 1938 Recording
+   Creator: Giacomo Puccini, Beniamino Gigli, Licia Albanese, Orchestra Del Teatro Alla Scala, Coro Del Teatro Alla Scala, Umberto Berrettoni
+
+692. lp_the-st-john-passion_fritz-wunderlich-dietrich-fischer-dieskau
+   Title: The St. John Passion
+   Creator: Fritz Wunderlich, Dietrich Fischer-Dieskau, Johann Sebastian Bach
+
+693. lp_lucia-di-lammermoor_maria-callas-gaetano-donizetti-tullio-sera
+   Title: Lucia Di Lammermoor
+   Creator: Maria Callas, Gaetano Donizetti, Tullio Serafin, Orchestra Of The Maggio Musicale Fiorentino
+
+694. lp_andrea-chnier_beniamino-gigli-umberto-giordano-maria-can
+   Title: Andrea Chénier
+   Creator: Beniamino Gigli, Umberto Giordano, Maria Caniglia, Gino Bechi, Giulietta Simionato, Italo Tajo, Giuseppe Taddei, Leone Paci, Orchestra Del Teatro Alla Scala, Coro Del Teatro Alla Scala, Oliviero De Fabritiis
+
+695. lp_fidelio_ludvig-van-beethoven-vilhelm-furtvngler-ma
+   Title: Fidelio
+   Creator: Ludwig Van Beethoven, Wilhelm Furtwängler, Martha Mödl, Sena Jurinac, Wolfgang Windgassen, Otto Edelmann, Gottlob Frick, Rudolf Schock
+
+696. lp_zar-und-zimmermann-tsar-and-carpenter-comi_albert-lortzing-hermann-prey-erika-kth-got
+   Title: Zar Und Zimmermann (Tsar And Carpenter) (Comic Opera In Three Acts)
+   Creator: Albert Lortzing, Hermann Prey, Erika Köth, Gottlob Frick, Annelies Burmeister, Peter Schreier, Nicolai Gedda
+
+697. lp_the-abduction-from-the-seraglio_wolfgang-amadeus-mozart-wiener-staatsopern
+   Title: The Abduction From The Seraglio
+   Creator: Wolfgang Amadeus Mozart, Wiener Staatsopernchor, Wiener Philharmoniker, Josef Krips
+
+698. lp_puccini-tosca-recorded-in-1938_maria-caniglia-beniamino-gigli-armando-bor
+   Title: Puccini: Tosca (Recorded In 1938)
+   Creator: Maria Caniglia, Beniamino Gigli, Armando Borgioli
+
+699. lp_the-elixir-of-love_gaetano-donizetti-rosanna-carteri-luigi-al
+   Title: The Elixir of Love
+   Creator: Gaetano Donizetti, Rosanna Carteri, Luigi Alva, Giuseppe Taddei, Rolando Panerai, Tullio Serafin, Orchestra Del Teatro Alla Scala
+
+700. lp_aida_giuseppe-verdi-tullio-serafin-giuseppe-con
+   Title: Aida
+   Creator: Giuseppe Verdi, Tullio Serafin, Giuseppe Conca, Beniamino Gigli, Maria Caniglia, Ebe Stignani, Gino Bechi, Orchestra Del Teatro Dell'Opera Di Roma, Coro Del Teatro Dell'Opera Di Roma
+
+701. lp_vagner-die-valkure-complete-opera_vilhelm-furtvngler
+   Title: Wagner: Die Walküre (Complete Opera)
+   Creator: Wilhelm Furtwängler
+
+702. lp_the-marriage-of-figaro-sung-in-german_wolfgang-amadeus-mozart-hilde-gden-hermann
+   Title: The Marriage Of Figaro (Sung In German)
+   Creator: Wolfgang Amadeus Mozart, Hilde Güden, Hermann Prey, Anneliese Rothenberger, Walter Berry, Edith MAthis, Staatskapelle Dresden, Otmar Suitner
+
+703. lp_i-pagliacci_beniamino-gigli
+   Title: I Pagliacci
+   Creator: Beniamino Gigli
+
+704. lp_der-freischtz-complete-opera-with-abridged_carl-maria-von-veber-rudolf-schock-elisabe
+   Title: Der Freischütz (Complete Opera With Abridged Dialogue)
+   Creator: Carl Maria von Weber, Rudolf Schock, Elisabeth Grümmer, Gottlob Frick, Karl Kohn, Lisa Otto, Berliner Philharmoniker, Joseph Keilberth
+
+705. lp_don-carlo_giuseppe-verdi_0
+   Title: Don Carlo
+   Creator: Giuseppe Verdi
+
+706. lp_i-pagliacci-arias-performed-by-jussi-bjoe_jussi-bjrling-ruggiero-leoncavallo
+   Title: I Pagliacci / Arias [Performed] By Jussi Bjoerling
+   Creator: Jussi Björling, Ruggiero Leoncavallo
+
+707. lp_idomeneo_wolfgang-amadeus-mozart-richard-lewis-leop
+   Title: Idomeneo
+   Creator: Wolfgang Amadeus Mozart, Richard Lewis, Leopold Simoneau, Sena Jurinac, Lucille Udovick, James Milligan, William McAlpine, Hervey Alan, Glyndebourne Festival Chorus, Glyndebourne Festival Orchestra, John Pritchard
+
+708. lp_les-mamelles-de-tirsias_denise-duval-francis-poulenc
+   Title: Les Mamelles De Tirésias
+   Creator: Denise Duval, Francis Poulenc
+
+709. lp_songs-of-a-wayfarer-kindertotenlieder_gustav-mahler-christa-ludwig-philharmonia
+   Title: Songs Of A Wayfarer & Kindertotenlieder
+   Creator: Gustav Mahler, Christa Ludwig, Philharmonia Orchestra, Sir Adrian Boult, André Vandernoot
+
+710. lp_nine-german-songs_edith-mathis-georg-friedrich-hndel
+   Title: Nine German Songs
+   Creator: Edith Mathis, Georg Friedrich Händel
+
+711. lp_arias_giuseppe-verdi-dietrich-fischer-dieskau
+   Title: Arias
+   Creator: Giuseppe Verdi, Dietrich Fischer-Dieskau
+
+712. lp_gtterdmmerung-three-excerpts_richard-wagner-wilhelm-furtwngler-kirsten
+   Title: Götterdämmerung - Three Excerpts
+   Creator: Richard Wagner, Wilhelm Furtwängler, Kirsten Flagstad, Wiener Philharmoniker, Philharmonia Orchestra
+
+713. lp_boris-godounoff_boris-christoff-issay-dobrowen-orchestre-n
+   Title: Boris Godounoff
+   Creator: Boris Christoff, Issay Dobrowen, Orchestre National De France, Modest Mussorgsky
+
+714. lp_don-pasquale_ernesto-badini-tito-schipa-adelaide-sarace
+   Title: Don Pasquale
+   Creator: Ernesto Badini, Tito Schipa, Adelaide Saraceni, Afro Poli, Giordano Callegari, Carlo Sabajno, Coro Del Teatro Alla Scala, Orchestra Del Teatro Alla Scala
+
+715. lp_bellini-la-sonnambula_maria-callas-nicola-monti-nicola-zaccaria
+   Title: Bellini: La Sonnambula
+   Creator: Maria Callas, Nicola Monti, Nicola Zaccaria, Eugenia Ratti, Giuseppe Morresi, Orchestra Del Teatro Alla Scala, Coro Del Teatro Alla Scala, Antonino Votto
+
+716. lp_appalachia-brigg-fair_frederick-delius-alun-jenkins-the-ambrosia
+   Title: Appalachia, Brigg Fair
+   Creator: Frederick Delius, Alun Jenkins, The Ambrosian Singers, Hallé Orchestra, Sir John Barbirolli
+
+717. lp_shhrazade-les-nuits-dt_maurice-ravel-hector-berlioz-janet-baker-s
+   Title: Shéhérazade / Les Nuits D'été
+   Creator: Maurice Ravel, Hector Berlioz, Janet Baker, Sir John Barbirolli, New Philharmonia Orchestra
+
+718. lp_britten-serenade-for-tenor-horn-and-string_robert-tear-alan-civil-heather-harper-sir
+   Title: Britten: Serenade For Tenor, Horn And Strings / Les Iluminations
+   Creator: Robert Tear, Alan Civil, Heather Harper, Sir Neville Marriner, Northern Sinfonia
+
+719. lp_french-italian-opera-arias_mirella-freni-orchestra-del-teatro-alla-sc
+   Title: French & Italian Opera Arias
+   Creator: Mirella Freni, Orchestra Del Teatro Alla Scala, Antonino Votto
+
+720. lp_des-knaben-wunderhorn_gustav-mahler-elisabeth-schwarzkopf-dietri_0
+   Title: Des Knaben Wunderhorn
+   Creator: Gustav Mahler, Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, George Szell
+
+721. lp_verdi-la-forza-del-destino-highlights_martina-arroyo-carlo-bergonzi-piero-cappuc
+   Title: Verdi La Forza Del Destino (Highlights)
+   Creator: Martina Arroyo, Carlo Bergonzi, Piero Cappuccilli, Bianca Maria Casoni, Ruggero Raimondi, Geraint Evans, The Ambrosian Opera Chorus, The Royal Philharmonic Orchestra, Lamberto Gardelli
+
+722. lp_aida-scenes-and-arias_giuseppe-verdi-birgit-nilsson-franco-corel
+   Title: Aida Scenes And Arias
+   Creator: Giuseppe Verdi, Birgit Nilsson, Franco Corelli, Grace Bumbry, Mario Sereni, Orchestra Del Teatro Dell'Opera Di Roma, Zubin Mehta
+
+723. lp_game-for-8-prelude-and-allegro-five-it_karl-birger-blomdahl
+   Title: Game For 8 - Prelude And Allegro - Five Italian Songs
+   Creator: Karl-Birger Blomdahl
+
+724. lp_songs-of-sunset-cynara-an-arabesque_frederick-delius-janet-baker-john-shirley
+   Title: Songs Of Sunset / Cynara / An Arabesque
+   Creator: Frederick Delius, Janet Baker, John Shirley-Quirk, Royal Liverpool Philharmonic Choir, Royal Liverpool Philharmonic Orchestra, Sir Charles Groves
+
+725. lp_a-tribute-to-gerald-moore_gerald-moore
+   Title: A Tribute To Gerald Moore
+   Creator: Gerald Moore
+
+726. lp_songs-of-catalonia_victoria-de-los-angeles
+   Title: Songs Of Catalonia
+   Creator: Victoria De Los Angeles
+
+727. lp_five-tudor-portraits-choral-suite-on-poems_ralph-vaughan-williams-elizabeth-bainbridg
+   Title: Five Tudor Portraits (Choral Suite On Poems Of John Skelton)
+   Creator: Ralph Vaughan Williams, Elizabeth Bainbridge, John Carol Case, The Bach Choir, New Philharmonia Orchestra, David Willcocks
+
+728. lp_janet-baker-sings-berlioz_janet-baker-hector-berlioz-alexander-gibso
+   Title: Janet Baker Sings Berlioz
+   Creator: Janet Baker, Hector Berlioz, Alexander Gibson, The London Symphony Orchestra
+
+729. lp_puccini-arias_montserrat-caball-the-london-symphony-orch
+   Title: Puccini Arias
+   Creator: Montserrat Caballé, The London Symphony Orchestra, Sir Charles Mackerras
+
+730. lp_two-cantatas-jesu-der-du-meine-seele-bwv_johann-sebastian-bach-edith-mathis-sybil-m
+   Title: Two Cantatas - Jesu, Der Du Meine Seele (BWV. 78) / Gottes Zeit Ist Die Allerbeste Zeit (Actus Tragicus) (BWV. 106)
+   Creator: Johann Sebastian Bach, Edith Mathis, Sybil Michelow, Theo Altmeyer, Franz Crass, Der Süddeutsche Madrigalchor, Consortium Musicum, Wolfgang Gönnenwein
+
+731. lp_violin-concerto-in-d-op-61_ludwig-van-beethoven-yehudi-menuhin-otto-k
+   Title: Violin Concerto In D (Op. 61)
+   Creator: Ludwig van Beethoven, Yehudi Menuhin, Otto Klemperer, New Philharmonia Orchestra
+
+732. lp_le-bestiaire-chansons-villageoises-rapso_francis-poulenc-jean-christophe-benoit-geo
+   Title: Le Bestiaire / Chansons Villageoises / Rapsodie Negre / Le Bal Masque
+   Creator: Francis Poulenc, Jean-Christophe Benoit, Georges Prêtre
+
+733. lp_eugen-onegin-the-queen-of-spades_pyotr-ilyich-tchaikovsky-fritz-wunderlich
+   Title: Eugen Onegin & The Queen Of Spades
+   Creator: Pyotr Ilyich Tchaikovsky, Fritz Wunderlich, Melitta Muszely, Hermann Prey, Gottlob Frick, Bayerisches Staatsorchester, Meinhard von Zallinger
+
+734. lp_el-amor-brujo-rapsodie-espagnole-pavane_manuel-de-falla-maurice-ravel-victoria-de
+   Title: El Amor Brujo / Rapsodie Espagnole • Pavane For A Dead Princess
+   Creator: Manuel De Falla, Maurice Ravel, Victoria De Los Angeles, Philharmonia Orchestra, New Philharmonia Orchestra, Carlo Maria Giulini
+
+735. lp_mass-in-time-of-war_joseph-haydn-heather-harper-pamela-bowden
+   Title: Mass In Time Of War
+   Creator: Joseph Haydn, Heather Harper, Pamela Bowden, Alexander Young, John Shirley-Quirk, The King's College Choir Of Cambridge, English Chamber Orchestra
+
+736. lp_duets-from-der-rosenkavalier_richard-strauss-staatskapelle-dresden-rudo
+   Title: Duets From Der Rosenkavalier
+   Creator: Richard Strauss, Staatskapelle Dresden, Rudolf Neuhaus, Anneliese Rothenberger, Lisa Della Casa
+
+737. lp_lucia-popp-sings-mozart-and-handel_volfgang-amadeus-mozart-english-chamber-or
+   Title: Lucia Popp Sings Mozart And Handel
+   Creator: Wolfgang Amadeus Mozart, English Chamber Orchestra, Lucia Popp, Georg Fischer, Georg Friedrich Händel
+
+738. lp_a-song-recital_grace-bumbry-leonard-hokanson-franz-schube
+   Title: A Song Recital
+   Creator: Grace Bumbry, Leonard Hokanson, Franz Schubert, Robert Schumann, Johannes Brahms
+
+739. lp_mahler-kindertotenlieder-and-songs-of-a-wa_janet-baker-gustav-mahler-hall-orchestra-s
+   Title: Mahler: Kindertotenlieder And Songs Of A Wayfarer
+   Creator: Janet Baker, Gustav Mahler, Hallé Orchestra, Sir John Barbirolli
+
+740. lp_the-bear_sir-william-walton-monica-sinclair-john-sh
+   Title: The Bear
+   Creator: Sir William Walton, Monica Sinclair, John Shaw, Norman Lumsden, English Chamber Orchestra, James Lockhart
+
+741. lp_te-deum-lacrimosa_krzysztof-penderecki
+   Title: Te Deum / Lacrimosa
+   Creator: Krzysztof Penderecki
+
+742. lp_limpatience-diane-et-acton-orphe_jean-philippe-rameau
+   Title: L'Impatience / Diane Et Actéon / Orphée
+   Creator: Jean-Philippe Rameau
+
+743. lp_dies-irae-psaume-50-miserere-mei-deus_jean-baptiste-lully
+   Title: Dies Irae / Psaume 50: Miserere Mei Deus
+   Creator: Jean-Baptiste Lully
+
+744. lp_5-sacred-cantatas_dieterich-buxtehude-helmut-krebs-dietrich
+   Title: 5 Sacred Cantatas
+   Creator: Dieterich Buxtehude, Helmut Krebs, Dietrich Fischer-Dieskau, Helga Schon, Charlotte Hampe, Hermann Töttcher, Erich Ertel, Johannes Koch, Angelo Viale, Helma Bemmer, Carl Gorvin, Hanns-Martin Schneidt, Bach-Orchester Berlin
+
+745. lp_anna-bolena_gaetano-donizetti
+   Title: Anna Bolena
+   Creator: Gaetano Donizetti
+
+746. lp_lucia-di-lammermoor_gaetano-donizetti-beverly-sills-carlo-berg
+   Title: Lucia Di Lammermoor
+   Creator: Gaetano Donizetti, Beverly Sills, Carlo Bergonzi, Justino Diaz, Piero Cappuccilli, The London Symphony Orchestra, Thomas Schippers
+
+747. lp_2-anthems-5-secular-songs_henry-purcell-the-saltire-singers
+   Title: 2 Anthems; 5 Secular Songs
+   Creator: Henry Purcell, The Saltire Singers
+
+748. lp_the-carmen-ballet_0
+   Title: The Carmen Ballet
+   Creator: Georges Bizet, Родион Щедрин, Arthur Fiedler, The Boston Pops Orchestra
+
+749. lp_wozzeck_alban-berg-pierre-boulez-orchestre-nationa
+   Title: Wozzeck
+   Creator: Alban Berg, Pierre Boulez, Orchestre National De L'Opéra De Paris, Choeur National De L'Opéra De Paris, Walter Berry, Isabel Strauss, Fritz Uhl, Karl Dönch
+
+750. lp_pierre-boulez-conducts-berlioz-symphonie-f_hector-berlioz-pierre-boulez-jean-louis-ba
+   Title: Pierre Boulez Conducts Berlioz (Symphonie Fantastique / Lélio)
+   Creator: Hector Berlioz, Pierre Boulez, Jean-Louis Barrault, John Mitchinson, John Shirley-Quirk, London Symphony Chorus, John Alldis, The London Symphony Orchestra
+
+751. lp_from-the-house-of-the-dead_leo-janaek-orchestr-narodniho-divadla-bohu
+   Title: From The House Of The Dead
+   Creator: Leoš Janáček, Orchestr Národního Divadla, Bohumil Gregor
+
+752. lp_socrate-chansons-de-bilitis_erik-satie-claude-debussy
+   Title: Socrate / Chansons De Bilitis
+   Creator: Erik Satie, Claude Debussy
+
+753. lp_frottole_rossino-mantovano-marco-cara-bartolomeo-tr
+   Title: Frottole
+   Creator: Rossino Mantovano, Marco Cara, Bartolomeo Tromboncino, Michele Pesenti, Lodovico Milanese, Lodovico Fogliano
+
+754. lp_jean-philippe-rameau-le-temple-de-la-glori_louise-budd-richard-kapp-new-york-philharm
+   Title: Jean-Philippe Rameau: Le Temple De La Glorie
+   Creator: Louise Budd, Richard Kapp, New York Philharmonia Virtuosi
+
+755. lp_weihnachtshistorie_heinrich-schutz-vestflische-kantorei-vilhe_0
+   Title: Weihnachtshistorie
+   Creator: Heinrich Schütz, Westfälische Kantorei, Wilhelm Ehmann
+
+756. lp_mattia-battistini-volume-ii_mattia-battistini
+   Title: Mattia Battistini Volume II
+   Creator: Mattia Battistini
+
+757. lp_berstein-on-broadway_peter-hoffman-deborah-sasson
+   Title: Berstein on Broadway
+   Creator: Peter Hoffman, Deborah Sasson
+
+758. lp_viennese-zithers_karl-jancik-franz-brandlhofer
+   Title: Viennese Zithers
+   Creator: Karl Jancik, Franz Brandlhofer
+
+759. lp_stabat-mater_gioacchino-rossini-thomas-schippers-the-ne
+   Title: Stabat Mater
+   Creator: Gioacchino Rossini, Thomas Schippers, The New York Philharmonic Orchestra, Martina Arroyo, Beverly Wolff, Tito Del Bianco, Justino Diaz, Camerata Singers, Abraham Kaplan
+
+760. lp_richard-tucker-sings-arias-from-ten-verdi_richard-tucker-orchester-der-wiener-staats
+   Title: Richard Tucker Sings Arias From Ten Verdi Operas
+   Creator: Richard Tucker, Orchester Der Wiener Staatsoper, Nello Santi
+
+761. lp_verdi-requiem_giuseppe-verdi-eugene-ormandy-the-philadel
+   Title: Verdi Requiem
+   Creator: Giuseppe Verdi, Eugene Ormandy, The Philadelphia Orchestra, Lucine Amara, Maureen Forrester, Richard Tucker, George London, Westminster Symphonic Choir
+
+762. lp_songs-of-ned-rorem_charles-bressler-phyllis-curtin-gianna-dan
+   Title: Songs Of Ned Rorem
+   Creator: Charles Bressler, Phyllis Curtin, Gianna D'Angelo, Donald Gramm, Regina Sarfaty
+
+763. lp_great-duets-from-verdi-operas_richard-tucker-eileen-farrell-fausto-cleva
+   Title: Great Duets From Verdi Operas
+   Creator: Richard Tucker, Eileen Farrell, Fausto Cleva, Columbia Symphony Orchestra
+
+764. lp_5th-piano-concerto-in-e-flat-emperor_ludwig-van-beethoven-emil-gilels-kurt-sand
+   Title: 5th Piano Concerto In E Flat "Emperor"
+   Creator: Ludwig Van Beethoven, Emil Gilels, Kurt Sanderling, National Philharmonic Orchestra
+
+765. lp_eugen-onegin-highlights_pyotr-ilyich-tchaikovsky-evelyn-lear-brigi
+   Title: Eugen Onegin - Highlights
+   Creator: Pyotr Ilyich Tchaikovsky, Evelyn Lear, Brigitte Fassbaender, Fritz Wunderlich, Otto Gerdes
+
+766. lp_natalka-poltavka_mikola-lisenko-hor-kiivslkogo-derjavnogo-t
+   Title: Natalka Poltavka
+   Creator: Микола Лисенко, Хор Київського Державного Театру Опери І Балету, Оркестр Київського Театру Опери Та Балету Ім Т. Г. Шевченка, Борис Чистяков, Іван Котляревський
+
+767. lp_ivan-the-terrible-oratorio-music-from-th
+   Title: Ivan The Terrible - Oratorio (Music From The Eisenstein Films,Op. 116)
+   Creator: Sergei Prokofiev, Московский Хор, Russian State Symphony Orchestra, Abram Stasevich
+
+768. lp_queen-of-spades_pyotr-ilyich-tchaikovsky
+   Title: Queen Of Spades
+   Creator: Pyotr Ilyich Tchaikovsky
+
+769. lp_love-for-three-oranges_sergei-prokofiev-bollshoi-hor-vsesouznogo
+   Title: Love For Three Oranges
+   Creator: Sergei Prokofiev, Большой Хор Всесоюзного Радио, Большой Симфонический Оркестр Всесоюзного Радио, Dzhemal Dalgat
+
+770. lp_eugene-onegin_pyotr-ilyich-tchaikovsky-mstislav-rostropo
+   Title: Eugene Onegin
+   Creator: Pyotr Ilyich Tchaikovsky, Mstislav Rostropovich, Bolshoi Theatre Orchestra Soloists Ensemble, Bolshoi Theatre Orchestra, Chorus Of The Bolshoi Theatre
+
+771. lp_prince-igor_alexander-borodin-chorus-of-the-bolshoi-th
+   Title: Prince Igor
+   Creator: Alexander Borodin, Chorus Of The Bolshoi Theatre, Bolshoi Theatre Orchestra, Mark Ermler
+
+772. lp_the-execution-of-stepan-razin-symphony-no_dmitri-shostakovich-moscow-philharmonic-or
+   Title: The Execution of Stepan Razin / Symphony No.9
+   Creator: Dmitri Shostakovich, Moscow Philharmonic Orchestra, Kiril Kondrashin
+
+773. lp_russian-opera-arias-romances
+   Title: Russian Opera Arias & Romances
+   Creator: Борис Штоколов
+
+774. lp_scene-and-arias-rimsky-korsakov-operas
+   Title: Scene And Arias Rimsky-Korsakov Operas
+   Creator: Nikolai Rimsky-Korsakov, Лариса Авдеева, Yuri Mazurok, Tamara Milashkina, Ирина Архипова, Виктор Нечипайло, Galina Vishnevskaya, Иван Петров
+
+775. lp_stars-of-the-bolshoi
+   Title: Stars Of The Bolshoi
+   Creator: Ирина Архипова, Валентина Левко, Tamara Milashkina, Elena Obraztsova, Galina Vishnevskaya, Зураб Анджапаридзе, Vladimir Atlantov, Yuri Mazurok, Иван Петров, Марк Решетин
+
+776. lp_russian-choral-music-of-the-18th-century
+   Title: Russian Choral Music Of The 18th Century
+   Creator: Государственная Республиканская Академическая Русская Хоровая Капелла
+
+777. lp_dido-and-aeneas_kirsten-flagstad-henry-purcell-the-mermaid
+   Title: Dido And Aeneas
+   Creator: Kirsten Flagstad, Henry Purcell, The Mermaid Theatre Company, Geraint Jones
+
+778. lp_saint-luke-passion_johann-sebastian-bach
+   Title: Saint Luke Passion
+   Creator: Johann Sebastian Bach
+
+779. lp_j-s-bach-cantata-no-182-himmelskoenig-sei_johann-sebastian-bach-friederike-sailer-cl
+   Title: J. S. Bach Cantata No. 182 "Himmelskoenig, Sei Willkommen" - Cantata No. 43 "Gott Faehret Auf Mit Jauchzen"
+   Creator: Johann Sebastian Bach, Friederike Sailer, Claudia Hellmann, Helmut Krebs, Erich Wenk, Prof. Jakob Stämpfli, Heinrich-Schütz-Chor Heilbronn, Südwestdeutsches Kammerorchester, Fritz Werner
+
+780. lp_christmas-in-the-great-cathedral-of-reims_andr-marchal
+   Title: Christmas In The Great Cathedral Of Reims
+   Creator: André Marchal
+
+781. lp_lully-scenes-from-the-operas-isis-and-armi_nadine-sautereau-jocelyne-chamonin-andr-ma
+   Title: Lully: Scenes from the Operas Isis and Armide
+   Creator: Nadine Sautereau, Jocelyne Chamonin, André Mallabrera, Roger Soyer
+
+782. lp_five-centuries-of-music-in-the-cathedral-o_josquin-des-prs-guillaume-de-machaut-baude
+   Title: Five Centuries Of Music In The Cathedral Of Reims
+   Creator: Josquin Des Prés, Guillaume de Machaut, Baude Cordier, François Cosset, Henri Hardouin, Nicolas De Grigny, Les Alouettes De Champagne, Maîtrise De La Cathédrale De Reims, Orchestre De Chambre Jean-François Paillard, Jean-François Paillard, Arsène Muzerelle, Jacques Chailley
+
+783. lp_cantata-no-103-ihr-werdet-weinen-und-heule_johann-sebastian-bach-barbara-scherler-geo
+   Title: Cantata No. 103: "Ihr Werdet Weinen Und Heulen"; Cantata No. 200: "Bekennen Will Ich Seinen Namen"; Cantata No. 118: "O Jesu Christ, Mein's Lebens Licht"; Cantata No. 7: "Christ Unser Herr Zum Jordan Kam"
+   Creator: Johann Sebastian Bach, Barbara Scherler, Georg Jelden, Prof. Jakob Stämpfli, Heinrich-Schütz-Chor Heilbronn, Südwestdeutsches Kammerorchester, Fritz Werner
+
+784. lp_serenata-a-due-clori-e-zeffiro_alessandro-scarlatti
+   Title: Serenata A Due: Clori E Zeffiro
+   Creator: Alessandro Scarlatti
+
+785. lp_sacred-works_giovanni-battista-pergolesi-emila-cundari
+   Title: Sacred Works
+   Creator: Giovanni Battista Pergolesi, Emila Cundari, Giovanna Fioroni, Giulio Bertola
+
+786. lp_music-in-the-basilica-of-san-petronio-in-b_tito-gotti-mirella-freni-reri-grist-orches
+   Title: Music In The Basilica Of San Petronio In Bologna
+   Creator: Tito Gotti, Mirella Freni, Reri Grist, Orchestra Del Teatro Comunale Di Bologna
+
+787. lp_missa-solemnis_ludwig-van-beethoven-der-oratorienchor-des
+   Title: Missa Solemnis
+   Creator: Ludwig van Beethoven, Der Oratorienchor Des Musikvereins Landau, Das Philharmonische Orchester Der Pfalz, Werner Kloor
+
+788. lp_otello_giuseppe-verdi-mario-del-monaco-renata-teb
+   Title: Otello
+   Creator: Giuseppe Verdi, Mario del Monaco, Renata Tebaldi, Aldo Protti, Wiener Philharmoniker, Herbert von Karajan
+
+789. lp_war-and-peace-opera-in-thirteen-scenes_sergei-prokofiev_0
+   Title: War and Peace (Opera in Thirteen Scenes)
+   Creator: Sergei Prokofiev
+
+790. lp_stabat-mater_luigi-boccherini-carmen-vilalta-ritva-auvi
+   Title: Stabat Mater
+   Creator: Luigi Boccherini, Carmen Vilalta, Ritva Auvinen, Giorgio Marelli, Orchestra da Camera Genovese, Ivan Polidori
+
+791. lp_motet-accensa-furore-motet-quam-terribilia_charles-joseph-van-helmont-henri-jacques-d
+   Title: Motet "Accensa Furore"; Motet "Quam Terribilia"
+   Creator: Charles-Joseph Van Helmont, Henri-Jacques de Croes, Géry Lemaire
+
+792. lp_canon-in-d-major_johann-pachelbel-orchestre-de-chambre-jean
+   Title: Canon In D Major
+   Creator: Johann Pachelbel, Orchestre De Chambre Jean-François Paillard, Jean-François Paillard
+
+793. lp_la-chasse-du-cerf-the-stag-hunt_jean-baptiste-morin-jean-franois-paillard
+   Title: La Chasse Du Cerf (The Stag Hunt)
+   Creator: Jean-Baptiste Morin, Jean-François Paillard
+
+794. lp_cantata-su-le-sponde-del-tebro-rcitative_alessandro-scarlatti-domenico-scarlatti
+   Title: Cantata "Su Le Sponde Del Tebro", Récitative & Aria "Caldo Sangue", Stabat Mater
+   Creator: Alessandro Scarlatti, Domenico Scarlatti
+
+795. lp_golgotha-oratorio-in-two-parts-for-soli-mi_frank-martin-symphony-orchestra-michel-cor
+   Title: Golgotha; Oratorio In Two Parts For Soli, Mixed Chorus, Orchestra And Organ, On Texts From The Evangelists And St. Augustine
+   Creator: Frank Martin, Symphony Orchestra, Michel Corbuz, Robert Faller
+
+796. lp_king-david-original-version_arthur-honegger-charles-dutoit-philippe-ca
+   Title: King David (Original Version)
+   Creator: Arthur Honegger, Charles Dutoit, Philippe Caillard Ensemble, Jeannine Collard, Eric Tappy
+
+797. lp_rimsky-korsakov-the-snow-maiden-sneguroc_evgeni-svetlanov-chorus-of-the-bolshoi-the
+   Title: Rimsky-Korsakov - The Snow Maiden (Snegurochka)
+   Creator: Evgeni Svetlanov, Chorus Of The Bolshoi Theatre, Bolshoi Theatre Orchestra, Іван Козловський, Vladimir Gavryushov, Вера Фирсова, Александр Хоссон, Валентина Петрова, Лариса Авдеева, Galina Vishnevskaya, Юрий Галкин, F. Parkhomenko, Тихон Черняков, Даниэль Бедросьян, Сергей Колтыпин
+
+798. lp_from-jewish-folk-poetry-op-79-a-cycle-of-1_dmitri-shostakovich-modest-mussorgsky-dmit
+   Title: From Jewish Folk Poetry Op. 79 (A Cycle Of 11 Songs) / The Nursery (A Cycle Of 7 Songs) / Shakespeare Sonnets Op. 52
+   Creator: Dmitri Shostakovich, Modest Mussorgsky, Dmitry Kabalevsky
+
+799. lp_music-of-guillaume-dufay-missa-se-la-face_guillaume-dufay-the-early-music-consort-of
+   Title: Music Of Guillaume Dufay: Missa "Se La Face Ay Pale"
+   Creator: Guillaume Dufay, The Early Music Consort Of London, David Munrow
+
+800. lp_first-stereo-recording-of-benjamin-britten_robert-tear-bruce-russell-the-academy-of-s
+   Title: First Stereo Recording Of Benjamin Britten's Cantata Saint Nicholas
+   Creator: Robert Tear, Bruce Russell, The Academy Of St. Martin-in-the-Fields, The King's College Choir Of Cambridge, David Willcocks
+
+801. lp_the-comic-mozart-satirical-ensembles-arias_wolfgang-amadeus-mozart-erika-kth-peter-sc
+   Title: The Comic Mozart, Satirical Ensembles, Arias And Canons
+   Creator: Wolfgang Amadeus Mozart, Erika Köth, Peter Schreier, Hermann Prey, Walter Berry, Convivium Musicum Of Munich, Erich Keller, Wiener Akademie Kammerchor, Xaver Mayer
+
+802. lp_on-guard-for-peace-oratorio-op-124
+   Title: On Guard For Peace (Oratorio, Op. 124)
+   Creator: Sergei Prokofiev, Gennadi Rozhdestvensky, Ирина Архипова, Большой Симфонический Оркестр Всесоюзного Радио, Большой Хор Всесоюзного Радио, Хор Мальчиков Московского Государственного Хорового Училища
+
+803. lp_salzburg-festival-1953-wolf-songs_elisabeth-schvarzkopf-vilhelm-furtvngler
+   Title: Salzburg Festival 1953 - Wolf Songs
+   Creator: Elisabeth Schwarzkopf, Wilhelm Furtwängler
+
+804. lp_le-nozze-di-figaro_wolfgang-amadeus-mozart-martial-singher-lu
+   Title: Le Nozze Di Figaro
+   Creator: Wolfgang Amadeus Mozart, Martial Singher, Lucine Amara, Nadine Conner, Giorgio Tozzi, Mildred Miller, Herta Glaz, Salvatore Baccaloni, Alessio De Paolis, Gabor Carelli, Lawrence Davidson, Emilia Cundari, Max Rudolf
+
+805. lp_giuseppe-verdi-aida_the-metropolitan-opera-house-orchestra-met
+   Title: Giuseppe Verdi: AIDA
+   Creator: The Metropolitan Opera House Orchestra, Metropolitan Opera Chorus, Fausto Cleva, Kurt Herbert Adler
+
+806. lp_tosca_giacomo-puccini-dorothy-kirsten-daniele-ba
+   Title: Tosca
+   Creator: Giacomo Puccini, Dorothy Kirsten, Daniele Barioni, Frank Guarrera, Dimitri Mitropoulos, The Metropolitan Opera House Orchestra, Metropolitan Opera Chorus
+
+807. lp_giuseppe-verdi-il-trovatore_mary-curtis-verna-kurt-baum-rosalind-elias
+   Title: Giuseppe Verdi: Il Trovatore
+   Creator: Mary Curtis-Verna, Kurt Baum, Rosalind Elias, Frank Guarrera, Norman Scott, Helen Vanni, James McCracken, The Metropolitan Opera House Orchestra, Metropolitan Opera Chorus, Max Rudolf
+
+808. lp_romo-et-juliette_charles-gounod-raoul-jobin-janine-micheau
+   Title: Roméo Et Juliette
+   Creator: Charles Gounod, Raoul Jobin, Janine Micheau
+
+809. lp_die-zauberflte-the-magic-flute_volfgang-amadeus-mozart-hilde-guden-vilma
+   Title: Die Zauberflöte (The Magic Flute)
+   Creator: Wolfgang Amadeus Mozart, Hilde Güden, Wilma Lipp, Emmy Loose, Leopold Simoneau, Walter Berry, Kurt Böhme, Wiener Staatsopernchor, Wiener Philharmoniker, Karl Böhm
+
+810. lp_la-favorita-the-favorite_gaetano-donizetti-orchestra-of-the-maggio
+   Title: La Favorita (The Favorite)
+   Creator: Gaetano Donizetti, Orchestra Of The Maggio Musicale Fiorentino, Chor Des Maggio Musicale Fiorentino, Alberto Erede, Giulietta Simionato, Gianni Poggi, Ettore Bastianini, Jerome Hines, Piero De Palma, Bice Magnani
+
+811. lp_andrea-chnier_umberto-giordano-mario-del-monaco-renata-t
+   Title: Andrea Chénier
+   Creator: Umberto Giordano, Mario del Monaco, Renata Tebaldi, Ettore Bastianini, Coro dell'Accademia Nazionale di Santa Cecilia, Orchestra dell'Accademia Nazionale di Santa Cecilia, Gianandrea Gavazzeni
+
+812. lp_la-boheme_renata-tebaldi-carlo-bergonzi-ettore-basti
+   Title: La Bohème
+   Creator: Renata Tebaldi, Carlo Bergonzi, Ettore Bastianini, Cesare Siepi, Fernando Corena, Tullio Serafin, Giacomo Puccini
+
+813. lp_manon_jules-massenet
+   Title: Manon
+   Creator: Jules Massenet
+
+814. lp_the-turn-of-the-screw_benjamin-britten
+   Title: The Turn Of The Screw
+   Creator: Benjamin Britten
+
+815. lp_concert-encores_mantovani-and-his-orchestra
+   Title: Concert Encores
+   Creator: Mantovani And His Orchestra
+
+816. lp_anatolian-introduction_spero-spyros-and-his-modern-anatolian-ense
+   Title: Anatolian Introduction
+   Creator: Spero Spyros And His Modern Anatolian Ensemble
+
+817. lp_a-midsummer-nights-dream_felix-mendelssohn-bartholdy-the-london-sym
+   Title: A Midsummer Night's Dream
+   Creator: Felix Mendelssohn-Bartholdy, The London Symphony Orchestra, Peter Maag
+
+818. lp_wagner-excerpts-die-gotterdammerung_richard-wagner-hans-knappertsbusch-wiener
+   Title: Wagner Excerpts: Die Gotterdammerung
+   Creator: Richard Wagner, Hans Knappertsbusch, Wiener Philharmoniker
+
+819. lp_madrigals-by-john-wilbye_john-wilbye-the-wilbye-consort-peter-pears
+   Title: Madrigals By John Wilbye
+   Creator: John Wilbye, The Wilbye Consort, Peter Pears
+
+820. lp_romantic-songs_gioacchino-rossini-vincenzo-bellini-gaetan
+   Title: Romantic Songs
+   Creator: Gioacchino Rossini, Vincenzo Bellini, Gaetano Donizetti, Lydia Marimpietri, Ugo Benelli, Enrico Fabbro
+
+821. lp_symphonies-nos-3-4_albert-roussel-ernest-ansermet-lorchestre
+   Title: Symphonies Nos. 3 & 4
+   Creator: Albert Roussel, Ernest Ansermet, L'Orchestre De La Suisse Romande
+
+822. lp_music-in-london-1670-1770_thomas-arne-charles-avison-johann-christia
+   Title: Music In London 1670-1770
+   Creator: Thomas Arne, Charles Avison, Johann Christian Bach, William Boyce, Matthew Locke, Henry Purcell
+
+823. lp_tannhuser_richard-wagner-wiener-philharmoniker-georg
+   Title: Tannhäuser
+   Creator: Richard Wagner, Wiener Philharmoniker, Georg Solti, René Kollo, Helga Dernesch, Christa Ludwig, Victor Braun, Hans Sotin
+
+824. lp_boris-godunov_modest-mussorgsky-nikolai-rimsky-korsakov
+   Title: Boris Godunov
+   Creator: Modest Mussorgsky, Nikolai Rimsky-Korsakov, Nicolai Ghiaurov, Wiener Philharmoniker, Herbert von Karajan, Galina Vishnevskaya, Ludovic Spiess, Aleksei Maslennikov, Martti Talvela
+
+825. lp_der-rosenkavalier_georg-solti-rgine-crespin-richard-strauss
+   Title: Der Rosenkavalier
+   Creator: Georg Solti, Régine Crespin, Richard Strauss, Yvonne Minton, Manfred Jungwirth, Helen Donath, The Vienna Philharmonic Orchestra
+
+826. lp_les-huguenots_giacomo-meyerbeer-joan-sutherland-martina
+   Title: Les Huguenots
+   Creator: Giacomo Meyerbeer, Joan Sutherland, Martina Arroyo, Huguette Tourangeau, Anastasios Vrenios, Gabriel Bacquier, Dominic Cossa, Nicola Ghiuselev, The Ambrosian Opera Chorus, New Philharmonia Orchestra, Richard Bonynge
+
+827. lp_mascagni-cavalleria-rusticana_renata-tebaldi-jussi-bjrling-ettore-bastia
+   Title: Mascagni: Cavalleria Rusticana
+   Creator: Renata Tebaldi, Jussi Björling, Ettore Bastianini, Orchestra Of The Maggio Musicale Fiorentino, Chor Des Maggio Musicale Fiorentino, Alberto Erede
+
+828. lp_vesperae-in-festo-ss-innocentium_michael-haydn-szabo-miklos-gysr-girls-chor
+   Title: Vesperae In Festo SS. Innocentium
+   Creator: Michael Haydn, Szabó Miklós, Győr Girls' Chorus, Győri Filharmonikus Zenekar
+
+829. lp_hunyadi-heroic-song-oratorio_sugr-rezss-budapesti-korus-hungarian-state
+   Title: Hunyadi: Heroic Song - Oratorio
+   Creator: Sugár Rezső, Budapesti Kórus, Hungarian State Orchestra, Forrai Miklós
+
+830. lp_secular-vocal-works_claudio-monteverdi-hugues-cunod-daniel-pin
+   Title: Secular Vocal Works
+   Creator: Claudio Monteverdi, Hugues Cuénod, Daniel Pinkham, Judith Davidoff, Robert Brink
+
+831. lp_latin-and-german-cantatas-suite-for-orga_dieterich-buxtehude-cambridge-festival-orc
+   Title: Latin And German Cantatas - Suite For Organ
+   Creator: Dieterich Buxtehude, Cambridge Festival Orchestra Ensemble, Hugues Cuénod, Richard Conrad, Mark Pearson
+
+832. lp_ballads-in-colonial-america_karl-krueger-sebastian-caratelli-jean-ritc
+   Title: Ballads In Colonial America
+   Creator: Karl Krueger, Sebastian Caratelli, Jean Ritchie, Tony Kraber
+
+833. lp_marly-royal-divertissement-at-the-castle_various-a-campra-a-cardinal-destouches-f-c
+   Title: Marly: Royal Divertissement At The Castle
+   Creator: Various, A. Campra, A. Cardinal Destouches, F. Couperin, J. - J. Mouret, J.P. Rameau, L. - N. Clerambault, L. Le Maire, M. De Monteclair, Montarin
+
+834. lp_lazarus-oder-die-feier-der-auferstehung_franz-schubert
+   Title: Lazarus Oder Die Feier Der Auferstehung
+   Creator: Franz Schubert
+
+835. lp_motets-for-soloists-and-orchestra_andr-campra-jeanjoseph-mouret-pierre-gauti
+   Title: Motets For Soloists And Orchestra
+   Creator: André Campra, Jean-Joseph Mouret, Pierre Gautier de Marseille, Orchestre De Chambre Jean-François Paillard, Louis Frémaux
+
+836. lp_te-deum-for-soloists-choir-and-orchestra_michel-richard-delalande
+   Title: Te Deum For Soloists, Choir And Orchestra
+   Creator: Michel Richard Delalande
+
+837. lp_cantata-no-4-christ-lag-in-todesbanden-can_johann-sebastian-bach
+   Title: Cantata No. 4, "Christ lag in Todesbanden"; Cantata No. 34, "O ewiges Feuer"
+   Creator: Johann Sebastian Bach
+
+838. lp_cantata-no-110-unser-mund-sei-voll-lachen_johann-sebastian-bach-friederike-sailer-cl
+   Title: Cantata No. 110 "Unser Mund Sei Voll Lachen" / Cantata No. 8 "Liebster Gott, Warum Werd' Ich Sterben!"
+   Creator: Johann Sebastian Bach, Friederike Sailer, Claudia Hellmann, Helmut Krebs, Erich Wenk, Heinrich-Schütz-Chor Heilbronn, Südwestdeutsches Kammerorchester, Fritz Werner
+
+839. lp_cantata-no-147-herz-und-mund-und-tat-und-l_johann-sebastian-bach-helmut-krebs-franz-k
+   Title: Cantata No. 147, "Herz Und Mund Und Tat Und Leben" / Cantata No. 160, "Ich Weiss, Dass Men Erloeser Lebt"
+   Creator: Johann Sebastian Bach, Helmut Krebs, Franz Kelch, Ingeborg Reichelt, Margarethe Bence, Heinrich-Schütz-Chor Heilbronn, Südwestfunkorchester Baden-Baden, Fritz Werner
+
+840. lp_charpentier-te-deum-marche-and-aire_marc-antoine-charpentier-orchestre-de-lass
+   Title: Charpentier: Te Deum, Marche And Aire
+   Creator: Marc Antoine Charpentier, Orchestre De L'Association Des Concerts Pasdeloup, Chorale des Jeunesses Musicales de France, Louis Martini
+
+841. lp_the-great-cantatas-of-j-s-bach-cantata-bwv_johann-sebastian-bach-edith-selig-georg-je
+   Title: The Great Cantatas Of J. S. Bach: Cantata BWV 21 "Ich Hatte Viel Bekuemmernis"
+   Creator: Johann Sebastian Bach, Edith Selig, Georg Jelden, Erik Wenk, Heinrich-Schütz-Chor Heilbronn, Südwestdeutsches Kammerorchester, Fritz Werner
+
+842. lp_midnight-mass_marc-antoine-charpentier
+   Title: Midnight Mass
+   Creator: Marc Antoine Charpentier
+
+843. lp_music-of-the-16th-17th-centuries-volume-v_thomas-tomkins-the-in-nomine-players-the-a
+   Title: Music Of The 16th & 17th Centuries Volume VI: Songs And Consort Music
+   Creator: Thomas Tomkins, The In Nomine Players, The Ambrosian Singers, Denis Stevens
+
+844. lp_missa-quarti-toni-6-motets_toms-luis-de-victoria-the-philippe-caillar
+   Title: Missa Quarti Toni & 6 Motets
+   Creator: Tomás Luis De Victoria, The Philippe Caillard Vocal Ensemble
+
+845. lp_psalms-for-chorus-and-orchestra_andr-campra-philippe-caillard-and-stphane
+   Title: Psalms For Chorus And Orchestra
+   Creator: André Campra, Philippe Caillard and Stéphane Caillat Choirs, Jean-François Paillard Orchestra, Louis Frémaux
+
+846. lp_composers-to-the-court-of-the-holy-roman-e_georg-muffat-georg-christoph-wagenseil-joh
+   Title: Composers To The Court Of The Holy Roman Empire
+   Creator: Georg Muffat, Georg Christoph Wagenseil, Johann Josef Fux
+

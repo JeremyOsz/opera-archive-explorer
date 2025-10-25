@@ -1,0 +1,307 @@
+COMPREHENSIVE WORK BATCHING REPORT
+===================================
+
+Total batches: 20
+Total works mapped: 459
+Total recordings: 538
+
+BATCH DETAILS:
+==============
+
+1. BATCH 1: Puccini Operas
+   Works: 15
+   Recordings: 36
+   Composers: Giacomo Puccini, Giacomo Puccini, Dimitri Mitropoulos, Dorothy Kirsten, Daniele Barioni, Puccini...
+   Years: 1965, 1963, 1959, 1967, 1964...
+   Languages: eng, bul, hun...
+
+   Sample works:
+     - manon lescaut (Giacomo Puccini)
+     - madama butterfly (Giacomo Puccini, Dimitri Mitropoulos, Dorothy Kirsten, Daniele Barioni)
+     - tosca (Puccini)
+     - la bohème (Giacomo Puccini, Maria Callas, Giuseppe di Stefano, Anna Moffo, Rolando Panerai, Orchestra Del Teatro Alla Scala, Coro Del Teatro Alla Scala, Antonino Votto)
+     - the fabulous edison cylinder (Various, Alessandro Bonci, Ambroise Thomas, Blanche Arral, Carlo Albani, Florencio Constantino, Frieda Hempel, Giacomo Meyerbeer, Giacomo Puccini, Giuseppe Verdi, Heinrich Proch, Jules Massenet, Julia Heinrich, Leo Slezak, Lucrezia Bori, Marie Delna, Mario Laurenti, P. Asselin)
+     ... and 10 more works
+
+2. BATCH 2: Verdi Operas
+   Works: 41
+   Recordings: 60
+   Composers: Johannes Brahms, Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, Otto Klemperer, Philharmonia Orchestra, Philharmonia Chorus, Patricia Neway, Thomas Mayer, Giuseppe Verdi, Vincenzo Bellini, Pietro Mascagni, Giuseppe Verdi, Igor Markevitch, Moscow Philharmonic Orchestra, Государственный Академический Русский Хор Им. А. В. Свешникова...
+   Years: 1962, 1953, 1970, 1968, 1961...
+   Languages: eng, ger, ita...
+
+   Sample works:
+     - a german requiem (Johannes Brahms, Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, Otto Klemperer, Philharmonia Orchestra, Philharmonia Chorus)
+     - recital of songs (Patricia Neway, Thomas Mayer, Giuseppe Verdi, Vincenzo Bellini, Pietro Mascagni)
+     - requiem (Giuseppe Verdi, Igor Markevitch, Moscow Philharmonic Orchestra, Государственный Академический Русский Хор Им. А. В. Свешникова)
+     - otello (Giuseppe Verdi, Carlo Maria Guichandut, Cesy Broggini, Giuseppe Taddei, Angelo Mercuriali, Rina Corsi, Tommaso Soley, Marco Stefanoni, Alberto Albertini, Mario Conte, Orchestra Sinfonica Di Torino Della RAI, Coro Di Torino Della RAI, Franco Capuana, Ruggero Maghini)
+     - la forza del destino (Dimitri Mitropoulos, Giuseppe Verdi, Renata Tebaldi, Mario del Monaco, Aldo Protti, Cesare Siepi, Fedora Barbieri)
+     ... and 36 more works
+
+3. BATCH 3: Wagner Operas
+   Works: 21
+   Recordings: 27
+   Composers: Richard Wagner, Rudolf Kempe, Berliner Philharmoniker, Women's Chorus Of The Berlin State Opera, The Charleston City All-Stars, Richard Wagner, Kirsten Flagstad, Wilhelm Furtwängler...
+   Years: 1965, 1959, 1955, 1954, 1966...
+   Languages: eng, ger
+
+   Sample works:
+     - wagner (Richard Wagner, Rudolf Kempe, Berliner Philharmoniker, Women's Chorus Of The Berlin State Opera)
+     - the roaring 20's (The Charleston City All-Stars)
+     - scenen aus götterdämmerung (Richard Wagner, Kirsten Flagstad, Wilhelm Furtwängler)
+     - exerpts from tristan und isolde (Birgit Nilsson, Richard Wagner, Wiener Philharmoniker)
+     - das rheingold highlights (Richard Wagner, Orchester Der Deutschen Oper Berlin, Rudolf Kempe, Rudolf Schock, Lisa Otto, Sieglinde Wagner)
+     ... and 16 more works
+
+4. BATCH 4: Mozart Works
+   Works: 25
+   Recordings: 33
+   Composers: Manuel Ausensi, Wolfgang Amadeus Mozart, Domenico Cimarosa, Gran Orquesta Sinfónica, Ricard Lamote de Grignon, Wolfgang Amadeus Mozart, Margot Guilleaume, Lotte Wolf-Matthäus, Helmut Krebs, Fritz Wunderlich, Hans Günter Nöcker, Fritz Neumeyer, Maria Kurenko, Wolfgang Amadeus Mozart, Georg Friedrich Händel, Luigi Cherubini, Hector Berlioz...
+   Years: 1957, 1967, 1959, 1966, 1963...
+   Languages: eng, ita, ger...
+
+   Sample works:
+     - manuel ausensi sings mozart and cimarosa (Manuel Ausensi, Wolfgang Amadeus Mozart, Domenico Cimarosa, Gran Orquesta Sinfónica, Ricard Lamote de Grignon)
+     - 12 songs and 2 comic ensembles (Wolfgang Amadeus Mozart, Margot Guilleaume, Lotte Wolf-Matthäus, Helmut Krebs, Fritz Wunderlich, Hans Günter Nöcker, Fritz Neumeyer)
+     - maria kurenko sings with orchestra (Maria Kurenko, Wolfgang Amadeus Mozart, Georg Friedrich Händel, Luigi Cherubini, Hector Berlioz)
+     - the marriage of figaro (Wolfgang Amadeus Mozart, Fernando Previtali)
+     - don giovanni (Wolfgang Amadeus Mozart, Wiener Symphoniker, Rudolf Moralt, George London, Leopold Simoneau, Walter Berry, Sena Jurinac, Graziella Sciutti)
+     ... and 20 more works
+
+5. BATCH 5: Bach Works
+   Works: 42
+   Recordings: 42
+   Composers: Johann Sebastian Bach, Elly Ameling, Marga Höffgen, Peter Pears, Fritz Wunderlich, Hermann Prey, Tom Krause, Stuttgarter Hymnus-Chorknaben, Stuttgarter Kammerorchester, Karl Münchinger, Béla Bartók, Walter Susskind, The New Symphony Orchestra Of London, The New Symphony Chorus Of London, Marko Rothmuller, Richard Lewis, Johann Sebastian Bach, Marie-Claire Alain...
+   Years: 1965, 1956, 1964, 1967, 1954...
+   Languages: eng, ger, fre...
+
+   Sample works:
+     - matthäus (Johann Sebastian Bach, Elly Ameling, Marga Höffgen, Peter Pears, Fritz Wunderlich, Hermann Prey, Tom Krause, Stuttgarter Hymnus-Chorknaben, Stuttgarter Kammerorchester, Karl Münchinger)
+     - cantata profana (Béla Bartók, Walter Susskind, The New Symphony Orchestra Of London, The New Symphony Chorus Of London, Marko Rothmuller, Richard Lewis)
+     - l'œuvre pour orgue (Johann Sebastian Bach, Marie-Claire Alain)
+     - johannes uppenbarelse. symfoni nr 4 for barytonsolo, kor och orkester (Hilding Rosenberg)
+     - piccolo magnificat, le rossignol, cantata (Magda Laszlo, Johann Sebastian Bach, Georg Friedrich Händel, Alessandro Scarlatti)
+     ... and 37 more works
+
+6. BATCH 6: Rossini Works
+   Works: 11
+   Recordings: 17
+   Composers: Gioacchino Rossini, RIAS Symphonie-Orchester Berlin, RIAS-Kammerchor, Ferenc Fricsay, Chor Der St. Hedwigs-Kathedrale Berlin, Gioacchino Rossini, Gioacchino Rossini, Giulietta Simionato, Sesto Bruscantini, Ugo Benelli, Paolo Montarsolo, Coro Del Maggio Musicale Fiorentino, Orchestra Del Maggio Musicale Fiorentino, Oliviero De Fabritiis...
+   Years: 1966, 1957, 1971, 1964, 1959...
+   Languages: ger, eng, ita...
+
+   Sample works:
+     - stabat mater (Gioacchino Rossini, RIAS Symphonie-Orchester Berlin, RIAS-Kammerchor, Ferenc Fricsay, Chor Der St. Hedwigs-Kathedrale Berlin)
+     - elisabetta, regina d'inghilterra (Gioacchino Rossini)
+     - la cenerentola = cinderella (Gioacchino Rossini, Giulietta Simionato, Sesto Bruscantini, Ugo Benelli, Paolo Montarsolo, Coro Del Maggio Musicale Fiorentino, Orchestra Del Maggio Musicale Fiorentino, Oliviero De Fabritiis)
+     - the barber of seville (Gioacchino Rossini, Alceo Galliera, Philharmonic Orchestra And Chorus)
+     - le comte ory (Gioacchino Rossini, Glyndebourne Festival Chorus, Vittorio Gui)
+     ... and 6 more works
+
+7. BATCH 7: Beethoven Works
+   Works: 10
+   Recordings: 15
+   Composers: Ludwig van Beethoven, Orchester Der Wiener Staatsoper, Hermann Scherchen, Jan Peerce, Maria Stader, Otto Wiener, Ludwig Van Beethoven, Eugen Jochum, Agnes Giebel, Marga Höffgen, Ernst Haefliger, Karl Ridderbusch, Groot Omroepkoor, Concertgebouworkest, Ludwig van Beethoven, Hermann Scherchen, Orchester Der Wiener Staatsoper, Magda Laszlo...
+   Years: 1963, 1971, 1970, 1954, 1951...
+   Languages: eng, lat, ita...
+
+   Sample works:
+     - christ on the mount of olives (Ludwig van Beethoven, Orchester Der Wiener Staatsoper, Hermann Scherchen, Jan Peerce, Maria Stader, Otto Wiener)
+     - missa solemnis (Ludwig Van Beethoven, Eugen Jochum, Agnes Giebel, Marga Höffgen, Ernst Haefliger, Karl Ridderbusch, Groot Omroepkoor, Concertgebouworkest)
+     - music to goethe's "egmont", op. 84 (Ludwig van Beethoven, Hermann Scherchen, Orchester Der Wiener Staatsoper, Magda Laszlo)
+     - symphony no. 4 / leonore overture no. 3 (Robert Schumann, Ludwig van Beethoven, Boston Symphony Orchestra, Erich Leinsdorf)
+     - an die ferne geliebte (song cycle, op. 98) / vier ernste gesänge (four serious songs, op. 121) (Ludwig van Beethoven, Heinrich Schlusnus, Sebastian Peschko, Johannes Brahms, Dietrich Fischer-Dieskau, Hertha Klust)
+     ... and 5 more works
+
+8. BATCH 8: Brahms Works
+   Works: 14
+   Recordings: 14
+   Composers: Johannes Brahms, Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, Otto Klemperer, Philharmonia Orchestra, Philharmonia Chorus, Dietrich Fischer-Dieskau, Jörg Demus, Johannes Brahms, Antonín Dvořák, Johannes Brahms, The Robert Shaw Chorale...
+   Years: 1962, 1958, 1966, 1957, 1967...
+   Languages: eng, ger
+
+   Sample works:
+     - a german requiem (Johannes Brahms, Elisabeth Schwarzkopf, Dietrich Fischer-Dieskau, Otto Klemperer, Philharmonia Orchestra, Philharmonia Chorus)
+     - brahms (Dietrich Fischer-Dieskau, Jörg Demus, Johannes Brahms, Antonín Dvořák)
+     - the liebeslieder waltses, op. 52 and op. 65 (Johannes Brahms, The Robert Shaw Chorale)
+     - a german requiem / kindertotenlieder (Johannes Brahms, Gustav Mahler, Rudolf Kempe, Berliner Philharmoniker)
+     - requiem for mignon op. 98b / wesendonk lieder / alto rhapsody op. 53 / rückert lieder (Robert Schumann, Johannes Brahms, Richard Wagner, Gustav Mahler, Maura Moreira, Edith Mathis, Christa Lehnert, Margarete Witte-Waldbauer, Robert Titze, Symphonieorchester Innsbruck, Innsbruck Symphony Chorus, Robert Wagner)
+     ... and 9 more works
+
+9. BATCH 9: Strauss (Richard) Works
+   Works: 18
+   Recordings: 22
+   Composers: Richard Strauss, Elisabeth Höngen, Walburga Wegner, Set Svanholm, Paul Schöffler, Astrid Varnay, Richard Strauss, Minneapolis Symphony Orchestra, Antal Dorati, Eugen D'Albert, Isabel Strauss, Angelika Fischer, Rudolf Schock, Gerd Feldhoff, Ivan Sardi, Hans Zanotelli...
+   Years: 1952, 1950, 1964, 1957, 1969...
+   Languages: eng, ger, hun...
+
+   Sample works:
+     - elektra (Richard Strauss, Elisabeth Höngen, Walburga Wegner, Set Svanholm, Paul Schöffler, Astrid Varnay)
+     - a hero's life (Richard Strauss, Minneapolis Symphony Orchestra, Antal Dorati)
+     - tiefland (Eugen D'Albert, Isabel Strauss, Angelika Fischer, Rudolf Schock, Gerd Feldhoff, Ivan Sardi, Hans Zanotelli)
+     - der rosenkavalier (Richard Strauss)
+     - arabella (Richard Strauss, Josef Metternich, Elisabeth Schwarzkopf, Nicolai Gedda, Philharmonia Orchestra, Lovro Von Matacic)
+     ... and 13 more works
+
+10. BATCH 10: French Composers
+   Works: 26
+   Recordings: 30
+   Composers: Artur Rother, Orchester Der Städtischen Oper Berlin, Georges Bizet, Maria Kurenko, Wolfgang Amadeus Mozart, Georg Friedrich Händel, Luigi Cherubini, Hector Berlioz, Georges Bizet, Andréa Guiot, Guy Fouché...
+   Years: 1954, 1967, 1968, 1960, 1956...
+   Languages: eng, ita, fre...
+
+   Sample works:
+     - carmen preludes (Artur Rother, Orchester Der Städtischen Oper Berlin, Georges Bizet)
+     - maria kurenko sings with orchestra (Maria Kurenko, Wolfgang Amadeus Mozart, Georg Friedrich Händel, Luigi Cherubini, Hector Berlioz)
+     - djamileh (Georges Bizet, Andréa Guiot, Guy Fouché)
+     - carmen (Georges Bizet, Raoul Jobin, Solange Michel, Michel Dens, Martha Angelici, Chœurs Du Théâtre National De L'Opéra Comique, Orchestre Du Théâtre National De L'Opéra-Comique, André Cluytens)
+     - la grande duchesse de gerolstein (Jacques Offenbach, Eugenia Zareska, Gisèle Prevet, André Dran, John Riley, Georges Lacour, Jean Mollien, Choeur Lyrique De Paris, Orchestre De L'Association Des Concerts Pasdeloup, René Leibowitz)
+     ... and 21 more works
+
+11. BATCH 11: Russian Composers
+   Works: 23
+   Recordings: 26
+   Composers: Igor Stravinsky, Orchestre De La Société Des Concerts Du Conservatoire, André Cluytens, Pyotr Ilyich Tchaikovsky, Mikhail Ivanovich Glinka, Сергей Лемешев, Tatiana Lavrova, Іван Козловський, Moscow Philharmonic Orchestra, Bolshoi Theatre Orchestra, Pyotr Ilyich Tchaikovsky, Сергей Лемешев, Іван Козловський, Надежда Обухова...
+   Years: 1957, 1961, 1964, 1963, 1971...
+   Languages: eng, fre, ger...
+
+   Sample works:
+     - persephone (Igor Stravinsky, Orchestre De La Société Des Concerts Du Conservatoire, André Cluytens)
+     - romeo and juliet duet, the prayer (Pyotr Ilyich Tchaikovsky, Mikhail Ivanovich Glinka, Сергей Лемешев, Tatiana Lavrova, Іван Козловський, Moscow Philharmonic Orchestra, Bolshoi Theatre Orchestra)
+     - romances op. 54, 60, 63, 65 and 73, volume ii (Pyotr Ilyich Tchaikovsky, Сергей Лемешев, Іван Козловський, Надежда Обухова)
+     - l'histoire du soldat (Igor Stravinsky, Igor Markevitch)
+     - das große abend (Sergei Vasilyevich Rachmaninoff)
+     ... and 18 more works
+
+12. BATCH 12: Baroque & Early Music
+   Works: 23
+   Recordings: 25
+   Composers: Antonio Vivaldi, Ensemble Vocal Stéphane Caillat, Orchestre De Chambre Jean-François Paillard, Stéphane Caillat, Henry Purcell, Henry Purcell, Victoria De Los Angeles, Peter Glossop, Heather Harper, Patricia Johnson, Elizabeth Robson, Clare Walmesley, Sybil Michelow, Robert Tear, The Ambrosian Singers, English Chamber Orchestra, Raymond Leppard, Sir John Barbirolli...
+   Years: 1966, 1959, 1951, 1964, 1963...
+   Languages: eng, lat, ita...
+
+   Sample works:
+     - gloria (Antonio Vivaldi, Ensemble Vocal Stéphane Caillat, Orchestre De Chambre Jean-François Paillard, Stéphane Caillat)
+     - king arthur (Henry Purcell)
+     - dido and aeneas (Henry Purcell, Victoria De Los Angeles, Peter Glossop, Heather Harper, Patricia Johnson, Elizabeth Robson, Clare Walmesley, Sybil Michelow, Robert Tear, The Ambrosian Singers, English Chamber Orchestra, Raymond Leppard, Sir John Barbirolli)
+     - la fida ninfa (Antonio Vivaldi)
+     - l'incoronazione di poppea (Claudio Monteverdi, Magda Laszlo, Richard Lewis, John Pritchard)
+     ... and 18 more works
+
+13. BATCH 13: Romantic Period
+   Works: 27
+   Recordings: 27
+   Composers: Missa Choralis, Franz Liszt, Margit László, Zsuzsa Barlay, Alfonz Bartha, Sándor Palcsó, Bende Zsolt, Nádas Tibor, Sándor Margittay, Budapesti Kórus, Forrai Miklós, Benjamin Britten, Max von Schillings, Helmut Krebs, Symphony Orchestra Of Radio Berlin, Arthur Rother, Peter Anders, Prussian State Orchestra, Robert Heger, Florence Easton, Dusolina Giannini...
+   Years: 1965, 1953, 1966, 1961, 1962...
+   Languages: hun, eng, ger...
+
+   Sample works:
+     - liszt (Missa Choralis, Franz Liszt, Margit László, Zsuzsa Barlay, Alfonz Bartha, Sándor Palcsó, Bende Zsolt, Nádas Tibor, Sándor Margittay, Budapesti Kórus, Forrai Miklós)
+     - les illuminations / glockenlieder (Benjamin Britten, Max von Schillings, Helmut Krebs, Symphony Orchestra Of Radio Berlin, Arthur Rother, Peter Anders, Prussian State Orchestra, Robert Heger)
+     - lieder recital (Florence Easton, Dusolina Giannini)
+     - the liebeslieder waltses, op. 52 and op. 65 (Johannes Brahms, The Robert Shaw Chorale)
+     - via crucis (Franz Liszt, BBC Northern Singers, Francis Jackson, Gordon Thorne)
+     ... and 22 more works
+
+14. BATCH 14: Modern & Contemporary
+   Works: 17
+   Recordings: 18
+   Composers: Gustav Mahler, Hans Rosbaud, Béla Bartók, Zoltán Kodály, László Csabay, Tibor Kozma, Béla Bartók, Walter Susskind, The New Symphony Orchestra Of London, The New Symphony Chorus Of London, Marko Rothmuller, Richard Lewis...
+   Years: 1963, 1958, 1950, 1956, 1952...
+   Languages: eng, ger, ita...
+
+   Sample works:
+     - das lied von der erde (Gustav Mahler, Hans Rosbaud)
+     - folk songs of hungary (Béla Bartók, Zoltán Kodály, László Csabay, Tibor Kozma)
+     - cantata profana (Béla Bartók, Walter Susskind, The New Symphony Orchestra Of London, The New Symphony Chorus Of London, Marko Rothmuller, Richard Lewis)
+     - contemporary opera vocal selections / old italian opera overtures (Emanuel List, Hilde Zadek, Kurt Baum, Vittorio Gui, Anton Dermota, Else Schurhoff)
+     - katerina ismailova opera in four acts) (Dmitri Shostakovich)
+     ... and 12 more works
+
+15. BATCH 15: Folk & Traditional
+   Works: 10
+   Recordings: 10
+   Composers: Imre Magyari And His Gypsy Orchestra, Polish-American String Band, Millie Novak...
+   Years: 1964, 1965, 1950, 1951, 1958
+   Languages: eng, hrv
+
+   Sample works:
+     - echoes of budapest (Imre Magyari And His Gypsy Orchestra)
+     - polka party favorites (Polish-American String Band)
+     - millie novak sings international folk songs (Millie Novak)
+     - greek folk songs and dances (Panegyris)
+     - folk songs of hungary (Béla Bartók, Zoltán Kodály, László Csabay, Tibor Kozma)
+     ... and 5 more works
+
+16. BATCH 16: Vocal & Choral
+   Works: 67
+   Recordings: 67
+   Composers: Lawrence Chelsi, Baritone, Norman Cordon, Millie Novak...
+   Years: 1964, 1953, 1958, 1961, 1965...
+   Languages: eng, hrv, ita...
+
+   Sample works:
+     - shakespeare songs (volume iii) (Lawrence Chelsi, Baritone)
+     - shakespeare songs (volume ii) (Lawrence Chelsi, Baritone)
+     - normon cordon sings kipling songs and oratorio arias (Norman Cordon)
+     - millie novak sings international folk songs (Millie Novak)
+     - recital of songs (Patricia Neway, Thomas Mayer, Giuseppe Verdi, Vincenzo Bellini, Pietro Mascagni)
+     ... and 62 more works
+
+17. BATCH 17: Chamber Music
+   Works: 3
+   Recordings: 3
+   Composers: Eugen Jochum, Annelies Kupper, Elisabeth Lindermeier, Elisabeth Wiese-Lange, Richard Holm, Ratko Delorko, Kurt Böhme, Georg Friedrich Händel, Stour Music Festival Chamber Orchestra, Rudolf Serkin, Felix Galimir, Ernestine Briesmeister, Harry Zaratzian, Samuel Rhodes, Michael Grebanier, Judith Davidoff, Martial Singher, Richard Goode, Michael Tree, Philipp Naegele, Gaetano Molieri, Arnold Schoenberg
+   Years: 1956, 1970, 1961
+   Languages: eng
+
+   Sample works:
+     - trionfo di afrodite, concerto scenico (Eugen Jochum, Annelies Kupper, Elisabeth Lindermeier, Elisabeth Wiese-Lange, Richard Holm, Ratko Delorko, Kurt Böhme)
+     - acis and galatea, deller consort, stour music festival chamber orchestra (Georg Friedrich Händel, Stour Music Festival Chamber Orchestra)
+     - chamber music from marlboro (Rudolf Serkin, Felix Galimir, Ernestine Briesmeister, Harry Zaratzian, Samuel Rhodes, Michael Grebanier, Judith Davidoff, Martial Singher, Richard Goode, Michael Tree, Philipp Naegele, Gaetano Molieri, Arnold Schoenberg)
+
+18. BATCH 18: Orchestral Works
+   Works: 23
+   Recordings: 23
+   Composers: Vilem Sokol, Rebekah Harkness, D'Artega And His Orchestra, Blevins Davis, Franz von Suppé, Franz André, Orchestre Symphonique De La Radiodiffusion Nationale Belge, Bruxelles...
+   Years: 1967, 1960, 1958, 1968, 1952...
+   Languages: eng, ita, ger...
+
+   Sample works:
+     - seattle youth symphony orchestra 1967 (Vilem Sokol)
+     - journey to love (voyage vers l'amour ballet) the symphony of the air conducted by d'artega (Rebekah Harkness, D'Artega And His Orchestra, Blevins Davis)
+     - light cavalry overture / the beautiful galathea overture (Franz von Suppé, Franz André, Orchestre Symphonique De La Radiodiffusion Nationale Belge, Bruxelles)
+     - symphony no. 7 in e major (original version) (Anton Bruckner, Südwestfunkorchester Baden-Baden, Hans Rosbaud)
+     - symphony no. 3 in a minor / fantasy for orchestra, op. 7 ("the rock") (Sergei Vasilyevich Rachmaninoff, André Previn, The London Symphony Orchestra)
+     ... and 18 more works
+
+19. BATCH 19: Opera Highlights & Collections
+   Works: 26
+   Recordings: 26
+   Composers: Yaffa Yarkoni, Patricia Neway, Thomas Mayer, Giuseppe Verdi, Vincenzo Bellini, Pietro Mascagni, Elisabeth Schwarzkopf, Nicolai Gedda, Jerome Hines, Philharmonia Orchestra, Philharmonia Chorus...
+   Years: 1962, 1953, 1965, 1967, 1968...
+   Languages: eng, ita, ger...
+
+   Sample works:
+     - international song collection (Yaffa Yarkoni)
+     - recital of songs (Patricia Neway, Thomas Mayer, Giuseppe Verdi, Vincenzo Bellini, Pietro Mascagni)
+     - highlights handel messiah (Elisabeth Schwarzkopf, Nicolai Gedda, Jerome Hines, Philharmonia Orchestra, Philharmonia Chorus)
+     - gluck opera recital (Various Artist)
+     - mlada (highlights) (Nikolai Rimsky-Korsakov, Алексей Королёв, Tatiana Tugarinova, Владимир Махов, Нина Кулагина, Большой Хор Всесоюзного Радио, Большой Симфонический Оркестр Всесоюзного Радио, Evgeni Svetlanov)
+     ... and 21 more works
+
+20. BATCH 20: Miscellaneous & Various
+   Works: 17
+   Recordings: 17
+   Composers: Various, Bob Schneider, Jodelklub Glärnisch, Margaret Eberle, Marie Scoller, New Glarus Men's Choir, Rene Planta, Robbie Schneider, Roger Brights Band, The Roger Bright Band, Various, Various, Apollo Granforte, Enzo De Muro Lomanto, Maria Gentile, Muria Zamboni, Nena Juarez, Pedro Mirassou...
+   Years: 1967, 1958, 1956, 1963, 1968...
+   Languages: eng, ger, ita...
+
+   Sample works:
+     - voices of switzerland (Various, Bob Schneider, Jodelklub Glärnisch, Margaret Eberle, Marie Scoller, New Glarus Men's Choir, Rene Planta, Robbie Schneider, Roger Brights Band, The Roger Bright Band)
+     - israeli composers (Various)
+     - el matrero / le fuirie di arlecchino / sonnambula (Various, Apollo Granforte, Enzo De Muro Lomanto, Maria Gentile, Muria Zamboni, Nena Juarez, Pedro Mirassou)
+     - gluck opera recital (Various Artist)
+     - songs and dances of spain (Various)
+     ... and 12 more works
+

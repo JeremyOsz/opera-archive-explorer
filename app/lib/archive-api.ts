@@ -5,6 +5,63 @@ import { loadArchiveCache, searchCachedWorks, getCachedWorkById } from './cache-
 const ARCHIVE_API_BASE = 'https://archive.org/advancedsearch.php';
 
 export class ArchiveAPI {
+  /**
+   * Get the best available image URL for an identifier
+   * Tries to find the largest image file, falls back to image service
+   */
+  private static async getBestImageUrl(identifier: string): Promise<{ imageUrl: string; thumbnailUrl: string }> {
+    try {
+      // Try to get metadata to find the best image file
+      const response = await fetch(`https://archive.org/metadata/${identifier}`, {
+        headers: { 'Accept': 'application/json' }
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        const files = data.files || [];
+        
+        // Find the largest image file
+        const imageFiles = files
+          .filter((file: any) => 
+            file.format === 'JPEG' || 
+            file.format === 'PNG' || 
+            file.format === 'GIF' ||
+            file.name?.toLowerCase().includes('cover') ||
+            file.name?.toLowerCase().includes('front') ||
+            file.name?.toLowerCase().includes('back') ||
+            file.name?.toLowerCase().includes('jacket') ||
+            file.name?.toLowerCase().includes('folder')
+          )
+          .map((file: any) => ({
+            ...file,
+            size: parseInt(file.size) || 0
+          }))
+          .sort((a: any, b: any) => b.size - a.size);
+        
+        if (imageFiles.length > 0) {
+          const bestImage = imageFiles[0];
+          const directUrl = `https://archive.org/download/${identifier}/${encodeURIComponent(bestImage.name)}`;
+          
+          console.log(`🎨 Using higher resolution image for ${identifier}: ${bestImage.name} (${bestImage.size} bytes)`);
+          
+          return {
+            imageUrl: directUrl,
+            thumbnailUrl: directUrl // Use same URL for both, or could create a smaller thumbnail
+          };
+        }
+      }
+    } catch (error) {
+      console.warn(`⚠️ Could not fetch metadata for ${identifier}, falling back to image service:`, error);
+    }
+    
+    // Fallback to image service
+    const fallbackUrl = `https://archive.org/services/img/${identifier}`;
+    return {
+      imageUrl: fallbackUrl,
+      thumbnailUrl: fallbackUrl
+    };
+  }
+
   private static async fetchFromArchive(params: Record<string, string>): Promise<ArchiveResponse> {
     const searchParams = new URLSearchParams({
       q: params.q || '',
@@ -30,15 +87,20 @@ export class ArchiveAPI {
       }
 
       const data = await response.json();
-      const docs = (data.response?.docs || []).map((doc: any) => ({
-        ...doc,
-        imageUrl: `https://archive.org/services/img/${doc.identifier}`,
-        thumbnailUrl: `https://archive.org/services/img/${doc.identifier}`,
-        creator: Array.isArray(doc.creator) ? doc.creator.join(', ') : doc.creator,
-        language: Array.isArray(doc.language) ? doc.language.join(', ') : doc.language,
-        subject: Array.isArray(doc.subject) ? doc.subject : [],
-        collection: Array.isArray(doc.collection) ? doc.collection : [],
-        format: Array.isArray(doc.format) ? doc.format : []
+      
+      // Process docs and get higher resolution images
+      const docs = await Promise.all((data.response?.docs || []).map(async (doc: any) => {
+        const imageUrls = await this.getBestImageUrl(doc.identifier);
+        return {
+          ...doc,
+          imageUrl: imageUrls.imageUrl,
+          thumbnailUrl: imageUrls.thumbnailUrl,
+          creator: Array.isArray(doc.creator) ? doc.creator.join(', ') : doc.creator,
+          language: Array.isArray(doc.language) ? doc.language.join(', ') : doc.language,
+          subject: Array.isArray(doc.subject) ? doc.subject : [],
+          collection: Array.isArray(doc.collection) ? doc.collection : [],
+          format: Array.isArray(doc.format) ? doc.format : []
+        };
       }));
       
       return {
@@ -136,6 +198,9 @@ export class ArchiveAPI {
         return null;
       }
 
+      // Get higher resolution image URLs
+      const imageUrls = await this.getBestImageUrl(data.metadata.identifier || identifier);
+      
       return {
         identifier: data.metadata.identifier || identifier,
         title: data.metadata.title || 'Unknown Title',
@@ -150,8 +215,8 @@ export class ArchiveAPI {
         collection: Array.isArray(data.metadata.collection) ? data.metadata.collection : [],
         format: Array.isArray(data.metadata.format) ? data.metadata.format : [],
         files: Array.isArray(data.files) ? data.files : [],
-        imageUrl: `https://archive.org/services/img/${data.metadata.identifier}`,
-        thumbnailUrl: `https://archive.org/services/img/${data.metadata.identifier}`,
+        imageUrl: imageUrls.imageUrl,
+        thumbnailUrl: imageUrls.thumbnailUrl,
         metadata: data.metadata
       };
     } catch (error) {
