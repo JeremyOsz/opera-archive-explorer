@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Search, Filter, X } from 'lucide-react';
 import { SearchFilters } from '@/app/types/opera';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { searchCachedWorks } from '@/app/lib/cache-loader';
 
 interface SearchBarProps {
   onSearch: (filters: SearchFilters) => void;
@@ -22,14 +23,57 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
     format: ''
   });
   const [showAdvanced, setShowAdvanced] = useState(false);
+  const [autocompleteSuggestions, setAutocompleteSuggestions] = useState<any[]>([]);
+  const [showAutocomplete, setShowAutocomplete] = useState(false);
+  const autocompleteRef = useRef<HTMLDivElement>(null);
+
+  // Handle autocomplete as user types
+  useEffect(() => {
+    const query = filters.query.trim();
+    
+    if (query.length >= 2) {
+      const suggestions = searchCachedWorks(query, {
+        creator: filters.creator,
+        date: filters.date,
+        language: filters.language
+      }).slice(0, 5); // Limit to top 5 suggestions
+      
+      setAutocompleteSuggestions(suggestions);
+      setShowAutocomplete(suggestions.length > 0);
+    } else {
+      setAutocompleteSuggestions([]);
+      setShowAutocomplete(false);
+    }
+  }, [filters.query, filters.creator, filters.date, filters.language]);
+
+  // Close autocomplete when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (autocompleteRef.current && !autocompleteRef.current.contains(event.target as Node)) {
+        setShowAutocomplete(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setShowAutocomplete(false);
     onSearch(filters);
   };
 
   const handleInputChange = (field: keyof SearchFilters, value: string) => {
     setFilters(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleSuggestionClick = (suggestion: any) => {
+    setFilters(prev => ({ ...prev, query: suggestion.title }));
+    setShowAutocomplete(false);
+    onSearch({ ...filters, query: suggestion.title });
   };
 
   const clearFilters = () => {
@@ -40,6 +84,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
       language: '',
       format: ''
     });
+    setShowAutocomplete(false);
     onSearch({ query: '', creator: '', date: '', language: '', format: '' });
   };
 
@@ -47,17 +92,37 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
     <Card className="w-full max-w-4xl mx-auto">
       <CardContent className="p-6">
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Main Search Input */}
-          <div className="relative">
+          {/* Main Search Input with Autocomplete */}
+          <div className="relative" ref={autocompleteRef}>
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
             <Input
               type="text"
               placeholder="Search opera recordings..."
               value={filters.query}
               onChange={(e) => handleInputChange('query', e.target.value)}
+              onFocus={() => filters.query.length >= 2 && autocompleteSuggestions.length > 0 && setShowAutocomplete(true)}
               className="pl-10"
               disabled={loading}
             />
+            
+            {/* Autocomplete Dropdown */}
+            {showAutocomplete && autocompleteSuggestions.length > 0 && (
+              <div className="absolute z-50 w-full mt-1 bg-popover border border-border rounded-md shadow-lg max-h-64 overflow-y-auto">
+                {autocompleteSuggestions.map((suggestion) => (
+                  <button
+                    key={suggestion.identifier}
+                    type="button"
+                    onClick={() => handleSuggestionClick(suggestion)}
+                    className="w-full text-left px-4 py-3 hover:bg-accent hover:text-accent-foreground transition-colors border-b last:border-b-0"
+                  >
+                    <div className="font-medium">{suggestion.title}</div>
+                    {suggestion.creator && (
+                      <div className="text-sm text-muted-foreground">{suggestion.creator}</div>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Advanced Filters Toggle */}
