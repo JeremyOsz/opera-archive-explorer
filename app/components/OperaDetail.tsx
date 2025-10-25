@@ -20,11 +20,16 @@ import {
   Volume2,
   Image as ImageIcon,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  Info,
+  BookOpen,
+  Lightbulb,
+  Sparkles
 } from 'lucide-react';
 import Image from 'next/image';
 import { ArchiveAPI } from '@/app/lib/archive-api';
 import { EnhancedMusicalMetadataLibrary } from '@/app/lib/musical-metadata-enhanced';
+import { getWorkAboutInfo } from '@/app/lib/work-about-data';
 
 interface OperaDetailProps {
   opera: OperaRecording;
@@ -39,6 +44,8 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
   const [musicalDataLoading, setMusicalDataLoading] = useState(false);
   const [workMetadata, setWorkMetadata] = useState<any>(null);
   const [audioFilesExpanded, setAudioFilesExpanded] = useState(false);
+  const [aboutExpanded, setAboutExpanded] = useState(false);
+  const [musicalInfoExpanded, setMusicalInfoExpanded] = useState(false);
 
   useEffect(() => {
     if (isOpen && opera.identifier) {
@@ -265,28 +272,132 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
             </Card>
           </div>
 
-          {/* Musical Information */}
+                    {/* About the Work - Collapsible */}
+                    {(() => {
+            const workTitle = enhancedOpera.title;
+            const aboutInfo = getWorkAboutInfo(workTitle);
+            
+            if (!aboutInfo) return null;
+            
+            return (
+              <Card>
+                <CardHeader 
+                  className="cursor-pointer hover:bg-muted/50 transition-colors"
+                  onClick={() => setAboutExpanded(!aboutExpanded)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Info className="w-5 h-5" />
+                      <CardTitle>About the Work</CardTitle>
+                    </div>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="h-8 w-8 p-0"
+                    >
+                      {aboutExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                    </Button>
+                  </div>
+                </CardHeader>
+                {aboutExpanded && (
+                  <CardContent className="space-y-6">
+                    {/* Description */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <FileText className="w-4 h-4 text-primary" />
+                        <h4 className="font-semibold">Description</h4>
+                      </div>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {aboutInfo.description}
+                      </p>
+                    </div>
+
+                    {/* History */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <BookOpen className="w-4 h-4 text-primary" />
+                        <h4 className="font-semibold">History & Premiere</h4>
+                      </div>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {aboutInfo.history}
+                      </p>
+                    </div>
+
+                    {/* Themes */}
+                    {aboutInfo.themes && aboutInfo.themes.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <Lightbulb className="w-4 h-4 text-primary" />
+                          <h4 className="font-semibold">Themes</h4>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {aboutInfo.themes.map((theme, index) => (
+                            <Badge key={index} variant="outline" className="text-xs">
+                              {theme}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Trivia */}
+                    {aboutInfo.trivia && aboutInfo.trivia.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 mb-3">
+                          <Sparkles className="w-4 h-4 text-primary" />
+                          <h4 className="font-semibold">Interesting Facts</h4>
+                        </div>
+                        <ul className="space-y-2">
+                          {aboutInfo.trivia.map((fact, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <span className="text-primary mt-1">•</span>
+                              <p className="text-sm text-muted-foreground leading-relaxed">{fact}</p>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </CardContent>
+                )}
+              </Card>
+            );
+          })()}
+
+          {/* Musical Information - Collapsible */}
           {(musicalDataLoading || enhancedOpera.musicalKey || enhancedOpera.tempo || enhancedOpera.duration || enhancedOpera.genre?.length || enhancedOpera.instrumentation?.length || enhancedOpera.metadata?.fallback) && (
             <Card>
-              <CardHeader>
+              <CardHeader 
+                className="cursor-pointer hover:bg-muted/50 transition-colors"
+                onClick={() => setMusicalInfoExpanded(!musicalInfoExpanded)}
+              >
                 <div className="flex items-center justify-between">
                   <CardTitle className="flex items-center gap-2">
                     <Music className="w-5 h-5" />
                     Musical Information
                   </CardTitle>
-                  {enhancedOpera.metadata?.isMapped && (
-                    <Badge variant="default" className="bg-green-600">
-                      ✓ Mapped Metadata
-                    </Badge>
-                  )}
-                  {enhancedOpera.metadata?.source === 'generated' && (
-                    <Badge variant="secondary">
-                      Generated
-                    </Badge>
-                  )}
+                  <div className="flex items-center gap-2">
+                    {enhancedOpera.metadata?.isMapped && (
+                      <Badge variant="default" className="bg-green-600">
+                        ✓ Mapped Metadata
+                      </Badge>
+                    )}
+                    {enhancedOpera.metadata?.source === 'generated' && (
+                      <Badge variant="secondary">
+                        Generated
+                      </Badge>
+                    )}
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="h-8 w-8 p-0"
+                    >
+                      {musicalInfoExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                    </Button>
+                  </div>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-4">
+              {musicalInfoExpanded && (
+                <CardContent className="space-y-4">
                 {musicalDataLoading ? (
                   <div className="space-y-3">
                     <div className="h-16 bg-muted rounded animate-pulse"></div>
@@ -410,11 +521,12 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                     )}
                   </>
                 )}
-              </CardContent>
+                </CardContent>
+              )}
             </Card>
           )}
 
-        
+
 
           {/* Movements */}
           {enhancedOpera.movements && enhancedOpera.movements.length > 0 && (
