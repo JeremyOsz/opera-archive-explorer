@@ -332,13 +332,85 @@ export const MOZART_METADATA: Record<string, WorkMusicalMetadata> = {
             key: 'D Minor',
             tempo: 120,
             timeSignature: '4/4',
-            duration: '79:00',
+            duration: '25:00',
             tempoMarking: 'Allegro',
-            description: 'Don Giovanni\'s attempted seduction and the Commendatore\'s death',
+            description: 'Don Giovanni\'s attempted seduction of Donna Anna',
             musicalElements: {
-              mood: ['Dramatic', 'Passionate', 'Tragic'],
-              instrumentation: ['Full Orchestra', 'All Voices'],
-              dynamics: 'From piano to fortissimo'
+              mood: ['Dramatic', 'Passionate', 'Intense'],
+              instrumentation: ['Orchestra', 'Baritone', 'Soprano'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'The Commendatore\'s Death',
+            sectionNumber: 3,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'complex',
+            key: 'D Minor',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Allegro',
+            description: 'The duel and the Commendatore\'s death',
+            musicalElements: {
+              mood: ['Dramatic', 'Tragic', 'Intense'],
+              instrumentation: ['Orchestra', 'Baritone', 'Bass'],
+              dynamics: 'Fortissimo'
+            }
+          },
+          {
+            title: 'Donna Anna\'s Grief',
+            sectionNumber: 4,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'A Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'Donna Anna\'s grief and vow for revenge',
+            musicalElements: {
+              mood: ['Tragic', 'Melancholic', 'Dramatic'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Leporello\'s Catalogue',
+            sectionNumber: 5,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'F Major',
+            tempo: 115,
+            timeSignature: '4/4',
+            duration: '6:00',
+            tempoMarking: 'Allegretto',
+            description: 'Leporello\'s famous "Madamina" aria',
+            musicalElements: {
+              mood: ['Comic', 'Light', 'Melodic'],
+              instrumentation: ['Orchestra', 'Bass'],
+              dynamics: 'Mezzo-forte'
+            }
+          },
+          {
+            title: 'Finale',
+            sectionNumber: 6,
+            sectionType: 'ensemble',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'D Major',
+            tempo: 130,
+            timeSignature: '4/4',
+            duration: '25:00',
+            tempoMarking: 'Allegro',
+            description: 'The act finale with all characters',
+            musicalElements: {
+              mood: ['Dramatic', 'Intense', 'Triumphant'],
+              instrumentation: ['Full Orchestra', 'All Voices', 'Chorus'],
+              dynamics: 'Fortissimo'
             }
           }
         ]
