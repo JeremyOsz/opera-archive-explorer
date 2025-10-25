@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Music } from 'lucide-react';
 import ServerWorkGroupGrid from '@/app/components/ServerWorkGroupGrid';
 import { loadArchiveCache, searchCachedWorks } from '@/app/lib/cache-loader';

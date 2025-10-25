@@ -21,47 +21,7 @@ import { WorkMusicalMetadata } from './metadata/types';
  */
 
 export interface MusicalWork extends LightweightOpera {
-  musicalMetadata: {
-    overallKey: string;
-    overallTempo: number;
-    genre: string[];
-    instrumentation: string[];
-    mood: string[];
-    duration: string;
-    acts: Array<{
-      actNumber: number;
-      title: string;
-      key: string;
-      tempo: number;
-      timeSignature: string;
-      duration: string;
-      tempoMarking: string;
-      description?: string;
-      sections: Array<{
-        title: string;
-        sectionNumber: number;
-        sectionType: 'overture' | 'scene' | 'aria' | 'duet' | 'trio' | 'quartet' | 'chorus' | 'recitative' | 'interlude' | 'finale' | 'ensemble' | 'opera' | 'melodrama' | 'theater piece' | 'romances' | 'vocal' | 'orchestral' | 'march' | 'symphony' | 'requiem' | 'lieder' | 'waltz';
-        musicalFunction: 'exposition' | 'development' | 'climax' | 'resolution' | 'transition' | 'character_introduction' | 'plot_progression' | 'dramatic_peak' | 'conclusion';
-        complexity: 'simple' | 'moderate' | 'complex';
-        key: string;
-        tempo: number;
-        timeSignature: string;
-        duration: string;
-        tempoMarking: string;
-        description?: string;
-        musicalElements: {
-          mood: string[];
-          instrumentation: string[];
-          dynamics: string;
-        };
-      }>;
-    }>;
-    musicalAnalysis: {
-      keySignature: string;
-      timeSignature: string;
-      harmonicComplexity: 'simple' | 'moderate' | 'complex';
-      melodicStyle: 'lyrical' | 'dramatic' | 'decorative' | 'rhapsodic';
-    };
+  musicalMetadata: WorkMusicalMetadata & {
     isMapped: boolean; // True if from work-specific metadata, false if generated
     source?: string; // 'mapped' or 'generated'
   };
@@ -119,14 +79,7 @@ export class EnhancedMusicalMetadataLibrary {
     return {
       ...work,
       musicalMetadata: {
-        overallKey: mapped.overallKey,
-        overallTempo: mapped.overallTempo,
-        genre: mapped.genre,
-        instrumentation: mapped.instrumentation,
-        mood: mapped.mood,
-        duration: mapped.duration,
-        acts: mapped.acts,
-        musicalAnalysis: mapped.musicalAnalysis,
+        ...mapped,
         isMapped: true,
         source: 'mapped'
       }
@@ -142,6 +95,8 @@ export class EnhancedMusicalMetadataLibrary {
     return {
       ...work,
       musicalMetadata: {
+        identifier: work.identifier,
+        metadataComplete: false,
         overallKey: 'C Major',
         overallTempo: 100,
         genre: ['Classical'],

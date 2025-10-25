@@ -7,6 +7,7 @@ export interface GroupedWork {
   totalRecordings: number;
   years: string[];
   languages: string[];
+  subjects: string[];
   mostRecentRecording?: OperaRecording;
 }
 
@@ -28,6 +29,7 @@ export function groupRecordingsByWork(recordings: OperaRecording[]): GroupedWork
         totalRecordings: 0,
         years: [],
         languages: [],
+        subjects: [],
         mostRecentRecording: undefined
       });
     }
@@ -51,6 +53,15 @@ export function groupRecordingsByWork(recordings: OperaRecording[]): GroupedWork
       langs.forEach(lang => {
         if (!group.languages.includes(lang)) {
           group.languages.push(lang);
+        }
+      });
+    }
+
+    // Collect subjects
+    if (recording.subject && Array.isArray(recording.subject)) {
+      recording.subject.forEach(subject => {
+        if (!group.subjects.includes(subject)) {
+          group.subjects.push(subject);
         }
       });
     }
