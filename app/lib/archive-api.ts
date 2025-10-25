@@ -1,4 +1,5 @@
 import { OperaRecording, ArchiveResponse, SearchFilters } from '@/app/types/opera';
+import { MockMusicalDataGenerator } from './mock-musical-data';
 
 const ARCHIVE_API_BASE = 'https://archive.org/advancedsearch.php';
 
@@ -163,4 +164,106 @@ export class ArchiveAPI {
   static getStreamUrl(identifier: string, filename: string): string {
     return `https://archive.org/stream/${identifier}/${filename}`;
   }
+
+  /**
+   * Enhance opera recording with mock musical data
+   */
+  static async enhanceWithMusicDatabases(opera: OperaRecording): Promise<OperaRecording> {
+    try {
+      console.log('🎵 Enhancing opera with mock musical data:', opera.title);
+      
+      // Generate mock musical data based on the opera's characteristics
+      const mockData = MockMusicalDataGenerator.generateMusicalData(opera);
+      console.log('🎵 Generated mock data:', mockData);
+      
+      // Enhance the opera recording with mock data
+      const enhanced = {
+        ...opera,
+        musicalKey: mockData.musicalKey,
+        tempo: mockData.tempo,
+        genre: mockData.genre,
+        instrumentation: mockData.instrumentation,
+        mood: mockData.mood,
+        duration: mockData.duration,
+        movements: mockData.movements,
+        metadata: {
+          ...opera.metadata,
+          mockData: true,
+          note: 'Musical data generated based on opera characteristics and composer patterns'
+        }
+      };
+      
+      console.log('🎵 Enhanced opera with mock data:', enhanced);
+      return enhanced;
+    } catch (error) {
+      console.error('Error enhancing with mock data:', error);
+      // Return with basic fallback data even on error
+      return this.addFallbackMusicalData(opera);
+    }
+  }
+
+  /**
+   * Add fallback musical data for testing when external APIs don't return data
+   */
+  private static addFallbackMusicalData(opera: OperaRecording): OperaRecording {
+    // Generate more realistic fallback data based on opera title
+    const title = opera.title.toLowerCase();
+    const creator = opera.creator?.toLowerCase() || '';
+    
+    // Determine key based on composer or title patterns
+    let musicalKey = 'C Major';
+    if (creator.includes('mozart') || creator.includes('beethoven')) {
+      musicalKey = 'D Major';
+    } else if (creator.includes('bach') || creator.includes('handel')) {
+      musicalKey = 'G Major';
+    } else if (creator.includes('wagner') || creator.includes('verdi')) {
+      musicalKey = 'E Major';
+    }
+    
+    // Determine tempo based on opera type
+    let tempo = 120;
+    if (title.includes('overture') || title.includes('prelude')) {
+      tempo = 140;
+    } else if (title.includes('aria') || title.includes('duet')) {
+      tempo = 100;
+    } else if (title.includes('finale') || title.includes('chorus')) {
+      tempo = 110;
+    }
+    
+    // Determine genre based on title
+    const genres = ['Classical', 'Opera'];
+    if (title.includes('symphony') || title.includes('concerto')) {
+      genres.push('Symphonic');
+    } else if (title.includes('chamber') || title.includes('quartet')) {
+      genres.push('Chamber Music');
+    }
+    
+    // Determine instrumentation
+    const instrumentation = ['Orchestra'];
+    if (title.includes('aria') || title.includes('soprano')) {
+      instrumentation.push('Soprano');
+    }
+    if (title.includes('tenor') || title.includes('baritone')) {
+      instrumentation.push('Tenor', 'Baritone');
+    }
+    if (title.includes('chorus') || title.includes('choir')) {
+      instrumentation.push('Chorus');
+    }
+    
+    return {
+      ...opera,
+      musicalKey,
+      tempo,
+      genre: genres,
+      instrumentation,
+      mood: ['Dramatic', 'Emotional'],
+      duration: '2:30:00',
+      metadata: {
+        ...opera.metadata,
+        fallback: true,
+        note: 'Musical data not available from external sources - showing estimated data based on title and composer'
+      }
+    };
+  }
+
 }

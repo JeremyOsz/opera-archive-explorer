@@ -15,6 +15,14 @@ export interface OperaRecording {
   metadata?: Record<string, any>;
   imageUrl?: string;
   thumbnailUrl?: string;
+  // Musical metadata
+  musicalKey?: string;
+  tempo?: number;
+  movements?: Movement[];
+  duration?: string;
+  genre?: string[];
+  instrumentation?: string[];
+  mood?: string[];
 }
 
 export interface ArchiveFile {
@@ -64,4 +72,13 @@ export interface DownloadOption {
   size: string;
   url: string;
   quality: string;
+}
+
+export interface Movement {
+  title: string;
+  duration?: string;
+  musicalKey?: string;
+  tempo?: number;
+  trackNumber?: number;
+  description?: string;
 }
