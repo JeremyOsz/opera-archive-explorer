@@ -17,8 +17,10 @@ import {
   Clock,
   FileText,
   Tag,
-  Volume2
+  Volume2,
+  Image as ImageIcon
 } from 'lucide-react';
+import Image from 'next/image';
 import { ArchiveAPI } from '@/app/lib/archive-api';
 
 interface OperaDetailProps {
@@ -35,19 +37,37 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
     if (isOpen && opera.identifier) {
       setLoading(true);
       ArchiveAPI.getOperaFiles(opera.identifier)
-        .then(setFiles)
+        .then(files => {
+          console.log('Files fetched for', opera.identifier, ':', files);
+          setFiles(files);
+        })
         .catch(console.error)
         .finally(() => setLoading(false));
     }
   }, [isOpen, opera.identifier]);
 
-  const audioFiles = Array.isArray(files) ? files.filter(file => 
-    file.format === 'VBR MP3' || 
-    file.format === '64Kbps MP3' || 
-    file.format === '128Kbps MP3' ||
-    file.format === 'Flac' ||
-    file.format === 'Ogg Vorbis'
-  ) : [];
+  const audioFiles = Array.isArray(files) ? files.filter(file => {
+    const format = file.format?.toLowerCase() || '';
+    const name = file.name?.toLowerCase() || '';
+    const isAudio = format.includes('mp3') || 
+           format.includes('flac') || 
+           format.includes('ogg') || 
+           format.includes('wav') ||
+           format.includes('aac') ||
+           format.includes('m4a') ||
+           name.includes('.mp3') ||
+           name.includes('.flac') ||
+           name.includes('.ogg') ||
+           name.includes('.wav') ||
+           name.includes('.m4a');
+    
+    if (isAudio) {
+      console.log('Audio file found:', file.name, 'format:', file.format);
+    }
+    return isAudio;
+  }) : [];
+
+  console.log('Total files:', files.length, 'Audio files:', audioFiles.length);
 
   const formatFileSize = (size: string) => {
     const bytes = parseInt(size);
@@ -70,15 +90,48 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <Dialog open={isOpen} onOpenChange={onClose}>
+        <DialogContent className="max-w-[90vw] sm:max-w-[90vw] max-h-[98vh] w-[95vw] h-[95vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">{opera.title}</DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6">
-          {/* Basic Information */}
-          <Card>
+          {/* Opera Image and Basic Info - Two Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Opera Image */}
+            <Card>
+              <CardContent className="p-0">
+                <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-muted">
+                  {opera.imageUrl ? (
+                    <Image
+                      src={opera.imageUrl}
+                      alt={opera.title}
+                      fill
+                      className="object-cover object-center"
+                      onError={(e) => {
+                        // Show placeholder on error
+                        e.currentTarget.style.display = 'none';
+                        const placeholder = e.currentTarget.nextElementSibling as HTMLElement;
+                        if (placeholder) placeholder.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  <div 
+                    className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center"
+                    style={{ display: opera.imageUrl ? 'none' : 'flex' }}
+                  >
+                    <div className="text-center">
+                      <Music className="w-16 h-16 text-primary/50 mx-auto mb-4" />
+                      <p className="text-muted-foreground">No Image Available</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Basic Information */}
+            <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Music className="w-5 h-5" />
@@ -123,7 +176,13 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                     <div>
                       <p className="text-sm font-medium">Published</p>
                       <p className="text-sm text-muted-foreground">
-                        {new Date(opera.publicdate).toLocaleDateString()}
+                        {(() => {
+                          try {
+                            return new Date(opera.publicdate).toLocaleDateString();
+                          } catch {
+                            return opera.publicdate;
+                          }
+                        })()}
                       </p>
                     </div>
                   </div>
@@ -133,9 +192,9 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
               {opera.description && (
                 <div>
                   <p className="text-sm font-medium mb-2">Description</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <div className="text-sm text-muted-foreground leading-relaxed max-h-32 overflow-y-auto">
                     {opera.description}
-                  </p>
+                  </div>
                 </div>
               )}
 
@@ -152,7 +211,8 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                 </div>
               )}
             </CardContent>
-          </Card>
+            </Card>
+          </div>
 
           {/* Audio Files */}
           <Card>
@@ -219,9 +279,23 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                   ))}
                 </div>
               ) : (
-                <p className="text-muted-foreground text-center py-8">
-                  No audio files available for this recording.
-                </p>
+                <div className="text-center py-8">
+                  <p className="text-muted-foreground mb-4">
+                    No audio files detected for this recording.
+                  </p>
+                  {files.length > 0 && (
+                    <div className="text-sm text-muted-foreground">
+                      <p>Found {files.length} files total. Available formats:</p>
+                      <div className="mt-2 flex flex-wrap gap-1 justify-center">
+                        {Array.from(new Set(files.map(f => f.format).filter(Boolean))).slice(0, 10).map((format, i) => (
+                          <Badge key={i} variant="outline" className="text-xs">
+                            {format}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
               )}
             </CardContent>
           </Card>

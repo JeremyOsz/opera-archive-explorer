@@ -28,10 +28,21 @@ export class ArchiveAPI {
       }
 
       const data = await response.json();
+      const docs = (data.response?.docs || []).map((doc: any) => ({
+        ...doc,
+        imageUrl: `https://archive.org/services/img/${doc.identifier}`,
+        thumbnailUrl: `https://archive.org/services/img/${doc.identifier}`,
+        creator: Array.isArray(doc.creator) ? doc.creator.join(', ') : doc.creator,
+        language: Array.isArray(doc.language) ? doc.language.join(', ') : doc.language,
+        subject: Array.isArray(doc.subject) ? doc.subject : [],
+        collection: Array.isArray(doc.collection) ? doc.collection : [],
+        format: Array.isArray(doc.format) ? doc.format : []
+      }));
+      
       return {
         numFound: data.response?.numFound || 0,
         start: data.response?.start || 0,
-        docs: data.response?.docs || []
+        docs
       };
     } catch (error) {
       console.error('Error fetching from Archive.org:', error);
@@ -71,10 +82,10 @@ export class ArchiveAPI {
       return {
         identifier: data.metadata.identifier || identifier,
         title: data.metadata.title || 'Unknown Title',
-        creator: data.metadata.creator,
+        creator: Array.isArray(data.metadata.creator) ? data.metadata.creator.join(', ') : data.metadata.creator,
         date: data.metadata.date,
         description: data.metadata.description,
-        language: data.metadata.language,
+        language: Array.isArray(data.metadata.language) ? data.metadata.language.join(', ') : data.metadata.language,
         subject: Array.isArray(data.metadata.subject) ? data.metadata.subject : [],
         mediatype: data.metadata.mediatype || 'audio',
         publicdate: data.metadata.publicdate,
@@ -82,6 +93,8 @@ export class ArchiveAPI {
         collection: Array.isArray(data.metadata.collection) ? data.metadata.collection : [],
         format: Array.isArray(data.metadata.format) ? data.metadata.format : [],
         files: Array.isArray(data.files) ? data.files : [],
+        imageUrl: `https://archive.org/services/img/${data.metadata.identifier}`,
+        thumbnailUrl: `https://archive.org/services/img/${data.metadata.identifier}`,
         metadata: data.metadata
       };
     } catch (error) {
@@ -92,7 +105,8 @@ export class ArchiveAPI {
 
   static async getOperaFiles(identifier: string): Promise<any[]> {
     try {
-      const response = await fetch(`https://archive.org/metadata/${identifier}/files`, {
+      // Try the main metadata endpoint first
+      const response = await fetch(`https://archive.org/metadata/${identifier}`, {
         headers: {
           'Accept': 'application/json',
         },
@@ -103,7 +117,10 @@ export class ArchiveAPI {
       }
 
       const data = await response.json();
-      return data || [];
+      console.log('Metadata response for', identifier, ':', data);
+      
+      // Return files from the main metadata response
+      return Array.isArray(data.files) ? data.files : [];
     } catch (error) {
       console.error('Error fetching opera files:', error);
       return [];
