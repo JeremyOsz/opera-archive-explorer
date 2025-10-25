@@ -7,6 +7,14 @@
 import { PUCCINI_METADATA } from './puccini-metadata';
 import { VERDI_METADATA } from './verdi-metadata';
 import { WAGNER_METADATA } from './wagner-metadata';
+import { MOZART_METADATA } from './mozart-metadata';
+import { BACH_METADATA } from './bach-metadata';
+import { ROSSINI_METADATA } from './rossini-metadata';
+import { BEETHOVEN_METADATA } from './beethoven-metadata';
+import { BRAHMS_METADATA } from './brahms-metadata';
+import { STRAUSS_METADATA } from './strauss-metadata';
+import { FRENCH_METADATA } from './french-metadata';
+import { RUSSIAN_METADATA } from './russian-metadata';
 
 // Define the interface locally to avoid circular imports
 interface WorkMusicalMetadata {
@@ -61,7 +69,15 @@ interface WorkMusicalMetadata {
 export const ALL_MUSICAL_METADATA: Record<string, WorkMusicalMetadata> = {
   ...PUCCINI_METADATA,
   ...VERDI_METADATA,
-  ...WAGNER_METADATA
+  ...WAGNER_METADATA,
+  ...MOZART_METADATA,
+  ...BACH_METADATA,
+  ...ROSSINI_METADATA,
+  ...BEETHOVEN_METADATA,
+  ...BRAHMS_METADATA,
+  ...STRAUSS_METADATA,
+  ...FRENCH_METADATA,
+  ...RUSSIAN_METADATA
 };
 
 /**
