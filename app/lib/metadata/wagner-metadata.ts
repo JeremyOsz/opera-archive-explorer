@@ -54,13 +54,67 @@ export const WAGNER_METADATA: Record<string, WorkMusicalMetadata> = {
             key: 'A Major',
             tempo: 90,
             timeSignature: '4/4',
-            duration: '65:00',
+            duration: '25:00',
             tempoMarking: 'Langsam und schmachtend',
             description: 'The love potion scene - Tristan and Isolde fall in love',
             musicalElements: {
               mood: ['Passionate', 'Mystical', 'Tense'],
               instrumentation: ['Orchestra', 'Soprano', 'Tenor', 'Baritone'],
               dynamics: 'From pianissimo to fortissimo'
+            }
+          },
+          {
+            title: 'Isolde\'s Narrative',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'complex',
+            key: 'A Major',
+            tempo: 85,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Langsam',
+            description: 'Isolde\'s narrative of her past with Tristan',
+            musicalElements: {
+              mood: ['Nostalgic', 'Melancholic', 'Dramatic'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Love Duet',
+            sectionNumber: 4,
+            sectionType: 'duet',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'A Major',
+            tempo: 95,
+            timeSignature: '4/4',
+            duration: '20:00',
+            tempoMarking: 'Langsam und schmachtend',
+            description: 'The famous love duet between Tristan and Isolde',
+            musicalElements: {
+              mood: ['Passionate', 'Transcendent', 'Mystical'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor'],
+              dynamics: 'Mezzo-forte to Fortissimo'
+            }
+          },
+          {
+            title: 'Finale',
+            sectionNumber: 5,
+            sectionType: 'ensemble',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'A Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '5:00',
+            tempoMarking: 'Allegro',
+            description: 'The act finale with all characters',
+            musicalElements: {
+              mood: ['Triumphant', 'Dramatic', 'Intense'],
+              instrumentation: ['Full Orchestra', 'All Voices', 'Chorus'],
+              dynamics: 'Fortissimo'
             }
           }
         ]
