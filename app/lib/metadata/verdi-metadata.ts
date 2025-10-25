@@ -36,13 +36,49 @@ export const VERDI_METADATA: Record<string, WorkMusicalMetadata> = {
             key: 'F Major',
             tempo: 125,
             timeSignature: '4/4',
-            duration: '35:00',
+            duration: '15:00',
             tempoMarking: 'Allegro Vivace',
-            description: 'Opening party scene, curse of Monterone',
+            description: 'The Duke\'s court revelry and party atmosphere',
             musicalElements: {
-              mood: ['Festive', 'Ominous', 'Dramatic'],
+              mood: ['Festive', 'Energetic', 'Joyful'],
               instrumentation: ['Orchestra', 'Baritone', 'Tenor', 'Bass', 'Chorus'],
-              dynamics: 'Energetic'
+              dynamics: 'Fortissimo'
+            }
+          },
+          {
+            title: 'Monterone\'s Curse',
+            sectionNumber: 2,
+            sectionType: 'scene',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'F Minor',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Andante',
+            description: 'The famous curse that drives the entire plot',
+            musicalElements: {
+              mood: ['Ominous', 'Dramatic', 'Foreboding'],
+              instrumentation: ['Orchestra', 'Bass', 'Baritone'],
+              dynamics: 'Powerful'
+            }
+          },
+          {
+            title: 'Rigoletto\'s Soliloquy',
+            sectionNumber: 3,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'F Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Andante',
+            description: 'Rigoletto reflects on the curse and his fate',
+            musicalElements: {
+              mood: ['Melancholic', 'Reflective', 'Dramatic'],
+              instrumentation: ['Orchestra', 'Baritone'],
+              dynamics: 'Mezzo-forte to Forte'
             }
           }
         ]
@@ -58,21 +94,57 @@ export const VERDI_METADATA: Record<string, WorkMusicalMetadata> = {
         description: 'Rigoletto and Gilda - "Caro nome"',
         sections: [
           {
-            title: 'Rigoletto and Gilda',
+            title: 'Rigoletto and Gilda Duet',
             sectionNumber: 1,
-            sectionType: 'scene',
+            sectionType: 'duet',
             musicalFunction: 'development',
             complexity: 'moderate',
             key: 'C Major',
             tempo: 100,
             timeSignature: '4/4',
-            duration: '35:00',
+            duration: '15:00',
             tempoMarking: 'Andante',
-            description: 'Rigoletto and Gilda - "Caro nome"',
+            description: 'Father and daughter\'s tender relationship',
+            musicalElements: {
+              mood: ['Tender', 'Lyrical', 'Romantic'],
+              instrumentation: ['Orchestra', 'Soprano', 'Baritone'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Caro nome',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'character_introduction',
+            complexity: 'moderate',
+            key: 'A Major',
+            tempo: 95,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'Gilda\'s famous aria "Dear name"',
             musicalElements: {
               mood: ['Lyrical', 'Tender', 'Romantic'],
-              instrumentation: ['Orchestra', 'Soprano', 'Baritone'],
-              dynamics: 'Delicate'
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Finale',
+            sectionNumber: 3,
+            sectionType: 'ensemble',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'C Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '12:00',
+            tempoMarking: 'Allegro',
+            description: 'The act finale with all characters',
+            musicalElements: {
+              mood: ['Dramatic', 'Intense'],
+              instrumentation: ['Full Orchestra', 'All Voices'],
+              dynamics: 'Mezzo-forte to Forte'
             }
           }
         ]
@@ -88,21 +160,75 @@ export const VERDI_METADATA: Record<string, WorkMusicalMetadata> = {
         description: 'Duke serenades Maddalena, quartet, tragic ending',
         sections: [
           {
-            title: 'Tragic Finale',
+            title: 'The Inn Scene',
             sectionNumber: 1,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'G Minor',
+            tempo: 115,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Allegro Moderato',
+            description: 'The storm scene at Sparafucile\'s inn',
+            musicalElements: {
+              mood: ['Dramatic', 'Ominous', 'Stormy'],
+              instrumentation: ['Orchestra', 'All Soloists'],
+              dynamics: 'Fortissimo'
+            }
+          },
+          {
+            title: 'La donna è mobile',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'B Major',
+            tempo: 120,
+            timeSignature: '3/8',
+            duration: '3:00',
+            tempoMarking: 'Allegretto',
+            description: 'The Duke\'s famous aria "Woman is fickle"',
+            musicalElements: {
+              mood: ['Cheerful', 'Light', 'Melodic'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'Bella figlia dell\'amore',
+            sectionNumber: 3,
+            sectionType: 'quartet',
+            musicalFunction: 'climax',
+            complexity: 'complex',
+            key: 'G Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Andante',
+            description: 'The famous quartet "Beautiful daughter of love"',
+            musicalElements: {
+              mood: ['Dramatic', 'Intense', 'Passionate'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor', 'Mezzo-Soprano', 'Baritone'],
+              dynamics: 'Mezzo-forte to Forte'
+            }
+          },
+          {
+            title: 'Tragic Finale',
+            sectionNumber: 4,
             sectionType: 'scene',
             musicalFunction: 'resolution',
             complexity: 'complex',
             key: 'G Minor',
-            tempo: 115,
+            tempo: 110,
             timeSignature: '4/4',
-            duration: '35:00',
-            tempoMarking: 'Allegro Moderato',
-            description: 'Duke serenades Maddalena, quartet, tragic ending',
+            duration: '9:00',
+            tempoMarking: 'Allegro',
+            description: 'Gilda\'s death and Rigoletto\'s realization',
             musicalElements: {
-              mood: ['Dramatic', 'Tragic', 'Intense'],
-              instrumentation: ['Full Orchestra', 'All Voices', 'Chorus'],
-              dynamics: 'Powerful'
+              mood: ['Tragic', 'Devastating', 'Heartbreaking'],
+              instrumentation: ['Full Orchestra', 'All Voices'],
+              dynamics: 'Piano to Fortissimo'
             }
           }
         ]
