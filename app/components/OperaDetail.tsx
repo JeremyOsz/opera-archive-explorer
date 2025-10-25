@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import Image from 'next/image';
 import { ArchiveAPI } from '@/app/lib/archive-api';
+import { EnhancedMusicalMetadataLibrary } from '@/app/lib/musical-metadata-enhanced';
 
 interface OperaDetailProps {
   opera: OperaRecording;
@@ -34,6 +35,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
   const [loading, setLoading] = useState(false);
   const [enhancedOpera, setEnhancedOpera] = useState<OperaRecording>(opera);
   const [musicalDataLoading, setMusicalDataLoading] = useState(false);
+  const [workMetadata, setWorkMetadata] = useState<any>(null);
 
   useEffect(() => {
     if (isOpen && opera.identifier) {
@@ -49,14 +51,46 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
         .catch(console.error)
         .finally(() => setLoading(false));
 
-      // Enhance with music database data
-      ArchiveAPI.enhanceWithMusicDatabases(opera)
-        .then(enhanced => {
-          console.log('Enhanced opera data:', enhanced);
-          setEnhancedOpera(enhanced);
-        })
-        .catch(console.error)
-        .finally(() => setMusicalDataLoading(false));
+      // Try to get enhanced musical metadata (uses mapped data if available)
+      const enhanced = EnhancedMusicalMetadataLibrary.getMusicalMetadata(opera.identifier);
+      if (enhanced) {
+        console.log('Enhanced metadata:', enhanced);
+        setWorkMetadata(enhanced);
+        
+        // Enhance the opera with this metadata
+        setEnhancedOpera({
+          ...opera,
+          musicalKey: enhanced.musicalMetadata.overallKey,
+          tempo: enhanced.musicalMetadata.overallTempo,
+          duration: enhanced.musicalMetadata.duration,
+          genre: enhanced.musicalMetadata.genre,
+          instrumentation: enhanced.musicalMetadata.instrumentation,
+          mood: enhanced.musicalMetadata.mood,
+          movements: enhanced.musicalMetadata.movements.map(m => ({
+            title: m.title,
+            duration: m.duration,
+            musicalKey: m.key,
+            tempo: m.tempo,
+            trackNumber: m.movementNumber,
+            description: m.description
+          })),
+          metadata: {
+            isMapped: enhanced.musicalMetadata.isMapped,
+            source: enhanced.musicalMetadata.source,
+            musicalAnalysis: enhanced.musicalMetadata.musicalAnalysis
+          }
+        });
+      } else {
+        // Fallback to original enhancement
+        ArchiveAPI.enhanceWithMusicDatabases(opera)
+          .then(enhanced => {
+            console.log('Enhanced opera data:', enhanced);
+            setEnhancedOpera(enhanced);
+          })
+          .catch(console.error);
+      }
+      
+      setMusicalDataLoading(false);
     }
   }, [isOpen, opera.identifier, opera]);
 
@@ -232,10 +266,22 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
           {(musicalDataLoading || enhancedOpera.musicalKey || enhancedOpera.tempo || enhancedOpera.duration || enhancedOpera.genre?.length || enhancedOpera.instrumentation?.length || enhancedOpera.metadata?.fallback) && (
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Music className="w-5 h-5" />
-                  Musical Information
-                </CardTitle>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="flex items-center gap-2">
+                    <Music className="w-5 h-5" />
+                    Musical Information
+                  </CardTitle>
+                  {enhancedOpera.metadata?.isMapped && (
+                    <Badge variant="default" className="bg-green-600">
+                      ✓ Mapped Metadata
+                    </Badge>
+                  )}
+                  {enhancedOpera.metadata?.source === 'generated' && (
+                    <Badge variant="secondary">
+                      Generated
+                    </Badge>
+                  )}
+                </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 {musicalDataLoading ? (
@@ -321,16 +367,44 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                       </div>
                     )}
 
+                    {/* Musical Analysis for mapped works */}
+                    {enhancedOpera.metadata?.musicalAnalysis && (
+                      <div className="border-t pt-4 mt-4">
+                        <p className="text-sm font-medium mb-3">Musical Analysis</p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Harmonic Complexity</p>
+                            <Badge variant="outline" className="capitalize">
+                              {enhancedOpera.metadata.musicalAnalysis.harmonicComplexity}
+                            </Badge>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Melodic Style</p>
+                            <Badge variant="outline" className="capitalize">
+                              {enhancedOpera.metadata.musicalAnalysis.melodicStyle}
+                            </Badge>
+                          </div>
+                          <div>
+                            <p className="text-xs text-muted-foreground mb-1">Time Signature</p>
+                            <Badge variant="outline">
+                              {enhancedOpera.metadata.musicalAnalysis.timeSignature}
+                            </Badge>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    
                     {/* Data source information */}
-                    <div className="text-xs text-muted-foreground border-t pt-2">
-                      <p>Debug: musicalKey={enhancedOpera.musicalKey}, tempo={enhancedOpera.tempo}, genre={enhancedOpera.genre?.length || 0}</p>
-                      {enhancedOpera.metadata?.mockData && (
-                        <p>🎵 Musical data generated based on opera characteristics and composer patterns</p>
-                      )}
-                      {enhancedOpera.metadata?.fallback && (
-                        <p>Using fallback musical data for testing</p>
-                      )}
-                    </div>
+                    {(enhancedOpera.metadata?.mockData || enhancedOpera.metadata?.fallback) && (
+                      <div className="text-xs text-muted-foreground border-t pt-2">
+                        {enhancedOpera.metadata?.mockData && (
+                          <p>🎵 Musical data generated based on opera characteristics</p>
+                        )}
+                        {enhancedOpera.metadata?.fallback && (
+                          <p>Using fallback musical data</p>
+                        )}
+                      </div>
+                    )}
                   </>
                 )}
               </CardContent>
@@ -433,39 +507,46 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                 </CardTitle>
                 <CardDescription>
                   {enhancedOpera.movements.length} movement{enhancedOpera.movements.length !== 1 ? 's' : ''} available
+                  {enhancedOpera.metadata?.isMapped && (
+                    <span className="ml-2 text-green-600">• Actual work structure</span>
+                  )}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   {enhancedOpera.movements.map((movement, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                          <span className="text-primary font-bold text-sm">{movement.trackNumber || index + 1}</span>
+                    <div key={index} className="p-4 border rounded-lg hover:bg-muted/50 transition-colors">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                          <span className="text-primary font-bold">{movement.trackNumber || index + 1}</span>
                         </div>
-                        <div>
-                          <p className="font-medium">{movement.title}</p>
-                          {movement.description && (
-                            <p className="text-sm text-muted-foreground">{movement.description}</p>
-                          )}
-                          <div className="flex items-center gap-4 text-sm text-muted-foreground mt-1">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-start justify-between gap-4 mb-2">
+                            <div>
+                              <p className="font-medium text-lg">{movement.title}</p>
+                              {movement.description && (
+                                <p className="text-sm text-muted-foreground mt-1">{movement.description}</p>
+                              )}
+                            </div>
+                          </div>
+                          <div className="flex flex-wrap items-center gap-3 text-sm">
                             {movement.musicalKey && (
-                              <span className="flex items-center gap-1">
+                              <Badge variant="outline" className="flex items-center gap-1">
                                 <span className="text-primary">♫</span>
                                 {movement.musicalKey}
-                              </span>
+                              </Badge>
                             )}
                             {movement.tempo && (
-                              <span className="flex items-center gap-1">
+                              <Badge variant="outline" className="flex items-center gap-1">
                                 <span className="text-primary">♪</span>
                                 {movement.tempo} BPM
-                              </span>
+                              </Badge>
                             )}
                             {movement.duration && (
-                              <span className="flex items-center gap-1">
+                              <Badge variant="outline" className="flex items-center gap-1">
                                 <Clock className="w-3 h-3" />
                                 {movement.duration}
-                              </span>
+                              </Badge>
                             )}
                           </div>
                         </div>
