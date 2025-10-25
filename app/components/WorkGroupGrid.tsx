@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { GroupedWork, getCanonicalWorkTitle } from '@/app/lib/work-grouper';
+import { useOptimizedImages } from '@/app/lib/use-optimized-images';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -28,6 +29,14 @@ export default function WorkGroupGrid({ works, loading = false }: WorkGroupGridP
   const [expandedWorks, setExpandedWorks] = useState<Set<string>>(new Set());
   const [selectedRecording, setSelectedRecording] = useState<OperaRecording | null>(null);
   const [showDetail, setShowDetail] = useState(false);
+
+  // Extract all recording identifiers for optimized image loading
+  const allIdentifiers = useMemo(() => {
+    return works.flatMap(work => work.recordings.map(recording => recording.identifier));
+  }, [works]);
+
+  // Use optimized image loading
+  const { images, isLoading: imagesLoading } = useOptimizedImages(allIdentifiers);
 
   const toggleWork = (workTitle: string) => {
     const newExpanded = new Set(expandedWorks);
@@ -96,19 +105,24 @@ export default function WorkGroupGrid({ works, loading = false }: WorkGroupGridP
             <CardHeader className="cursor-pointer" onClick={() => toggleWork(work.workTitle)}>
               <div className="flex items-start gap-4">
                 {/* Work Image */}
-                {featuredRecording?.imageUrl && (
-                  <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-muted">
-                    <Image
-                      src={featuredRecording.imageUrl}
-                      alt={canonicalTitle}
-                      fill
-                      className="object-cover object-center"
-                      onError={(e) => {
-                        e.currentTarget.style.display = 'none';
-                      }}
-                    />
-                  </div>
-                )}
+                {(() => {
+                  const optimizedImage = images[featuredRecording?.identifier || ''];
+                  const imageUrl = optimizedImage?.imageUrl || featuredRecording?.imageUrl;
+                  
+                  return imageUrl && (
+                    <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-muted">
+                      <Image
+                        src={imageUrl}
+                        alt={canonicalTitle}
+                        fill
+                        className="object-cover object-center"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                    </div>
+                  );
+                })()}
 
                 {/* Work Info */}
                 <div className="flex-1 min-w-0">
@@ -166,19 +180,24 @@ export default function WorkGroupGrid({ works, loading = false }: WorkGroupGridP
                       onClick={() => handleRecordingClick(recording)}
                     >
                       {/* Recording thumbnail */}
-                      {recording.thumbnailUrl && (
-                        <div className="relative w-16 h-16 flex-shrink-0 overflow-hidden rounded bg-muted">
-                          <Image
-                            src={recording.thumbnailUrl}
-                            alt={recording.title}
-                            fill
-                            className="object-cover"
-                            onError={(e) => {
-                              e.currentTarget.style.display = 'none';
-                            }}
-                          />
-                        </div>
-                      )}
+                      {(() => {
+                        const optimizedImage = images[recording.identifier];
+                        const thumbnailUrl = optimizedImage?.thumbnailUrl || recording.thumbnailUrl;
+                        
+                        return thumbnailUrl && (
+                          <div className="relative w-16 h-16 flex-shrink-0 overflow-hidden rounded bg-muted">
+                            <Image
+                              src={thumbnailUrl}
+                              alt={recording.title}
+                              fill
+                              className="object-cover"
+                              onError={(e) => {
+                                e.currentTarget.style.display = 'none';
+                              }}
+                            />
+                          </div>
+                        );
+                      })()}
 
                       {/* Recording details */}
                       <div className="flex-1 min-w-0">

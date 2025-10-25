@@ -9,7 +9,7 @@ export class ArchiveAPI {
    * Get the best available image URL for an identifier
    * Tries to find the largest image file, falls back to image service
    */
-  private static async getBestImageUrl(identifier: string): Promise<{ imageUrl: string; thumbnailUrl: string }> {
+  static async getBestImageUrl(identifier: string): Promise<{ imageUrl: string; thumbnailUrl: string }> {
     try {
       // Try to get metadata to find the best image file
       const response = await fetch(`https://archive.org/metadata/${identifier}`, {
@@ -155,21 +155,19 @@ export class ArchiveAPI {
       const paginatedResults = cachedResults.slice(start, end);
       
       // Convert lightweight results to OperaRecording format for compatibility
-      // and enhance with higher resolution images
-      const convertedResults = await Promise.all(paginatedResults.map(async (work) => {
-        const imageUrls = await this.getBestImageUrl(work.identifier);
-        return {
-          ...work,
-          imageUrl: imageUrls.imageUrl,
-          thumbnailUrl: imageUrls.thumbnailUrl,
-          mediatype: 'audio',
-          publicdate: work.date || '',
-          addeddate: work.date || '',
-          collection: [],
-          format: [],
-          files: [],
-          metadata: {}
-        };
+      // Note: Images are fetched separately via API to avoid blocking
+      const convertedResults = paginatedResults.map((work) => ({
+        ...work,
+        // Use cached image URLs if available, otherwise use fallback
+        imageUrl: work.imageUrl || `https://archive.org/services/img/${work.identifier}`,
+        thumbnailUrl: work.thumbnailUrl || `https://archive.org/services/img/${work.identifier}`,
+        mediatype: 'audio',
+        publicdate: work.date || '',
+        addeddate: work.date || '',
+        collection: [],
+        format: [],
+        files: [],
+        metadata: {}
       }));
 
       return {

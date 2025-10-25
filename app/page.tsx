@@ -1,16 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { OperaRecording, SearchFilters } from '@/app/types/opera';
-import { ArchiveAPI } from '@/app/lib/archive-api';
-import { groupRecordingsByWork } from '@/app/lib/work-grouper';
+import { useState } from 'react';
+import { SearchFilters } from '@/app/types/opera';
 import SearchBar from '@/app/components/SearchBar';
 import WorkGroupGrid from '@/app/components/WorkGroupGrid';
 import { Card, CardContent } from '@/components/ui/card';
 import { Music, Archive } from 'lucide-react';
 
 export default function Home() {
-  const [operas, setOperas] = useState<OperaRecording[]>([]);
   const [loading, setLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
 
@@ -19,18 +16,35 @@ export default function Home() {
     setHasSearched(true);
     
     try {
-      const response = await ArchiveAPI.searchOperas(filters);
-      setOperas(response.docs);
+      // Use server-side API for better performance
+      const params = new URLSearchParams({
+        q: filters.query || '',
+        creator: filters.creator || '',
+        date: filters.date || '',
+        language: filters.language || '',
+        page: '1',
+        rows: '50'
+      });
+      
+      const response = await fetch(`/api/search?${params}`);
+      const data = await response.json();
+      
+      if (data.error) {
+        throw new Error(data.error);
+      }
+      
+      // Store the grouped works directly
+      setGroupedWorks(data.works);
     } catch (error) {
       console.error('Search failed:', error);
-      setOperas([]);
+      setGroupedWorks([]);
     } finally {
       setLoading(false);
     }
   };
 
-  // Group recordings by work
-  const groupedWorks = groupRecordingsByWork(operas);
+  // Use state for grouped works instead of computing on each render
+  const [groupedWorks, setGroupedWorks] = useState<any[]>([]);
 
   return (
     <div className="min-h-screen bg-background">
