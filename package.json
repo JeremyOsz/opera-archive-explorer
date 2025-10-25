@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "pnpm run build:cache && next build",
+    "build": "pnpm run build:cache && pnpm run generate-lookup && next build",
     "build:cache": "pnpm exec tsx scripts/build-lightweight-cache.ts",
+    "generate-lookup": "pnpm exec tsx scripts/generate-work-lookup.ts",
     "start": "next start",
     "lint": "eslint",
     "cache-archive": "pnpm exec tsx scripts/build-lightweight-cache.ts",

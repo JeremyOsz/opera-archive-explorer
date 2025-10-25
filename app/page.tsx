@@ -3,17 +3,15 @@
 import { useState, useEffect } from 'react';
 import { OperaRecording, SearchFilters } from '@/app/types/opera';
 import { ArchiveAPI } from '@/app/lib/archive-api';
+import { groupRecordingsByWork } from '@/app/lib/work-grouper';
 import SearchBar from '@/app/components/SearchBar';
-import OperaGrid from '@/app/components/OperaGrid';
-import OperaDetail from '@/app/components/OperaDetail';
+import WorkGroupGrid from '@/app/components/WorkGroupGrid';
 import { Card, CardContent } from '@/components/ui/card';
 import { Music, Archive } from 'lucide-react';
 
 export default function Home() {
   const [operas, setOperas] = useState<OperaRecording[]>([]);
   const [loading, setLoading] = useState(false);
-  const [selectedOpera, setSelectedOpera] = useState<OperaRecording | null>(null);
-  const [showDetail, setShowDetail] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
 
   const handleSearch = async (filters: SearchFilters) => {
@@ -31,15 +29,8 @@ export default function Home() {
     }
   };
 
-  const handleOperaClick = (opera: OperaRecording) => {
-    setSelectedOpera(opera);
-    setShowDetail(true);
-  };
-
-  const handleCloseDetail = () => {
-    setShowDetail(false);
-    setSelectedOpera(null);
-  };
+  // Group recordings by work
+  const groupedWorks = groupRecordingsByWork(operas);
 
   return (
     <div className="min-h-screen bg-background">
@@ -83,10 +74,9 @@ export default function Home() {
 
           {/* Results Section */}
           {hasSearched && (
-            <OperaGrid 
-              operas={operas} 
-              loading={loading} 
-              onOperaClick={handleOperaClick}
+            <WorkGroupGrid 
+              works={groupedWorks} 
+              loading={loading}
             />
           )}
 
@@ -104,22 +94,13 @@ export default function Home() {
                   and listen to high-quality audio recordings.
                 </p>
                 <div className="mt-6 text-sm text-muted-foreground">
-                  <p>Start by entering a search term above, or use the advanced filters to narrow down your search.</p>
+                  <p>Search for a work (e.g., "Madama Butterfly") to see all available recordings grouped together.</p>
                 </div>
               </CardContent>
             </Card>
           )}
         </div>
       </main>
-
-      {/* Opera Detail Modal */}
-      {selectedOpera && (
-        <OperaDetail
-          opera={selectedOpera}
-          isOpen={showDetail}
-          onClose={handleCloseDetail}
-        />
-      )}
     </div>
   );
 }

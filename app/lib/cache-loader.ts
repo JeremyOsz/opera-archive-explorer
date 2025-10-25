@@ -1,7 +1,7 @@
 import { OperaRecording } from '@/app/types/opera';
 import archiveCache from '@/app/data/archive-cache.json';
 
-interface LightweightOpera {
+export interface LightweightOpera {
   identifier: string;
   title: string;
   creator?: string;

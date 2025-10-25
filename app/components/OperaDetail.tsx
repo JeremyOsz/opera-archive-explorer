@@ -18,7 +18,9 @@ import {
   FileText,
   Tag,
   Volume2,
-  Image as ImageIcon
+  Image as ImageIcon,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 import Image from 'next/image';
 import { ArchiveAPI } from '@/app/lib/archive-api';
@@ -36,6 +38,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
   const [enhancedOpera, setEnhancedOpera] = useState<OperaRecording>(opera);
   const [musicalDataLoading, setMusicalDataLoading] = useState(false);
   const [workMetadata, setWorkMetadata] = useState<any>(null);
+  const [audioFilesExpanded, setAudioFilesExpanded] = useState(false);
 
   useEffect(() => {
     if (isOpen && opera.identifier) {
@@ -411,18 +414,94 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
             </Card>
           )}
 
-          {/* Audio Files */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Volume2 className="w-5 h-5" />
-                Available Audio Files
-              </CardTitle>
+        
+
+          {/* Movements */}
+          {enhancedOpera.movements && enhancedOpera.movements.length > 0 && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Music className="w-5 h-5" />
+                  Movements & Tracks
+                </CardTitle>
+                <CardDescription>
+                  {enhancedOpera.movements.length} movement{enhancedOpera.movements.length !== 1 ? 's' : ''} available
+                  {enhancedOpera.metadata?.isMapped && (
+                    <span className="ml-2 text-green-600">• Actual work structure</span>
+                  )}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  {enhancedOpera.movements.map((movement, index) => (
+                    <div key={index} className="p-4 border rounded-lg hover:bg-muted/50 transition-colors">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                          <span className="text-primary font-bold">{movement.trackNumber || index + 1}</span>
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-start justify-between gap-4 mb-2">
+                            <div>
+                              <p className="font-medium text-lg">{movement.title}</p>
+                              {movement.description && (
+                                <p className="text-sm text-muted-foreground mt-1">{movement.description}</p>
+                              )}
+                            </div>
+                          </div>
+                          <div className="flex flex-wrap items-center gap-3 text-sm">
+                            {movement.musicalKey && (
+                              <Badge variant="outline" className="flex items-center gap-1">
+                                <span className="text-primary">♫</span>
+                                {movement.musicalKey}
+                              </Badge>
+                            )}
+                            {movement.tempo && (
+                              <Badge variant="outline" className="flex items-center gap-1">
+                                <span className="text-primary">♪</span>
+                                {movement.tempo} BPM
+                              </Badge>
+                            )}
+                            {movement.duration && (
+                              <Badge variant="outline" className="flex items-center gap-1">
+                                <Clock className="w-3 h-3" />
+                                {movement.duration}
+                              </Badge>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+            {/* Audio Files - Collapsible */}
+            <Card>
+            <CardHeader 
+              className="cursor-pointer hover:bg-muted/50 transition-colors"
+              onClick={() => setAudioFilesExpanded(!audioFilesExpanded)}
+            >
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Volume2 className="w-5 h-5" />
+                  <CardTitle>Available Audio Files</CardTitle>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-8 w-8 p-0"
+                >
+                  {audioFilesExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                </Button>
+              </div>
               <CardDescription>
                 {loading ? 'Loading files...' : `${audioFiles.length} audio file${audioFiles.length !== 1 ? 's' : ''} available`}
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            {audioFilesExpanded && (
+              <CardContent>
               {loading ? (
                 <div className="space-y-3">
                   {Array.from({ length: 3 }).map((_, i) => (
@@ -494,83 +573,27 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                   )}
                 </div>
               )}
-            </CardContent>
-          </Card>
-
-          {/* Movements */}
-          {enhancedOpera.movements && enhancedOpera.movements.length > 0 && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Music className="w-5 h-5" />
-                  Movements & Tracks
-                </CardTitle>
-                <CardDescription>
-                  {enhancedOpera.movements.length} movement{enhancedOpera.movements.length !== 1 ? 's' : ''} available
-                  {enhancedOpera.metadata?.isMapped && (
-                    <span className="ml-2 text-green-600">• Actual work structure</span>
-                  )}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  {enhancedOpera.movements.map((movement, index) => (
-                    <div key={index} className="p-4 border rounded-lg hover:bg-muted/50 transition-colors">
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                          <span className="text-primary font-bold">{movement.trackNumber || index + 1}</span>
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-start justify-between gap-4 mb-2">
-                            <div>
-                              <p className="font-medium text-lg">{movement.title}</p>
-                              {movement.description && (
-                                <p className="text-sm text-muted-foreground mt-1">{movement.description}</p>
-                              )}
-                            </div>
-                          </div>
-                          <div className="flex flex-wrap items-center gap-3 text-sm">
-                            {movement.musicalKey && (
-                              <Badge variant="outline" className="flex items-center gap-1">
-                                <span className="text-primary">♫</span>
-                                {movement.musicalKey}
-                              </Badge>
-                            )}
-                            {movement.tempo && (
-                              <Badge variant="outline" className="flex items-center gap-1">
-                                <span className="text-primary">♪</span>
-                                {movement.tempo} BPM
-                              </Badge>
-                            )}
-                            {movement.duration && (
-                              <Badge variant="outline" className="flex items-center gap-1">
-                                <Clock className="w-3 h-3" />
-                                {movement.duration}
-                              </Badge>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </CardContent>
-            </Card>
-          )}
+            )}
+          </Card>
 
           {/* Archive Link */}
           <Card>
-            <CardContent className="pt-6">
+            <CardHeader 
+              className="cursor-pointer hover:bg-muted/50 transition-colors"
+              onClick={() => setAudioFilesExpanded(true)}
+            >
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-medium">View on Internet Archive</p>
-                  <p className="text-sm text-muted-foreground">
+                  <CardTitle className="text-base">View on Internet Archive</CardTitle>
+                  <CardDescription className="mt-1">
                     Access the full recording details and additional metadata
-                  </p>
+                  </CardDescription>
                 </div>
                 <Button
                   variant="outline"
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.stopPropagation();
                     window.open(`https://archive.org/details/${opera.identifier}`, '_blank');
                   }}
                 >
@@ -578,7 +601,7 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
                   Open Archive
                 </Button>
               </div>
-            </CardContent>
+            </CardHeader>
           </Card>
         </div>
       </DialogContent>
