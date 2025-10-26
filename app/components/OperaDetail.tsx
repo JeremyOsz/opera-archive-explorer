@@ -56,11 +56,12 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
       setLoading(true);
       setMusicalDataLoading(true);
       
-      // Load files
-      ArchiveAPI.getOperaFiles(opera.identifier)
-        .then(files => {
-          console.log('Files fetched for', opera.identifier, ':', files);
-          setFiles(files);
+      // Load files using server-side API
+      fetch(`/api/archive-files?id=${opera.identifier}`)
+        .then(response => response.json())
+        .then(data => {
+          console.log('Files fetched for', opera.identifier, ':', data.files);
+          setFiles(data.files || []);
         })
         .catch(console.error)
         .finally(() => setLoading(false));
@@ -98,35 +99,64 @@ export default function OperaDetail({ opera, isOpen, onClose }: OperaDetailProps
           }
         };
         
-        // Enhance with recording information
-        ArchiveAPI.enhanceWithRecordingInfo(operaWithMusicalData)
-          .then(enhancedWithRecording => {
-            console.log('Enhanced with recording info:', enhancedWithRecording);
+        // Enhance with recording information using server-side API
+        fetch(`/api/enhance?id=${opera.identifier}&type=recording`)
+          .then(response => response.json())
+          .then(data => {
+            console.log('Enhanced with recording info:', data.opera);
+            // Merge the server-side enhancement with our client-side musical metadata
+            const mergedOpera = {
+              ...data.opera,
+              musicalKey: operaWithMusicalData.musicalKey,
+              tempo: operaWithMusicalData.tempo,
+              duration: operaWithMusicalData.duration,
+              genre: operaWithMusicalData.genre,
+              instrumentation: operaWithMusicalData.instrumentation,
+              mood: operaWithMusicalData.mood,
+              acts: operaWithMusicalData.acts,
+              movements: operaWithMusicalData.movements,
+              metadata: {
+                ...data.opera.metadata,
+                isMapped: operaWithMusicalData.metadata.isMapped,
+                source: operaWithMusicalData.metadata.source,
+                musicalAnalysis: operaWithMusicalData.metadata.musicalAnalysis
+              }
+            };
             // Also enhance with sheet music links
-            return ArchiveAPI.enhanceWithSheetMusic(enhancedWithRecording);
+            return fetch(`/api/enhance?id=${opera.identifier}&type=sheet-music`);
           })
-          .then(enhancedWithSheetMusic => {
-            console.log('Enhanced with sheet music:', enhancedWithSheetMusic);
-            setEnhancedOpera(enhancedWithSheetMusic);
+          .then(response => response.json())
+          .then(data => {
+            console.log('Enhanced with sheet music:', data.opera);
+            // Merge the sheet music enhancement with our preserved musical metadata
+            const finalOpera = {
+              ...data.opera,
+              musicalKey: operaWithMusicalData.musicalKey,
+              tempo: operaWithMusicalData.tempo,
+              duration: operaWithMusicalData.duration,
+              genre: operaWithMusicalData.genre,
+              instrumentation: operaWithMusicalData.instrumentation,
+              mood: operaWithMusicalData.mood,
+              acts: operaWithMusicalData.acts,
+              movements: operaWithMusicalData.movements,
+              metadata: {
+                ...data.opera.metadata,
+                isMapped: operaWithMusicalData.metadata.isMapped,
+                source: operaWithMusicalData.metadata.source,
+                musicalAnalysis: operaWithMusicalData.metadata.musicalAnalysis
+              }
+            };
+            setEnhancedOpera(finalOpera);
           })
           .catch(console.error)
           .finally(() => setMusicalDataLoading(false));
       } else {
-        // Fallback to original enhancement
-        ArchiveAPI.enhanceWithMusicDatabases(opera)
-          .then(enhanced => {
-            console.log('Enhanced opera data:', enhanced);
-            // Also enhance with recording information
-            return ArchiveAPI.enhanceWithRecordingInfo(enhanced);
-          })
-          .then(enhancedWithRecording => {
-            console.log('Enhanced with recording info:', enhancedWithRecording);
-            // Also enhance with sheet music links
-            return ArchiveAPI.enhanceWithSheetMusic(enhancedWithRecording);
-          })
-          .then(enhancedWithSheetMusic => {
-            console.log('Enhanced with sheet music:', enhancedWithSheetMusic);
-            setEnhancedOpera(enhancedWithSheetMusic);
+        // Fallback to original enhancement using server-side API
+        fetch(`/api/enhance?id=${opera.identifier}&type=all`)
+          .then(response => response.json())
+          .then(data => {
+            console.log('Enhanced opera data:', data.opera);
+            setEnhancedOpera(data.opera);
           })
           .catch(console.error)
           .finally(() => setMusicalDataLoading(false));
