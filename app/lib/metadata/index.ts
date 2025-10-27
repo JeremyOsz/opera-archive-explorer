@@ -67,6 +67,8 @@ const WORK_METADATA_MAPPING: Record<string, string> = {
   'Rigoletto': 'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g',
   'rigoletto (giuseppe verdi)': 'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g',
   'Rigoletto (Giuseppe Verdi)': 'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g',
+  'arias and duet from rigoletto': 'lp_arias-and-duet-from-rigoletto_giuseppe-verdi-lina-pagliughi-sandor-sv',
+  'Arias And Duet From Rigoletto': 'lp_arias-and-duet-from-rigoletto_giuseppe-verdi-lina-pagliughi-sandor-sv',
   
   // La Traviata - all recordings map to the same metadata
   'la traviata': 'lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte',
@@ -80,10 +82,25 @@ const WORK_METADATA_MAPPING: Record<string, string> = {
   // Requiem (Verdi) - all recordings map to the same metadata
   'requiem': 'lp_requiem_giuseppe-verdi-igor-markevitch-moscow-p',
   'Requiem': 'lp_requiem_giuseppe-verdi-igor-markevitch-moscow-p',
+  'verdi - requiem': 'lp_requiem_giuseppe-verdi-igor-markevitch-moscow-p',
+  'Verdi - Requiem': 'lp_requiem_giuseppe-verdi-igor-markevitch-moscow-p',
   
   // Otello - all recordings map to the same metadata
   'otello': 'lp_otello_giuseppe-verdi-carlo-maria-guichandut-c',
   'Otello': 'lp_otello_giuseppe-verdi-carlo-maria-guichandut-c',
+  
+  // Il Trovatore - all recordings map to the same metadata
+  'il trovatore': 'lp_il-trovatore_giuseppe-verdi-giacomo-lauri-volpi-cate',
+  'Il Trovatore': 'lp_il-trovatore_giuseppe-verdi-giacomo-lauri-volpi-cate',
+  'il trovatore (complete)': 'lp_il-trovatore_giuseppe-verdi-giacomo-lauri-volpi-cate',
+  'Il Trovatore (Complete)': 'lp_il-trovatore_giuseppe-verdi-giacomo-lauri-volpi-cate',
+  'il trovatore highlights': 'lp_il-trovatore-highlights_giuseppe-verdi-orchestra-del-teatro-del',
+  'Il Trovatore Highlights': 'lp_il-trovatore-highlights_giuseppe-verdi-orchestra-del-teatro-del',
+  
+  // La Forza del Destino - all recordings map to the same metadata
+  'la forza del destino': 'lp_la-forza-del-destino_dimitri-mitropoulos-giuseppe-verdi-rena',
+  'La Forza Del Destino': 'lp_la-forza-del-destino_dimitri-mitropoulos-giuseppe-verdi-rena',
+  'la forza del destino highlights': 'lp_la-forza-del-destino_dimitri-mitropoulos-giuseppe-verdi-rena',
   
   // Parsifal - all recordings map to the same metadata
   'parsifal': 'lp_parsifal_richard-wagner-hans-knappertsbusch-chor-de',
