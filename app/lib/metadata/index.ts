@@ -50,16 +50,50 @@ const WORK_METADATA_MAPPING: Record<string, string> = {
   'madama butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
   'madama butterfly, sc 74': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
   'highlights from madama butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'Madama Butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
   
   // Manon Lescaut - all recordings map to the same metadata
   'manon lescaut': 'lp_manon-lescaut_giacomo-puccini_4',
+  'Manon Lescaut': 'lp_manon-lescaut_giacomo-puccini_4',
   
   // La Bohème - all recordings map to the same metadata
   'la bohème': 'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d',
   'la boheme': 'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d',
+  'La Bohème': 'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d',
+  'La Boheme': 'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d',
   
   // Rigoletto - all recordings map to the same metadata
   'rigoletto': 'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g',
+  'Rigoletto': 'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g',
+  'rigoletto (giuseppe verdi)': 'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g',
+  'Rigoletto (Giuseppe Verdi)': 'lp_rigoletto_maria-callas-giuseppe-di-stefano-tito-g',
+  
+  // La Traviata - all recordings map to the same metadata
+  'la traviata': 'lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte',
+  'La Traviata': 'lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte',
+  'verdi, la traviata': 'lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte',
+  'Verdi, La Traviata': 'lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte',
+  'la traviata highlights': 'lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte',
+  'la traviata highlights, sung in german': 'lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte',
+  'latraviata (complete opera)': 'lp_verdi-la-traviata_victoria-de-los-angeles-carlo-del-monte',
+  
+  // Requiem (Verdi) - all recordings map to the same metadata
+  'requiem': 'lp_requiem_giuseppe-verdi-igor-markevitch-moscow-p',
+  'Requiem': 'lp_requiem_giuseppe-verdi-igor-markevitch-moscow-p',
+  
+  // Otello - all recordings map to the same metadata
+  'otello': 'lp_otello_giuseppe-verdi-carlo-maria-guichandut-c',
+  'Otello': 'lp_otello_giuseppe-verdi-carlo-maria-guichandut-c',
+  
+  // Parsifal - all recordings map to the same metadata
+  'parsifal': 'lp_parsifal_richard-wagner-hans-knappertsbusch-chor-de',
+  'Parsifal': 'lp_parsifal_richard-wagner-hans-knappertsbusch-chor-de',
+  
+  // Tristan und Isolde - all recordings map to the same metadata
+  'tristan und isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
+  'Tristan und Isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
+  'tristan and isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
+  'Tristan and Isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
   
   // Add more work mappings as needed...
 };
