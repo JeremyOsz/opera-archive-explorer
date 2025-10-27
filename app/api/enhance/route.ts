@@ -10,13 +10,20 @@ const getCachedEnhancement = unstable_cache(
     
     try {
       // First get the basic opera data
-      const metadataResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/metadata?id=${identifier}`);
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 
+                      process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
+      
+      const metadataResponse = await fetch(`${baseUrl}/api/metadata?id=${identifier}`);
       if (!metadataResponse.ok) {
+        console.error(`Metadata fetch failed with status ${metadataResponse.status}`);
         throw new Error('Failed to fetch opera metadata');
       }
       
-      const { opera } = await metadataResponse.json();
+      const metadataData = await metadataResponse.json();
+      const opera = metadataData?.opera;
+      
       if (!opera) {
+        console.error('No opera found in metadata response:', metadataData);
         throw new Error('Opera not found');
       }
 
@@ -71,11 +78,18 @@ export async function GET(request: NextRequest) {
     // Use Next.js server-side caching
     const enhancedOpera = await getCachedEnhancement(identifier, enhancementType);
 
+    if (!enhancedOpera) {
+      return NextResponse.json(
+        { error: 'Failed to enhance opera data', opera: null },
+        { status: 500 }
+      );
+    }
+
     return NextResponse.json({ opera: enhancedOpera });
   } catch (error) {
     console.error('Enhancement API error:', error);
     return NextResponse.json(
-      { error: 'Failed to enhance opera data' },
+      { error: 'Failed to enhance opera data', opera: null },
       { status: 500 }
     );
   }

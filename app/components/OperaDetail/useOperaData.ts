@@ -38,31 +38,44 @@ export const useOperaData = (opera: OperaRecording, isOpen: boolean) => {
         const sheetMusicResponse = await fetch(`/api/enhance?id=${opera.identifier}&type=sheet-music`);
         const sheetMusicData = await sheetMusicResponse.json();
         
-        // Merge all enhancements
-        const finalOpera = {
-          ...sheetMusicData.opera,
-          musicalKey: operaWithMusicalData.musicalKey,
-          tempo: operaWithMusicalData.tempo,
-          duration: operaWithMusicalData.duration,
-          genre: operaWithMusicalData.genre,
-          instrumentation: operaWithMusicalData.instrumentation,
-          mood: operaWithMusicalData.mood,
-          acts: operaWithMusicalData.acts,
-          movements: operaWithMusicalData.movements,
-          metadata: {
-            ...sheetMusicData.opera.metadata,
-            isMapped: operaWithMusicalData.metadata?.isMapped,
-            source: operaWithMusicalData.metadata?.source,
-            musicalAnalysis: operaWithMusicalData.metadata?.musicalAnalysis
-          }
-        };
-        
-        setEnhancedOpera(finalOpera);
+        // Check if enhancement succeeded
+        if (sheetMusicResponse.ok && sheetMusicData.opera) {
+          // Merge all enhancements
+          const finalOpera = {
+            ...sheetMusicData.opera,
+            musicalKey: operaWithMusicalData.musicalKey,
+            tempo: operaWithMusicalData.tempo,
+            duration: operaWithMusicalData.duration,
+            genre: operaWithMusicalData.genre,
+            instrumentation: operaWithMusicalData.instrumentation,
+            mood: operaWithMusicalData.mood,
+            acts: operaWithMusicalData.acts,
+            movements: operaWithMusicalData.movements,
+            metadata: {
+              ...sheetMusicData.opera.metadata,
+              isMapped: operaWithMusicalData.metadata?.isMapped,
+              source: operaWithMusicalData.metadata?.source,
+              musicalAnalysis: operaWithMusicalData.metadata?.musicalAnalysis
+            }
+          };
+          
+          setEnhancedOpera(finalOpera);
+        } else {
+          // If sheet music enhancement failed, just use the enhanced musical data
+          setEnhancedOpera(operaWithMusicalData);
+        }
       } else {
         // Fallback to original enhancement
         const response = await fetch(`/api/enhance?id=${opera.identifier}&type=all`);
         const data = await response.json();
-        setEnhancedOpera(data.opera);
+        
+        // Safety check: ensure opera exists before setting
+        if (data && data.opera) {
+          setEnhancedOpera(data.opera);
+        } else {
+          // Final fallback: use the original opera
+          setEnhancedOpera(opera);
+        }
       }
     } catch (error) {
       console.error('Error fetching opera data:', error);
