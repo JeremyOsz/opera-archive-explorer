@@ -968,5 +968,303 @@ export const PUCCINI_METADATA: Record<string, WorkMusicalMetadata> = {
       }
     ],
     notes: 'Puccini\'s beloved opera about bohemian artists in Paris. Features some of the most famous arias in opera, including "Che gelida manina" and "Sì, mi chiamano Mimì".'
+  },
+
+  'lp_tosca_giacomo-puccini-renata-tebaldi': {
+    identifier: 'lp_tosca_giacomo-puccini-renata-tebaldi',
+    metadataComplete: true,
+    overallKey: 'E Major',
+    overallTempo: 115,
+    genre: ['Opera', 'Romantic', 'Classical', 'Tragedy'],
+    instrumentation: ['Full Orchestra', 'Soprano', 'Tenor', 'Baritone', 'Bass', 'Chorus'],
+    mood: ['Dramatic', 'Tragic', 'Passionate', 'Intense'],
+    duration: '1:50:00',
+    acts: [
+      {
+        actNumber: 1,
+        title: 'Act I - Church of Sant\'Andrea della Valle',
+        key: 'E Major',
+        tempo: 120,
+        timeSignature: '4/4',
+        duration: '40:00',
+        tempoMarking: 'Andante',
+        description: 'Cavaradossi paints Angelotti\'s portrait, Tosca arrives',
+        sections: [
+          {
+            title: 'Recondita armonia',
+            sectionNumber: 1,
+            sectionType: 'aria',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'E-flat Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '4:00',
+            tempoMarking: 'Andante',
+            description: 'Cavaradossi\'s famous aria "Strangely harmonious resemblance"',
+            musicalElements: {
+              mood: ['Melancholic', 'Romantic', 'Beautiful'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Tosca Enters',
+            sectionNumber: 2,
+            sectionType: 'duet',
+            musicalFunction: 'exposition',
+            complexity: 'moderate',
+            key: 'E Major',
+            tempo: 120,
+            timeSignature: '4/4',
+            duration: '12:00',
+            tempoMarking: 'Allegro',
+            description: 'Tosca\'s jealousy and Cavaradossi\'s reassurances',
+            musicalElements: {
+              mood: ['Romantic', 'Jealous', 'Passionate'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Te Deum',
+            sectionNumber: 3,
+            sectionType: 'chorus',
+            musicalFunction: 'exposition',
+            complexity: 'complex',
+            key: 'E-flat Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Maestoso',
+            description: 'The famous Te Deum scene with Scarpia',
+            musicalElements: {
+              mood: ['Dramatic', 'Ominous', 'Powerful'],
+              instrumentation: ['Full Orchestra', 'Baritone', 'Chorus'],
+              dynamics: 'Fortissimo'
+            }
+          }
+        ]
+      },
+      {
+        actNumber: 2,
+        title: 'Act II - Scarpia\'s Apartments',
+        key: 'F Minor',
+        tempo: 110,
+        timeSignature: '4/4',
+        duration: '35:00',
+        tempoMarking: 'Andante',
+        description: 'Tosca confronts Scarpia, torture scene, "Vissi d\'arte"',
+        sections: [
+          {
+            title: 'Torture Scene',
+            sectionNumber: 1,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'complex',
+            key: 'F Minor',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Andante',
+            description: 'Cavaradossi is tortured while Tosca listens',
+            musicalElements: {
+              mood: ['Tortured', 'Dramatic', 'Intense'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor', 'Baritone'],
+              dynamics: 'Mezzo-forte to Fortissimo'
+            }
+          },
+          {
+            title: 'Vissi d\'arte',
+            sectionNumber: 2,
+            sectionType: 'aria',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'B-flat Major',
+            tempo: 90,
+            timeSignature: '4/4',
+            duration: '5:00',
+            tempoMarking: 'Andante',
+            description: 'Tosca\'s famous aria "I lived for art"',
+            musicalElements: {
+              mood: ['Melancholic', 'Prayerful', 'Beautiful'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Piano to Forte'
+            }
+          },
+          {
+            title: 'Tosca\'s Bargain',
+            sectionNumber: 3,
+            sectionType: 'scene',
+            musicalFunction: 'development',
+            complexity: 'moderate',
+            key: 'F Minor',
+            tempo: 105,
+            timeSignature: '4/4',
+            duration: '15:00',
+            tempoMarking: 'Allegro',
+            description: 'Tosca agrees to Scarpia\'s demands, then kills him',
+            musicalElements: {
+              mood: ['Dramatic', 'Revengeful', 'Intense'],
+              instrumentation: ['Orchestra', 'Soprano', 'Baritone'],
+              dynamics: 'Mezzo-forte to Fortissimo'
+            }
+          }
+        ]
+      },
+      {
+        actNumber: 3,
+        title: 'Act III - The Execution',
+        key: 'G Major',
+        tempo: 100,
+        timeSignature: '4/4',
+        duration: '35:00',
+        tempoMarking: 'Andante',
+        description: 'E lucevan le stelle, mock execution, tragic ending',
+        sections: [
+          {
+            title: 'E lucevan le stelle',
+            sectionNumber: 1,
+            sectionType: 'aria',
+            musicalFunction: 'climax',
+            complexity: 'moderate',
+            key: 'G Major',
+            tempo: 85,
+            timeSignature: '4/4',
+            duration: '4:00',
+            tempoMarking: 'Andante',
+            description: 'Cavaradossi\'s famous aria "And the stars were shining"',
+            musicalElements: {
+              mood: ['Melancholic', 'Lamenting', 'Beautiful'],
+              instrumentation: ['Orchestra', 'Tenor'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'O dolci mani',
+            sectionNumber: 2,
+            sectionType: 'duet',
+            musicalFunction: 'climax',
+            complexity: 'moderate',
+            key: 'G Major',
+            tempo: 100,
+            timeSignature: '4/4',
+            duration: '10:00',
+            tempoMarking: 'Andante',
+            description: 'Tosca and Cavaradossi\'s final duet',
+            musicalElements: {
+              mood: ['Romantic', 'Tender', 'Tragic'],
+              instrumentation: ['Orchestra', 'Soprano', 'Tenor'],
+              dynamics: 'Piano to Mezzo-forte'
+            }
+          },
+          {
+            title: 'Mock Execution',
+            sectionNumber: 3,
+            sectionType: 'scene',
+            musicalFunction: 'resolution',
+            complexity: 'moderate',
+            key: 'G Major',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '8:00',
+            tempoMarking: 'Allegro',
+            description: 'The fake execution that turns real',
+            musicalElements: {
+              mood: ['Dramatic', 'Suspenseful', 'Tragic'],
+              instrumentation: ['Orchestra'],
+              dynamics: 'Mezzo-forte'
+            }
+          },
+          {
+            title: 'Tosca Discovers Death',
+            sectionNumber: 4,
+            sectionType: 'scene',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'G Minor',
+            tempo: 120,
+            timeSignature: '4/4',
+            duration: '6:00',
+            tempoMarking: 'Allegro',
+            description: 'Tosca realizes Cavaradossi is really dead',
+            musicalElements: {
+              mood: ['Tragic', 'Devastating', 'Final'],
+              instrumentation: ['Orchestra', 'Soprano'],
+              dynamics: 'Mezzo-forte to Fortissimo'
+            }
+          },
+          {
+            title: 'Tosca\'s Suicide',
+            sectionNumber: 5,
+            sectionType: 'scene',
+            musicalFunction: 'resolution',
+            complexity: 'complex',
+            key: 'G Minor',
+            tempo: 110,
+            timeSignature: '4/4',
+            duration: '7:00',
+            tempoMarking: 'Allegro',
+            description: 'Tosca leaps to her death',
+            musicalElements: {
+              mood: ['Tragic', 'Final', 'Devastating'],
+              instrumentation: ['Full Orchestra', 'Soprano'],
+              dynamics: 'Fortissimo'
+            }
+          }
+        ]
+      }
+    ],
+    musicalAnalysis: {
+      keySignature: 'E Major',
+      timeSignature: '4/4',
+      harmonicComplexity: 'complex',
+      melodicStyle: 'dramatic'
+    },
+    notablePerformances: [
+      {
+        year: 1900,
+        conductor: 'Leopoldo Mugnone',
+        orchestra: 'Orchestra of Teatro Costanzi',
+        venue: 'Teatro Costanzi, Rome',
+        singers: [
+          { name: 'Hariclea Darclée', role: 'Tosca' },
+          { name: 'Emilio De Marchi', role: 'Cavaradossi' },
+          { name: 'Eugenio Giraldoni', role: 'Scarpia' }
+        ],
+        significance: 'World premiere of Tosca',
+        historicalContext: 'Based on Victorien Sardou\'s play "La Tosca". The premiere was a success despite mixed critical reviews.',
+        notes: 'This premiere established Tosca as one of Puccini\'s most dramatic works.'
+      },
+      {
+        year: 1951,
+        conductor: 'Victor De Sabata',
+        orchestra: 'Orchestra Del Teatro Dell\'Opera Di Roma',
+        venue: 'Rome',
+        singers: [
+          { name: 'Maria Callas', role: 'Tosca' },
+          { name: 'Giuseppe Di Stefano', role: 'Cavaradossi' },
+          { name: 'Tito Gobbi', role: 'Scarpia' }
+        ],
+        significance: 'Legendary recording with dream cast',
+        historicalContext: 'This recording features three of the greatest interpreters of these roles.',
+        recordingLabel: 'EMI',
+        notes: 'Callas\'s Tosca is considered definitive, combining vocal perfection with deep emotional intensity. Gobbi\'s Scarpia is legendary.'
+      },
+      {
+        year: 1953,
+        conductor: 'Alberto Erede',
+        orchestra: 'Orchestra Sinfonica Di Torino Della RAI',
+        venue: 'Turin',
+        singers: [
+          { name: 'Renata Tebaldi', role: 'Tosca' }
+        ],
+        significance: 'Renata Tebaldi as Tosca',
+        historicalContext: 'This recording features Tebaldi in one of her signature roles.',
+        recordingLabel: 'Decca',
+        notes: 'Tebaldi\'s luscious voice and dramatic intensity create a memorable Tosca.'
+      }
+    ],
+    notes: 'Puccini\'s dramatic opera about love, jealousy, and politics. Features three of opera\'s greatest arias: "Recondita armonia", "Vissi d\'arte", and "E lucevan le stelle". One of the most performed operas worldwide.'
   }
 };

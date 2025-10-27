@@ -49,12 +49,19 @@ const WORK_METADATA_MAPPING: Record<string, string> = {
   // Madama Butterfly - all recordings map to the same metadata
   'madama butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
   'madama butterfly, sc 74': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
-  'highlights from madama butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
   'Madama Butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'puccini : madame butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'Puccini : Madame Butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'the met\'s first butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'The Met\'s First Butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'highlights from madama butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
+  'Highlights From Madama Butterfly': 'lp_madama-butterfly_giacomo-puccini-dimitri-mitropoulos-dor_1',
   
   // Manon Lescaut - all recordings map to the same metadata
   'manon lescaut': 'lp_manon-lescaut_giacomo-puccini_4',
   'Manon Lescaut': 'lp_manon-lescaut_giacomo-puccini_4',
+  'a portrait of manon': 'lp_manon-lescaut_giacomo-puccini_4',
+  'A Portrait Of Manon': 'lp_manon-lescaut_giacomo-puccini_4',
   
   // La Bohème - all recordings map to the same metadata
   'la bohème': 'lp_la-boheme_giacomo-puccini-maria-callas-giuseppe-d',
@@ -111,6 +118,39 @@ const WORK_METADATA_MAPPING: Record<string, string> = {
   'Tristan und Isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
   'tristan and isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
   'Tristan and Isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
+  'exerpts from tristan und isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
+  'Exerpts From Tristan Und Isolde': 'lp_tristan-und-isolde-love-music-from-acts-ii_richard-wagner-manuel-de-falla-leopold-sto',
+  
+  // Tosca - all recordings map to the same metadata (Puccini has metadata for this)
+  'tosca': 'lp_tosca_giacomo-puccini-renata-tebaldi',
+  'Tosca': 'lp_tosca_giacomo-puccini-renata-tebaldi',
+  
+  // Don Giovanni - all recordings map to the same metadata (Mozart)
+  'don giovanni': 'lp_don-giovanni_wolfgang-amadeus-mozart-wiener-symphoniker-rudolf-moralt',
+  'Don Giovanni': 'lp_don-giovanni_wolfgang-amadeus-mozart-wiener-symphoniker-rudolf-moralt',
+  'don giovanni (complete)': 'lp_don-giovanni_wolfgang-amadeus-mozart-wiener-symphoniker-rudolf-moralt',
+  'Don Giovanni (Complete)': 'lp_don-giovanni_wolfgang-amadeus-mozart-wiener-symphoniker-rudolf-moralt',
+  
+  // Lucia di Lammermoor - all recordings map to the same metadata (Donizetti)
+  'lucia di lammermoor': 'lp_lucia-di-lammermoor_gaetano-donizetti-maria-callas-giuseppe',
+  'Lucia di Lammermoor': 'lp_lucia-di-lammermoor_gaetano-donizetti-maria-callas-giuseppe',
+  'Lucia Di Lammermoor': 'lp_lucia-di-lammermoor_gaetano-donizetti-maria-callas-giuseppe',
+  
+  // Carmen - all recordings map to the same metadata (Bizet)
+  'carmen': 'lp_carmen_georges-bizet-raoul-jobin-solange-michel-michel-dens',
+  'Carmen': 'lp_carmen_georges-bizet-raoul-jobin-solange-michel-michel-dens',
+  'carmen (complete)': 'lp_carmen_georges-bizet-raoul-jobin-solange-michel-michel-dens',
+  'Carmen (Complete)': 'lp_carmen_georges-bizet-raoul-jobin-solange-michel-michel-dens',
+  
+  // The Barber of Seville - all recordings map to the same metadata (Rossini)
+  'the barber of seville': 'lp_the-barber-of-seville_gioacchino-rossini-alceo-galliera-philharmonic-orchestra',
+  'The Barber of Seville': 'lp_the-barber-of-seville_gioacchino-rossini-alceo-galliera-philharmonic-orchestra',
+  'barber of seville': 'lp_the-barber-of-seville_gioacchino-rossini-alceo-galliera-philharmonic-orchestra',
+  'Barber of Seville': 'lp_the-barber-of-seville_gioacchino-rossini-alceo-galliera-philharmonic-orchestra',
+  
+  // Norma - all recordings map to the same metadata (Bellini)
+  'norma': 'lp_norma_vincenzo-bellini-gina-cigna-ebe-stignan',
+  'Norma': 'lp_norma_vincenzo-bellini-gina-cigna-ebe-stignan',
   
   // Add more work mappings as needed...
 };
