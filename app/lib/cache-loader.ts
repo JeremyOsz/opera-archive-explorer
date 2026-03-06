@@ -1,5 +1,6 @@
-import { OperaRecording } from '@/app/types/opera';
 import archiveCache from '@/app/data/archive-cache.json';
+import { buildDiscoveryMetadata } from '@/app/lib/discovery-metadata';
+import { Era, RarityBand, RecordingType } from '@/app/lib/discovery-types';
 
 export interface LightweightOpera {
   identifier: string;
@@ -10,6 +11,15 @@ export interface LightweightOpera {
   subject?: string[];
   imageUrl?: string;
   thumbnailUrl?: string;
+  year?: number;
+  era?: Era;
+  primaryComposer?: string;
+  languages?: string[];
+  subjectsNormalized?: string[];
+  recordingType?: RecordingType;
+  rarityBand?: RarityBand;
+  discoveryScore?: number;
+  composerWorkCount?: number;
 }
 
 interface ArchiveCache {
@@ -43,7 +53,11 @@ export function loadArchiveCache(): ArchiveCache | null {
       return null;
     }
 
-    memoizedCache = archiveCache as ArchiveCache;
+    const rawCache = archiveCache as ArchiveCache;
+    memoizedCache = {
+      ...rawCache,
+      works: buildDiscoveryMetadata(rawCache.works)
+    };
     cacheLoaded = true;
     
     console.log(`📁 Loaded cache with ${memoizedCache.works.length} works`);
@@ -60,7 +74,7 @@ export function loadArchiveCache(): ArchiveCache | null {
 /**
  * Get cache metadata
  */
-export function getCacheMetadata(): { exists: boolean; metadata?: any } {
+export function getCacheMetadata(): { exists: boolean; metadata?: ArchiveCache['metadata'] } {
   try {
     if (!archiveCache || !archiveCache.works || archiveCache.works.length === 0) {
       return { exists: false };

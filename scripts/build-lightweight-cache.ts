@@ -1,7 +1,8 @@
 import { ArchiveAPI } from '../app/lib/archive-api';
-import { OperaRecording } from '../app/types/opera';
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import { buildDiscoveryMetadata } from '../app/lib/discovery-metadata';
+import { Era, RarityBand, RecordingType } from '../app/lib/discovery-types';
 
 interface LightweightOpera {
   identifier: string;
@@ -12,6 +13,15 @@ interface LightweightOpera {
   subject?: string[];
   imageUrl?: string;
   thumbnailUrl?: string;
+  year?: number;
+  era?: Era;
+  primaryComposer?: string;
+  languages?: string[];
+  subjectsNormalized?: string[];
+  recordingType?: RecordingType;
+  rarityBand?: RarityBand;
+  discoveryScore?: number;
+  composerWorkCount?: number;
 }
 
 interface LightweightCache {
@@ -24,7 +34,7 @@ interface LightweightCache {
   works: LightweightOpera[];
 }
 
-const CACHE_VERSION = '1.0.0';
+const CACHE_VERSION = '2.0.0';
 const CACHE_FILE_PATH = join(process.cwd(), 'app', 'data', 'archive-cache.json');
 
 /**
@@ -92,15 +102,17 @@ export async function buildLightweightCache(): Promise<void> {
     console.log(`📊 Total works found: ${totalFound}`);
     console.log(`📊 Works processed: ${allWorks.length}`);
 
+    const enrichedWorks = buildDiscoveryMetadata(allWorks);
+
     // Create lightweight cache structure
     const cache: LightweightCache = {
       metadata: {
         generatedAt: new Date().toISOString(),
-        totalWorks: allWorks.length,
+        totalWorks: enrichedWorks.length,
         lastUpdated: new Date().toISOString(),
         version: CACHE_VERSION
       },
-      works: allWorks
+      works: enrichedWorks
     };
 
     // Write cache to file
@@ -109,7 +121,7 @@ export async function buildLightweightCache(): Promise<void> {
     
     console.log('✅ Lightweight archive cache completed!');
     console.log(`📁 Cache file: ${CACHE_FILE_PATH}`);
-    console.log(`📊 Cached ${allWorks.length} works (lightweight format)`);
+    console.log(`📊 Cached ${enrichedWorks.length} works (lightweight format)`);
     console.log(`📦 Cache size: ${Math.round(JSON.stringify(cache).length / 1024)}KB`);
     
   } catch (error) {

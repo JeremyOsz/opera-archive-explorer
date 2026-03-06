@@ -1,9 +1,10 @@
 import { Suspense } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BarChart3, Music, Home } from 'lucide-react';
+import { BarChart3, Music, Home, Network, Compass } from 'lucide-react';
 import Link from 'next/link';
 import { loadArchiveCache } from '@/app/lib/cache-loader';
 import ComposerBarChart from '@/app/components/ComposerBarChart';
+import NetworkGraphTabs from '@/app/components/NetworkGraphTabs';
 
 export default function ExplorePage() {
   const cache = loadArchiveCache();
@@ -43,6 +44,13 @@ export default function ExplorePage() {
               </div>
             </div>
             <nav className="flex items-center gap-4">
+              <Link 
+                href="/sandbox"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-muted transition-colors"
+              >
+                <Compass className="w-4 h-4" />
+                <span>Sandbox</span>
+              </Link>
               <Link 
                 href="/"
                 className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-muted transition-colors"
@@ -115,10 +123,34 @@ export default function ExplorePage() {
               <p className="text-sm text-muted-foreground">
                 Distribution of works across different composers in the archive
               </p>
+              <Link href="/sandbox?journey=composer-constellations" className="text-sm text-primary hover:underline">
+                Continue exploring in Sandbox
+              </Link>
             </CardHeader>
             <CardContent>
               <Suspense fallback={<ChartLoadingSkeleton />}>
                 <ComposerBarChart works={cache.works} />
+              </Suspense>
+            </CardContent>
+          </Card>
+
+          {/* Network Graph */}
+          <Card>
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <Network className="w-5 h-5" />
+                <CardTitle>Network Exploration</CardTitle>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Interactive network visualizations showing connections between recordings. Switch between tabs to explore different connection types.
+              </p>
+              <Link href="/sandbox?journey=hidden-gems&sortBy=discovery" className="text-sm text-primary hover:underline">
+                Continue exploring in Sandbox
+              </Link>
+            </CardHeader>
+            <CardContent>
+              <Suspense fallback={<ChartLoadingSkeleton />}>
+                <NetworkGraphTabs works={cache.works} maxNodes={150} />
               </Suspense>
             </CardContent>
           </Card>
@@ -135,4 +167,3 @@ function ChartLoadingSkeleton() {
     </div>
   );
 }
-

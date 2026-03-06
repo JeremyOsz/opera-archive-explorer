@@ -1,8 +1,9 @@
 import { Suspense } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Music, Archive, BarChart3 } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Music, Archive, BarChart3, Compass } from 'lucide-react';
 import Link from 'next/link';
 import SearchInterface from '@/app/components/SearchInterface';
+import { Button } from '@/components/ui/button';
 
 // Server Component - runs on the server
 export default function Home() {
@@ -24,6 +25,13 @@ export default function Home() {
               </div>
             </div>
             <nav className="flex items-center gap-4">
+              <Link 
+                href="/sandbox"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-muted transition-colors"
+              >
+                <Compass className="w-4 h-4" />
+                <span>Sandbox</span>
+              </Link>
               <Link 
                 href="/explore"
                 className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-muted transition-colors"
@@ -54,6 +62,23 @@ export default function Home() {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
         <div className="space-y-8">
+          <Card className="border-primary/20 bg-gradient-to-r from-background via-background to-primary/10">
+            <CardHeader>
+              <CardTitle className="text-2xl">Archive Discovery Sandbox</CardTitle>
+              <CardDescription>
+                Explore by pattern: language clusters, rare singletons, early-era recordings, and random jumps across works.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button asChild size="lg">
+                <Link href="/sandbox" className="inline-flex items-center gap-2">
+                  <Compass className="w-4 h-4" />
+                  Open Discovery Sandbox
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+
           {/* Search Interface with Server-Side Data */}
           <Suspense fallback={<SearchLoadingSkeleton />}>
             <SearchInterface />

@@ -36,9 +36,19 @@ export interface OperaRecording {
   collection?: string[];
   format?: string[];
   files?: ArchiveFile[];
-  metadata?: Record<string, any>;
+  metadata?: Record<string, unknown>;
   imageUrl?: string;
   thumbnailUrl?: string;
+  // Discovery metadata
+  year?: number;
+  era?: Era;
+  primaryComposer?: string;
+  languages?: string[];
+  subjectsNormalized?: string[];
+  recordingType?: RecordingType;
+  rarityBand?: RarityBand;
+  discoveryScore?: number;
+  composerWorkCount?: number;
   // Musical metadata
   musicalKey?: string;
   tempo?: number;
@@ -166,3 +176,4 @@ export interface Section {
     dynamics: string;
   };
 }
+import { Era, RarityBand, RecordingType } from '@/app/lib/discovery-types';
