@@ -4,7 +4,7 @@ import { ReactNode, useEffect, useState } from 'react';
 import { LightweightOpera } from '@/app/lib/cache-loader';
 import NetworkGraphComponent from './NetworkGraph';
 import { Button } from '@/components/ui/button';
-import { Music, Globe, Users, Tag, SlidersHorizontal, Search, Sparkles } from 'lucide-react';
+import { Music, Globe, Users, Tag, SlidersHorizontal, Search, Sparkles, Network } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { GraphPriorityMode, NodeSizeMetric } from '@/app/lib/network-graph-builder';
 import { Input } from '@/components/ui/input';
@@ -15,7 +15,7 @@ interface NetworkGraphTabsProps {
   maxNodes?: number;
 }
 
-type ConnectionType = 'composer' | 'subject' | 'language' | 'performer';
+type ConnectionType = 'all' | 'composer' | 'subject' | 'language' | 'performer';
 
 const connectionTypes: Array<{
   id: ConnectionType;
@@ -24,6 +24,13 @@ const connectionTypes: Array<{
   color: string;
   description: string;
 }> = [
+  {
+    id: 'all',
+    label: 'All',
+    icon: <Network className="w-4 h-4" />,
+    color: 'bg-slate-600',
+    description: 'Hybrid links across work, composer, genre, language, performer, and year proximity',
+  },
   {
     id: 'composer',
     label: 'Composer',
@@ -55,7 +62,7 @@ const connectionTypes: Array<{
 ];
 
 export default function NetworkGraphTabs({ works, maxNodes = 100 }: NetworkGraphTabsProps) {
-  const [activeTab, setActiveTab] = useState<ConnectionType>('composer');
+  const [activeTab, setActiveTab] = useState<ConnectionType>('all');
   const [isMobile, setIsMobile] = useState(
     typeof window !== 'undefined' ? window.innerWidth < 900 : false
   );
@@ -64,6 +71,7 @@ export default function NetworkGraphTabs({ works, maxNodes = 100 }: NetworkGraph
   const [searchQuery, setSearchQuery] = useState('');
   const [minLinkStrength, setMinLinkStrength] = useState('2');
   const [nodeLimit, setNodeLimit] = useState('120');
+  const [maxEdgesPerNode, setMaxEdgesPerNode] = useState('8');
   const [priorityMode, setPriorityMode] = useState<GraphPriorityMode>('discoveryScore');
 
   useEffect(() => {
@@ -114,7 +122,8 @@ export default function NetworkGraphTabs({ works, maxNodes = 100 }: NetworkGraph
           <div className="flex flex-wrap gap-2">
             <Badge variant="outline">Click a node to inspect it</Badge>
             <Badge variant="outline">Hover reveals local structure</Badge>
-            <Badge variant="outline">Search keeps matching nodes and their neighbors</Badge>
+            <Badge variant="outline">Search highlights matches without hiding the graph</Badge>
+            {activeTab !== 'all' ? <Badge variant="outline">Current tab is constrained to {activeTab} links</Badge> : null}
           </div>
         </div>
 
@@ -191,7 +200,7 @@ export default function NetworkGraphTabs({ works, maxNodes = 100 }: NetworkGraph
       </div>
 
       {showAdvanced && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 rounded-md border p-3">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 rounded-md border p-3">
           <div className="space-y-1">
             <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
               Node Size Metric
@@ -207,13 +216,29 @@ export default function NetworkGraphTabs({ works, maxNodes = 100 }: NetworkGraph
               </SelectContent>
             </Select>
           </div>
+          <div className="space-y-1">
+            <label className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              Max Edges / Node
+            </label>
+            <Select value={maxEdgesPerNode} onValueChange={setMaxEdgesPerNode}>
+              <SelectTrigger>
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="4">4</SelectItem>
+                <SelectItem value="6">6</SelectItem>
+                <SelectItem value="8">8</SelectItem>
+                <SelectItem value="10">10</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
           <div className="rounded-md border bg-background p-3 text-sm">
             <div className="mb-1 flex items-center gap-2 font-medium">
               <Sparkles className="h-4 w-4 text-primary" />
-              Better sampling
+              Dense by default
             </div>
             <p className="text-muted-foreground">
-              The graph now favors works with stronger discovery signals and richer metadata instead of arbitrary index sampling.
+              `All` mode uses hybrid weighted links and top-K edge pruning to keep the graph connected without becoming a hairball.
             </p>
           </div>
         </div>
@@ -229,6 +254,9 @@ export default function NetworkGraphTabs({ works, maxNodes = 100 }: NetworkGraph
         minLinkStrength={Number(minLinkStrength)}
         searchQuery={searchQuery}
         priorityMode={priorityMode}
+        edgeModel="hybrid"
+        maxEdgesPerNode={Number(maxEdgesPerNode)}
+        searchMode="highlight"
       />
     </div>
   );

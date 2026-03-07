@@ -1,18 +1,14 @@
 import { Suspense } from 'react';
 import { GroupedWork, getCanonicalWorkTitle } from '@/app/lib/work-grouper';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { 
   Music, 
   Calendar, 
   User, 
   Globe, 
-  ChevronDown,
-  ChevronUp,
   Disc
 } from 'lucide-react';
-import { OperaRecording } from '@/app/types/opera';
 import ClientWorkGroupGrid from './ClientWorkGroupGrid';
 
 interface ServerWorkGroupGridProps {
@@ -29,7 +25,7 @@ export default function ServerWorkGroupGrid({ works, loading = false }: ServerWo
           <Card key={i} className="animate-pulse">
             <CardHeader>
               <div className="flex items-start gap-4">
-                <div className="w-24 h-24 bg-muted rounded-lg"></div>
+                <div className="w-24 h-24 bg-muted rounded-[2px]"></div>
                 <div className="flex-1 space-y-2">
                   <div className="h-6 bg-muted rounded w-3/4"></div>
                   <div className="h-4 bg-muted rounded w-1/2"></div>
@@ -59,7 +55,7 @@ export default function ServerWorkGroupGrid({ works, loading = false }: ServerWo
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-bold">
+        <h2 className="font-brand-display text-3xl">
           {works.length} {works.length === 1 ? 'Work' : 'Works'} Found
         </h2>
       </div>
@@ -75,7 +71,7 @@ export default function ServerWorkGroupGrid({ works, loading = false }: ServerWo
                 <div className="flex items-start gap-4">
                   {/* Work Image - Server-side rendered */}
                   {featuredRecording?.imageUrl && (
-                    <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-muted">
+                    <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden rounded-[2px] bg-muted">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={featuredRecording.imageUrl}

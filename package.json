@@ -7,11 +7,13 @@
     "build": "pnpm run build:cache && pnpm run generate-lookup && next build",
     "build:cache": "pnpm exec tsx scripts/build-lightweight-cache.ts",
     "generate-lookup": "pnpm exec tsx scripts/generate-work-lookup.ts",
+    "test": "node --import tsx --test app/lib/*.test.ts",
     "start": "next start",
     "lint": "eslint",
     "cache-archive": "pnpm exec tsx scripts/build-lightweight-cache.ts",
     "cache-demo": "pnpm exec tsx scripts/example-usage.ts",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "test:network-graph": "pnpm exec tsx --test tests/network-graph-builder.test.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",

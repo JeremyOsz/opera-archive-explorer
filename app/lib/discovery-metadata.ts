@@ -1,4 +1,5 @@
 import { Era, RarityBand, RecordingType } from './discovery-types';
+import { inferOperaEra } from './era-utils';
 
 export interface DiscoveryCompatibleWork {
   identifier: string;
@@ -41,14 +42,6 @@ export function extractYear(date?: string): number | undefined {
   if (!match) return undefined;
   const year = parseInt(match[1], 10);
   return Number.isNaN(year) ? undefined : year;
-}
-
-export function getEraFromYear(year?: number): Era {
-  if (!year) return 'unknown';
-  if (year <= 1939) return 'early';
-  if (year <= 1969) return 'golden';
-  if (year <= 1999) return 'modern';
-  return 'contemporary';
 }
 
 export function normalizeLanguages(language?: string): string[] {
@@ -133,7 +126,12 @@ export function buildDiscoveryMetadata<T extends DiscoveryCompatibleWork>(works:
       composerCounts.set(primaryComposer, (composerCounts.get(primaryComposer) || 0) + 1);
     }
 
-    const era = getEraFromYear(extractYear(work.date));
+    const era = inferOperaEra({
+      composer: extractPrimaryComposer(work.creator),
+      title: work.title,
+      subjects: work.subject,
+      year: extractYear(work.date)
+    });
     eraCounts.set(era, (eraCounts.get(era) || 0) + 1);
   });
 
@@ -145,8 +143,13 @@ export function buildDiscoveryMetadata<T extends DiscoveryCompatibleWork>(works:
 
   return works.map((work) => {
     const year = extractYear(work.date);
-    const era = getEraFromYear(year);
     const primaryComposer = extractPrimaryComposer(work.creator);
+    const era = inferOperaEra({
+      composer: primaryComposer,
+      title: work.title,
+      subjects: work.subject,
+      year
+    });
     const languages = normalizeLanguages(work.language);
     const subjectsNormalized = normalizeSubjects(work.subject);
     const recordingType = detectRecordingType(work.title);

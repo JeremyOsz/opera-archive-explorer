@@ -42,7 +42,9 @@ export default function ComposerBarChart({ works }: ComposerBarChartProps) {
       if (!eraMap.has(composer)) {
         eraMap.set(composer, new Set<string>());
       }
-      eraMap.get(composer)?.add(work.era || 'unknown');
+      if (work.era && work.era !== 'unknown') {
+        eraMap.get(composer)?.add(work.era);
+      }
     });
 
     const topCount: ComposerMetric[] = Array.from(countMap.entries())
@@ -58,7 +60,7 @@ export default function ComposerBarChart({ works }: ComposerBarChartProps) {
       .map(([composer, eras]) => ({
         composer,
         value: eras.size,
-        detail: `${countMap.get(composer) || 0} works across ${eras.size} eras`
+        detail: `${countMap.get(composer) || 0} works across ${eras.size} periods`
       }))
       .sort((a, b) => b.value - a.value || (countMap.get(b.composer) || 0) - (countMap.get(a.composer) || 0))
       .slice(0, 16);
@@ -87,7 +89,7 @@ export default function ComposerBarChart({ works }: ComposerBarChartProps) {
           size="sm"
           onClick={() => setView('era-diversity')}
         >
-          Era Diversity
+          Period Diversity
         </Button>
       </div>
 

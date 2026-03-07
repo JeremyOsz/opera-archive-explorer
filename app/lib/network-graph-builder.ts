@@ -16,6 +16,11 @@ export interface NetworkNode extends SimulationNodeDatum {
   era?: Era;
   discoveryScore?: number;
   degree?: number;
+  normalizedComposer?: string;
+  normalizedWorkKey: string;
+  subjectsNormalized: string[];
+  languagesNormalized: string[];
+  performersNormalized: string[];
   /** Set by D3 force simulation */
   x?: number;
   y?: number;
@@ -24,7 +29,7 @@ export interface NetworkNode extends SimulationNodeDatum {
 export interface NetworkLink extends SimulationLinkDatum<NetworkNode> {
   source: string | NetworkNode;
   target: string | NetworkNode;
-  type: 'subject' | 'composer' | 'language' | 'performer' | 'similar';
+  type: 'subject' | 'composer' | 'language' | 'performer' | 'work' | 'similar';
   strength: number;
   value: number;
   sharedValue?: string; // What they share (e.g., "Puccini", "Classical", "eng")
@@ -37,39 +42,103 @@ export interface NetworkGraph {
 
 export type NodeSizeMetric = 'connections' | 'discoveryScore' | 'yearRecency';
 export type GraphPriorityMode = 'discoveryScore' | 'metadataRichness' | 'yearRecency';
+export type GraphEdgeModel = 'hybrid' | 'legacy';
 
 interface GraphBuildOptions {
   priorityMode?: GraphPriorityMode;
+  edgeModel?: GraphEdgeModel;
+  maxEdgesPerNode?: number;
 }
 
-/**
- * Extract primary composer from creator field
- */
+const CREATOR_PERFORMER_HINTS = [
+  'orchestra',
+  'baritone',
+  'soprano',
+  'tenor',
+  'conductor',
+  'company',
+  'choir',
+  'band',
+  'singer',
+  'symphony',
+  'philharmonia',
+  'opera company',
+];
+
+const WORK_STOP_WORDS = new Set([
+  'act',
+  'scene',
+  'part',
+  'disc',
+  'track',
+  'live',
+  'recording',
+  'complete',
+  'highlights',
+  'opera',
+  'edition',
+  'version',
+]);
+
+function stripDiacritics(input: string): string {
+  return input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function normalizeToken(input?: string): string {
+  if (!input) return '';
+  return stripDiacritics(input)
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function normalizeComposerKey(input?: string): string {
+  return normalizeToken(input);
+}
+
+export function normalizeWorkKey(input?: string): string {
+  if (!input) return '';
+  const normalized = normalizeToken(input)
+    .split(' ')
+    .filter((token) => token && !WORK_STOP_WORDS.has(token) && !/^\d{4}$/.test(token))
+    .join(' ')
+    .trim();
+  return normalized;
+}
+
+function getNormalizedArray(items: string[]): string[] {
+  return Array.from(
+    new Set(
+      items
+        .map((item) => normalizeToken(item))
+        .filter(Boolean)
+    )
+  );
+}
+
+function findOriginalMatch(candidates: string[], normalizedTarget: string): string | undefined {
+  return candidates.find((candidate) => normalizeToken(candidate) === normalizedTarget);
+}
+
+function isLikelyPerformer(text: string): boolean {
+  const lowered = text.toLowerCase();
+  return CREATOR_PERFORMER_HINTS.some((hint) => lowered.includes(hint));
+}
+
 function extractPrimaryComposer(creator?: string): string | null {
   if (!creator) return null;
-  
-  const creatorLower = creator.toLowerCase();
-  
-  // Skip performers/orchestras
-  if (
-    creatorLower.includes('orchestra') ||
-    creatorLower.includes('baritone') ||
-    creatorLower.includes('soprano') ||
-    creatorLower.includes('tenor') ||
-    creatorLower.includes('conductor') ||
-    creatorLower.includes('company') ||
-    creatorLower.includes('choir') ||
-    creatorLower.includes('band')
-  ) {
-    return null;
+  const parts = creator
+    .split(',')
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  for (const part of parts) {
+    if (!isLikelyPerformer(part)) {
+      return part;
+    }
   }
-  
-  // Extract first composer (before comma)
-  const primaryComposer = creator.includes(',') 
-    ? creator.split(',')[0].trim() 
-    : creator.trim();
-  
-  return primaryComposer || null;
+  return null;
 }
 
 /**
@@ -77,46 +146,37 @@ function extractPrimaryComposer(creator?: string): string | null {
  */
 function extractPerformers(creator?: string): string[] {
   if (!creator) return [];
-  
-  const parts = creator.split(',').map(p => p.trim());
+
+  const parts = creator
+    .split(',')
+    .map((part) => part.trim())
+    .filter(Boolean);
   const performers: string[] = [];
-  
-  // Skip the first part (usually the composer)
-  for (let i = 1; i < parts.length; i++) {
+
+  for (let i = 0; i < parts.length; i++) {
     const part = parts[i];
-    const partLower = part.toLowerCase();
-    
-    // Include if it looks like a performer/orchestra
-    if (
-      partLower.includes('orchestra') ||
-      partLower.includes('baritone') ||
-      partLower.includes('soprano') ||
-      partLower.includes('tenor') ||
-      partLower.includes('conductor') ||
-      partLower.includes('choir') ||
-      partLower.includes('band') ||
-      partLower.includes('singer') ||
-      partLower.includes('symphony') ||
-      partLower.includes('philharmonia') ||
-      partLower.includes('opera company')
-    ) {
+    if (isLikelyPerformer(part)) {
       performers.push(part);
-    } else if (parts.length > 2 && i > 0) {
-      // If there are 3+ parts and this isn't the first, it's likely a performer
-      // But be more conservative - only if it's clearly a name (has capital letters)
-      if (part.match(/[A-Z]/)) {
-        performers.push(part);
-      }
     }
   }
-  
+
   return performers;
+}
+
+function hashGroup(value: string): number {
+  return value
+    .split('')
+    .reduce((acc, char) => acc + char.charCodeAt(0), 0) % 10;
+}
+
+function getPrimaryComposer(work: LightweightOpera): string | null {
+  return work.primaryComposer || extractPrimaryComposer(work.creator);
 }
 
 function getMetadataRichnessScore(work: LightweightOpera): number {
   const subjectScore = work.subjectsNormalized?.length || work.subject?.length || 0;
   const languageScore = work.languages?.length || work.language?.split(',').filter(Boolean).length || 0;
-  const composerScore = work.primaryComposer ? 4 : 0;
+  const composerScore = getPrimaryComposer(work) ? 4 : 0;
   const performerScore = extractPerformers(work.creator).length * 2;
   const yearScore = work.year ? 2 : 0;
   const rarityScore = work.rarityBand === 'rare' ? 3 : work.rarityBand === 'uncommon' ? 2 : 0;
@@ -133,6 +193,282 @@ function getPriorityScore(work: LightweightOpera, mode: GraphPriorityMode): numb
   return (work.discoveryScore || 0) * 10 + getMetadataRichnessScore(work);
 }
 
+function sampleWorksForComposerMode(
+  works: LightweightOpera[],
+  maxNodes: number,
+  priorityMode: GraphPriorityMode
+): LightweightOpera[] {
+  const byComposer = new Map<string, LightweightOpera[]>();
+
+  works.forEach((work) => {
+    const composer = normalizeComposerKey(getPrimaryComposer(work) || '');
+    if (!composer) return;
+    const group = byComposer.get(composer) || [];
+    group.push(work);
+    byComposer.set(composer, group);
+  });
+
+  const repeatedComposerGroups = Array.from(byComposer.values())
+    .filter((group) => group.length > 1)
+    .map((group) => [...group].sort((a, b) => getPriorityScore(b, priorityMode) - getPriorityScore(a, priorityMode)))
+    .sort((a, b) => b.length - a.length);
+
+  const sampled: LightweightOpera[] = [];
+  const selectedIds = new Set<string>();
+  const selectedGroupCount = Math.max(1, Math.min(repeatedComposerGroups.length, Math.floor(maxNodes / 2)));
+  const prioritizedGroups = repeatedComposerGroups.slice(0, selectedGroupCount);
+
+  for (const group of prioritizedGroups) {
+    if (sampled.length >= maxNodes) break;
+    const first = group[0];
+    if (first && !selectedIds.has(first.identifier)) {
+      sampled.push(first);
+      selectedIds.add(first.identifier);
+    }
+    if (sampled.length >= maxNodes) break;
+    const second = group[1];
+    if (second && !selectedIds.has(second.identifier)) {
+      sampled.push(second);
+      selectedIds.add(second.identifier);
+    }
+  }
+
+  let index = 2;
+  while (sampled.length < maxNodes && prioritizedGroups.length > 0) {
+    let addedInRound = false;
+    for (const group of prioritizedGroups) {
+      const work = group[index];
+      if (!work || selectedIds.has(work.identifier)) continue;
+      sampled.push(work);
+      selectedIds.add(work.identifier);
+      addedInRound = true;
+      if (sampled.length >= maxNodes) break;
+    }
+    if (!addedInRound) break;
+    index += 1;
+  }
+
+  if (sampled.length < maxNodes) {
+    const remaining = [...works]
+      .filter((work) => !selectedIds.has(work.identifier))
+      .sort((a, b) => getPriorityScore(b, priorityMode) - getPriorityScore(a, priorityMode));
+    sampled.push(...remaining.slice(0, maxNodes - sampled.length));
+  }
+
+  return sampled.slice(0, maxNodes);
+}
+
+function getOverlapCount(a: string[], b: string[]): number {
+  if (a.length === 0 || b.length === 0) return 0;
+  const lookup = new Set(a);
+  return b.reduce((count, value) => (lookup.has(value) ? count + 1 : count), 0);
+}
+
+function getStrictLink(
+  nodeA: NetworkNode,
+  nodeB: NetworkNode,
+  connectionType: 'subject' | 'composer' | 'language' | 'performer',
+  minConnections: number
+): NetworkLink | null {
+  let strength = 0;
+  let sharedValue: string | undefined;
+
+  if (connectionType === 'composer') {
+    if (nodeA.normalizedComposer && nodeA.normalizedComposer === nodeB.normalizedComposer) {
+      strength = 6;
+      sharedValue = nodeA.composer;
+    }
+  }
+
+  if (connectionType === 'subject') {
+    const overlap = nodeA.subjectsNormalized.filter((subject) => nodeB.subjectsNormalized.includes(subject));
+    if (overlap.length > 0) {
+      strength = overlap.length * 2;
+      sharedValue = findOriginalMatch(nodeA.subjects, overlap[0]) || overlap[0];
+    }
+  }
+
+  if (connectionType === 'language') {
+    const overlap = nodeA.languagesNormalized.filter((language) => nodeB.languagesNormalized.includes(language));
+    if (overlap.length > 0) {
+      strength = overlap.length;
+      sharedValue = findOriginalMatch(nodeA.languages, overlap[0]) || overlap[0];
+    }
+  }
+
+  if (connectionType === 'performer') {
+    const overlap = nodeA.performersNormalized.filter((performer) => nodeB.performersNormalized.includes(performer));
+    if (overlap.length > 0) {
+      strength = overlap.length * 3;
+      sharedValue = findOriginalMatch(nodeA.performers, overlap[0]) || overlap[0];
+    }
+  }
+
+  if (strength < minConnections) return null;
+
+  return {
+    source: nodeA.id,
+    target: nodeB.id,
+    type: connectionType,
+    strength,
+    value: strength,
+    sharedValue,
+  };
+}
+
+function getLegacyAllLink(nodeA: NetworkNode, nodeB: NetworkNode, minConnections: number): NetworkLink | null {
+  let connectionStrength = 0;
+  let linkType: NetworkLink['type'] = 'similar';
+  let sharedValue: string | undefined;
+
+  const sharedSubjects = nodeA.subjectsNormalized.filter((subject) => nodeB.subjectsNormalized.includes(subject));
+  if (sharedSubjects.length > 0) {
+    connectionStrength += sharedSubjects.length * 2;
+    linkType = 'subject';
+    sharedValue = findOriginalMatch(nodeA.subjects, sharedSubjects[0]) || sharedSubjects[0];
+  }
+
+  if (nodeA.normalizedComposer && nodeA.normalizedComposer === nodeB.normalizedComposer) {
+    connectionStrength += 5;
+    linkType = 'composer';
+    sharedValue = nodeA.composer;
+  }
+
+  const sharedLanguages = nodeA.languagesNormalized.filter((language) => nodeB.languagesNormalized.includes(language));
+  if (sharedLanguages.length > 0) {
+    connectionStrength += sharedLanguages.length;
+    if (linkType === 'similar') {
+      linkType = 'language';
+      sharedValue = findOriginalMatch(nodeA.languages, sharedLanguages[0]) || sharedLanguages[0];
+    }
+  }
+
+  const sharedPerformers = nodeA.performersNormalized.filter((performer) => nodeB.performersNormalized.includes(performer));
+  if (sharedPerformers.length > 0) {
+    connectionStrength += sharedPerformers.length * 3;
+    if (linkType === 'similar') {
+      linkType = 'performer';
+      sharedValue = findOriginalMatch(nodeA.performers, sharedPerformers[0]) || sharedPerformers[0];
+    }
+  }
+
+  if (connectionStrength < minConnections) return null;
+
+  return {
+    source: nodeA.id,
+    target: nodeB.id,
+    type: linkType,
+    strength: connectionStrength,
+    value: connectionStrength,
+    sharedValue,
+  };
+}
+
+function getHybridAllLink(nodeA: NetworkNode, nodeB: NetworkNode, minConnections: number): NetworkLink | null {
+  let score = 0;
+  const contributions: Array<{ type: NetworkLink['type']; score: number; sharedValue?: string }> = [];
+
+  if (nodeA.normalizedComposer && nodeA.normalizedComposer === nodeB.normalizedComposer) {
+    const composerScore = 6;
+    score += composerScore;
+    contributions.push({ type: 'composer', score: composerScore, sharedValue: nodeA.composer });
+  }
+
+  if (nodeA.normalizedWorkKey && nodeA.normalizedWorkKey === nodeB.normalizedWorkKey) {
+    const workScore = 5;
+    score += workScore;
+    contributions.push({ type: 'work', score: workScore, sharedValue: nodeA.title });
+  }
+
+  const subjectOverlap = getOverlapCount(nodeA.subjectsNormalized, nodeB.subjectsNormalized);
+  if (subjectOverlap > 0) {
+    const subjectScore = Math.min(6, subjectOverlap * 2);
+    score += subjectScore;
+    const match = nodeA.subjectsNormalized.find((subject) => nodeB.subjectsNormalized.includes(subject)) || '';
+    contributions.push({
+      type: 'subject',
+      score: subjectScore,
+      sharedValue: findOriginalMatch(nodeA.subjects, match) || match,
+    });
+  }
+
+  const languageOverlap = getOverlapCount(nodeA.languagesNormalized, nodeB.languagesNormalized);
+  if (languageOverlap > 0) {
+    const languageScore = Math.min(2, languageOverlap);
+    score += languageScore;
+    const match = nodeA.languagesNormalized.find((language) => nodeB.languagesNormalized.includes(language)) || '';
+    contributions.push({
+      type: 'language',
+      score: languageScore,
+      sharedValue: findOriginalMatch(nodeA.languages, match) || match,
+    });
+  }
+
+  const performerOverlap = getOverlapCount(nodeA.performersNormalized, nodeB.performersNormalized);
+  if (performerOverlap > 0) {
+    const performerScore = Math.min(6, performerOverlap * 2);
+    score += performerScore;
+    const match = nodeA.performersNormalized.find((performer) => nodeB.performersNormalized.includes(performer)) || '';
+    contributions.push({
+      type: 'performer',
+      score: performerScore,
+      sharedValue: findOriginalMatch(nodeA.performers, match) || match,
+    });
+  }
+
+  if (nodeA.year && nodeB.year) {
+    const yearDelta = Math.abs(nodeA.year - nodeB.year);
+    if (yearDelta <= 5) score += 2;
+    else if (yearDelta <= 15) score += 1;
+  }
+
+  if (score < minConnections) return null;
+
+  const dominantContribution = contributions.sort((a, b) => b.score - a.score)[0];
+  const linkType = dominantContribution?.type || 'similar';
+
+  return {
+    source: nodeA.id,
+    target: nodeB.id,
+    type: linkType,
+    strength: score,
+    value: score,
+    sharedValue: dominantContribution?.sharedValue,
+  };
+}
+
+function pruneLinksByNodeTopK(
+  links: NetworkLink[],
+  nodes: NetworkNode[],
+  maxEdgesPerNode?: number
+): NetworkLink[] {
+  if (!maxEdgesPerNode || maxEdgesPerNode < 1 || links.length === 0) {
+    return links;
+  }
+
+  const incident = new Map<string, Array<{ index: number; key: string; strength: number }>>();
+  nodes.forEach((node) => incident.set(node.id, []));
+
+  links.forEach((link, index) => {
+    const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
+    const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+    const edgeKey = sourceId < targetId ? `${sourceId}|${targetId}` : `${targetId}|${sourceId}`;
+    const descriptor = { index, key: edgeKey, strength: link.strength };
+    incident.get(sourceId)?.push(descriptor);
+    incident.get(targetId)?.push(descriptor);
+  });
+
+  const keep = new Set<number>();
+  incident.forEach((descriptors) => {
+    descriptors
+      .sort((a, b) => b.strength - a.strength || a.key.localeCompare(b.key))
+      .slice(0, maxEdgesPerNode)
+      .forEach((descriptor) => keep.add(descriptor.index));
+  });
+
+  return links.filter((_, index) => keep.has(index));
+}
+
 /**
  * Build a network graph from archive works
  * Creates connections based on shared metadata
@@ -146,31 +482,48 @@ export function buildNetworkGraph(
   options: GraphBuildOptions = {}
 ): NetworkGraph {
   const priorityMode = options.priorityMode || 'discoveryScore';
+  const edgeModel = options.edgeModel || (connectionType === 'all' ? 'hybrid' : 'legacy');
+  const maxEdgesPerNode = options.maxEdgesPerNode ?? (connectionType === 'all' ? 8 : undefined);
 
-  const sortedWorks = [...works].sort((a, b) => getPriorityScore(b, priorityMode) - getPriorityScore(a, priorityMode));
-  const sampledWorks = sortedWorks.slice(0, maxNodes);
+  const sampledWorks =
+    connectionType === 'composer'
+      ? sampleWorksForComposerMode(works, maxNodes, priorityMode)
+      : [...works]
+          .sort((a, b) => getPriorityScore(b, priorityMode) - getPriorityScore(a, priorityMode))
+          .slice(0, maxNodes);
 
-  // Build nodes
   const nodes: NetworkNode[] = sampledWorks.map((work) => {
-    const composer = work.primaryComposer || extractPrimaryComposer(work.creator);
+    const composer = getPrimaryComposer(work);
     const performers = extractPerformers(work.creator);
     const subjects = work.subjectsNormalized || work.subject || [];
-    const languages = work.languages || (work.language 
-      ? work.language.split(',').map(l => l.trim()).filter(Boolean)
-      : []);
+    const languages = work.languages || (
+      work.language
+        ? work.language.split(',').map((language) => language.trim()).filter(Boolean)
+        : []
+    );
+    const normalizedComposer = normalizeComposerKey(composer || '');
+    const normalizedWorkKey = normalizeWorkKey(work.title);
+    const subjectsNormalized = getNormalizedArray(subjects);
+    const languagesNormalized = getNormalizedArray(languages);
+    const performersNormalized = getNormalizedArray(performers);
 
-    // Group by connection type for color coding
     let group = 0;
-    if (connectionType === 'composer' && composer) {
-      group = composer.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 10;
-    } else if (connectionType === 'subject' && subjects.length > 0) {
-      group = subjects[0].split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 10;
-    } else if (connectionType === 'language' && languages.length > 0) {
-      group = languages[0].split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 10;
-    } else if (connectionType === 'performer' && performers.length > 0) {
-      group = performers[0].split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 10;
-    } else if (composer) {
-      group = composer.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 10;
+    if (connectionType === 'composer' && normalizedComposer) {
+      group = hashGroup(normalizedComposer);
+    } else if (connectionType === 'subject' && subjectsNormalized.length > 0) {
+      group = hashGroup(subjectsNormalized[0]);
+    } else if (connectionType === 'language' && languagesNormalized.length > 0) {
+      group = hashGroup(languagesNormalized[0]);
+    } else if (connectionType === 'performer' && performersNormalized.length > 0) {
+      group = hashGroup(performersNormalized[0]);
+    } else if (normalizedComposer) {
+      group = hashGroup(normalizedComposer);
+    } else if (subjectsNormalized.length > 0) {
+      group = hashGroup(subjectsNormalized[0]);
+    } else if (languagesNormalized.length > 0) {
+      group = hashGroup(languagesNormalized[0]);
+    } else if (normalizedWorkKey) {
+      group = hashGroup(normalizedWorkKey);
     }
 
     return {
@@ -186,127 +539,56 @@ export function buildNetworkGraph(
       year: work.year,
       era: work.era,
       discoveryScore: work.discoveryScore,
-      degree: 0
+      degree: 0,
+      normalizedComposer: normalizedComposer || undefined,
+      normalizedWorkKey,
+      subjectsNormalized,
+      languagesNormalized,
+      performersNormalized,
     };
   });
 
-  // Build links based on shared metadata
-  const linkMap = new Map<string, NetworkLink>();
+  const rawLinks: NetworkLink[] = [];
 
   for (let i = 0; i < nodes.length; i++) {
     for (let j = i + 1; j < nodes.length; j++) {
       const nodeA = nodes[i];
       const nodeB = nodes[j];
-      
-      let connectionStrength = 0;
-      let linkType: NetworkLink['type'] = 'similar';
-      let sharedValue: string | undefined;
 
-      // Check shared subjects/genres
-      if (connectionType === 'all' || connectionType === 'subject') {
-        const sharedSubjects = nodeA.subjects.filter(s => nodeB.subjects.includes(s));
-        if (sharedSubjects.length > 0) {
-          connectionStrength += sharedSubjects.length * 2;
-          linkType = 'subject';
-          sharedValue = sharedSubjects[0]; // Use first shared subject
-        }
+      let link: NetworkLink | null = null;
+
+      if (connectionType === 'all') {
+        link = edgeModel === 'legacy'
+          ? getLegacyAllLink(nodeA, nodeB, minConnections)
+          : getHybridAllLink(nodeA, nodeB, minConnections);
+      } else {
+        link = getStrictLink(nodeA, nodeB, connectionType, minConnections);
       }
 
-      // Check shared composer
-      if (connectionType === 'all' || connectionType === 'composer') {
-        if (nodeA.composer && nodeB.composer && nodeA.composer === nodeB.composer) {
-          connectionStrength += 5;
-          linkType = 'composer';
-          sharedValue = nodeA.composer;
-        }
-      }
-
-      // Check shared languages
-      if (connectionType === 'all' || connectionType === 'language') {
-        const sharedLanguages = nodeA.languages.filter(l => nodeB.languages.includes(l));
-        if (sharedLanguages.length > 0) {
-          connectionStrength += sharedLanguages.length;
-          if (linkType === 'similar') {
-            linkType = 'language';
-            sharedValue = sharedLanguages[0];
-          }
-        }
-      }
-
-      // Check shared performers
-      if (connectionType === 'all' || connectionType === 'performer') {
-        const sharedPerformers = nodeA.performers.filter(p => nodeB.performers.includes(p));
-        if (sharedPerformers.length > 0) {
-          connectionStrength += sharedPerformers.length * 3;
-          if (linkType === 'similar' || connectionType === 'performer') {
-            linkType = 'performer';
-            sharedValue = sharedPerformers[0];
-          }
-        }
-      }
-
-      // Only create link if it matches the filter and has meaningful connection
-      const shouldCreateLink = connectionType === 'all' 
-        ? connectionStrength >= minConnections
-        : linkType === connectionType && connectionStrength >= minConnections;
-
-      if (shouldCreateLink) {
-        const linkKey = `${nodeA.id}-${nodeB.id}`;
-        const existingLink = linkMap.get(linkKey);
-        
-        if (!existingLink || existingLink.strength < connectionStrength) {
-          const link: NetworkLink = {
-            source: nodeA.id,
-            target: nodeB.id,
-            type: linkType,
-            strength: connectionStrength,
-            value: connectionStrength,
-            sharedValue,
-          };
-          
-          linkMap.set(linkKey, link);
-        }
+      if (link) {
+        rawLinks.push(link);
       }
     }
   }
 
-  // Convert map to array
-  const finalLinks = Array.from(linkMap.values());
-
-  // Filter nodes that have no connections (optional - can keep them for isolated nodes)
-  const connectedNodeIds = new Set<string>();
-  finalLinks.forEach(link => {
-    const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-    const targetId = typeof link.target === 'string' ? link.target : link.target.id;
-    connectedNodeIds.add(sourceId);
-    connectedNodeIds.add(targetId);
-  });
-
-  // Keep all nodes but mark isolated ones
-  const filteredNodes = nodes.filter(node => 
-    connectedNodeIds.has(node.id) || nodes.length < 50 // Keep isolated nodes if graph is small
-  );
-
-  // Update links to only reference existing nodes
-  const filteredLinks = finalLinks.filter(link =>
-    filteredNodes.some(n => n.id === (typeof link.source === 'string' ? link.source : link.source.id)) &&
-    filteredNodes.some(n => n.id === (typeof link.target === 'string' ? link.target : link.target.id))
-  );
+  const links = pruneLinksByNodeTopK(rawLinks, nodes, maxEdgesPerNode);
 
   const degrees = new Map<string, number>();
-  filteredLinks.forEach((link) => {
+  links.forEach((link) => {
     const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
     const targetId = typeof link.target === 'string' ? link.target : link.target.id;
     degrees.set(sourceId, (degrees.get(sourceId) || 0) + 1);
     degrees.set(targetId, (degrees.get(targetId) || 0) + 1);
   });
-  filteredNodes.forEach((node) => {
-    node.degree = degrees.get(node.id) || 0;
-  });
+
+  const nodesWithDegrees = nodes.map((node) => ({
+    ...node,
+    degree: degrees.get(node.id) || 0,
+  }));
 
   return {
-    nodes: filteredNodes,
-    links: filteredLinks,
+    nodes: nodesWithDegrees,
+    links,
   };
 }
 
@@ -316,14 +598,14 @@ export function buildNetworkGraph(
 export function getNetworkStats(graph: NetworkGraph) {
   const nodeCount = graph.nodes.length;
   const linkCount = graph.links.length;
-  
+
   const linkTypes = graph.links.reduce((acc, link) => {
     acc[link.type] = (acc[link.type] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
 
-  const composers = new Set(graph.nodes.map(n => n.composer).filter(Boolean));
-  const subjects = new Set(graph.nodes.flatMap(n => n.subjects));
+  const composers = new Set(graph.nodes.map((node) => node.composer).filter(Boolean));
+  const subjects = new Set(graph.nodes.flatMap((node) => node.subjects));
 
   const averageConnections = nodeCount > 0 ? linkCount / nodeCount : 0;
   const density = nodeCount > 1 ? (2 * linkCount) / (nodeCount * (nodeCount - 1)) : 0;
@@ -361,6 +643,6 @@ export function getNetworkStats(graph: NetworkGraph) {
     subjectCount: subjects.size,
     averageConnections,
     density,
-    componentCount
+    componentCount,
   };
 }

@@ -1,4 +1,4 @@
-export type Era = 'early' | 'golden' | 'modern' | 'contemporary' | 'unknown';
+export type Era = 'baroque' | 'classical' | 'romantic' | 'modern' | 'contemporary' | 'unknown';
 
 export type RecordingType = 'complete' | 'highlights' | 'excerpts' | 'unknown';
 
@@ -23,7 +23,7 @@ export interface DiscoveryFilters {
   sortBy: DiscoverySort;
 }
 
-export const ERA_OPTIONS: Era[] = ['early', 'golden', 'modern', 'contemporary', 'unknown'];
+export const ERA_OPTIONS: Era[] = ['baroque', 'classical', 'romantic', 'modern', 'contemporary', 'unknown'];
 
 export const RARITY_OPTIONS: RarityBand[] = ['rare', 'uncommon', 'well-known'];
 

@@ -5,6 +5,7 @@ import * as d3 from 'd3';
 import { LightweightOpera } from '@/app/lib/cache-loader';
 import {
   buildNetworkGraph,
+  GraphEdgeModel,
   GraphPriorityMode,
   getNetworkStats,
   NetworkGraph,
@@ -12,6 +13,7 @@ import {
   NetworkNode,
   NodeSizeMetric
 } from '@/app/lib/network-graph-builder';
+import { applyNetworkSearch, NetworkSearchMode } from '@/app/lib/network-search';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -26,18 +28,35 @@ interface NetworkGraphProps {
   minLinkStrength?: number;
   searchQuery?: string;
   priorityMode?: GraphPriorityMode;
+  edgeModel?: GraphEdgeModel;
+  maxEdgesPerNode?: number;
+  searchMode?: NetworkSearchMode;
 }
 
 type SimNode = NetworkNode & d3.SimulationNodeDatum;
 type SimLink = NetworkLink & d3.SimulationLinkDatum<SimNode>;
 
 const LINK_COLORS: Record<NetworkLink['type'], string> = {
-  subject: '#2563eb',
-  composer: '#dc2626',
-  language: '#059669',
-  performer: '#d97706',
-  similar: '#4b5563'
+  subject: '#64748b',
+  composer: '#c8102e',
+  language: '#94a3b8',
+  performer: '#475569',
+  work: '#9a1029',
+  similar: '#cbd5e1'
 };
+
+const NODE_PALETTE = [
+  '#64748b',
+  '#475569',
+  '#94a3b8',
+  '#6b7280',
+  '#9ca3af',
+  '#c8102e',
+  '#9a1029',
+  '#b4233d',
+  '#7f1d1d',
+  '#a16207',
+];
 
 function getRadius(node: NetworkNode, metric: NodeSizeMetric, minYear: number, maxYear: number): number {
   if (metric === 'connections') {
@@ -57,12 +76,16 @@ function getRadius(node: NetworkNode, metric: NodeSizeMetric, minYear: number, m
 function buildNeighborSet(graph: NetworkGraph, nodeId: string): Set<string> {
   const neighbors = new Set<string>([nodeId]);
   graph.links.forEach((link) => {
-    const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-    const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+    const sourceId = getEndpointId(link.source);
+    const targetId = getEndpointId(link.target);
     if (sourceId === nodeId) neighbors.add(targetId);
     if (targetId === nodeId) neighbors.add(sourceId);
   });
   return neighbors;
+}
+
+function getEndpointId(endpoint: string | NetworkNode): string {
+  return typeof endpoint === 'string' ? endpoint : endpoint.id;
 }
 
 function getLinkLabel(link: NetworkLink): string {
@@ -71,6 +94,7 @@ function getLinkLabel(link: NetworkLink): string {
   }
   if (link.type === 'subject') return `Shared subject: ${link.sharedValue}`;
   if (link.type === 'composer') return `Shared composer: ${link.sharedValue}`;
+  if (link.type === 'work') return `Shared work: ${link.sharedValue}`;
   if (link.type === 'language') return `Shared language: ${link.sharedValue}`;
   if (link.type === 'performer') return `Shared performer: ${link.sharedValue}`;
   return link.sharedValue;
@@ -84,7 +108,10 @@ export default function NetworkGraphComponent({
   mobileMode = false,
   minLinkStrength = 1,
   searchQuery = '',
-  priorityMode = 'discoveryScore'
+  priorityMode = 'discoveryScore',
+  edgeModel = 'hybrid',
+  maxEdgesPerNode = 8,
+  searchMode = 'highlight'
 }: NetworkGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const simulationRef = useRef<d3.Simulation<SimNode, SimLink> | null>(null);
@@ -95,69 +122,54 @@ export default function NetworkGraphComponent({
 
   const baseGraph = useMemo(() => {
     if (works.length === 0) return { nodes: [], links: [] } as NetworkGraph;
-    return buildNetworkGraph(works, maxNodes, minLinkStrength, connectionType, { priorityMode });
-  }, [works, maxNodes, minLinkStrength, connectionType, priorityMode]);
-
-  const query = searchQuery.trim().toLowerCase();
-
-  const searchableGraph = useMemo(() => {
-    if (!query) {
-      return baseGraph;
-    }
-
-    const matchingNodes = baseGraph.nodes.filter((node) => {
-      const haystacks = [node.title, node.composer, ...node.subjects, ...node.languages, ...node.performers]
-        .filter(Boolean)
-        .map((value) => value!.toLowerCase());
-      return haystacks.some((value) => value.includes(query));
+    return buildNetworkGraph(works, maxNodes, minLinkStrength, connectionType, {
+      priorityMode,
+      edgeModel,
+      maxEdgesPerNode,
     });
+  }, [works, maxNodes, minLinkStrength, connectionType, priorityMode, edgeModel, maxEdgesPerNode]);
 
-    if (matchingNodes.length === 0) {
-      return { nodes: [], links: [] } as NetworkGraph;
-    }
+  const searchResult = useMemo(
+    () => applyNetworkSearch(baseGraph, searchQuery, searchMode),
+    [baseGraph, searchQuery, searchMode]
+  );
 
-    const keepIds = new Set<string>();
-    matchingNodes.forEach((node) => buildNeighborSet(baseGraph, node.id).forEach((id) => keepIds.add(id)));
-
-    return {
-      nodes: baseGraph.nodes.filter((node) => keepIds.has(node.id)),
-      links: baseGraph.links.filter((link) => {
-        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
-        return keepIds.has(sourceId) && keepIds.has(targetId);
-      }),
-    };
-  }, [baseGraph, query]);
+  const searchedGraph = searchResult.graph;
+  const normalizedQuery = searchQuery.trim();
 
   const graph = useMemo(() => {
     if (!focusNeighborhood || !selectedNodeId) {
-      return searchableGraph;
+      return searchedGraph;
     }
-    if (!searchableGraph.nodes.some((node) => node.id === selectedNodeId)) {
-      return searchableGraph;
+    if (!searchedGraph.nodes.some((node) => node.id === selectedNodeId)) {
+      return searchedGraph;
     }
-    const neighbors = buildNeighborSet(searchableGraph, selectedNodeId);
-    const nodes = searchableGraph.nodes.filter((node) => neighbors.has(node.id));
-    const links = searchableGraph.links.filter((link) => {
-      const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-      const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+    const neighbors = buildNeighborSet(searchedGraph, selectedNodeId);
+    const nodes = searchedGraph.nodes.filter((node) => neighbors.has(node.id));
+    const links = searchedGraph.links.filter((link) => {
+      const sourceId = getEndpointId(link.source);
+      const targetId = getEndpointId(link.target);
       return neighbors.has(sourceId) && neighbors.has(targetId);
     });
     return { nodes, links };
-  }, [searchableGraph, focusNeighborhood, selectedNodeId]);
+  }, [searchedGraph, focusNeighborhood, selectedNodeId]);
+
+  const matchedVisibleNodeIds = useMemo(() => {
+    if (!normalizedQuery || searchResult.matchedNodeIds.length === 0) {
+      return new Set<string>();
+    }
+    const visibleIds = new Set(graph.nodes.map((node) => node.id));
+    return new Set(searchResult.matchedNodeIds.filter((id) => visibleIds.has(id)));
+  }, [graph.nodes, searchResult.matchedNodeIds, normalizedQuery]);
 
   useEffect(() => {
-    if (!query) {
+    if (!searchResult.firstMatchId) {
       return;
     }
-    const firstMatch = searchableGraph.nodes.find((node) => {
-      const haystacks = [node.title, node.composer].filter(Boolean).map((value) => value!.toLowerCase());
-      return haystacks.some((value) => value.includes(query));
-    });
-    if (firstMatch) {
-      setSelectedNodeId(firstMatch.id);
+    if (searchedGraph.nodes.some((node) => node.id === searchResult.firstMatchId)) {
+      setSelectedNodeId(searchResult.firstMatchId);
     }
-  }, [query, searchableGraph]);
+  }, [searchResult.firstMatchId, searchedGraph.nodes]);
 
   useEffect(() => {
     if (!graph.nodes.some((node) => node.id === selectedNodeId)) {
@@ -177,13 +189,13 @@ export default function NetworkGraphComponent({
 
     return graph.links
       .filter((link) => {
-        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        const sourceId = getEndpointId(link.source);
+        const targetId = getEndpointId(link.target);
         return sourceId === selectedNode.id || targetId === selectedNode.id;
       })
       .map((link) => {
-        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        const sourceId = getEndpointId(link.source);
+        const targetId = getEndpointId(link.target);
         const peerId = sourceId === selectedNode.id ? targetId : sourceId;
         const peer = graph.nodes.find((node) => node.id === peerId);
         return {
@@ -196,10 +208,83 @@ export default function NetworkGraphComponent({
       .slice(0, 8);
   }, [graph.links, graph.nodes, selectedNode]);
 
+  const emphasizedLabelIds = useMemo(() => {
+    if (searchMode !== 'highlight' || normalizedQuery.length === 0 || matchedVisibleNodeIds.size === 0) {
+      return new Set<string>();
+    }
+
+    const ranked = graph.nodes
+      .filter((node) => matchedVisibleNodeIds.has(node.id))
+      .sort((a, b) => (b.degree || 0) - (a.degree || 0))
+      .slice(0, 14)
+      .map((node) => node.id);
+
+    if (selectedNodeId && matchedVisibleNodeIds.has(selectedNodeId)) {
+      ranked.unshift(selectedNodeId);
+    }
+
+    return new Set(ranked);
+  }, [graph.nodes, matchedVisibleNodeIds, normalizedQuery, searchMode, selectedNodeId]);
+
   const stats = useMemo(() => getNetworkStats(graph), [graph]);
 
   useEffect(() => {
     if (!svgRef.current || graph.nodes.length === 0) return;
+
+    const isSearchHighlightMode = searchMode === 'highlight' && normalizedQuery.length > 0 && matchedVisibleNodeIds.size > 0;
+    const selectedNeighbors = selectedNodeId ? buildNeighborSet(graph, selectedNodeId) : new Set<string>();
+
+    const getDefaultNodeOpacity = (nodeId: string) => {
+      if (!isSearchHighlightMode) return 1;
+      return matchedVisibleNodeIds.has(nodeId) ? 1 : 0.2;
+    };
+
+    const getDefaultLinkOpacity = (link: NetworkLink) => {
+      const typeMultiplier: Record<NetworkLink['type'], number> = {
+        composer: 1.15,
+        work: 1.05,
+        performer: 0.9,
+        subject: 0.72,
+        language: 0.62,
+        similar: 0.52,
+      };
+      if (!isSearchHighlightMode) {
+        const base = Math.min(0.48, 0.05 + link.strength * 0.04);
+        return base * typeMultiplier[link.type];
+      }
+      const sourceId = getEndpointId(link.source);
+      const targetId = getEndpointId(link.target);
+      return matchedVisibleNodeIds.has(sourceId) || matchedVisibleNodeIds.has(targetId) ? 0.62 : 0.04;
+    };
+
+    const getDefaultLinkWidth = (link: NetworkLink) => {
+      const typeMultiplier: Record<NetworkLink['type'], number> = {
+        composer: 1.2,
+        work: 1.1,
+        performer: 0.95,
+        subject: 0.82,
+        language: 0.75,
+        similar: 0.72,
+      };
+      if (!isSearchHighlightMode) {
+        return Math.max(0.8, (link.strength / 2.4) * typeMultiplier[link.type]);
+      }
+      const sourceId = getEndpointId(link.source);
+      const targetId = getEndpointId(link.target);
+      return matchedVisibleNodeIds.has(sourceId) || matchedVisibleNodeIds.has(targetId)
+        ? Math.max(1.25, link.strength / 2.2)
+        : 1;
+    };
+
+    const getBaseLabelOpacity = (nodeId: string) => {
+      if (isSearchHighlightMode) {
+        return emphasizedLabelIds.has(nodeId) ? 1 : 0;
+      }
+      if (!selectedNodeId) {
+        return 0;
+      }
+      return selectedNeighbors.has(nodeId) ? 1 : 0;
+    };
 
     d3.select(svgRef.current).selectAll('*').remove();
 
@@ -220,8 +305,6 @@ export default function NetworkGraphComponent({
     const years = graph.nodes.map((node) => node.year || 0).filter((year) => year > 0);
     const minYear = years.length > 0 ? Math.min(...years) : 0;
     const maxYear = years.length > 0 ? Math.max(...years) : 0;
-
-    const nodeColorScale = d3.scaleSequential(d3.interpolateTurbo).domain([0, 10]);
 
     const simNodes = graph.nodes as SimNode[];
     const simLinks = graph.links as SimLink[];
@@ -249,8 +332,9 @@ export default function NetworkGraphComponent({
       .enter()
       .append('line')
       .attr('stroke', (d) => LINK_COLORS[d.type] || LINK_COLORS.similar)
-      .attr('stroke-opacity', (d) => Math.min(0.7, 0.16 + d.strength * 0.08))
-      .attr('stroke-width', (d) => Math.max(1, d.strength / 2));
+      .attr('stroke-opacity', (d) => getDefaultLinkOpacity(d))
+      .attr('stroke-width', (d) => getDefaultLinkWidth(d))
+      .attr('stroke-linecap', 'round');
 
     const nodes = container
       .append('g')
@@ -259,10 +343,11 @@ export default function NetworkGraphComponent({
       .enter()
       .append('circle')
       .attr('r', (d) => getRadius(d, nodeSizeMetric, minYear, maxYear))
-      .attr('fill', (d) => nodeColorScale(d.group))
-      .attr('stroke', '#ffffff')
-      .attr('stroke-width', 1.8)
+      .attr('fill', (d) => NODE_PALETTE[d.group % NODE_PALETTE.length])
+      .attr('stroke', '#f8fafc')
+      .attr('stroke-width', 2)
       .style('cursor', 'pointer')
+      .style('opacity', (d) => getDefaultNodeOpacity(d.id))
       .call(
         d3
           .drag<SVGCircleElement, SimNode>()
@@ -293,7 +378,10 @@ export default function NetworkGraphComponent({
       .attr('font-size', mobileMode ? '9px' : '10px')
       .attr('dx', (d) => getRadius(d, nodeSizeMetric, minYear, maxYear) + 4)
       .attr('dy', 4)
-      .attr('fill', '#111827')
+      .attr('fill', '#0f172a')
+      .attr('stroke', '#f8fafc')
+      .attr('stroke-width', 3)
+      .attr('paint-order', 'stroke')
       .style('pointer-events', 'none')
       .style('opacity', 0);
 
@@ -308,11 +396,7 @@ export default function NetworkGraphComponent({
       labels
         .attr('x', (d) => (d as SimNode).x ?? 0)
         .attr('y', (d) => (d as SimNode).y ?? 0)
-        .style('opacity', (d) => {
-          if (!selectedNodeId) return 0;
-          const neighbors = buildNeighborSet(graph, selectedNodeId);
-          return neighbors.has(d.id) ? 1 : 0;
-        });
+        .style('opacity', (d) => getBaseLabelOpacity(d.id));
     });
 
     nodes
@@ -320,13 +404,13 @@ export default function NetworkGraphComponent({
         const neighbors = buildNeighborSet(graph, d.id);
         links
           .attr('stroke-opacity', (link) => {
-            const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-            const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+            const sourceId = getEndpointId(link.source);
+            const targetId = getEndpointId(link.target);
             return sourceId === d.id || targetId === d.id ? 0.9 : 0.08;
           })
           .attr('stroke-width', (link) => {
-            const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-            const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+            const sourceId = getEndpointId(link.source);
+            const targetId = getEndpointId(link.target);
             return sourceId === d.id || targetId === d.id ? Math.max(2, link.strength / 1.8) : 1;
           });
 
@@ -336,14 +420,10 @@ export default function NetworkGraphComponent({
       })
       .on('mouseout', function () {
         links
-          .attr('stroke-opacity', (d) => Math.min(0.7, 0.16 + d.strength * 0.08))
-          .attr('stroke-width', (d) => Math.max(1, d.strength / 2));
-        nodes.attr('opacity', 1);
-        labels.style('opacity', (d) => {
-          if (!selectedNodeId) return 0;
-          const neighbors = buildNeighborSet(graph, selectedNodeId);
-          return neighbors.has(d.id) ? 1 : 0;
-        });
+          .attr('stroke-opacity', (d) => getDefaultLinkOpacity(d))
+          .attr('stroke-width', (d) => getDefaultLinkWidth(d));
+        nodes.attr('opacity', (d) => getDefaultNodeOpacity(d.id));
+        labels.style('opacity', (d) => getBaseLabelOpacity(d.id));
         d3.select(this).attr('stroke', '#ffffff').attr('stroke-width', 1.8);
       });
 
@@ -354,7 +434,7 @@ export default function NetworkGraphComponent({
       simulation.stop();
       simulationRef.current = null;
     };
-  }, [graph, mobileMode, nodeSizeMetric, selectedNodeId]);
+  }, [graph, mobileMode, nodeSizeMetric, selectedNodeId, normalizedQuery, matchedVisibleNodeIds, emphasizedLabelIds, searchMode]);
 
   const handleReset = () => {
     if (simulationRef.current) {
@@ -385,7 +465,7 @@ export default function NetworkGraphComponent({
       <Card>
         <CardContent className="py-12 text-center">
           <p className="text-muted-foreground">
-            {query ? 'No recordings matched the current search and filter settings.' : 'No data available for network visualization.'}
+            {normalizedQuery ? 'No recordings matched the current search and filter settings.' : 'No data available for network visualization.'}
           </p>
         </CardContent>
       </Card>
@@ -418,10 +498,13 @@ export default function NetworkGraphComponent({
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        <Badge variant="outline">Showing {graph.nodes.length} of {baseGraph.nodes.length} nodes</Badge>
+        <Badge variant="outline">Showing {graph.nodes.length} of {searchedGraph.nodes.length} nodes</Badge>
         <Badge variant="outline">Minimum link strength {minLinkStrength}</Badge>
         <Badge variant="outline">Priority: {priorityMode === 'discoveryScore' ? 'Discovery potential' : priorityMode === 'metadataRichness' ? 'Metadata richness' : 'Year recency'}</Badge>
-        {query ? <Badge>{`Search: ${searchQuery}`}</Badge> : null}
+        <Badge variant="outline">Edge model: {edgeModel}</Badge>
+        <Badge variant="outline">Max edges/node: {maxEdgesPerNode}</Badge>
+        {normalizedQuery ? <Badge>{`Search: ${searchQuery}`}</Badge> : null}
+        {normalizedQuery ? <Badge variant="secondary">Matches: {searchResult.matchedNodeIds.length}</Badge> : null}
       </div>
 
       <div className="flex items-center justify-between flex-wrap gap-2">
@@ -459,27 +542,38 @@ export default function NetworkGraphComponent({
 
       <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
         <Badge variant="outline" className="gap-2">
-          <span className="h-2 w-2 rounded-full bg-red-600" />
+          <span className="h-2 w-2 rounded-full bg-[#c8102e]" />
           Composer
         </Badge>
         <Badge variant="outline" className="gap-2">
-          <span className="h-2 w-2 rounded-full bg-blue-600" />
+          <span className="h-2 w-2 rounded-full bg-[#64748b]" />
           Subject
         </Badge>
         <Badge variant="outline" className="gap-2">
-          <span className="h-2 w-2 rounded-full bg-green-600" />
+          <span className="h-2 w-2 rounded-full bg-[#94a3b8]" />
           Language
         </Badge>
         <Badge variant="outline" className="gap-2">
-          <span className="h-2 w-2 rounded-full bg-orange-500" />
+          <span className="h-2 w-2 rounded-full bg-[#475569]" />
           Performer
+        </Badge>
+        <Badge variant="outline" className="gap-2">
+          <span className="h-2 w-2 rounded-full bg-[#9a1029]" />
+          Work
         </Badge>
       </div>
 
       <Card>
         <CardContent className="p-0">
           <div className="w-full overflow-auto border rounded-lg">
-            <svg ref={svgRef} className="w-full" style={{ minHeight: mobileMode ? '620px' : '780px' }} />
+            <svg
+              ref={svgRef}
+              className="w-full"
+              style={{
+                minHeight: mobileMode ? '620px' : '780px',
+                background: 'radial-gradient(circle at 50% 45%, #ffffff 0%, #f8fafc 60%, #f1f5f9 100%)',
+              }}
+            />
           </div>
         </CardContent>
       </Card>

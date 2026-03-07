@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { Search, Filter, X } from 'lucide-react';
 import { SearchFilters } from '@/app/types/opera';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { searchCachedWorks } from '@/app/lib/cache-loader';
+import { LightweightOpera, searchCachedWorks } from '@/app/lib/cache-loader';
 
 interface SearchBarProps {
   onSearch: (filters: SearchFilters) => void;
@@ -23,27 +23,20 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
     format: ''
   });
   const [showAdvanced, setShowAdvanced] = useState(false);
-  const [autocompleteSuggestions, setAutocompleteSuggestions] = useState<any[]>([]);
   const [showAutocomplete, setShowAutocomplete] = useState(false);
   const autocompleteRef = useRef<HTMLDivElement>(null);
 
-  // Handle autocomplete as user types
-  useEffect(() => {
+  const autocompleteSuggestions = useMemo(() => {
     const query = filters.query.trim();
-    
-    if (query.length >= 2) {
-      const suggestions = searchCachedWorks(query, {
-        creator: filters.creator,
-        date: filters.date,
-        language: filters.language
-      }).slice(0, 5); // Limit to top 5 suggestions
-      
-      setAutocompleteSuggestions(suggestions);
-      setShowAutocomplete(suggestions.length > 0);
-    } else {
-      setAutocompleteSuggestions([]);
-      setShowAutocomplete(false);
+    if (query.length < 2) {
+      return [];
     }
+
+    return searchCachedWorks(query, {
+      creator: filters.creator,
+      date: filters.date,
+      language: filters.language
+    }).slice(0, 5);
   }, [filters.query, filters.creator, filters.date, filters.language]);
 
   // Close autocomplete when clicking outside
@@ -68,9 +61,12 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
 
   const handleInputChange = (field: keyof SearchFilters, value: string) => {
     setFilters(prev => ({ ...prev, [field]: value }));
+    if (field === 'query' && value.trim().length < 2) {
+      setShowAutocomplete(false);
+    }
   };
 
-  const handleSuggestionClick = (suggestion: any) => {
+  const handleSuggestionClick = (suggestion: LightweightOpera) => {
     setFilters(prev => ({ ...prev, query: suggestion.title }));
     setShowAutocomplete(false);
     onSearch({ ...filters, query: suggestion.title });
@@ -89,7 +85,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
   };
 
   return (
-    <Card className="w-full max-w-4xl mx-auto">
+    <Card className="w-full max-w-4xl mx-auto border-foreground/20">
       <CardContent className="p-6">
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Main Search Input with Autocomplete */}

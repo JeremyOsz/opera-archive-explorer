@@ -22,6 +22,12 @@ import {
 import ClientWorkGroupGrid from './ClientWorkGroupGrid';
 import { DiscoveryFilters, DiscoveryJourney, Era, RarityBand } from '@/app/lib/discovery-types';
 import { OperaRecording } from '@/app/types/opera';
+import {
+  matchesLanguageFilter,
+  normalizeLanguageFilterValue,
+  toLanguageDisplayName
+} from '@/app/lib/language-utils';
+import { getEraLabel, inferOperaEra } from '@/app/lib/era-utils';
 
 interface DiscoverySandboxProps {
   works: GroupedWork[];
@@ -59,7 +65,7 @@ const JOURNEY_CARDS: JourneyCard[] = [
   {
     id: 'time-travel',
     title: 'Time Travel',
-    description: 'Step across eras from early recordings to contemporary catalog entries.'
+    description: 'Step across opera periods from Baroque foundations to contemporary works.'
   },
   {
     id: 'composer-constellations',
@@ -78,35 +84,17 @@ function getYearBounds(years: string[]): { min: number | null; max: number | nul
   return { min: Math.min(...parsed), max: Math.max(...parsed) };
 }
 
-function getEraFromYear(year: number | null): Era {
-  if (!year) return 'unknown';
-  if (year <= 1939) return 'early';
-  if (year <= 1969) return 'golden';
-  if (year <= 1999) return 'modern';
-  return 'contemporary';
-}
-
-function matchesLanguage(work: GroupedWork, language: string): boolean {
-  if (!language) return true;
-  return work.languages.some((entry) => entry.toLowerCase() === language.toLowerCase());
-}
-
 function getRecordingScore(recording: OperaRecording): number {
   return recording.discoveryScore ?? 0;
-}
-
-function eraLabel(era: Era): string {
-  if (era === 'early') return 'Early';
-  if (era === 'golden') return 'Golden';
-  if (era === 'modern') return 'Modern';
-  if (era === 'contemporary') return 'Contemporary';
-  return 'Unknown';
 }
 
 export default function DiscoverySandbox({ works, initialFilters }: DiscoverySandboxProps) {
   const router = useRouter();
   const pathname = usePathname();
-  const [filters, setFilters] = useState<DiscoveryFilters>(initialFilters);
+  const [filters, setFilters] = useState<DiscoveryFilters>(() => ({
+    ...initialFilters,
+    language: normalizeLanguageFilterValue(initialFilters.language)
+  }));
   const [spotlightIndex, setSpotlightIndex] = useState(0);
 
   const enrichedWorks = useMemo(() => {
@@ -119,7 +107,12 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
     return works.map<EnrichedWork>((work) => {
       const bounds = getYearBounds(work.years);
       const canonicalTitle = getCanonicalWorkTitle(work);
-      const primaryEra = getEraFromYear(bounds.max);
+      const primaryEra = inferOperaEra({
+        composer: work.composer,
+        title: canonicalTitle,
+        subjects: work.subjects,
+        year: bounds.max || undefined
+      });
       const rarityBand: RarityBand =
         work.recordings.length <= 1 ? 'rare' : work.recordings.length <= 3 ? 'uncommon' : 'well-known';
       const averageDiscoveryScore =
@@ -157,7 +150,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
     const languages = new Set<string>();
     enrichedWorks.forEach(({ work }) => {
       work.languages.forEach((entry) => {
-        if (entry.trim()) languages.add(entry.trim());
+        if (entry.trim()) languages.add(toLanguageDisplayName(entry));
       });
     });
     return Array.from(languages).sort((a, b) => a.localeCompare(b));
@@ -201,7 +194,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
         return false;
       }
 
-      if (filters.language && !matchesLanguage(entry.work, filters.language)) {
+      if (filters.language && !matchesLanguageFilter(entry.work.languages, filters.language)) {
         return false;
       }
 
@@ -322,7 +315,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
 
   return (
     <div className="space-y-6">
-      <Card className="overflow-hidden border-primary/20 bg-gradient-to-br from-background via-background to-primary/5">
+      <Card className="overflow-hidden border-foreground/20 bg-card">
         <CardHeader>
           <div className="flex flex-wrap items-center gap-2">
             <Badge variant="secondary" className="text-xs">
@@ -332,7 +325,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
               {filteredWorks.length} works in view
             </Badge>
           </div>
-          <CardTitle className="text-2xl">Editorial Journeys Through the Archive</CardTitle>
+          <CardTitle className="font-brand-display text-4xl">Editorial Journeys Through the Archive</CardTitle>
           <CardDescription>
             Start with curated pathways, then tighten filters to reveal rare corners of the catalog.
           </CardDescription>
@@ -345,11 +338,11 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
             key={journey.id}
             type="button"
             onClick={() => applyFilters({ journey: journey.id, sortBy: journey.id === 'hidden-gems' ? 'discovery' : filters.sortBy })}
-            className={`rounded-lg border p-4 text-left transition-colors ${
-              filters.journey === journey.id ? 'border-primary bg-primary/5' : 'hover:bg-muted/50'
+            className={`rounded-[2px] border p-4 text-left transition-colors ${
+              filters.journey === journey.id ? 'border-primary bg-primary/10' : 'hover:bg-muted/50'
             }`}
           >
-            <p className="text-sm font-semibold">{journey.title}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.1em]">{journey.title}</p>
             <p className="mt-1 text-sm text-muted-foreground">{journey.description}</p>
             <p className="mt-3 text-xs text-muted-foreground">{journeyCounts[journey.id]} works</p>
           </button>
@@ -436,9 +429,10 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All eras</SelectItem>
-                  <SelectItem value="early">Early</SelectItem>
-                  <SelectItem value="golden">Golden</SelectItem>
+                  <SelectItem value="all">All periods</SelectItem>
+                  <SelectItem value="baroque">Baroque</SelectItem>
+                  <SelectItem value="classical">Classical</SelectItem>
+                  <SelectItem value="romantic">Romantic</SelectItem>
                   <SelectItem value="modern">Modern</SelectItem>
                   <SelectItem value="contemporary">Contemporary</SelectItem>
                   <SelectItem value="unknown">Unknown</SelectItem>
@@ -507,7 +501,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
             <div className="grid gap-4 md:grid-cols-12">
               <div className="md:col-span-3">
                 {spotlightRecording?.imageUrl ? (
-                  <div className="relative h-44 overflow-hidden rounded-lg border bg-muted">
+                  <div className="relative h-44 overflow-hidden rounded-[2px] border bg-muted">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={spotlightRecording.imageUrl}
@@ -518,7 +512,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
                     />
                   </div>
                 ) : (
-                  <div className="flex h-44 items-center justify-center rounded-lg border bg-muted">
+                  <div className="flex h-44 items-center justify-center rounded-[2px] border bg-muted">
                     <Disc className="h-10 w-10 text-muted-foreground" />
                   </div>
                 )}
@@ -543,7 +537,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
                   </span>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Era: {eraLabel(spotlightEntry.primaryEra)}</Badge>
+                  <Badge variant="secondary">Period: {getEraLabel(spotlightEntry.primaryEra)}</Badge>
                   <Badge variant="secondary">Rarity: {spotlightEntry.rarityBand}</Badge>
                   <Badge variant="secondary">Discovery Score: {spotlightEntry.averageDiscoveryScore}</Badge>
                   {spotlightEntry.composerWorkCount >= 4 && <Badge variant="secondary">Composer prominence</Badge>}
