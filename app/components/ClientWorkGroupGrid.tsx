@@ -11,7 +11,6 @@ import {
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
-import Image from 'next/image';
 import { OperaRecording } from '@/app/types/opera';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import OperaDetail from './OperaDetail';
@@ -76,12 +75,13 @@ export default function ClientWorkGroupGrid({ work }: ClientWorkGroupGridProps) 
                 {/* Recording thumbnail */}
                 {recording.thumbnailUrl && (
                   <div className="relative w-16 h-16 flex-shrink-0 overflow-hidden rounded bg-muted">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={recording.thumbnailUrl}
                       alt={recording.title}
-                      fill
-                      className="object-cover"
-                      sizes="64px"
+                      className="absolute inset-0 h-full w-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 )}
@@ -131,12 +131,13 @@ export default function ClientWorkGroupGrid({ work }: ClientWorkGroupGridProps) 
               >
                 {recording.thumbnailUrl && (
                   <div className="relative w-12 h-12 flex-shrink-0 overflow-hidden rounded bg-muted">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={recording.thumbnailUrl}
                       alt={recording.title}
-                      fill
-                      className="object-cover"
-                      sizes="48px"
+                      className="absolute inset-0 h-full w-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 )}
