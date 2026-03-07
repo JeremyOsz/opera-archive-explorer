@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Music } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { OperaRecording } from '@/app/types/opera';
@@ -12,12 +11,13 @@ export const OperaImage = ({ opera }: OperaImageProps) => (
     <CardContent className="p-8">
       <div className="relative aspect-square w-full max-w-xs mx-auto overflow-hidden rounded-lg bg-muted">
         {opera.imageUrl ? (
-          <Image
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
             src={opera.imageUrl}
             alt={opera.title}
-            fill
-            className="object-cover object-center"
-            unoptimized
+            className="absolute inset-0 h-full w-full object-cover object-center"
+            loading="lazy"
+            decoding="async"
             onError={(e) => {
               e.currentTarget.style.display = 'none';
               const placeholder = e.currentTarget.nextElementSibling as HTMLElement;

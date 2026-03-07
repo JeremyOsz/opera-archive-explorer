@@ -1,7 +1,6 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { GroupedWork, getCanonicalWorkTitle } from '@/app/lib/work-grouper';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -509,13 +508,13 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
               <div className="md:col-span-3">
                 {spotlightRecording?.imageUrl ? (
                   <div className="relative h-44 overflow-hidden rounded-lg border bg-muted">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={spotlightRecording.imageUrl}
                       alt={spotlightEntry.canonicalTitle}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 220px"
-                      unoptimized
+                      className="absolute inset-0 h-full w-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 ) : (

@@ -12,7 +12,6 @@ import {
   ChevronUp,
   Disc
 } from 'lucide-react';
-import Image from 'next/image';
 import { OperaRecording } from '@/app/types/opera';
 import ClientWorkGroupGrid from './ClientWorkGroupGrid';
 
@@ -77,14 +76,13 @@ export default function ServerWorkGroupGrid({ works, loading = false }: ServerWo
                   {/* Work Image - Server-side rendered */}
                   {featuredRecording?.imageUrl && (
                     <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-muted">
-                      <Image
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src={featuredRecording.imageUrl}
                         alt={canonicalTitle}
-                        fill
-                        className="object-cover object-center"
-                        sizes="96px"
-                        priority={false}
-                        unoptimized
+                        className="absolute inset-0 h-full w-full object-cover object-center"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   )}
