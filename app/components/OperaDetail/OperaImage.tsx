@@ -17,6 +17,7 @@ export const OperaImage = ({ opera }: OperaImageProps) => (
             alt={opera.title}
             fill
             className="object-cover object-center"
+            unoptimized
             onError={(e) => {
               e.currentTarget.style.display = 'none';
               const placeholder = e.currentTarget.nextElementSibling as HTMLElement;

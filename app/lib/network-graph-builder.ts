@@ -36,6 +36,11 @@ export interface NetworkGraph {
 }
 
 export type NodeSizeMetric = 'connections' | 'discoveryScore' | 'yearRecency';
+export type GraphPriorityMode = 'discoveryScore' | 'metadataRichness' | 'yearRecency';
+
+interface GraphBuildOptions {
+  priorityMode?: GraphPriorityMode;
+}
 
 /**
  * Extract primary composer from creator field
@@ -108,6 +113,26 @@ function extractPerformers(creator?: string): string[] {
   return performers;
 }
 
+function getMetadataRichnessScore(work: LightweightOpera): number {
+  const subjectScore = work.subjectsNormalized?.length || work.subject?.length || 0;
+  const languageScore = work.languages?.length || work.language?.split(',').filter(Boolean).length || 0;
+  const composerScore = work.primaryComposer ? 4 : 0;
+  const performerScore = extractPerformers(work.creator).length * 2;
+  const yearScore = work.year ? 2 : 0;
+  const rarityScore = work.rarityBand === 'rare' ? 3 : work.rarityBand === 'uncommon' ? 2 : 0;
+  return subjectScore * 2 + languageScore * 2 + composerScore + performerScore + yearScore + rarityScore;
+}
+
+function getPriorityScore(work: LightweightOpera, mode: GraphPriorityMode): number {
+  if (mode === 'yearRecency') {
+    return work.year || 0;
+  }
+  if (mode === 'metadataRichness') {
+    return getMetadataRichnessScore(work);
+  }
+  return (work.discoveryScore || 0) * 10 + getMetadataRichnessScore(work);
+}
+
 /**
  * Build a network graph from archive works
  * Creates connections based on shared metadata
@@ -117,21 +142,22 @@ export function buildNetworkGraph(
   works: LightweightOpera[],
   maxNodes: number = 100,
   minConnections: number = 1,
-  connectionType: 'all' | 'subject' | 'composer' | 'language' | 'performer' = 'all'
+  connectionType: 'all' | 'subject' | 'composer' | 'language' | 'performer' = 'all',
+  options: GraphBuildOptions = {}
 ): NetworkGraph {
-  // Sample works if too many (for performance)
-  const sampledWorks = works.length > maxNodes 
-    ? works.filter((_, i) => i % Math.ceil(works.length / maxNodes) === 0).slice(0, maxNodes)
-    : works;
+  const priorityMode = options.priorityMode || 'discoveryScore';
+
+  const sortedWorks = [...works].sort((a, b) => getPriorityScore(b, priorityMode) - getPriorityScore(a, priorityMode));
+  const sampledWorks = sortedWorks.slice(0, maxNodes);
 
   // Build nodes
   const nodes: NetworkNode[] = sampledWorks.map((work) => {
-    const composer = extractPrimaryComposer(work.creator);
+    const composer = work.primaryComposer || extractPrimaryComposer(work.creator);
     const performers = extractPerformers(work.creator);
-    const subjects = work.subject || [];
-    const languages = work.language 
+    const subjects = work.subjectsNormalized || work.subject || [];
+    const languages = work.languages || (work.language 
       ? work.language.split(',').map(l => l.trim()).filter(Boolean)
-      : [];
+      : []);
 
     // Group by connection type for color coding
     let group = 0;

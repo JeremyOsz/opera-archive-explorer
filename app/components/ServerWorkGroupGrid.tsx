@@ -84,6 +84,7 @@ export default function ServerWorkGroupGrid({ works, loading = false }: ServerWo
                         className="object-cover object-center"
                         sizes="96px"
                         priority={false}
+                        unoptimized
                       />
                     </div>
                   )}

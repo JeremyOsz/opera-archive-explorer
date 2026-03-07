@@ -5,6 +5,7 @@ import * as d3 from 'd3';
 import { LightweightOpera } from '@/app/lib/cache-loader';
 import {
   buildNetworkGraph,
+  GraphPriorityMode,
   getNetworkStats,
   NetworkGraph,
   NetworkLink,
@@ -13,7 +14,8 @@ import {
 } from '@/app/lib/network-graph-builder';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Focus, Maximize2, RefreshCw, ZoomIn, ZoomOut } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { ArrowRightLeft, Focus, Maximize2, RefreshCw, ZoomIn, ZoomOut } from 'lucide-react';
 
 interface NetworkGraphProps {
   works: LightweightOpera[];
@@ -21,6 +23,9 @@ interface NetworkGraphProps {
   connectionType?: 'all' | 'subject' | 'composer' | 'language' | 'performer';
   nodeSizeMetric?: NodeSizeMetric;
   mobileMode?: boolean;
+  minLinkStrength?: number;
+  searchQuery?: string;
+  priorityMode?: GraphPriorityMode;
 }
 
 type SimNode = NetworkNode & d3.SimulationNodeDatum;
@@ -60,12 +65,26 @@ function buildNeighborSet(graph: NetworkGraph, nodeId: string): Set<string> {
   return neighbors;
 }
 
+function getLinkLabel(link: NetworkLink): string {
+  if (!link.sharedValue) {
+    return link.type;
+  }
+  if (link.type === 'subject') return `Shared subject: ${link.sharedValue}`;
+  if (link.type === 'composer') return `Shared composer: ${link.sharedValue}`;
+  if (link.type === 'language') return `Shared language: ${link.sharedValue}`;
+  if (link.type === 'performer') return `Shared performer: ${link.sharedValue}`;
+  return link.sharedValue;
+}
+
 export default function NetworkGraphComponent({
   works,
   maxNodes = 100,
   connectionType = 'all',
   nodeSizeMetric = 'connections',
-  mobileMode = false
+  mobileMode = false,
+  minLinkStrength = 1,
+  searchQuery = '',
+  priorityMode = 'discoveryScore'
 }: NetworkGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const simulationRef = useRef<d3.Simulation<SimNode, SimLink> | null>(null);
@@ -76,30 +95,106 @@ export default function NetworkGraphComponent({
 
   const baseGraph = useMemo(() => {
     if (works.length === 0) return { nodes: [], links: [] } as NetworkGraph;
-    return buildNetworkGraph(works, maxNodes, 1, connectionType);
-  }, [works, maxNodes, connectionType]);
+    return buildNetworkGraph(works, maxNodes, minLinkStrength, connectionType, { priorityMode });
+  }, [works, maxNodes, minLinkStrength, connectionType, priorityMode]);
+
+  const query = searchQuery.trim().toLowerCase();
+
+  const searchableGraph = useMemo(() => {
+    if (!query) {
+      return baseGraph;
+    }
+
+    const matchingNodes = baseGraph.nodes.filter((node) => {
+      const haystacks = [node.title, node.composer, ...node.subjects, ...node.languages, ...node.performers]
+        .filter(Boolean)
+        .map((value) => value!.toLowerCase());
+      return haystacks.some((value) => value.includes(query));
+    });
+
+    if (matchingNodes.length === 0) {
+      return { nodes: [], links: [] } as NetworkGraph;
+    }
+
+    const keepIds = new Set<string>();
+    matchingNodes.forEach((node) => buildNeighborSet(baseGraph, node.id).forEach((id) => keepIds.add(id)));
+
+    return {
+      nodes: baseGraph.nodes.filter((node) => keepIds.has(node.id)),
+      links: baseGraph.links.filter((link) => {
+        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
+        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        return keepIds.has(sourceId) && keepIds.has(targetId);
+      }),
+    };
+  }, [baseGraph, query]);
 
   const graph = useMemo(() => {
     if (!focusNeighborhood || !selectedNodeId) {
-      return baseGraph;
+      return searchableGraph;
     }
-    if (!baseGraph.nodes.some((node) => node.id === selectedNodeId)) {
-      return baseGraph;
+    if (!searchableGraph.nodes.some((node) => node.id === selectedNodeId)) {
+      return searchableGraph;
     }
-    const neighbors = buildNeighborSet(baseGraph, selectedNodeId);
-    const nodes = baseGraph.nodes.filter((node) => neighbors.has(node.id));
-    const links = baseGraph.links.filter((link) => {
+    const neighbors = buildNeighborSet(searchableGraph, selectedNodeId);
+    const nodes = searchableGraph.nodes.filter((node) => neighbors.has(node.id));
+    const links = searchableGraph.links.filter((link) => {
       const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
       const targetId = typeof link.target === 'string' ? link.target : link.target.id;
       return neighbors.has(sourceId) && neighbors.has(targetId);
     });
     return { nodes, links };
-  }, [baseGraph, focusNeighborhood, selectedNodeId]);
+  }, [searchableGraph, focusNeighborhood, selectedNodeId]);
+
+  useEffect(() => {
+    if (!query) {
+      return;
+    }
+    const firstMatch = searchableGraph.nodes.find((node) => {
+      const haystacks = [node.title, node.composer].filter(Boolean).map((value) => value!.toLowerCase());
+      return haystacks.some((value) => value.includes(query));
+    });
+    if (firstMatch) {
+      setSelectedNodeId(firstMatch.id);
+    }
+  }, [query, searchableGraph]);
+
+  useEffect(() => {
+    if (!graph.nodes.some((node) => node.id === selectedNodeId)) {
+      setSelectedNodeId(graph.nodes[0]?.id || null);
+    }
+  }, [graph, selectedNodeId]);
 
   const selectedNode = useMemo(
     () => graph.nodes.find((node) => node.id === selectedNodeId) || null,
     [graph.nodes, selectedNodeId]
   );
+
+  const strongestLinks = useMemo(() => {
+    if (!selectedNode) {
+      return [];
+    }
+
+    return graph.links
+      .filter((link) => {
+        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
+        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        return sourceId === selectedNode.id || targetId === selectedNode.id;
+      })
+      .map((link) => {
+        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
+        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        const peerId = sourceId === selectedNode.id ? targetId : sourceId;
+        const peer = graph.nodes.find((node) => node.id === peerId);
+        return {
+          link,
+          peer,
+        };
+      })
+      .filter((item) => item.peer)
+      .sort((a, b) => b.link.strength - a.link.strength)
+      .slice(0, 8);
+  }, [graph.links, graph.nodes, selectedNode]);
 
   const stats = useMemo(() => getNetworkStats(graph), [graph]);
 
@@ -285,11 +380,13 @@ export default function NetworkGraphComponent({
     }
   };
 
-  if (graph.nodes.length === 0) {
+  if (baseGraph.nodes.length === 0 || graph.nodes.length === 0) {
     return (
       <Card>
         <CardContent className="py-12 text-center">
-          <p className="text-muted-foreground">No data available for network visualization.</p>
+          <p className="text-muted-foreground">
+            {query ? 'No recordings matched the current search and filter settings.' : 'No data available for network visualization.'}
+          </p>
         </CardContent>
       </Card>
     );
@@ -318,6 +415,13 @@ export default function NetworkGraphComponent({
           <p className="text-xs text-muted-foreground">Components</p>
           <p className="text-lg font-semibold">{stats.componentCount}</p>
         </div>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-2">
+        <Badge variant="outline">Showing {graph.nodes.length} of {baseGraph.nodes.length} nodes</Badge>
+        <Badge variant="outline">Minimum link strength {minLinkStrength}</Badge>
+        <Badge variant="outline">Priority: {priorityMode === 'discoveryScore' ? 'Discovery potential' : priorityMode === 'metadataRichness' ? 'Metadata richness' : 'Year recency'}</Badge>
+        {query ? <Badge>{`Search: ${searchQuery}`}</Badge> : null}
       </div>
 
       <div className="flex items-center justify-between flex-wrap gap-2">
@@ -353,6 +457,25 @@ export default function NetworkGraphComponent({
         </div>
       </div>
 
+      <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
+        <Badge variant="outline" className="gap-2">
+          <span className="h-2 w-2 rounded-full bg-red-600" />
+          Composer
+        </Badge>
+        <Badge variant="outline" className="gap-2">
+          <span className="h-2 w-2 rounded-full bg-blue-600" />
+          Subject
+        </Badge>
+        <Badge variant="outline" className="gap-2">
+          <span className="h-2 w-2 rounded-full bg-green-600" />
+          Language
+        </Badge>
+        <Badge variant="outline" className="gap-2">
+          <span className="h-2 w-2 rounded-full bg-orange-500" />
+          Performer
+        </Badge>
+      </div>
+
       <Card>
         <CardContent className="p-0">
           <div className="w-full overflow-auto border rounded-lg">
@@ -366,7 +489,7 @@ export default function NetworkGraphComponent({
           <CardHeader>
             <CardTitle>Selected Recording</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(280px,360px)]">
             <div className="space-y-2 text-sm">
               <div>
                 <strong>Title:</strong> {selectedNode.title}
@@ -397,6 +520,28 @@ export default function NetworkGraphComponent({
               {selectedNode.languages.length > 0 && (
                 <div>
                   <strong>Languages:</strong> {selectedNode.languages.join(', ')}
+                </div>
+              )}
+            </div>
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <ArrowRightLeft className="h-4 w-4 text-muted-foreground" />
+                <h4 className="font-semibold">Strongest Connections</h4>
+              </div>
+              {strongestLinks.length === 0 ? (
+                <p className="text-sm text-muted-foreground">No visible links for this node under the current filters.</p>
+              ) : (
+                <div className="space-y-2">
+                  {strongestLinks.map(({ link, peer }) => (
+                    <div key={`${selectedNode.id}-${peer?.id}`} className="rounded-lg border p-3 text-sm">
+                      <div className="font-medium">{peer?.title}</div>
+                      <div className="text-muted-foreground">{peer?.composer || 'Composer unknown'}</div>
+                      <div className="mt-2 flex flex-wrap items-center gap-2">
+                        <Badge variant="outline">{getLinkLabel(link)}</Badge>
+                        <Badge variant="secondary">Strength {link.strength}</Badge>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               )}
             </div>

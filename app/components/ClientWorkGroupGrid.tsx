@@ -82,6 +82,7 @@ export default function ClientWorkGroupGrid({ work }: ClientWorkGroupGridProps) 
                       fill
                       className="object-cover"
                       sizes="64px"
+                      unoptimized
                     />
                   </div>
                 )}
@@ -137,6 +138,7 @@ export default function ClientWorkGroupGrid({ work }: ClientWorkGroupGridProps) 
                       fill
                       className="object-cover"
                       sizes="48px"
+                      unoptimized
                     />
                   </div>
                 )}

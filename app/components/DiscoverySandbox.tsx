@@ -515,6 +515,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 220px"
+                      unoptimized
                     />
                   </div>
                 ) : (
