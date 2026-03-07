@@ -11,7 +11,9 @@ import {
   JOURNEY_OPTIONS,
   SORT_OPTIONS,
   ERA_OPTIONS,
-  RARITY_OPTIONS
+  RARITY_OPTIONS,
+  type Era,
+  type RarityBand
 } from '@/app/lib/discovery-types';
 
 function toOperaRecording(work: LightweightOpera): OperaRecording {
@@ -49,11 +51,11 @@ function parseInitialFilters(searchParams: SandboxPageProps['searchParams']): Di
   if (searchParams.journey && JOURNEY_OPTIONS.includes(searchParams.journey as DiscoveryFilters['journey'])) {
     next.journey = searchParams.journey as DiscoveryFilters['journey'];
   }
-  if (searchParams.era && ERA_OPTIONS.includes(searchParams.era as DiscoveryFilters['era'])) {
-    next.era = searchParams.era as DiscoveryFilters['era'];
+  if (searchParams.era && searchParams.era !== 'all' && ERA_OPTIONS.includes(searchParams.era as Era)) {
+    next.era = searchParams.era as Era;
   }
-  if (searchParams.rarityBand && RARITY_OPTIONS.includes(searchParams.rarityBand as DiscoveryFilters['rarityBand'])) {
-    next.rarityBand = searchParams.rarityBand as DiscoveryFilters['rarityBand'];
+  if (searchParams.rarityBand && searchParams.rarityBand !== 'all' && RARITY_OPTIONS.includes(searchParams.rarityBand as RarityBand)) {
+    next.rarityBand = searchParams.rarityBand as RarityBand;
   }
   if (searchParams.sortBy && SORT_OPTIONS.includes(searchParams.sortBy as DiscoveryFilters['sortBy'])) {
     next.sortBy = searchParams.sortBy as DiscoveryFilters['sortBy'];

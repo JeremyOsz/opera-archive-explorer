@@ -27,9 +27,9 @@ export const MovementsSection = ({
             </CardTitle>
             <CardDescription>
               {totalMovements} movement{totalMovements !== 1 ? 's' : ''} across {opera.acts.length} act{opera.acts.length !== 1 ? 's' : ''}
-              {opera.metadata?.isMapped && (
+              {opera.metadata?.isMapped ? (
                 <span className="ml-2 text-green-600">• Actual work structure</span>
-              )}
+              ) : null}
             </CardDescription>
           </div>
           <Button

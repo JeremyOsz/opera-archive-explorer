@@ -1,7 +1,8 @@
 import { LightweightOpera } from './cache-loader';
 import { Era } from './discovery-types';
+import type { SimulationLinkDatum, SimulationNodeDatum } from 'd3';
 
-export interface NetworkNode {
+export interface NetworkNode extends SimulationNodeDatum {
   id: string;
   title: string;
   composer?: string;
@@ -15,9 +16,12 @@ export interface NetworkNode {
   era?: Era;
   discoveryScore?: number;
   degree?: number;
+  /** Set by D3 force simulation */
+  x?: number;
+  y?: number;
 }
 
-export interface NetworkLink {
+export interface NetworkLink extends SimulationLinkDatum<NetworkNode> {
   source: string | NetworkNode;
   target: string | NetworkNode;
   type: 'subject' | 'composer' | 'language' | 'performer' | 'similar';

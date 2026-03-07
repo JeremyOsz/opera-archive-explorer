@@ -23,6 +23,9 @@ interface NetworkGraphProps {
   mobileMode?: boolean;
 }
 
+type SimNode = NetworkNode & d3.SimulationNodeDatum;
+type SimLink = NetworkLink & d3.SimulationLinkDatum<SimNode>;
+
 const LINK_COLORS: Record<NetworkLink['type'], string> = {
   subject: '#2563eb',
   composer: '#dc2626',
@@ -65,7 +68,7 @@ export default function NetworkGraphComponent({
   mobileMode = false
 }: NetworkGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null);
-  const simulationRef = useRef<d3.Simulation<NetworkNode, NetworkLink> | null>(null);
+  const simulationRef = useRef<d3.Simulation<SimNode, SimLink> | null>(null);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
   const [isSimulating, setIsSimulating] = useState(false);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
@@ -125,19 +128,22 @@ export default function NetworkGraphComponent({
 
     const nodeColorScale = d3.scaleSequential(d3.interpolateTurbo).domain([0, 10]);
 
+    const simNodes = graph.nodes as SimNode[];
+    const simLinks = graph.links as SimLink[];
+
     const simulation = d3
-      .forceSimulation<NetworkNode>(graph.nodes)
+      .forceSimulation<SimNode>(simNodes)
       .force(
         'link',
         d3
-          .forceLink<NetworkNode, NetworkLink>(graph.links)
+          .forceLink<SimNode, SimLink>(simLinks)
           .id((d) => d.id)
           .distance((d) => 95 - d.strength * 4)
           .strength((d) => Math.max(0.08, d.strength * 0.08))
       )
       .force('charge', d3.forceManyBody().strength(mobileMode ? -240 : -320))
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide<NetworkNode>().radius((d) => getRadius(d, nodeSizeMetric, minYear, maxYear) + 3));
+      .force('collision', d3.forceCollide<SimNode>().radius((d) => getRadius(d, nodeSizeMetric, minYear, maxYear) + 3));
 
     simulationRef.current = simulation;
 
@@ -154,7 +160,7 @@ export default function NetworkGraphComponent({
     const nodes = container
       .append('g')
       .selectAll('circle')
-      .data(graph.nodes)
+      .data(simNodes)
       .enter()
       .append('circle')
       .attr('r', (d) => getRadius(d, nodeSizeMetric, minYear, maxYear))
@@ -164,7 +170,7 @@ export default function NetworkGraphComponent({
       .style('cursor', 'pointer')
       .call(
         d3
-          .drag<SVGCircleElement, NetworkNode>()
+          .drag<SVGCircleElement, SimNode>()
           .on('start', (event) => {
             if (!event.active) simulation.alphaTarget(0.3).restart();
             event.subject.fx = event.subject.x;
@@ -185,7 +191,7 @@ export default function NetworkGraphComponent({
     const labels = container
       .append('g')
       .selectAll('text')
-      .data(graph.nodes)
+      .data(simNodes)
       .enter()
       .append('text')
       .text((d) => (d.title.length > 32 ? `${d.title.slice(0, 32)}...` : d.title))
@@ -198,15 +204,15 @@ export default function NetworkGraphComponent({
 
     simulation.on('tick', () => {
       links
-        .attr('x1', (d) => (typeof d.source === 'string' ? 0 : d.source.x || 0))
-        .attr('y1', (d) => (typeof d.source === 'string' ? 0 : d.source.y || 0))
-        .attr('x2', (d) => (typeof d.target === 'string' ? 0 : d.target.x || 0))
-        .attr('y2', (d) => (typeof d.target === 'string' ? 0 : d.target.y || 0));
+        .attr('x1', (d) => (typeof d.source === 'string' ? 0 : (d.source as SimNode).x ?? 0))
+        .attr('y1', (d) => (typeof d.source === 'string' ? 0 : (d.source as SimNode).y ?? 0))
+        .attr('x2', (d) => (typeof d.target === 'string' ? 0 : (d.target as SimNode).x ?? 0))
+        .attr('y2', (d) => (typeof d.target === 'string' ? 0 : (d.target as SimNode).y ?? 0));
 
-      nodes.attr('cx', (d) => d.x || 0).attr('cy', (d) => d.y || 0);
+      nodes.attr('cx', (d) => (d as SimNode).x ?? 0).attr('cy', (d) => (d as SimNode).y ?? 0);
       labels
-        .attr('x', (d) => d.x || 0)
-        .attr('y', (d) => d.y || 0)
+        .attr('x', (d) => (d as SimNode).x ?? 0)
+        .attr('y', (d) => (d as SimNode).y ?? 0)
         .style('opacity', (d) => {
           if (!selectedNodeId) return 0;
           const neighbors = buildNeighborSet(graph, selectedNodeId);

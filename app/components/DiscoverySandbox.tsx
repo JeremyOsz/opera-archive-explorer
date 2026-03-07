@@ -547,7 +547,7 @@ export default function DiscoverySandbox({ works, initialFilters }: DiscoverySan
                   <Badge variant="secondary">Rarity: {spotlightEntry.rarityBand}</Badge>
                   <Badge variant="secondary">Discovery Score: {spotlightEntry.averageDiscoveryScore}</Badge>
                   {spotlightEntry.composerWorkCount >= 4 && <Badge variant="secondary">Composer prominence</Badge>}
-                  {spotlight.work.languages.length >= 2 && <Badge variant="secondary">Language diversity</Badge>}
+                  {spotlight.languages.length >= 2 && <Badge variant="secondary">Language diversity</Badge>}
                 </div>
                 <div className="space-y-2">
                   <p className="inline-flex items-center gap-2 text-sm font-semibold">

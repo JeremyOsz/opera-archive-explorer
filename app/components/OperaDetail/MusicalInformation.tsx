@@ -28,16 +28,16 @@ export const MusicalInformation = ({
             Musical Information
           </CardTitle>
           <div className="flex items-center gap-2">
-            {opera.metadata?.isMapped && (
+            {opera.metadata?.isMapped ? (
               <Badge variant="default" className="bg-green-600">
                 ✓ Mapped Metadata
               </Badge>
-            )}
-            {opera.metadata?.source === 'generated' && (
+            ) : null}
+            {opera.metadata?.source === 'generated' ? (
               <Badge variant="secondary">
                 Generated
               </Badge>
-            )}
+            ) : null}
             <Button
               variant="ghost"
               size="sm"
@@ -141,19 +141,19 @@ export const MusicalInformation = ({
                     <div>
                       <p className="text-xs text-muted-foreground mb-1">Harmonic Complexity</p>
                       <Badge variant="outline" className="capitalize">
-                        {opera.metadata.musicalAnalysis.harmonicComplexity}
+                        {(opera.metadata.musicalAnalysis as { harmonicComplexity?: string })?.harmonicComplexity ?? ''}
                       </Badge>
                     </div>
                     <div>
                       <p className="text-xs text-muted-foreground mb-1">Melodic Style</p>
                       <Badge variant="outline" className="capitalize">
-                        {opera.metadata.musicalAnalysis.melodicStyle}
+                        {(opera.metadata.musicalAnalysis as { melodicStyle?: string })?.melodicStyle ?? ''}
                       </Badge>
                     </div>
                     <div>
                       <p className="text-xs text-muted-foreground mb-1">Time Signature</p>
                       <Badge variant="outline">
-                        {opera.metadata.musicalAnalysis.timeSignature}
+                        {(opera.metadata.musicalAnalysis as { timeSignature?: string })?.timeSignature ?? ''}
                       </Badge>
                     </div>
                   </div>
@@ -161,16 +161,16 @@ export const MusicalInformation = ({
               )}
 
               {/* Data source information */}
-              {(opera.metadata?.mockData || opera.metadata?.fallback) && (
+              {(opera.metadata?.mockData || opera.metadata?.fallback) ? (
                 <div className="text-xs text-muted-foreground border-t pt-2">
-                  {opera.metadata?.mockData && (
+                  {opera.metadata?.mockData ? (
                     <p>🎵 Musical data generated based on opera characteristics</p>
-                  )}
-                  {opera.metadata?.fallback && (
+                  ) : null}
+                  {opera.metadata?.fallback ? (
                     <p>Using fallback musical data</p>
-                  )}
+                  ) : null}
                 </div>
-              )}
+              ) : null}
             </>
           )}
         </CardContent>

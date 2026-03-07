@@ -10,7 +10,8 @@
     "start": "next start",
     "lint": "eslint",
     "cache-archive": "pnpm exec tsx scripts/build-lightweight-cache.ts",
-    "cache-demo": "pnpm exec tsx scripts/example-usage.ts"
+    "cache-demo": "pnpm exec tsx scripts/example-usage.ts",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
