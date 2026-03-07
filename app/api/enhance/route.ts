@@ -9,21 +9,10 @@ const getCachedEnhancement = unstable_cache(
     console.log(`🎵 Server-side enhancement for ${identifier} (${enhancementType})`);
     
     try {
-      // First get the basic opera data
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 
-                      process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
-      
-      const metadataResponse = await fetch(`${baseUrl}/api/metadata?id=${identifier}`);
-      if (!metadataResponse.ok) {
-        console.error(`Metadata fetch failed with status ${metadataResponse.status}`);
-        throw new Error('Failed to fetch opera metadata');
-      }
-      
-      const metadataData = await metadataResponse.json();
-      const opera = metadataData?.opera;
-      
+      // Get base opera data directly (avoids localhost self-request which can fail in dev)
+      const opera = await ArchiveAPI.getOperaById(identifier);
       if (!opera) {
-        console.error('No opera found in metadata response:', metadataData);
+        console.error('Opera not found for identifier:', identifier);
         throw new Error('Opera not found');
       }
 
