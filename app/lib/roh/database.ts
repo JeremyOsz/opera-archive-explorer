@@ -121,12 +121,36 @@ function enrichWorkMetadata(work: RohDataset['works'][number]): RohDataset['work
   return { ...work, metadata };
 }
 
+function enrichProductionMetadata(production: RohDataset['productions'][number]): RohDataset['productions'][number] {
+  const metadata = { ...production.metadata };
+  setMetadataIfMissing(metadata, 'Company', production.company);
+  setMetadataIfMissing(metadata, 'Production premiere', production.productionPremiere);
+  setMetadataIfMissing(metadata, 'Producer', production.producer);
+  setMetadataIfMissing(metadata, 'Costume designer', production.costumeDesigner);
+  setMetadataIfMissing(metadata, 'Notes', production.notes);
+  setMetadataIfMissing(metadata, 'Work ID', production.workId);
+  return { ...production, metadata };
+}
+
+function enrichPerformanceMetadata(performance: RohDataset['performances'][number]): RohDataset['performances'][number] {
+  const metadata = { ...performance.metadata };
+  setMetadataIfMissing(metadata, 'Date', performance.date);
+  setMetadataIfMissing(metadata, 'Session', performance.session);
+  setMetadataIfMissing(metadata, 'Venue', performance.venue);
+  setMetadataIfMissing(metadata, 'Company', performance.company);
+  setMetadataIfMissing(metadata, 'Performance status', performance.status);
+  setMetadataIfMissing(metadata, 'Conductor', performance.conductor);
+  setMetadataIfMissing(metadata, 'Leader', performance.leader);
+  setMetadataIfMissing(metadata, 'Production ID', performance.productionId);
+  return { ...performance, metadata };
+}
+
 function enrichRohDatasetMetadata(dataset: RohDataset): RohDataset {
   return {
     records: dataset.records.map(enrichRecordMetadata),
     works: dataset.works.map(enrichWorkMetadata),
-    productions: dataset.productions,
-    performances: dataset.performances,
+    productions: dataset.productions.map(enrichProductionMetadata),
+    performances: dataset.performances.map(enrichPerformanceMetadata),
   };
 }
 

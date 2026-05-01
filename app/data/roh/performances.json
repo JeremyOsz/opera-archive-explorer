@@ -17,7 +17,9 @@
       "Conductor": "Warwick Braithwaite",
       "Leader": "Joseph Shadwick",
       "Event": "Number 1 in Sadler's Wells Ballet mixed programme 25 November 1948",
-      "Information source": "Royal Opera House programme for 25 November 1948 and stage management reports 1947-49 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 25 November 1948 and stage management reports 1947-49 (in Royal Opera House Collections)",
+      "Date": "25 November 1948",
+      "Session": "Evening 7.00pm"
     },
     "cast": [
       {
@@ -45,7 +47,9 @@
       "Conductor": "Warwick Braithwaite",
       "Leader": "Joseph Shadwick",
       "Event": "Number 1 in Sadler's Wells Ballet mixed programme 14 December 1948",
-      "Information source": "Royal Opera House programme for 14 December 1948 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 14 December 1948 (in Royal Opera House Collections)",
+      "Date": "14 December 1948",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -73,7 +77,9 @@
       "Conductor": "Warwick Braithwaite",
       "Leader": "Joseph Shadwick",
       "Event": "Number 2 in Sadler's Wells Ballet mixed programme 9 March 1949",
-      "Information source": "Royal Opera House programme for 9 March 1949 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 9 March 1949 (in Royal Opera House Collections)",
+      "Date": "9 March 1949",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -101,7 +107,9 @@
       "Conductor": "Robert Irving",
       "Leader": "Joseph Shadwick",
       "Event": "Number 1 in Sadler's Wells Ballet mixed programme 6 March 1950",
-      "Information source": "Royal Opera House programme for 6 March 1950 and stage management reports 1949-50 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 6 March 1950 and stage management reports 1949-50 (in Royal Opera House Collections)",
+      "Date": "6 March 1950",
+      "Session": "Evening 7.00pm"
     },
     "cast": [
       {
@@ -124,7 +132,9 @@
       "Performance status": "Musical interlude",
       "Notes": "'En Bateau' is a piano piece for four hands, but the two pianists are not given on the programme.",
       "Event": "Number 3 in Sadler's Wells Ballet mixed programme 7 March 1950",
-      "Information source": "Royal Opera House programme for 7 March 1950 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 7 March 1950 (in Royal Opera House Collections)",
+      "Date": "7 March 1950",
+      "Session": "Evening"
     },
     "cast": []
   },
@@ -149,7 +159,9 @@
       "Durations": "Part II: 8.51-9.47pm",
       "Event": "Number 9 in Jette Parker Young Artists Programme Summer Concert 21 July 2007",
       "Radio - future relay ": "BBC Radio 3",
-      "Information source": "Royal Opera House programme and stage manager's report for 21 July 2007 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme and stage manager's report for 21 July 2007 (in Royal Opera House Collections)",
+      "Date": "21 July 2007",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -195,7 +207,9 @@
       "Event": "Number 15 in Farewell Gala 14 July 1997",
       "Television - live relay ": "BBC 2; 14 July 1997",
       "Big Screen - live relay ": "14 July 1997; Covent Garden Piazza",
-      "Information source": "Royal Opera House Gala programme for 14 July 1997 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 14 July 1997 (in Royal Opera House Collections)",
+      "Date": "14 July 1997",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -235,7 +249,9 @@
       "Sponsor": "UBS Warburg (Gala)",
       "Durations": "Entire part 1: 7.33-8.58pm",
       "Event": "Number 2 in White Nights at Covent Garden Gala 5 July 2000",
-      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)",
+      "Date": "5 July 2000",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -275,7 +291,9 @@
       "Surtitled by": "Royal Opera House Surtitles Department",
       "Durations": "Entire part 1: 7.33-8.58pm",
       "Event": "Number 7 in White Nights at Covent Garden Gala 5 July 2000",
-      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)",
+      "Date": "5 July 2000",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -310,7 +328,9 @@
       "Sponsor": "UBS Warburg",
       "Durations": "Entire part 2: 9.31-10.46pm",
       "Event": "Number 14 in White Nights at Covent Garden Gala 5 July 2000",
-      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House)"
+      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House)",
+      "Date": "5 July 2000",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -346,7 +366,9 @@
       "Sponsor": "UBS Warburg",
       "Durations": "Entire part 2: 9.31-10.46pm",
       "Event": "Number 16 in White Nights at Covent Garden Gala 5 July 2000",
-      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)",
+      "Date": "5 July 2000",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -381,7 +403,9 @@
       "Durations": "Entire part 2: 8.57-10.09pm",
       "Event": "Number 9 in The Royal Opera's Gold and Silver Gala 12 December 1996",
       "Television - live relay ": "BBC 2; 12 December 1996",
-      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)",
+      "Date": "12 December 1996",
+      "Session": "Evening 7.00pm"
     },
     "cast": [
       {
@@ -412,7 +436,9 @@
       "Durations": "Entire part 2: 8.57-10.09pm",
       "Event": "Number 13 in The Royal Opera's Gold and Silver Gala 12 December 1996",
       "Television - live relay ": "BBC 2; 12 December 1996",
-      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)",
+      "Date": "12 December 1996",
+      "Session": "Evening 7.00pm"
     },
     "cast": [
       {
@@ -448,7 +474,9 @@
       "Durations": "Entire part 2: 8.57-10.09pm",
       "Event": "Number 14 in The Royal Opera's Gold and Silver Gala 12 December 1996",
       "Television - live relay ": "BBC 2; 12 December 1996",
-      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)",
+      "Date": "12 December 1996",
+      "Session": "Evening 7.00pm"
     },
     "cast": [
       {
@@ -483,7 +511,9 @@
       "Durations": "Entire part 2: 8.57-10.09pm",
       "Event": "Number 17 in The Royal Opera's Gold and Silver Gala 12 December 1996",
       "Television - live relay ": "BBC 2; 12 December 1996",
-      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)",
+      "Date": "12 December 1996",
+      "Session": "Evening 7.00pm"
     },
     "cast": [
       {
@@ -513,7 +543,9 @@
       "Surtitled by": "David Edwards",
       "Durations": "Excerpt: 6 minutes",
       "Event": "Number 6 in The World's Stage at Covent Garden Gala 15 November 2007",
-      "Information source": "Royal Opera House Gala programme for 15 November 2007 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 15 November 2007 (in Royal Opera House Collections)",
+      "Date": "15 November 2007",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -548,7 +580,9 @@
       "Surtitled by": "David Edwards",
       "Durations": "Excerpt: 6 minutes",
       "Event": "Number 16 in The World's Stage at Covent Garden Gala 15 November 2007",
-      "Information source": "Royal Opera House Gala programme for 15 November 2007 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 15 November 2007 (in Royal Opera House Collections)",
+      "Date": "15 November 2007",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -591,7 +625,9 @@
       "Durations": "Entire part 1: 7.35-8.56pm",
       "Event": "Number 3 in Winter Gala 1 December 1993",
       "Television - live relay ": "BBC 2; 1 December 1993",
-      "Information source": "Royal Opera House Gala programme and stage manager's report for 1 December 1993 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 1 December 1993 (in Royal Opera House Collections)",
+      "Date": "1 December 1993",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -629,7 +665,9 @@
       "Durations": "Entire part 2: 9.23-10.31pm",
       "Event": "Number 17 in Winter Gala 1 December 1993",
       "Television - live relay ": "BBC 2; 1 December 1993",
-      "Information source": "Royal Opera House Gala programme and stage manager's report for 1 December 1993 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 1 December 1993 (in Royal Opera House Collections)",
+      "Date": "1 December 1993",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -662,7 +700,9 @@
       "Language": "Italian",
       "Event": "Number 4 in Opera Concert 28 June 1988",
       "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
-      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)",
+      "Date": "28 June 1988",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -700,7 +740,9 @@
       "Language": "Italian",
       "Event": "Number 5 in Opera Concert 28 June 1988",
       "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
-      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)",
+      "Date": "28 June 1988",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -733,7 +775,9 @@
       "Language": "Italian",
       "Event": "Number 12 in Opera Concert 28 June 1988",
       "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
-      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)",
+      "Date": "28 June 1988",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -767,7 +811,9 @@
       "Event": "Number 4 in Opera Concert 6 July 1988",
       "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
       "Big Screen - live relay ": "6 July 1988; Covent Garden Piazza, London; Transmitted via a GEC Starvision Screen. Hosted by Brian Hayes; project director Susanna Little; produced and directed by Independent Producers Ltd.",
-      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)",
+      "Date": "6 July 1988",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -806,7 +852,9 @@
       "Event": "Number 6 in Opera Concert 6 July 1988",
       "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
       "Big Screen - live relay ": "6 July 1988; Covent Garden Piazza, London; Transmitted via a GEC Starvision Screen. Hosted by Brian Hayes; project director Susanna Little; produced and directed by Independent Producers Ltd.",
-      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)",
+      "Date": "6 July 1988",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -840,7 +888,9 @@
       "Event": "Number 13 in Opera Concert 6 July 1988",
       "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
       "Big Screen - live relay ": "6 July 1988; Covent Garden Piazza, London; Transmitted via a GEC Starvision Screen. Hosted by Brian Hayes; project director Susanna Little; produced and directed by Independent Producers Ltd.",
-      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)",
+      "Date": "6 July 1988",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -875,7 +925,9 @@
       "Language": "German",
       "Durations": "Part 1: 1.03-2.03pm",
       "Event": "Number 3 in Jette Parker Young Artists Summer Performance 17 July 2010 matinee",
-      "Information source": "Royal Opera House programme for 17 July 2010 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 17 July 2010 (in Royal Opera House Collections)",
+      "Date": "17 July 2010",
+      "Session": "Matinee 1.00pm"
     },
     "cast": [
       {
@@ -912,7 +964,9 @@
       "Conductor": "Valery Gergiev",
       "Language": "Russian",
       "Event": "Number 1 in A Celebration of St Petersburg 28 May 2002",
-      "Information source": "Royal Opera House special programme for 28-29 May 2002 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House special programme for 28-29 May 2002 (in Royal Opera House Collections)",
+      "Date": "28 May 2002",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -943,7 +997,9 @@
       "Performance status": "Excerpt",
       "Conductor": "Valery Gergiev",
       "Event": "Number 9 in A Celebration of St Petersburg 29 May 2002",
-      "Information source": "Royal Opera House special programme for 28-29 May 2002 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House special programme for 28-29 May 2002 (in Royal Opera House Collections)",
+      "Date": "29 May 2002",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -981,7 +1037,9 @@
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
       "Event": "Number 6 in The Royal Ballet Gala 1 March 1960",
-      "Information source": "Royal Opera House Gala programme for 1 March 1960 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 1 March 1960 (in Royal Opera House Collections)",
+      "Date": "1 March 1960",
+      "Session": "Evening 8.00pm"
     },
     "cast": [
       {
@@ -1024,7 +1082,9 @@
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet Gala 24 March 1965",
-      "Information source": "Royal Opera House Gala programme for 24 March 1965 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 24 March 1965 (in Royal Opera House Collections)",
+      "Date": "24 March 1965",
+      "Session": "Evening"
     },
     "cast": [
       {
@@ -1062,7 +1122,9 @@
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
       "Event": "Number 8 in The Royal Opera and The Royal Ballet Gala 17 July 1974",
-      "Information source": "Royal Opera House Gala programme for 17 July 1974 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 17 July 1974 (in Royal Opera House Collections)",
+      "Date": "17 July 1974",
+      "Session": "Evening 8.00pm"
     },
     "cast": [
       {
@@ -1103,7 +1165,9 @@
       "Surtitled by": "Kenneth Chalmers",
       "Durations": "Part 2: 2.01-2.33pm",
       "Event": "Number 4 in Jette Parker Young Artists Summer Performance 17 July 2016",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 17 July 2016 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 17 July 2016 (in Royal Opera House Collections)",
+      "Date": "17 July 2016",
+      "Session": "Matinee 12.30pm"
     },
     "cast": [
       {
@@ -1158,7 +1222,9 @@
       "Notes": "The stage manager's report gives timings for Part 1 and Part 2 of this event. Part 1 consists of four elements, Part 2 conists of six elements. The timing of each element is not specified in the report. The performance is not listed in the programme but is on the cast list; the reason for this is not clear.",
       "Durations": "Part 2 continue: 1.30-2.14pm",
       "Event": "Number 8 in The Royal Ballet School Summer Performance 9 July 2016",
-      "Information source": "Royal Opera House cast list and stage manager's report for 9 July 2016 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast list and stage manager's report for 9 July 2016 (in Royal Opera House Collections)",
+      "Date": "9 July 2016",
+      "Session": "Matinee 11.30am"
     },
     "cast": [
       {
@@ -1197,7 +1263,9 @@
       "Notes": "'A Gala Celebration: Life Reimagined' is in two parts; Part I consists of eleven elements and Part II consists of ten elements. The timing of each element is not specified in the stage manager's report. This performance is missing from the stage manager's report; the reason for this is not clear.",
       "Durations": "Part I: 7.32-8.36pm",
       "Event": "Number 9 in A Gala Celebration: Life Reimagined 25 February 2015",
-      "Information source": "Royal Opera House programme and stage manager's report for 25 February 2015 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme and stage manager's report for 25 February 2015 (in Royal Opera House Collections)",
+      "Date": "25 February 2015",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -1231,7 +1299,9 @@
       "Notes": "'A Gala Celebration: Life Reimagined' is in two parts; Part I consists of eleven elements and Part II consists of ten elements. The timing of each element is not specified in the stage manager's report. This performance is listed 16th in the programme but is 18th in the stage manager's report.",
       "Durations": "Part II: 9.05-10.11pm",
       "Event": "Number 18 in A Gala Celebration: Life Reimagined 25 February 2015",
-      "Information source": "Royal Opera House programme and stage manager's report for 25 February 2015 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme and stage manager's report for 25 February 2015 (in Royal Opera House Collections)",
+      "Date": "25 February 2015",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -1269,7 +1339,9 @@
       "Associate Concert Master": "Peter Schulmeister",
       "Notes": "The stage manager's report for this performance does not provide timing information. This performance was an addition to the programme.",
       "Event": "Number 6 in Spring Gala 30 May 2018",
-      "Information source": "Royal Opera House programme, cast sheet and stage manager's report for 30 May 2018 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme, cast sheet and stage manager's report for 30 May 2018 (in Royal Opera House Collections)",
+      "Date": "30 May 2018",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -1308,7 +1380,9 @@
       "Notes": "The stage manager's report for this performance does not provide timing information.",
       "Language": "French",
       "Event": "Number 12 in Spring Gala 30 May 2018",
-      "Information source": "Royal Opera House programme and stage manager's report for 30 May 2018 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme and stage manager's report for 30 May 2018 (in Royal Opera House Collections)",
+      "Date": "30 May 2018",
+      "Session": "Evening 7.30pm"
     },
     "cast": [
       {
@@ -1339,7 +1413,9 @@
       "Sponsor": "BP Amoco (performance)",
       "Durations": "With the Chinese Dance: 5 minutes",
       "Event": "Number 1 in Opening Performance at the Linbury Studio Theatre 22 November 1999",
-      "Information source": "Royal Opera House programme for 22 November 1999 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 22 November 1999 (in Royal Opera House Collections)",
+      "Date": "22 November 1999",
+      "Session": "Matinee"
     },
     "cast": [
       {
@@ -1385,7 +1461,9 @@
       "Sponsor": "BP Amoco (performance)",
       "Durations": "With the Arabian Dance: 5 minutes",
       "Event": "Number 2 in Opening Performance at the Linbury Studio Theatre 22 November 1999",
-      "Information source": "Royal Opera House programme for 22 November 1999 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 22 November 1999 (in Royal Opera House Collections)",
+      "Date": "22 November 1999",
+      "Session": "Matinee"
     },
     "cast": [
       {
@@ -1454,7 +1532,10 @@
       "Conductor": "Ashley Lawrence",
       "Leader": "George Hallam",
       "Event": "Number 2 in The Royal Ballet mixed programme 25 January 1973",
-      "Information source": "Royal Opera House programme 25 January 1973 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme 25 January 1973 (in Royal Opera House Collections)",
+      "Date": "25 January 1973",
+      "Session": "Evening",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -1564,7 +1645,10 @@
       "Leader": "Meyer Stolow",
       "Durations": "Entire work: 9.17-9.54pm",
       "Event": "Number 4 in The Royal Ballet mixed programme 30 October 1973",
-      "Information source": "Royal Opera House programme 30 October 1973 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme 30 October 1973 (in Royal Opera House Collections)",
+      "Date": "30 October 1973",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -1673,7 +1757,10 @@
       "Conductor": "Terence Kern",
       "Leader": "John Brown",
       "Event": "Number 2 in The Royal Ballet mixed programme 10 November 1982",
-      "Information source": "Royal Opera House programme 10 November 1982 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme 10 November 1982 (in Royal Opera House Collections)",
+      "Date": "10 November 1982",
+      "Session": "Evening",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -1782,7 +1869,10 @@
       "Conductor": "Ashley Lawrence",
       "Leader": "John Brown",
       "Event": "Number 2 in The Royal Ballet mixed programme 21 January 1983",
-      "Information source": "Royal Opera House programme for 21 January 1983 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 21 January 1983 (in Royal Opera House Collections)",
+      "Date": "21 January 1983",
+      "Session": "Evening",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -1892,7 +1982,10 @@
       "Leader": "John Brown",
       "Durations": "Entire work: 37 minutes",
       "Event": "Number 1 in The Royal Ballet mixed programme 4 June 1993",
-      "Information source": "Royal Opera House cast sheet for 4 June 1993 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 4 June 1993 (in Royal Opera House Collections)",
+      "Date": "4 June 1993",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2002,7 +2095,10 @@
       "Leader": "John Brown",
       "Durations": "Entire work: 37 minutes",
       "Event": "Number 1 in The Royal Ballet mixed programme 9 June 1993",
-      "Information source": "Royal Opera House cast sheet for 9 June 1993 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 9 June 1993 (in Royal Opera House Collections)",
+      "Date": "9 June 1993",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2112,7 +2208,10 @@
       "Leader": "John Brown",
       "Durations": "Entire work: 37 minutes",
       "Event": "Number 1 in The Royal Ballet mixed programme 5 June 1993 matinee",
-      "Information source": "Royal Opera House cast sheet for 5 June 1993 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 5 June 1993 (in Royal Opera House Collections)",
+      "Date": "5 June 1993",
+      "Session": "Matinee 2.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2222,7 +2321,10 @@
       "Leader": "John Brown",
       "Durations": "Entire work: 37 minutes",
       "Event": "Number 1 in The Royal Ballet mixed programme 5 June 1993",
-      "Information source": "Royal Opera House cast sheet for 5 June 1993 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 5 June 1993 (in Royal Opera House Collections)",
+      "Date": "5 June 1993",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2332,7 +2434,10 @@
       "Leader": "John Brown",
       "Durations": "Entire work: 37 minutes",
       "Event": "Number 1 in The Royal Ballet mixed programme 10 June 1993",
-      "Information source": "Royal Opera House cast sheet for 10 June 1993 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 10 June 1993 (in Royal Opera House Collections)",
+      "Date": "10 June 1993",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2441,7 +2546,10 @@
       "Conductor": "Terence Kern",
       "Leader": "John Brown",
       "Event": "Number 2 in The Royal Ballet mixed programme 19 November 1982",
-      "Information source": "Royal Opera House programme 19 November 1982 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme 19 November 1982 (in Royal Opera House Collections)",
+      "Date": "19 November 1982",
+      "Session": "Evening",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2550,7 +2658,10 @@
       "Conductor": "Ashley Lawrence",
       "Leader": "George Hallam",
       "Event": "Number 2 in The Royal Ballet mixed programme 21 June 1973",
-      "Information source": "Royal Opera House programme 21 June 1973 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme 21 June 1973 (in Royal Opera House Collections)",
+      "Date": "21 June 1973",
+      "Session": "Evening",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2659,7 +2770,10 @@
       "Conductor": "Ashley Lawrence",
       "Leader": "George Hallam",
       "Event": "Number 2 in The Royal Ballet mixed programme 26 January 1973",
-      "Information source": "Royal Opera House programme 26 January 1973 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme 26 January 1973 (in Royal Opera House Collections)",
+      "Date": "26 January 1973",
+      "Session": "Evening",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2768,7 +2882,10 @@
       "Conductor": "Ashley Lawrence",
       "Leader": "Meyer Stolow",
       "Event": "Number 4 in The Royal Ballet mixed programme 31 October 1973",
-      "Information source": "Royal Opera House programme 31 October 1973 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme 31 October 1973 (in Royal Opera House Collections)",
+      "Date": "31 October 1973",
+      "Session": "Evening",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2877,7 +2994,10 @@
       "Conductor": "Ashley Lawrence",
       "Leader": "Meyer Stolow",
       "Event": "Number 4 in The Royal Ballet mixed programme 3 November 1973",
-      "Information source": "Royal Opera House programme for 3 November 1973 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 3 November 1973 (in Royal Opera House Collections)",
+      "Date": "3 November 1973",
+      "Session": "Evening",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -2986,7 +3106,10 @@
       "Concert Master": "Vasko Vassilev",
       "Durations": "Entire work: 8.28-9.05pm",
       "Event": "Number 2 in The Royal Ballet mixed programme 28 January 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 28 January 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 28 January 2004 (in Royal Opera House Collections)",
+      "Date": "28 January 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -3095,7 +3218,10 @@
       "Concert Master": "Vasko Vassilev",
       "Durations": "Entire work: 8.24-9.02pm",
       "Event": "Number 2 in The Royal Ballet mixed programme 29 January 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 29 January 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 29 January 2004 (in Royal Opera House Collections)",
+      "Date": "29 January 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -3204,7 +3330,10 @@
       "Concert Master": "Vasko Vassilev",
       "Durations": "Entire work: 8.27-9.04pm",
       "Event": "Number 2 in The Royal Ballet mixed programme 4 February 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 4 February 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 4 February 2004 (in Royal Opera House Collections)",
+      "Date": "4 February 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -3313,7 +3442,10 @@
       "Concert Master": "Vasko Vassilev",
       "Durations": "Entire work: 8.27-9.04pm",
       "Event": "Number 2 in The Royal Ballet mixed programme 19 February 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 19 February 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 19 February 2004 (in Royal Opera House Collections)",
+      "Date": "19 February 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -3422,7 +3554,10 @@
       "Concert Master": "Vasko Vassilev",
       "Durations": "Entire work: 2.03-2.40pm",
       "Event": "Number 2 in The Royal Ballet mixed programme 21 February 2004 matinee",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 21 February 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 21 February 2004 (in Royal Opera House Collections)",
+      "Date": "21 February 2004",
+      "Session": "Matinee 1.00pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -3531,7 +3666,10 @@
       "Concert Master": "Vasko Vassilev",
       "Durations": "Entire work: 8.26-9.03pm",
       "Event": "Number 2 in The Royal Ballet mixed programme 23 February 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 23 February 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 23 February 2004 (in Royal Opera House Collections)",
+      "Date": "23 February 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -3640,7 +3778,10 @@
       "Concert Master": "Vasko Vassilev",
       "Durations": "Entire work: 8.25-9.02pm",
       "Event": "Number 2 in The Royal Ballet mixed programme 25 February 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 25 February 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 25 February 2004 (in Royal Opera House Collections)",
+      "Date": "25 February 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "10171"
     },
     "cast": [
       {
@@ -3748,7 +3889,10 @@
       "Performance status": "Original season",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 4 April 1961 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 4 April 1961 (in Royal Opera House Collections)",
+      "Date": "4 April 1961",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -4187,7 +4331,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 23 September 1961",
-      "Information source": "Royal Opera House programme for 23 September 1961 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 23 September 1961 (in Royal Opera House Collections)",
+      "Date": "23 September 1961",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -4576,7 +4723,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 18 February 1963",
-      "Information source": "Royal Opera House programme for 18 February 1963 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 18 February 1963 (in Royal Opera House Collections)",
+      "Date": "18 February 1963",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -4699,7 +4849,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 2 November 1963 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 2 November 1963 (in Royal Opera House Collections)",
+      "Date": "2 November 1963",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -4827,7 +4980,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 23 October 1964 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 23 October 1964 (in Royal Opera House Collections)",
+      "Date": "23 October 1964",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -4956,7 +5112,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Notes": "A special performance for Youth and Music and the Friends of Covent Garden.",
-      "Information source": "Royal Opera House programme for 25 November 1965 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 25 November 1965 (in Royal Opera House Collections)",
+      "Date": "25 November 1965",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -5084,7 +5243,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 23 December 1966 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 23 December 1966 (in Royal Opera House Collections)",
+      "Date": "23 December 1966",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -5212,7 +5374,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 10 February 1968 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 10 February 1968 (in Royal Opera House Collections)",
+      "Date": "10 February 1968",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -5340,7 +5505,10 @@
       "Performance status": "Revival",
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 7 March 1969 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 7 March 1969 (in Royal Opera House Collections)",
+      "Date": "7 March 1969",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -5468,7 +5636,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 8 January 1970 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 8 January 1970 (in Royal Opera House Collections)",
+      "Date": "8 January 1970",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -5597,7 +5768,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 21 February 1962",
-      "Information source": "Royal Opera House programme for 21 February 1962 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 21 February 1962 (in Royal Opera House Collections)",
+      "Date": "21 February 1962",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -5720,7 +5894,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 21 March 1969 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 21 March 1969 (in Royal Opera House Collections)",
+      "Date": "21 March 1969",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -5848,7 +6025,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 12 January 1970 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 12 January 1970 (in Royal Opera House Collections)",
+      "Date": "12 January 1970",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -5976,7 +6156,10 @@
       "Performance status": "Revival",
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 14 March 1970 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 14 March 1970 (in Royal Opera House Collections)",
+      "Date": "14 March 1970",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -6104,7 +6287,10 @@
       "Performance status": "Revival",
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 20 June 1970 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 20 June 1970 (in Royal Opera House Collections)",
+      "Date": "20 June 1970",
+      "Session": "Matinee",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -6232,7 +6418,10 @@
       "Performance status": "Revival",
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 11 July 1970 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 11 July 1970 (in Royal Opera House Collections)",
+      "Date": "11 July 1970",
+      "Session": "Matinee",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -6361,7 +6550,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 21 February 1963",
-      "Information source": "Royal Opera House programme for 21 February 1963 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 21 February 1963 (in Royal Opera House Collections)",
+      "Date": "21 February 1963",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -6485,7 +6677,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 26 February 1963",
-      "Information source": "Royal Opera House programme for 26 February 1963 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 26 February 1963 (in Royal Opera House Collections)",
+      "Date": "26 February 1963",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -6609,7 +6804,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 20 February 1963",
-      "Information source": "Royal Opera House programme for 20 February 1963 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 20 February 1963 (in Royal Opera House Collections)",
+      "Date": "20 February 1963",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -6733,7 +6931,10 @@
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 1 March 1963",
-      "Information source": "Royal Opera House programme for 1 March 1963 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 1 March 1963 (in Royal Opera House Collections)",
+      "Date": "1 March 1963",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -6857,7 +7058,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 1 March 1962",
-      "Information source": "Royal Opera House programme for 1 March 1962 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 1 March 1962 (in Royal Opera House Collections)",
+      "Date": "1 March 1962",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -6981,7 +7185,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 6 March 1962",
-      "Information source": "Royal Opera House programme for 6 March 1962 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 6 March 1962 (in Royal Opera House Collections)",
+      "Date": "6 March 1962",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -7105,7 +7312,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 29 May 1962",
-      "Information source": "Royal Opera House programme for 29 May 1962 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 29 May 1962 (in Royal Opera House Collections)",
+      "Date": "29 May 1962",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -7229,7 +7439,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 1 June 1962",
-      "Information source": "Royal Opera House programme for 1 June 1962 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 1 June 1962 (in Royal Opera House Collections)",
+      "Date": "1 June 1962",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -7353,7 +7566,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 15 June 1962",
-      "Information source": "Royal Opera House programme for 15 June 1962 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 15 June 1962 (in Royal Opera House Collections)",
+      "Date": "15 June 1962",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -7477,7 +7693,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 2 in The Royal Ballet mixed programme 29 June 1962",
-      "Information source": "Royal Opera House programme for 29 June 1962 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 29 June 1962 (in Royal Opera House Collections)",
+      "Date": "29 June 1962",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -7600,7 +7819,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 15 November 1963 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 15 November 1963 (in Royal Opera House Collections)",
+      "Date": "15 November 1963",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -7728,7 +7950,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 28 October 1964 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 28 October 1964 (in Royal Opera House Collections)",
+      "Date": "28 October 1964",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -7856,7 +8081,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 27 November 1964 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 27 November 1964 (in Royal Opera House Collections)",
+      "Date": "27 November 1964",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -7984,7 +8212,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 13 January 1966 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 13 January 1966 (in Royal Opera House Collections)",
+      "Date": "13 January 1966",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -8112,7 +8343,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 18 January 1966 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 18 January 1966 (in Royal Opera House Collections)",
+      "Date": "18 January 1966",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -8240,7 +8474,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 27 January 1966 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 27 January 1966 (in Royal Opera House Collections)",
+      "Date": "27 January 1966",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -8368,7 +8605,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 28 February 1966 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 28 February 1966 (in Royal Opera House Collections)",
+      "Date": "28 February 1966",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -8496,7 +8736,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 3 March 1966 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 3 March 1966 (in Royal Opera House Collections)",
+      "Date": "3 March 1966",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -8624,7 +8867,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 10 January 1967 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 10 January 1967 (in Royal Opera House Collections)",
+      "Date": "10 January 1967",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -8752,7 +8998,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 17 January 1967 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 17 January 1967 (in Royal Opera House Collections)",
+      "Date": "17 January 1967",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -8880,7 +9129,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 2 February 1967 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 2 February 1967 (in Royal Opera House Collections)",
+      "Date": "2 February 1967",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -9009,7 +9261,10 @@
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
       "Notes": "A special performance for Youth and Music and The Friends of Covent Garden.",
-      "Information source": "Royal Opera House programme for 10 March 1969 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 10 March 1969 (in Royal Opera House Collections)",
+      "Date": "10 March 1969",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -9137,7 +9392,10 @@
       "Performance status": "Revival",
       "Conductor": "Emanuel Young",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 15 March 1969 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 15 March 1969 (in Royal Opera House Collections)",
+      "Date": "15 March 1969",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -9265,7 +9523,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 28 February 1970 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 28 February 1970 (in Royal Opera House Collections)",
+      "Date": "28 February 1970",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -9393,7 +9654,10 @@
       "Performance status": "Revival",
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
-      "Information source": "Royal Opera House programme for 20 June 1970 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 20 June 1970 (in Royal Opera House Collections)",
+      "Date": "20 June 1970",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -9522,7 +9786,10 @@
       "Conductor": "John Lanchbery",
       "Leader": "Charles Taylor",
       "Event": "Number 21 in Tribute to Sir Frederick Ashton CH CBE 24 July 1970",
-      "Information source": "Royal Opera House programme for 24 July 1970 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 24 July 1970 (in Royal Opera House Collections)",
+      "Date": "24 July 1970",
+      "Session": "Evening",
+      "Production ID": "115"
     },
     "cast": [
       {
@@ -9552,7 +9819,10 @@
       "Venue": "Royal Opera House, Covent Garden, London",
       "Performance status": "Visiting company",
       "Event": "Number 1 in National Youth Ballet of Great Britain Gala Evening 3 November 1996",
-      "Information source": "Royal Opera House Gala programme for 3 November 1996 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 3 November 1996 (in Royal Opera House Collections)",
+      "Date": "3 November 1996",
+      "Session": "Evening",
+      "Production ID": "11638"
     },
     "cast": [
       {
@@ -9809,7 +10079,10 @@
       "Performance status": "Visiting company",
       "Conductor": "Neil Thomson",
       "Event": "Number 2 in National Youth Ballet of Great Britain Gala Evening 3 November 1996",
-      "Information source": "Royal Opera House Gala programme for 3 November 1996 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 3 November 1996 (in Royal Opera House Collections)",
+      "Date": "3 November 1996",
+      "Session": "Evening",
+      "Production ID": "11641"
     },
     "cast": [
       {
@@ -9891,7 +10164,10 @@
       "Performance status": "Visiting company",
       "Conductor": "Neil Thomson",
       "Event": "Number 3 in National Youth Ballet of Great Britain Gala Evening 3 November 1996",
-      "Information source": "Royal Opera House Gala programme for 3 November 1996 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 3 November 1996 (in Royal Opera House Collections)",
+      "Date": "3 November 1996",
+      "Session": "Evening",
+      "Production ID": "11644"
     },
     "cast": [
       {
@@ -10225,7 +10501,10 @@
       "Conductor": "Anthony Twiner",
       "Leader": "Charles Taylor",
       "Event": "Number 12 in Fanfare for Europe Gala 13 January 1973",
-      "Information source": "Royal Opera House Gala programme for 13 January 1973 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House Gala programme for 13 January 1973 (in Royal Opera House Collections)",
+      "Date": "13 January 1973",
+      "Session": "Evening",
+      "Production ID": "11745"
     },
     "cast": [
       {
@@ -10265,7 +10544,10 @@
       "Leader": "Vasko Vassilev",
       "Durations": "Entire work: 10 minutes",
       "Event": "Number 2 in The Royal Ballet mixed programme 23 November 1995",
-      "Information source": "Royal Opera House cast sheet for 23 November 1995 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 23 November 1995 (in Royal Opera House Collections)",
+      "Date": "23 November 1995",
+      "Session": "Evening",
+      "Production ID": "11745"
     },
     "cast": [
       {
@@ -10305,7 +10587,10 @@
       "Leader": "Vasko Vassilev",
       "Durations": "Entire work: 10 minutes",
       "Event": "Number 2 in The Royal Ballet mixed programme 25 November 1995",
-      "Information source": "Royal Opera House cast sheet for 25 November 1995 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 25 November 1995 (in Royal Opera House Collections)",
+      "Date": "25 November 1995",
+      "Session": "Evening",
+      "Production ID": "11745"
     },
     "cast": [
       {
@@ -10345,7 +10630,10 @@
       "Leader": "Vasko Vassilev",
       "Durations": "Entire work: 10 minutes",
       "Event": "Number 2 in The Royal Ballet mixed programme 30 November 1995",
-      "Information source": "Royal Opera House cast sheet for 30 November 1995 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 30 November 1995 (in Royal Opera House Collections)",
+      "Date": "30 November 1995",
+      "Session": "Evening",
+      "Production ID": "11745"
     },
     "cast": [
       {
@@ -10385,7 +10673,10 @@
       "Leader": "Vasko Vassilev",
       "Durations": "Entire work: 10 minutes",
       "Event": "Number 2 in The Royal Ballet mixed programme 7 December 1995",
-      "Information source": "Royal Opera House cast sheet for 7 December 1995 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 7 December 1995 (in Royal Opera House Collections)",
+      "Date": "7 December 1995",
+      "Session": "Evening",
+      "Production ID": "11745"
     },
     "cast": [
       {
@@ -10425,7 +10716,10 @@
       "Leader": "Vasko Vassilev",
       "Durations": "Entire work: 10 minutes",
       "Event": "Number 2 in The Royal Ballet mixed programme 14 December 1995 Matinee",
-      "Information source": "Royal Opera House cast sheet for 14 December 1995 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 14 December 1995 (in Royal Opera House Collections)",
+      "Date": "14 December 1995",
+      "Session": "Matinee",
+      "Production ID": "11745"
     },
     "cast": [
       {
@@ -10465,7 +10759,10 @@
       "Leader": "Vasko Vassilev",
       "Durations": "Entire work: 10 minutes",
       "Event": "Number 2 in The Royal Ballet mixed programme 14 December 1995",
-      "Information source": "Royal Opera House cast sheet for 14 December 1995 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet for 14 December 1995 (in Royal Opera House Collections)",
+      "Date": "14 December 1995",
+      "Session": "Evening",
+      "Production ID": "11745"
     },
     "cast": [
       {
@@ -10504,7 +10801,10 @@
       "Concert Master": "Sergey Levitin",
       "Durations": "Divertissement: 2.35-2.38pm",
       "Event": "Number 4 in The Royal Ballet mixed programme 13 November 2004 Matinee",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 13 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 13 November 2004 (in Royal Opera House Collections)",
+      "Date": "13 November 2004",
+      "Session": "Matinee 1.30pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10538,7 +10838,10 @@
       "Concert Master": "Sergey Levitin",
       "Durations": "Divertissement: 2.52-2.56pm",
       "Event": "Number 6 in The Royal Ballet mixed programme 13 November 2004 Matinee",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 13 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 13 November 2004 (in Royal Opera House Collections)",
+      "Date": "13 November 2004",
+      "Session": "Matinee 1.30pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10578,7 +10881,10 @@
       "Leader": "Melissa Forshaw",
       "Durations": "Divertissement: 8.05-8.08pm",
       "Event": "Number 4 in The Royal Ballet mixed programme 13 November 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 13 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 13 November 2004 (in Royal Opera House Collections)",
+      "Date": "13 November 2004",
+      "Session": "Evening 7.00pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10608,7 +10914,10 @@
       "Leader": "Melissa Forshaw",
       "Durations": "Divertissement: 8.22-8.26pm",
       "Event": "Number 6 in The Royal Ballet mixed programme 13 November 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 13 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 13 November 2004 (in Royal Opera House Collections)",
+      "Date": "13 November 2004",
+      "Session": "Evening 7.00pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10648,7 +10957,10 @@
       "Leader": "Melissa Forshaw",
       "Durations": "Divertissement: 8.32-8.35pm",
       "Event": "Number 4 in The Royal Ballet mixed programme 17 November 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 17 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 17 November 2004 (in Royal Opera House Collections)",
+      "Date": "17 November 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10683,7 +10995,10 @@
       "Leader": "Melissa Forshaw",
       "Durations": "Divertissement: 8.49-8.53pm",
       "Event": "Number 6 in The Royal Ballet mixed programme 17 November 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 17 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 17 November 2004 (in Royal Opera House Collections)",
+      "Date": "17 November 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10722,7 +11037,10 @@
       "Concert Master": "Sergey Levitin",
       "Durations": "Divertissement: 8.31-8.34pm",
       "Event": "Number 4 in The Royal Ballet mixed programme 19 November 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 19 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 19 November 2004 (in Royal Opera House Collections)",
+      "Date": "19 November 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10756,7 +11074,10 @@
       "Concert Master": "Sergey Levitin",
       "Durations": "Divertissement: 8.47-8.51pm",
       "Event": "Number 6 in The Royal Ballet mixed programme 19 November 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 19 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 19 November 2004 (in Royal Opera House Collections)",
+      "Date": "19 November 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10796,7 +11117,10 @@
       "Durations": "Divertissement: 8.35-8.38pm",
       "Event": "Number 4 in The Royal Ballet mixed programme 25 November 2004",
       "Television - future relay ": "BBC 4; 11 December 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 25 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 25 November 2004 (in Royal Opera House Collections)",
+      "Date": "25 November 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10831,7 +11155,10 @@
       "Durations": "Divertissement: 8.52-8.56pm",
       "Event": "Number 6 in The Royal Ballet mixed programme 25 November 2004",
       "Television - future relay ": "BBC 4; 11 December 2004",
-      "Information source": "Royal Opera House cast sheet and stage manager's report for 25 November 2004 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House cast sheet and stage manager's report for 25 November 2004 (in Royal Opera House Collections)",
+      "Date": "25 November 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12088"
     },
     "cast": [
       {
@@ -10870,7 +11197,10 @@
       "Conductor": "Ashley Lawrence",
       "Leader": "Meyer Stolow",
       "Notes": "Lesley Collier replaced an injured Marguerite Porter as Giselle in Act II.",
-      "Information source": "Royal Opera House programme for 16 October 1980 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 16 October 1980 (in Royal Opera House Collections)",
+      "Date": "16 October 1980",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12171"
     },
     "cast": [
       {
@@ -11009,7 +11339,10 @@
       "Conductor": "Ashley Lawrence",
       "Leader": "Adrian Reed",
       "Event": "Number 3 in The Royal Ballet mixed programme 1 May 1982",
-      "Information source": "Royal Opera House programme for 1 May 1982 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 1 May 1982 (in Royal Opera House Collections)",
+      "Date": "1 May 1982",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12171"
     },
     "cast": [
       {
@@ -11143,7 +11476,10 @@
       "Conductor": "Terence Kern",
       "Leader": "David Nolan",
       "Event": "Number 2 in The Royal Ballet mixed programme 27 October 1982",
-      "Information source": "Royal Opera House programme for 27 October 1982 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 27 October 1982 (in Royal Opera House Collections)",
+      "Date": "27 October 1982",
+      "Session": "Evening",
+      "Production ID": "12171"
     },
     "cast": [
       {
@@ -11277,7 +11613,10 @@
       "Conductor": "Terence Kern",
       "Leader": "David Nolan",
       "Event": "Number 2 in The Royal Ballet mixed programme 3 November 1982",
-      "Information source": "Royal Opera House programme for 3 November 1982 (in Royal Opera House Collections)"
+      "Information source": "Royal Opera House programme for 3 November 1982 (in Royal Opera House Collections)",
+      "Date": "3 November 1982",
+      "Session": "Evening",
+      "Production ID": "12171"
     },
     "cast": [
       {
@@ -11387,6 +11726,825 @@
       },
       {
         "performanceId": "24150",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24161",
+    "productionId": "12171",
+    "title": "Giselle-16 November 1982 Evening",
+    "date": "16 November 1982",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Terence Kern",
+    "leader": "David Nolan",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24161&row=8",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Terence Kern",
+      "Leader": "David Nolan",
+      "Event": "Number 2 in The Royal Ballet mixed programme 16 November 1982",
+      "Information source": "Royal Opera House programme for 16 November 1982 (in Royal Opera House Collections)",
+      "Date": "16 November 1982",
+      "Session": "Evening",
+      "Production ID": "12171"
+    },
+    "cast": [
+      {
+        "performanceId": "24161",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Count Albrecht",
+        "performer": "Anthony Dowell"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Hilarion",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Wilfred",
+        "performer": "Ross MacGibbon"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24161",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Leading Huntsman",
+        "performer": "Robert Jude"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Pas de Deux",
+        "performer": "Karen Paisey"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Pas de Deux",
+        "performer": "Stephen Beagley"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Pas de Six",
+        "performer": "Angela Cox"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Pas de Six",
+        "performer": "Alessandra Ferri"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Pas de Six",
+        "performer": "Gillian Kingsley"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Pas de Six",
+        "performer": "Julie Lincoln"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Pas de Six",
+        "performer": "Nicola Roberts"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Pas de Six",
+        "performer": "Julie Rose"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Peasants and Courtiers",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Myrtha",
+        "performer": "Deirdre Eyden"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Zulme",
+        "performer": "Fiona Chadwick"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Moyna",
+        "performer": "Rosalyn Whitten"
+      },
+      {
+        "performanceId": "24161",
+        "role": "Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24161",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24169",
+    "productionId": "12171",
+    "title": "Giselle-20 November 1982 Evening",
+    "date": "20 November 1982",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Emanuel Young",
+    "leader": "David Nolan",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24169&row=9",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Emanuel Young",
+      "Leader": "David Nolan",
+      "Event": "Number 2 in The Royal Ballet mixed programme 20 November 1982",
+      "Information source": "Royal Opera House programme for 20 November 1982 (in Royal Opera House Collections)",
+      "Date": "20 November 1982",
+      "Session": "Evening",
+      "Production ID": "12171"
+    },
+    "cast": [
+      {
+        "performanceId": "24169",
+        "role": "Giselle",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Count Albrecht",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Hilarion",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Wilfred",
+        "performer": "Guy Niblett"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Berthe",
+        "performer": "Julie Wood"
+      },
+      {
+        "performanceId": "24169",
+        "role": "The Duke of Courland",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Bathilde",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Leading Huntsman",
+        "performer": "Michael Corder"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Pas de Deux",
+        "performer": "Rosalyn Whitten"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Pas de Deux",
+        "performer": "Antony Dowson"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Pas de Six",
+        "performer": "Angela Cox"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Pas de Six",
+        "performer": "Alessandra Ferri"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Pas de Six",
+        "performer": "Gillian Kingsley"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Pas de Six",
+        "performer": "Julie Lincoln"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Pas de Six",
+        "performer": "Nicola Roberts"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Pas de Six",
+        "performer": "Julie Rose"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Peasants and Courtiers",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Myrtha",
+        "performer": "Judith Howe"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Zulme",
+        "performer": "Karen Paisey"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Moyna",
+        "performer": "Gillian Kingsley"
+      },
+      {
+        "performanceId": "24169",
+        "role": "Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24169",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24171",
+    "productionId": "12171",
+    "title": "Giselle-22 November 1982 Evening",
+    "date": "22 November 1982",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Terence Kern",
+    "leader": "David Nolan",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24171&row=10",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Terence Kern",
+      "Leader": "David Nolan",
+      "Event": "Number 2 in The Royal Ballet mixed programme 22 November 1982",
+      "Information source": "Royal Opera House programme for 22 November 1982 (in Royal Opera House Collections)",
+      "Date": "22 November 1982",
+      "Session": "Evening",
+      "Production ID": "12171"
+    },
+    "cast": [
+      {
+        "performanceId": "24171",
+        "role": "Giselle",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Count Albrecht",
+        "performer": "Rudolf Nureyev"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Hilarion",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Wilfred",
+        "performer": "Michael Batchelor"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24171",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Bathilde",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Leading Huntsman",
+        "performer": "Robert Jude"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Pas de Deux",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Pas de Deux",
+        "performer": "Stephen Beagley"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Pas de Six",
+        "performer": "Angela Cox"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Pas de Six",
+        "performer": "Gillian Kingsley"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Pas de Six",
+        "performer": "Julie Lincoln"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Pas de Six",
+        "performer": "Karen Paisey"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Pas de Six",
+        "performer": "Nicola Roberts"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Pas de Six",
+        "performer": "Julie Rose"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Peasants and Courtiers",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Myrtha",
+        "performer": "Pippa Wylde"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Zulme",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Moyna",
+        "performer": "Genesia Rosato"
+      },
+      {
+        "performanceId": "24171",
+        "role": "Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24171",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24954",
+    "productionId": "12171",
+    "title": "Giselle-5 November 1980 Evening",
+    "date": "5 November 1980",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "Anthony Twiner",
+    "leader": "Meyer Stolow",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24954&row=1",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "Anthony Twiner",
+      "Leader": "Meyer Stolow",
+      "Information source": "Royal Opera House programme for 5 November 1980 (in Royal Opera House Collections)",
+      "Date": "5 November 1980",
+      "Session": "Evening",
+      "Production ID": "12171"
+    },
+    "cast": [
+      {
+        "performanceId": "24954",
+        "role": "Giselle",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Count Albrecht",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Hilarion",
+        "performer": "Stephen Jefferies"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Wilfred",
+        "performer": "Ross MacGibbon"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Berthe",
+        "performer": "Julie Wood"
+      },
+      {
+        "performanceId": "24954",
+        "role": "The Duke of Courland",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Bathilde",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Leading Huntsman",
+        "performer": "Anthony Conway"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Pas de deux",
+        "performer": "Angela Cox"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Pas de deux",
+        "performer": "Ashley Page"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Pas de six",
+        "performer": "Madonna Benjamin"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Pas de six",
+        "performer": "Julie Lincoln"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Pas de six",
+        "performer": "Elizabeth Morgan"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Pas de six",
+        "performer": "Karen Paisey"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Pas de six",
+        "performer": "Nicola Roberts"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Pas de six",
+        "performer": "Julie Rose"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Peasants and Courtiers",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Zulme",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Moyna",
+        "performer": "Rosalyn Whitten"
+      },
+      {
+        "performanceId": "24954",
+        "role": "Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24954",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24955",
+    "productionId": "12171",
+    "title": "Giselle-14 February 1981 Evening",
+    "date": "14 February 1981",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "Emanuel Young",
+    "leader": "Meyer Stolow",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24955&row=2",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "Emanuel Young",
+      "Leader": "Meyer Stolow",
+      "Information source": "Royal Opera House programme for 14 February 1981 (in Royal Opera House Collections)",
+      "Date": "14 February 1981",
+      "Session": "Evening",
+      "Production ID": "12171"
+    },
+    "cast": [
+      {
+        "performanceId": "24955",
+        "role": "Giselle",
+        "performer": "Marguerite Porter"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Count Albrecht",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Hilarion",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Wilfred",
+        "performer": "Michael Batchelor"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24955",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Leading Huntsman",
+        "performer": "Robert Jude"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Pas de deux",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Pas de deux",
+        "performer": "Stephen Beagley"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Pas de six",
+        "performer": "Angela Cox"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Pas de six",
+        "performer": "Julie Lincoln"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Pas de six",
+        "performer": "Elizabeth Morgan"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Pas de six",
+        "performer": "Karen Paisey"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Pas de six",
+        "performer": "Nicola Roberts"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Pas de six",
+        "performer": "Anita Young"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Peasants and Courtiers",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Zulme",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Moyna",
+        "performer": "Genesia Rosato"
+      },
+      {
+        "performanceId": "24955",
+        "role": "Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24955",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24956",
+    "productionId": "12171",
+    "title": "Giselle-18 February 1981 Evening",
+    "date": "18 February 1981",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "Emanuel Young",
+    "leader": "Meyer Stolow",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24956&row=3",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "Emanuel Young",
+      "Leader": "Meyer Stolow",
+      "Information source": "Royal Opera House programme for 18 February 1981 (in Royal Opera House Collections)",
+      "Date": "18 February 1981",
+      "Session": "Evening",
+      "Production ID": "12171"
+    },
+    "cast": [
+      {
+        "performanceId": "24956",
+        "role": "Giselle",
+        "performer": "Galina Samsova"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Count Albrecht",
+        "performer": "David Wall"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Hilarion",
+        "performer": "Stephen Jefferies"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Wilfred",
+        "performer": "Michael Batchelor"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24956",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Leading Huntsman",
+        "performer": "Robert Jude"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Pas de deux",
+        "performer": "Karen Paisey"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Pas de deux",
+        "performer": "Stephen Beagley"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Pas de six",
+        "performer": "Madonna Benjamin"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Pas de six",
+        "performer": "Julie Lincoln"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Pas de six",
+        "performer": "Elizabeth Morgan"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Pas de six",
+        "performer": "Nicola Roberts"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Pas de six",
+        "performer": "Rosemary Taylor"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Pas de six",
+        "performer": "Anita Young"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Peasants and Courtiers",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Zulme",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Moyna",
+        "performer": "Genesia Rosato"
+      },
+      {
+        "performanceId": "24956",
+        "role": "Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24956",
         "role": "",
         "performer": "The Orchestra of the Royal Opera House"
       }
