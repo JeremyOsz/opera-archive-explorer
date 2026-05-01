@@ -67,10 +67,18 @@ const dataset: RohDataset = {
 };
 
 const assetFixture: RohAssetStoreFileJson = {
+  source: 'https://library.roh.org.uk',
+  generatedAt: '2026-05-01T12:45:35.377Z',
+  collectionCount: 1,
+  assetCount: 1,
   collections: [
     {
       id: '47604b21-c326-4a91-987cfb88603f0db5',
       title: 'Siegfried - Press selection',
+      description: 'Press pack photos',
+      expectedFileCount: 18,
+      fetchedFileCount: 18,
+      isReadonly: false,
       publicUrl: 'https://library.roh.org.uk/web/47604',
       assets: [
         {
@@ -80,6 +88,11 @@ const assetFixture: RohAssetStoreFileJson = {
           extension: ['jpg'],
           webUrl: 'https://library.roh.org.uk/files/x',
           dateCreated: '2026-03-17T10:55:59Z',
+          appCodes: ['IB'],
+          orientation: 'landscape',
+          fileSize: 1024,
+          isArchived: false,
+          hasAdditionalFiles: false,
         },
       ],
     },
@@ -131,6 +144,10 @@ describe('ROH JSON index', () => {
     assert.equal(wagnerAssets.items[0]?.type, 'asset');
     assert.equal(wagnerAssets.items[0]?.source, RohDataSources.assetLibrary);
     assert.equal(wagnerAssets.items[0]?.id, 'FA4667F8-10E3-4F80-AE813563AB68E31C');
+    assert.equal(wagnerAssets.items[0]?.metadata.siteSource, 'https://library.roh.org.uk');
+    assert.ok(wagnerAssets.items[0]?.metadata.siteSnapshotAt?.includes('2026-05-01'));
+    assert.equal(wagnerAssets.items[0]?.metadata.collectionDescription, 'Press pack photos');
+    assert.equal(wagnerAssets.items[0]?.metadata.appCodes, 'IB');
 
     const assetSourceOnly = searchCombinedRoh(
       index,

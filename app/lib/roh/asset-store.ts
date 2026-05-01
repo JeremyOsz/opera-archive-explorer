@@ -12,6 +12,15 @@ export interface RohAssetStoreAssetJson {
   webUrl?: string;
   tags?: string[];
   extension?: string[];
+  /** From library snapshot JSON (`appCodes` on assets). */
+  appCodes?: string[];
+  orientation?: string;
+  fileSize?: number;
+  isArchived?: boolean;
+  isKeyVisual?: boolean;
+  hasAdditionalFiles?: boolean;
+  isPrivate?: boolean;
+  metadata?: Record<string, string>;
 }
 
 export interface RohAssetStoreCollectionJson {
@@ -20,6 +29,11 @@ export interface RohAssetStoreCollectionJson {
   description?: string;
   publicUrl?: string;
   sourceUrl?: string;
+  expectedFileCount?: number;
+  fetchedFileCount?: number;
+  reportedFileCount?: number;
+  isReadonly?: boolean;
+  metadata?: Record<string, string>;
   assets?: RohAssetStoreAssetJson[];
 }
 

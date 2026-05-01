@@ -17,6 +17,7 @@
     "roh:asset-store": "pnpm exec tsx scripts/roh-asset-store-fetch.ts",
     "roh:index": "pnpm exec tsx scripts/roh-index.ts",
     "roh:refresh": "pnpm exec tsx scripts/roh-refresh.ts",
+    "roh:enrich-metadata": "pnpm exec tsx scripts/enrich-external-metadata.ts",
     "roh:validate": "pnpm exec tsx scripts/roh-validate.ts",
     "rbo:fetch": "pnpm exec tsx scripts/rbo-fetch.ts",
     "check-types": "tsc --noEmit",

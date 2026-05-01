@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-01T15:39:53.392Z",
+    "generatedAt": "2026-05-01T15:56:35.833Z",
     "version": "1.0.0",
     "counts": {
       "records": 1389,
       "works": 995,
-      "productions": 8,
-      "performances": 132,
-      "cast": 1810
+      "productions": 12,
+      "performances": 161,
+      "cast": 2346
     }
   },
   "searchDocuments": [
@@ -591,6 +591,44 @@
       "genre": "Ballet",
       "creator": "William Tuckett",
       "searchText": "a shropshire lad ballet william tuckett genre ballet composer william tuckett"
+    },
+    {
+      "type": "production",
+      "source": "RBO Collections",
+      "id": "12889",
+      "title": "A Shropshire Lad (1995)",
+      "subtitle": "The Royal Ballet | 24 January 1995",
+      "date": "24 January 1995",
+      "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=12889",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Production premiere": "24 January 1995",
+        "Notes": "No costume designer is credited in the programme."
+      },
+      "company": "The Royal Ballet",
+      "searchText": "a shropshire lad (1995) the royal ballet 24 january 1995 no costume designer is credited in the programme. company the royal ballet production premiere 24 january 1995 notes no costume designer is credited in the programme."
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "12890",
+      "title": "A Shropshire Lad-24 January 1995 Evening",
+      "subtitle": "The Orchard Theatre, Dartford",
+      "date": "24 January 1995",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12890&row=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "The Orchard Theatre, Dartford",
+        "Performance status": "Original season",
+        "Durations": "Entire work: 15 minutes",
+        "Event": "Number 3 in The Royal Ballet mixed programme 24 January 1995: Dance Bites Tour",
+        "Information source": "The Royal Ballet Dance Bites Tour cast sheet for 24 January 1995 (in Royal Opera House Collections)",
+        "Date": "24 January 1995",
+        "Session": "Evening",
+        "Production ID": "12889"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "a shropshire lad-24 january 1995 evening 24 january 1995 evening the orchard theatre, dartford the royal ballet original season dancer belinda hatley  dancer william trevitt  dancer adam cooper  dancer gary avis  baritone paul parfitt  piano philip cornfield  company the royal ballet venue the orchard theatre, dartford performance status original season durations entire work: 15 minutes event number 3 in the royal ballet mixed programme 24 january 1995: dance bites tour information source the royal ballet dance bites tour cast sheet for 24 january 1995 (in royal opera house collections) date 24 january 1995 session evening production id 12889"
     },
     {
       "type": "work",
@@ -1796,6 +1834,111 @@
       "genre": "Ballet",
       "creator": "Alastair Marriott",
       "searchText": "being and having been ballet alastair marriott genre ballet composer alastair marriott"
+    },
+    {
+      "type": "production",
+      "source": "RBO Collections",
+      "id": "12894",
+      "title": "Being and Having Been (2004)",
+      "subtitle": "The Royal Ballet | 23 June 2004",
+      "date": "23 June 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=12894",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Production premiere": "23 June 2004",
+        "Costume designer": "Adam Wiltshire",
+        "Lighting": "John B Read"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "being and having been (2004) the royal ballet 23 june 2004 adam wiltshire company the royal ballet production premiere 23 june 2004 costume designer adam wiltshire lighting john b read"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "12893",
+      "title": "Being and Having Been-23 June 2004 Evening 7.30pm",
+      "subtitle": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "date": "23 June 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=12893&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "Performance status": "Original season",
+        "Durations": "Entire work: 8.49-9.10pm",
+        "Event": "Number 4 in The Royal Ballet mixed programme 23 June 2004: Inspired by Diaghilev",
+        "Information source": "Linbury Studio Theatre programme for 23-27 June 2004 and stage manager's report for 23 June 2004 (in Royal Opera House Collections)",
+        "Date": "23 June 2004",
+        "Session": "Evening 7.30pm",
+        "Production ID": "12894"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "being and having been-23 june 2004 evening 7.30pm 23 june 2004 evening 7.30pm linbury studio theatre, royal opera house, covent garden the royal ballet original season dancer bethany keating  dancer ludovic ondiviela  dancer gemma bond  dancer natasha oughtred  dancer victoria hewitt  dancer hikaru kobayashi  dancer laura mcculloch  dancer samantha raine  dancer zachary faruque  dancer martin harvey  dancer jose martin  dancer steven mcrae  dancer ernst meisner  dancer henry st clair  piano henry roche  piano robert clark  percussion nigel bates  percussion julian poole  percussion donna-maria landowski  company the royal ballet venue linbury studio theatre, royal opera house, covent garden performance status original season durations entire work: 8.49-9.10pm event number 4 in the royal ballet mixed programme 23 june 2004: inspired by diaghilev information source linbury studio theatre programme for 23-27 june 2004 and stage manager's report for 23 june 2004 (in royal opera house collections) date 23 june 2004 session evening 7.30pm production id 12894"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "18771",
+      "title": "Being and Having Been-26 June 2004 Evening 7.30pm",
+      "subtitle": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "date": "26 June 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=18771&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "Performance status": "Original season",
+        "Durations": "Entire work: 8.44-9.05pm",
+        "Event": "Number 4 in The Royal Ballet mixed programme 26 June 2004: Inspired by Diaghilev",
+        "Information source": "Linbury Studio Theatre programme for 23-27 June 2004 and stage manager's report for 26 June 2004 (in Royal Opera House Collections)",
+        "Date": "26 June 2004",
+        "Session": "Evening 7.30pm",
+        "Production ID": "12894"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "being and having been-26 june 2004 evening 7.30pm 26 june 2004 evening 7.30pm linbury studio theatre, royal opera house, covent garden the royal ballet original season dancer bethany keating  dancer ludovic ondiviela  dancer gemma bond  dancer natasha oughtred  dancer victoria hewitt  dancer hikaru kobayashi  dancer laura mcculloch  dancer samantha raine  dancer zachary faruque  dancer martin harvey  dancer jose martin  dancer steven mcrae  dancer ernst meisner  dancer henry st clair  piano henry roche  piano robert clark  percussion nigel bates  percussion julian poole  percussion donna-maria landowski  company the royal ballet venue linbury studio theatre, royal opera house, covent garden performance status original season durations entire work: 8.44-9.05pm event number 4 in the royal ballet mixed programme 26 june 2004: inspired by diaghilev information source linbury studio theatre programme for 23-27 june 2004 and stage manager's report for 26 june 2004 (in royal opera house collections) date 26 june 2004 session evening 7.30pm production id 12894"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "18772",
+      "title": "Being and Having Been-26 June 2004 Matinee 2.30pm",
+      "subtitle": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "date": "26 June 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=18772&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "Performance status": "Original season",
+        "Durations": "Entire work: 3.40-4.01pm",
+        "Event": "Number 4 in The Royal Ballet mixed programme 26 June 2004 matinee: Inspired by Diaghilev",
+        "Information source": "Linbury Studio Theatre programme for 23-27 June 2004 and stage manager's report for 26 June 2004 (in Royal Opera House Collections)",
+        "Date": "26 June 2004",
+        "Session": "Matinee 2.30pm",
+        "Production ID": "12894"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "being and having been-26 june 2004 matinee 2.30pm 26 june 2004 matinee 2.30pm linbury studio theatre, royal opera house, covent garden the royal ballet original season dancer christina elida salerno  dancer paul kay  dancer gemma bond  dancer yuhui choe  dancer victoria hewitt  dancer hikaru kobayashi  dancer laura mcculloch  dancer samantha raine  dancer zachary faruque  dancer jose martin  dancer steven mcrae  dancer ernst meisner  dancer jonathan watkins  dancer henry st clair  piano henry roche  piano robert clark  percussion nigel bates  percussion julian poole  percussion donna-maria landowski  company the royal ballet venue linbury studio theatre, royal opera house, covent garden performance status original season durations entire work: 3.40-4.01pm event number 4 in the royal ballet mixed programme 26 june 2004 matinee: inspired by diaghilev information source linbury studio theatre programme for 23-27 june 2004 and stage manager's report for 26 june 2004 (in royal opera house collections) date 26 june 2004 session matinee 2.30pm production id 12894"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "18773",
+      "title": "Being and Having Been-27 June 2004 Matinee 3.00pm",
+      "subtitle": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "date": "27 June 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=18773&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "Performance status": "Original season",
+        "Durations": "Entire work: 4.13-4.33pm",
+        "Event": "Number 4 in The Royal Ballet mixed programme 27 June 2004 matinee: Inspired by Diaghilev",
+        "Information source": "Linbury Studio Theatre programme for 23-27 June 2004 and stage manager's report for 27 June 2004 (in Royal Opera House Collections)",
+        "Date": "27 June 2004",
+        "Session": "Matinee 3.00pm",
+        "Production ID": "12894"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "being and having been-27 june 2004 matinee 3.00pm 27 june 2004 matinee 3.00pm linbury studio theatre, royal opera house, covent garden the royal ballet original season dancer christina elida salerno  dancer paul kay  dancer gemma bond  dancer yuhui choe  dancer victoria hewitt  dancer hikaru kobayashi  dancer laura mcculloch  dancer samantha raine  dancer zachary faruque  dancer jose martin  dancer steven mcrae  dancer ernst meisner  dancer jonathan watkins  dancer henry st clair  piano henry roche  piano robert clark  percussion nigel bates  percussion julian poole  percussion donna-maria landowski  company the royal ballet venue linbury studio theatre, royal opera house, covent garden performance status original season durations entire work: 4.13-4.33pm event number 4 in the royal ballet mixed programme 27 june 2004 matinee: inspired by diaghilev information source linbury studio theatre programme for 23-27 june 2004 and stage manager's report for 27 june 2004 (in royal opera house collections) date 27 june 2004 session matinee 3.00pm production id 12894"
     },
     {
       "type": "work",
@@ -13716,6 +13859,25 @@
       "searchText": "engram ballet wayne mcgregor genre ballet composer wayne mcgregor"
     },
     {
+      "type": "production",
+      "source": "RBO Collections",
+      "id": "12899",
+      "title": "Engram (2005)",
+      "subtitle": "The Royal Ballet | 15 June 2005",
+      "date": "15 June 2005",
+      "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=12899&row=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Production premiere": "15 June 2005",
+        "Costume designer": "Ursula Bombshell",
+        "Lighting designer": "Lucy Carter",
+        "Film": "Ravi Deepres",
+        "Sponsor": "Simon Robertson; Virginia Robertson"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "engram (2005) the royal ballet 15 june 2005 ursula bombshell company the royal ballet production premiere 15 june 2005 costume designer ursula bombshell lighting designer lucy carter film ravi deepres sponsor simon robertson; virginia robertson"
+    },
+    {
       "type": "work",
       "source": "RBO Collections",
       "id": "766",
@@ -14654,11 +14816,31 @@
     {
       "type": "production",
       "source": "RBO Collections",
+      "id": "12172",
+      "title": "Giselle (1971)",
+      "subtitle": "The Royal Ballet | 11 March 1971",
+      "date": "11 March 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=12172",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Production premiere": "11 March 1971",
+        "Producer": "Peter Wright",
+        "Set designer": "Peter Farmer",
+        "Costume designer": "Peter Farmer",
+        "Revival lighting designer": "William Bundy (revivals 1972-1974 and touring company's 1975 revival)",
+        "Work ID": "12186"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle (1971) the royal ballet 11 march 1971 peter wright peter farmer company the royal ballet production premiere 11 march 1971 producer peter wright set designer peter farmer costume designer peter farmer revival lighting designer william bundy (revivals 1972-1974 and touring company's 1975 revival) work id 12186"
+    },
+    {
+      "type": "production",
+      "source": "RBO Collections",
       "id": "12171",
       "title": "Giselle (1980)",
       "subtitle": "The Royal Ballet | 16 October 1980",
       "date": "16 October 1980",
-      "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=12171&row=3",
+      "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=12171",
       "metadata": {
         "Company": "The Royal Ballet",
         "Production premiere": "16 October 1980",
@@ -14749,7 +14931,7 @@
       "title": "Giselle-1 May 1982 Evening 7.30pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
       "date": "1 May 1982",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14422&row=5",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=5&performance=14422&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -14812,6 +14994,29 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "27635",
+      "title": "Giselle-10 July 1972 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Anthony Twiner",
+      "date": "10 July 1972",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=13&performance=27635&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Anthony Twiner",
+        "Leader": "Peter Gibbs",
+        "Event": "Number 2 in The Royal Ballet mixed programme 10 July 1972",
+        "Information source": "Royal Opera House programme for 10 July 1972 (in Royal Opera House Collections)",
+        "Date": "10 July 1972",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-10 july 1972 evening 10 july 1972 evening royal opera house, covent garden, london the royal ballet revival anthony twiner peter gibbs count albrecht rudolf nureyev  wilfred david drew  berthe gerd larsen  hilarion adrian grater  giselle lynn seymour  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six michael coleman  pas de six sandra conley  pas de six wendy ellis  pas de six david ashmole  pas de six wayne eagling  myrtha vergie derman  zulme sandra conley  moyna june highwood  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor anthony twiner leader peter gibbs event number 2 in the royal ballet mixed programme 10 july 1972 information source royal opera house programme for 10 july 1972 (in royal opera house collections) date 10 july 1972 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "27544",
       "title": "Giselle-10 March 1969 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
@@ -14853,6 +15058,28 @@
       },
       "company": "The Royal Ballet",
       "searchText": "giselle-11 july 1970 matinee 11 july 1970 matinee royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor giselle merle park  count albrecht anthony dowell  hilarion david drew  wilfred paul brown  berthe gerd larsen  the duke of courland derek rencher  bathilde vyvyan lorrayne  pas de deux carole hill  pas de deux keith martin  child anita young  child jill cooke  child marilyn trounson  child hilary tickner  child christine aitken  child bridget goodricke  peasants and courtiers artists of the royal ballet  myrtha monica mason  zulme ann jenner  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor information source royal opera house programme for 11 july 1970 (in royal opera house collections) date 11 july 1970 session matinee production id 115"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "12178",
+      "title": "Giselle-11 March 1971 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "11 March 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=12178&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 11 March 1971 (in Royal Opera House Collections)",
+        "Date": "11 March 1971",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-11 march 1971 evening 11 march 1971 evening royal opera house, covent garden, london the royal ballet original season ashley lawrence charles taylor count albrecht anthony dowell  wilfred paul brown  berthe gerd larsen  hilarion adrian grater  giselle antoinette sibley  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six michael coleman  pas de six laura connor  pas de six patricia ruanne  pas de six david ashmole  pas de six wayne eagling  myrtha deanne bergsma  zulme ann jenner  moyna jennifer penney  peasants, courtiers and wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor ashley lawrence leader charles taylor information source royal opera house programme for 11 march 1971 (in royal opera house collections) date 11 march 1971 session evening production id 12172"
     },
     {
       "type": "performance",
@@ -14901,11 +15128,55 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "24941",
+      "title": "Giselle-13 March 1971 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "13 March 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=24941&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 13 March 1971 (in Royal Opera House Collections)",
+        "Date": "13 March 1971",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-13 march 1971 evening 13 march 1971 evening royal opera house, covent garden, london the royal ballet original season john lanchbery charles taylor count albrecht david wall  wilfred paul brown  berthe gerd larsen  hilarion adrian grater  giselle lynn seymour  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six michael coleman  pas de six laura connor  pas de six patricia ruanne  pas de six david ashmole  pas de six wayne eagling  myrtha monica mason  zulme ann jenner  moyna jennifer penney  peasants, courtiers and wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor john lanchbery leader charles taylor information source royal opera house programme for 13 march 1971 (in royal opera house collections) date 13 march 1971 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24945",
+      "title": "Giselle-13 November 1971 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "13 November 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=6&performance=24945&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Peter Gibbs",
+        "Information source": "Royal Opera House programme for 13 November 1971 (in Royal Opera House Collections)",
+        "Date": "13 November 1971",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-13 november 1971 evening 13 november 1971 evening royal opera house, covent garden, london the royal ballet revival john lanchbery peter gibbs count albrecht desmond kelly  wilfred david drew  berthe gerd larsen  hilarion david adams  giselle merle park  the duke of courland derek rencher  bathilde rosalind eyre  pas de six ann jenner  pas de six michael coleman  pas de six sandra conley  pas de six sally inkin  pas de six david ashmole  pas de six wayne eagling  myrtha monica mason  zulme sandra conley  moyna june highwood  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader peter gibbs information source royal opera house programme for 13 november 1971 (in royal opera house collections) date 13 november 1971 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "24955",
       "title": "Giselle-14 February 1981 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
       "date": "14 February 1981",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24955&row=2",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=24955&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -14990,6 +15261,30 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "24953",
+      "title": "Giselle-15 March 1974 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Anthony Twiner",
+      "date": "15 March 1974",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=24953&page=1",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Anthony Twiner",
+        "Leader": "Charles Taylor",
+        "Durations": "Act I, Act II",
+        "Event": "Number 2 in The Royal Ballet mixed programme 15 March 1974",
+        "Information source": "Royal Opera House programme for 15 March 1974 (in Royal Opera House Collections)",
+        "Date": "15 March 1974",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-15 march 1974 evening 15 march 1974 evening royal opera house, covent garden, london the royal ballet revival anthony twiner charles taylor count albrecht donald macleary  wilfred anthony conway  berthe julie wood  hilarion adrian grater  giselle merle park  the duke of courland derek rencher  bathilde vergie derman  pas de six diana vere  pas de six david ashmole  pas de six sandra conley  pas de six rosemary taylor  pas de six michael corder  pas de six mark silver  myrtha monica mason  zulme diana vere  moyna june highwood  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor anthony twiner leader charles taylor durations act i, act ii event number 2 in the royal ballet mixed programme 15 march 1974 information source royal opera house programme for 15 march 1974 (in royal opera house collections) date 15 march 1974 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "27475",
       "title": "Giselle-15 November 1963 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
@@ -15016,7 +15311,7 @@
       "title": "Giselle-16 November 1982 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Terence Kern",
       "date": "16 November 1982",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24161&row=8",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=8&performance=24161&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -15039,7 +15334,7 @@
       "title": "Giselle-16 October 1980 Evening 7.30pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
       "date": "16 October 1980",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12182&row=0",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=12182&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -15080,6 +15375,29 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "15495",
+      "title": "Giselle-17 March 1973 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Anthony Twiner",
+      "date": "17 March 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=17&performance=15495&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Anthony Twiner",
+        "Leader": "George Hallam",
+        "Event": "Number 2 in The Royal Ballet mixed programme 17 March 1973",
+        "Information source": "Royal Opera House programme for 17 March 1973 (in Royal Opera House Collections)",
+        "Date": "17 March 1973",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-17 march 1973 evening 17 march 1973 evening royal opera house, covent garden, london the royal ballet revival anthony twiner george hallam count albrecht donald macleary  wilfred ronald plaisted  berthe julie wood  hilarion david adams  giselle merle park  the duke of courland derek rencher  bathilde rosalind eyre  pas de six jennifer penney  pas de six gary sherwood  pas de six sandra conley  pas de six sally inkin  pas de six david ashmole  pas de six wayne eagling  myrtha deanne bergsma  zulme sandra conley  moyna jennifer penney  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor anthony twiner leader george hallam event number 2 in the royal ballet mixed programme 17 march 1973 information source royal opera house programme for 17 march 1973 (in royal opera house collections) date 17 march 1973 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "14390",
       "title": "Giselle-18 February 1963 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
@@ -15107,7 +15425,7 @@
       "title": "Giselle-18 February 1981 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
       "date": "18 February 1981",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24956&row=3",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=24956&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -15191,6 +15509,28 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "14413",
+      "title": "Giselle-2 November 1971 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "2 November 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=5&performance=14413&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Peter Gibbs",
+        "Information source": "Royal Opera House programme for 2 November 1971 (in Royal Opera House Collections)",
+        "Date": "2 November 1971",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-2 november 1971 evening 2 november 1971 evening royal opera house, covent garden, london the royal ballet revival emanuel young peter gibbs count albrecht david wall  wilfred ronald plaisted  berthe gerd larsen  hilarion david adams  giselle doreen wells  the duke of courland derek rencher  bathilde vergie derman  pas de six ann jenner  pas de six michael coleman  pas de six sandra conley  pas de six sally inkin  pas de six david ashmole  pas de six wayne eagling  myrtha deanne bergsma  zulme ann jenner  moyna jennifer penney  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader peter gibbs information source royal opera house programme for 2 november 1971 (in royal opera house collections) date 2 november 1971 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "25976",
       "title": "Giselle-20 February 1963 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
@@ -15262,7 +15602,7 @@
       "title": "Giselle-20 November 1982 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
       "date": "20 November 1982",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24169&row=9",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=9&performance=24169&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -15277,6 +15617,28 @@
       },
       "company": "The Royal Ballet",
       "searchText": "giselle-20 november 1982 evening 20 november 1982 evening royal opera house, covent garden, london the royal ballet revival emanuel young david nolan giselle jennifer penney  count albrecht wayne eagling  hilarion michael coleman  wilfred guy niblett  berthe julie wood  the duke of courland david drew  bathilde sandra conley  leading huntsman michael corder  pas de deux rosalyn whitten  pas de deux antony dowson  pas de six angela cox  pas de six alessandra ferri  pas de six gillian kingsley  pas de six julie lincoln  pas de six nicola roberts  pas de six julie rose  peasants and courtiers artists of the royal ballet  myrtha judith howe  zulme karen paisey  moyna gillian kingsley  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader david nolan event number 2 in the royal ballet mixed programme 20 november 1982 information source royal opera house programme for 20 november 1982 (in royal opera house collections) date 20 november 1982 session evening production id 12171"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24946",
+      "title": "Giselle-21 December 1971 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "21 December 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=7&performance=24946&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "Peter Gibbs",
+        "Information source": "Royal Opera House programme for 21 December 1971 (in Royal Opera House Collections)",
+        "Date": "21 December 1971",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-21 december 1971 evening 21 december 1971 evening royal opera house, covent garden, london the royal ballet revival ashley lawrence peter gibbs count albrecht donald macleary  wilfred david drew  berthe gerd larsen  hilarion david adams  giselle merle park  the duke of courland derek rencher  bathilde rosalind eyre  pas de six lesley collier  pas de six david ashmole  pas de six wendy ellis  pas de six marguerite porter  pas de six carl myers  pas de six peter o'brien  myrtha monica mason  zulme sandra conley  moyna june highwood  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor ashley lawrence leader peter gibbs information source royal opera house programme for 21 december 1971 (in royal opera house collections) date 21 december 1971 session evening production id 12172"
     },
     {
       "type": "performance",
@@ -15327,6 +15689,53 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "24949",
+      "title": "Giselle-21 June 1972 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "21 June 1972",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=10&performance=24949&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Peter Gibbs",
+        "Event": "Number 2 in The Royal Ballet mixed programme 21 June 1972",
+        "Information source": "Royal Opera House programme for 21 June 1972 (in Royal Opera House Collections)",
+        "Date": "21 June 1972",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-21 june 1972 evening 21 june 1972 evening royal opera house, covent garden, london the royal ballet revival john lanchbery peter gibbs count albrecht anthony dowell  wilfred ronald plaisted  berthe gerd larsen  hilarion david drew  giselle natalia makarova  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six david ashmole  pas de six sally inkin  pas de six marguerite porter  pas de six carl myers  pas de six christopher carr  myrtha monica mason  zulme sandra conley  moyna alfreda thorogood  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader peter gibbs event number 2 in the royal ballet mixed programme 21 june 1972 information source royal opera house programme for 21 june 1972 (in royal opera house collections) date 21 june 1972 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "25013",
+      "title": "Giselle-21 June 1974 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "21 June 1974",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=25013&page=1",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Santiago Bravo",
+        "Durations": "Act I, Act II",
+        "Event": "Number 2 in The Royal Ballet mixed programme 21 June 1974",
+        "Information source": "Royal Opera House programme for 21 June 1974 (in Royal Opera House Collections)",
+        "Date": "21 June 1974",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-21 june 1974 evening 21 june 1974 evening royal opera house, covent garden, london the royal ballet revival emanuel young santiago bravo count albrecht michael coleman  wilfred anthony conway  berthe gerd larsen  hilarion david adams  giselle ann jenner  the duke of courland derek rencher  bathilde rosalind eyre  pas de six lesley collier  pas de six wayne sleep  pas de six wendy ellis  pas de six laura connor  pas de six david ashmole  pas de six wayne eagling  myrtha vergie derman  zulme laura connor  moyna lesley collier  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader santiago bravo durations act i, act ii event number 2 in the royal ballet mixed programme 21 june 1974 information source royal opera house programme for 21 june 1974 (in royal opera house collections) date 21 june 1974 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "24936",
       "title": "Giselle-21 March 1969 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
@@ -15353,7 +15762,7 @@
       "title": "Giselle-22 November 1982 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Terence Kern",
       "date": "22 November 1982",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24171&row=10",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=10&performance=24171&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -15439,6 +15848,30 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "14417",
+      "title": "Giselle-24 January 1974 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Anthony Twiner",
+      "date": "24 January 1974",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=18&performance=14417&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Anthony Twiner",
+        "Leader": "Charles Taylor",
+        "Durations": "Act I: 8.03-8.54pm, Act II: 9.21-10.06pm",
+        "Event": "Number 2 in The Royal Ballet mixed programme 24 January 1974",
+        "Information source": "Royal Opera House programme for 24 January 1974 (in Royal Opera House Collections)",
+        "Date": "24 January 1974",
+        "Session": "Evening 7.30pm",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-24 january 1974 evening 7.30pm 24 january 1974 evening 7.30pm royal opera house, covent garden, london the royal ballet revival anthony twiner charles taylor count albrecht david wall  wilfred anthony conway  berthe gerd larsen  hilarion adrian grater  giselle merle park  the duke of courland derek rencher  bathilde vergie derman  pas de six ann jenner  pas de six michael coleman  pas de six laura connor  pas de six wendy ellis  pas de six david ashmole  pas de six wayne eagling  myrtha deanne bergsma  zulme sandra conley  moyna laura connor  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor anthony twiner leader charles taylor durations act i: 8.03-8.54pm, act ii: 9.21-10.06pm event number 2 in the royal ballet mixed programme 24 january 1974 information source royal opera house programme for 24 january 1974 (in royal opera house collections) date 24 january 1974 session evening 7.30pm production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "14407",
       "title": "Giselle-25 November 1965 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
@@ -15462,6 +15895,29 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "14415",
+      "title": "Giselle-25 November 1972 Matinee",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "25 November 1972",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=14&performance=14415&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 25 November 1972 matinee",
+        "Information source": "Royal Opera House programme for 25 November 1972 (in Royal Opera House Collections)",
+        "Date": "25 November 1972",
+        "Session": "Matinee",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-25 november 1972 matinee 25 november 1972 matinee royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor count albrecht anthony dowell  wilfred ronald plaisted  berthe gerd larsen  hilarion adrian grater  giselle antoinette sibley  the duke of courland derek rencher  bathilde vergie derman  pas de six alfreda thorogood  pas de six gary sherwood  pas de six laura connor  pas de six wendy ellis  pas de six david ashmole  pas de six wayne eagling  myrtha deanne bergsma  zulme laura connor  moyna lesley collier  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor event number 2 in the royal ballet mixed programme 25 november 1972 matinee information source royal opera house programme for 25 november 1972 (in royal opera house collections) date 25 november 1972 session matinee production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "25898",
       "title": "Giselle-26 February 1963 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
@@ -15481,6 +15937,52 @@
       },
       "company": "The Royal Ballet",
       "searchText": "giselle-26 february 1963 evening 26 february 1963 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux graham usher  child margaret lyons  child virginia wakelyn  child maureen maitland  child jacqueline haslam  child carole hill  child ann jenner  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 26 february 1963 information source royal opera house programme for 26 february 1963 (in royal opera house collections) date 26 february 1963 session evening production id 115"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27618",
+      "title": "Giselle-26 February 1972 Matinee",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "26 February 1972",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=8&performance=27618&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Peter Gibbs",
+        "Information source": "Royal Opera House programme for 26 February 1972 (in Royal Opera House Collections)",
+        "Date": "26 February 1972",
+        "Session": "Matinee",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-26 february 1972 matinee 26 february 1972 matinee royal opera house, covent garden, london the royal ballet revival john lanchbery peter gibbs count albrecht rudolf nureyev  wilfred david drew  berthe gerd larsen  hilarion adrian grater  giselle merle park  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six david ashmole  pas de six sally inkin  pas de six marguerite porter  pas de six carl myers  pas de six peter o'brien  myrtha georgina parkinson  zulme sandra conley  moyna lesley collier  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader peter gibbs information source royal opera house programme for 26 february 1972 (in royal opera house collections) date 26 february 1972 session matinee production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24951",
+      "title": "Giselle-26 January 1974 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "26 January 1974",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=19&performance=24951&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "Santiago Bravo",
+        "Durations": "Act I, Act II",
+        "Event": "Number 2 in The Royal Ballet mixed programme 26 January 1974",
+        "Information source": "Royal Opera House programme for 26 January 1974 (in Royal Opera House Collections)",
+        "Date": "26 January 1974",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-26 january 1974 evening 26 january 1974 evening royal opera house, covent garden, london the royal ballet revival ashley lawrence santiago bravo count albrecht anthony dowell  wilfred petrus bosman  berthe gerd larsen  hilarion david drew  giselle alfreda thorogood  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six wayne eagling  pas de six sandra conley  pas de six sally inkin  pas de six christopher carr  pas de six peter fairweather  myrtha monica mason  zulme diana vere  moyna belinda corken  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor ashley lawrence leader santiago bravo durations act i, act ii event number 2 in the royal ballet mixed programme 26 january 1974 information source royal opera house programme for 26 january 1974 (in royal opera house collections) date 26 january 1974 session evening production id 12172"
     },
     {
       "type": "performance",
@@ -15533,7 +16035,7 @@
       "title": "Giselle-27 October 1982 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Terence Kern",
       "date": "27 October 1982",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14425&row=6",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=6&performance=14425&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -15596,6 +16098,50 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "24957",
+      "title": "Giselle-28 February 1981 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "28 February 1981",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=4&performance=24957&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "Emanuel Young",
+        "Leader": "Meyer Stolow",
+        "Information source": "Royal Opera House programme for 28 February 1981 (in Royal Opera House Collections)",
+        "Date": "28 February 1981",
+        "Session": "Evening",
+        "Production ID": "12171"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-28 february 1981 evening 28 february 1981 evening royal opera house, covent garden, london the royal ballet original season emanuel young meyer stolow giselle marguerite porter  count albrecht david wall  hilarion stephen jefferies  wilfred michael batchelor  berthe gerd larsen  the duke of courland derek rencher  bathilde rosalind eyre  leading huntsman robert jude  pas de deux rosalyn whitten  pas de deux ashley page  pas de six angela cox  pas de six julie lincoln  pas de six elizabeth morgan  pas de six karen paisey  pas de six julie rose  pas de six nicola roberts  peasants and courtiers artists of the royal ballet  myrtha monica mason  zulme wendy ellis  moyna genesia rosato  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor emanuel young leader meyer stolow information source royal opera house programme for 28 february 1981 (in royal opera house collections) date 28 february 1981 session evening production id 12171"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24942",
+      "title": "Giselle-28 May 1971 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "28 May 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=24942&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 28 May 1971 (in Royal Opera House Collections)",
+        "Date": "28 May 1971",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-28 may 1971 evening 28 may 1971 evening royal opera house, covent garden, london the royal ballet original season john lanchbery charles taylor count albrecht david wall  wilfred ronald plaisted  berthe gerd larsen  hilarion david adams  giselle lynn seymour  the duke of courland derek rencher  bathilde rosalind eyre  pas de six lesley collier  pas de six michael coleman  pas de six laura connor  pas de six marilyn trounson  pas de six david ashmole  pas de six wayne eagling  myrtha monica mason  zulme ann jenner  moyna jennifer penney  peasants, courtiers and wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor john lanchbery leader charles taylor information source royal opera house programme for 28 may 1971 (in royal opera house collections) date 28 may 1971 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "27479",
       "title": "Giselle-28 October 1964 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
@@ -15637,6 +16183,30 @@
       },
       "company": "The Royal Ballet",
       "searchText": "giselle-29 june 1962 evening 29 june 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux graham usher  child margaret lyons  child virginia wakelyn  child susan carlton  child jacqueline haslam  child maureen maitland  child ann jenner  myrtha anya linden  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 29 june 1962 information source royal opera house programme for 29 june 1962 (in royal opera house collections) date 29 june 1962 session evening production id 115"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "25017",
+      "title": "Giselle-29 June 1974 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "29 June 1974",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=25017&page=1",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Santiago Bravo",
+        "Durations": "Act I, Act II",
+        "Event": "Number 2 in The Royal Ballet mixed programme 29 June 1974",
+        "Information source": "Royal Opera House programme for 29 June 1974 (in Royal Opera House Collections)",
+        "Date": "29 June 1974",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-29 june 1974 evening 29 june 1974 evening royal opera house, covent garden, london the royal ballet revival emanuel young santiago bravo count albrecht david wall  wilfred petrus bosman  berthe gerd larsen  hilarion david drew  giselle natalia makarova  the duke of courland derek rencher  bathilde vergie derman  pas de six diana vere  pas de six michael coleman  pas de six ria peri  pas de six sally inkin  pas de six michael corder  pas de six mark silver  myrtha deanne bergsma  zulme diana vere  moyna ria peri  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader santiago bravo durations act i, act ii event number 2 in the royal ballet mixed programme 29 june 1974 information source royal opera house programme for 29 june 1974 (in royal opera house collections) date 29 june 1974 session evening production id 12172"
     },
     {
       "type": "performance",
@@ -15690,7 +16260,7 @@
       "title": "Giselle-3 November 1982 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Terence Kern",
       "date": "3 November 1982",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24150&row=7",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=7&performance=24150&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -15731,11 +16301,78 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "24943",
+      "title": "Giselle-4 June 1971 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "4 June 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=24943&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 4 June 1971 (in Royal Opera House Collections)",
+        "Date": "4 June 1971",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-4 june 1971 evening 4 june 1971 evening royal opera house, covent garden, london the royal ballet original season ashley lawrence charles taylor count albrecht desmond kelly  wilfred paul brown  berthe gerd larsen  hilarion adrian grater  giselle doreen wells  the duke of courland derek rencher  bathilde vergie derman  pas de six ann jenner  pas de six david ashmole  pas de six wendy ellis  pas de six virginia wakelyn  pas de six wayne eagling  pas de six carl myers  myrtha monica mason  zulme laura connor  moyna lesley collier  peasants, courtiers and wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor ashley lawrence leader charles taylor information source royal opera house programme for 4 june 1971 (in royal opera house collections) date 4 june 1971 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24947",
+      "title": "Giselle-4 March 1972 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "4 March 1972",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=9&performance=24947&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Peter Gibbs",
+        "Information source": "Royal Opera House programme for 4 March 1972 (in Royal Opera House Collections)",
+        "Date": "4 March 1972",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-4 march 1972 evening 4 march 1972 evening royal opera house, covent garden, london the royal ballet revival emanuel young peter gibbs count albrecht rudolf nureyev  wilfred david drew  berthe gerd larsen  hilarion adrian grater  giselle merle park  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six michael coleman  pas de six sandra conley  pas de six wendy ellis  pas de six david ashmole  pas de six peter o'brien  myrtha monica mason  zulme sandra conley  moyna jennifer penney  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader peter gibbs information source royal opera house programme for 4 march 1972 (in royal opera house collections) date 4 march 1972 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27650",
+      "title": "Giselle-5 January 1973 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "5 January 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=15&performance=27650&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "George Hallam",
+        "Event": "Number 2 in The Royal Ballet mixed programme 5 January 1973",
+        "Information source": "Royal Opera House programme for 5 January 1973 (in Royal Opera House Collections)",
+        "Date": "5 January 1973",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-5 january 1973 evening 5 january 1973 evening royal opera house, covent garden, london the royal ballet revival ashley lawrence george hallam count albrecht rudolf nureyev  wilfred ronald plaisted  berthe gerd larsen  hilarion david drew  giselle antoinette sibley  the duke of courland derek rencher  bathilde vergie derman  pas de six alfreda thorogood  pas de six wayne sleep  pas de six laura connor  pas de six wendy ellis  pas de six david ashmole  pas de six wayne eagling  myrtha sandra conley  zulme laura connor  moyna alfreda thorogood  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor ashley lawrence leader george hallam event number 2 in the royal ballet mixed programme 5 january 1973 information source royal opera house programme for 5 january 1973 (in royal opera house collections) date 5 january 1973 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "24954",
       "title": "Giselle-5 November 1980 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Anthony Twiner",
       "date": "5 November 1980",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24954&row=1",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=24954&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -15749,6 +16386,29 @@
       },
       "company": "The Royal Ballet",
       "searchText": "giselle-5 november 1980 evening 5 november 1980 evening royal opera house, covent garden, london the royal ballet original season anthony twiner meyer stolow giselle jennifer penney  count albrecht wayne eagling  hilarion stephen jefferies  wilfred ross macgibbon  berthe julie wood  the duke of courland david drew  bathilde sandra conley  leading huntsman anthony conway  pas de deux angela cox  pas de deux ashley page  pas de six madonna benjamin  pas de six julie lincoln  pas de six elizabeth morgan  pas de six karen paisey  pas de six nicola roberts  pas de six julie rose  peasants and courtiers artists of the royal ballet  myrtha monica mason  zulme wendy ellis  moyna rosalyn whitten  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor anthony twiner leader meyer stolow information source royal opera house programme for 5 november 1980 (in royal opera house collections) date 5 november 1980 session evening production id 12171"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27631",
+      "title": "Giselle-6 July 1972 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Anthony Twiner",
+      "date": "6 July 1972",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=11&performance=27631&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Anthony Twiner",
+        "Leader": "Peter Gibbs",
+        "Event": "Number 2 in The Royal Ballet mixed programme 6 July 1972",
+        "Information source": "Royal Opera House programme for 6 July 1972 (in Royal Opera House Collections)",
+        "Date": "6 July 1972",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-6 july 1972 evening 6 july 1972 evening royal opera house, covent garden, london the royal ballet revival anthony twiner peter gibbs count albrecht rudolf nureyev  wilfred david drew  berthe gerd larsen  hilarion adrian grater  giselle merle park  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six michael coleman  pas de six sandra conley  pas de six wendy ellis  pas de six david ashmole  pas de six wayne eagling  myrtha georgina parkinson  zulme sandra conley  moyna jennifer penney  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor anthony twiner leader peter gibbs event number 2 in the royal ballet mixed programme 6 july 1972 information source royal opera house programme for 6 july 1972 (in royal opera house collections) date 6 july 1972 session evening production id 12172"
     },
     {
       "type": "performance",
@@ -15772,6 +16432,28 @@
       },
       "company": "The Royal Ballet",
       "searchText": "giselle-6 march 1962 evening 6 march 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child susan carlton  child jacqueline haslam  child maureen maitland  child ann howard  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis corps de ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 6 march 1962 information source royal opera house programme for 6 march 1962 (in royal opera house collections) date 6 march 1962 session evening production id 115"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24944",
+      "title": "Giselle-7 August 1971 Matinee",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "7 August 1971",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=4&performance=24944&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "Emanuel Young",
+        "Leader": "Dian Booth",
+        "Information source": "Royal Opera House programme for 7 August 1971 (in Royal Opera House Collections)",
+        "Date": "7 August 1971",
+        "Session": "Matinee",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-7 august 1971 matinee 7 august 1971 matinee royal opera house, covent garden, london the royal ballet original season emanuel young dian booth count albrecht donald macleary  wilfred ronald plaisted  berthe gerd larsen  hilarion adrian grater  giselle margaret barbieri  the duke of courland derek rencher  bathilde rosalind eyre  pas de six jennifer penney  pas de six david ashmole  pas de six patricia ruanne  pas de six christopher carr  pas de six lois strike  pas de six carl myers  myrtha monica mason  zulme sandra conley  moyna lesley collier  peasants, courtiers and wilis artists of the royal ballet   symphony orchestra  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor emanuel young leader dian booth information source royal opera house programme for 7 august 1971 (in royal opera house collections) date 7 august 1971 session matinee production id 12172"
     },
     {
       "type": "performance",
@@ -15816,6 +16498,52 @@
       },
       "company": "The Royal Ballet",
       "searchText": "giselle-8 january 1970 evening 8 january 1970 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  bathilde vyvyan lorrayne  pas de deux lesley collier  pas de deux wayne sleep  child avril bergen  child bridget goodricke  child marilyn trounson  child rosemary taylor  child christine aitken  child anita young  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 8 january 1970 (in royal opera house collections) date 8 january 1970 session evening production id 115"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27655",
+      "title": "Giselle-8 January 1973 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "8 January 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=16&performance=27655&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "George Hallam",
+        "Event": "Number 2 in The Royal Ballet mixed programme 8 January 1973",
+        "Information source": "Royal Opera House programme for 8 January 1973 (in Royal Opera House Collections)",
+        "Date": "8 January 1973",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-8 january 1973 evening 8 january 1973 evening royal opera house, covent garden, london the royal ballet revival ashley lawrence george hallam count albrecht rudolf nureyev  wilfred ronald plaisted  berthe gerd larsen  hilarion david drew  giselle lynn seymour  the duke of courland peter fairweather  bathilde rosalind eyre  pas de six alfreda thorogood  pas de six david ashmole  pas de six sandra conley  pas de six sally inkin  pas de six wayne eagling  pas de six peter o'brien  myrtha vergie derman  zulme sandra conley  moyna alfreda thorogood  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor ashley lawrence leader george hallam event number 2 in the royal ballet mixed programme 8 january 1973 information source royal opera house programme for 8 january 1973 (in royal opera house collections) date 8 january 1973 session evening production id 12172"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27633",
+      "title": "Giselle-8 July 1972 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Anthony Twiner",
+      "date": "8 July 1972",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=12&performance=27633&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Anthony Twiner",
+        "Leader": "Peter Gibbs",
+        "Event": "Number 2 in The Royal Ballet mixed programme 8 July 1972",
+        "Information source": "Royal Opera House programme for 8 July 1972 (in Royal Opera House Collections)",
+        "Date": "8 July 1972",
+        "Session": "Evening",
+        "Production ID": "12172"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-8 july 1972 evening 8 july 1972 evening royal opera house, covent garden, london the royal ballet revival anthony twiner peter gibbs count albrecht rudolf nureyev  wilfred david drew  berthe gerd larsen  hilarion adrian grater  giselle lynn seymour  the duke of courland derek rencher  bathilde vergie derman  pas de six lesley collier  pas de six michael coleman  pas de six sandra conley  pas de six wendy ellis  pas de six david ashmole  pas de six wayne eagling  myrtha georgina parkinson  zulme sandra conley  moyna june highwood  peasants, courtiers and wilis artists of the royal ballet  children students of the royal ballet school (lower school)   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor anthony twiner leader peter gibbs event number 2 in the royal ballet mixed programme 8 july 1972 information source royal opera house programme for 8 july 1972 (in royal opera house collections) date 8 july 1972 session evening production id 12172"
     },
     {
       "type": "work",
@@ -38451,7 +39179,7 @@
     "sources": [
       {
         "value": "RBO Collections",
-        "count": 2524
+        "count": 2557
       }
     ],
     "collections": [
@@ -38671,7 +39399,7 @@
     "companies": [
       {
         "value": "The Royal Ballet",
-        "count": 103
+        "count": 136
       },
       {
         "value": "The Royal Opera",
@@ -38725,11 +39453,11 @@
       },
       {
         "value": "performance",
-        "count": 132
+        "count": 161
       },
       {
         "value": "production",
-        "count": 8
+        "count": 12
       }
     ]
   }

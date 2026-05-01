@@ -745,7 +745,7 @@
     "productionPremiere": "16 October 1980",
     "producer": "Norman Morrice",
     "costumeDesigner": "James Bailey",
-    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=12171&row=3",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=12171",
     "metadata": {
       "Company": "The Royal Ballet",
       "Production premiere": "16 October 1980",
@@ -848,5 +848,309 @@
         "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=12171&collection=Technical%20Equipment%20Collection"
       }
     ]
+  },
+  {
+    "id": "12172",
+    "workId": "12186",
+    "title": "Giselle (1971)",
+    "company": "The Royal Ballet",
+    "productionPremiere": "11 March 1971",
+    "producer": "Peter Wright",
+    "costumeDesigner": "Peter Farmer",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=12172",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Production premiere": "11 March 1971",
+      "Producer": "Peter Wright",
+      "Set designer": "Peter Farmer",
+      "Costume designer": "Peter Farmer",
+      "Revival lighting designer": "William Bundy (revivals 1972-1974 and touring company's 1975 revival)",
+      "Work ID": "12186"
+    },
+    "performances": [
+      {
+        "id": "12178",
+        "date": "11 March 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12178&row=0"
+      },
+      {
+        "id": "24941",
+        "date": "13 March 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24941&row=1"
+      },
+      {
+        "id": "24942",
+        "date": "28 May 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24942&row=2"
+      },
+      {
+        "id": "24943",
+        "date": "4 June 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24943&row=3"
+      },
+      {
+        "id": "24944",
+        "date": "7 August 1971",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24944&row=4"
+      },
+      {
+        "id": "14413",
+        "date": "2 November 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14413&row=5"
+      },
+      {
+        "id": "24945",
+        "date": "13 November 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24945&row=6"
+      },
+      {
+        "id": "24946",
+        "date": "21 December 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24946&row=7"
+      },
+      {
+        "id": "27618",
+        "date": "26 February 1972",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27618&row=8"
+      },
+      {
+        "id": "24947",
+        "date": "4 March 1972",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24947&row=9"
+      },
+      {
+        "id": "24949",
+        "date": "21 June 1972",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24949&row=10"
+      },
+      {
+        "id": "27631",
+        "date": "6 July 1972",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27631&row=11"
+      },
+      {
+        "id": "27633",
+        "date": "8 July 1972",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27633&row=12"
+      },
+      {
+        "id": "27635",
+        "date": "10 July 1972",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27635&row=13"
+      },
+      {
+        "id": "14415",
+        "date": "25 November 1972",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14415&row=14"
+      },
+      {
+        "id": "27650",
+        "date": "5 January 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27650&row=15"
+      },
+      {
+        "id": "27655",
+        "date": "8 January 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27655&row=16"
+      },
+      {
+        "id": "15495",
+        "date": "17 March 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15495&row=17"
+      },
+      {
+        "id": "14417",
+        "date": "24 January 1974",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14417&row=18"
+      },
+      {
+        "id": "24951",
+        "date": "26 January 1974",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24951&row=19"
+      },
+      {
+        "id": "24953",
+        "date": "15 March 1974",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24953&row=20"
+      },
+      {
+        "id": "25013",
+        "date": "21 June 1974",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25013&row=21"
+      },
+      {
+        "id": "25017",
+        "date": "29 June 1974",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25017&row=22"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Costume Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=12172&collection=Costume%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "12889",
+    "title": "A Shropshire Lad (1995)",
+    "company": "The Royal Ballet",
+    "productionPremiere": "24 January 1995",
+    "notes": "No costume designer is credited in the programme.",
+    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=12889",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Production premiere": "24 January 1995",
+      "Notes": "No costume designer is credited in the programme."
+    },
+    "performances": [
+      {
+        "id": "12890",
+        "date": "24 January 1995",
+        "session": "Evening",
+        "venue": "The Orchard Theatre, Dartford",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12890&row=0"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "12894",
+    "title": "Being and Having Been (2004)",
+    "company": "The Royal Ballet",
+    "productionPremiere": "23 June 2004",
+    "costumeDesigner": "Adam Wiltshire",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=12894",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Production premiere": "23 June 2004",
+      "Costume designer": "Adam Wiltshire",
+      "Lighting": "John B Read"
+    },
+    "performances": [
+      {
+        "id": "12893",
+        "date": "23 June 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12893&row=0"
+      },
+      {
+        "id": "18771",
+        "date": "26 June 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18771&row=1"
+      },
+      {
+        "id": "18772",
+        "date": "26 June 2004",
+        "session": "Matinee 2.30pm",
+        "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18772&row=2"
+      },
+      {
+        "id": "18773",
+        "date": "27 June 2004",
+        "session": "Matinee 3.00pm",
+        "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18773&row=3"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "12899",
+    "title": "Engram (2005)",
+    "company": "The Royal Ballet",
+    "productionPremiere": "15 June 2005",
+    "costumeDesigner": "Ursula Bombshell",
+    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=12899&row=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Production premiere": "15 June 2005",
+      "Costume designer": "Ursula Bombshell",
+      "Lighting designer": "Lucy Carter",
+      "Film": "Ravi Deepres",
+      "Sponsor": "Simon Robertson; Virginia Robertson"
+    },
+    "performances": [
+      {
+        "id": "12900",
+        "date": "15 June 2005",
+        "session": "Evening 7.45pm",
+        "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12900&row=0"
+      },
+      {
+        "id": "18859",
+        "date": "16 June 2005",
+        "session": "Evening 7.45pm",
+        "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18859&row=1"
+      },
+      {
+        "id": "18863",
+        "date": "17 June 2005",
+        "session": "Evening 7.45pm",
+        "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18863&row=2"
+      },
+      {
+        "id": "18869",
+        "date": "18 June 2005",
+        "session": "Matinee 2.00pm",
+        "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18869&row=3"
+      }
+    ],
+    "relatedRecordCollections": []
   }
 ]

@@ -168,7 +168,9 @@ function documentSource(document: RohSearchDocument): RohDataSourceLabel {
 }
 
 function mapFlattenedRboCatalogue(record: FlattenedRboCatalogueRecord): RohSearchDocument {
-  const searchText = normalizeText(record.searchPieces.filter(Boolean).join(' '));
+  const searchText = normalizeText(
+    [record.searchPieces.filter(Boolean).join(' '), metadataText(record.metadata)].filter(Boolean).join(' ')
+  );
   return {
     type: record.type,
     id: record.id,
@@ -183,10 +185,70 @@ function mapFlattenedRboCatalogue(record: FlattenedRboCatalogueRecord): RohSearc
   };
 }
 
+function formatFileSizeBytes(bytes: number): string {
+  if (!Number.isFinite(bytes) || bytes < 0) return '';
+  if (bytes < 1024) return `${Math.round(bytes)} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+/** Envelope metadata from snapshot JSON (`roh-asset-store-collections.json`). */
+function assetLibrarySnapshotEnvelope(data: RohAssetStoreFileJson): Record<string, string> {
+  const out: Record<string, string> = {};
+  if (data.source?.trim()) out.siteSource = data.source.trim();
+  if (data.generatedAt?.trim()) out.siteSnapshotAt = data.generatedAt.trim();
+  if (typeof data.collectionCount === 'number' && Number.isFinite(data.collectionCount)) {
+    out.siteCollectionCount = String(data.collectionCount);
+  }
+  if (typeof data.assetCount === 'number' && Number.isFinite(data.assetCount)) {
+    out.siteAssetCount = String(data.assetCount);
+  }
+  return out;
+}
+
 function assetJsonToSearchItem(
   asset: RohAssetStoreAssetJson,
   collection: RohAssetStoreCollectionJson,
+  envelope: Record<string, string>,
 ): RohSearchItem {
+  const descTrim = asset.description?.trim() || '';
+  const collDescTrim = collection.description?.trim() || '';
+
+  const metadata: Record<string, string> = {
+    ...envelope,
+    ...(collection.metadata ?? {}),
+    ...(asset.metadata ?? {}),
+    assetCollectionId: collection.id,
+    assetCollectionTitle: collection.title,
+    tags: (asset.tags ?? []).join(', '),
+    description: descTrim,
+    collectionDescription: collDescTrim,
+    formats: asset.extension?.join(', ') || '',
+    publicUrl: collection.publicUrl || '',
+    sourceUrlCollection: collection.sourceUrl || '',
+    appCodes: (asset.appCodes ?? []).join(', '),
+    orientation: asset.orientation || '',
+    fileSizeBytes: typeof asset.fileSize === 'number' && Number.isFinite(asset.fileSize) ? String(asset.fileSize) : '',
+    fileSizeLabel:
+      typeof asset.fileSize === 'number' && Number.isFinite(asset.fileSize) ? formatFileSizeBytes(asset.fileSize) : '',
+    isArchived: typeof asset.isArchived === 'boolean' ? String(asset.isArchived) : '',
+    isKeyVisual: typeof asset.isKeyVisual === 'boolean' ? String(asset.isKeyVisual) : '',
+    isPrivate: typeof asset.isPrivate === 'boolean' ? String(asset.isPrivate) : '',
+    hasAdditionalFiles: typeof asset.hasAdditionalFiles === 'boolean' ? String(asset.hasAdditionalFiles) : '',
+    collectionExpectedFiles:
+      typeof collection.expectedFileCount === 'number' ? String(collection.expectedFileCount) : '',
+    collectionFetchedFiles:
+      typeof collection.fetchedFileCount === 'number' ? String(collection.fetchedFileCount) : '',
+    collectionReportedFiles:
+      typeof collection.reportedFileCount === 'number' ? String(collection.reportedFileCount) : '',
+    collectionIsReadonly: typeof collection.isReadonly === 'boolean' ? String(collection.isReadonly) : '',
+  };
+
+  Object.keys(metadata).forEach((key) => {
+    const v = metadata[key];
+    if (v === undefined || v === '') delete metadata[key];
+  });
+
   return {
     type: 'asset',
     source: RohDataSources.assetLibrary,
@@ -197,25 +259,18 @@ function assetJsonToSearchItem(
     imageUrl: asset.thumbnailUrl,
     sourceUrl:
       (asset.webUrl || '').trim() || (collection.publicUrl || '').trim() || (collection.sourceUrl || '').trim(),
-    metadata: {
-      assetCollectionId: collection.id,
-      assetCollectionTitle: collection.title,
-      tags: (asset.tags ?? []).join(', '),
-      description: asset.description?.trim() || '',
-      formats: asset.extension?.join(', ') || '',
-      publicUrl: collection.publicUrl || '',
-      sourceUrlCollection: collection.sourceUrl || '',
-    },
+    metadata,
   };
 }
 
 export function buildAssetStoreSearchDocuments(data: RohAssetStoreFileJson): RohSearchDocument[] {
   const out: RohSearchDocument[] = [];
+  const envelope = assetLibrarySnapshotEnvelope(data);
   for (const collection of data.collections) {
     for (const asset of collection.assets ?? []) {
       const id = asset.id?.trim();
       if (!id) continue;
-      const item = assetJsonToSearchItem(asset, collection);
+      const item = assetJsonToSearchItem(asset, collection, envelope);
       const searchText = normalizeText(
         [
           item.title,
@@ -223,9 +278,13 @@ export function buildAssetStoreSearchDocuments(data: RohAssetStoreFileJson): Roh
           item.date,
           item.metadata.tags,
           item.metadata.description,
+          item.metadata.collectionDescription,
           item.metadata.formats,
           item.metadata.assetCollectionTitle,
-          collection.description,
+          item.metadata.appCodes,
+          item.metadata.orientation,
+          item.metadata.fileSizeLabel,
+          metadataText(item.metadata),
         ]
           .filter(Boolean)
           .join(' ')
@@ -745,10 +804,11 @@ export function getCombinedRohItem(
 
   if (!resolved?.collections?.length) return null;
 
+  const envelope = assetLibrarySnapshotEnvelope(resolved);
   const key = id.trim().toLowerCase();
   for (const collection of resolved.collections) {
     const asset = collection.assets?.find((entry) => entry.id.trim().toLowerCase() === key);
-    if (asset) return assetJsonToSearchItem(asset, collection);
+    if (asset) return assetJsonToSearchItem(asset, collection, envelope);
   }
   return null;
 }

@@ -11189,7 +11189,7 @@
     "status": "Original season",
     "conductor": "Ashley Lawrence",
     "leader": "Meyer Stolow",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12182&row=0",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=12182&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -11331,7 +11331,7 @@
     "status": "Revival",
     "conductor": "Ashley Lawrence",
     "leader": "Adrian Reed",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14422&row=5",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=5&performance=14422&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -11468,7 +11468,7 @@
     "status": "Revival",
     "conductor": "Terence Kern",
     "leader": "David Nolan",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14425&row=6",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=6&performance=14425&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -11605,7 +11605,7 @@
     "status": "Revival",
     "conductor": "Terence Kern",
     "leader": "David Nolan",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24150&row=7",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=7&performance=24150&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -11742,7 +11742,7 @@
     "status": "Revival",
     "conductor": "Terence Kern",
     "leader": "David Nolan",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24161&row=8",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=8&performance=24161&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -11879,7 +11879,7 @@
     "status": "Revival",
     "conductor": "Emanuel Young",
     "leader": "David Nolan",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24169&row=9",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=9&performance=24169&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -12016,7 +12016,7 @@
     "status": "Revival",
     "conductor": "Terence Kern",
     "leader": "David Nolan",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24171&row=10",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=10&performance=24171&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -12153,7 +12153,7 @@
     "status": "Original season",
     "conductor": "Anthony Twiner",
     "leader": "Meyer Stolow",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24954&row=1",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=24954&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -12289,7 +12289,7 @@
     "status": "Original season",
     "conductor": "Emanuel Young",
     "leader": "Meyer Stolow",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24955&row=2",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=24955&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -12425,7 +12425,7 @@
     "status": "Original season",
     "conductor": "Emanuel Young",
     "leader": "Meyer Stolow",
-    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24956&row=3",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=24956&page=0",
     "metadata": {
       "Company": "The Royal Ballet",
       "Venue": "Royal Opera House, Covent Garden, London",
@@ -12547,6 +12547,3448 @@
         "performanceId": "24956",
         "role": "",
         "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24957",
+    "productionId": "12171",
+    "title": "Giselle-28 February 1981 Evening",
+    "date": "28 February 1981",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "Emanuel Young",
+    "leader": "Meyer Stolow",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=4&performance=24957&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "Emanuel Young",
+      "Leader": "Meyer Stolow",
+      "Information source": "Royal Opera House programme for 28 February 1981 (in Royal Opera House Collections)",
+      "Date": "28 February 1981",
+      "Session": "Evening",
+      "Production ID": "12171"
+    },
+    "cast": [
+      {
+        "performanceId": "24957",
+        "role": "Giselle",
+        "performer": "Marguerite Porter"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Count Albrecht",
+        "performer": "David Wall"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Hilarion",
+        "performer": "Stephen Jefferies"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Wilfred",
+        "performer": "Michael Batchelor"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24957",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Leading Huntsman",
+        "performer": "Robert Jude"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Pas de deux",
+        "performer": "Rosalyn Whitten"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Pas de deux",
+        "performer": "Ashley Page"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Pas de six",
+        "performer": "Angela Cox"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Pas de six",
+        "performer": "Julie Lincoln"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Pas de six",
+        "performer": "Elizabeth Morgan"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Pas de six",
+        "performer": "Karen Paisey"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Pas de six",
+        "performer": "Julie Rose"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Pas de six",
+        "performer": "Nicola Roberts"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Peasants and Courtiers",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Zulme",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Moyna",
+        "performer": "Genesia Rosato"
+      },
+      {
+        "performanceId": "24957",
+        "role": "Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24957",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "12178",
+    "productionId": "12172",
+    "title": "Giselle-11 March 1971 Evening",
+    "date": "11 March 1971",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "Ashley Lawrence",
+    "leader": "Charles Taylor",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=12178&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "Ashley Lawrence",
+      "Leader": "Charles Taylor",
+      "Information source": "Royal Opera House programme for 11 March 1971 (in Royal Opera House Collections)",
+      "Date": "11 March 1971",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "12178",
+        "role": "Count Albrecht",
+        "performer": "Anthony Dowell"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Wilfred",
+        "performer": "Paul Brown"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Giselle",
+        "performer": "Antoinette Sibley"
+      },
+      {
+        "performanceId": "12178",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Pas de six",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Pas de six",
+        "performer": "Patricia Ruanne"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Myrtha",
+        "performer": "Deanne Bergsma"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Zulme",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Moyna",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "12178",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "12178",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "14413",
+    "productionId": "12172",
+    "title": "Giselle-2 November 1971 Evening",
+    "date": "2 November 1971",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Emanuel Young",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=5&performance=14413&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Emanuel Young",
+      "Leader": "Peter Gibbs",
+      "Information source": "Royal Opera House programme for 2 November 1971 (in Royal Opera House Collections)",
+      "Date": "2 November 1971",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "14413",
+        "role": "Count Albrecht",
+        "performer": "David Wall"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Wilfred",
+        "performer": "Ronald Plaisted"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Hilarion",
+        "performer": "David Adams"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Giselle",
+        "performer": "Doreen Wells"
+      },
+      {
+        "performanceId": "14413",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Pas de six",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Pas de six",
+        "performer": "Sally Inkin"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Myrtha",
+        "performer": "Deanne Bergsma"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Zulme",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Moyna",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "14413",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School"
+      },
+      {
+        "performanceId": "14413",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "14415",
+    "productionId": "12172",
+    "title": "Giselle-25 November 1972 Matinee",
+    "date": "25 November 1972",
+    "session": "Matinee",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Emanuel Young",
+    "leader": "Charles Taylor",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=14&performance=14415&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Emanuel Young",
+      "Leader": "Charles Taylor",
+      "Event": "Number 2 in The Royal Ballet mixed programme 25 November 1972 matinee",
+      "Information source": "Royal Opera House programme for 25 November 1972 (in Royal Opera House Collections)",
+      "Date": "25 November 1972",
+      "Session": "Matinee",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "14415",
+        "role": "Count Albrecht",
+        "performer": "Anthony Dowell"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Wilfred",
+        "performer": "Ronald Plaisted"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Giselle",
+        "performer": "Antoinette Sibley"
+      },
+      {
+        "performanceId": "14415",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Pas de six",
+        "performer": "Alfreda Thorogood"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Pas de six",
+        "performer": "Gary Sherwood"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Pas de six",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Myrtha",
+        "performer": "Deanne Bergsma"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Zulme",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Moyna",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "14415",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School"
+      },
+      {
+        "performanceId": "14415",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "14417",
+    "productionId": "12172",
+    "title": "Giselle-24 January 1974 Evening 7.30pm",
+    "date": "24 January 1974",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Anthony Twiner",
+    "leader": "Charles Taylor",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=18&performance=14417&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Anthony Twiner",
+      "Leader": "Charles Taylor",
+      "Durations": "Act I: 8.03-8.54pm, Act II: 9.21-10.06pm",
+      "Event": "Number 2 in The Royal Ballet mixed programme 24 January 1974",
+      "Information source": "Royal Opera House programme for 24 January 1974 (in Royal Opera House Collections)",
+      "Date": "24 January 1974",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "14417",
+        "role": "Count Albrecht",
+        "performer": "David Wall"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Wilfred",
+        "performer": "Anthony Conway"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "14417",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Pas de six",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Pas de six",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Myrtha",
+        "performer": "Deanne Bergsma"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Moyna",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "14417",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School"
+      },
+      {
+        "performanceId": "14417",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "15495",
+    "productionId": "12172",
+    "title": "Giselle-17 March 1973 Evening",
+    "date": "17 March 1973",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Anthony Twiner",
+    "leader": "George Hallam",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=17&performance=15495&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Anthony Twiner",
+      "Leader": "George Hallam",
+      "Event": "Number 2 in The Royal Ballet mixed programme 17 March 1973",
+      "Information source": "Royal Opera House programme for 17 March 1973 (in Royal Opera House Collections)",
+      "Date": "17 March 1973",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "15495",
+        "role": "Count Albrecht",
+        "performer": "Donald MacLeary"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Wilfred",
+        "performer": "Ronald Plaisted"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Berthe",
+        "performer": "Julie Wood"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Hilarion",
+        "performer": "David Adams"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "15495",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Pas de six",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Pas de six",
+        "performer": "Gary Sherwood"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Pas de six",
+        "performer": "Sally Inkin"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Myrtha",
+        "performer": "Deanne Bergsma"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Moyna",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "15495",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School"
+      },
+      {
+        "performanceId": "15495",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24941",
+    "productionId": "12172",
+    "title": "Giselle-13 March 1971 Evening",
+    "date": "13 March 1971",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "John Lanchbery",
+    "leader": "Charles Taylor",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=24941&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "John Lanchbery",
+      "Leader": "Charles Taylor",
+      "Information source": "Royal Opera House programme for 13 March 1971 (in Royal Opera House Collections)",
+      "Date": "13 March 1971",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24941",
+        "role": "Count Albrecht",
+        "performer": "David Wall"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Wilfred",
+        "performer": "Paul Brown"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Giselle",
+        "performer": "Lynn Seymour"
+      },
+      {
+        "performanceId": "24941",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Pas de six",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Pas de six",
+        "performer": "Patricia Ruanne"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Zulme",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Moyna",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "24941",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24941",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24942",
+    "productionId": "12172",
+    "title": "Giselle-28 May 1971 Evening",
+    "date": "28 May 1971",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "John Lanchbery",
+    "leader": "Charles Taylor",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=24942&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "John Lanchbery",
+      "Leader": "Charles Taylor",
+      "Information source": "Royal Opera House programme for 28 May 1971 (in Royal Opera House Collections)",
+      "Date": "28 May 1971",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24942",
+        "role": "Count Albrecht",
+        "performer": "David Wall"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Wilfred",
+        "performer": "Ronald Plaisted"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Hilarion",
+        "performer": "David Adams"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Giselle",
+        "performer": "Lynn Seymour"
+      },
+      {
+        "performanceId": "24942",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Pas de six",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Pas de six",
+        "performer": "Marilyn Trounson"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Zulme",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Moyna",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "24942",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24942",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24943",
+    "productionId": "12172",
+    "title": "Giselle-4 June 1971 Evening",
+    "date": "4 June 1971",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "Ashley Lawrence",
+    "leader": "Charles Taylor",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=24943&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "Ashley Lawrence",
+      "Leader": "Charles Taylor",
+      "Information source": "Royal Opera House programme for 4 June 1971 (in Royal Opera House Collections)",
+      "Date": "4 June 1971",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24943",
+        "role": "Count Albrecht",
+        "performer": "Desmond Kelly"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Wilfred",
+        "performer": "Paul Brown"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Giselle",
+        "performer": "Doreen Wells"
+      },
+      {
+        "performanceId": "24943",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Pas de six",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Pas de six",
+        "performer": "Virginia Wakelyn"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Pas de six",
+        "performer": "Carl Myers"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Zulme",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Moyna",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24943",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24943",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24944",
+    "productionId": "12172",
+    "title": "Giselle-7 August 1971 Matinee",
+    "date": "7 August 1971",
+    "session": "Matinee",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "conductor": "Emanuel Young",
+    "leader": "Dian Booth",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=4&performance=24944&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Original season",
+      "Conductor": "Emanuel Young",
+      "Leader": "Dian Booth",
+      "Information source": "Royal Opera House programme for 7 August 1971 (in Royal Opera House Collections)",
+      "Date": "7 August 1971",
+      "Session": "Matinee",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24944",
+        "role": "Count Albrecht",
+        "performer": "Donald MacLeary"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Wilfred",
+        "performer": "Ronald Plaisted"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Giselle",
+        "performer": "Margaret Barbieri"
+      },
+      {
+        "performanceId": "24944",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Pas de six",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Pas de six",
+        "performer": "Patricia Ruanne"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Pas de six",
+        "performer": "Christopher Carr"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Pas de six",
+        "performer": "Lois Strike"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Pas de six",
+        "performer": "Carl Myers"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Moyna",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24944",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24944",
+        "role": "",
+        "performer": "Symphony Orchestra"
+      }
+    ]
+  },
+  {
+    "id": "24945",
+    "productionId": "12172",
+    "title": "Giselle-13 November 1971 Evening",
+    "date": "13 November 1971",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "John Lanchbery",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=6&performance=24945&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "John Lanchbery",
+      "Leader": "Peter Gibbs",
+      "Information source": "Royal Opera House programme for 13 November 1971 (in Royal Opera House Collections)",
+      "Date": "13 November 1971",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24945",
+        "role": "Count Albrecht",
+        "performer": "Desmond Kelly"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Wilfred",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Hilarion",
+        "performer": "David Adams"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "24945",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Pas de six",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Pas de six",
+        "performer": "Sally Inkin"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Moyna",
+        "performer": "June Highwood"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24945",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "24945",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24946",
+    "productionId": "12172",
+    "title": "Giselle-21 December 1971 Evening",
+    "date": "21 December 1971",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Ashley Lawrence",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=7&performance=24946&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Ashley Lawrence",
+      "Leader": "Peter Gibbs",
+      "Information source": "Royal Opera House programme for 21 December 1971 (in Royal Opera House Collections)",
+      "Date": "21 December 1971",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24946",
+        "role": "Count Albrecht",
+        "performer": "Donald MacLeary"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Wilfred",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Hilarion",
+        "performer": "David Adams"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "24946",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Pas de six",
+        "performer": "Marguerite Porter"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Pas de six",
+        "performer": "Carl Myers"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Pas de six",
+        "performer": "Peter O'Brien"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Moyna",
+        "performer": "June Highwood"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24946",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "24946",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24947",
+    "productionId": "12172",
+    "title": "Giselle-4 March 1972 Evening",
+    "date": "4 March 1972",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Emanuel Young",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=9&performance=24947&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Emanuel Young",
+      "Leader": "Peter Gibbs",
+      "Information source": "Royal Opera House programme for 4 March 1972 (in Royal Opera House Collections)",
+      "Date": "4 March 1972",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24947",
+        "role": "Count Albrecht",
+        "performer": "Rudolf Nureyev"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Wilfred",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "24947",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Pas de six",
+        "performer": "Peter O'Brien"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Moyna",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24947",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "24947",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24949",
+    "productionId": "12172",
+    "title": "Giselle-21 June 1972 Evening",
+    "date": "21 June 1972",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "John Lanchbery",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=10&performance=24949&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "John Lanchbery",
+      "Leader": "Peter Gibbs",
+      "Event": "Number 2 in The Royal Ballet mixed programme 21 June 1972",
+      "Information source": "Royal Opera House programme for 21 June 1972 (in Royal Opera House Collections)",
+      "Date": "21 June 1972",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24949",
+        "role": "Count Albrecht",
+        "performer": "Anthony Dowell"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Wilfred",
+        "performer": "Ronald Plaisted"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Hilarion",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Giselle",
+        "performer": "Natalia Makarova"
+      },
+      {
+        "performanceId": "24949",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Pas de six",
+        "performer": "Sally Inkin"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Pas de six",
+        "performer": "Marguerite Porter"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Pas de six",
+        "performer": "Carl Myers"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Pas de six",
+        "performer": "Christopher Carr"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Moyna",
+        "performer": "Alfreda Thorogood"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24949",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "24949",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24951",
+    "productionId": "12172",
+    "title": "Giselle-26 January 1974 Evening",
+    "date": "26 January 1974",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Ashley Lawrence",
+    "leader": "Santiago Bravo",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=19&performance=24951&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Ashley Lawrence",
+      "Leader": "Santiago Bravo",
+      "Durations": "Act I, Act II",
+      "Event": "Number 2 in The Royal Ballet mixed programme 26 January 1974",
+      "Information source": "Royal Opera House programme for 26 January 1974 (in Royal Opera House Collections)",
+      "Date": "26 January 1974",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24951",
+        "role": "Count Albrecht",
+        "performer": "Anthony Dowell"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Wilfred",
+        "performer": "Petrus Bosman"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Hilarion",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Giselle",
+        "performer": "Alfreda Thorogood"
+      },
+      {
+        "performanceId": "24951",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Pas de six",
+        "performer": "Sally Inkin"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Pas de six",
+        "performer": "Christopher Carr"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Pas de six",
+        "performer": "Peter Fairweather"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Zulme",
+        "performer": "Diana Vere"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Moyna",
+        "performer": "Belinda Corken"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24951",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School"
+      },
+      {
+        "performanceId": "24951",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "24953",
+    "productionId": "12172",
+    "title": "Giselle-15 March 1974 Evening",
+    "date": "15 March 1974",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Anthony Twiner",
+    "leader": "Charles Taylor",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=24953&page=1",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Anthony Twiner",
+      "Leader": "Charles Taylor",
+      "Durations": "Act I, Act II",
+      "Event": "Number 2 in The Royal Ballet mixed programme 15 March 1974",
+      "Information source": "Royal Opera House programme for 15 March 1974 (in Royal Opera House Collections)",
+      "Date": "15 March 1974",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "24953",
+        "role": "Count Albrecht",
+        "performer": "Donald MacLeary"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Wilfred",
+        "performer": "Anthony Conway"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Berthe",
+        "performer": "Julie Wood"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "24953",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Pas de six",
+        "performer": "Diana Vere"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Pas de six",
+        "performer": "Rosemary Taylor"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Pas de six",
+        "performer": "Michael Corder"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Pas de six",
+        "performer": "Mark Silver"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Myrtha",
+        "performer": "Monica Mason"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Zulme",
+        "performer": "Diana Vere"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Moyna",
+        "performer": "June Highwood"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "24953",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School"
+      },
+      {
+        "performanceId": "24953",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "25013",
+    "productionId": "12172",
+    "title": "Giselle-21 June 1974 Evening",
+    "date": "21 June 1974",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Emanuel Young",
+    "leader": "Santiago Bravo",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=25013&page=1",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Emanuel Young",
+      "Leader": "Santiago Bravo",
+      "Durations": "Act I, Act II",
+      "Event": "Number 2 in The Royal Ballet mixed programme 21 June 1974",
+      "Information source": "Royal Opera House programme for 21 June 1974 (in Royal Opera House Collections)",
+      "Date": "21 June 1974",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "25013",
+        "role": "Count Albrecht",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Wilfred",
+        "performer": "Anthony Conway"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Hilarion",
+        "performer": "David Adams"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Giselle",
+        "performer": "Ann Jenner"
+      },
+      {
+        "performanceId": "25013",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Pas de six",
+        "performer": "Wayne Sleep"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Pas de six",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Myrtha",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Zulme",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Moyna",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "25013",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School"
+      },
+      {
+        "performanceId": "25013",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "25017",
+    "productionId": "12172",
+    "title": "Giselle-29 June 1974 Evening",
+    "date": "29 June 1974",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Emanuel Young",
+    "leader": "Santiago Bravo",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=25017&page=1",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Emanuel Young",
+      "Leader": "Santiago Bravo",
+      "Durations": "Act I, Act II",
+      "Event": "Number 2 in The Royal Ballet mixed programme 29 June 1974",
+      "Information source": "Royal Opera House programme for 29 June 1974 (in Royal Opera House Collections)",
+      "Date": "29 June 1974",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "25017",
+        "role": "Count Albrecht",
+        "performer": "David Wall"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Wilfred",
+        "performer": "Petrus Bosman"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Hilarion",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Giselle",
+        "performer": "Natalia Makarova"
+      },
+      {
+        "performanceId": "25017",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Pas de six",
+        "performer": "Diana Vere"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Pas de six",
+        "performer": "Ria Peri"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Pas de six",
+        "performer": "Sally Inkin"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Pas de six",
+        "performer": "Michael Corder"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Pas de six",
+        "performer": "Mark Silver"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Myrtha",
+        "performer": "Deanne Bergsma"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Zulme",
+        "performer": "Diana Vere"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Moyna",
+        "performer": "Ria Peri"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "25017",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School"
+      },
+      {
+        "performanceId": "25017",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "27618",
+    "productionId": "12172",
+    "title": "Giselle-26 February 1972 Matinee",
+    "date": "26 February 1972",
+    "session": "Matinee",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "John Lanchbery",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=8&performance=27618&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "John Lanchbery",
+      "Leader": "Peter Gibbs",
+      "Information source": "Royal Opera House programme for 26 February 1972 (in Royal Opera House Collections)",
+      "Date": "26 February 1972",
+      "Session": "Matinee",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "27618",
+        "role": "Count Albrecht",
+        "performer": "Rudolf Nureyev"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Wilfred",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "27618",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Pas de six",
+        "performer": "Sally Inkin"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Pas de six",
+        "performer": "Marguerite Porter"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Pas de six",
+        "performer": "Carl Myers"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Pas de six",
+        "performer": "Peter O'Brien"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Myrtha",
+        "performer": "Georgina Parkinson"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Moyna",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "27618",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "27618",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "27631",
+    "productionId": "12172",
+    "title": "Giselle-6 July 1972 Evening",
+    "date": "6 July 1972",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Anthony Twiner",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=11&performance=27631&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Anthony Twiner",
+      "Leader": "Peter Gibbs",
+      "Event": "Number 2 in The Royal Ballet mixed programme 6 July 1972",
+      "Information source": "Royal Opera House programme for 6 July 1972 (in Royal Opera House Collections)",
+      "Date": "6 July 1972",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "27631",
+        "role": "Count Albrecht",
+        "performer": "Rudolf Nureyev"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Wilfred",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Giselle",
+        "performer": "Merle Park"
+      },
+      {
+        "performanceId": "27631",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Myrtha",
+        "performer": "Georgina Parkinson"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Moyna",
+        "performer": "Jennifer Penney"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "27631",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "27631",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "27633",
+    "productionId": "12172",
+    "title": "Giselle-8 July 1972 Evening",
+    "date": "8 July 1972",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Anthony Twiner",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=12&performance=27633&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Anthony Twiner",
+      "Leader": "Peter Gibbs",
+      "Event": "Number 2 in The Royal Ballet mixed programme 8 July 1972",
+      "Information source": "Royal Opera House programme for 8 July 1972 (in Royal Opera House Collections)",
+      "Date": "8 July 1972",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "27633",
+        "role": "Count Albrecht",
+        "performer": "Rudolf Nureyev"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Wilfred",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Giselle",
+        "performer": "Lynn Seymour"
+      },
+      {
+        "performanceId": "27633",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Myrtha",
+        "performer": "Georgina Parkinson"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Moyna",
+        "performer": "June Highwood"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "27633",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "27633",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "27635",
+    "productionId": "12172",
+    "title": "Giselle-10 July 1972 Evening",
+    "date": "10 July 1972",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Anthony Twiner",
+    "leader": "Peter Gibbs",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=13&performance=27635&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Anthony Twiner",
+      "Leader": "Peter Gibbs",
+      "Event": "Number 2 in The Royal Ballet mixed programme 10 July 1972",
+      "Information source": "Royal Opera House programme for 10 July 1972 (in Royal Opera House Collections)",
+      "Date": "10 July 1972",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "27635",
+        "role": "Count Albrecht",
+        "performer": "Rudolf Nureyev"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Wilfred",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Hilarion",
+        "performer": "Adrian Grater"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Giselle",
+        "performer": "Lynn Seymour"
+      },
+      {
+        "performanceId": "27635",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Pas de six",
+        "performer": "Lesley Collier"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Pas de six",
+        "performer": "Michael Coleman"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Myrtha",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Moyna",
+        "performer": "June Highwood"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "27635",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "27635",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "27650",
+    "productionId": "12172",
+    "title": "Giselle-5 January 1973 Evening",
+    "date": "5 January 1973",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Ashley Lawrence",
+    "leader": "George Hallam",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=15&performance=27650&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Ashley Lawrence",
+      "Leader": "George Hallam",
+      "Event": "Number 2 in The Royal Ballet mixed programme 5 January 1973",
+      "Information source": "Royal Opera House programme for 5 January 1973 (in Royal Opera House Collections)",
+      "Date": "5 January 1973",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "27650",
+        "role": "Count Albrecht",
+        "performer": "Rudolf Nureyev"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Wilfred",
+        "performer": "Ronald Plaisted"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Hilarion",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Giselle",
+        "performer": "Antoinette Sibley"
+      },
+      {
+        "performanceId": "27650",
+        "role": "The Duke of Courland",
+        "performer": "Derek Rencher"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Bathilde",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Pas de six",
+        "performer": "Alfreda Thorogood"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Pas de six",
+        "performer": "Wayne Sleep"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Pas de six",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Pas de six",
+        "performer": "Wendy Ellis"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Myrtha",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Zulme",
+        "performer": "Laura Connor"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Moyna",
+        "performer": "Alfreda Thorogood"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "27650",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "27650",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "27655",
+    "productionId": "12172",
+    "title": "Giselle-8 January 1973 Evening",
+    "date": "8 January 1973",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Revival",
+    "conductor": "Ashley Lawrence",
+    "leader": "George Hallam",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=16&performance=27655&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Revival",
+      "Conductor": "Ashley Lawrence",
+      "Leader": "George Hallam",
+      "Event": "Number 2 in The Royal Ballet mixed programme 8 January 1973",
+      "Information source": "Royal Opera House programme for 8 January 1973 (in Royal Opera House Collections)",
+      "Date": "8 January 1973",
+      "Session": "Evening",
+      "Production ID": "12172"
+    },
+    "cast": [
+      {
+        "performanceId": "27655",
+        "role": "Count Albrecht",
+        "performer": "Rudolf Nureyev"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Wilfred",
+        "performer": "Ronald Plaisted"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Berthe",
+        "performer": "Gerd Larsen"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Hilarion",
+        "performer": "David Drew"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Giselle",
+        "performer": "Lynn Seymour"
+      },
+      {
+        "performanceId": "27655",
+        "role": "The Duke of Courland",
+        "performer": "Peter Fairweather"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Bathilde",
+        "performer": "Rosalind Eyre"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Pas de six",
+        "performer": "Alfreda Thorogood"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Pas de six",
+        "performer": "David Ashmole"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Pas de six",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Pas de six",
+        "performer": "Sally Inkin"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Pas de six",
+        "performer": "Wayne Eagling"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Pas de six",
+        "performer": "Peter O'Brien"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Myrtha",
+        "performer": "Vergie Derman"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Zulme",
+        "performer": "Sandra Conley"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Moyna",
+        "performer": "Alfreda Thorogood"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Peasants, Courtiers and Wilis",
+        "performer": "Artists of The Royal Ballet"
+      },
+      {
+        "performanceId": "27655",
+        "role": "Children",
+        "performer": "Students of The Royal Ballet School (Lower School)"
+      },
+      {
+        "performanceId": "27655",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "12890",
+    "productionId": "12889",
+    "title": "A Shropshire Lad-24 January 1995 Evening",
+    "date": "24 January 1995",
+    "session": "Evening",
+    "venue": "The Orchard Theatre, Dartford",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12890&row=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "The Orchard Theatre, Dartford",
+      "Performance status": "Original season",
+      "Durations": "Entire work: 15 minutes",
+      "Event": "Number 3 in The Royal Ballet mixed programme 24 January 1995: Dance Bites Tour",
+      "Information source": "The Royal Ballet Dance Bites Tour cast sheet for 24 January 1995 (in Royal Opera House Collections)",
+      "Date": "24 January 1995",
+      "Session": "Evening",
+      "Production ID": "12889"
+    },
+    "cast": [
+      {
+        "performanceId": "12890",
+        "role": "Dancer",
+        "performer": "Belinda Hatley"
+      },
+      {
+        "performanceId": "12890",
+        "role": "Dancer",
+        "performer": "William Trevitt"
+      },
+      {
+        "performanceId": "12890",
+        "role": "Dancer",
+        "performer": "Adam Cooper"
+      },
+      {
+        "performanceId": "12890",
+        "role": "Dancer",
+        "performer": "Gary Avis"
+      },
+      {
+        "performanceId": "12890",
+        "role": "Baritone",
+        "performer": "Paul Parfitt"
+      },
+      {
+        "performanceId": "12890",
+        "role": "Piano",
+        "performer": "Philip Cornfield"
+      }
+    ]
+  },
+  {
+    "id": "12893",
+    "productionId": "12894",
+    "title": "Being and Having Been-23 June 2004 Evening 7.30pm",
+    "date": "23 June 2004",
+    "session": "Evening 7.30pm",
+    "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=12893&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "Performance status": "Original season",
+      "Durations": "Entire work: 8.49-9.10pm",
+      "Event": "Number 4 in The Royal Ballet mixed programme 23 June 2004: Inspired by Diaghilev",
+      "Information source": "Linbury Studio Theatre programme for 23-27 June 2004 and stage manager's report for 23 June 2004 (in Royal Opera House Collections)",
+      "Date": "23 June 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12894"
+    },
+    "cast": [
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Bethany Keating"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Ludovic Ondiviela"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Gemma Bond"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Natasha Oughtred"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Victoria Hewitt"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Hikaru Kobayashi"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Laura McCulloch"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Samantha Raine"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Zachary Faruque"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Martin Harvey"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "José Martín"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Steven McRae"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Ernst Meisner"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Dancer",
+        "performer": "Henry St Clair"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Piano",
+        "performer": "Henry Roche"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Piano",
+        "performer": "Robert Clark"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Percussion",
+        "performer": "Nigel Bates"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Percussion",
+        "performer": "Julian Poole"
+      },
+      {
+        "performanceId": "12893",
+        "role": "Percussion",
+        "performer": "Donna-Maria Landowski"
+      }
+    ]
+  },
+  {
+    "id": "18771",
+    "productionId": "12894",
+    "title": "Being and Having Been-26 June 2004 Evening 7.30pm",
+    "date": "26 June 2004",
+    "session": "Evening 7.30pm",
+    "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=18771&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "Performance status": "Original season",
+      "Durations": "Entire work: 8.44-9.05pm",
+      "Event": "Number 4 in The Royal Ballet mixed programme 26 June 2004: Inspired by Diaghilev",
+      "Information source": "Linbury Studio Theatre programme for 23-27 June 2004 and stage manager's report for 26 June 2004 (in Royal Opera House Collections)",
+      "Date": "26 June 2004",
+      "Session": "Evening 7.30pm",
+      "Production ID": "12894"
+    },
+    "cast": [
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Bethany Keating"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Ludovic Ondiviela"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Gemma Bond"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Natasha Oughtred"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Victoria Hewitt"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Hikaru Kobayashi"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Laura McCulloch"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Samantha Raine"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Zachary Faruque"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Martin Harvey"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "José Martín"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Steven McRae"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Ernst Meisner"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Dancer",
+        "performer": "Henry St Clair"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Piano",
+        "performer": "Henry Roche"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Piano",
+        "performer": "Robert Clark"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Percussion",
+        "performer": "Nigel Bates"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Percussion",
+        "performer": "Julian Poole"
+      },
+      {
+        "performanceId": "18771",
+        "role": "Percussion",
+        "performer": "Donna-Maria Landowski"
+      }
+    ]
+  },
+  {
+    "id": "18772",
+    "productionId": "12894",
+    "title": "Being and Having Been-26 June 2004 Matinee 2.30pm",
+    "date": "26 June 2004",
+    "session": "Matinee 2.30pm",
+    "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=18772&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "Performance status": "Original season",
+      "Durations": "Entire work: 3.40-4.01pm",
+      "Event": "Number 4 in The Royal Ballet mixed programme 26 June 2004 matinee: Inspired by Diaghilev",
+      "Information source": "Linbury Studio Theatre programme for 23-27 June 2004 and stage manager's report for 26 June 2004 (in Royal Opera House Collections)",
+      "Date": "26 June 2004",
+      "Session": "Matinee 2.30pm",
+      "Production ID": "12894"
+    },
+    "cast": [
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Christina Elida Salerno"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Paul Kay"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Gemma Bond"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Yuhui Choe"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Victoria Hewitt"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Hikaru Kobayashi"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Laura McCulloch"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Samantha Raine"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Zachary Faruque"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "José Martín"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Steven McRae"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Ernst Meisner"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Jonathan Watkins"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Dancer",
+        "performer": "Henry St Clair"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Piano",
+        "performer": "Henry Roche"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Piano",
+        "performer": "Robert Clark"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Percussion",
+        "performer": "Nigel Bates"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Percussion",
+        "performer": "Julian Poole"
+      },
+      {
+        "performanceId": "18772",
+        "role": "Percussion",
+        "performer": "Donna-Maria Landowski"
+      }
+    ]
+  },
+  {
+    "id": "18773",
+    "productionId": "12894",
+    "title": "Being and Having Been-27 June 2004 Matinee 3.00pm",
+    "date": "27 June 2004",
+    "session": "Matinee 3.00pm",
+    "venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+    "company": "The Royal Ballet",
+    "status": "Original season",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=18773&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "Performance status": "Original season",
+      "Durations": "Entire work: 4.13-4.33pm",
+      "Event": "Number 4 in The Royal Ballet mixed programme 27 June 2004 matinee: Inspired by Diaghilev",
+      "Information source": "Linbury Studio Theatre programme for 23-27 June 2004 and stage manager's report for 27 June 2004 (in Royal Opera House Collections)",
+      "Date": "27 June 2004",
+      "Session": "Matinee 3.00pm",
+      "Production ID": "12894"
+    },
+    "cast": [
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Christina Elida Salerno"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Paul Kay"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Gemma Bond"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Yuhui Choe"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Victoria Hewitt"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Hikaru Kobayashi"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Laura McCulloch"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Samantha Raine"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Zachary Faruque"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "José Martín"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Steven McRae"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Ernst Meisner"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Jonathan Watkins"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Dancer",
+        "performer": "Henry St Clair"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Piano",
+        "performer": "Henry Roche"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Piano",
+        "performer": "Robert Clark"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Percussion",
+        "performer": "Nigel Bates"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Percussion",
+        "performer": "Julian Poole"
+      },
+      {
+        "performanceId": "18773",
+        "role": "Percussion",
+        "performer": "Donna-Maria Landowski"
       }
     ]
   }
