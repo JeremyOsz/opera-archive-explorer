@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   countRohAssetsInFile,
@@ -54,6 +54,8 @@ export interface RohJsonIndex {
 }
 
 let memoizedIndex: RohJsonIndex | null | undefined;
+let memoizedIndexPath: string | null = null;
+let memoizedIndexMtimeMs: number | null = null;
 
 function normalizeLimit(limit: number | undefined): number {
   return Math.min(Math.max(limit ?? 50, 1), 100);
@@ -121,46 +123,6 @@ function mapFlattenedRboCatalogue(record: FlattenedRboCatalogueRecord): RohSearc
     sourceUrl: record.sourceUrl,
     metadata: record.metadata,
     searchText,
-  };
-}
-
-function facetsWithAssetCorpus(
-  archiveFacets: RohSearchResult['facets'] | null | undefined,
-  assetDocuments: RohSearchDocument[],
-): RohSearchResult['facets'] {
-  const base = archiveFacets ?? emptyFacets();
-  if (assetDocuments.length === 0) return base;
-
-  const fromAssets = bucket(assetDocuments.map((document) => document.collection));
-  const typeMerge = bucket(assetDocuments.map((document) => document.type));
-
-  return {
-    ...base,
-    collections: mergeBuckets(base.collections, fromAssets),
-    types: mergeBuckets(base.types, typeMerge, 24),
-  };
-}
-
-/** Facets reflecting the merged corpus rows (excluding query filtering). */
-function combinedCorpusFacets(
-  archiveFacets: RohSearchResult['facets'] | null | undefined,
-  corpusDocuments: RohSearchDocument[],
-): RohSearchResult['facets'] {
-  const assetSubset = corpusDocuments.filter((document) => document.source === RohDataSources.assetLibrary);
-  const merged = facetsWithAssetCorpus(archiveFacets, assetSubset);
-  const rboSubset = corpusDocuments.filter(
-    (document) =>
-      document.type === 'rbo_web' ||
-      document.type === 'rbo_stream' ||
-      document.source === RohDataSources.stream ||
-      document.source === RohDataSources.webContent,
-  );
-  if (rboSubset.length > 0) {
-    merged.types = mergeBuckets(merged.types, bucket(rboSubset.map((document) => document.type)), 32);
-  }
-  return {
-    ...merged,
-    sources: bucket(corpusDocuments.map((document) => documentSource(document)), 12),
   };
 }
 
@@ -402,7 +364,10 @@ export function writeRohJsonIndex(dataset: RohDataset, dir = process.env.ROH_IND
       2
     )
   );
+  const indexPath = join(dir, 'index.json');
   memoizedIndex = index;
+  memoizedIndexPath = indexPath;
+  memoizedIndexMtimeMs = existsSync(indexPath) ? statSync(indexPath).mtimeMs : null;
   return index;
 }
 
@@ -424,14 +389,59 @@ function passesSearchFilters(document: RohSearchDocument, params: RohSearchParam
   return queryTerms.every((term) => document.searchText.includes(term));
 }
 
+function withoutFacetParam(params: RohSearchParams, key: keyof RohSearchParams): RohSearchParams {
+  return { ...params, [key]: undefined };
+}
+
+function reactiveFacets(searchDocuments: RohSearchDocument[], params: RohSearchParams, queryTerms: string[]): RohSearchResult['facets'] {
+  const docsForSources = searchDocuments.filter((document) =>
+    passesSearchFilters(document, withoutFacetParam(params, 'source'), queryTerms),
+  );
+  const docsForCollections = searchDocuments.filter((document) =>
+    passesSearchFilters(document, withoutFacetParam(params, 'collection'), queryTerms),
+  );
+  const docsForGenres = searchDocuments.filter((document) =>
+    passesSearchFilters(document, withoutFacetParam(params, 'genre'), queryTerms),
+  );
+  const docsForCreators = searchDocuments.filter((document) =>
+    passesSearchFilters(document, withoutFacetParam(params, 'creator'), queryTerms),
+  );
+  const docsForCompanies = searchDocuments.filter((document) =>
+    passesSearchFilters(document, withoutFacetParam(params, 'company'), queryTerms),
+  );
+  const docsForTypes = searchDocuments.filter((document) =>
+    passesSearchFilters(document, withoutFacetParam(params, 'type'), queryTerms),
+  );
+
+  return {
+    sources: bucket(docsForSources.map((document) => documentSource(document)), 12),
+    collections: bucket(docsForCollections.map((document) => document.collection)),
+    genres: bucket(docsForGenres.map((document) => document.genre)),
+    creators: bucket(docsForCreators.map((document) => document.creator)),
+    companies: bucket(docsForCompanies.map((document) => document.company)),
+    types: bucket(docsForTypes.map((document) => document.type), 32),
+  };
+}
+
 export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR): RohJsonIndex | null {
-  if (memoizedIndex !== undefined && dir === (process.env.ROH_INDEX_DIR || ROH_INDEX_DIR)) {
-    return memoizedIndex;
+  const indexPath = join(dir, 'index.json');
+  const defaultDir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR;
+  const shouldMemoize = dir === defaultDir;
+  const indexExists = existsSync(indexPath);
+
+  if (shouldMemoize && memoizedIndex !== undefined && memoizedIndexPath === indexPath) {
+    const currentMtime = indexExists ? statSync(indexPath).mtimeMs : null;
+    if (currentMtime === memoizedIndexMtimeMs) {
+      return memoizedIndex;
+    }
   }
 
-  const indexPath = join(dir, 'index.json');
   if (!existsSync(indexPath)) {
-    memoizedIndex = null;
+    if (shouldMemoize) {
+      memoizedIndex = null;
+      memoizedIndexPath = indexPath;
+      memoizedIndexMtimeMs = null;
+    }
     return null;
   }
 
@@ -464,8 +474,10 @@ export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DI
     : buildFacets(dataset, searchDocuments);
 
   const index: RohJsonIndex = { ...partialIndex, dataset, searchDocuments, facets };
-  if (dir === (process.env.ROH_INDEX_DIR || ROH_INDEX_DIR)) {
+  if (shouldMemoize) {
     memoizedIndex = index;
+    memoizedIndexPath = indexPath;
+    memoizedIndexMtimeMs = statSync(indexPath).mtimeMs;
   }
   return index;
 }
@@ -476,14 +488,11 @@ export function searchRohIndex(index: RohJsonIndex, params: RohSearchParams): Ro
   const queryTerms = queryTermsFromParams(params);
   const matches = index.searchDocuments.filter((document) => passesSearchFilters(document, params, queryTerms));
 
-  const facets = index.facets;
+  const facets = reactiveFacets(index.searchDocuments, params, queryTerms);
   return {
     items: matches.slice(offset, offset + limit).map(toSearchItem),
     total: matches.length,
-    facets: {
-      ...facets,
-      sources: bucket(index.searchDocuments.map((document) => documentSource(document)), 12),
-    },
+    facets,
   };
 }
 
@@ -526,7 +535,7 @@ export function searchCombinedRoh(
   return {
     items: matches.slice(offset, offset + limit).map(toSearchItem),
     total: matches.length,
-    facets: combinedCorpusFacets(index?.facets ?? null, mergedDocuments),
+    facets: reactiveFacets(mergedDocuments, params, queryTerms),
   };
 }
 

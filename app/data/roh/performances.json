@@ -1,1 +1,930 @@
-[]
+[
+  {
+    "id": "10325",
+    "title": "Etoile du Nord - Overture-25 November 1948 Evening 7.00pm",
+    "date": "25 November 1948",
+    "session": "Evening 7.00pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Covent Garden Orchestra",
+    "status": "Musical interlude",
+    "conductor": "Warwick Braithwaite",
+    "leader": "Joseph Shadwick",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10325",
+    "metadata": {
+      "Company": "The Covent Garden Orchestra",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Musical interlude",
+      "Conductor": "Warwick Braithwaite",
+      "Leader": "Joseph Shadwick",
+      "Event": "Number 1 in Sadler's Wells Ballet mixed programme 25 November 1948",
+      "Information source": "Royal Opera House programme for 25 November 1948 and stage management reports 1947-49 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "10325",
+        "role": "",
+        "performer": "The Covent Garden Orchestra"
+      }
+    ]
+  },
+  {
+    "id": "10365",
+    "title": "Etoile du Nord - Overture-14 December 1948 Evening",
+    "date": "14 December 1948",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Covent Garden Orchestra",
+    "status": "Musical interlude",
+    "conductor": "Warwick Braithwaite",
+    "leader": "Joseph Shadwick",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10365",
+    "metadata": {
+      "Company": "The Covent Garden Orchestra",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Musical interlude",
+      "Conductor": "Warwick Braithwaite",
+      "Leader": "Joseph Shadwick",
+      "Event": "Number 1 in Sadler's Wells Ballet mixed programme 14 December 1948",
+      "Information source": "Royal Opera House programme for 14 December 1948 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "10365",
+        "role": "",
+        "performer": "The Covent Garden Orchestra"
+      }
+    ]
+  },
+  {
+    "id": "10498",
+    "title": "Russlan and Ludmilla - Overture-9 March 1949 Evening",
+    "date": "9 March 1949",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Covent Garden Orchestra",
+    "status": "Musical interlude",
+    "conductor": "Warwick Braithwaite",
+    "leader": "Joseph Shadwick",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10498",
+    "metadata": {
+      "Company": "The Covent Garden Orchestra",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Musical interlude",
+      "Conductor": "Warwick Braithwaite",
+      "Leader": "Joseph Shadwick",
+      "Event": "Number 2 in Sadler's Wells Ballet mixed programme 9 March 1949",
+      "Information source": "Royal Opera House programme for 9 March 1949 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "10498",
+        "role": "",
+        "performer": "The Covent Garden Orchestra"
+      }
+    ]
+  },
+  {
+    "id": "11012",
+    "title": "Overture to 'Etoile du Nord'-6 March 1950 Evening 7.00pm",
+    "date": "6 March 1950",
+    "session": "Evening 7.00pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Covent Garden Orchestra",
+    "status": "Excerpt",
+    "conductor": "Robert Irving",
+    "leader": "Joseph Shadwick",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11012",
+    "metadata": {
+      "Company": "The Covent Garden Orchestra",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Excerpt",
+      "Conductor": "Robert Irving",
+      "Leader": "Joseph Shadwick",
+      "Event": "Number 1 in Sadler's Wells Ballet mixed programme 6 March 1950",
+      "Information source": "Royal Opera House programme for 6 March 1950 and stage management reports 1949-50 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11012",
+        "role": "",
+        "performer": "The Covent Garden Orchestra"
+      }
+    ]
+  },
+  {
+    "id": "11018",
+    "title": "En Bateau-7 March 1950 Evening",
+    "date": "7 March 1950",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "status": "Musical interlude",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11018",
+    "metadata": {
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Musical interlude",
+      "Notes": "'En Bateau' is a piano piece for four hands, but the two pianists are not given on the programme.",
+      "Event": "Number 3 in Sadler's Wells Ballet mixed programme 7 March 1950",
+      "Information source": "Royal Opera House programme for 7 March 1950 (in Royal Opera House Collections)"
+    },
+    "cast": []
+  },
+  {
+    "id": "11456",
+    "title": "Lakmé - Act III Duo finale-21 July 2007 Evening 7.30pm",
+    "date": "21 July 2007",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "Jette Parker Young Artists Programme",
+    "status": "Excerpt",
+    "conductor": "Stephen Barlow",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11456",
+    "metadata": {
+      "Company": "Jette Parker Young Artists Programme",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Excerpt",
+      "Conductor": "Stephen Barlow",
+      "Concert Master": "Peter Manning",
+      "Sponsor": "Oak Foundation",
+      "Language": "French",
+      "Durations": "Part II: 8.51-9.47pm",
+      "Event": "Number 9 in Jette Parker Young Artists Programme Summer Concert 21 July 2007",
+      "Radio - future relay ": "BBC Radio 3",
+      "Information source": "Royal Opera House programme and stage manager's report for 21 July 2007 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11456",
+        "role": "Lakmé",
+        "performer": "Ana James"
+      },
+      {
+        "performanceId": "11456",
+        "role": "Gérald",
+        "performer": "Haoyin Xue"
+      },
+      {
+        "performanceId": "11456",
+        "role": "Nilakantha",
+        "performer": "Krzysztof Szumanski"
+      },
+      {
+        "performanceId": "11456",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "11503",
+    "title": "Diana and Actaeon pas de deux-14 July 1997 Evening 7.30pm",
+    "date": "14 July 1997",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Gala performance",
+    "conductor": "Peter Ernst Lassen",
+    "leader": "John Brown",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11503",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Peter Ernst Lassen",
+      "Leader": "John Brown",
+      "Sponsor": "O'Rourke Group (Gala) ; William Hare Limited (Gala) ; Sony United Kingdom Limited (Big Screen relay)",
+      "Event": "Number 15 in Farewell Gala 14 July 1997",
+      "Television - live relay ": "BBC 2; 14 July 1997",
+      "Big Screen - live relay ": "14 July 1997; Covent Garden Piazza",
+      "Information source": "Royal Opera House Gala programme for 14 July 1997 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11503",
+        "role": "Dancer",
+        "performer": "Viviana Durante"
+      },
+      {
+        "performanceId": "11503",
+        "role": "Dancer",
+        "performer": "Irek Mukhamedov"
+      },
+      {
+        "performanceId": "11503",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "11575",
+    "title": "Tchaikovsky pas de deux-5 July 2000 Evening 7.30pm",
+    "date": "5 July 2000",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Kirov Ballet",
+    "status": "Gala performance",
+    "conductor": "Andrea Quinn",
+    "leader": "Sergey Levitin",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11575",
+    "metadata": {
+      "Company": "The Kirov Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Andrea Quinn",
+      "Leader": "Sergey Levitin",
+      "Sponsor": "UBS Warburg (Gala)",
+      "Durations": "Entire part 1: 7.33-8.58pm",
+      "Event": "Number 2 in White Nights at Covent Garden Gala 5 July 2000",
+      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11575",
+        "role": "Dancer",
+        "performer": "Diana Vishneva"
+      },
+      {
+        "performanceId": "11575",
+        "role": "Dancer",
+        "performer": "Viacheslav Samodurov"
+      },
+      {
+        "performanceId": "11575",
+        "role": "",
+        "performer": "The Kirov Orchestra"
+      }
+    ]
+  },
+  {
+    "id": "11581",
+    "title": "Iolanta - 'Kto mozhet sravnit'sya s Matil'doy moyey'-5 July 2000 Evening 7.30pm",
+    "date": "5 July 2000",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Kirov Opera",
+    "status": "Gala performance",
+    "leader": "Sergey Levitin",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11581",
+    "metadata": {
+      "Company": "The Kirov Opera",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Leader": "Sergey Levitin",
+      "Notes": "This performance was conducted either Valery Gergiev or Boris Gruzin.",
+      "Sponsor": "UBS Warburg",
+      "Surtitled by": "Royal Opera House Surtitles Department",
+      "Durations": "Entire part 1: 7.33-8.58pm",
+      "Event": "Number 7 in White Nights at Covent Garden Gala 5 July 2000",
+      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11581",
+        "role": "Baritone",
+        "performer": "Nikolai Putilin"
+      },
+      {
+        "performanceId": "11581",
+        "role": "",
+        "performer": "The Kirov Orchestra"
+      }
+    ]
+  },
+  {
+    "id": "11588",
+    "title": "Diana and Actaeon pas de deux-5 July 2000 Evening 7.30pm",
+    "date": "5 July 2000",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet",
+    "status": "Gala performance",
+    "conductor": "Andrea Quinn",
+    "leader": "Sergey Levitin",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11588",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Andrea Quinn",
+      "Leader": "Sergey Levitin",
+      "Sponsor": "UBS Warburg",
+      "Durations": "Entire part 2: 9.31-10.46pm",
+      "Event": "Number 14 in White Nights at Covent Garden Gala 5 July 2000",
+      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House)"
+    },
+    "cast": [
+      {
+        "performanceId": "11588",
+        "role": "Dancer",
+        "performer": "Marianela Nuñez"
+      },
+      {
+        "performanceId": "11588",
+        "role": "Dancer",
+        "performer": "Carlos Acosta"
+      },
+      {
+        "performanceId": "11588",
+        "role": "",
+        "performer": "The Kirov Orchestra"
+      }
+    ]
+  },
+  {
+    "id": "11591",
+    "title": "Louis Armstrong (...when angels fly...)-5 July 2000 Evening 7.30pm",
+    "date": "5 July 2000",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Ballet, The Kirov Ballet",
+    "status": "Gala performance",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11591",
+    "metadata": {
+      "Company": "The Royal Ballet, The Kirov Ballet",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Sponsor": "UBS Warburg",
+      "Durations": "Entire part 2: 9.31-10.46pm",
+      "Event": "Number 16 in White Nights at Covent Garden Gala 5 July 2000",
+      "Information source": "Royal Opera House Gala programme for 5 July 2000 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11591",
+        "role": "Dancer",
+        "performer": "Altynai Asylmuratova"
+      },
+      {
+        "performanceId": "11591",
+        "role": "Dancer",
+        "performer": "Irek Mukhamedov"
+      }
+    ]
+  },
+  {
+    "id": "11660",
+    "title": "The Fairy Queen - Prelude to Act IV-12 December 1996 Evening 7.00pm",
+    "date": "12 December 1996",
+    "session": "Evening 7.00pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Orchestra of the Royal Opera House",
+    "status": "Gala performance",
+    "conductor": "Asher Fisch",
+    "leader": "Vasko Vassilev",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11660",
+    "metadata": {
+      "Company": "The Orchestra of the Royal Opera House",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Asher Fisch",
+      "Leader": "Vasko Vassilev",
+      "Durations": "Entire part 2: 8.57-10.09pm",
+      "Event": "Number 9 in The Royal Opera's Gold and Silver Gala 12 December 1996",
+      "Television - live relay ": "BBC 2; 12 December 1996",
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11660",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "11664",
+    "title": "La Juive - 'Rachel, quand du Seigneur'-12 December 1996 Evening 7.00pm",
+    "date": "12 December 1996",
+    "session": "Evening 7.00pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Opera",
+    "status": "Gala performance",
+    "conductor": "Asher Fisch",
+    "leader": "Vasko Vassilev",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11664",
+    "metadata": {
+      "Company": "The Royal Opera",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Asher Fisch",
+      "Leader": "Vasko Vassilev",
+      "Language": "French",
+      "Durations": "Entire part 2: 8.57-10.09pm",
+      "Event": "Number 13 in The Royal Opera's Gold and Silver Gala 12 December 1996",
+      "Television - live relay ": "BBC 2; 12 December 1996",
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11664",
+        "role": "Tenor",
+        "performer": "Roberto Alagna"
+      },
+      {
+        "performanceId": "11664",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "11666",
+    "title": "Valurile Dunarii - 'Muzica'-12 December 1996 Evening 7.00pm",
+    "date": "12 December 1996",
+    "session": "Evening 7.00pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Opera",
+    "status": "Gala performance",
+    "conductor": "Asher Fisch",
+    "leader": "Vasko Vassilev",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11666",
+    "metadata": {
+      "Company": "The Royal Opera",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Asher Fisch",
+      "Leader": "Vasko Vassilev",
+      "Language": "Romanian",
+      "Durations": "Entire part 2: 8.57-10.09pm",
+      "Event": "Number 14 in The Royal Opera's Gold and Silver Gala 12 December 1996",
+      "Television - live relay ": "BBC 2; 12 December 1996",
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11666",
+        "role": "Soprano",
+        "performer": "Angela Gheorghiu"
+      },
+      {
+        "performanceId": "11666",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "11670",
+    "title": "Gold und Silber-12 December 1996 Evening 7.00pm",
+    "date": "12 December 1996",
+    "session": "Evening 7.00pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Orchestra of the Royal Opera House",
+    "status": "Gala performance",
+    "conductor": "Plácido Domingo",
+    "leader": "Vasko Vassilev",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11670",
+    "metadata": {
+      "Company": "The Orchestra of the Royal Opera House",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Plácido Domingo",
+      "Leader": "Vasko Vassilev",
+      "Durations": "Entire part 2: 8.57-10.09pm",
+      "Event": "Number 17 in The Royal Opera's Gold and Silver Gala 12 December 1996",
+      "Television - live relay ": "BBC 2; 12 December 1996",
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 12 December 1996 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "11670",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "14443",
+    "title": "La bohème - 'Che gelida manina', Act I-15 November 2007 Evening",
+    "date": "15 November 2007",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Opera",
+    "status": "Excerpt",
+    "conductor": "Nicola Luisotti",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14443",
+    "metadata": {
+      "Company": "The Royal Opera",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Excerpt",
+      "Conductor": "Nicola Luisotti",
+      "Concert Master": "Peter Manning",
+      "Language": "Italian",
+      "Surtitled by": "David Edwards",
+      "Durations": "Excerpt: 6 minutes",
+      "Event": "Number 6 in The World's Stage at Covent Garden Gala 15 November 2007",
+      "Information source": "Royal Opera House Gala programme for 15 November 2007 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "14443",
+        "role": "Rodolfo",
+        "performer": "Joseph Calleja"
+      },
+      {
+        "performanceId": "14443",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "14475",
+    "title": "La bohème - 'O soave fanciulla', Act I-15 November 2007 Evening",
+    "date": "15 November 2007",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Opera",
+    "status": "Excerpt",
+    "conductor": "Nicola Luisotti",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14475",
+    "metadata": {
+      "Company": "The Royal Opera",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Excerpt",
+      "Conductor": "Nicola Luisotti",
+      "Concert Master": "Peter Manning",
+      "Language": "Italian",
+      "Surtitled by": "David Edwards",
+      "Durations": "Excerpt: 6 minutes",
+      "Event": "Number 16 in The World's Stage at Covent Garden Gala 15 November 2007",
+      "Information source": "Royal Opera House Gala programme for 15 November 2007 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "14475",
+        "role": "Mimì",
+        "performer": "Liping Zhang"
+      },
+      {
+        "performanceId": "14475",
+        "role": "Rodolfo",
+        "performer": "Joseph Calleja"
+      },
+      {
+        "performanceId": "14475",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "17942",
+    "title": "Iolanta - 'Gospod' moy, yesti greshen ya'-1 December 1993 Evening 7.30pm",
+    "date": "1 December 1993",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Opera",
+    "status": "Gala performance",
+    "conductor": "Edward Downes",
+    "leader": "Bradley Creswick",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17942",
+    "metadata": {
+      "Company": "The Royal Opera",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Edward Downes",
+      "Leader": "Bradley Creswick",
+      "Notes": "Edward Downes assisted with the surtitles.",
+      "Language": "Russian",
+      "Surtitled by": "Irina Kirillova",
+      "Durations": "Entire part 1: 7.35-8.56pm",
+      "Event": "Number 3 in Winter Gala 1 December 1993",
+      "Television - live relay ": "BBC 2; 1 December 1993",
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 1 December 1993 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "17942",
+        "role": "Bass",
+        "performer": "Paata Burchuladze"
+      },
+      {
+        "performanceId": "17942",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "17959",
+    "title": "La bohème - 'Quando m'en vo'-1 December 1993 Evening 7.30pm",
+    "date": "1 December 1993",
+    "session": "Evening 7.30pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Royal Opera",
+    "status": "Gala performance",
+    "conductor": "Stephen Barlow",
+    "leader": "Bradley Creswick",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17959",
+    "metadata": {
+      "Company": "The Royal Opera",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Gala performance",
+      "Conductor": "Stephen Barlow",
+      "Leader": "Bradley Creswick",
+      "Notes": "Edward Downes assisted with the surtitles.",
+      "Language": "Italian",
+      "Surtitled by": "Irina Kirillova",
+      "Durations": "Entire part 2: 9.23-10.31pm",
+      "Event": "Number 17 in Winter Gala 1 December 1993",
+      "Television - live relay ": "BBC 2; 1 December 1993",
+      "Information source": "Royal Opera House Gala programme and stage manager's report for 1 December 1993 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "17959",
+        "role": "Soprano",
+        "performer": "Kiri Te Kanawa"
+      },
+      {
+        "performanceId": "17959",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "18313",
+    "title": "La bohème - Act IV 'In un coupè ... O Mimì, tu più non torni'-28 June 1988 Evening",
+    "date": "28 June 1988",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "status": "Concert",
+    "conductor": "John Barker",
+    "leader": "John Brown",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18313",
+    "metadata": {
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Concert",
+      "Conductor": "John Barker",
+      "Leader": "John Brown",
+      "Language": "Italian",
+      "Event": "Number 4 in Opera Concert 28 June 1988",
+      "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
+      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "18313",
+        "role": "Rodolfo",
+        "performer": "Plácido Domingo"
+      },
+      {
+        "performanceId": "18313",
+        "role": "Marcello",
+        "performer": "Thomas Allen"
+      },
+      {
+        "performanceId": "18313",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "18314",
+    "title": "Don Carlos - Act IV scene 2 'Per me giunto ... O Carlo ascolta'-28 June 1988 Evening",
+    "date": "28 June 1988",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "status": "Concert",
+    "conductor": "John Barker",
+    "leader": "John Brown",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18314",
+    "metadata": {
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Concert",
+      "Conductor": "John Barker",
+      "Leader": "John Brown",
+      "Language": "Italian",
+      "Event": "Number 5 in Opera Concert 28 June 1988",
+      "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
+      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "18314",
+        "role": "Roderigo",
+        "performer": "Thomas Allen"
+      },
+      {
+        "performanceId": "18314",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "18320",
+    "title": "Don Carlos - Act IV scene 1 'O don fatale'-28 June 1988 Evening",
+    "date": "28 June 1988",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "status": "Concert",
+    "conductor": "John Barker",
+    "leader": "John Brown",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18320",
+    "metadata": {
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Concert",
+      "Conductor": "John Barker",
+      "Leader": "John Brown",
+      "Language": "Italian",
+      "Event": "Number 12 in Opera Concert 28 June 1988",
+      "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
+      "Information source": "Royal Opera House concert programme for 28 June and 6 July 1988 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "18320",
+        "role": "Eboli",
+        "performer": "Eva Randová"
+      },
+      {
+        "performanceId": "18320",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "18328",
+    "title": "La bohème - Act IV 'In un coupè ... O Mimì, tu più non torni'-6 July 1988 Evening",
+    "date": "6 July 1988",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "status": "Concert",
+    "conductor": "John Barker",
+    "leader": "John Brown",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18328",
+    "metadata": {
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Concert",
+      "Conductor": "John Barker",
+      "Leader": "John Brown",
+      "Language": "Italian",
+      "Event": "Number 4 in Opera Concert 6 July 1988",
+      "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
+      "Big Screen - live relay ": "6 July 1988; Covent Garden Piazza, London; Transmitted via a GEC Starvision Screen. Hosted by Brian Hayes; project director Susanna Little; produced and directed by Independent Producers Ltd.",
+      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "18328",
+        "role": "Rodolfo",
+        "performer": "Plácido Domingo"
+      },
+      {
+        "performanceId": "18328",
+        "role": "Marcello",
+        "performer": "Thomas Allen"
+      },
+      {
+        "performanceId": "18328",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "18329",
+    "title": "Don Carlos - Act IV scene 2 'Per me giunto ... O Carlo ascolta'-6 July 1988 Evening",
+    "date": "6 July 1988",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "status": "Concert",
+    "conductor": "John Barker",
+    "leader": "John Brown",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18329",
+    "metadata": {
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Concert",
+      "Conductor": "John Barker",
+      "Leader": "John Brown",
+      "Language": "Italian",
+      "Event": "Number 6 in Opera Concert 6 July 1988",
+      "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
+      "Big Screen - live relay ": "6 July 1988; Covent Garden Piazza, London; Transmitted via a GEC Starvision Screen. Hosted by Brian Hayes; project director Susanna Little; produced and directed by Independent Producers Ltd.",
+      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "18329",
+        "role": "Roderigo",
+        "performer": "Thomas Allen"
+      },
+      {
+        "performanceId": "18329",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "18336",
+    "title": "Don Carlos - Act IV scene 1 'O don fatale'-6 July 1988 Evening",
+    "date": "6 July 1988",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "status": "Concert",
+    "conductor": "John Barker",
+    "leader": "John Brown",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18336",
+    "metadata": {
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Concert",
+      "Conductor": "John Barker",
+      "Leader": "John Brown",
+      "Language": "Italian",
+      "Event": "Number 13 in Opera Concert 6 July 1988",
+      "Commercial recording ": "EMI Records Ltd; Recorded for future release.",
+      "Big Screen - live relay ": "6 July 1988; Covent Garden Piazza, London; Transmitted via a GEC Starvision Screen. Hosted by Brian Hayes; project director Susanna Little; produced and directed by Independent Producers Ltd.",
+      "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "18336",
+        "role": "Eboli",
+        "performer": "Eva Randová"
+      },
+      {
+        "performanceId": "18336",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "20122",
+    "title": "Intermezzo - Act II Final Duet-17 July 2010 Matinee 1.00pm",
+    "date": "17 July 2010",
+    "session": "Matinee 1.00pm",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "Jette Parker Young Artists Programme",
+    "status": "Excerpt",
+    "conductor": "Robin Stapleton",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=20122",
+    "metadata": {
+      "Company": "Jette Parker Young Artists Programme",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Excerpt",
+      "Conductor": "Robin Stapleton",
+      "Concert Master": "Peter Manning",
+      "Sponsor": "Oak Foundation (performance)",
+      "Language": "German",
+      "Durations": "Part 1: 1.03-2.03pm",
+      "Event": "Number 3 in Jette Parker Young Artists Summer Performance 17 July 2010 matinee",
+      "Information source": "Royal Opera House programme for 17 July 2010 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "20122",
+        "role": "Christine",
+        "performer": "Eri Nakamura"
+      },
+      {
+        "performanceId": "20122",
+        "role": "Robert",
+        "performer": "Changhan Lim"
+      },
+      {
+        "performanceId": "20122",
+        "role": "",
+        "performer": "The Orchestra of the Royal Opera House"
+      }
+    ]
+  },
+  {
+    "id": "22069",
+    "title": "A Life for the Tsar - Act IV final chorus-28 May 2002 Evening",
+    "date": "28 May 2002",
+    "session": "Evening",
+    "venue": "Royal Opera House, Covent Garden, London",
+    "company": "The Kirov Opera",
+    "status": "Excerpt",
+    "conductor": "Valery Gergiev",
+    "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=22069",
+    "metadata": {
+      "Company": "The Kirov Opera",
+      "Venue": "Royal Opera House, Covent Garden, London",
+      "Performance status": "Excerpt",
+      "Conductor": "Valery Gergiev",
+      "Language": "Russian",
+      "Event": "Number 1 in A Celebration of St Petersburg 28 May 2002",
+      "Information source": "Royal Opera House special programme for 28-29 May 2002 (in Royal Opera House Collections)"
+    },
+    "cast": [
+      {
+        "performanceId": "22069",
+        "role": "",
+        "performer": "The Chorus of the Mariinsky Theatre"
+      },
+      {
+        "performanceId": "22069",
+        "role": "",
+        "performer": "Orchestra of the Mariinsky Theatre"
+      }
+    ]
+  }
+]

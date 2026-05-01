@@ -76,6 +76,13 @@ function sortQueueUrls(urls: Iterable<string>): string[] {
   return [...urls].sort((a, b) => crawlUrlPriority(a) - crawlUrlPriority(b) || a.localeCompare(b));
 }
 
+export function dequeueNextUrl(queued: Set<string>): string | null {
+  const [next] = sortQueueUrls(queued);
+  if (!next) return null;
+  queued.delete(next);
+  return next;
+}
+
 function isAllowedCrawlUrl(url: string): boolean {
   const parsed = new URL(url, ROH_BASE_URL);
   if (parsed.hostname !== 'www.rohcollections.org.uk') return false;
@@ -146,10 +153,10 @@ async function main(): Promise<void> {
   }
 
   let fetched = 0;
-  for (const url of [...queued]) {
-    if (fetched >= maxPages) break;
+  while (fetched < maxPages) {
+    const url = dequeueNextUrl(queued);
+    if (!url) break;
     if (manifest.pages[url]) {
-      queued.delete(url);
       continue;
     }
 
@@ -168,7 +175,6 @@ async function main(): Promise<void> {
     for (const link of links) {
       if (!manifest.pages[link]) queued.add(link);
     }
-    queued.delete(url);
     fetched += 1;
 
     writeJson(MANIFEST_PATH, { ...manifest, generatedAt: new Date().toISOString(), crawlDelayMs: delayMs });
@@ -183,7 +189,11 @@ async function main(): Promise<void> {
   console.log(`Fetched ${fetched} page(s). ${queued.size} URL(s) remain queued.`);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+const isDirectExecution = (process.argv[1] || '').endsWith('roh-crawl.ts');
+
+if (isDirectExecution) {
+  main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}

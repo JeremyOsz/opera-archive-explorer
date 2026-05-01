@@ -82,6 +82,16 @@ function workFromListingSeed(seed: RohWorkSeed): RohWork {
   };
 }
 
+export function partialIndexWarning(dataset: RohDataset): string | null {
+  if (dataset.productions.length > 0 && dataset.performances.length > 0) return null;
+  return [
+    'ROH crawl appears incomplete: missing production/performance entities.',
+    `Parsed counts: records=${dataset.records.length}, works=${dataset.works.length}, productions=${dataset.productions.length}, performances=${dataset.performances.length}.`,
+    'Indexing will continue with partial data.',
+    'Run additional crawl passes (for example: pnpm roh:crawl -- --max-pages=250) and re-index for full coverage.',
+  ].join(' ');
+}
+
 function parseDataset(manifest: CrawlManifest): RohDataset {
   const records: RohRecord[] = [];
   const works: RohWork[] = [];
@@ -123,12 +133,23 @@ function parseDataset(manifest: CrawlManifest): RohDataset {
     }
   }
 
-  return {
+  const dataset: RohDataset = {
     records: dedupeById(records),
     works: dedupeById(works),
     productions: dedupeById(productions),
     performances: dedupeById(performances),
   };
+
+  const warning = partialIndexWarning(dataset);
+  const requireFullIndex = process.env.ROH_REQUIRE_FULL_INDEX === '1';
+  if (warning && requireFullIndex) {
+    throw new Error(`${warning} Set ROH_REQUIRE_FULL_INDEX=0 (or unset) to allow partial indexing.`);
+  }
+  if (warning) {
+    console.warn(`WARNING: ${warning}`);
+  }
+
+  return dataset;
 }
 
 function main(): void {
@@ -144,4 +165,7 @@ function main(): void {
   );
 }
 
-main();
+const isDirectExecution = (process.argv[1] || '').endsWith('roh-index.ts');
+if (isDirectExecution) {
+  main();
+}

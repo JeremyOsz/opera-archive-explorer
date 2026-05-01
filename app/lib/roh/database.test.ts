@@ -146,4 +146,36 @@ describe('ROH JSON index', () => {
     );
     assert.equal(archivesOnlyWorks.total, 0);
   });
+
+  it('computes facet counts from currently available filtered results', () => {
+    const index = createRohJsonIndex(dataset);
+    const combinedOpts = { assetData: assetFixture, rboCatalogue: null } as const;
+
+    const filteredByCollectionSource = searchCombinedRoh(
+      index,
+      { query: '', source: RohDataSources.collections },
+      combinedOpts,
+    );
+    assert.equal(filteredByCollectionSource.total, 4);
+    assert.equal(
+      filteredByCollectionSource.facets.sources.find((bucket) => bucket.value === RohDataSources.collections)?.count,
+      4,
+    );
+    assert.equal(
+      filteredByCollectionSource.facets.sources.find((bucket) => bucket.value === RohDataSources.assetLibrary)?.count,
+      1,
+    );
+    assert.equal(
+      filteredByCollectionSource.facets.collections.some((bucket) => bucket.value === 'Siegfried - Press selection'),
+      false,
+    );
+
+    const filteredByCollection = searchCombinedRoh(
+      index,
+      { query: '', source: RohDataSources.collections, collection: 'Attilio Comelli Design Collection' },
+      combinedOpts,
+    );
+    assert.equal(filteredByCollection.total, 1);
+    assert.equal(filteredByCollection.facets.creators[0]?.value, 'Attilio Comelli');
+  });
 });
