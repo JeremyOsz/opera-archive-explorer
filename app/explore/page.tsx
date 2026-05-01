@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BarChart3, Network, Compass, Search } from 'lucide-react';
+import { BarChart3, Network, Compass, Database, Search } from 'lucide-react';
 import Link from 'next/link';
 import { loadArchiveCache } from '@/app/lib/cache-loader';
 import ComposerBarChart from '@/app/components/ComposerBarChart';
@@ -17,6 +17,7 @@ export default function ExplorePage() {
           tagline="Visual insights into the archive collection."
           links={[
             { href: '/', label: 'Search', icon: Search },
+            { href: '/roh', label: 'ROH Index', icon: Database },
             { href: '/sandbox', label: 'Sandbox', icon: Compass },
             { href: '/explore', label: 'Explore', icon: BarChart3, active: true },
           ]}
@@ -40,8 +41,9 @@ export default function ExplorePage() {
       <SiteHeader
         tagline="Visual insights into the archive collection."
         links={[
-          { href: '/', label: 'Search', icon: Search },
-          { href: '/sandbox', label: 'Sandbox', icon: Compass },
+            { href: '/', label: 'Search', icon: Search },
+            { href: '/roh', label: 'ROH Index', icon: Database },
+            { href: '/sandbox', label: 'Sandbox', icon: Compass },
           { href: '/explore', label: 'Explore', icon: BarChart3, active: true },
         ]}
         meta={
