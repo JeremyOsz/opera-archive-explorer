@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-01T15:07:35.713Z",
+    "generatedAt": "2026-05-01T15:25:13.093Z",
     "version": "1.0.0",
     "counts": {
       "records": 1389,
       "works": 995,
-      "productions": 0,
-      "performances": 27,
-      "cast": 55
+      "productions": 2,
+      "performances": 102,
+      "cast": 1423
     }
   },
   "searchDocuments": [
@@ -1059,6 +1059,26 @@
       "searchText": "arabella opera richard strauss"
     },
     {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "3862",
+      "title": "Arabian Dance from 'The Nutcracker'-22 November 1999 Matinee",
+      "subtitle": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "date": "22 November 1999",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=3862&page=0",
+      "metadata": {
+        "Company": "ROH Education - Chance to Dance",
+        "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "Performance status": "Education project",
+        "Sponsor": "BP Amoco (performance)",
+        "Durations": "With the Chinese Dance: 5 minutes",
+        "Event": "Number 1 in Opening Performance at the Linbury Studio Theatre 22 November 1999",
+        "Information source": "Royal Opera House programme for 22 November 1999 (in Royal Opera House Collections)"
+      },
+      "company": "ROH Education - Chance to Dance",
+      "searchText": "arabian dance from 'the nutcracker'-22 november 1999 matinee 22 november 1999 matinee linbury studio theatre, royal opera house, covent garden roh education - chance to dance education project dancer shevelle dynott  dancer klerissa johnson  dancer nellisa sinclair  dancer nadya persaud  piano henry roche  company roh education - chance to dance venue linbury studio theatre, royal opera house, covent garden performance status education project sponsor bp amoco (performance) durations with the chinese dance: 5 minutes event number 1 in opening performance at the linbury studio theatre 22 november 1999 information source royal opera house programme for 22 november 1999 (in royal opera house collections)"
+    },
+    {
       "type": "work",
       "source": "RBO Collections",
       "id": "1429",
@@ -1283,6 +1303,26 @@
       "genre": "Ballet",
       "creator": "Roland Petit",
       "searchText": "ballabile ballet roland petit"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "26303",
+      "title": "Ballabile - Pas de trois 'The Circus on the Green'-1 March 1960 Evening 8.00pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "1 March 1960",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=26303",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Gala performance",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Event": "Number 6 in The Royal Ballet Gala 1 March 1960",
+        "Information source": "Royal Opera House Gala programme for 1 March 1960 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "ballabile - pas de trois 'the circus on the green'-1 march 1960 evening 8.00pm 1 march 1960 evening 8.00pm royal opera house, covent garden, london the royal ballet gala performance emanuel young charles taylor pierrette shirley grahame  pierrot peter clegg  pierrot john sale   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status gala performance conductor emanuel young leader charles taylor event number 6 in the royal ballet gala 1 march 1960 information source royal opera house gala programme for 1 march 1960 (in royal opera house collections)"
     },
     {
       "type": "work",
@@ -6617,6 +6657,26 @@
       "searchText": "carrer del sol music jonathan geyevu"
     },
     {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "26304",
+      "title": "Casse Noisette pas de deux-24 March 1965 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "24 March 1965",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&page=0&performance=26304",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Gala performance",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet Gala 24 March 1965",
+        "Information source": "Royal Opera House Gala programme for 24 March 1965 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "casse noisette pas de deux-24 march 1965 evening 24 march 1965 evening royal opera house, covent garden, london the royal ballet gala performance emanuel young charles taylor dancer svetlana beriosova  dancer david blair   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status gala performance conductor emanuel young leader charles taylor event number 2 in the royal ballet gala 24 march 1965 information source royal opera house gala programme for 24 march 1965 (in royal opera house collections)"
+    },
+    {
       "type": "work",
       "source": "RBO Collections",
       "id": "11133",
@@ -6806,6 +6866,26 @@
       "genre": "Ballet",
       "creator": "Alastair Marriott",
       "searchText": "children of adam ballet alastair marriott"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "3866",
+      "title": "Chinese Dance from 'The Nutcracker'-22 November 1999 Matinee",
+      "subtitle": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+      "date": "22 November 1999",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&page=0&performance=3866",
+      "metadata": {
+        "Company": "ROH Education - Chance to Dance",
+        "Venue": "Linbury Studio Theatre, Royal Opera House, Covent Garden",
+        "Performance status": "Education project",
+        "Sponsor": "BP Amoco (performance)",
+        "Durations": "With the Arabian Dance: 5 minutes",
+        "Event": "Number 2 in Opening Performance at the Linbury Studio Theatre 22 November 1999",
+        "Information source": "Royal Opera House programme for 22 November 1999 (in Royal Opera House Collections)"
+      },
+      "company": "ROH Education - Chance to Dance",
+      "searchText": "chinese dance from 'the nutcracker'-22 november 1999 matinee 22 november 1999 matinee linbury studio theatre, royal opera house, covent garden roh education - chance to dance education project dancer sarah burne-james  dancer saskia cox  dancer lauren ellender  dancer danielle glancy  dancer sine grant  dancer marcus kallmeier  dancer jessie miller  dancer reece richards  piano henry roche  company roh education - chance to dance venue linbury studio theatre, royal opera house, covent garden performance status education project sponsor bp amoco (performance) durations with the arabian dance: 5 minutes event number 2 in opening performance at the linbury studio theatre 22 november 1999 information source royal opera house programme for 22 november 1999 (in royal opera house collections)"
     },
     {
       "type": "work",
@@ -8970,7 +9050,7 @@
       "title": "Diana and Actaeon pas de deux-14 July 1997 Evening 7.30pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Peter Ernst Lassen",
       "date": "14 July 1997",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11503",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=11503&page=0",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -8993,7 +9073,7 @@
       "title": "Diana and Actaeon pas de deux-5 July 2000 Evening 7.30pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Andrea Quinn",
       "date": "5 July 2000",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11588",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&page=0&performance=11588",
       "metadata": {
         "Company": "The Royal Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -9165,6 +9245,28 @@
       "searchText": "dinorah opera giacomo meyerbeer"
     },
     {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "32827",
+      "title": "Dinorah - Act II 'Ombre légère'-30 May 2018 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Antonio Pappano",
+      "date": "30 May 2018",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=32827",
+      "metadata": {
+        "Company": "The Royal Opera",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Gala performance",
+        "Conductor": "Antonio Pappano",
+        "Associate Concert Master": "Peter Schulmeister",
+        "Notes": "The stage manager's report for this performance does not provide timing information.",
+        "Language": "French",
+        "Event": "Number 12 in Spring Gala 30 May 2018",
+        "Information source": "Royal Opera House programme and stage manager's report for 30 May 2018 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Opera",
+      "searchText": "dinorah - act ii 'ombre legere'-30 may 2018 evening 7.30pm 30 may 2018 evening 7.30pm royal opera house, covent garden, london the royal opera gala performance antonio pappano soprano pretty yende   the orchestra of the royal opera house  company the royal opera venue royal opera house, covent garden, london performance status gala performance conductor antonio pappano associate concert master peter schulmeister notes the stage manager's report for this performance does not provide timing information. language french event number 12 in spring gala 30 may 2018 information source royal opera house programme and stage manager's report for 30 may 2018 (in royal opera house collections)"
+    },
+    {
       "type": "work",
       "source": "RBO Collections",
       "id": "9585",
@@ -9195,7 +9297,7 @@
       "title": "Don Carlos - Act IV scene 1 'O don fatale'-28 June 1988 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Barker",
       "date": "28 June 1988",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18320",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=18320&page=0",
       "metadata": {
         "Venue": "Royal Opera House, Covent Garden, London",
         "Performance status": "Concert",
@@ -9215,7 +9317,7 @@
       "title": "Don Carlos - Act IV scene 1 'O don fatale'-6 July 1988 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Barker",
       "date": "6 July 1988",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18336",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&page=0&performance=18336",
       "metadata": {
         "Venue": "Royal Opera House, Covent Garden, London",
         "Performance status": "Concert",
@@ -9236,7 +9338,7 @@
       "title": "Don Carlos - Act IV scene 2 'Per me giunto ... O Carlo ascolta'-28 June 1988 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Barker",
       "date": "28 June 1988",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18314",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&page=0&performance=18314",
       "metadata": {
         "Venue": "Royal Opera House, Covent Garden, London",
         "Performance status": "Concert",
@@ -9256,7 +9358,7 @@
       "title": "Don Carlos - Act IV scene 2 'Per me giunto ... O Carlo ascolta'-6 July 1988 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Barker",
       "date": "6 July 1988",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18329",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=18329&page=0",
       "metadata": {
         "Venue": "Royal Opera House, Covent Garden, London",
         "Performance status": "Concert",
@@ -10697,7 +10799,7 @@
       "title": "Etoile du Nord - Overture-14 December 1948 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Warwick Braithwaite",
       "date": "14 December 1948",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10365",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=10365&page=0",
       "metadata": {
         "Company": "The Covent Garden Orchestra",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -10717,7 +10819,7 @@
       "title": "Etoile du Nord - Overture-25 November 1948 Evening 7.00pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Warwick Braithwaite",
       "date": "25 November 1948",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10325",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&page=0&performance=10325",
       "metadata": {
         "Company": "The Covent Garden Orchestra",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -11348,6 +11450,841 @@
       "genre": "Opera",
       "creator": "Giuseppe Verdi",
       "searchText": "giovanna d'arco opera giuseppe verdi"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27807",
+      "title": "Giselle - excerpt-24 July 1970 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "24 July 1970",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=27807&page=2",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Excerpt",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 21 in Tribute to Sir Frederick Ashton CH CBE 24 July 1970",
+        "Information source": "Royal Opera House programme for 24 July 1970 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle - excerpt-24 july 1970 evening 24 july 1970 evening royal opera house, covent garden, london the royal ballet excerpt john lanchbery charles taylor peasant girl's variation act i ann jenner   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status excerpt conductor john lanchbery leader charles taylor event number 21 in tribute to sir frederick ashton ch cbe 24 july 1970 information source royal opera house programme for 24 july 1970 (in royal opera house collections)"
+    },
+    {
+      "type": "production",
+      "source": "RBO Collections",
+      "id": "115",
+      "title": "Giselle (1960)",
+      "subtitle": "The Royal Ballet | 30 September 1960",
+      "date": "30 September 1960",
+      "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=115&row=1",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Production premiere": "30 September 1960",
+        "Choreographer": "Frederick Ashton Act I: female dancer's variation in the peasant pas de deux",
+        "Producer": "Tamara Karsavina Karsavina reproduced mine scenes, including Berthe's recounting of the legend of the Wilis (in Act I).",
+        "Set designer": "James Bailey",
+        "Costume designer": "James Bailey",
+        "Revival lighting designer": "John Sullivan (revivals 1961-1966)",
+        "Notes": "First performed at Metropolitan Opera House, New York."
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle (1960) the royal ballet 30 september 1960 tamara karsavina karsavina reproduced mine scenes, including berthe's recounting of the legend of the wilis (in act i). james bailey first performed at metropolitan opera house, new york. company the royal ballet production premiere 30 september 1960 choreographer frederick ashton act i: female dancer's variation in the peasant pas de deux producer tamara karsavina karsavina reproduced mine scenes, including berthe's recounting of the legend of the wilis (in act i). set designer james bailey costume designer james bailey revival lighting designer john sullivan (revivals 1961-1966) notes first performed at metropolitan opera house, new york."
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27419",
+      "title": "Giselle-1 June 1962 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "1 June 1962",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27419&row=6",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 1 June 1962",
+        "Information source": "Royal Opera House programme for 1 June 1962 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-1 june 1962 evening 1 june 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle yvette chauvire  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux lawrence ruffell  child margaret lyons  child virginia wakelyn  child susan carlton  child jacqueline haslam  child maureen maitland  child ann jenner  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis corps de ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 1 june 1962 information source royal opera house programme for 1 june 1962 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27396",
+      "title": "Giselle-1 March 1962 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "1 March 1962",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27396&row=3",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 1 March 1962",
+        "Information source": "Royal Opera House programme for 1 March 1962 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-1 march 1962 evening 1 march 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux annette page  pas de deux graham usher  child margaret lyons  child virginia wakelyn  child noreen sopwith  child jacqueline haslam  child maureen maitland  child ann howard  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis corps de ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 1 march 1962 information source royal opera house programme for 1 march 1962 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "25978",
+      "title": "Giselle-1 March 1963 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "1 March 1963",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25978&row=13",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 1 March 1963",
+        "Information source": "Royal Opera House programme for 1 March 1963 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-1 march 1963 evening 1 march 1963 evening royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor giselle anya linden  count albrecht david blair  hilarion david drew  wilfred bryan lawrence  berthe gerd larsen  the duke of courland derek rencher  the princess vyvyan lorrayne  pas de deux antoinette sibley  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child maureen maitland  child jacqueline haslam  child carole hill  child ann jenner  myrtha christine beckley  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor event number 2 in the royal ballet mixed programme 1 march 1963 information source royal opera house programme for 1 march 1963 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14410",
+      "title": "Giselle-10 February 1968 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "10 February 1968",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14410&row=29",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 10 February 1968 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-10 february 1968 evening 10 february 1968 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux ann jenner  pas de deux michael coleman  child lesley collier  child avril bergen  child marilyn trounson  child caroldene horne  child carole hill  child christine aitken  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 10 february 1968 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27511",
+      "title": "Giselle-10 January 1967 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "10 January 1967",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27511&row=26",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 10 January 1967 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-10 january 1967 evening 10 january 1967 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux ann jenner  pas de deux michael coleman  child jennifer penney  child carole hill  child lesley collier  child avril bergen  child marilyn trounson  child caroldene horne  peasants and courtiers artists of the royal ballet  myrtha georgina parkinson  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 10 january 1967 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27544",
+      "title": "Giselle-10 March 1969 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "10 March 1969",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27544&row=31",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Notes": "A special performance for Youth and Music and The Friends of Covent Garden.",
+        "Information source": "Royal Opera House programme for 10 March 1969 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-10 march 1969 evening 10 march 1969 evening royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  bathilde julia farron  pas de deux ann jenner  pas de deux michael coleman  child lesley collier  child avril bergen  child marilyn trounson  child rosemary taylor  child christine aitken  child bridget goodricke  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor notes a special performance for youth and music and the friends of covent garden. information source royal opera house programme for 10 march 1969 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24940",
+      "title": "Giselle-11 July 1970 Matinee",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "11 July 1970",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=24940&page=2",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 11 July 1970 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-11 july 1970 matinee 11 july 1970 matinee royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor giselle merle park  count albrecht anthony dowell  hilarion david drew  wilfred paul brown  berthe gerd larsen  the duke of courland derek rencher  bathilde vyvyan lorrayne  pas de deux carole hill  pas de deux keith martin  child anita young  child jill cooke  child marilyn trounson  child hilary tickner  child christine aitken  child bridget goodricke  peasants and courtiers artists of the royal ballet  myrtha monica mason  zulme ann jenner  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor information source royal opera house programme for 11 july 1970 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24937",
+      "title": "Giselle-12 January 1970 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "12 January 1970",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24937&row=35",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 12 January 1970 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-12 january 1970 evening 12 january 1970 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  bathilde vyvyan lorrayne  pas de deux carole hill  pas de deux wayne sleep  child avril bergen  child bridget goodricke  child marilyn trounson  child rosemary taylor  child christine aitken  child anita young  peasants and courtiers artists of the royal ballet  myrtha monica mason  zulme ann jenner  moyna jennifer penney  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 12 january 1970 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27496",
+      "title": "Giselle-13 January 1966 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "13 January 1966",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=27496&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 13 January 1966 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-13 january 1966 evening 13 january 1966 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux merle park  pas de deux graham usher  child margaret lyons  child avril bergen  child maureen maitland  child maxine denys  child carole hill  child geraldine morris  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme monica mason  moyna vyvyan lorrayne  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 13 january 1966 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24938",
+      "title": "Giselle-14 March 1970 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "14 March 1970",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24938&row=37",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 14 March 1970 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-14 march 1970 evening 14 march 1970 evening royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor giselle doreen wells  count albrecht anthony dowell  hilarion david drew  wilfred paul brown  berthe gerd larsen  the duke of courland derek rencher  bathilde vyvyan lorrayne  pas de deux lesley collier  pas de deux wayne sleep  child avril bergen  child bridget goodricke  child marilyn trounson  child rosemary taylor  child christine aitken  child anita young  peasants and courtiers artists of the royal ballet  myrtha monica mason  zulme ann jenner  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor information source royal opera house programme for 14 march 1970 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27425",
+      "title": "Giselle-15 June 1962 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "15 June 1962",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27425&row=7",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 15 June 1962",
+        "Information source": "Royal Opera House programme for 15 June 1962 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-15 june 1962 evening 15 june 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux maryon lane  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child susan carlton  child jacqueline haslam  child maureen maitland  child ann jenner  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis corps de ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 15 june 1962 information source royal opera house programme for 15 june 1962 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27545",
+      "title": "Giselle-15 March 1969 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "15 March 1969",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27545&row=32",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 15 March 1969 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-15 march 1969 evening 15 march 1969 evening royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  bathilde julia farron  pas de deux carole hill  pas de deux keith martin  child lesley collier  child avril bergen  child marilyn trounson  child rosemary taylor  child christine aitken  child bridget goodricke  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme ann jenner  moyna jennifer penney  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor information source royal opera house programme for 15 march 1969 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27475",
+      "title": "Giselle-15 November 1963 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "15 November 1963",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27475&row=15",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 15 November 1963 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-15 november 1963 evening 15 november 1963 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux graham usher  child margaret lyons  child maureen maitland  child jacqueline haslam  child virginia wakelyn  child ann jenner  child carole hill  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 15 november 1963 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27512",
+      "title": "Giselle-17 January 1967 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "17 January 1967",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27512&row=27",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 17 January 1967 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-17 january 1967 evening 17 january 1967 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux merle park  pas de deux graham usher  child jennifer penney  child carole hill  child lesley collier  child avril bergen  child marilyn trounson  child caroldene horne  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 17 january 1967 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14390",
+      "title": "Giselle-18 February 1963 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "18 February 1963",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14390&row=9",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 18 February 1963",
+        "Information source": "Royal Opera House programme for 18 February 1963 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-18 february 1963 evening 18 february 1963 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle nadia nerina  count albrecht donald macleary  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess vyvyan lorrayne  pas de deux merle park  pas de deux graham usher  child margaret lyons  child virginia wakelyn  child maureen maitland  child jacqueline haslam  child carole hill  child ann jenner  myrtha christine beckley  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 18 february 1963 information source royal opera house programme for 18 february 1963 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27497",
+      "title": "Giselle-18 January 1966 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "18 January 1966",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=27497&page=1",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 18 January 1966 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-18 january 1966 evening 18 january 1966 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux ann jenner  pas de deux lawrence ruffell  child margaret lyons  child avril bergen  child maureen maitland  child maxine denys  child carole hill  child geraldine morris  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme monica mason  moyna vyvyan lorrayne  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 18 january 1966 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27513",
+      "title": "Giselle-2 February 1967 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "2 February 1967",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27513&row=28",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 2 February 1967 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-2 february 1967 evening 2 february 1967 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux ann jenner  pas de deux graham usher  child jennifer penney  child carole hill  child lesley collier  child avril bergen  child marilyn trounson  child caroldene horne  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme ann jenner  moyna jennifer penney  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 2 february 1967 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14391",
+      "title": "Giselle-2 November 1963 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "2 November 1963",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14391&row=14",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 2 November 1963 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-2 november 1963 evening 2 november 1963 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux annette page  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child maureen maitland  child jacqueline haslam  child carole hill  child ann jenner  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 2 november 1963 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "25976",
+      "title": "Giselle-20 February 1963 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "20 February 1963",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=10&page=0&performance=25976",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 20 February 1963",
+        "Information source": "Royal Opera House programme for 20 February 1963 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-20 february 1963 evening 20 february 1963 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux maryon lane  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child maureen maitland  child jacqueline haslam  child carole hill  child ann jenner  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 20 february 1963 information source royal opera house programme for 20 february 1963 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27575",
+      "title": "Giselle-20 June 1970 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "20 June 1970",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27575&row=39",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 20 June 1970 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-20 june 1970 evening 20 june 1970 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  bathilde julia farron  pas de deux ann jenner  pas de deux michael coleman  child anita young  child avril bergen  child marilyn trounson  child hilary tickner  child christine aitken  child bridget goodricke  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 20 june 1970 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24939",
+      "title": "Giselle-20 June 1970 Matinee",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "20 June 1970",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24939&row=38",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 20 June 1970 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-20 june 1970 matinee 20 june 1970 matinee royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor giselle antoinette sibley  count albrecht donald macleary  hilarion david drew  wilfred paul brown  berthe gerd larsen  the duke of courland derek rencher  bathilde vyvyan lorrayne  pas de deux lesley collier  pas de deux wayne sleep  child avril bergen  child bridget goodricke  child marilyn trounson  child hilary tickner  child christine aitken  child anita young  peasants and courtiers artists of the royal ballet  myrtha monica mason  zulme ann jenner  moyna jennifer penney  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor information source royal opera house programme for 20 june 1970 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "16115",
+      "title": "Giselle-21 February 1962 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "21 February 1962",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16115&row=2",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 21 February 1962",
+        "Information source": "Royal Opera House programme for 21 February 1962 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-21 february 1962 evening 21 february 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux maryon lane  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child susan carlton  child jacqueline haslam  child maureen maitland  child avril bergen  myrtha anya linden  zulme georgina parkinson  moyna monica mason  wilis corps de ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 21 february 1962 information source royal opera house programme for 21 february 1962 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "25896",
+      "title": "Giselle-21 February 1963 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "21 February 1963",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25896&row=11",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 21 February 1963",
+        "Information source": "Royal Opera House programme for 21 February 1963 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-21 february 1963 evening 21 february 1963 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle nadia nerina  count albrecht donald macleary  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess vyvyan lorrayne  pas de deux annette page  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child maureen maitland  child jacqueline haslam  child carole hill  child ann jenner  myrtha deanne bergsma  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 21 february 1963 information source royal opera house programme for 21 february 1963 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24936",
+      "title": "Giselle-21 March 1969 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "21 March 1969",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24936&row=33",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 21 March 1969 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-21 march 1969 evening 21 march 1969 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle merle park  count albrecht anthony dowell  hilarion david drew  wilfred paul brown  berthe gerd larsen  the duke of courland derek rencher  bathilde vyvyan lorrayne  pas de deux carole hill  pas de deux keith martin  child lesley collier  child avril bergen  child marilyn trounson  child rosemary taylor  child hilary tickner  child bridget goodricke  peasants and courtiers artists of the royal ballet  myrtha monica mason  zulme ann jenner  moyna jennifer penney  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 21 march 1969 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14409",
+      "title": "Giselle-23 December 1966 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "23 December 1966",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14409&row=25",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 23 December 1966 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-23 december 1966 evening 23 december 1966 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux merle park  pas de deux brian shaw  child jennifer penney  child carole hill  child lesley collier  child avril bergen  child marilyn trounson  child caroldene horne  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 23 december 1966 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14406",
+      "title": "Giselle-23 October 1964 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "23 October 1964",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14406&row=16",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 23 October 1964 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-23 october 1964 evening 23 october 1964 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess vyvyan lorrayne  pas de deux maryon lane  pas de deux brian shaw  child avril bergen  child virginia wakelyn  child maureen maitland  child margaret lyons  child carole hill  child ann jenner  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 23 october 1964 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14388",
+      "title": "Giselle-23 September 1961 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "23 September 1961",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=14388&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 23 September 1961",
+        "Information source": "Royal Opera House programme for 23 September 1961 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-23 september 1961 evening 23 september 1961 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht david blair  berthe gerd larsen  hilarion leslie edwards  the duke of courland derek rencher  the princess pamela may  wilfred david drew  pas de deux antoinette sibley  pas de deux graham usher  child margaret lyons  child maureen maitland  child jacqueline haslam  child susan jones  child virginia wakelyn  child avril bergengren  peasant pamela moncur  peasant ann jenner  peasant monica mason  peasant ann kenward  peasant jane robinson  peasant betty kavanagh  peasant louanne richards  peasant heather clipperton  peasant rosalind eyre  peasant audrey henderson  peasant julie wood  peasant gloria bluemel  peasant douglas steuart  peasant keith milland  peasant lawrence ruffell  peasant clive molloy  peasant kenneth mason  peasant austin bennett  huntsman keith rosson  huntsman bryan lawrence  huntsman petrus bosman  huntsman kenneth barlow  huntsman david jones  huntsman anthony dowell  court lady christine anthony  court lady susan turnham  court lady ann wade  court lady jill montgomerie  court lady patricia kilner  court lady jill bett  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wili susan turnham  wili rosalind eyre  wili ann jenner  wili ann kenward  wili gloria bluemel  wili susan jones  wili ann howard  wili margaret lyons  wili louanne richards  wili betty kavanagh  wili heather clipperton  wili christine anthony  wili jane robinson  wili audrey henderson  wili patricia thorogood  wili glynis ellams  wili julie wood  wili jacqueline haslam  wili noreen sopwith  wili avril bergengren  wili pamela moncur  wili virginia wakelyn  wili maureen maitland  wili mavis osborn   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 23 september 1961 information source royal opera house programme for 23 september 1961 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14407",
+      "title": "Giselle-25 November 1965 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "25 November 1965",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14407&row=19",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Notes": "A special performance for Youth and Music and the Friends of Covent Garden.",
+        "Information source": "Royal Opera House programme for 25 November 1965 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-25 november 1965 evening 25 november 1965 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle svetlana beriosova  count albrecht donald macleary  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess vyvyan lorrayne  pas de deux antoinette sibley  pas de deux brian shaw  child margaret lyons  child avril bergen  child maureen maitland  child jennifer penney  child maxine denys  child geraldine morris  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor notes a special performance for youth and music and the friends of covent garden. information source royal opera house programme for 25 november 1965 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "25898",
+      "title": "Giselle-26 February 1963 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "26 February 1963",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25898&row=12",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 26 February 1963",
+        "Information source": "Royal Opera House programme for 26 February 1963 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-26 february 1963 evening 26 february 1963 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux graham usher  child margaret lyons  child virginia wakelyn  child maureen maitland  child jacqueline haslam  child carole hill  child ann jenner  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 26 february 1963 information source royal opera house programme for 26 february 1963 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27498",
+      "title": "Giselle-27 January 1966 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "27 January 1966",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27498&row=22",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 27 January 1966 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-27 january 1966 evening 27 january 1966 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux ann jenner  pas de deux lawrence ruffell  child margaret lyons  child avril bergen  child maureen maitland  child maxine denys  child carole hill  child geraldine morris  peasants and courtiers artists of the royal ballet  myrtha carole needham  zulme monica mason  moyna vyvyan lorrayne  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 27 january 1966 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27481",
+      "title": "Giselle-27 November 1964 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "27 November 1964",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27481&row=18",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 27 November 1964 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-27 november 1964 evening 27 november 1964 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess vyvyan lorrayne  pas de deux maryon lane  pas de deux brian shaw  child margaret lyons  child jennifer penney  child maureen maitland  child avril bergen  child carole hill  child geraldine morris  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 27 november 1964 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27502",
+      "title": "Giselle-28 February 1966 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "28 February 1966",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27502&row=23",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 28 February 1966 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-28 february 1966 evening 28 february 1966 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux merle park  pas de deux graham usher  child margaret lyons  child avril bergen  child maureen maitland  child maxine denys  child carole hill  child geraldine morris  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme ann jenner  moyna jennifer penney  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 28 february 1966 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27574",
+      "title": "Giselle-28 February 1970 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "28 February 1970",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27574&row=36",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 28 February 1970 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-28 february 1970 evening 28 february 1970 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  bathilde julia farron  pas de deux carole hill  pas de deux michael coleman  child avril bergen  child bridget goodricke  child marilyn trounson  child rosemary taylor  child christine aitken  child anita young  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 28 february 1970 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27479",
+      "title": "Giselle-28 October 1964 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "28 October 1964",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27479&row=17",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 28 October 1964 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-28 october 1964 evening 28 october 1964 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess vyvyan lorrayne  pas de deux maryon lane  pas de deux graham usher  child margaret lyons  child virginia wakelyn  child maureen maitland  child avril bergen  child carole hill  child ann jenner  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 28 october 1964 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27428",
+      "title": "Giselle-29 June 1962 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "29 June 1962",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27428&row=8",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 29 June 1962",
+        "Information source": "Royal Opera House programme for 29 June 1962 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-29 june 1962 evening 29 june 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux graham usher  child margaret lyons  child virginia wakelyn  child susan carlton  child jacqueline haslam  child maureen maitland  child ann jenner  myrtha anya linden  zulme vyvyan lorrayne  moyna monica mason  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 29 june 1962 information source royal opera house programme for 29 june 1962 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27417",
+      "title": "Giselle-29 May 1962 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "29 May 1962",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27417&row=5",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 29 May 1962",
+        "Information source": "Royal Opera House programme for 29 May 1962 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-29 may 1962 evening 29 may 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle yvette chauvire  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child susan carlton  child jacqueline haslam  child maureen maitland  child ann jenner  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis corps de ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 29 may 1962 information source royal opera house programme for 29 may 1962 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27503",
+      "title": "Giselle-3 March 1966 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "3 March 1966",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27503&row=24",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 3 March 1966 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-3 march 1966 evening 3 march 1966 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess julia farron  pas de deux ann jenner  pas de deux lawrence ruffell  child margaret lyons  child avril bergen  child maureen maitland  child jennifer penney  child carole hill  child geraldine morris  peasants and courtiers artists of the royal ballet  myrtha georgina parkinson  zulme ann jenner  moyna jennifer penney  wilis artists of the royal ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 3 march 1966 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "11984",
+      "title": "Giselle-4 April 1961 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "4 April 1961",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=11984&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 4 April 1961 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-4 april 1961 evening 4 april 1961 evening royal opera house, covent garden, london the royal ballet original season john lanchbery charles taylor giselle margot fonteyn  count albrecht michael somes  berthe gerd larsen  hilarion leslie edwards  the duke of courland derek rencher  the princess vyvyan lorrayne  wilfred richard farley  pas de deux maryon lane  pas de deux brian shaw  child mavis osborn  child ann howard  child robin haig  child pamela moncur  child margaret lyons  child maureen maitland  peasant georgina parkinson  peasant christine beckley  peasant christine anthony  peasant jacqueline daryl  peasant monica mason  peasant rosalind eyre  peasant deanne bergsma  peasant audrey henderson  peasant jane robinson  peasant louanne richards  peasant ann kenward  peasant julie wood  peasant douglas steuart  peasant john sale  peasant keith milland  peasant william wilson  peasant clive molloy  peasant lawrence ruffell  huntsman keith rosson  huntsman bryan lawrence  huntsman petrus bosman  huntsman christopher newton  huntsman david drew  huntsman kenneth barlow  court lady hylda zinkin  court lady patricia thorogood  court lady susan turnham  court lady heather clipperton  court lady betty kavanagh  court lady janet varley  giselle margot fonteyn  count albrecht michael somes  hilarion leslie edwards  wilfred richard farley  peasant boy douglas steuart  peasant boy john sale  peasant boy keith milland  peasant boy william wilson  peasant boy clive molloy  peasant boy lawrence ruffell  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wili rosalind eyre  wili louanne richards  wili deanne bergsma  wili hylda zinkin  wili jane robinson  wili ann kenward  wili jacqueline daryl  wili gloria bluemel  wili julie wood  wili ann howard  wili margaret lyons  wili pamela moncur  wili betty kavanagh  wili heather clipperton  wili janet varley  wili audrey henderson  wili christine anthony  wili glynis ellams  wili patricia thorogood  wili noreen sopwith  wili jacqueline haslam  wili robin haig  wili maureen maitland  wili mavis osborn   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor john lanchbery leader charles taylor information source royal opera house programme for 4 april 1961 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27398",
+      "title": "Giselle-6 March 1962 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "6 March 1962",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27398&row=4",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Event": "Number 2 in The Royal Ballet mixed programme 6 March 1962",
+        "Information source": "Royal Opera House programme for 6 March 1962 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-6 march 1962 evening 6 march 1962 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion franklin white  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  the princess pamela may  pas de deux antoinette sibley  pas de deux brian shaw  child margaret lyons  child virginia wakelyn  child susan carlton  child jacqueline haslam  child maureen maitland  child ann howard  myrtha anya linden  zulme georgina parkinson  moyna christine beckley  wilis corps de ballet   the covent garden orchestra  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor event number 2 in the royal ballet mixed programme 6 march 1962 information source royal opera house programme for 6 march 1962 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14411",
+      "title": "Giselle-7 March 1969 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "7 March 1969",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14411&row=30",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 7 March 1969 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-7 march 1969 evening 7 march 1969 evening royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  bathilde julia farron  pas de deux ann jenner  pas de deux michael coleman  child lesley collier  child avril bergen  child marilyn trounson  child rosemary taylor  child christine aitken  child bridget goodricke  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor information source royal opera house programme for 7 march 1969 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "14412",
+      "title": "Giselle-8 January 1970 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | John Lanchbery",
+      "date": "8 January 1970",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14412&row=34",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "John Lanchbery",
+        "Leader": "Charles Taylor",
+        "Information source": "Royal Opera House programme for 8 January 1970 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "giselle-8 january 1970 evening 8 january 1970 evening royal opera house, covent garden, london the royal ballet revival john lanchbery charles taylor giselle margot fonteyn  count albrecht rudolf nureyev  hilarion leslie edwards  wilfred david drew  berthe gerd larsen  the duke of courland derek rencher  bathilde vyvyan lorrayne  pas de deux lesley collier  pas de deux wayne sleep  child avril bergen  child bridget goodricke  child marilyn trounson  child rosemary taylor  child christine aitken  child anita young  peasants and courtiers artists of the royal ballet  myrtha deanne bergsma  zulme christine beckley  moyna deirdre o'conaire  wilis artists of the royal ballet   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor john lanchbery leader charles taylor information source royal opera house programme for 8 january 1970 (in royal opera house collections)"
     },
     {
       "type": "work",
@@ -12868,7 +13805,7 @@
       "title": "Iolanta - 'Gospod' moy, yesti greshen ya'-1 December 1993 Evening 7.30pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Edward Downes",
       "date": "1 December 1993",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17942",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=17942&page=0",
       "metadata": {
         "Company": "The Royal Opera",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -12893,7 +13830,7 @@
       "title": "Iolanta - 'Kto mozhet sravnit'sya s Matil'doy moyey'-5 July 2000 Evening 7.30pm",
       "subtitle": "Royal Opera House, Covent Garden, London",
       "date": "5 July 2000",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11581",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&page=0&performance=11581",
       "metadata": {
         "Company": "The Kirov Opera",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -13669,7 +14606,7 @@
       "title": "La bohème - 'Che gelida manina', Act I-15 November 2007 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Nicola Luisotti",
       "date": "15 November 2007",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14443",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=4&performance=14443&page=0",
       "metadata": {
         "Company": "The Royal Opera",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -13692,7 +14629,7 @@
       "title": "La bohème - 'O soave fanciulla', Act I-15 November 2007 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | Nicola Luisotti",
       "date": "15 November 2007",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14475",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=14475&page=0",
       "metadata": {
         "Company": "The Royal Opera",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -13715,7 +14652,7 @@
       "title": "La bohème - 'Quando m'en vo'-1 December 1993 Evening 7.30pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Stephen Barlow",
       "date": "1 December 1993",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17959",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&page=0&performance=17959",
       "metadata": {
         "Company": "The Royal Opera",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -13740,7 +14677,7 @@
       "title": "La bohème - Act IV 'In un coupè ... O Mimì, tu più non torni'-28 June 1988 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Barker",
       "date": "28 June 1988",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18313",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&page=0&performance=18313",
       "metadata": {
         "Venue": "Royal Opera House, Covent Garden, London",
         "Performance status": "Concert",
@@ -13760,7 +14697,7 @@
       "title": "La bohème - Act IV 'In un coupè ... O Mimì, tu più non torni'-6 July 1988 Evening",
       "subtitle": "Royal Opera House, Covent Garden, London | John Barker",
       "date": "6 July 1988",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18328",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=18328&page=0",
       "metadata": {
         "Venue": "Royal Opera House, Covent Garden, London",
         "Performance status": "Concert",
@@ -13773,6 +14710,30 @@
         "Information source": "Royal Opera House concert programme for 6 July 1988 (in Royal Opera House Collections)"
       },
       "searchText": "la boheme - act iv 'in un coupe ... o mimi, tu piu non torni'-6 july 1988 evening 6 july 1988 evening royal opera house, covent garden, london concert john barker john brown rodolfo placido domingo  marcello thomas allen   the orchestra of the royal opera house  venue royal opera house, covent garden, london performance status concert conductor john barker leader john brown language italian event number 4 in opera concert 6 july 1988 commercial recording  emi records ltd; recorded for future release. big screen - live relay  6 july 1988; covent garden piazza, london; transmitted via a gec starvision screen. hosted by brian hayes; project director susanna little; produced and directed by independent producers ltd. information source royal opera house concert programme for 6 july 1988 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "30761",
+      "title": "La bohème - Act IV-17 July 2016 Matinee 12.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Paul Wynne Griffiths",
+      "date": "17 July 2016",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=5&performance=30761&page=0",
+      "metadata": {
+        "Company": "Jette Parker Young Artists Programme",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Excerpt",
+        "Conductor": "Paul Wynne Griffiths",
+        "Co-Concert Master": "Sergey Levitin",
+        "Notes": "The stage manager's report gives timings for Part 1 and Part 2 of this event. Part 1 consists of three elements, part 2 consists of two elements. The timing of each element is not specified in the report.",
+        "Language": "Italian",
+        "Surtitled by": "Kenneth Chalmers",
+        "Durations": "Part 2: 2.01-2.33pm",
+        "Event": "Number 4 in Jette Parker Young Artists Summer Performance 17 July 2016",
+        "Information source": "Royal Opera House cast sheet and stage manager's report for 17 July 2016 (in Royal Opera House Collections)"
+      },
+      "company": "Jette Parker Young Artists Programme",
+      "searchText": "la boheme - act iv-17 july 2016 matinee 12.30pm 17 july 2016 matinee 12.30pm royal opera house, covent garden, london jette parker young artists programme excerpt paul wynne griffiths mimi lauren fagan  musetta emily edmonds  marcello samuel sakker  rodolfo samuel dale johnson  schaunard david shipley   the orchestra of the royal opera house  company jette parker young artists programme venue royal opera house, covent garden, london performance status excerpt conductor paul wynne griffiths co-concert master sergey levitin notes the stage manager's report gives timings for part 1 and part 2 of this event. part 1 consists of three elements, part 2 consists of two elements. the timing of each element is not specified in the report. language italian surtitled by kenneth chalmers durations part 2: 2.01-2.33pm event number 4 in jette parker young artists summer performance 17 july 2016 information source royal opera house cast sheet and stage manager's report for 17 july 2016 (in royal opera house collections)"
     },
     {
       "type": "work",
@@ -14476,6 +15437,28 @@
       "genre": "Ballet",
       "creator": "Bronislava Nijinska",
       "searchText": "le train bleu ballet bronislava nijinska"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "30831",
+      "title": "Le Train bleu - Le beau gosse-25 February 2015 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Tim Murray",
+      "date": "25 February 2015",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=30831",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Gala performance",
+        "Conductor": "Tim Murray",
+        "Concert Master": "Vasko Vassilev",
+        "Notes": "'A Gala Celebration: Life Reimagined' is in two parts; Part I consists of eleven elements and Part II consists of ten elements. The timing of each element is not specified in the stage manager's report. This performance is missing from the stage manager's report; the reason for this is not clear.",
+        "Durations": "Part I: 7.32-8.36pm",
+        "Event": "Number 9 in A Gala Celebration: Life Reimagined 25 February 2015",
+        "Information source": "Royal Opera House programme and stage manager's report for 25 February 2015 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "le train bleu - le beau gosse-25 february 2015 evening 7.30pm 25 february 2015 evening 7.30pm royal opera house, covent garden, london the royal ballet gala performance tim murray dancer vadim muntagirov   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status gala performance conductor tim murray concert master vasko vassilev notes 'a gala celebration: life reimagined' is in two parts; part i consists of eleven elements and part ii consists of ten elements. the timing of each element is not specified in the stage manager's report. this performance is missing from the stage manager's report; the reason for this is not clear. durations part i: 7.32-8.36pm event number 9 in a gala celebration: life reimagined 25 february 2015 information source royal opera house programme and stage manager's report for 25 february 2015 (in royal opera house collections)"
     },
     {
       "type": "work",
@@ -16511,7 +17494,7 @@
       "title": "Overture to 'Etoile du Nord'-6 March 1950 Evening 7.00pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Robert Irving",
       "date": "6 March 1950",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11012",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=11012&page=0",
       "metadata": {
         "Company": "The Covent Garden Orchestra",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -16701,6 +17684,26 @@
       "genre": "Ballet",
       "creator": "Christopher Wheeldon",
       "searchText": "pavane pour une infante defunte ballet christopher wheeldon"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "26675",
+      "title": "Pavane-17 July 1974 Evening 8.00pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emanuel Young",
+      "date": "17 July 1974",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=26675",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Emanuel Young",
+        "Leader": "Charles Taylor",
+        "Event": "Number 8 in The Royal Opera and The Royal Ballet Gala 17 July 1974",
+        "Information source": "Royal Opera House Gala programme for 17 July 1974 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "pavane-17 july 1974 evening 8.00pm 17 july 1974 evening 8.00pm royal opera house, covent garden, london the royal ballet revival emanuel young charles taylor dancer antoinette sibley  dancer anthony dowell   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor emanuel young leader charles taylor event number 8 in the royal opera and the royal ballet gala 17 july 1974 information source royal opera house gala programme for 17 july 1974 (in royal opera house collections)"
     },
     {
       "type": "work",
@@ -19284,6 +20287,459 @@
       "searchText": "prodigal son ballet george balanchine"
     },
     {
+      "type": "production",
+      "source": "RBO Collections",
+      "id": "10171",
+      "title": "Prodigal Son (1973)",
+      "subtitle": "The Royal Ballet | 25 January 1973",
+      "date": "25 January 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=10171",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Production premiere": "25 January 1973",
+        "Set designer": "Georges Rouault",
+        "Costume designer": "Georges Rouault",
+        "Staging": "John Taras",
+        "Revival staging": "Patricia Neary (2004 revival)",
+        "Revival lighting designer": "John B Read (2004 revival)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son (1973) the royal ballet 25 january 1973 georges rouault company the royal ballet production premiere 25 january 1973 set designer georges rouault costume designer georges rouault staging john taras revival staging patricia neary (2004 revival) revival lighting designer john b read (2004 revival)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "20488",
+      "title": "Prodigal Son-10 June 1993 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Barry Wordsworth",
+      "date": "10 June 1993",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=13&performance=20488&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Barry Wordsworth",
+        "Leader": "John Brown",
+        "Durations": "Entire work: 37 minutes",
+        "Event": "Number 1 in The Royal Ballet mixed programme 10 June 1993",
+        "Information source": "Royal Opera House cast sheet for 10 June 1993 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-10 june 1993 evening 7.30pm 10 june 1993 evening 7.30pm royal opera house, covent garden, london the royal ballet revival barry wordsworth john brown the prodigal son irek mukhamedov  the siren genesia rosato  father david drew  servant to the prodigal son christopher saunders  servant to the prodigal son william trevitt  sister delia harrington  sister vanessa palmer  drinking companion peter abegglen  drinking companion anthony bourne  drinking companion hubert essakow  drinking companion luke heydon  drinking companion shi-ning liu  drinking companion alastair marriott  drinking companion philip mosley  drinking companion william tuckett  drinking companion iain webb   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor barry wordsworth leader john brown durations entire work: 37 minutes event number 1 in the royal ballet mixed programme 10 june 1993 information source royal opera house cast sheet for 10 june 1993 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "15757",
+      "title": "Prodigal Son-10 November 1982 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Terence Kern",
+      "date": "10 November 1982",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=6&performance=15757&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Terence Kern",
+        "Leader": "John Brown",
+        "Event": "Number 2 in The Royal Ballet mixed programme 10 November 1982",
+        "Information source": "Royal Opera House programme 10 November 1982 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-10 november 1982 evening 10 november 1982 evening royal opera house, covent garden, london the royal ballet revival terence kern john brown the prodigal son rudolf nureyev  the siren bryony brind  father david drew  servant to the prodigal son antony dowson  servant to the prodigal son michael corder  sister sally inkin  sister julie wood  drinking companion paul benson  drinking companion christopher carr  drinking companion nicolas dixon  drinking companion garry grant  drinking companion robert jude  drinking companion ross macgibbon  drinking companion anthony molyneux  drinking companion guy niblett  drinking companion andrew ward   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor terence kern leader john brown event number 2 in the royal ballet mixed programme 10 november 1982 information source royal opera house programme 10 november 1982 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "5018",
+      "title": "Prodigal Son-19 February 2004 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Alexander Ingram",
+      "date": "19 February 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=17&performance=5018&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Alexander Ingram",
+        "Concert Master": "Vasko Vassilev",
+        "Durations": "Entire work: 8.27-9.04pm",
+        "Event": "Number 2 in The Royal Ballet mixed programme 19 February 2004",
+        "Information source": "Royal Opera House cast sheet and stage manager's report for 19 February 2004 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-19 february 2004 evening 7.30pm 19 february 2004 evening 7.30pm royal opera house, covent garden, london the royal ballet revival alexander ingram the prodigal son carlos acosta  the siren sylvie guillem  father william tuckett  servant to the prodigal son bennet gartside  servant to the prodigal son martin harvey  sister francesca filpi  sister kristen mcnally  drinking companion giacomo ciriaci  drinking companion kenta kura  drinking companion adam linder  drinking companion tim matiakis  drinking companion ernst meisner  drinking companion ludovic ondiviela  drinking companion richard ramsey  drinking companion michael stojko  drinking companion andrej uspenski   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor alexander ingram concert master vasko vassilev durations entire work: 8.27-9.04pm event number 2 in the royal ballet mixed programme 19 february 2004 information source royal opera house cast sheet and stage manager's report for 19 february 2004 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "24166",
+      "title": "Prodigal Son-19 November 1982 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Terence Kern",
+      "date": "19 November 1982",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=7&performance=24166&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Terence Kern",
+        "Leader": "John Brown",
+        "Event": "Number 2 in The Royal Ballet mixed programme 19 November 1982",
+        "Information source": "Royal Opera House programme 19 November 1982 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-19 november 1982 evening 19 november 1982 evening royal opera house, covent garden, london the royal ballet revival terence kern john brown the prodigal son rudolf nureyev  the siren bryony brind  father david drew  servant to the prodigal son michael corder  servant to the prodigal son antony dowson  sister sally inkin  sister julie wood  drinking companion paul benson  drinking companion christopher carr  drinking companion nicolas dixon  drinking companion garry grant  drinking companion robert jude  drinking companion ross macgibbon  drinking companion anthony molyneux  drinking companion guy niblett  drinking companion andrew ward   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor terence kern leader john brown event number 2 in the royal ballet mixed programme 19 november 1982 information source royal opera house programme 19 november 1982 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "5021",
+      "title": "Prodigal Son-21 February 2004 Matinee 1.00pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Alexander Ingram",
+      "date": "21 February 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=18&performance=5021&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Alexander Ingram",
+        "Concert Master": "Vasko Vassilev",
+        "Durations": "Entire work: 2.03-2.40pm",
+        "Event": "Number 2 in The Royal Ballet mixed programme 21 February 2004 matinee",
+        "Information source": "Royal Opera House cast sheet and stage manager's report for 21 February 2004 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-21 february 2004 matinee 1.00pm 21 february 2004 matinee 1.00pm royal opera house, covent garden, london the royal ballet revival alexander ingram the prodigal son ivan putrov  the siren zenaida yanowsky  father alastair marriott  servant to the prodigal son thiago soares  servant to the prodigal son johannes stepanek  sister francesca filpi  sister kristen mcnally  drinking companion giacomo ciriaci  drinking companion kenta kura  drinking companion adam linder  drinking companion tim matiakis  drinking companion ernst meisner  drinking companion ludovic ondiviela  drinking companion richard ramsey  drinking companion michael stojko  drinking companion andrej uspenski   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor alexander ingram concert master vasko vassilev durations entire work: 2.03-2.40pm event number 2 in the royal ballet mixed programme 21 february 2004 matinee information source royal opera house cast sheet and stage manager's report for 21 february 2004 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "15767",
+      "title": "Prodigal Son-21 January 1983 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "21 January 1983",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=8&performance=15767&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "John Brown",
+        "Event": "Number 2 in The Royal Ballet mixed programme 21 January 1983",
+        "Information source": "Royal Opera House programme for 21 January 1983 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-21 january 1983 evening 21 january 1983 evening royal opera house, covent garden, london the royal ballet revival ashley lawrence john brown the prodigal son ashley page  the siren rosalyn whitten  father david drew  servant to the prodigal son antony dowson  servant to the prodigal son michael corder  sister jacqui tallis  sister julie wood  drinking companion paul benson  drinking companion christopher carr  drinking companion nicolas dixon  drinking companion garry grant  drinking companion robert jude  drinking companion ross macgibbon  drinking companion anthony molyneux  drinking companion guy niblett  drinking companion andrew ward   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor ashley lawrence leader john brown event number 2 in the royal ballet mixed programme 21 january 1983 information source royal opera house programme for 21 january 1983 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "25136",
+      "title": "Prodigal Son-21 June 1973 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "21 June 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=2&performance=25136&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "George Hallam",
+        "Event": "Number 2 in The Royal Ballet mixed programme 21 June 1973",
+        "Information source": "Royal Opera House programme 21 June 1973 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-21 june 1973 evening 21 june 1973 evening royal opera house, covent garden, london the royal ballet original season ashley lawrence george hallam the prodigal son rudolf nureyev  the siren deanne bergsma  father adrian grater  servant to the prodigal son david drew  servant to the prodigal son peter o'brien  sister sally ashby  sister julie wood  drinking companion paul benson  drinking companion anthony conway  drinking companion peter fairweather  drinking companion graham fletcher  drinking companion garry grant  drinking companion dennis griffith  drinking companion julian hosking  drinking companion robert jude  drinking companion william perrie   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor ashley lawrence leader george hallam event number 2 in the royal ballet mixed programme 21 june 1973 information source royal opera house programme 21 june 1973 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "5031",
+      "title": "Prodigal Son-23 February 2004 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Alexander Ingram",
+      "date": "23 February 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=19&performance=5031&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Alexander Ingram",
+        "Concert Master": "Vasko Vassilev",
+        "Durations": "Entire work: 8.26-9.03pm",
+        "Event": "Number 2 in The Royal Ballet mixed programme 23 February 2004",
+        "Information source": "Royal Opera House cast sheet and stage manager's report for 23 February 2004 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-23 february 2004 evening 7.30pm 23 february 2004 evening 7.30pm royal opera house, covent garden, london the royal ballet revival alexander ingram the prodigal son carlos acosta  the siren zenaida yanowsky  father william tuckett  servant to the prodigal son bennet gartside  servant to the prodigal son martin harvey  sister francesca filpi  sister kristen mcnally  drinking companion giacomo ciriaci  drinking companion kenta kura  drinking companion adam linder  drinking companion tim matiakis  drinking companion ernst meisner  drinking companion ludovic ondiviela  drinking companion richard ramsey  drinking companion michael stojko  drinking companion andrej uspenski   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor alexander ingram concert master vasko vassilev durations entire work: 8.26-9.03pm event number 2 in the royal ballet mixed programme 23 february 2004 information source royal opera house cast sheet and stage manager's report for 23 february 2004 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "5041",
+      "title": "Prodigal Son-25 February 2004 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Alexander Ingram",
+      "date": "25 February 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=5041&page=1",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Alexander Ingram",
+        "Concert Master": "Vasko Vassilev",
+        "Durations": "Entire work: 8.25-9.02pm",
+        "Event": "Number 2 in The Royal Ballet mixed programme 25 February 2004",
+        "Information source": "Royal Opera House cast sheet and stage manager's report for 25 February 2004 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-25 february 2004 evening 7.30pm 25 february 2004 evening 7.30pm royal opera house, covent garden, london the royal ballet revival alexander ingram the prodigal son ivan putrov  the siren zenaida yanowsky  father alastair marriott  servant to the prodigal son thiago soares  servant to the prodigal son johannes stepanek  sister francesca filpi  sister kristen mcnally  drinking companion giacomo ciriaci  drinking companion kenta kura  drinking companion adam linder  drinking companion tim matiakis  drinking companion ernst meisner  drinking companion ludovic ondiviela  drinking companion richard ramsey  drinking companion michael stojko  drinking companion andrej uspenski   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor alexander ingram concert master vasko vassilev durations entire work: 8.25-9.02pm event number 2 in the royal ballet mixed programme 25 february 2004 information source royal opera house cast sheet and stage manager's report for 25 february 2004 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "11703",
+      "title": "Prodigal Son-25 January 1973 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "25 January 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=11703&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "George Hallam",
+        "Event": "Number 2 in The Royal Ballet mixed programme 25 January 1973",
+        "Information source": "Royal Opera House programme 25 January 1973 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-25 january 1973 evening 25 january 1973 evening royal opera house, covent garden, london the royal ballet original season ashley lawrence george hallam the prodigal son rudolf nureyev  the siren deanne bergsma  father adrian grater  servant to the prodigal son david drew  servant to the prodigal son gary sherwood  sister sally ashby  sister julie wood  drinking companion paul benson  drinking companion peter fairweather  drinking companion graham fletcher  drinking companion garry grant  drinking companion dennis griffith  drinking companion julian hosking  drinking companion peter o'brien  drinking companion william perrie  drinking companion paul waller   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor ashley lawrence leader george hallam event number 2 in the royal ballet mixed programme 25 january 1973 information source royal opera house programme 25 january 1973 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27665",
+      "title": "Prodigal Son-26 January 1973 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "26 January 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&performance=27665&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Original season",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "George Hallam",
+        "Event": "Number 2 in The Royal Ballet mixed programme 26 January 1973",
+        "Information source": "Royal Opera House programme 26 January 1973 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-26 january 1973 evening 26 january 1973 evening royal opera house, covent garden, london the royal ballet original season ashley lawrence george hallam the prodigal son rudolf nureyev  the siren deanne bergsma  father adrian grater  servant to the prodigal son david drew  servant to the prodigal son gary sherwood  sister sally ashby  sister julie wood  drinking companion paul benson  drinking companion peter fairweather  drinking companion graham fletcher  drinking companion garry grant  drinking companion dennis griffith  drinking companion julian hosking  drinking companion peter o'brien  drinking companion william perrie  drinking companion paul waller   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status original season conductor ashley lawrence leader george hallam event number 2 in the royal ballet mixed programme 26 january 1973 information source royal opera house programme 26 january 1973 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "4985",
+      "title": "Prodigal Son-28 January 2004 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Alexander Ingram",
+      "date": "28 January 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=14&performance=4985&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Alexander Ingram",
+        "Concert Master": "Vasko Vassilev",
+        "Durations": "Entire work: 8.28-9.05pm",
+        "Event": "Number 2 in The Royal Ballet mixed programme 28 January 2004",
+        "Information source": "Royal Opera House cast sheet and stage manager's report for 28 January 2004 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-28 january 2004 evening 7.30pm 28 january 2004 evening 7.30pm royal opera house, covent garden, london the royal ballet revival alexander ingram the prodigal son carlos acosta  the siren sylvie guillem  father william tuckett  servant to the prodigal son bennet gartside  servant to the prodigal son martin harvey  sister francesca filpi  sister kristen mcnally  drinking companion giacomo ciriaci  drinking companion kenta kura  drinking companion adam linder  drinking companion tim matiakis  drinking companion ernst meisner  drinking companion ludovic ondiviela  drinking companion richard ramsey  drinking companion michael stojko  drinking companion joshua tuifua   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor alexander ingram concert master vasko vassilev durations entire work: 8.28-9.05pm event number 2 in the royal ballet mixed programme 28 january 2004 information source royal opera house cast sheet and stage manager's report for 28 january 2004 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "4993",
+      "title": "Prodigal Son-29 January 2004 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Alexander Ingram",
+      "date": "29 January 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=15&performance=4993&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Alexander Ingram",
+        "Concert Master": "Vasko Vassilev",
+        "Durations": "Entire work: 8.24-9.02pm",
+        "Event": "Number 2 in The Royal Ballet mixed programme 29 January 2004",
+        "Information source": "Royal Opera House cast sheet and stage manager's report for 29 January 2004 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-29 january 2004 evening 7.30pm 29 january 2004 evening 7.30pm royal opera house, covent garden, london the royal ballet revival alexander ingram the prodigal son carlos acosta  the siren sylvie guillem  father william tuckett  servant to the prodigal son bennet gartside  servant to the prodigal son martin harvey  sister francesca filpi  sister kristen mcnally  drinking companion giacomo ciriaci  drinking companion kenta kura  drinking companion adam linder  drinking companion tim matiakis  drinking companion ernst meisner  drinking companion ludovic ondiviela  drinking companion richard ramsey  drinking companion paul kay  drinking companion joshua tuifua   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor alexander ingram concert master vasko vassilev durations entire work: 8.24-9.02pm event number 2 in the royal ballet mixed programme 29 january 2004 information source royal opera house cast sheet and stage manager's report for 29 january 2004 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27711",
+      "title": "Prodigal Son-3 November 1973 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "3 November 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=5&performance=27711&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "Meyer Stolow",
+        "Event": "Number 4 in The Royal Ballet mixed programme 3 November 1973",
+        "Information source": "Royal Opera House programme for 3 November 1973 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-3 november 1973 evening 3 november 1973 evening royal opera house, covent garden, london the royal ballet revival ashley lawrence meyer stolow the prodigal son rudolf nureyev  the siren deanne bergsma  father adrian grater  servant to the prodigal son david drew  servant to the prodigal son carl myers  sister sally ashby  sister julie wood  drinking companion paul benson  drinking companion anthony conway  drinking companion peter fairweather  drinking companion garry grant  drinking companion dennis griffith  drinking companion julian hosking  drinking companion robert jude  drinking companion anthony molyneux  drinking companion ian owen   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor ashley lawrence leader meyer stolow event number 4 in the royal ballet mixed programme 3 november 1973 information source royal opera house programme for 3 november 1973 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "15504",
+      "title": "Prodigal Son-30 October 1973 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "30 October 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=15504&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "Meyer Stolow",
+        "Durations": "Entire work: 9.17-9.54pm",
+        "Event": "Number 4 in The Royal Ballet mixed programme 30 October 1973",
+        "Information source": "Royal Opera House programme 30 October 1973 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-30 october 1973 evening 7.30pm 30 october 1973 evening 7.30pm royal opera house, covent garden, london the royal ballet revival ashley lawrence meyer stolow the prodigal son rudolf nureyev  the siren vergie derman  father adrian grater  servant to the prodigal son david drew  servant to the prodigal son carl myers  sister sally ashby  sister julie wood  drinking companion paul benson  drinking companion anthony conway  drinking companion peter fairweather  drinking companion garry grant  drinking companion dennis griffith  drinking companion julian hosking  drinking companion robert jude  drinking companion anthony molyneux  drinking companion ian owen   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor ashley lawrence leader meyer stolow durations entire work: 9.17-9.54pm event number 4 in the royal ballet mixed programme 30 october 1973 information source royal opera house programme 30 october 1973 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "27707",
+      "title": "Prodigal Son-31 October 1973 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Ashley Lawrence",
+      "date": "31 October 1973",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=4&performance=27707&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Ashley Lawrence",
+        "Leader": "Meyer Stolow",
+        "Event": "Number 4 in The Royal Ballet mixed programme 31 October 1973",
+        "Information source": "Royal Opera House programme 31 October 1973 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-31 october 1973 evening 31 october 1973 evening royal opera house, covent garden, london the royal ballet revival ashley lawrence meyer stolow the prodigal son rudolf nureyev  the siren vergie derman  father leslie edwards  servant to the prodigal son david drew  servant to the prodigal son carl myers  sister sally ashby  sister julie wood  drinking companion paul benson  drinking companion anthony conway  drinking companion peter fairweather  drinking companion garry grant  drinking companion dennis griffith  drinking companion julian hosking  drinking companion robert jude  drinking companion anthony molyneux  drinking companion ian owen   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor ashley lawrence leader meyer stolow event number 4 in the royal ballet mixed programme 31 october 1973 information source royal opera house programme 31 october 1973 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "5003",
+      "title": "Prodigal Son-4 February 2004 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Alexander Ingram",
+      "date": "4 February 2004",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=16&performance=5003&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Alexander Ingram",
+        "Concert Master": "Vasko Vassilev",
+        "Durations": "Entire work: 8.27-9.04pm",
+        "Event": "Number 2 in The Royal Ballet mixed programme 4 February 2004",
+        "Information source": "Royal Opera House cast sheet and stage manager's report for 4 February 2004 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-4 february 2004 evening 7.30pm 4 february 2004 evening 7.30pm royal opera house, covent garden, london the royal ballet revival alexander ingram the prodigal son ivan putrov  the siren zenaida yanowsky  father alastair marriott  servant to the prodigal son thiago soares  servant to the prodigal son johannes stepanek  sister francesca filpi  sister kristen mcnally  drinking companion giacomo ciriaci  drinking companion kenta kura  drinking companion adam linder  drinking companion tim matiakis  drinking companion ernst meisner  drinking companion ludovic ondiviela  drinking companion richard ramsey  drinking companion michael stojko  drinking companion andrej uspenski   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor alexander ingram concert master vasko vassilev durations entire work: 8.27-9.04pm event number 2 in the royal ballet mixed programme 4 february 2004 information source royal opera house cast sheet and stage manager's report for 4 february 2004 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "16797",
+      "title": "Prodigal Son-4 June 1993 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Barry Wordsworth",
+      "date": "4 June 1993",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=9&performance=16797&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Barry Wordsworth",
+        "Leader": "John Brown",
+        "Durations": "Entire work: 37 minutes",
+        "Event": "Number 1 in The Royal Ballet mixed programme 4 June 1993",
+        "Information source": "Royal Opera House cast sheet for 4 June 1993 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-4 june 1993 evening 7.30pm 4 june 1993 evening 7.30pm royal opera house, covent garden, london the royal ballet revival barry wordsworth john brown the prodigal son irek mukhamedov  the siren genesia rosato  father david drew  servant to the prodigal son christopher saunders  servant to the prodigal son william trevitt  sister delia harrington  sister vanessa palmer  drinking companion peter abegglen  drinking companion anthony bourne  drinking companion hubert essakow  drinking companion luke heydon  drinking companion shi-ning liu  drinking companion alastair marriott  drinking companion philip mosley  drinking companion william tuckett  drinking companion iain webb   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor barry wordsworth leader john brown durations entire work: 37 minutes event number 1 in the royal ballet mixed programme 4 june 1993 information source royal opera house cast sheet for 4 june 1993 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "20484",
+      "title": "Prodigal Son-5 June 1993 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Barry Wordsworth",
+      "date": "5 June 1993",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=11&performance=20484&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Barry Wordsworth",
+        "Leader": "John Brown",
+        "Durations": "Entire work: 37 minutes",
+        "Event": "Number 1 in The Royal Ballet mixed programme 5 June 1993",
+        "Information source": "Royal Opera House cast sheet for 5 June 1993 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-5 june 1993 evening 7.30pm 5 june 1993 evening 7.30pm royal opera house, covent garden, london the royal ballet revival barry wordsworth john brown the prodigal son irek mukhamedov  the siren genesia rosato  father david drew  servant to the prodigal son christopher saunders  servant to the prodigal son william trevitt  sister delia harrington  sister vanessa palmer  drinking companion peter abegglen  drinking companion anthony bourne  drinking companion hubert essakow  drinking companion luke heydon  drinking companion shi-ning liu  drinking companion alastair marriott  drinking companion philip mosley  drinking companion william tuckett  drinking companion iain webb   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor barry wordsworth leader john brown durations entire work: 37 minutes event number 1 in the royal ballet mixed programme 5 june 1993 information source royal opera house cast sheet for 5 june 1993 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "20481",
+      "title": "Prodigal Son-5 June 1993 Matinee 2.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Barry Wordsworth",
+      "date": "5 June 1993",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=10&performance=20481&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Barry Wordsworth",
+        "Leader": "John Brown",
+        "Durations": "Entire work: 37 minutes",
+        "Event": "Number 1 in The Royal Ballet mixed programme 5 June 1993 matinee",
+        "Information source": "Royal Opera House cast sheet for 5 June 1993 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-5 june 1993 matinee 2.30pm 5 june 1993 matinee 2.30pm royal opera house, covent garden, london the royal ballet revival barry wordsworth john brown the prodigal son tetsuya kumakawa  the siren darcey bussell  father stephen wicks  servant to the prodigal son gary avis  servant to the prodigal son christopher wheeldon  sister philippa gordon  sister claire livingstone  drinking companion peter abegglen  drinking companion anthony bourne  drinking companion hubert essakow  drinking companion luke heydon  drinking companion shi-ning liu  drinking companion alastair marriott  drinking companion philip mosley  drinking companion william tuckett  drinking companion iain webb   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor barry wordsworth leader john brown durations entire work: 37 minutes event number 1 in the royal ballet mixed programme 5 june 1993 matinee information source royal opera house cast sheet for 5 june 1993 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "20478",
+      "title": "Prodigal Son-9 June 1993 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Barry Wordsworth",
+      "date": "9 June 1993",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=12&performance=20478&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Barry Wordsworth",
+        "Leader": "John Brown",
+        "Durations": "Entire work: 37 minutes",
+        "Event": "Number 1 in The Royal Ballet mixed programme 9 June 1993",
+        "Information source": "Royal Opera House cast sheet for 9 June 1993 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "prodigal son-9 june 1993 evening 7.30pm 9 june 1993 evening 7.30pm royal opera house, covent garden, london the royal ballet revival barry wordsworth john brown the prodigal son tetsuya kumakawa  the siren darcey bussell  father stephen wicks  servant to the prodigal son gary avis  servant to the prodigal son christopher wheeldon  sister philippa gordon  sister claire livingstone  drinking companion peter abegglen  drinking companion anthony bourne  drinking companion hubert essakow  drinking companion luke heydon  drinking companion shi-ning liu  drinking companion alastair marriott  drinking companion philip mosley  drinking companion william tuckett  drinking companion iain webb   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor barry wordsworth leader john brown durations entire work: 37 minutes event number 1 in the royal ballet mixed programme 9 june 1993 information source royal opera house cast sheet for 9 june 1993 (in royal opera house collections)"
+    },
+    {
       "type": "record",
       "source": "RBO Collections",
       "id": "110006932",
@@ -19640,6 +21096,28 @@
       "genre": "Ballet",
       "creator": "Frederick Ashton",
       "searchText": "rhapsody ballet frederick ashton"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "30801",
+      "title": "Rhapsody - pas de deux-9 July 2016 Matinee 11.30am",
+      "subtitle": "Royal Opera House, Covent Garden, London | Paul Murphy",
+      "date": "9 July 2016",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=30801",
+      "metadata": {
+        "Company": "The Royal Ballet School",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Visiting company",
+        "Conductor": "Paul Murphy",
+        "Leader": "Robert Gibbs",
+        "Notes": "The stage manager's report gives timings for Part 1 and Part 2 of this event. Part 1 consists of four elements, Part 2 conists of six elements. The timing of each element is not specified in the report. The performance is not listed in the programme but is on the cast list; the reason for this is not clear.",
+        "Durations": "Part 2 continue: 1.30-2.14pm",
+        "Event": "Number 8 in The Royal Ballet School Summer Performance 9 July 2016",
+        "Information source": "Royal Opera House cast list and stage manager's report for 9 July 2016 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet School",
+      "searchText": "rhapsody - pas de deux-9 july 2016 matinee 11.30am 9 july 2016 matinee 11.30am royal opera house, covent garden, london the royal ballet school visiting company paul murphy robert gibbs dancer kaho yanagisawa  dancer francisco serrano   the royal ballet sinfonia  company the royal ballet school venue royal opera house, covent garden, london performance status visiting company conductor paul murphy leader robert gibbs notes the stage manager's report gives timings for part 1 and part 2 of this event. part 1 consists of four elements, part 2 conists of six elements. the timing of each element is not specified in the report. the performance is not listed in the programme but is on the cast list; the reason for this is not clear. durations part 2 continue: 1.30-2.14pm event number 8 in the royal ballet school summer performance 9 july 2016 information source royal opera house cast list and stage manager's report for 9 july 2016 (in royal opera house collections)"
     },
     {
       "type": "work",
@@ -24262,11 +25740,33 @@
     {
       "type": "performance",
       "source": "RBO Collections",
+      "id": "30843",
+      "title": "Tchaikovsky pas de deux-25 February 2015 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Boris Gruzin",
+      "date": "25 February 2015",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=1&page=0&performance=30843",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Revival",
+        "Conductor": "Boris Gruzin",
+        "Concert Master": "Vasko Vassilev",
+        "Notes": "'A Gala Celebration: Life Reimagined' is in two parts; Part I consists of eleven elements and Part II consists of ten elements. The timing of each element is not specified in the stage manager's report. This performance is listed 16th in the programme but is 18th in the stage manager's report.",
+        "Durations": "Part II: 9.05-10.11pm",
+        "Event": "Number 18 in A Gala Celebration: Life Reimagined 25 February 2015",
+        "Information source": "Royal Opera House programme and stage manager's report for 25 February 2015 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "tchaikovsky pas de deux-25 february 2015 evening 7.30pm 25 february 2015 evening 7.30pm royal opera house, covent garden, london the royal ballet revival boris gruzin dancer natalia osipova  dancer steven mcrae   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status revival conductor boris gruzin concert master vasko vassilev notes 'a gala celebration: life reimagined' is in two parts; part i consists of eleven elements and part ii consists of ten elements. the timing of each element is not specified in the stage manager's report. this performance is listed 16th in the programme but is 18th in the stage manager's report. durations part ii: 9.05-10.11pm event number 18 in a gala celebration: life reimagined 25 february 2015 information source royal opera house programme and stage manager's report for 25 february 2015 (in royal opera house collections)"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
       "id": "11575",
       "title": "Tchaikovsky pas de deux-5 July 2000 Evening 7.30pm",
       "subtitle": "Royal Opera House, Covent Garden, London | Andrea Quinn",
       "date": "5 July 2000",
-      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11575",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=0&performance=11575&page=0",
       "metadata": {
         "Company": "The Kirov Ballet",
         "Venue": "Royal Opera House, Covent Garden, London",
@@ -25129,6 +26629,27 @@
       "searchText": "the nutcracker ballet lev ivanovich ivanov"
     },
     {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "32820",
+      "title": "The Nutcracker - Pas de deux-30 May 2018 Evening 7.30pm",
+      "subtitle": "Royal Opera House, Covent Garden, London | Emmanuel Plasson",
+      "date": "30 May 2018",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?row=3&performance=32820&page=0",
+      "metadata": {
+        "Company": "The Royal Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Gala performance",
+        "Conductor": "Emmanuel Plasson",
+        "Associate Concert Master": "Peter Schulmeister",
+        "Notes": "The stage manager's report for this performance does not provide timing information. This performance was an addition to the programme.",
+        "Event": "Number 6 in Spring Gala 30 May 2018",
+        "Information source": "Royal Opera House programme, cast sheet and stage manager's report for 30 May 2018 (in Royal Opera House Collections)"
+      },
+      "company": "The Royal Ballet",
+      "searchText": "the nutcracker - pas de deux-30 may 2018 evening 7.30pm 30 may 2018 evening 7.30pm royal opera house, covent garden, london the royal ballet gala performance emmanuel plasson dancer natalia osipova  dancer jason kittelberger   the orchestra of the royal opera house  company the royal ballet venue royal opera house, covent garden, london performance status gala performance conductor emmanuel plasson associate concert master peter schulmeister notes the stage manager's report for this performance does not provide timing information. this performance was an addition to the programme. event number 6 in spring gala 30 may 2018 information source royal opera house programme, cast sheet and stage manager's report for 30 may 2018 (in royal opera house collections)"
+    },
+    {
       "type": "work",
       "source": "RBO Collections",
       "id": "738",
@@ -25211,6 +26732,25 @@
       "genre": "Ballet",
       "creator": "John Cranko",
       "searchText": "the prince of the pagodas (1957) ballet john cranko"
+    },
+    {
+      "type": "performance",
+      "source": "RBO Collections",
+      "id": "22095",
+      "title": "The Prodigal Son-29 May 2002 Evening",
+      "subtitle": "Royal Opera House, Covent Garden, London | Valery Gergiev",
+      "date": "29 May 2002",
+      "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=22095",
+      "metadata": {
+        "Company": "The Kirov Ballet",
+        "Venue": "Royal Opera House, Covent Garden, London",
+        "Performance status": "Excerpt",
+        "Conductor": "Valery Gergiev",
+        "Event": "Number 9 in A Celebration of St Petersburg 29 May 2002",
+        "Information source": "Royal Opera House special programme for 28-29 May 2002 (in Royal Opera House Collections)"
+      },
+      "company": "The Kirov Ballet",
+      "searchText": "the prodigal son-29 may 2002 evening 29 may 2002 evening royal opera house, covent garden, london the kirov ballet excerpt valery gergiev dancer daria pavlenko  dancer farukh ruzimatov   orchestra of the mariinsky theatre  company the kirov ballet venue royal opera house, covent garden, london performance status excerpt conductor valery gergiev event number 9 in a celebration of st petersburg 29 may 2002 information source royal opera house special programme for 28-29 may 2002 (in royal opera house collections)"
     },
     {
       "type": "work",
@@ -28744,7 +30284,7 @@
     "sources": [
       {
         "value": "RBO Collections",
-        "count": 2411
+        "count": 2488
       }
     ],
     "collections": [
@@ -28963,8 +30503,12 @@
     ],
     "companies": [
       {
+        "value": "The Royal Ballet",
+        "count": 73
+      },
+      {
         "value": "The Royal Opera",
-        "count": 6
+        "count": 7
       },
       {
         "value": "The Covent Garden Orchestra",
@@ -28972,6 +30516,14 @@
       },
       {
         "value": "Jette Parker Young Artists Programme",
+        "count": 3
+      },
+      {
+        "value": "ROH Education - Chance to Dance",
+        "count": 2
+      },
+      {
+        "value": "The Kirov Ballet",
         "count": 2
       },
       {
@@ -28983,11 +30535,7 @@
         "count": 2
       },
       {
-        "value": "The Royal Ballet",
-        "count": 2
-      },
-      {
-        "value": "The Kirov Ballet",
+        "value": "The Royal Ballet School",
         "count": 1
       },
       {
@@ -29006,7 +30554,11 @@
       },
       {
         "value": "performance",
-        "count": 27
+        "count": 102
+      },
+      {
+        "value": "production",
+        "count": 2
       }
     ]
   }

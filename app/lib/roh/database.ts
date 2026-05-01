@@ -58,11 +58,13 @@ let memoizedIndexPath: string | null = null;
 let memoizedIndexMtimeMs: number | null = null;
 
 function normalizeLimit(limit: number | undefined): number {
-  return Math.min(Math.max(limit ?? 50, 1), 100);
+  if (!Number.isFinite(limit)) return 50;
+  return Math.min(Math.max(Math.trunc(limit as number), 1), 100);
 }
 
 function normalizeOffset(offset: number | undefined): number {
-  return Math.max(offset ?? 0, 0);
+  if (!Number.isFinite(offset)) return 0;
+  return Math.max(Math.trunc(offset as number), 0);
 }
 
 function normalizeText(value: string): string {
@@ -90,20 +92,6 @@ function bucket(values: Array<string | undefined>, limit = 30): RohFacetBucket[]
     .map(([value, count]) => ({ value, count }))
     .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value))
     .slice(0, limit);
-}
-
-function mergeBuckets(left: RohFacetBucket[], right: RohFacetBucket[], limit = 48): RohFacetBucket[] {
-  const counts = new Map<string, number>();
-  for (const { value, count } of left) counts.set(value, (counts.get(value) || 0) + count);
-  for (const { value, count } of right) counts.set(value, (counts.get(value) || 0) + count);
-  return [...counts.entries()]
-    .map(([value, count]) => ({ value, count }))
-    .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value))
-    .slice(0, limit);
-}
-
-function emptyFacets(): RohSearchResult['facets'] {
-  return { sources: [], collections: [], genres: [], creators: [], companies: [], types: [] };
 }
 
 function documentSource(document: RohSearchDocument): RohDataSourceLabel {
@@ -377,49 +365,153 @@ function queryTermsFromParams(params: RohSearchParams): string[] {
     .filter(Boolean);
 }
 
-function passesSearchFilters(document: RohSearchDocument, params: RohSearchParams, queryTerms: string[]): boolean {
-  if (params.source && documentSource(document) !== params.source) return false;
-  if (params.type && params.type !== 'all' && document.type !== params.type) return false;
-  if (params.collection && document.collection !== params.collection) return false;
-  if (params.genre && document.genre !== params.genre) return false;
-  if (params.creator && document.creator !== params.creator) return false;
-  if (params.company && document.company !== params.company) return false;
-  if (params.dateFrom && (!document.date || document.date < params.dateFrom)) return false;
-  if (params.dateTo && (!document.date || document.date > params.dateTo)) return false;
-  return queryTerms.every((term) => document.searchText.includes(term));
+function bucketFromCounts(counts: Map<string, number>, limit = 30): RohFacetBucket[] {
+  return [...counts.entries()]
+    .map(([value, count]) => ({ value, count }))
+    .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value))
+    .slice(0, limit);
 }
 
-function withoutFacetParam(params: RohSearchParams, key: keyof RohSearchParams): RohSearchParams {
-  return { ...params, [key]: undefined };
+function addToCounts(counts: Map<string, number>, value: string | undefined): void {
+  if (!value) return;
+  counts.set(value, (counts.get(value) || 0) + 1);
 }
 
-function reactiveFacets(searchDocuments: RohSearchDocument[], params: RohSearchParams, queryTerms: string[]): RohSearchResult['facets'] {
-  const docsForSources = searchDocuments.filter((document) =>
-    passesSearchFilters(document, withoutFacetParam(params, 'source'), queryTerms),
-  );
-  const docsForCollections = searchDocuments.filter((document) =>
-    passesSearchFilters(document, withoutFacetParam(params, 'collection'), queryTerms),
-  );
-  const docsForGenres = searchDocuments.filter((document) =>
-    passesSearchFilters(document, withoutFacetParam(params, 'genre'), queryTerms),
-  );
-  const docsForCreators = searchDocuments.filter((document) =>
-    passesSearchFilters(document, withoutFacetParam(params, 'creator'), queryTerms),
-  );
-  const docsForCompanies = searchDocuments.filter((document) =>
-    passesSearchFilters(document, withoutFacetParam(params, 'company'), queryTerms),
-  );
-  const docsForTypes = searchDocuments.filter((document) =>
-    passesSearchFilters(document, withoutFacetParam(params, 'type'), queryTerms),
-  );
+function normalizeDateForRange(value: string | undefined): string | null {
+  if (!value) return null;
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  const pad2 = (input: number): string => `${input}`.padStart(2, '0');
+  if (/^\d{4}$/.test(trimmed)) return `${trimmed}-01-01`;
+  if (/^\d{4}-\d{2}$/.test(trimmed)) return `${trimmed}-01`;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(trimmed)) return trimmed;
+
+  const monthIndex: Record<string, number> = {
+    january: 1,
+    february: 2,
+    march: 3,
+    april: 4,
+    may: 5,
+    june: 6,
+    july: 7,
+    august: 8,
+    september: 9,
+    october: 10,
+    november: 11,
+    december: 12,
+  };
+  const dayMonthYear = trimmed.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+  if (dayMonthYear) {
+    const day = Number.parseInt(dayMonthYear[1], 10);
+    const month = monthIndex[dayMonthYear[2].toLowerCase()];
+    const year = dayMonthYear[3];
+    if (month && day >= 1 && day <= 31) return `${year}-${pad2(month)}-${pad2(day)}`;
+  }
+
+  const parsed = Date.parse(trimmed);
+  if (!Number.isNaN(parsed)) {
+    const parsedDate = new Date(parsed);
+    return `${parsedDate.getFullYear()}-${pad2(parsedDate.getMonth() + 1)}-${pad2(parsedDate.getDate())}`;
+  }
+  return null;
+}
+
+interface PreparedSearchParams {
+  source?: string;
+  type?: RohEntityType | 'all';
+  collection?: string;
+  genre?: string;
+  creator?: string;
+  company?: string;
+  dateFrom: string | null;
+  dateTo: string | null;
+  queryTerms: string[];
+}
+
+function prepareSearchParams(params: RohSearchParams): PreparedSearchParams {
+  return {
+    source: params.source,
+    type: params.type,
+    collection: params.collection,
+    genre: params.genre,
+    creator: params.creator,
+    company: params.company,
+    dateFrom: normalizeDateForRange(params.dateFrom),
+    dateTo: normalizeDateForRange(params.dateTo),
+    queryTerms: queryTermsFromParams(params),
+  };
+}
+
+function matchesDateRange(document: RohSearchDocument, prepared: PreparedSearchParams): boolean {
+  if (!prepared.dateFrom && !prepared.dateTo) return true;
+  if (!document.date) return false;
+  const normalizedDocumentDate = normalizeDateForRange(document.date);
+  // When a date filter is active, rows with non-normalizable dates are excluded to avoid misleading range matches.
+  if (!normalizedDocumentDate) return false;
+  if (prepared.dateFrom && normalizedDocumentDate < prepared.dateFrom) return false;
+  if (prepared.dateTo && normalizedDocumentDate > prepared.dateTo) return false;
+  return true;
+}
+
+function passesSearchFilters(document: RohSearchDocument, prepared: PreparedSearchParams): boolean {
+  if (prepared.source && documentSource(document) !== prepared.source) return false;
+  if (prepared.type && prepared.type !== 'all' && document.type !== prepared.type) return false;
+  if (prepared.collection && document.collection !== prepared.collection) return false;
+  if (prepared.genre && document.genre !== prepared.genre) return false;
+  if (prepared.creator && document.creator !== prepared.creator) return false;
+  if (prepared.company && document.company !== prepared.company) return false;
+  if (!matchesDateRange(document, prepared)) return false;
+  return prepared.queryTerms.every((term) => document.searchText.includes(term));
+}
+
+function reactiveFacets(searchDocuments: RohSearchDocument[], params: RohSearchParams): RohSearchResult['facets'] {
+  const prepared = prepareSearchParams(params);
+  const sourceCounts = new Map<string, number>();
+  const collectionCounts = new Map<string, number>();
+  const genreCounts = new Map<string, number>();
+  const creatorCounts = new Map<string, number>();
+  const companyCounts = new Map<string, number>();
+  const typeCounts = new Map<string, number>();
+
+  for (const document of searchDocuments) {
+    if (!matchesDateRange(document, prepared)) continue;
+    if (!prepared.queryTerms.every((term) => document.searchText.includes(term))) continue;
+
+    const sourceMatch = !prepared.source || documentSource(document) === prepared.source;
+    const typeMatch = !prepared.type || prepared.type === 'all' || document.type === prepared.type;
+    const collectionMatch = !prepared.collection || document.collection === prepared.collection;
+    const genreMatch = !prepared.genre || document.genre === prepared.genre;
+    const creatorMatch = !prepared.creator || document.creator === prepared.creator;
+    const companyMatch = !prepared.company || document.company === prepared.company;
+
+    if (typeMatch && collectionMatch && genreMatch && creatorMatch && companyMatch) {
+      addToCounts(sourceCounts, documentSource(document));
+    }
+    if (sourceMatch && typeMatch && genreMatch && creatorMatch && companyMatch) {
+      addToCounts(collectionCounts, document.collection);
+    }
+    if (sourceMatch && typeMatch && collectionMatch && creatorMatch && companyMatch) {
+      addToCounts(genreCounts, document.genre);
+    }
+    if (sourceMatch && typeMatch && collectionMatch && genreMatch && companyMatch) {
+      addToCounts(creatorCounts, document.creator);
+    }
+    if (sourceMatch && typeMatch && collectionMatch && genreMatch && creatorMatch) {
+      addToCounts(companyCounts, document.company);
+    }
+    if (sourceMatch && collectionMatch && genreMatch && creatorMatch && companyMatch) {
+      addToCounts(typeCounts, document.type);
+    }
+  }
 
   return {
-    sources: bucket(docsForSources.map((document) => documentSource(document)), 12),
-    collections: bucket(docsForCollections.map((document) => document.collection)),
-    genres: bucket(docsForGenres.map((document) => document.genre)),
-    creators: bucket(docsForCreators.map((document) => document.creator)),
-    companies: bucket(docsForCompanies.map((document) => document.company)),
-    types: bucket(docsForTypes.map((document) => document.type), 32),
+    sources: bucketFromCounts(sourceCounts, 12),
+    collections: bucketFromCounts(collectionCounts),
+    genres: bucketFromCounts(genreCounts),
+    creators: bucketFromCounts(creatorCounts),
+    companies: bucketFromCounts(companyCounts),
+    types: bucketFromCounts(typeCounts, 32),
   };
 }
 
@@ -485,10 +577,10 @@ export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DI
 export function searchRohIndex(index: RohJsonIndex, params: RohSearchParams): RohSearchResult {
   const limit = normalizeLimit(params.limit);
   const offset = normalizeOffset(params.offset);
-  const queryTerms = queryTermsFromParams(params);
-  const matches = index.searchDocuments.filter((document) => passesSearchFilters(document, params, queryTerms));
+  const prepared = prepareSearchParams(params);
+  const matches = index.searchDocuments.filter((document) => passesSearchFilters(document, prepared));
 
-  const facets = reactiveFacets(index.searchDocuments, params, queryTerms);
+  const facets = reactiveFacets(index.searchDocuments, params);
   return {
     items: matches.slice(offset, offset + limit).map(toSearchItem),
     total: matches.length,
@@ -503,7 +595,7 @@ export function searchCombinedRoh(
 ): RohSearchResult {
   const limit = normalizeLimit(params.limit);
   const offset = normalizeOffset(params.offset);
-  const queryTerms = queryTermsFromParams(params);
+  const prepared = prepareSearchParams(params);
 
   let resolvedAssetJson: RohAssetStoreFileJson | null;
   if (opts?.assetData === null) resolvedAssetJson = null;
@@ -529,13 +621,13 @@ export function searchCombinedRoh(
   const archiveDocuments = index?.searchDocuments ?? [];
   const mergedDocuments = [...archiveDocuments, ...assetDocuments, ...catalogueDocuments];
   const matches = mergedDocuments
-    .filter((document) => passesSearchFilters(document, params, queryTerms))
+    .filter((document) => passesSearchFilters(document, prepared))
     .sort((a, b) => a.title.localeCompare(b.title));
 
   return {
     items: matches.slice(offset, offset + limit).map(toSearchItem),
     total: matches.length,
-    facets: reactiveFacets(mergedDocuments, params, queryTerms),
+    facets: reactiveFacets(mergedDocuments, params),
   };
 }
 

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Archive, BarChart3, Compass, Database, ExternalLink, Search, SlidersHorizontal } from 'lucide-react';
 import SiteHeader from '@/app/components/SiteHeader';
+import AutoSubmitSelect from '../components/AutoSubmitSelect';
 import { getCombinedRohSummary, hasRohSearchCorpus, loadRohJsonIndex, searchCombinedRoh } from '@/app/lib/roh/database';
 import { RohDataSources, RohEntityType, RohFacetBucket, RohSearchItem } from '@/app/lib/roh/types';
 
@@ -48,20 +49,6 @@ function outboundLinkLabel(item: RohSearchItem): string {
   if (item.type === 'asset') return 'Open in library';
   if (item.type === 'rbo_web' || item.type === 'rbo_stream') return 'Open on RBO site';
   return 'Collections record';
-}
-
-function facetOptions(facets: RohFacetBucket[], selected: string) {
-  return (
-    <>
-      <option value="">Any</option>
-      {facets.map((facet) => (
-        <option key={facet.value} value={facet.value}>
-          {facet.value} ({facet.count})
-        </option>
-      ))}
-      {selected && !facets.some((facet) => facet.value === selected) ? <option value={selected}>{selected}</option> : null}
-    </>
-  );
 }
 
 function groupByValue(value: string): GroupByMode {
@@ -310,9 +297,16 @@ export default async function RohPage({ searchParams }: RohPageProps) {
               </label>
               <label className="block text-sm">
                 <span className="mb-1 block text-muted-foreground">Source</span>
-                <select name="source" defaultValue={catalogueSource} className="w-full rounded-[2px] border bg-background px-3 py-2">
-                  {facetOptions(result.facets.sources ?? [], catalogueSource)}
-                </select>
+                <AutoSubmitSelect
+                  name="source"
+                  selected={catalogueSource}
+                  className="w-full rounded-[2px] border bg-background px-3 py-2"
+                  options={(result.facets.sources ?? []).map((facet) => ({
+                    value: facet.value,
+                    label: `${facet.value} (${facet.count})`,
+                  }))}
+                  includeAnyOption
+                />
               </label>
               <label className="block text-sm">
                 <span className="mb-1 block text-muted-foreground">Type</span>
@@ -383,6 +377,11 @@ export default async function RohPage({ searchParams }: RohPageProps) {
                 Royal Ballet and Opera Collections
               </p>
               <h1 className="font-brand-display text-4xl">ROH catalogue &amp; library</h1>
+              <p className="mt-3 max-w-3xl text-sm text-muted-foreground">
+                This index combines metadata from RBO Collections, the Asset Library, the public web catalogue, Stream, and
+                the archived ROH catalogue. You can search across titles, creators/composers, production and company names,
+                dates, genres, and collection labels, then open each result for source metadata and external catalogue links.
+              </p>
               <p className="mt-2 text-sm text-muted-foreground">
                 {result.total.toLocaleString()} matching item{result.total === 1 ? '' : 's'}
               </p>

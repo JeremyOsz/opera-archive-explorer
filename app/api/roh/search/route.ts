@@ -5,6 +5,13 @@ import { RohEntityType } from '@/app/lib/roh/types';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
+function parseIntegerParam(value: string | null, fallback: number): number {
+  if (!value) return fallback;
+  const parsed = Number.parseInt(value, 10);
+  if (!Number.isFinite(parsed)) return fallback;
+  return parsed;
+}
+
 function entityType(value: string | null): RohEntityType | 'all' | undefined {
   if (!value || value === 'all') return value === 'all' ? 'all' : undefined;
   if (['record', 'work', 'production', 'performance', 'asset', 'rbo_web', 'rbo_stream'].includes(value)) {
@@ -38,8 +45,8 @@ export async function GET(request: NextRequest) {
     company: params.get('company') || undefined,
     dateFrom: params.get('dateFrom') || undefined,
     dateTo: params.get('dateTo') || undefined,
-    limit: Number(params.get('limit') || 50),
-    offset: Number(params.get('offset') || 0),
+    limit: parseIntegerParam(params.get('limit'), 50),
+    offset: parseIntegerParam(params.get('offset'), 0),
   });
   return NextResponse.json(result);
 }

@@ -178,4 +178,49 @@ describe('ROH JSON index', () => {
     assert.equal(filteredByCollection.total, 1);
     assert.equal(filteredByCollection.facets.creators[0]?.value, 'Attilio Comelli');
   });
+
+  it('falls back to safe pagination defaults for invalid limit/offset values', () => {
+    const index = createRohJsonIndex(dataset);
+    const combinedOpts = { assetData: assetFixture, rboCatalogue: null } as const;
+
+    const result = searchCombinedRoh(index, { query: '', limit: Number.NaN, offset: Number.NaN }, combinedOpts);
+    assert.equal(result.total, 5);
+    assert.equal(result.items.length, 5);
+  });
+
+  it('applies date range filtering consistently across mixed date formats', () => {
+    const index = createRohJsonIndex({
+      ...dataset,
+      records: [
+        ...dataset.records,
+        {
+          id: 'r-bad-date',
+          title: 'Undated season leaflet',
+          sourceUrl: 'https://www.rohcollections.org.uk/record.aspx?ref=r-bad-date',
+          date: 'Spring Season',
+          metadata: {},
+        },
+      ],
+    });
+    const combinedOpts = { assetData: assetFixture, rboCatalogue: null } as const;
+
+    const in1949 = searchCombinedRoh(
+      index,
+      { query: '', dateFrom: '1949-01-01', dateTo: '1949-12-31' },
+      combinedOpts,
+    );
+    assert.equal(in1949.total, 2);
+    assert.deepEqual(
+      in1949.items.map((item) => item.type).sort(),
+      ['performance', 'production'],
+    );
+
+    const in1903 = searchCombinedRoh(index, { query: '', dateFrom: '1903-01-01', dateTo: '1903-12-31' }, combinedOpts);
+    assert.equal(in1903.total, 1);
+    assert.equal(in1903.items[0]?.id, '5306');
+
+    const upTo19490511 = searchCombinedRoh(index, { query: '', dateTo: '1949-05-11' }, combinedOpts);
+    assert.equal(upTo19490511.items.some((item) => item.id === '10388'), false);
+    assert.equal(upTo19490511.items.some((item) => item.id === '1621'), false);
+  });
 });
