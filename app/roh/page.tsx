@@ -3,6 +3,16 @@ import { Archive, BarChart3, Compass, Database, ExternalLink, Search, SlidersHor
 import SiteHeader from '@/app/components/SiteHeader';
 import { getCombinedRohSummary, hasRohSearchCorpus, loadRohJsonIndex, searchCombinedRoh } from '@/app/lib/roh/database';
 import { RohEntityType, RohFacetBucket, RohSearchItem } from '@/app/lib/roh/types';
+
+const ROH_KIND_TYPES: RohEntityType[] = [
+  'record',
+  'work',
+  'production',
+  'performance',
+  'asset',
+  'rbo_web',
+  'rbo_stream',
+];
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -16,11 +26,26 @@ function single(value: string | string[] | undefined): string {
 }
 
 function typeValue(value: string): RohEntityType | 'all' {
-  return ['record', 'work', 'production', 'performance', 'asset'].includes(value) ? (value as RohEntityType) : 'all';
+  return ROH_KIND_TYPES.includes(value as RohEntityType) ? (value as RohEntityType) : 'all';
 }
 
 function typeLabel(type: RohSearchItem['type']): string {
-  return type === 'asset' ? 'library' : type;
+  switch (type) {
+    case 'asset':
+      return 'library asset';
+    case 'rbo_web':
+      return 'web content';
+    case 'rbo_stream':
+      return 'stream';
+    default:
+      return type;
+  }
+}
+
+function outboundLinkLabel(item: RohSearchItem): string {
+  if (item.type === 'asset') return 'Open in library';
+  if (item.type === 'rbo_web' || item.type === 'rbo_stream') return 'Open on RBO site';
+  return 'Collections record';
 }
 
 function facetOptions(facets: RohFacetBucket[], selected: string) {
@@ -54,9 +79,8 @@ function ResultCard({ item }: { item: RohSearchItem }) {
           ) : null}
           <div className="min-w-0 flex-1">
             <div className="mb-2 flex flex-wrap items-center gap-2">
-              <Badge variant="secondary" className="capitalize">
-                {typeLabel(item.type)}
-              </Badge>
+              <Badge variant="secondary">{typeLabel(item.type)}</Badge>
+              <span className="text-[0.7rem] text-muted-foreground">{item.source}</span>
               {item.date ? <span className="text-sm text-muted-foreground">{item.date}</span> : null}
             </div>
             <CardTitle className="text-xl leading-snug">{item.title}</CardTitle>
@@ -68,7 +92,7 @@ function ResultCard({ item }: { item: RohSearchItem }) {
         <Button asChild size="sm" variant="outline">
           <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
             <ExternalLink className="h-4 w-4" />
-            {item.type === 'asset' ? 'Open in library' : 'ROH source'}
+            {outboundLinkLabel(item)}
           </a>
         </Button>
         <Button asChild size="sm" variant="ghost">
@@ -83,6 +107,7 @@ export default async function RohPage({ searchParams }: RohPageProps) {
   const resolvedParams = (await searchParams) || {};
   const query = single(resolvedParams.q);
   const type = typeValue(single(resolvedParams.type));
+  const catalogueSource = single(resolvedParams.source);
   const collection = single(resolvedParams.collection);
   const genre = single(resolvedParams.genre);
   const creator = single(resolvedParams.creator);
@@ -123,6 +148,12 @@ export default async function RohPage({ searchParams }: RohPageProps) {
                   <code>pnpm roh:asset-store</code>
                 </pre>
               </div>
+              <div className="space-y-2">
+                <p className="font-medium text-foreground">RBO public web + stream catalogue (rbo.org.uk)</p>
+                <pre className="overflow-x-auto rounded-[2px] bg-muted p-4 text-foreground">
+                  <code>pnpm rbo:fetch</code>
+                </pre>
+              </div>
             </CardContent>
           </Card>
         </main>
@@ -134,6 +165,7 @@ export default async function RohPage({ searchParams }: RohPageProps) {
   const result = searchCombinedRoh(index, {
     query,
     type,
+    source: catalogueSource || undefined,
     collection,
     genre,
     creator,
@@ -144,7 +176,7 @@ export default async function RohPage({ searchParams }: RohPageProps) {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader
-        tagline="Search the Collections catalogue and ROH digital library (combined)."
+        tagline="Search RBO Collections, Asset Library, public web catalogue, Stream, plus ROH archived catalogue."
         links={[
           { href: '/', label: 'IA Search', icon: Search },
           { href: '/roh', label: 'ROH Index', icon: Database, active: true },
@@ -154,10 +186,14 @@ export default async function RohPage({ searchParams }: RohPageProps) {
         meta={
           <span className="inline-flex flex-wrap items-center gap-2">
             <Archive className="h-4 w-4" />
-            <span>
-              {stats.records.toLocaleString()} records · {stats.works.toLocaleString()} works ·{' '}
-              {stats.productions.toLocaleString()} productions · {stats.performances.toLocaleString()} performances ·{' '}
-              {stats.digitalLibraryAssets.toLocaleString()} library assets
+            <span className="text-balance">
+              <span title="Archived catalogue">{stats.records + stats.works + stats.productions + stats.performances} collections entities</span>
+              {' · '}
+              <span title="Digital library snapshots">{stats.assetLibraryAssets} asset rows</span>
+              {' · '}
+              <span title="Site events API">{stats.webContentItems} web catalogue</span>
+              {' · '}
+              <span title="Digital programmes + videos">{stats.streamItems} stream</span>
             </span>
           </span>
         }
@@ -181,6 +217,12 @@ export default async function RohPage({ searchParams }: RohPageProps) {
                 />
               </label>
               <label className="block text-sm">
+                <span className="mb-1 block text-muted-foreground">Source</span>
+                <select name="source" defaultValue={catalogueSource} className="w-full rounded-[2px] border bg-background px-3 py-2">
+                  {facetOptions(result.facets.sources ?? [], catalogueSource)}
+                </select>
+              </label>
+              <label className="block text-sm">
                 <span className="mb-1 block text-muted-foreground">Type</span>
                 <select name="type" defaultValue={type} className="w-full rounded-[2px] border bg-background px-3 py-2">
                   <option value="all">All</option>
@@ -189,6 +231,8 @@ export default async function RohPage({ searchParams }: RohPageProps) {
                   <option value="production">Productions</option>
                   <option value="performance">Performances</option>
                   <option value="asset">Library assets</option>
+                  <option value="rbo_web">RBO web (events)</option>
+                  <option value="rbo_stream">RBO Stream (videos)</option>
                 </select>
               </label>
               <label className="block text-sm">

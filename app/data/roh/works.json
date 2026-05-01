@@ -24,9 +24,34 @@
     "title": "1984",
     "genre": "Opera",
     "composer": "Lorin Maazel",
+    "librettist": "Thomas Meehan",
+    "language": "English",
+    "workDefinition": "Opera in two acts",
+    "titleNotes": "Also known as 'Nineteen Eighty-Four'",
+    "worldPremiere": "3 May 2005, The Royal Opera, Royal Opera House, Covent Garden, London",
+    "rohPremiere": "3 May 2005, The Royal Opera",
+    "rohCompanyPremiere": "3 May 2005, The Royal Opera, Royal Opera House, Covent Garden, London",
     "sourceUrl": "https://www.rohcollections.org.uk/work.aspx?work=1130&row=2&letter=0-9&genre=All&",
-    "metadata": {},
-    "productions": [],
+    "metadata": {
+      "Composer": "Lorin Maazel",
+      "Librettist": "Thomas Meehan",
+      "Work definition": "Opera in two acts",
+      "Title notes": "Also known as 'Nineteen Eighty-Four'",
+      "After": "After the novel '1984' by George Orwell",
+      "Language": "English",
+      "World premiere": "3 May 2005, The Royal Opera, Royal Opera House, Covent Garden, London",
+      "ROH premiere": "3 May 2005, The Royal Opera",
+      "ROH company premiere": "3 May 2005, The Royal Opera, Royal Opera House, Covent Garden, London"
+    },
+    "productions": [
+      {
+        "id": "1677",
+        "title": "1984 (2005)",
+        "company": "The Royal Opera",
+        "performanceCount": 6,
+        "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=1677&row=0"
+      }
+    ],
     "relatedRecordCollections": []
   },
   {

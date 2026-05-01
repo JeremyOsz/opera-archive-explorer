@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 function entityType(value: string | null): RohEntityType | 'all' | undefined {
   if (!value || value === 'all') return value === 'all' ? 'all' : undefined;
-  if (['record', 'work', 'production', 'performance', 'asset'].includes(value)) {
+  if (['record', 'work', 'production', 'performance', 'asset', 'rbo_web', 'rbo_stream'].includes(value)) {
     return value as RohEntityType;
   }
   return undefined;
@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       {
         error:
-          'ROH search corpus is not available. Run pnpm roh:asset-store and/or pnpm roh:crawl then pnpm roh:index.',
+          'Search corpus unavailable. Generate data with pnpm rbo:fetch, pnpm roh:asset-store, and/or crawl + pnpm roh:index.',
         items: [],
         total: 0,
       },
@@ -31,6 +31,7 @@ export async function GET(request: NextRequest) {
   const result = searchCombinedRoh(index, {
     query: params.get('q') || undefined,
     type: entityType(params.get('type')),
+    source: params.get('source') || undefined,
     collection: params.get('collection') || undefined,
     genre: params.get('genre') || undefined,
     creator: params.get('creator') || undefined,

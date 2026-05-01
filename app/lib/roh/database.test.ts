@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { RohAssetStoreFileJson } from './asset-store';
 import { createRohJsonIndex, searchCombinedRoh, searchRohIndex } from './database';
-import { RohDataset } from './types';
+import { RohDataSources, RohDataset } from './types';
 
 const dataset: RohDataset = {
   records: [
@@ -90,7 +90,9 @@ describe('ROH JSON index', () => {
   it('searches across records, works, productions, performances, and cast', () => {
     const index = createRohJsonIndex(dataset);
 
-    assert.deepEqual(searchRohIndex(index, { query: 'Comelli' }).items.map((item) => item.type), ['record']);
+    const comelliHit = searchRohIndex(index, { query: 'Comelli' }).items[0];
+    assert.equal(comelliHit?.type, 'record');
+    assert.equal(comelliHit?.source, RohDataSources.collections);
     assert.deepEqual(searchRohIndex(index, { query: 'Wagner' }).items.map((item) => item.type), ['work']);
     assert.deepEqual(searchRohIndex(index, { query: 'Rankl' }).items.map((item) => item.type), ['performance']);
     assert.deepEqual(searchRohIndex(index, { query: 'Hotter' }).items.map((item) => item.type), ['performance']);
@@ -101,6 +103,8 @@ describe('ROH JSON index', () => {
 
     const allResults = searchRohIndex(index, { query: '' });
     assert.equal(allResults.total, 4);
+    assert.equal(allResults.facets.sources[0]?.value, RohDataSources.collections);
+    assert.equal(allResults.facets.sources[0]?.count, 4);
     assert.equal(allResults.facets.collections[0].value, 'Attilio Comelli Design Collection');
     assert.equal(allResults.facets.genres[0].value, 'Opera');
     assert.equal(allResults.facets.companies[0].value, 'Covent Garden Opera Company');
@@ -112,15 +116,34 @@ describe('ROH JSON index', () => {
   it('merges digital library asset rows into combined search', () => {
     const index = createRohJsonIndex(dataset);
 
-    const combined = searchCombinedRoh(index, { query: '' }, { assetData: assetFixture });
+    const combinedOpts = { assetData: assetFixture, rboCatalogue: null } as const;
+    const combined = searchCombinedRoh(index, { query: '' }, combinedOpts);
     assert.equal(combined.total, 5);
+    assert.ok(combined.facets.sources.some((bucket) => bucket.value === RohDataSources.assetLibrary));
+    assert.ok(combined.facets.sources.some((bucket) => bucket.value === RohDataSources.collections));
 
-    const wagnerAssets = searchCombinedRoh(index, { query: 'wagner', type: 'asset' }, { assetData: assetFixture });
+    const wagnerAssets = searchCombinedRoh(
+      index,
+      { query: 'wagner', type: 'asset' },
+      combinedOpts,
+    );
     assert.equal(wagnerAssets.total, 1);
     assert.equal(wagnerAssets.items[0]?.type, 'asset');
+    assert.equal(wagnerAssets.items[0]?.source, RohDataSources.assetLibrary);
     assert.equal(wagnerAssets.items[0]?.id, 'FA4667F8-10E3-4F80-AE813563AB68E31C');
 
-    const archivesOnlyWorks = searchCombinedRoh(index, { query: 'wagner', type: 'record' }, { assetData: assetFixture });
+    const assetSourceOnly = searchCombinedRoh(
+      index,
+      { query: 'wagner', source: RohDataSources.assetLibrary },
+      combinedOpts,
+    );
+    assert.equal(assetSourceOnly.total, 1);
+
+    const archivesOnlyWorks = searchCombinedRoh(
+      index,
+      { query: 'wagner', type: 'record' },
+      combinedOpts,
+    );
     assert.equal(archivesOnlyWorks.total, 0);
   });
 });

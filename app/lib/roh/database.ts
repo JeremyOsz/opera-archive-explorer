@@ -8,7 +8,17 @@ import {
   type RohAssetStoreFileJson,
 } from './asset-store';
 import {
+  countRboStreamItems,
+  countRboWebItems,
+  flattenRboPublicCatalogue,
+  loadRboPublicCatalogueFile,
+  type FlattenedRboCatalogueRecord,
+  type RboPublicCatalogueFileJson,
+} from './rbo-public-catalogue';
+import {
+  RohDataSources,
   RohDataset,
+  type RohDataSourceLabel,
   RohEntityType,
   RohFacetBucket,
   RohSearchItem,
@@ -18,9 +28,10 @@ import {
 
 export const ROH_INDEX_DIR = join(process.cwd(), 'app', 'data', 'roh');
 
-/** When `assetData` is `null`, combined search skips the digital-library corpus (used in tests). */
+/** `null` on optional keys skips loading that corpus from disk (used in tests). */
 export type CombinedRohSearchOptions = {
   assetData?: RohAssetStoreFileJson | null;
+  rboCatalogue?: RboPublicCatalogueFileJson | null;
 };
 
 interface RohSearchDocument extends RohSearchItem {
@@ -90,7 +101,27 @@ function mergeBuckets(left: RohFacetBucket[], right: RohFacetBucket[], limit = 4
 }
 
 function emptyFacets(): RohSearchResult['facets'] {
-  return { collections: [], genres: [], creators: [], companies: [], types: [] };
+  return { sources: [], collections: [], genres: [], creators: [], companies: [], types: [] };
+}
+
+function documentSource(document: RohSearchDocument): RohDataSourceLabel {
+  return document.source ?? RohDataSources.collections;
+}
+
+function mapFlattenedRboCatalogue(record: FlattenedRboCatalogueRecord): RohSearchDocument {
+  const searchText = normalizeText(record.searchPieces.filter(Boolean).join(' '));
+  return {
+    type: record.type,
+    id: record.id,
+    source: record.source,
+    title: record.title,
+    subtitle: record.subtitle,
+    date: record.date,
+    imageUrl: record.imageUrl,
+    sourceUrl: record.sourceUrl,
+    metadata: record.metadata,
+    searchText,
+  };
 }
 
 function facetsWithAssetCorpus(
@@ -110,12 +141,36 @@ function facetsWithAssetCorpus(
   };
 }
 
+/** Facets reflecting the merged corpus rows (excluding query filtering). */
+function combinedCorpusFacets(
+  archiveFacets: RohSearchResult['facets'] | null | undefined,
+  corpusDocuments: RohSearchDocument[],
+): RohSearchResult['facets'] {
+  const assetSubset = corpusDocuments.filter((document) => document.source === RohDataSources.assetLibrary);
+  const merged = facetsWithAssetCorpus(archiveFacets, assetSubset);
+  const rboSubset = corpusDocuments.filter(
+    (document) =>
+      document.type === 'rbo_web' ||
+      document.type === 'rbo_stream' ||
+      document.source === RohDataSources.stream ||
+      document.source === RohDataSources.webContent,
+  );
+  if (rboSubset.length > 0) {
+    merged.types = mergeBuckets(merged.types, bucket(rboSubset.map((document) => document.type)), 32);
+  }
+  return {
+    ...merged,
+    sources: bucket(corpusDocuments.map((document) => documentSource(document)), 12),
+  };
+}
+
 function assetJsonToSearchItem(
   asset: RohAssetStoreAssetJson,
   collection: RohAssetStoreCollectionJson,
 ): RohSearchItem {
   return {
     type: 'asset',
+    source: RohDataSources.assetLibrary,
     id: asset.id.trim(),
     title: (asset.name || '').trim() || 'Untitled asset',
     subtitle: compact([collection.title, asset.extension?.join(', ')]) || undefined,
@@ -169,6 +224,7 @@ export function buildAssetStoreSearchDocuments(data: RohAssetStoreFileJson): Roh
 function buildSearchDocuments(dataset: RohDataset): RohSearchDocument[] {
   const records = dataset.records.map((record): RohSearchDocument => ({
     type: 'record',
+    source: RohDataSources.collections,
     id: record.id,
     title: record.title,
     subtitle: compact([record.collection, record.objectNumber, record.date]) || undefined,
@@ -197,6 +253,7 @@ function buildSearchDocuments(dataset: RohDataset): RohSearchDocument[] {
 
   const works = dataset.works.map((work): RohSearchDocument => ({
     type: 'work',
+    source: RohDataSources.collections,
     id: work.id,
     title: work.title,
     subtitle: compact([work.genre, work.composer, work.language]) || undefined,
@@ -227,6 +284,7 @@ function buildSearchDocuments(dataset: RohDataset): RohSearchDocument[] {
 
   const productions = dataset.productions.map((production): RohSearchDocument => ({
     type: 'production',
+    source: RohDataSources.collections,
     id: production.id,
     title: production.title,
     subtitle: compact([production.company, production.productionPremiere]) || undefined,
@@ -251,6 +309,7 @@ function buildSearchDocuments(dataset: RohDataset): RohSearchDocument[] {
 
   const performances = dataset.performances.map((performance): RohSearchDocument => ({
     type: 'performance',
+    source: RohDataSources.collections,
     id: performance.id,
     title: performance.title,
     subtitle: compact([performance.venue, performance.conductor]) || undefined,
@@ -281,6 +340,7 @@ function buildSearchDocuments(dataset: RohDataset): RohSearchDocument[] {
 
 function buildFacets(dataset: RohDataset, searchDocuments: RohSearchDocument[]): RohSearchResult['facets'] {
   return {
+    sources: bucket(searchDocuments.map((document) => documentSource(document)), 12),
     collections: bucket(dataset.records.map((record) => record.collection)),
     genres: bucket(dataset.works.map((work) => work.genre)),
     creators: bucket([
@@ -298,6 +358,7 @@ function buildFacets(dataset: RohDataset, searchDocuments: RohSearchDocument[]):
 function toSearchItem(document: RohSearchDocument): RohSearchItem {
   return {
     type: document.type,
+    source: documentSource(document),
     id: document.id,
     title: document.title,
     subtitle: document.subtitle,
@@ -352,6 +413,7 @@ function queryTermsFromParams(params: RohSearchParams): string[] {
 }
 
 function passesSearchFilters(document: RohSearchDocument, params: RohSearchParams, queryTerms: string[]): boolean {
+  if (params.source && documentSource(document) !== params.source) return false;
   if (params.type && params.type !== 'all' && document.type !== params.type) return false;
   if (params.collection && document.collection !== params.collection) return false;
   if (params.genre && document.genre !== params.genre) return false;
@@ -385,7 +447,23 @@ export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DI
     performances: existsSync(performancesPath) ? JSON.parse(readFileSync(performancesPath, 'utf8')) : [],
   };
 
-  const index = { ...partialIndex, dataset };
+  const searchDocuments = (partialIndex.searchDocuments || []).map((document) => ({
+    ...document,
+    source: document.source ?? RohDataSources.collections,
+  })) as RohSearchDocument[];
+
+  const facets = partialIndex.facets
+    ? {
+        sources: bucket(searchDocuments.map((document) => documentSource(document)), 12),
+        collections: partialIndex.facets.collections ?? [],
+        genres: partialIndex.facets.genres ?? [],
+        creators: partialIndex.facets.creators ?? [],
+        companies: partialIndex.facets.companies ?? [],
+        types: partialIndex.facets.types ?? [],
+      }
+    : buildFacets(dataset, searchDocuments);
+
+  const index: RohJsonIndex = { ...partialIndex, dataset, searchDocuments, facets };
   if (dir === (process.env.ROH_INDEX_DIR || ROH_INDEX_DIR)) {
     memoizedIndex = index;
   }
@@ -398,10 +476,14 @@ export function searchRohIndex(index: RohJsonIndex, params: RohSearchParams): Ro
   const queryTerms = queryTermsFromParams(params);
   const matches = index.searchDocuments.filter((document) => passesSearchFilters(document, params, queryTerms));
 
+  const facets = index.facets;
   return {
     items: matches.slice(offset, offset + limit).map(toSearchItem),
     total: matches.length,
-    facets: index.facets,
+    facets: {
+      ...facets,
+      sources: bucket(index.searchDocuments.map((document) => documentSource(document)), 12),
+    },
   };
 }
 
@@ -422,8 +504,21 @@ export function searchCombinedRoh(
   const assetDocuments =
     resolvedAssetJson && resolvedAssetJson.collections?.length ? buildAssetStoreSearchDocuments(resolvedAssetJson) : [];
 
+  let catalogue: RboPublicCatalogueFileJson | null;
+  if (opts?.rboCatalogue === null) catalogue = null;
+  else if (opts?.rboCatalogue !== undefined) catalogue = opts.rboCatalogue;
+  else catalogue = loadRboPublicCatalogueFile();
+
+  const rboFlattened =
+    catalogue &&
+    (catalogue.events?.length || catalogue.digitalEvents?.length || catalogue.digitalEventVideos?.length)
+      ? flattenRboPublicCatalogue(catalogue)
+      : [];
+
+  const catalogueDocuments = rboFlattened.map(mapFlattenedRboCatalogue);
+
   const archiveDocuments = index?.searchDocuments ?? [];
-  const mergedDocuments = [...archiveDocuments, ...assetDocuments];
+  const mergedDocuments = [...archiveDocuments, ...assetDocuments, ...catalogueDocuments];
   const matches = mergedDocuments
     .filter((document) => passesSearchFilters(document, params, queryTerms))
     .sort((a, b) => a.title.localeCompare(b.title));
@@ -431,13 +526,15 @@ export function searchCombinedRoh(
   return {
     items: matches.slice(offset, offset + limit).map(toSearchItem),
     total: matches.length,
-    facets: facetsWithAssetCorpus(index?.facets ?? null, assetDocuments),
+    facets: combinedCorpusFacets(index?.facets ?? null, mergedDocuments),
   };
 }
 
 export function hasRohSearchCorpus(index: RohJsonIndex | null): boolean {
   if (index?.searchDocuments.length) return true;
-  return countRohAssetsInFile(loadRohAssetStoreFile()) > 0;
+  if (countRohAssetsInFile(loadRohAssetStoreFile())) return true;
+  const catalogue = loadRboPublicCatalogueFile();
+  return countRboWebItems(catalogue) > 0 || countRboStreamItems(catalogue) > 0;
 }
 
 export function getCombinedRohSummary(index: RohJsonIndex | null): {
@@ -445,16 +542,22 @@ export function getCombinedRohSummary(index: RohJsonIndex | null): {
   works: number;
   productions: number;
   performances: number;
-  digitalLibraryAssets: number;
+  assetLibraryAssets: number;
+  webContentItems: number;
+  streamItems: number;
 } {
   const base = index?.metadata.counts;
   const assetFile = loadRohAssetStoreFile();
+  const catalogue = loadRboPublicCatalogueFile();
+
   return {
     records: base?.records ?? 0,
     works: base?.works ?? 0,
     productions: base?.productions ?? 0,
     performances: base?.performances ?? 0,
-    digitalLibraryAssets: countRohAssetsInFile(assetFile),
+    assetLibraryAssets: countRohAssetsInFile(assetFile),
+    webContentItems: countRboWebItems(catalogue),
+    streamItems: countRboStreamItems(catalogue),
   };
 }
 
@@ -464,6 +567,16 @@ export function getCombinedRohItem(
   id: string,
   opts?: CombinedRohSearchOptions,
 ): RohSearchItem | null {
+  if (type === 'rbo_web' || type === 'rbo_stream') {
+    let catalogue: RboPublicCatalogueFileJson | null;
+    if (opts?.rboCatalogue === null) catalogue = null;
+    else if (opts?.rboCatalogue !== undefined) catalogue = opts.rboCatalogue;
+    else catalogue = loadRboPublicCatalogueFile();
+    const row = flattenRboPublicCatalogue(catalogue).find((entry) => entry.type === type && entry.id === id);
+    if (!row) return null;
+    return toSearchItem(mapFlattenedRboCatalogue(row));
+  }
+
   if (type !== 'asset') {
     if (!index) return null;
     return getRohItem(index, type, id);

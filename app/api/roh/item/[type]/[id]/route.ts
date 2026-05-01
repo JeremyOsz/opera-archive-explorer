@@ -6,7 +6,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 function isRohType(value: string): value is RohEntityType {
-  return ['record', 'work', 'production', 'performance', 'asset'].includes(value);
+  return ['record', 'work', 'production', 'performance', 'asset', 'rbo_web', 'rbo_stream'].includes(value);
 }
 
 export async function GET(

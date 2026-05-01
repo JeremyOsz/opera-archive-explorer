@@ -1,6 +1,23 @@
 export const ROH_BASE_URL = 'https://www.rohcollections.org.uk/';
 
-export type RohEntityType = 'record' | 'work' | 'production' | 'performance' | 'asset';
+/** Four-way split for catalogue + streams + editorial UIs */
+export const RohDataSources = {
+  collections: 'RBO Collections',
+  assetLibrary: 'RBO Asset Library',
+  webContent: 'RBO Web Content',
+  stream: 'RBO Stream',
+} as const;
+
+export type RohDataSourceLabel = (typeof RohDataSources)[keyof typeof RohDataSources];
+
+export type RohEntityType =
+  | 'record'
+  | 'work'
+  | 'production'
+  | 'performance'
+  | 'asset'
+  | 'rbo_web'
+  | 'rbo_stream';
 
 export interface RohRelatedRecordCollection {
   collection: string;
@@ -133,6 +150,8 @@ export interface RohDataset {
 export interface RohSearchItem {
   type: RohEntityType;
   id: string;
+  /** Where this row originated (collections crawl, Asset Library snapshot, etc.) */
+  source: RohDataSourceLabel;
   title: string;
   subtitle?: string;
   date?: string;
@@ -147,6 +166,7 @@ export interface RohFacetBucket {
 }
 
 export interface RohSearchFacets {
+  sources: RohFacetBucket[];
   collections: RohFacetBucket[];
   genres: RohFacetBucket[];
   creators: RohFacetBucket[];
@@ -157,6 +177,8 @@ export interface RohSearchFacets {
 export interface RohSearchParams {
   query?: string;
   type?: RohEntityType | 'all';
+  /** One of `RohDataSources.*` labels */
+  source?: string;
   collection?: string;
   genre?: string;
   creator?: string;
