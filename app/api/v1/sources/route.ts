@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { hasRohSearchCorpus, loadRohJsonIndex, searchCombinedRoh } from '@/app/lib/roh/database';
 import { RohDataSources, RohEntityType } from '@/app/lib/roh/types';
 
 export const runtime = 'nodejs';
@@ -12,8 +13,14 @@ const SOURCE_TYPES: Record<string, RohEntityType[]> = {
 };
 
 export async function GET() {
+  const index = loadRohJsonIndex();
+  const sourceCounts = hasRohSearchCorpus(index)
+    ? new Map(searchCombinedRoh(index, { limit: 1 }).facets.sources.map((bucket) => [bucket.value, bucket.count]))
+    : new Map<string, number>();
+
   const sources = Object.values(RohDataSources).map((label) => ({
     label,
+    count: sourceCounts.get(label) || 0,
     types: SOURCE_TYPES[label] || [],
   }));
 

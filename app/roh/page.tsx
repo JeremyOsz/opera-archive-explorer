@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Archive, BarChart3, Compass, Database, ExternalLink, Search, SlidersHorizontal } from 'lucide-react';
 import SiteHeader from '@/app/components/SiteHeader';
 import { getCombinedRohSummary, hasRohSearchCorpus, loadRohJsonIndex, searchCombinedRoh } from '@/app/lib/roh/database';
-import { RohEntityType, RohFacetBucket, RohSearchItem } from '@/app/lib/roh/types';
+import { RohDataSources, RohEntityType, RohFacetBucket, RohSearchItem } from '@/app/lib/roh/types';
 
 const ROH_KIND_TYPES: RohEntityType[] = [
   'record',
@@ -20,6 +20,8 @@ import { Button } from '@/components/ui/button';
 interface RohPageProps {
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 }
+
+type GroupByMode = 'none' | 'collection_asset';
 
 function single(value: string | string[] | undefined): string {
   return Array.isArray(value) ? value[0] || '' : value || '';
@@ -59,6 +61,79 @@ function facetOptions(facets: RohFacetBucket[], selected: string) {
       ))}
       {selected && !facets.some((facet) => facet.value === selected) ? <option value={selected}>{selected}</option> : null}
     </>
+  );
+}
+
+function groupByValue(value: string): GroupByMode {
+  return value === 'collection_asset' ? 'collection_asset' : 'none';
+}
+
+function hrefWithFilters(base: Record<string, string>, updates: Record<string, string | undefined>): string {
+  const params = new URLSearchParams();
+  const merged: Record<string, string | undefined> = { ...base, ...updates };
+
+  for (const [key, value] of Object.entries(merged)) {
+    if (value && value.trim().length > 0) {
+      params.set(key, value);
+    }
+  }
+
+  const query = params.toString();
+  return query ? `/roh?${query}` : '/roh';
+}
+
+function compactFacetList(facets: RohFacetBucket[], selected: string, max = 12): RohFacetBucket[] {
+  if (!selected) return facets.slice(0, max);
+  if (facets.some((facet) => facet.value === selected)) return facets.slice(0, max);
+  const selectedBucket: RohFacetBucket = { value: selected, count: 0 };
+  return [selectedBucket, ...facets.slice(0, Math.max(0, max - 1))];
+}
+
+function TagFacetFilter({
+  label,
+  paramName,
+  facets,
+  selected,
+  baseFilters,
+}: {
+  label: string;
+  paramName: 'collection' | 'genre' | 'creator' | 'company';
+  facets: RohFacetBucket[];
+  selected: string;
+  baseFilters: Record<string, string>;
+}) {
+  const visibleFacets = compactFacetList(facets, selected);
+
+  return (
+    <div className="space-y-2">
+      <p className="text-sm text-muted-foreground">{label}</p>
+      <div className="flex flex-wrap gap-2 min-w-0">
+        <Button
+          asChild
+          size="sm"
+          variant={selected ? 'outline' : 'default'}
+          className="h-auto max-w-full min-w-0 shrink whitespace-normal break-words text-left"
+        >
+          <Link href={hrefWithFilters(baseFilters, { [paramName]: '' })}>Any</Link>
+        </Button>
+        {visibleFacets.map((facet) => {
+          const isActive = facet.value === selected;
+          return (
+            <Button
+              key={facet.value}
+              asChild
+              size="sm"
+              variant={isActive ? 'default' : 'outline'}
+              className="h-auto max-w-full min-w-0 shrink whitespace-normal break-words text-left"
+            >
+              <Link href={hrefWithFilters(baseFilters, { [paramName]: isActive ? '' : facet.value })}>
+                {facet.value} ({facet.count})
+              </Link>
+            </Button>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 
@@ -112,7 +187,18 @@ export default async function RohPage({ searchParams }: RohPageProps) {
   const genre = single(resolvedParams.genre);
   const creator = single(resolvedParams.creator);
   const company = single(resolvedParams.company);
+  const groupBy = groupByValue(single(resolvedParams.groupBy));
   const index = loadRohJsonIndex();
+  const baseFilters: Record<string, string> = {
+    q: query,
+    type,
+    source: catalogueSource,
+    collection,
+    genre,
+    creator,
+    company,
+    groupBy,
+  };
 
   if (!hasRohSearchCorpus(index)) {
     return (
@@ -172,6 +258,12 @@ export default async function RohPage({ searchParams }: RohPageProps) {
     company,
     limit: 50,
   });
+  const grouped = groupBy === 'collection_asset';
+  const collectionItems = grouped ? result.items.filter((item) => item.source === RohDataSources.collections) : [];
+  const assetItems = grouped ? result.items.filter((item) => item.source === RohDataSources.assetLibrary) : [];
+  const otherItems = grouped
+    ? result.items.filter((item) => item.source !== RohDataSources.collections && item.source !== RohDataSources.assetLibrary)
+    : [];
 
   return (
     <div className="min-h-screen bg-background">
@@ -201,8 +293,8 @@ export default async function RohPage({ searchParams }: RohPageProps) {
 
       <main className="container mx-auto px-4 py-10">
         <div className="grid gap-6 lg:grid-cols-[18rem_1fr]">
-          <aside>
-            <form className="sticky top-4 space-y-4 rounded-[2px] border bg-card p-4" action="/roh">
+          <aside className="space-y-4">
+            <form className="space-y-4 rounded-[2px] border bg-card p-4" action="/roh">
               <div className="flex items-center gap-2 text-sm font-semibold">
                 <SlidersHorizontal className="h-4 w-4" />
                 Search and filters
@@ -236,29 +328,44 @@ export default async function RohPage({ searchParams }: RohPageProps) {
                 </select>
               </label>
               <label className="block text-sm">
-                <span className="mb-1 block text-muted-foreground">Collection</span>
-                <select name="collection" defaultValue={collection} className="w-full rounded-[2px] border bg-background px-3 py-2">
-                  {facetOptions(result.facets.collections, collection)}
+                <span className="mb-1 block text-muted-foreground">Group results</span>
+                <select name="groupBy" defaultValue={groupBy} className="w-full rounded-[2px] border bg-background px-3 py-2">
+                  <option value="none">No grouping</option>
+                  <option value="collection_asset">Collection vs asset</option>
                 </select>
               </label>
-              <label className="block text-sm">
-                <span className="mb-1 block text-muted-foreground">Genre</span>
-                <select name="genre" defaultValue={genre} className="w-full rounded-[2px] border bg-background px-3 py-2">
-                  {facetOptions(result.facets.genres, genre)}
-                </select>
-              </label>
-              <label className="block text-sm">
-                <span className="mb-1 block text-muted-foreground">Creator / composer</span>
-                <select name="creator" defaultValue={creator} className="w-full rounded-[2px] border bg-background px-3 py-2">
-                  {facetOptions(result.facets.creators, creator)}
-                </select>
-              </label>
-              <label className="block text-sm">
-                <span className="mb-1 block text-muted-foreground">Company</span>
-                <select name="company" defaultValue={company} className="w-full rounded-[2px] border bg-background px-3 py-2">
-                  {facetOptions(result.facets.companies, company)}
-                </select>
-              </label>
+              <input type="hidden" name="collection" value={collection} />
+              <input type="hidden" name="genre" value={genre} />
+              <input type="hidden" name="creator" value={creator} />
+              <input type="hidden" name="company" value={company} />
+              <TagFacetFilter
+                label="Collection"
+                paramName="collection"
+                facets={result.facets.collections}
+                selected={collection}
+                baseFilters={baseFilters}
+              />
+              <TagFacetFilter
+                label="Genre"
+                paramName="genre"
+                facets={result.facets.genres}
+                selected={genre}
+                baseFilters={baseFilters}
+              />
+              <TagFacetFilter
+                label="Creator / composer"
+                paramName="creator"
+                facets={result.facets.creators}
+                selected={creator}
+                baseFilters={baseFilters}
+              />
+              <TagFacetFilter
+                label="Company"
+                paramName="company"
+                facets={result.facets.companies}
+                selected={company}
+                baseFilters={baseFilters}
+              />
               <div className="flex gap-2">
                 <Button type="submit" className="flex-1">
                   Search
@@ -282,11 +389,46 @@ export default async function RohPage({ searchParams }: RohPageProps) {
             </div>
 
             {result.items.length > 0 ? (
-              <div className="space-y-4">
-                {result.items.map((item) => (
-                  <ResultCard key={`${item.type}-${item.id}`} item={item} />
-                ))}
-              </div>
+              grouped ? (
+                <div className="space-y-8">
+                  {collectionItems.length > 0 ? (
+                    <div className="space-y-4">
+                      <h2 className="text-lg font-semibold">Collections ({collectionItems.length})</h2>
+                      <div className="space-y-4">
+                        {collectionItems.map((item) => (
+                          <ResultCard key={`${item.type}-${item.id}`} item={item} />
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+                  {assetItems.length > 0 ? (
+                    <div className="space-y-4">
+                      <h2 className="text-lg font-semibold">Assets ({assetItems.length})</h2>
+                      <div className="space-y-4">
+                        {assetItems.map((item) => (
+                          <ResultCard key={`${item.type}-${item.id}`} item={item} />
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+                  {otherItems.length > 0 ? (
+                    <div className="space-y-4">
+                      <h2 className="text-lg font-semibold">Other sources ({otherItems.length})</h2>
+                      <div className="space-y-4">
+                        {otherItems.map((item) => (
+                          <ResultCard key={`${item.type}-${item.id}`} item={item} />
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  {result.items.map((item) => (
+                    <ResultCard key={`${item.type}-${item.id}`} item={item} />
+                  ))}
+                </div>
+              )
             ) : (
               <Card>
                 <CardContent className="py-12 text-center text-muted-foreground">No ROH items matched the current filters.</CardContent>
