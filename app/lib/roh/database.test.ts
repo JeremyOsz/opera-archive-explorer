@@ -223,4 +223,132 @@ describe('ROH JSON index', () => {
     assert.equal(upTo19490511.items.some((item) => item.id === '10388'), false);
     assert.equal(upTo19490511.items.some((item) => item.id === '1621'), false);
   });
+
+  it('enriches empty work and record metadata from known fields', () => {
+    const index = createRohJsonIndex({
+      ...dataset,
+      records: [
+        ...dataset.records,
+        {
+          id: 'r-enrich',
+          title: 'Sketch for Hall of Valhalla',
+          collection: 'Design Collection',
+          objectNumber: 'ROH/SKETCH/0001',
+          date: '1902',
+          description: 'Pencil sketch for stage elevation.',
+          creator: 'Anonymous Workshop',
+          dimensions: '20 x 30 cm',
+          condition: 'Fair',
+          sourceUrl: 'https://www.rohcollections.org.uk/record.aspx?ref=r-enrich',
+          metadata: {},
+        },
+      ],
+      works: [
+        ...dataset.works,
+        {
+          id: 'w-enrich',
+          title: 'Example Opera',
+          genre: 'Opera',
+          composer: 'Jane Composer',
+          librettist: 'John Librettist',
+          musicTitle: 'Example Opera',
+          language: 'Italian',
+          workDefinition: 'Opera in three acts',
+          titleNotes: 'Early title variant',
+          notes: 'Created for testing',
+          worldPremiere: '1901',
+          rohPremiere: '1903',
+          rohCompanyPremiere: '1904',
+          sourceUrl: 'https://www.rohcollections.org.uk/work.aspx?work=w-enrich',
+          metadata: {},
+          productions: [],
+          relatedRecordCollections: [],
+        },
+      ],
+    });
+
+    const enrichedRecord = index.dataset.records.find((record) => record.id === 'r-enrich');
+    assert.equal(enrichedRecord?.metadata.Collection, 'Design Collection');
+    assert.equal(enrichedRecord?.metadata['Object number'], 'ROH/SKETCH/0001');
+    assert.equal(enrichedRecord?.metadata.Creator, 'Anonymous Workshop');
+    assert.equal(enrichedRecord?.metadata.Description, 'Pencil sketch for stage elevation.');
+
+    const enrichedWork = index.dataset.works.find((work) => work.id === 'w-enrich');
+    assert.equal(enrichedWork?.metadata.Composer, 'Jane Composer');
+    assert.equal(enrichedWork?.metadata.Librettist, 'John Librettist');
+    assert.equal(enrichedWork?.metadata.Language, 'Italian');
+    assert.equal(enrichedWork?.metadata['World premiere'], '1901');
+    assert.equal(enrichedWork?.metadata['ROH company premiere'], '1904');
+  });
+
+  it('does not overwrite existing metadata entries during enrichment', () => {
+    const index = createRohJsonIndex({
+      ...dataset,
+      works: [
+        {
+          ...dataset.works[0],
+          metadata: {
+            Composer: 'Already Curated',
+          },
+        },
+      ],
+    });
+
+    const work = index.dataset.works[0];
+    assert.equal(work.metadata.Composer, 'Already Curated');
+    assert.equal(work.metadata.Language, 'German');
+  });
+
+  it('enriches production and performance metadata from known fields', () => {
+    const index = createRohJsonIndex({
+      ...dataset,
+      productions: [
+        {
+          id: 'p-enrich',
+          workId: '553',
+          title: 'Example Production',
+          company: 'Test Company',
+          productionPremiere: '10 June 1950',
+          producer: 'Test Producer',
+          costumeDesigner: 'Test Designer',
+          notes: 'Revival staging',
+          sourceUrl: 'https://www.rohcollections.org.uk/production.aspx?production=p-enrich',
+          metadata: {},
+          performances: [],
+        },
+      ],
+      performances: [
+        {
+          id: 'pf-enrich',
+          productionId: 'p-enrich',
+          title: 'Example Production-10 June 1950 Evening',
+          date: '10 June 1950',
+          session: 'Evening',
+          venue: 'Royal Opera House',
+          company: 'Test Company',
+          status: 'Complete',
+          conductor: 'Test Conductor',
+          leader: 'Test Leader',
+          sourceUrl: 'https://www.rohcollections.org.uk/performance.aspx?performance=pf-enrich',
+          metadata: {},
+          cast: [],
+        },
+      ],
+    });
+
+    const enrichedProduction = index.dataset.productions[0];
+    assert.equal(enrichedProduction.metadata.Company, 'Test Company');
+    assert.equal(enrichedProduction.metadata['Production premiere'], '10 June 1950');
+    assert.equal(enrichedProduction.metadata.Producer, 'Test Producer');
+    assert.equal(enrichedProduction.metadata['Costume designer'], 'Test Designer');
+    assert.equal(enrichedProduction.metadata.Notes, 'Revival staging');
+
+    const enrichedPerformance = index.dataset.performances[0];
+    assert.equal(enrichedPerformance.metadata.Venue, 'Royal Opera House');
+    assert.equal(enrichedPerformance.metadata.Company, 'Test Company');
+    assert.equal(enrichedPerformance.metadata['Performance status'], 'Complete');
+    assert.equal(enrichedPerformance.metadata.Conductor, 'Test Conductor');
+    assert.equal(enrichedPerformance.metadata.Leader, 'Test Leader');
+    assert.equal(enrichedPerformance.metadata.Session, 'Evening');
+  });
 });

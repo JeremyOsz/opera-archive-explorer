@@ -85,6 +85,51 @@ function metadataText(metadata: Record<string, string>): string {
     .join(' ');
 }
 
+function setMetadataIfMissing(metadata: Record<string, string>, key: string, value: string | undefined): void {
+  if (!value) return;
+  if (metadata[key]) return;
+  metadata[key] = value;
+}
+
+function enrichRecordMetadata(record: RohDataset['records'][number]): RohDataset['records'][number] {
+  const metadata = { ...record.metadata };
+  setMetadataIfMissing(metadata, 'Collection', record.collection);
+  setMetadataIfMissing(metadata, 'Object number', record.objectNumber);
+  setMetadataIfMissing(metadata, 'Date', record.date);
+  setMetadataIfMissing(metadata, 'Description', record.description);
+  setMetadataIfMissing(metadata, 'Creator', record.creator);
+  setMetadataIfMissing(metadata, 'Dimensions', record.dimensions);
+  setMetadataIfMissing(metadata, 'Condition', record.condition);
+  setMetadataIfMissing(metadata, 'Related work ID', record.relatedWorkId);
+  return { ...record, metadata };
+}
+
+function enrichWorkMetadata(work: RohDataset['works'][number]): RohDataset['works'][number] {
+  const metadata = { ...work.metadata };
+  setMetadataIfMissing(metadata, 'Genre', work.genre);
+  setMetadataIfMissing(metadata, 'Composer', work.composer);
+  setMetadataIfMissing(metadata, 'Librettist', work.librettist);
+  setMetadataIfMissing(metadata, 'Music title', work.musicTitle);
+  setMetadataIfMissing(metadata, 'Language', work.language);
+  setMetadataIfMissing(metadata, 'Work definition', work.workDefinition);
+  setMetadataIfMissing(metadata, 'Title notes', work.titleNotes);
+  setMetadataIfMissing(metadata, 'Notes', work.notes);
+  setMetadataIfMissing(metadata, 'World premiere', work.worldPremiere);
+  setMetadataIfMissing(metadata, 'ROH premiere', work.rohPremiere);
+  setMetadataIfMissing(metadata, 'ROH company premiere', work.rohCompanyPremiere);
+  setMetadataIfMissing(metadata, 'Related work ID', work.relatedWorkId);
+  return { ...work, metadata };
+}
+
+function enrichRohDatasetMetadata(dataset: RohDataset): RohDataset {
+  return {
+    records: dataset.records.map(enrichRecordMetadata),
+    works: dataset.works.map(enrichWorkMetadata),
+    productions: dataset.productions,
+    performances: dataset.performances,
+  };
+}
+
 function bucket(values: Array<string | undefined>, limit = 30): RohFacetBucket[] {
   const counts = new Map<string, number>();
   values.filter(Boolean).forEach((value) => counts.set(value!, (counts.get(value!) || 0) + 1));
@@ -320,26 +365,27 @@ function toSearchItem(document: RohSearchDocument): RohSearchItem {
 }
 
 export function createRohJsonIndex(dataset: RohDataset): RohJsonIndex {
-  const searchDocuments = buildSearchDocuments(dataset);
+  const enrichedDataset = enrichRohDatasetMetadata(dataset);
+  const searchDocuments = buildSearchDocuments(enrichedDataset);
   return {
     metadata: {
       generatedAt: new Date().toISOString(),
       version: '1.0.0',
-      counts: getRohDatasetStats(dataset),
+      counts: getRohDatasetStats(enrichedDataset),
     },
-    dataset,
+    dataset: enrichedDataset,
     searchDocuments,
-    facets: buildFacets(dataset, searchDocuments),
+    facets: buildFacets(enrichedDataset, searchDocuments),
   };
 }
 
 export function writeRohJsonIndex(dataset: RohDataset, dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR): RohJsonIndex {
   mkdirSync(dir, { recursive: true });
   const index = createRohJsonIndex(dataset);
-  writeFileSync(join(dir, 'records.json'), JSON.stringify(dataset.records, null, 2));
-  writeFileSync(join(dir, 'works.json'), JSON.stringify(dataset.works, null, 2));
-  writeFileSync(join(dir, 'productions.json'), JSON.stringify(dataset.productions, null, 2));
-  writeFileSync(join(dir, 'performances.json'), JSON.stringify(dataset.performances, null, 2));
+  writeFileSync(join(dir, 'records.json'), JSON.stringify(index.dataset.records, null, 2));
+  writeFileSync(join(dir, 'works.json'), JSON.stringify(index.dataset.works, null, 2));
+  writeFileSync(join(dir, 'productions.json'), JSON.stringify(index.dataset.productions, null, 2));
+  writeFileSync(join(dir, 'performances.json'), JSON.stringify(index.dataset.performances, null, 2));
   writeFileSync(
     join(dir, 'index.json'),
     JSON.stringify(
@@ -542,29 +588,15 @@ export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DI
   const productionsPath = join(dir, 'productions.json');
   const performancesPath = join(dir, 'performances.json');
   const partialIndex = JSON.parse(readFileSync(indexPath, 'utf8')) as Omit<RohJsonIndex, 'dataset'>;
-  const dataset: RohDataset = {
+  const loadedDataset: RohDataset = {
     records: existsSync(recordsPath) ? JSON.parse(readFileSync(recordsPath, 'utf8')) : [],
     works: existsSync(worksPath) ? JSON.parse(readFileSync(worksPath, 'utf8')) : [],
     productions: existsSync(productionsPath) ? JSON.parse(readFileSync(productionsPath, 'utf8')) : [],
     performances: existsSync(performancesPath) ? JSON.parse(readFileSync(performancesPath, 'utf8')) : [],
   };
-
-  const searchDocuments = (partialIndex.searchDocuments || []).map((document) => ({
-    ...document,
-    source: document.source ?? RohDataSources.collections,
-  })) as RohSearchDocument[];
-
-  const facets = partialIndex.facets
-    ? {
-        sources: bucket(searchDocuments.map((document) => documentSource(document)), 12),
-        collections: partialIndex.facets.collections ?? [],
-        genres: partialIndex.facets.genres ?? [],
-        creators: partialIndex.facets.creators ?? [],
-        companies: partialIndex.facets.companies ?? [],
-        types: partialIndex.facets.types ?? [],
-      }
-    : buildFacets(dataset, searchDocuments);
-
+  const dataset = enrichRohDatasetMetadata(loadedDataset);
+  const searchDocuments = buildSearchDocuments(dataset);
+  const facets = buildFacets(dataset, searchDocuments);
   const index: RohJsonIndex = { ...partialIndex, dataset, searchDocuments, facets };
   if (shouldMemoize) {
     memoizedIndex = index;

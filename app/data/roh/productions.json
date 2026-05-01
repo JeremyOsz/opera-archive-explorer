@@ -181,7 +181,7 @@
     "producer": "Tamara Karsavina Karsavina reproduced mine scenes, including Berthe's recounting of the legend of the Wilis (in Act I).",
     "costumeDesigner": "James Bailey",
     "notes": "First performed at Metropolitan Opera House, New York.",
-    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=115&row=1",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=115",
     "metadata": {
       "Company": "The Royal Ballet",
       "Production premiere": "30 September 1960",
@@ -503,6 +503,346 @@
         "collection": "Nadia Nerina Collection",
         "count": 1,
         "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=115&collection=Nadia%20Nerina%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "11638",
+    "title": "Lavender's Blue (1996)",
+    "company": "National Youth Ballet of Great Britain",
+    "notes": "This production was used by the National Youth Ballet of Great Britain at the Royal Opera House on 3 November 1996.",
+    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=11638",
+    "metadata": {
+      "Company": "National Youth Ballet of Great Britain",
+      "Designer": "Jill Tookey",
+      "Notes": "This production was used by the National Youth Ballet of Great Britain at the Royal Opera House on 3 November 1996."
+    },
+    "performances": [
+      {
+        "id": "11639",
+        "date": "3 November 1996",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11639&row=0"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "11641",
+    "title": "Concertino (1996)",
+    "company": "National Youth Ballet of Great Britain",
+    "productionPremiere": "1996",
+    "notes": "This production was used by the National Youth Ballet of Great Britain at the Royal Opera House on 3 November 1996.",
+    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=11641",
+    "metadata": {
+      "Company": "National Youth Ballet of Great Britain",
+      "Production premiere": "1996",
+      "Designer": "Jill Tookey",
+      "Notes": "This production was used by the National Youth Ballet of Great Britain at the Royal Opera House on 3 November 1996."
+    },
+    "performances": [
+      {
+        "id": "11642",
+        "date": "3 November 1996",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11642&row=0"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "11644",
+    "title": "Impressions of Sophie (1996)",
+    "company": "National Youth Ballet of Great Britain",
+    "costumeDesigner": "Jill Tookey",
+    "notes": "This production was used by the National Youth Ballet of Great Britain at the Royal Opera House on 3 November 1996.",
+    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=11644",
+    "metadata": {
+      "Company": "National Youth Ballet of Great Britain",
+      "Costume designer": "Jill Tookey",
+      "Notes": "This production was used by the National Youth Ballet of Great Britain at the Royal Opera House on 3 November 1996."
+    },
+    "performances": [
+      {
+        "id": "11645",
+        "date": "3 November 1996",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11645&row=0"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "11745",
+    "workId": "112",
+    "title": "Side Show (1973)",
+    "company": "The Royal Ballet",
+    "productionPremiere": "13 January 1973",
+    "costumeDesigner": "Thomas O'Neil",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=11745",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Production premiere": "13 January 1973",
+      "Costume designer": "Thomas O'Neil",
+      "Revival lighting designer": "John B Read (1995 revival)"
+    },
+    "performances": [
+      {
+        "id": "11746",
+        "date": "13 January 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11746&row=0"
+      },
+      {
+        "id": "9336",
+        "date": "23 November 1995",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9336&row=1"
+      },
+      {
+        "id": "9348",
+        "date": "25 November 1995",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9348&row=2"
+      },
+      {
+        "id": "9356",
+        "date": "30 November 1995",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9356&row=3"
+      },
+      {
+        "id": "9360",
+        "date": "7 December 1995",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9360&row=4"
+      },
+      {
+        "id": "9365",
+        "date": "14 December 1995",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9365&row=5"
+      },
+      {
+        "id": "9369",
+        "date": "14 December 1995",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9369&row=6"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Costume Collection",
+        "count": 4,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=11745&collection=Costume%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "12088",
+    "title": "Devil's Holiday - excerpts (2004)",
+    "company": "The Royal Ballet",
+    "productionPremiere": "13 November 2004",
+    "costumeDesigner": "Allan Watkins After Eugene Berman",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=12088",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Production premiere": "13 November 2004",
+      "Costume designer": "Allan Watkins After Eugene Berman",
+      "Sponsor": "Estate of Miss Jessie M Dowell"
+    },
+    "performances": [
+      {
+        "id": "1844",
+        "date": "13 November 2004",
+        "session": "Matinee 1.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1844&row=0"
+      },
+      {
+        "id": "1846",
+        "date": "13 November 2004",
+        "session": "Matinee 1.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1846&row=1"
+      },
+      {
+        "id": "1852",
+        "date": "13 November 2004",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1852&row=2"
+      },
+      {
+        "id": "1854",
+        "date": "13 November 2004",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1854&row=3"
+      },
+      {
+        "id": "1863",
+        "date": "17 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1863&row=4"
+      },
+      {
+        "id": "1861",
+        "date": "17 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1861&row=5"
+      },
+      {
+        "id": "1872",
+        "date": "19 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1872&row=6"
+      },
+      {
+        "id": "1870",
+        "date": "19 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1870&row=7"
+      },
+      {
+        "id": "1882",
+        "date": "25 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1882&row=8"
+      },
+      {
+        "id": "1880",
+        "date": "25 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1880&row=9"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "12171",
+    "workId": "12186",
+    "title": "Giselle (1980)",
+    "company": "The Royal Ballet",
+    "productionPremiere": "16 October 1980",
+    "producer": "Norman Morrice",
+    "costumeDesigner": "James Bailey",
+    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=12171&row=3",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Production premiere": "16 October 1980",
+      "Producer": "Norman Morrice",
+      "Choreographer": "Frederick Ashton",
+      "Set designer": "James Bailey",
+      "Costume designer": "James Bailey",
+      "Lighting designer": "Robert Bryan",
+      "Sponsor": "The Friends of Covent Garden"
+    },
+    "performances": [
+      {
+        "id": "12182",
+        "date": "16 October 1980",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12182&row=0"
+      },
+      {
+        "id": "24954",
+        "date": "5 November 1980",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24954&row=1"
+      },
+      {
+        "id": "24955",
+        "date": "14 February 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24955&row=2"
+      },
+      {
+        "id": "24956",
+        "date": "18 February 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24956&row=3"
+      },
+      {
+        "id": "24957",
+        "date": "28 February 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24957&row=4"
+      },
+      {
+        "id": "14422",
+        "date": "1 May 1982",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14422&row=5"
+      },
+      {
+        "id": "14425",
+        "date": "27 October 1982",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14425&row=6"
+      },
+      {
+        "id": "24150",
+        "date": "3 November 1982",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24150&row=7"
+      },
+      {
+        "id": "24161",
+        "date": "16 November 1982",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24161&row=8"
+      },
+      {
+        "id": "24169",
+        "date": "20 November 1982",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24169&row=9"
+      },
+      {
+        "id": "24171",
+        "date": "22 November 1982",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24171&row=10"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Poster Collection",
+        "count": 6,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=12171&collection=Poster%20Collection"
+      },
+      {
+        "collection": "Technical Equipment Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=12171&collection=Technical%20Equipment%20Collection"
       }
     ]
   }
