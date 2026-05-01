@@ -1,6 +1,13 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
+  countRohAssetsInFile,
+  loadRohAssetStoreFile,
+  type RohAssetStoreAssetJson,
+  type RohAssetStoreCollectionJson,
+  type RohAssetStoreFileJson,
+} from './asset-store';
+import {
   RohDataset,
   RohEntityType,
   RohFacetBucket,
@@ -10,6 +17,11 @@ import {
 } from './types';
 
 export const ROH_INDEX_DIR = join(process.cwd(), 'app', 'data', 'roh');
+
+/** When `assetData` is `null`, combined search skips the digital-library corpus (used in tests). */
+export type CombinedRohSearchOptions = {
+  assetData?: RohAssetStoreFileJson | null;
+};
 
 interface RohSearchDocument extends RohSearchItem {
   searchText: string;
@@ -65,6 +77,93 @@ function bucket(values: Array<string | undefined>, limit = 30): RohFacetBucket[]
     .map(([value, count]) => ({ value, count }))
     .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value))
     .slice(0, limit);
+}
+
+function mergeBuckets(left: RohFacetBucket[], right: RohFacetBucket[], limit = 48): RohFacetBucket[] {
+  const counts = new Map<string, number>();
+  for (const { value, count } of left) counts.set(value, (counts.get(value) || 0) + count);
+  for (const { value, count } of right) counts.set(value, (counts.get(value) || 0) + count);
+  return [...counts.entries()]
+    .map(([value, count]) => ({ value, count }))
+    .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value))
+    .slice(0, limit);
+}
+
+function emptyFacets(): RohSearchResult['facets'] {
+  return { collections: [], genres: [], creators: [], companies: [], types: [] };
+}
+
+function facetsWithAssetCorpus(
+  archiveFacets: RohSearchResult['facets'] | null | undefined,
+  assetDocuments: RohSearchDocument[],
+): RohSearchResult['facets'] {
+  const base = archiveFacets ?? emptyFacets();
+  if (assetDocuments.length === 0) return base;
+
+  const fromAssets = bucket(assetDocuments.map((document) => document.collection));
+  const typeMerge = bucket(assetDocuments.map((document) => document.type));
+
+  return {
+    ...base,
+    collections: mergeBuckets(base.collections, fromAssets),
+    types: mergeBuckets(base.types, typeMerge, 24),
+  };
+}
+
+function assetJsonToSearchItem(
+  asset: RohAssetStoreAssetJson,
+  collection: RohAssetStoreCollectionJson,
+): RohSearchItem {
+  return {
+    type: 'asset',
+    id: asset.id.trim(),
+    title: (asset.name || '').trim() || 'Untitled asset',
+    subtitle: compact([collection.title, asset.extension?.join(', ')]) || undefined,
+    date: asset.dateCreated ? asset.dateCreated.slice(0, 10) : undefined,
+    imageUrl: asset.thumbnailUrl,
+    sourceUrl:
+      (asset.webUrl || '').trim() || (collection.publicUrl || '').trim() || (collection.sourceUrl || '').trim(),
+    metadata: {
+      assetCollectionId: collection.id,
+      assetCollectionTitle: collection.title,
+      tags: (asset.tags ?? []).join(', '),
+      description: asset.description?.trim() || '',
+      formats: asset.extension?.join(', ') || '',
+      publicUrl: collection.publicUrl || '',
+      sourceUrlCollection: collection.sourceUrl || '',
+    },
+  };
+}
+
+export function buildAssetStoreSearchDocuments(data: RohAssetStoreFileJson): RohSearchDocument[] {
+  const out: RohSearchDocument[] = [];
+  for (const collection of data.collections) {
+    for (const asset of collection.assets ?? []) {
+      const id = asset.id?.trim();
+      if (!id) continue;
+      const item = assetJsonToSearchItem(asset, collection);
+      const searchText = normalizeText(
+        [
+          item.title,
+          item.subtitle,
+          item.date,
+          item.metadata.tags,
+          item.metadata.description,
+          item.metadata.formats,
+          item.metadata.assetCollectionTitle,
+          collection.description,
+        ]
+          .filter(Boolean)
+          .join(' ')
+      );
+      out.push({
+        ...item,
+        collection: collection.title,
+        searchText,
+      });
+    }
+  }
+  return out.sort((a, b) => a.title.localeCompare(b.title));
 }
 
 function buildSearchDocuments(dataset: RohDataset): RohSearchDocument[] {
@@ -246,6 +345,23 @@ export function writeRohJsonIndex(dataset: RohDataset, dir = process.env.ROH_IND
   return index;
 }
 
+function queryTermsFromParams(params: RohSearchParams): string[] {
+  return normalizeText(params.query || '')
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+function passesSearchFilters(document: RohSearchDocument, params: RohSearchParams, queryTerms: string[]): boolean {
+  if (params.type && params.type !== 'all' && document.type !== params.type) return false;
+  if (params.collection && document.collection !== params.collection) return false;
+  if (params.genre && document.genre !== params.genre) return false;
+  if (params.creator && document.creator !== params.creator) return false;
+  if (params.company && document.company !== params.company) return false;
+  if (params.dateFrom && (!document.date || document.date < params.dateFrom)) return false;
+  if (params.dateTo && (!document.date || document.date > params.dateTo)) return false;
+  return queryTerms.every((term) => document.searchText.includes(term));
+}
+
 export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR): RohJsonIndex | null {
   if (memoizedIndex !== undefined && dir === (process.env.ROH_INDEX_DIR || ROH_INDEX_DIR)) {
     return memoizedIndex;
@@ -279,26 +395,92 @@ export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DI
 export function searchRohIndex(index: RohJsonIndex, params: RohSearchParams): RohSearchResult {
   const limit = normalizeLimit(params.limit);
   const offset = normalizeOffset(params.offset);
-  const queryTerms = normalizeText(params.query || '')
-    .split(/\s+/)
-    .filter(Boolean);
-
-  const matches = index.searchDocuments.filter((document) => {
-    if (params.type && params.type !== 'all' && document.type !== params.type) return false;
-    if (params.collection && document.collection !== params.collection) return false;
-    if (params.genre && document.genre !== params.genre) return false;
-    if (params.creator && document.creator !== params.creator) return false;
-    if (params.company && document.company !== params.company) return false;
-    if (params.dateFrom && (!document.date || document.date < params.dateFrom)) return false;
-    if (params.dateTo && (!document.date || document.date > params.dateTo)) return false;
-    return queryTerms.every((term) => document.searchText.includes(term));
-  });
+  const queryTerms = queryTermsFromParams(params);
+  const matches = index.searchDocuments.filter((document) => passesSearchFilters(document, params, queryTerms));
 
   return {
     items: matches.slice(offset, offset + limit).map(toSearchItem),
     total: matches.length,
     facets: index.facets,
   };
+}
+
+export function searchCombinedRoh(
+  index: RohJsonIndex | null,
+  params: RohSearchParams,
+  opts?: CombinedRohSearchOptions,
+): RohSearchResult {
+  const limit = normalizeLimit(params.limit);
+  const offset = normalizeOffset(params.offset);
+  const queryTerms = queryTermsFromParams(params);
+
+  let resolvedAssetJson: RohAssetStoreFileJson | null;
+  if (opts?.assetData === null) resolvedAssetJson = null;
+  else if (opts?.assetData !== undefined) resolvedAssetJson = opts.assetData;
+  else resolvedAssetJson = loadRohAssetStoreFile();
+
+  const assetDocuments =
+    resolvedAssetJson && resolvedAssetJson.collections?.length ? buildAssetStoreSearchDocuments(resolvedAssetJson) : [];
+
+  const archiveDocuments = index?.searchDocuments ?? [];
+  const mergedDocuments = [...archiveDocuments, ...assetDocuments];
+  const matches = mergedDocuments
+    .filter((document) => passesSearchFilters(document, params, queryTerms))
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  return {
+    items: matches.slice(offset, offset + limit).map(toSearchItem),
+    total: matches.length,
+    facets: facetsWithAssetCorpus(index?.facets ?? null, assetDocuments),
+  };
+}
+
+export function hasRohSearchCorpus(index: RohJsonIndex | null): boolean {
+  if (index?.searchDocuments.length) return true;
+  return countRohAssetsInFile(loadRohAssetStoreFile()) > 0;
+}
+
+export function getCombinedRohSummary(index: RohJsonIndex | null): {
+  records: number;
+  works: number;
+  productions: number;
+  performances: number;
+  digitalLibraryAssets: number;
+} {
+  const base = index?.metadata.counts;
+  const assetFile = loadRohAssetStoreFile();
+  return {
+    records: base?.records ?? 0,
+    works: base?.works ?? 0,
+    productions: base?.productions ?? 0,
+    performances: base?.performances ?? 0,
+    digitalLibraryAssets: countRohAssetsInFile(assetFile),
+  };
+}
+
+export function getCombinedRohItem(
+  index: RohJsonIndex | null,
+  type: RohEntityType,
+  id: string,
+  opts?: CombinedRohSearchOptions,
+): RohSearchItem | null {
+  if (type !== 'asset') {
+    if (!index) return null;
+    return getRohItem(index, type, id);
+  }
+  let resolved: RohAssetStoreFileJson | null;
+  if (opts?.assetData === null) resolved = null;
+  else if (opts?.assetData !== undefined) resolved = opts.assetData;
+  else resolved = loadRohAssetStoreFile();
+
+  if (!resolved?.collections?.length) return null;
+
+  const key = id.trim().toLowerCase();
+  for (const collection of resolved.collections) {
+    const asset = collection.assets?.find((entry) => entry.id.trim().toLowerCase() === key);
+    if (asset) return assetJsonToSearchItem(asset, collection);
+  }
+  return null;
 }
 
 export function getRohItem(index: RohJsonIndex, type: RohEntityType, id: string): RohSearchItem | null {

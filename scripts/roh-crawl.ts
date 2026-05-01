@@ -46,12 +46,34 @@ function pageFileForUrl(url: string): string {
 }
 
 function initialSeeds(): string[] {
+  const performanceIndexes = letters.map((letter) =>
+    absoluteRohUrl(`PerformanceIndex.aspx?genre=All&letter=${encodeURIComponent(letter)}`)
+  );
   return [
+    ...performanceIndexes,
     absoluteRohUrl('CollectionsROH.aspx'),
     absoluteRohUrl('CollectionsSpecial.aspx'),
     absoluteRohUrl('CollectionsCommissioned.aspx'),
-    ...letters.map((letter) => absoluteRohUrl(`PerformanceIndex.aspx?genre=All&letter=${encodeURIComponent(letter)}`)),
   ];
+}
+
+/** Lower = fetch sooner (entity and search-listing pages before collection hub sprawl). */
+function crawlUrlPriority(url: string): number {
+  const path = new URL(url, ROH_BASE_URL).pathname.toLowerCase();
+  if (
+    path.endsWith('/record.aspx') ||
+    path.endsWith('/work.aspx') ||
+    path.endsWith('/production.aspx') ||
+    path.endsWith('/performance.aspx')
+  )
+    return 0;
+  if (path.endsWith('/searchresults.aspx')) return 1;
+  if (path.endsWith('/performanceindex.aspx')) return 2;
+  return 10;
+}
+
+function sortQueueUrls(urls: Iterable<string>): string[] {
+  return [...urls].sort((a, b) => crawlUrlPriority(a) - crawlUrlPriority(b) || a.localeCompare(b));
 }
 
 function isAllowedCrawlUrl(url: string): boolean {
@@ -82,7 +104,7 @@ function extractLinks(html: string, sourceUrl: string): string[] {
     const url = absoluteRohUrl(href, sourceUrl);
     if (isAllowedCrawlUrl(url)) links.add(url);
   });
-  return [...links].sort();
+  return sortQueueUrls(links);
 }
 
 async function sleep(ms: number): Promise<void> {
@@ -117,7 +139,7 @@ async function main(): Promise<void> {
   initialSeeds().forEach((seed) => queued.add(seed));
 
   if (seedOnly) {
-    writeJson(QUEUE_PATH, [...queued].sort());
+    writeJson(QUEUE_PATH, sortQueueUrls(queued));
     writeJson(MANIFEST_PATH, { ...manifest, crawlDelayMs: delayMs });
     console.log(`Seeded ${queued.size} ROH URLs in ${QUEUE_PATH}`);
     return;
@@ -143,14 +165,14 @@ async function main(): Promise<void> {
       status,
       links,
     };
-    links.forEach((link) => {
+    for (const link of links) {
       if (!manifest.pages[link]) queued.add(link);
-    });
+    }
     queued.delete(url);
     fetched += 1;
 
     writeJson(MANIFEST_PATH, { ...manifest, generatedAt: new Date().toISOString(), crawlDelayMs: delayMs });
-    writeJson(QUEUE_PATH, [...queued].sort());
+    writeJson(QUEUE_PATH, sortQueueUrls(queued));
 
     if (fetched < maxPages) {
       console.log(`Waiting ${delayMs}ms to respect ROH crawl-delay`);

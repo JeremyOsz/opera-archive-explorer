@@ -2,12 +2,22 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROH_INDEX_DIR, writeRohJsonIndex } from '../app/lib/roh/database';
 import {
+  parseCollectionResultsPage,
+  parsePerformanceIndexPage,
   parsePerformancePage,
   parseProductionPage,
   parseRecordPage,
   parseWorkPage,
 } from '../app/lib/roh/parser';
-import { RohDataset, RohPerformance, RohProduction, RohRecord, RohWork } from '../app/lib/roh/types';
+import {
+  RohDataset,
+  RohPerformance,
+  RohProduction,
+  RohRecord,
+  RohRecordSeed,
+  RohWork,
+  RohWorkSeed,
+} from '../app/lib/roh/types';
 
 interface CachedPage {
   url: string;
@@ -47,6 +57,31 @@ function dedupeById<T extends { id: string }>(items: T[]): T[] {
   return [...new Map(items.filter((item) => item.id).map((item) => [item.id, item])).values()];
 }
 
+function recordFromListingSeed(seed: RohRecordSeed): RohRecord {
+  return {
+    id: seed.id,
+    title: seed.title,
+    collection: seed.collection,
+    objectNumber: seed.objectNumber,
+    thumbnailUrl: seed.thumbnailUrl,
+    sourceUrl: seed.sourceUrl,
+    metadata: {},
+  };
+}
+
+function workFromListingSeed(seed: RohWorkSeed): RohWork {
+  return {
+    id: seed.id,
+    title: seed.title,
+    genre: seed.genre,
+    composer: seed.creator,
+    sourceUrl: seed.sourceUrl,
+    metadata: {},
+    productions: [],
+    relatedRecordCollections: [],
+  };
+}
+
 function parseDataset(manifest: CrawlManifest): RohDataset {
   const records: RohRecord[] = [];
   const works: RohWork[] = [];
@@ -69,8 +104,22 @@ function parseDataset(manifest: CrawlManifest): RohDataset {
       case 'performance':
         performances.push(parsePerformancePage(html, page.url));
         break;
-      case 'skip':
+      case 'skip': {
+        const pathname = new URL(page.url).pathname.toLowerCase();
+        if (pathname.endsWith('/searchresults.aspx')) {
+          for (const seed of parseCollectionResultsPage(html, page.url).records) {
+            records.push(recordFromListingSeed(seed));
+          }
+          break;
+        }
+        if (pathname.endsWith('/performanceindex.aspx')) {
+          for (const seed of parsePerformanceIndexPage(html, page.url)) {
+            works.push(workFromListingSeed(seed));
+          }
+          break;
+        }
         break;
+      }
     }
   }
 

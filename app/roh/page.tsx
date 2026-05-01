@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Archive, BarChart3, Compass, Database, ExternalLink, Search, SlidersHorizontal } from 'lucide-react';
 import SiteHeader from '@/app/components/SiteHeader';
-import { getRohStats, loadRohJsonIndex, searchRohIndex } from '@/app/lib/roh/database';
+import { getCombinedRohSummary, hasRohSearchCorpus, loadRohJsonIndex, searchCombinedRoh } from '@/app/lib/roh/database';
 import { RohEntityType, RohFacetBucket, RohSearchItem } from '@/app/lib/roh/types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -16,7 +16,11 @@ function single(value: string | string[] | undefined): string {
 }
 
 function typeValue(value: string): RohEntityType | 'all' {
-  return ['record', 'work', 'production', 'performance'].includes(value) ? (value as RohEntityType) : 'all';
+  return ['record', 'work', 'production', 'performance', 'asset'].includes(value) ? (value as RohEntityType) : 'all';
+}
+
+function typeLabel(type: RohSearchItem['type']): string {
+  return type === 'asset' ? 'library' : type;
 }
 
 function facetOptions(facets: RohFacetBucket[], selected: string) {
@@ -51,7 +55,7 @@ function ResultCard({ item }: { item: RohSearchItem }) {
           <div className="min-w-0 flex-1">
             <div className="mb-2 flex flex-wrap items-center gap-2">
               <Badge variant="secondary" className="capitalize">
-                {item.type}
+                {typeLabel(item.type)}
               </Badge>
               {item.date ? <span className="text-sm text-muted-foreground">{item.date}</span> : null}
             </div>
@@ -64,11 +68,11 @@ function ResultCard({ item }: { item: RohSearchItem }) {
         <Button asChild size="sm" variant="outline">
           <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
             <ExternalLink className="h-4 w-4" />
-            ROH source
+            {item.type === 'asset' ? 'Open in library' : 'ROH source'}
           </a>
         </Button>
         <Button asChild size="sm" variant="ghost">
-          <Link href={`/api/roh/item/${item.type}/${item.id}`}>Metadata JSON</Link>
+          <Link href={`/api/roh/item/${item.type}/${encodeURIComponent(item.id)}`}>Metadata JSON</Link>
         </Button>
       </CardContent>
     </Card>
@@ -85,7 +89,7 @@ export default async function RohPage({ searchParams }: RohPageProps) {
   const company = single(resolvedParams.company);
   const index = loadRohJsonIndex();
 
-  if (!index) {
+  if (!hasRohSearchCorpus(index)) {
     return (
       <div className="min-h-screen bg-background">
         <SiteHeader
@@ -100,13 +104,25 @@ export default async function RohPage({ searchParams }: RohPageProps) {
         <main className="container mx-auto px-4 py-10">
           <Card>
             <CardHeader>
-              <CardTitle>ROH index not generated</CardTitle>
+              <CardTitle>ROH search data not found</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-sm text-muted-foreground">
-              <p>Generate the local JSON index before using this page.</p>
-              <pre className="overflow-x-auto rounded-[2px] bg-muted p-4 text-foreground">
-                <code>{'pnpm roh:crawl\npnpm roh:index\npnpm roh:validate'}</code>
-              </pre>
+              <p>
+                This page merges the Royal Ballet &amp; Opera Collections index with the ROH digital library snapshot. Provide
+                at least one dataset below.
+              </p>
+              <div className="space-y-2">
+                <p className="font-medium text-foreground">Collections catalogue (records, works, performances)</p>
+                <pre className="overflow-x-auto rounded-[2px] bg-muted p-4 text-foreground">
+                  <code>{'pnpm roh:crawl\npnpm roh:index\npnpm roh:validate'}</code>
+                </pre>
+              </div>
+              <div className="space-y-2">
+                <p className="font-medium text-foreground">Digital library collections (library.roh.org.uk snapshot)</p>
+                <pre className="overflow-x-auto rounded-[2px] bg-muted p-4 text-foreground">
+                  <code>pnpm roh:asset-store</code>
+                </pre>
+              </div>
             </CardContent>
           </Card>
         </main>
@@ -114,8 +130,8 @@ export default async function RohPage({ searchParams }: RohPageProps) {
     );
   }
 
-  const stats = getRohStats(index);
-  const result = searchRohIndex(index, {
+  const stats = getCombinedRohSummary(index);
+  const result = searchCombinedRoh(index, {
     query,
     type,
     collection,
@@ -128,7 +144,7 @@ export default async function RohPage({ searchParams }: RohPageProps) {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader
-        tagline="Search Royal Ballet and Opera Collections records, works, productions, performances, and cast metadata."
+        tagline="Search the Collections catalogue and ROH digital library (combined)."
         links={[
           { href: '/', label: 'IA Search', icon: Search },
           { href: '/roh', label: 'ROH Index', icon: Database, active: true },
@@ -139,8 +155,9 @@ export default async function RohPage({ searchParams }: RohPageProps) {
           <span className="inline-flex flex-wrap items-center gap-2">
             <Archive className="h-4 w-4" />
             <span>
-              {stats.records.toLocaleString()} records, {stats.works.toLocaleString()} works,{' '}
-              {stats.productions.toLocaleString()} productions, {stats.performances.toLocaleString()} performances
+              {stats.records.toLocaleString()} records · {stats.works.toLocaleString()} works ·{' '}
+              {stats.productions.toLocaleString()} productions · {stats.performances.toLocaleString()} performances ·{' '}
+              {stats.digitalLibraryAssets.toLocaleString()} library assets
             </span>
           </span>
         }
@@ -171,6 +188,7 @@ export default async function RohPage({ searchParams }: RohPageProps) {
                   <option value="work">Works</option>
                   <option value="production">Productions</option>
                   <option value="performance">Performances</option>
+                  <option value="asset">Library assets</option>
                 </select>
               </label>
               <label className="block text-sm">
@@ -213,7 +231,7 @@ export default async function RohPage({ searchParams }: RohPageProps) {
               <p className="text-[0.66rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
                 Royal Ballet and Opera Collections
               </p>
-              <h1 className="font-brand-display text-4xl">ROH Index</h1>
+              <h1 className="font-brand-display text-4xl">ROH catalogue &amp; library</h1>
               <p className="mt-2 text-sm text-muted-foreground">
                 {result.total.toLocaleString()} matching item{result.total === 1 ? '' : 's'}
               </p>

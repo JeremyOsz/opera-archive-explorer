@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { loadRohJsonIndex, searchRohIndex } from '@/app/lib/roh/database';
+import { hasRohSearchCorpus, loadRohJsonIndex, searchCombinedRoh } from '@/app/lib/roh/database';
 import { RohEntityType } from '@/app/lib/roh/types';
 
 export const runtime = 'nodejs';
@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 function entityType(value: string | null): RohEntityType | 'all' | undefined {
   if (!value || value === 'all') return value === 'all' ? 'all' : undefined;
-  if (['record', 'work', 'production', 'performance'].includes(value)) {
+  if (['record', 'work', 'production', 'performance', 'asset'].includes(value)) {
     return value as RohEntityType;
   }
   return undefined;
@@ -15,10 +15,11 @@ function entityType(value: string | null): RohEntityType | 'all' | undefined {
 
 export async function GET(request: NextRequest) {
   const index = loadRohJsonIndex();
-  if (!index) {
+  if (!hasRohSearchCorpus(index)) {
     return NextResponse.json(
       {
-        error: 'ROH index is not available. Run pnpm roh:crawl and pnpm roh:index to generate it.',
+        error:
+          'ROH search corpus is not available. Run pnpm roh:asset-store and/or pnpm roh:crawl then pnpm roh:index.',
         items: [],
         total: 0,
       },
@@ -27,7 +28,7 @@ export async function GET(request: NextRequest) {
   }
 
   const params = request.nextUrl.searchParams;
-  const result = searchRohIndex(index, {
+  const result = searchCombinedRoh(index, {
     query: params.get('q') || undefined,
     type: entityType(params.get('type')),
     collection: params.get('collection') || undefined,

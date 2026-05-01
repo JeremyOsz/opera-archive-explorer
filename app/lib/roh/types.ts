@@ -1,6 +1,6 @@
 export const ROH_BASE_URL = 'https://www.rohcollections.org.uk/';
 
-export type RohEntityType = 'record' | 'work' | 'production' | 'performance';
+export type RohEntityType = 'record' | 'work' | 'production' | 'performance' | 'asset';
 
 export interface RohRelatedRecordCollection {
   collection: string;

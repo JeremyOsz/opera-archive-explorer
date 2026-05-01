@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { createRohJsonIndex, searchRohIndex } from './database';
+import type { RohAssetStoreFileJson } from './asset-store';
+import { createRohJsonIndex, searchCombinedRoh, searchRohIndex } from './database';
 import { RohDataset } from './types';
 
 const dataset: RohDataset = {
@@ -65,6 +66,26 @@ const dataset: RohDataset = {
   ],
 };
 
+const assetFixture: RohAssetStoreFileJson = {
+  collections: [
+    {
+      id: '47604b21-c326-4a91-987cfb88603f0db5',
+      title: 'Siegfried - Press selection',
+      publicUrl: 'https://library.roh.org.uk/web/47604',
+      assets: [
+        {
+          id: 'FA4667F8-10E3-4F80-AE813563AB68E31C',
+          name: 'Elisabet Strid as Brünnhilde in Siegfried',
+          tags: ['Richard Wagner'],
+          extension: ['jpg'],
+          webUrl: 'https://library.roh.org.uk/files/x',
+          dateCreated: '2026-03-17T10:55:59Z',
+        },
+      ],
+    },
+  ],
+};
+
 describe('ROH JSON index', () => {
   it('searches across records, works, productions, performances, and cast', () => {
     const index = createRohJsonIndex(dataset);
@@ -86,5 +107,20 @@ describe('ROH JSON index', () => {
 
     const performances = searchRohIndex(index, { query: '', type: 'performance' });
     assert.deepEqual(performances.items.map((item) => item.id), ['10388']);
+  });
+
+  it('merges digital library asset rows into combined search', () => {
+    const index = createRohJsonIndex(dataset);
+
+    const combined = searchCombinedRoh(index, { query: '' }, { assetData: assetFixture });
+    assert.equal(combined.total, 5);
+
+    const wagnerAssets = searchCombinedRoh(index, { query: 'wagner', type: 'asset' }, { assetData: assetFixture });
+    assert.equal(wagnerAssets.total, 1);
+    assert.equal(wagnerAssets.items[0]?.type, 'asset');
+    assert.equal(wagnerAssets.items[0]?.id, 'FA4667F8-10E3-4F80-AE813563AB68E31C');
+
+    const archivesOnlyWorks = searchCombinedRoh(index, { query: 'wagner', type: 'record' }, { assetData: assetFixture });
+    assert.equal(archivesOnlyWorks.total, 0);
   });
 });
