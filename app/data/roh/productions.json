@@ -20287,7 +20287,7 @@
     "productionPremiere": "4 December 1984",
     "producer": "John Schlesinger",
     "costumeDesigner": "Maria Bjørnson",
-    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?row=2&production=2367&page=0",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=2&production=2367&page=0",
     "metadata": {
       "Company": "The Royal Opera",
       "Production premiere": "4 December 1984",
@@ -20631,6 +20631,2991 @@
         "collection": "Costume Collection",
         "count": 3,
         "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=2367&collection=Costume%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "31602",
+    "workId": "585",
+    "title": "Der Rosenkavalier (2016)",
+    "company": "The Royal Opera",
+    "productionPremiere": "17 December 2016",
+    "costumeDesigner": "Brigitte Reiffenstuel",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=3&production=31602&page=0",
+    "metadata": {
+      "Company": "The Royal Opera",
+      "Production premiere": "17 December 2016",
+      "Director": "Robert Carsen (Sponsored by KT Wong Foundation)",
+      "Set designer": "Paul Steinberg",
+      "Costume designer": "Brigitte Reiffenstuel",
+      "Lighting designer": "Peter Van Praet",
+      "Choreographer": "Philippe Giraudeau",
+      "Co-production with": "New York The Metropolitan Opera",
+      "Teatro Regio, Turin": "Turin Teatro Regio",
+      "Sponsor": "The Monument Trust (original 2016 production); Aline Foriel-Destezet (original 2016 production); Simon Robertson (original 2016 production); Virginia Robertson (original 2016 production); Susan Singer (original 2016 production); John Singer (original 2016 production); The Friends of Covent Garden (original 2016 production); The Royal Opera House Endowment Fund (original 2016 production); KT Wong Foundation (original 2016 production)",
+      "Work ID": "585"
+    },
+    "performances": [
+      {
+        "id": "31603",
+        "date": "17 December 2016",
+        "session": "Evening 6.05pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=31603&row=0"
+      },
+      {
+        "id": "31604",
+        "date": "20 December 2016",
+        "session": "Evening 6.04pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=31604&row=1"
+      },
+      {
+        "id": "31605",
+        "date": "22 December 2016",
+        "session": "Evening 6.05pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=31605&row=2"
+      },
+      {
+        "id": "31606",
+        "date": "8 January 2017",
+        "session": "Matinee 3.04pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=31606&row=3"
+      },
+      {
+        "id": "31607",
+        "date": "11 January 2017",
+        "session": "Evening 6.05pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=31607&row=4"
+      },
+      {
+        "id": "31608",
+        "date": "14 January 2017",
+        "session": "Evening 6.05pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=31608&row=5"
+      },
+      {
+        "id": "31644",
+        "date": "17 January 2017",
+        "session": "Evening 6.04pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=31644&row=6"
+      },
+      {
+        "id": "31751",
+        "date": "24 January 2017",
+        "session": "Evening 6.06pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=31751&row=7"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "3493",
+    "title": "Les Sirènes (1946)",
+    "company": "Sadler's Wells Ballet",
+    "productionPremiere": "12 November 1946",
+    "costumeDesigner": "Cecil Beaton",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=3493",
+    "metadata": {
+      "Company": "Sadler's Wells Ballet",
+      "Production premiere": "12 November 1946",
+      "Set designer": "Cecil Beaton",
+      "Costume designer": "Cecil Beaton"
+    },
+    "performances": [
+      {
+        "id": "3494",
+        "date": "12 November 1946",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3494&row=0"
+      },
+      {
+        "id": "3525",
+        "date": "16 November 1946",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3525&row=1"
+      },
+      {
+        "id": "3534",
+        "date": "19 November 1946",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3534&row=2"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Frank Sharman Photographic Collection",
+        "count": 34,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=3493&collection=Frank%20Sharman%20Photographic%20Collection"
+      },
+      {
+        "collection": "Nadia Nerina Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=3493&collection=Nadia%20Nerina%20Collection"
+      },
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 6,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=3493&collection=Roger%20Wood%20Photographic%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "3757",
+    "title": "The Three Cornered Hat (1947)",
+    "company": "Sadler's Wells Ballet",
+    "productionPremiere": "6 February 1947",
+    "costumeDesigner": "Pablo Picasso",
+    "notes": "This production did not use a hyphen in the work's English title.",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=3757",
+    "metadata": {
+      "Company": "Sadler's Wells Ballet",
+      "Production premiere": "6 February 1947",
+      "Set designer": "Pablo Picasso",
+      "Costume designer": "Pablo Picasso",
+      "Notes": "This production did not use a hyphen in the work's English title."
+    },
+    "performances": [
+      {
+        "id": "9987",
+        "date": "6 February 1947",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9987&row=0"
+      },
+      {
+        "id": "9990",
+        "date": "8 February 1947",
+        "session": "Matinee 2.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9990&row=1"
+      },
+      {
+        "id": "2664",
+        "date": "20 December 1947",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=2664&row=2"
+      },
+      {
+        "id": "2669",
+        "date": "22 December 1947",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=2669&row=3"
+      },
+      {
+        "id": "10459",
+        "date": "17 February 1949",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10459&row=4"
+      },
+      {
+        "id": "11252",
+        "date": "25 May 1950",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11252&row=5"
+      },
+      {
+        "id": "11256",
+        "date": "30 May 1950",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11256&row=6"
+      },
+      {
+        "id": "15023",
+        "date": "27 February 1952",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15023&row=7"
+      },
+      {
+        "id": "12367",
+        "date": "4 March 1952",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12367&row=8"
+      },
+      {
+        "id": "15031",
+        "date": "4 April 1952",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15031&row=9"
+      },
+      {
+        "id": "15050",
+        "date": "15 November 1952",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15050&row=10"
+      },
+      {
+        "id": "16233",
+        "date": "28 August 1954",
+        "session": "Evening",
+        "venue": "Empire Theatre, Edinburgh",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16233&row=11"
+      },
+      {
+        "id": "15210",
+        "date": "31 August 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15210&row=12"
+      },
+      {
+        "id": "14370",
+        "date": "20 September 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14370&row=13"
+      },
+      {
+        "id": "15334",
+        "date": "24 August 1955",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15334&row=14"
+      },
+      {
+        "id": "15346",
+        "date": "30 August 1955",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15346&row=15"
+      },
+      {
+        "id": "14372",
+        "date": "11 April 1956",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14372&row=16"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Costume Collection",
+        "count": 68,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=3757&collection=Costume%20Collection"
+      },
+      {
+        "collection": "Frank Sharman Photographic Collection",
+        "count": 20,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=3757&collection=Frank%20Sharman%20Photographic%20Collection"
+      },
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 7,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=3757&collection=Roger%20Wood%20Photographic%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "1928",
+    "workId": "1428",
+    "title": "Coppélia (1940)",
+    "company": "The Vic-Wells Ballet",
+    "productionPremiere": "15 April 1940",
+    "costumeDesigner": "William Chappell",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=0&production=1928&page=0",
+    "metadata": {
+      "Company": "The Vic-Wells Ballet",
+      "Production premiere": "15 April 1940",
+      "Set designer": "William Chappell",
+      "Costume designer": "William Chappell",
+      "Work ID": "1428"
+    },
+    "performances": [
+      {
+        "id": "3423",
+        "date": "25 October 1946",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3423&row=0"
+      },
+      {
+        "id": "10514",
+        "date": "14 March 1949",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10514&row=1"
+      },
+      {
+        "id": "11003",
+        "date": "25 February 1950",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11003&row=2"
+      },
+      {
+        "id": "14957",
+        "date": "8 September 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14957&row=3"
+      },
+      {
+        "id": "15038",
+        "date": "25 September 1952",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15038&row=4"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Frank Sharman Photographic Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1928&collection=Frank%20Sharman%20Photographic%20Collection"
+      },
+      {
+        "collection": "Poster Collection",
+        "count": 2,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1928&collection=Poster%20Collection"
+      },
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 4,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1928&collection=Roger%20Wood%20Photographic%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "1929",
+    "workId": "1428",
+    "title": "Coppélia (1954)",
+    "company": "Sadler's Wells Ballet",
+    "productionPremiere": "2 March 1954",
+    "producer": "Ninette de Valois Original 1954 credit reads: 'General production revised by Ninette de Valois'.",
+    "costumeDesigner": "Osbert Lancaster",
+    "notes": "A note on the 2000 revival programmes reads: 'Anthony Dowell wishes to thank Merle Park for her invaluable assistance with the production and Deanne Bergsma for rehearsing the role of Prayer'.",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=1&production=1929&page=0",
+    "metadata": {
+      "Company": "Sadler's Wells Ballet",
+      "Production premiere": "2 March 1954",
+      "Producer": "Ninette de Valois Original 1954 credit reads: 'General production revised by Ninette de Valois'.",
+      "Set designer": "Osbert Lancaster",
+      "Costume designer": "Osbert Lancaster",
+      "Lighting designer": "John Sullivan",
+      "Revival lighting designer": "John B Read (revivals 2000-2002)",
+      "Revival staging": "Grant Coyle (revivals 2000-2006)",
+      "Sponsor": "The Friends of Covent Garden (2000 revival); The Jean Sainsbury Royal Opera House Fund (2006 revival)",
+      "Notes": "A note on the 2000 revival programmes reads: 'Anthony Dowell wishes to thank Merle Park for her invaluable assistance with the production and Deanne Bergsma for rehearsing the role of Prayer'.",
+      "Work ID": "1428"
+    },
+    "performances": [
+      {
+        "id": "12198",
+        "date": "2 March 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12198&row=0"
+      },
+      {
+        "id": "15135",
+        "date": "9 March 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15135&row=1"
+      },
+      {
+        "id": "15234",
+        "date": "25 September 1954",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15234&row=2"
+      },
+      {
+        "id": "15367",
+        "date": "6 January 1956",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15367&row=3"
+      },
+      {
+        "id": "12381",
+        "date": "15 February 1956",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12381&row=4"
+      },
+      {
+        "id": "12428",
+        "date": "1 March 1956",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12428&row=5"
+      },
+      {
+        "id": "15856",
+        "date": "5 March 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15856&row=6"
+      },
+      {
+        "id": "16089",
+        "date": "6 February 1959",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16089&row=7"
+      },
+      {
+        "id": "26248",
+        "date": "10 March 1959",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=26248&row=8"
+      },
+      {
+        "id": "16367",
+        "date": "5 September 1959",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16367&row=9"
+      },
+      {
+        "id": "16438",
+        "date": "8 May 1961",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16438&row=10"
+      },
+      {
+        "id": "15260",
+        "date": "5 October 1963",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15260&row=11"
+      },
+      {
+        "id": "15302",
+        "date": "22 October 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15302&row=12"
+      },
+      {
+        "id": "15394",
+        "date": "7 December 1968",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15394&row=13"
+      },
+      {
+        "id": "15409",
+        "date": "26 December 1969",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15409&row=14"
+      },
+      {
+        "id": "7615",
+        "date": "8 February 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7615&row=15"
+      },
+      {
+        "id": "7612",
+        "date": "10 February 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7612&row=16"
+      },
+      {
+        "id": "7618",
+        "date": "12 February 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7618&row=17"
+      },
+      {
+        "id": "7619",
+        "date": "14 February 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7619&row=18"
+      },
+      {
+        "id": "7628",
+        "date": "16 February 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7628&row=19"
+      },
+      {
+        "id": "7629",
+        "date": "19 February 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7629&row=20"
+      },
+      {
+        "id": "7630",
+        "date": "22 February 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7630&row=21"
+      },
+      {
+        "id": "7631",
+        "date": "23 February 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7631&row=22"
+      },
+      {
+        "id": "7657",
+        "date": "4 March 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7657&row=23"
+      },
+      {
+        "id": "7740",
+        "date": "20 April 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7740&row=24"
+      },
+      {
+        "id": "7741",
+        "date": "22 April 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7741&row=25"
+      },
+      {
+        "id": "7742",
+        "date": "24 April 2000",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7742&row=26"
+      },
+      {
+        "id": "7745",
+        "date": "24 April 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7745&row=27"
+      },
+      {
+        "id": "7762",
+        "date": "1 May 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7762&row=28"
+      },
+      {
+        "id": "7763",
+        "date": "2 May 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7763&row=29"
+      },
+      {
+        "id": "7782",
+        "date": "10 May 2000",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7782&row=30"
+      },
+      {
+        "id": "7801",
+        "date": "14 May 2000",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=7801&row=31"
+      },
+      {
+        "id": "8289",
+        "date": "26 July 2001",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8289&row=32"
+      },
+      {
+        "id": "8293",
+        "date": "27 July 2001",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8293&row=33"
+      },
+      {
+        "id": "8351",
+        "date": "31 July 2001",
+        "session": "Matinee 2.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8351&row=34"
+      },
+      {
+        "id": "8353",
+        "date": "31 July 2001",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8353&row=35"
+      },
+      {
+        "id": "8485",
+        "date": "29 July 2002",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8485&row=36"
+      },
+      {
+        "id": "8486",
+        "date": "30 July 2002",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8486&row=37"
+      },
+      {
+        "id": "8487",
+        "date": "31 July 2002",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8487&row=38"
+      },
+      {
+        "id": "8488",
+        "date": "1 August 2002",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8488&row=39"
+      },
+      {
+        "id": "8489",
+        "date": "1 August 2002",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8489&row=40"
+      },
+      {
+        "id": "8490",
+        "date": "2 August 2002",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8490&row=41"
+      },
+      {
+        "id": "8491",
+        "date": "3 August 2002",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8491&row=42"
+      },
+      {
+        "id": "8492",
+        "date": "3 August 2002",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8492&row=43"
+      },
+      {
+        "id": "8606",
+        "date": "12 October 2006",
+        "session": "Matinee 12.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8606&row=44"
+      },
+      {
+        "id": "8608",
+        "date": "13 October 2006",
+        "session": "Matinee 12.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8608&row=45"
+      },
+      {
+        "id": "8617",
+        "date": "14 October 2006",
+        "session": "Matinee 12.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8617&row=46"
+      },
+      {
+        "id": "8635",
+        "date": "18 October 2006",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8635&row=47"
+      },
+      {
+        "id": "8638",
+        "date": "19 October 2006",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8638&row=48"
+      },
+      {
+        "id": "8641",
+        "date": "20 October 2006",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8641&row=49"
+      },
+      {
+        "id": "8642",
+        "date": "21 October 2006",
+        "session": "Matinee 2.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8642&row=50"
+      },
+      {
+        "id": "8647",
+        "date": "21 October 2006",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8647&row=51"
+      },
+      {
+        "id": "8648",
+        "date": "24 October 2006",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8648&row=52"
+      },
+      {
+        "id": "8650",
+        "date": "25 October 2006",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8650&row=53"
+      },
+      {
+        "id": "8656",
+        "date": "26 October 2006",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8656&row=54"
+      },
+      {
+        "id": "8679",
+        "date": "4 November 2006",
+        "session": "Matinee 12.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=8679&row=55"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Nadia Nerina Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1929&collection=Nadia%20Nerina%20Collection"
+      },
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1929&collection=Roger%20Wood%20Photographic%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "20915",
+    "workId": "1428",
+    "title": "Coppélia (2009)",
+    "company": "Bolshoi Ballet",
+    "productionPremiere": "12 March 2009",
+    "producer": "Sergei Vikharev",
+    "costumeDesigner": "Tatiana Noginova (after sketches by Adolph Charlemagne, Pyotr Grigoriev and Evgeny Ponomaryov)",
+    "notes": "Production based on the 1894 production by Marius Petipa and Enrico Cecchetti. This production was used by the Bolshoi Ballet at the Royal Opera House in July 2010.",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=2&production=20915&page=0",
+    "metadata": {
+      "Company": "Bolshoi Ballet",
+      "Production premiere": "12 March 2009",
+      "Producer": "Sergei Vikharev",
+      "Choreographer": "Sergei Vikharev",
+      "Set designer": "Boris Kaminsky (after sketches by Pyotr Lambin (Acts I and III) and Heinrich Levot (Act II))",
+      "Set reproduction": "Elena Kinkulskaya (Act II)",
+      "Costume designer": "Tatiana Noginova (after sketches by Adolph Charlemagne, Pyotr Grigoriev and Evgeny Ponomaryov)",
+      "Lighting designer": "Damir Ismagilov",
+      "Notes": "Production based on the 1894 production by Marius Petipa and Enrico Cecchetti. This production was used by the Bolshoi Ballet at the Royal Opera House in July 2010.",
+      "Work ID": "1428"
+    },
+    "performances": [
+      {
+        "id": "20916",
+        "date": "22 July 2010",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=20916&row=0"
+      },
+      {
+        "id": "20917",
+        "date": "23 July 2010",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=20917&row=1"
+      },
+      {
+        "id": "20918",
+        "date": "24 July 2010",
+        "session": "Matinee 2.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=20918&row=2"
+      },
+      {
+        "id": "20919",
+        "date": "24 July 2010",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=20919&row=3"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "1673",
+    "title": "Scènes de ballet (1948)",
+    "company": "Sadler's Wells Ballet",
+    "productionPremiere": "11 February 1948",
+    "costumeDesigner": "André Beaurepaire",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=1673",
+    "metadata": {
+      "Company": "Sadler's Wells Ballet",
+      "Production premiere": "11 February 1948",
+      "Set designer": "André Beaurepaire",
+      "Costume designer": "André Beaurepaire",
+      "Revival lighting designer": "John B Read (revivals in 2003, 2004, 2011 and 2014)",
+      "Revival staging": "Christopher Carr (revivals in 2003, 2004, 2011 and 2014)",
+      "Sponsor": "The Friends of Covent Garden (1991 revival)"
+    },
+    "performances": [
+      {
+        "id": "2827",
+        "date": "11 February 1948",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=2827&row=0"
+      },
+      {
+        "id": "2882",
+        "date": "26 February 1948",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=2882&row=1"
+      },
+      {
+        "id": "10344",
+        "date": "1 December 1948",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10344&row=2"
+      },
+      {
+        "id": "11009",
+        "date": "4 March 1950",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11009&row=3"
+      },
+      {
+        "id": "11031",
+        "date": "13 March 1950",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11031&row=4"
+      },
+      {
+        "id": "14939",
+        "date": "4 September 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14939&row=5"
+      },
+      {
+        "id": "14942",
+        "date": "5 September 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14942&row=6"
+      },
+      {
+        "id": "14959",
+        "date": "10 September 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14959&row=7"
+      },
+      {
+        "id": "15406",
+        "date": "13 March 1956",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15406&row=8"
+      },
+      {
+        "id": "15761",
+        "date": "29 September 1956",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15761&row=9"
+      },
+      {
+        "id": "14630",
+        "date": "3 March 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14630&row=10"
+      },
+      {
+        "id": "15855",
+        "date": "5 March 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15855&row=11"
+      },
+      {
+        "id": "15868",
+        "date": "21 March 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15868&row=12"
+      },
+      {
+        "id": "16381",
+        "date": "21 May 1960",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16381&row=13"
+      },
+      {
+        "id": "16112",
+        "date": "27 January 1962",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16112&row=14"
+      },
+      {
+        "id": "24699",
+        "date": "1 February 1962",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24699&row=15"
+      },
+      {
+        "id": "24702",
+        "date": "13 February 1962",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24702&row=16"
+      },
+      {
+        "id": "24705",
+        "date": "26 February 1962",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24705&row=17"
+      },
+      {
+        "id": "15322",
+        "date": "17 March 1965",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15322&row=18"
+      },
+      {
+        "id": "27488",
+        "date": "20 March 1965",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27488&row=19"
+      },
+      {
+        "id": "27491",
+        "date": "22 March 1965",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27491&row=20"
+      },
+      {
+        "id": "12471",
+        "date": "23 March 1966",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12471&row=21"
+      },
+      {
+        "id": "25171",
+        "date": "26 January 1968",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25171&row=22"
+      },
+      {
+        "id": "14538",
+        "date": "29 January 1968",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14538&row=23"
+      },
+      {
+        "id": "25174",
+        "date": "31 January 1968",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25174&row=24"
+      },
+      {
+        "id": "15381",
+        "date": "1 February 1968",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15381&row=25"
+      },
+      {
+        "id": "24635",
+        "date": "6 February 1968",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24635&row=26"
+      },
+      {
+        "id": "25177",
+        "date": "9 February 1968",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25177&row=27"
+      },
+      {
+        "id": "27577",
+        "date": "26 June 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27577&row=28"
+      },
+      {
+        "id": "15440",
+        "date": "4 July 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15440&row=29"
+      },
+      {
+        "id": "27581",
+        "date": "8 July 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27581&row=30"
+      },
+      {
+        "id": "27814",
+        "date": "24 July 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27814&row=31"
+      },
+      {
+        "id": "15443",
+        "date": "16 December 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15443&row=32"
+      },
+      {
+        "id": "25046",
+        "date": "21 December 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25046&row=33"
+      },
+      {
+        "id": "25049",
+        "date": "4 January 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25049&row=34"
+      },
+      {
+        "id": "26947",
+        "date": "8 January 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=26947&row=35"
+      },
+      {
+        "id": "26949",
+        "date": "13 January 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=26949&row=36"
+      },
+      {
+        "id": "26951",
+        "date": "21 January 1971",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=26951&row=37"
+      },
+      {
+        "id": "15496",
+        "date": "6 July 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15496&row=38"
+      },
+      {
+        "id": "11501",
+        "date": "7 October 1974",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11501&row=39"
+      },
+      {
+        "id": "11515",
+        "date": "11 October 1974",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11515&row=40"
+      },
+      {
+        "id": "24795",
+        "date": "16 October 1974",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24795&row=41"
+      },
+      {
+        "id": "24798",
+        "date": "17 October 1974",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24798&row=42"
+      },
+      {
+        "id": "15526",
+        "date": "25 October 1974",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15526&row=43"
+      },
+      {
+        "id": "25018",
+        "date": "5 November 1974",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25018&row=44"
+      },
+      {
+        "id": "25021",
+        "date": "6 November 1974",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25021&row=45"
+      },
+      {
+        "id": "24848",
+        "date": "15 January 1975",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24848&row=46"
+      },
+      {
+        "id": "25346",
+        "date": "4 April 1975",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25346&row=47"
+      },
+      {
+        "id": "25349",
+        "date": "8 April 1975",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25349&row=48"
+      },
+      {
+        "id": "14551",
+        "date": "19 January 1979",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14551&row=49"
+      },
+      {
+        "id": "25188",
+        "date": "22 January 1979",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25188&row=50"
+      },
+      {
+        "id": "24771",
+        "date": "31 January 1979",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24771&row=51"
+      },
+      {
+        "id": "24774",
+        "date": "10 February 1979",
+        "session": "Matinee 2.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24774&row=52"
+      },
+      {
+        "id": "25191",
+        "date": "16 February 1979",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25191&row=53"
+      },
+      {
+        "id": "14560",
+        "date": "22 May 1981",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14560&row=54"
+      },
+      {
+        "id": "25194",
+        "date": "23 May 1981",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25194&row=55"
+      },
+      {
+        "id": "25197",
+        "date": "25 May 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25197&row=56"
+      },
+      {
+        "id": "15731",
+        "date": "31 March 1982",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15731&row=57"
+      },
+      {
+        "id": "14664",
+        "date": "2 July 1984",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14664&row=58"
+      },
+      {
+        "id": "12554",
+        "date": "6 June 1986",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12554&row=59"
+      },
+      {
+        "id": "14569",
+        "date": "24 October 1987",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14569&row=60"
+      },
+      {
+        "id": "16738",
+        "date": "5 June 1991",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16738&row=61"
+      },
+      {
+        "id": "16779",
+        "date": "13 February 1992",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16779&row=62"
+      },
+      {
+        "id": "5404",
+        "date": "13 January 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5404&row=63"
+      },
+      {
+        "id": "5401",
+        "date": "16 January 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5401&row=64"
+      },
+      {
+        "id": "5407",
+        "date": "17 January 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5407&row=65"
+      },
+      {
+        "id": "5410",
+        "date": "22 January 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5410&row=66"
+      },
+      {
+        "id": "5417",
+        "date": "24 January 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5417&row=67"
+      },
+      {
+        "id": "5422",
+        "date": "28 January 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5422&row=68"
+      },
+      {
+        "id": "5796",
+        "date": "21 May 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5796&row=69"
+      },
+      {
+        "id": "5807",
+        "date": "22 May 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5807&row=70"
+      },
+      {
+        "id": "5815",
+        "date": "24 May 2003",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5815&row=71"
+      },
+      {
+        "id": "5818",
+        "date": "24 May 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5818&row=72"
+      },
+      {
+        "id": "5830",
+        "date": "27 May 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5830&row=73"
+      },
+      {
+        "id": "5838",
+        "date": "29 May 2003",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5838&row=74"
+      },
+      {
+        "id": "9166",
+        "date": "25 June 2003",
+        "session": "Evening",
+        "venue": "Bolshoi Theatre, Moscow",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9166&row=75"
+      },
+      {
+        "id": "9168",
+        "date": "26 June 2003",
+        "session": "Evening",
+        "venue": "Bolshoi Theatre, Moscow",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9168&row=76"
+      },
+      {
+        "id": "9201",
+        "date": "18 July 2003",
+        "session": "Evening",
+        "venue": "Mariinsky Theatre, St Petersburg",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9201&row=77"
+      },
+      {
+        "id": "9204",
+        "date": "19 July 2003",
+        "session": "Evening",
+        "venue": "Mariinsky Theatre, St Petersburg",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9204&row=78"
+      },
+      {
+        "id": "9230",
+        "date": "13 July 2004",
+        "session": "Evening",
+        "venue": "Metropolitan Opera House, New York",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9230&row=79"
+      },
+      {
+        "id": "9236",
+        "date": "14 July 2004",
+        "session": "Evening",
+        "venue": "Metropolitan Opera House, New York",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9236&row=80"
+      },
+      {
+        "id": "9242",
+        "date": "15 July 2004",
+        "session": "Evening",
+        "venue": "Metropolitan Opera House, New York",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9242&row=81"
+      },
+      {
+        "id": "1841",
+        "date": "13 November 2004",
+        "session": "Matinee 1.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1841&row=82"
+      },
+      {
+        "id": "1849",
+        "date": "13 November 2004",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1849&row=83"
+      },
+      {
+        "id": "1858",
+        "date": "17 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1858&row=84"
+      },
+      {
+        "id": "1867",
+        "date": "19 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1867&row=85"
+      },
+      {
+        "id": "1877",
+        "date": "25 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1877&row=86"
+      },
+      {
+        "id": "23353",
+        "date": "28 May 2011",
+        "session": "Matinee 2.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23353&row=87"
+      },
+      {
+        "id": "23356",
+        "date": "28 May 2011",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23356&row=88"
+      },
+      {
+        "id": "23548",
+        "date": "2 June 2011",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23548&row=89"
+      },
+      {
+        "id": "23556",
+        "date": "8 June 2011",
+        "session": "Matinee 1.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23556&row=90"
+      },
+      {
+        "id": "23559",
+        "date": "8 June 2011",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23559&row=91"
+      },
+      {
+        "id": "23562",
+        "date": "9 June 2011",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23562&row=92"
+      },
+      {
+        "id": "23566",
+        "date": "11 June 2011",
+        "session": "Matinee 12.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23566&row=93"
+      },
+      {
+        "id": "29400",
+        "date": "18 October 2014",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=29400&row=94"
+      },
+      {
+        "id": "29406",
+        "date": "22 October 2014",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=29406&row=95"
+      },
+      {
+        "id": "29413",
+        "date": "28 October 2014",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=29413&row=96"
+      },
+      {
+        "id": "29423",
+        "date": "4 November 2014",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=29423&row=97"
+      },
+      {
+        "id": "29427",
+        "date": "5 November 2014",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=29427&row=98"
+      },
+      {
+        "id": "29433",
+        "date": "11 November 2014",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=29433&row=99"
+      },
+      {
+        "id": "29437",
+        "date": "12 November 2014",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=29437&row=100"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Costume Collection",
+        "count": 2,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1673&collection=Costume%20Collection"
+      },
+      {
+        "collection": "Frank Sharman Photographic Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1673&collection=Frank%20Sharman%20Photographic%20Collection"
+      },
+      {
+        "collection": "Nadia Nerina Collection",
+        "count": 2,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1673&collection=Nadia%20Nerina%20Collection"
+      },
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 9,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1673&collection=Roger%20Wood%20Photographic%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "2154",
+    "workId": "1433",
+    "title": "Boris Godunov (1948)",
+    "company": "Covent Garden Opera Company",
+    "productionPremiere": "12 May 1948",
+    "producer": "Peter Brook",
+    "costumeDesigner": "Georges Wakhevitch",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=0&production=2154&page=0",
+    "metadata": {
+      "Company": "Covent Garden Opera Company",
+      "Production premiere": "12 May 1948",
+      "Producer": "Peter Brook",
+      "Set designer": "Georges Wakhevitch",
+      "Costume designer": "Georges Wakhevitch",
+      "Work ID": "1433"
+    },
+    "performances": [
+      {
+        "id": "3635",
+        "date": "12 May 1948",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3635&row=0"
+      },
+      {
+        "id": "9783",
+        "date": "8 October 1948",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9783&row=1"
+      },
+      {
+        "id": "10632",
+        "date": "19 November 1949",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10632&row=2"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 7,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=2154&collection=Roger%20Wood%20Photographic%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "14725",
+    "workId": "1433",
+    "title": "Boris Godunov (1958)",
+    "company": "Covent Garden Opera Company",
+    "productionPremiere": "31 October 1958",
+    "producer": "Herbert Graf",
+    "costumeDesigner": "Georges Wakhevitch",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=1&production=14725&page=0",
+    "metadata": {
+      "Company": "Covent Garden Opera Company",
+      "Production premiere": "31 October 1958",
+      "Producer": "Herbert Graf",
+      "Set designer": "Georges Wakhevitch",
+      "Costume designer": "Georges Wakhevitch",
+      "Revival rehearsed by": "Ande Anderson (revivals 1959-1965)",
+      "Revival choreographer": "Peter Clegg Act III: Polonaise in 1965 revival",
+      "Work ID": "1433"
+    },
+    "performances": [
+      {
+        "id": "14726",
+        "date": "31 October 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14726&row=0"
+      },
+      {
+        "id": "18912",
+        "date": "6 November 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18912&row=1"
+      },
+      {
+        "id": "14727",
+        "date": "5 November 1959",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14727&row=2"
+      },
+      {
+        "id": "14801",
+        "date": "1 June 1961",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14801&row=3"
+      },
+      {
+        "id": "14879",
+        "date": "15 December 1965",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14879&row=4"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Poster Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=14725&collection=Poster%20Collection"
+      },
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=14725&collection=Roger%20Wood%20Photographic%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "2155",
+    "workId": "1433",
+    "title": "Boris Godunov (1983)",
+    "company": "The Royal Opera",
+    "productionPremiere": "31 October 1983",
+    "producer": "Andrei Tarkovsky",
+    "costumeDesigner": "Nicolas Dvigoubsky",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=2&production=2155&page=0",
+    "metadata": {
+      "Company": "The Royal Opera",
+      "Production premiere": "31 October 1983",
+      "Producer": "Andrei Tarkovsky",
+      "Set designer": "Nicolas Dvigoubsky",
+      "Costume designer": "Nicolas Dvigoubsky",
+      "Lighting designer": "Robert Bryan",
+      "Choreographer": "Romayne Grigorova",
+      "Revival rehearsed by": "Stephen Lawless (revivals in 1984 and 1988)",
+      "Revival staging": "Irina Brown (revivals in 1988 and 1991, credited as 'rehearsed by' in the former)",
+      "Revival director": "Irina Brown (2003 revival)",
+      "Sponsor": "The Royal Opera House Trust",
+      "Work ID": "1433"
+    },
+    "performances": [
+      {
+        "id": "12585",
+        "date": "31 October 1983",
+        "session": "Evening 6.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12585&row=0"
+      },
+      {
+        "id": "16205",
+        "date": "2 November 1984",
+        "session": "Evening 6.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16205&row=1"
+      },
+      {
+        "id": "16247",
+        "date": "14 July 1988",
+        "session": "Evening 6.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16247&row=2"
+      },
+      {
+        "id": "16728",
+        "date": "6 April 1991",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16728&row=3"
+      },
+      {
+        "id": "4744",
+        "date": "22 September 2003",
+        "session": "Evening 6.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=4744&row=4"
+      },
+      {
+        "id": "4748",
+        "date": "25 September 2003",
+        "session": "Evening 6.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=4748&row=5"
+      },
+      {
+        "id": "4749",
+        "date": "27 September 2003",
+        "session": "Evening 6.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=4749&row=6"
+      },
+      {
+        "id": "4750",
+        "date": "3 October 2003",
+        "session": "Evening 6.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=4750&row=7"
+      },
+      {
+        "id": "4751",
+        "date": "5 October 2003",
+        "session": "Evening 3.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=4751&row=8"
+      },
+      {
+        "id": "4752",
+        "date": "7 October 2003",
+        "session": "Evening 6.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=4752&row=9"
+      },
+      {
+        "id": "4753",
+        "date": "9 October 2003",
+        "session": "Evening 6.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=4753&row=10"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Poster Collection",
+        "count": 2,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=2155&collection=Poster%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "1683",
+    "workId": "661",
+    "title": "Daphnis and Chloë (1951)",
+    "company": "Sadler's Wells Ballet",
+    "productionPremiere": "5 April 1951",
+    "costumeDesigner": "John Craxton",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=0&production=1683&page=0",
+    "metadata": {
+      "Company": "Sadler's Wells Ballet",
+      "Production premiere": "5 April 1951",
+      "Set designer": "John Craxton",
+      "Costume designer": "John Craxton",
+      "Revival lighting designer": "John B Read (2004 revival)",
+      "Revival staging": "Grant Coyle (2004 revival)",
+      "Work ID": "661"
+    },
+    "performances": [
+      {
+        "id": "11766",
+        "date": "5 April 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11766&row=0"
+      },
+      {
+        "id": "16565",
+        "date": "6 April 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16565&row=1"
+      },
+      {
+        "id": "16568",
+        "date": "7 April 1951",
+        "session": "Matinee 2.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16568&row=2"
+      },
+      {
+        "id": "16573",
+        "date": "7 April 1951",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16573&row=3"
+      },
+      {
+        "id": "14914",
+        "date": "9 April 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14914&row=4"
+      },
+      {
+        "id": "16580",
+        "date": "10 April 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16580&row=5"
+      },
+      {
+        "id": "16581",
+        "date": "11 April 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16581&row=6"
+      },
+      {
+        "id": "14917",
+        "date": "16 April 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14917&row=7"
+      },
+      {
+        "id": "16933",
+        "date": "18 April 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16933&row=8"
+      },
+      {
+        "id": "16958",
+        "date": "28 April 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16958&row=9"
+      },
+      {
+        "id": "17387",
+        "date": "3 May 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17387&row=10"
+      },
+      {
+        "id": "17394",
+        "date": "8 May 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17394&row=11"
+      },
+      {
+        "id": "17397",
+        "date": "9 May 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17397&row=12"
+      },
+      {
+        "id": "17481",
+        "date": "4 July 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17481&row=13"
+      },
+      {
+        "id": "17484",
+        "date": "6 July 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17484&row=14"
+      },
+      {
+        "id": "17493",
+        "date": "12 July 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17493&row=15"
+      },
+      {
+        "id": "17496",
+        "date": "13 July 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17496&row=16"
+      },
+      {
+        "id": "17502",
+        "date": "14 July 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=17502&row=17"
+      },
+      {
+        "id": "14943",
+        "date": "5 September 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14943&row=18"
+      },
+      {
+        "id": "14948",
+        "date": "7 September 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=14948&row=19"
+      },
+      {
+        "id": "15018",
+        "date": "12 December 1951",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15018&row=20"
+      },
+      {
+        "id": "15077",
+        "date": "14 January 1953",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15077&row=21"
+      },
+      {
+        "id": "15138",
+        "date": "9 March 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15138&row=22"
+      },
+      {
+        "id": "15231",
+        "date": "14 September 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15231&row=23"
+      },
+      {
+        "id": "15359",
+        "date": "31 December 1955",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15359&row=24"
+      },
+      {
+        "id": "15814",
+        "date": "12 March 1957",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15814&row=25"
+      },
+      {
+        "id": "15842",
+        "date": "10 April 1957",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15842&row=26"
+      },
+      {
+        "id": "15859",
+        "date": "6 March 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15859&row=27"
+      },
+      {
+        "id": "15864",
+        "date": "14 March 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15864&row=28"
+      },
+      {
+        "id": "12446",
+        "date": "20 August 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12446&row=29"
+      },
+      {
+        "id": "16098",
+        "date": "5 June 1959",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16098&row=30"
+      },
+      {
+        "id": "16371",
+        "date": "21 November 1959",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16371&row=31"
+      },
+      {
+        "id": "16105",
+        "date": "21 October 1961",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16105&row=32"
+      },
+      {
+        "id": "16177",
+        "date": "3 November 1962",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16177&row=33"
+      },
+      {
+        "id": "27437",
+        "date": "5 November 1962",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27437&row=34"
+      },
+      {
+        "id": "16182",
+        "date": "6 November 1962",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16182&row=35"
+      },
+      {
+        "id": "27445",
+        "date": "16 November 1962",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27445&row=36"
+      },
+      {
+        "id": "15307",
+        "date": "24 November 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15307&row=37"
+      },
+      {
+        "id": "25878",
+        "date": "25 November 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25878&row=38"
+      },
+      {
+        "id": "25882",
+        "date": "30 November 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25882&row=39"
+      },
+      {
+        "id": "15311",
+        "date": "15 December 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15311&row=40"
+      },
+      {
+        "id": "15344",
+        "date": "25 June 1966",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15344&row=41"
+      },
+      {
+        "id": "25308",
+        "date": "28 June 1966",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25308&row=42"
+      },
+      {
+        "id": "25310",
+        "date": "29 June 1966",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25310&row=43"
+      },
+      {
+        "id": "25312",
+        "date": "1 July 1966",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25312&row=44"
+      },
+      {
+        "id": "15402",
+        "date": "5 November 1969",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15402&row=45"
+      },
+      {
+        "id": "25885",
+        "date": "6 November 1969",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25885&row=46"
+      },
+      {
+        "id": "25092",
+        "date": "7 November 1969",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25092&row=47"
+      },
+      {
+        "id": "25888",
+        "date": "13 November 1969",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25888&row=48"
+      },
+      {
+        "id": "15405",
+        "date": "18 November 1969",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15405&row=49"
+      },
+      {
+        "id": "15426",
+        "date": "16 March 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15426&row=50"
+      },
+      {
+        "id": "27822",
+        "date": "24 July 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27822&row=51"
+      },
+      {
+        "id": "15498",
+        "date": "6 July 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15498&row=52"
+      },
+      {
+        "id": "15506",
+        "date": "15 November 1973",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15506&row=53"
+      },
+      {
+        "id": "27716",
+        "date": "21 November 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27716&row=54"
+      },
+      {
+        "id": "25994",
+        "date": "23 November 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25994&row=55"
+      },
+      {
+        "id": "25997",
+        "date": "24 November 1973",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25997&row=56"
+      },
+      {
+        "id": "15531",
+        "date": "12 December 1974",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15531&row=57"
+      },
+      {
+        "id": "24850",
+        "date": "15 January 1975",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24850&row=58"
+      },
+      {
+        "id": "27752",
+        "date": "7 March 1975",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27752&row=59"
+      },
+      {
+        "id": "24919",
+        "date": "5 April 1975",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24919&row=60"
+      },
+      {
+        "id": "24922",
+        "date": "9 April 1975",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24922&row=61"
+      },
+      {
+        "id": "15652",
+        "date": "10 March 1981",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15652&row=62"
+      },
+      {
+        "id": "16254",
+        "date": "18 October 1984",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16254&row=63"
+      },
+      {
+        "id": "16258",
+        "date": "23 October 1984",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16258&row=64"
+      },
+      {
+        "id": "16308",
+        "date": "1 November 1984",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=16308&row=65"
+      },
+      {
+        "id": "18376",
+        "date": "21 April 1986",
+        "session": "Evening 8.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=18376&row=66"
+      },
+      {
+        "id": "5166",
+        "date": "8 May 2004",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5166&row=67"
+      },
+      {
+        "id": "5175",
+        "date": "10 May 2004",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5175&row=68"
+      },
+      {
+        "id": "5189",
+        "date": "13 May 2004",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5189&row=69"
+      },
+      {
+        "id": "5193",
+        "date": "15 May 2004",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5193&row=70"
+      },
+      {
+        "id": "5197",
+        "date": "17 May 2004",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5197&row=71"
+      },
+      {
+        "id": "5201",
+        "date": "18 May 2004",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5201&row=72"
+      },
+      {
+        "id": "5205",
+        "date": "20 May 2004",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5205&row=73"
+      },
+      {
+        "id": "5209",
+        "date": "25 May 2004",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=5209&row=74"
+      },
+      {
+        "id": "1848",
+        "date": "13 November 2004",
+        "session": "Matinee 1.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1848&row=75"
+      },
+      {
+        "id": "1856",
+        "date": "13 November 2004",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1856&row=76"
+      },
+      {
+        "id": "1865",
+        "date": "17 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1865&row=77"
+      },
+      {
+        "id": "1874",
+        "date": "19 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1874&row=78"
+      },
+      {
+        "id": "1884",
+        "date": "25 November 2004",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=1884&row=79"
+      },
+      {
+        "id": "33272",
+        "date": "8 June 2019",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=33272&row=80"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 6,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1683&collection=Roger%20Wood%20Photographic%20Collection"
+      },
+      {
+        "collection": "Technical Equipment Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=1683&collection=Technical%20Equipment%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "1686",
+    "workId": "661",
+    "title": "Daphnis and Chloë (1994)",
+    "company": "The Royal Ballet",
+    "productionPremiere": "10 November 1994",
+    "costumeDesigner": "Martyn Bainbridge",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?row=1&production=1686&page=0",
+    "metadata": {
+      "Company": "The Royal Ballet",
+      "Production premiere": "10 November 1994",
+      "Set designer": "Martyn Bainbridge",
+      "Costume designer": "Martyn Bainbridge",
+      "Lighting designer": "Mark Henderson",
+      "Sponsor": "The Robert Gavron Charitable Trust",
+      "Work ID": "661"
+    },
+    "performances": [
+      {
+        "id": "9640",
+        "date": "10 November 1994",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9640&row=0"
+      },
+      {
+        "id": "9652",
+        "date": "11 November 1994",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9652&row=1"
+      },
+      {
+        "id": "9664",
+        "date": "16 November 1994",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9664&row=2"
+      },
+      {
+        "id": "9679",
+        "date": "21 November 1994",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9679&row=3"
+      },
+      {
+        "id": "9689",
+        "date": "28 November 1994",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9689&row=4"
+      },
+      {
+        "id": "9694",
+        "date": "30 November 1994",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9694&row=5"
+      },
+      {
+        "id": "23180",
+        "date": "27 July 1995",
+        "session": "Matinee 2.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23180&row=6"
+      },
+      {
+        "id": "23185",
+        "date": "27 July 1995",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23185&row=7"
+      },
+      {
+        "id": "23190",
+        "date": "28 July 1995",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23190&row=8"
+      },
+      {
+        "id": "23196",
+        "date": "31 July 1995",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23196&row=9"
+      },
+      {
+        "id": "12220",
+        "date": "18 October 1996",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12220&row=10"
+      },
+      {
+        "id": "12225",
+        "date": "22 October 1996",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12225&row=11"
+      },
+      {
+        "id": "12243",
+        "date": "31 October 1996",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12243&row=12"
+      },
+      {
+        "id": "12293",
+        "date": "8 November 1996",
+        "session": "Matinee 1.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12293&row=13"
+      },
+      {
+        "id": "12259",
+        "date": "8 November 1996",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12259&row=14"
+      },
+      {
+        "id": "12292",
+        "date": "19 November 1996",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12292&row=15"
+      }
+    ],
+    "relatedRecordCollections": []
+  },
+  {
+    "id": "3850",
+    "title": "Homage to The Queen (1953)",
+    "company": "Sadler's Wells Ballet",
+    "productionPremiere": "2 June 1953",
+    "costumeDesigner": "Oliver Messel",
+    "sourceUrl": "https://www.rohcollections.org.uk/Production.aspx?production=3850",
+    "metadata": {
+      "Company": "Sadler's Wells Ballet",
+      "Production premiere": "2 June 1953",
+      "Set designer": "Oliver Messel",
+      "Costume designer": "Oliver Messel",
+      "Lighting designer": "John Sullivan",
+      "Revival lighting designer": "John B Read (1994 revival of 'Air')"
+    },
+    "performances": [
+      {
+        "id": "11911",
+        "date": "2 June 1953",
+        "session": "Evening 8.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=11911&row=0"
+      },
+      {
+        "id": "15139",
+        "date": "9 March 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15139&row=1"
+      },
+      {
+        "id": "15143",
+        "date": "26 March 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15143&row=2"
+      },
+      {
+        "id": "15199",
+        "date": "21 April 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15199&row=3"
+      },
+      {
+        "id": "15216",
+        "date": "3 September 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15216&row=4"
+      },
+      {
+        "id": "15226",
+        "date": "11 September 1954",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15226&row=5"
+      },
+      {
+        "id": "15363",
+        "date": "31 December 1955",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15363&row=6"
+      },
+      {
+        "id": "15411",
+        "date": "13 March 1956",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15411&row=7"
+      },
+      {
+        "id": "15904",
+        "date": "8 May 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15904&row=8"
+      },
+      {
+        "id": "27805",
+        "date": "24 July 1970",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=27805&row=9"
+      },
+      {
+        "id": "9720",
+        "date": "9 December 1994",
+        "session": "Matinee 1.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9720&row=10"
+      },
+      {
+        "id": "9712",
+        "date": "9 December 1994",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9712&row=11"
+      },
+      {
+        "id": "9741",
+        "date": "15 December 1994",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9741&row=12"
+      },
+      {
+        "id": "9747",
+        "date": "17 December 1994",
+        "session": "Matinee 2.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9747&row=13"
+      },
+      {
+        "id": "9759",
+        "date": "17 December 1994",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=9759&row=14"
+      },
+      {
+        "id": "23178",
+        "date": "27 July 1995",
+        "session": "Matinee 2.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23178&row=15"
+      },
+      {
+        "id": "23183",
+        "date": "27 July 1995",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23183&row=16"
+      },
+      {
+        "id": "23188",
+        "date": "28 July 1995",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23188&row=17"
+      },
+      {
+        "id": "23195",
+        "date": "31 July 1995",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=23195&row=18"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Costume Collection",
+        "count": 36,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=3850&collection=Costume%20Collection"
+      },
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 7,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=3850&collection=Roger%20Wood%20Photographic%20Collection"
+      }
+    ]
+  },
+  {
+    "id": "2385",
+    "title": "Hamlet (1942)",
+    "company": "Sadler's Wells Ballet",
+    "productionPremiere": "19 May 1942",
+    "costumeDesigner": "Leslie Hurry",
+    "sourceUrl": "https://www.rohcollections.org.uk/production.aspx?production=2385",
+    "metadata": {
+      "Company": "Sadler's Wells Ballet",
+      "Production premiere": "19 May 1942",
+      "Set designer": "Leslie Hurry",
+      "Costume designer": "Leslie Hurry",
+      "Revival lighting designer": "Bill McGee (1981 revival)"
+    },
+    "performances": [
+      {
+        "id": "2565",
+        "date": "3 June 1946",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=2565&row=0"
+      },
+      {
+        "id": "3445",
+        "date": "29 October 1946",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3445&row=1"
+      },
+      {
+        "id": "3467",
+        "date": "30 October 1946",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3467&row=2"
+      },
+      {
+        "id": "3495",
+        "date": "12 November 1946",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3495&row=3"
+      },
+      {
+        "id": "10018",
+        "date": "27 February 1947",
+        "session": "Evening 6.45pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10018&row=4"
+      },
+      {
+        "id": "2386",
+        "date": "14 November 1947",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=2386&row=5"
+      },
+      {
+        "id": "2391",
+        "date": "15 November 1947",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=2391&row=6"
+      },
+      {
+        "id": "2398",
+        "date": "18 November 1947",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=2398&row=7"
+      },
+      {
+        "id": "3650",
+        "date": "20 May 1948",
+        "session": "Evening 7.00pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=3650&row=8"
+      },
+      {
+        "id": "10362",
+        "date": "13 December 1948",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=10362&row=9"
+      },
+      {
+        "id": "12680",
+        "date": "27 March 1958",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12680&row=10"
+      },
+      {
+        "id": "12399",
+        "date": "2 April 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12399&row=11"
+      },
+      {
+        "id": "24960",
+        "date": "3 April 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24960&row=12"
+      },
+      {
+        "id": "24963",
+        "date": "6 April 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24963&row=13"
+      },
+      {
+        "id": "24966",
+        "date": "9 April 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24966&row=14"
+      },
+      {
+        "id": "24969",
+        "date": "24 April 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24969&row=15"
+      },
+      {
+        "id": "24972",
+        "date": "28 April 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24972&row=16"
+      },
+      {
+        "id": "24975",
+        "date": "29 April 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24975&row=17"
+      },
+      {
+        "id": "24978",
+        "date": "11 May 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24978&row=18"
+      },
+      {
+        "id": "24981",
+        "date": "14 May 1964",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24981&row=19"
+      },
+      {
+        "id": "12525",
+        "date": "2 April 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=12525&row=20"
+      },
+      {
+        "id": "24983",
+        "date": "4 April 1981",
+        "session": "Matinee",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24983&row=21"
+      },
+      {
+        "id": "24987",
+        "date": "4 April 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24987&row=22"
+      },
+      {
+        "id": "24991",
+        "date": "10 April 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24991&row=23"
+      },
+      {
+        "id": "26181",
+        "date": "13 April 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=26181&row=24"
+      },
+      {
+        "id": "24995",
+        "date": "21 April 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24995&row=25"
+      },
+      {
+        "id": "15658",
+        "date": "13 May 1981",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15658&row=26"
+      },
+      {
+        "id": "24999",
+        "date": "20 May 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24999&row=27"
+      },
+      {
+        "id": "25003",
+        "date": "23 May 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=25003&row=28"
+      },
+      {
+        "id": "15715",
+        "date": "23 October 1981",
+        "session": "Evening 7.30pm",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=15715&row=29"
+      },
+      {
+        "id": "24525",
+        "date": "29 October 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24525&row=30"
+      },
+      {
+        "id": "24534",
+        "date": "31 October 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24534&row=31"
+      },
+      {
+        "id": "24543",
+        "date": "4 November 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24543&row=32"
+      },
+      {
+        "id": "24559",
+        "date": "20 November 1981",
+        "session": "Evening",
+        "venue": "Royal Opera House, Covent Garden, London",
+        "sourceUrl": "https://www.rohcollections.org.uk/performance.aspx?performance=24559&row=33"
+      }
+    ],
+    "relatedRecordCollections": [
+      {
+        "collection": "Nadia Nerina Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=2385&collection=Nadia%20Nerina%20Collection"
+      },
+      {
+        "collection": "Roger Wood Photographic Collection",
+        "count": 3,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=2385&collection=Roger%20Wood%20Photographic%20Collection"
+      },
+      {
+        "collection": "Technical Equipment Collection",
+        "count": 1,
+        "url": "https://www.rohcollections.org.uk/relatedobjects.aspx?production=2385&collection=Technical%20Equipment%20Collection"
       }
     ]
   }

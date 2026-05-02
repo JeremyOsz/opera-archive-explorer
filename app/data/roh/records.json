@@ -897,7 +897,7 @@
     "date": "1946 - 1951",
     "creator": "Frank Sharman",
     "condition": "Good.",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROHB&ref=110001066&page=0",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROHB&page=1&ref=110001066",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
       "Reference code": "ROH/SHA",
@@ -1425,7 +1425,7 @@
     "date": "1878 - 1917",
     "creator": "Constance Gwladys (Lady de Grey) | Marchioness of Ripon Robinson",
     "condition": "Good. Most items are exhibiting foxing; a few photographs are faded.",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001093&collection=Lady%20de%20Grey%20Photographic%20Collection&row=0&searchtype=collection&person=Reszke",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROHB&ref=110001093&page=0",
     "metadata": {
       "Collection": "Lady de Grey Photographic Collection",
       "Reference code": "ROH/GRE",
@@ -1449,11 +1449,21 @@
     "id": "110001101",
     "title": "Lady de Grey photograph album volume 1",
     "collection": "Lady de Grey Photographic Collection",
-    "objectNumber": "ROH/GRE/1 File",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001101&collection=Lady%20de%20Grey%20Photographic%20Collection&row=1&searchtype=collection",
+    "date": "1883 - 1913",
+    "creator": "Constance Gwladys (Lady de Grey) | Marchioness of Ripon Robinson",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/GRE&row=0&ref=110001101&page=0",
     "metadata": {
       "Collection": "Lady de Grey Photographic Collection",
-      "Object number": "ROH/GRE/1 File"
+      "Reference code": "ROH/GRE/1",
+      "Date": "1883 - 1913",
+      "Date notes": "This is an approximate year span for the album as not all the photographs are dated. The earliest dated item is 1887, although research suggests several are earlier than this. The latest dated item is 1908, although some could be later.",
+      "Level": "File",
+      "Extent": "3 boxes containing 43 sepia photographic prints, 14 black and white photographic prints, 1 colour-tinted photographic print, 5 sepia postcards, 2 black and white postcards, 1 magazine cutting, and 2 newspaper cuttings",
+      "Scope and content": "Studio portraits of opera singers, conductors, composers, actors and others in the arts, many signed and inscribed by the subject. Lady de Grey wrote captions under most of the images.",
+      "Creator": "Constance Gwladys (Lady de Grey) | Marchioness of Ripon Robinson",
+      "Copyright": "Copies are available subject to the conditions of the originals and copyright restrictions.",
+      "Condition": "Good."
     }
   },
   {
@@ -2543,7 +2553,7 @@
     "date": "1946 - 1951",
     "creator": "Frank Sharman",
     "condition": "Good.",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001069&row=2&archive=ROH/SHA",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA&ref=110001069&page=1",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
       "Reference code": "ROH/SHA/3",
@@ -2560,24 +2570,46 @@
     "id": "110001643",
     "title": "Black and white photographic negatives of the Ballet Rambert production of 'Casse Noisette' at the King's Theatre, Hammersmith",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/014 File",
-    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/95/110001643_8295.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001643&collection=Frank%20Sharman%20Photographic%20Collection&row=4&searchtype=collection&company=Ballet%20Rambert",
+    "date": "1 October 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/97/110001643_8297.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/97/110001643_8297.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=12&img=110001643_8297&ref=110001643&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/014 File"
+      "Reference code": "ROH/SHA/3/014",
+      "Date": "1 October 1949",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "5 negative strips, consisting of 22 frames",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
     }
   },
   {
     "id": "110002585",
     "title": "Black and white photographic negatives of the Ballet Rambert production of 'Gala Performance' at the King's Theatre, Hammersmith, London",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/015 File",
+    "date": "1 October 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/96/110002585_8296.jpg",
     "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/96/110002585_8296.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110002585&collection=Frank%20Sharman%20Photographic%20Collection&row=5&searchtype=collection&company=Ballet%20Rambert",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=13&ref=110002585&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/015 File"
+      "Reference code": "ROH/SHA/3/015",
+      "Date": "1 October 1949",
+      "Date notes": "Negatives undated; 1948 is the year of the production.",
+      "Level": "File",
+      "Extent": "2 negative strips, consisting of 7 frames",
+      "Scope and content": "Antony Tudor choreographed this work for London Ballet in 1938 to music by Serge Prokofiev and designs by Hugh Stevenson. Two frames on these strips depict 'Swan Lake'.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "One image from these negatives appeared in 'Ballet Annual' 1950 (no. 4), p143."
     }
   },
   {
@@ -2621,7 +2653,7 @@
     "date": "1946 - 1948",
     "creator": "Frank Sharman",
     "condition": "Good.",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001068&row=1&archive=ROH/SHA",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA&ref=110001068&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
       "Reference code": "ROH/SHA/2",
@@ -2637,11 +2669,21 @@
     "id": "110002577",
     "title": "Colour transparencies of the International Ballet production of 'Sea Legend' at the Granada Theatre, Clapham",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/2/013 File",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110002577&collection=Frank%20Sharman%20Photographic%20Collection&row=2&searchtype=collection&company=International%20Ballet",
+    "date": "1 February 1948",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/2&page=0&row=12&ref=110002577",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/2/013 File"
+      "Reference code": "ROH/SHA/2/013",
+      "Date": "1 February 1948",
+      "Date notes": "Transparencies undated; date derived through research.",
+      "Level": "File",
+      "Extent": "2 colour transparencies",
+      "Scope and content": "Dorothy Stevenson choreographed 'Sea Legend' in 1945 for the Borovansky Ballet, Australia to music by Esther Rofe and designs by John Bainbridge.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
     }
   },
   {
@@ -2672,11 +2714,21 @@
     "id": "110001098",
     "title": "Colour transparencies of the International Ballet production of 'Swan Lake' (1947)",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/2/014 File",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001098&collection=Frank%20Sharman%20Photographic%20Collection&row=5&searchtype=collection&company=International%20Ballet",
+    "date": "1947",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001098&row=13&archive=ROH/SHA/2",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/2/014 File"
+      "Reference code": "ROH/SHA/2/014",
+      "Date": "1947",
+      "Date notes": "Transparencies undated: 1947 is the year of the production.",
+      "Level": "File",
+      "Extent": "24 colour transparencies",
+      "Scope and content": "The International Ballet's production, staged by Nicholas Sergeyev with designs by William Chappell, premiered at the Adelphi Theatre, London, on 18 March 1947.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
     }
   },
   {
@@ -3163,36 +3215,72 @@
     "id": "110002575",
     "title": "Black and white photographic negatives of Les Ballets des Champs-Elysées production of 'L'Amour et son amour' at the Princes Theatre, London",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/005 File",
-    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/32/110002575_8232.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110002575&collection=Frank%20Sharman%20Photographic%20Collection&row=6&searchtype=collection&company=Les%20Ballets%20des%20Champs-Elys%C3%A9es",
+    "date": "1 September 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/31/110002575_8231.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/31/110002575_8231.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=4&img=110002575_8231&ref=110002575&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/005 File"
+      "Reference code": "ROH/SHA/3/005",
+      "Date": "1 September 1949",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "3 negative strips, consisting of 10 frames",
+      "Scope and content": "Jean Babilée choreographed this work for Les Ballets des Champs-Elysées in 1948 to music by César Franck and designs by Jean Cocteau.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "One image from these negatives appeared in 'Ballet Annual' 1950 (no. 4), p60."
     }
   },
   {
     "id": "110002586",
     "title": "Black and white photographic negatives of Les Ballets des Champs-Elyseés production of 'Le Rencontre' at the Princes Theatre, London",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/006 File",
-    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/63/110002586_8263.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110002586&collection=Frank%20Sharman%20Photographic%20Collection&row=7&searchtype=collection&company=Les%20Ballets%20des%20Champs-Elys%C3%A9es",
+    "date": "1 September 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/86/110002586_8286.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/86/110002586_8286.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=5&img=110002586_8286&ref=110002586&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/006 File"
+      "Reference code": "ROH/SHA/3/006",
+      "Date": "1 September 1949",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "3 negative strips, consisting of 13 frames",
+      "Scope and content": "David Lichine choreographed this work for Les Ballets des Champs-Elyseés in 1948, with music by Henri Sauguet, libretto by Boris Kochno, and designs by Christian Bérard.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "Two images from these negatives appeared in 'Ballet Annual' 1950 (no. 4), p60."
     }
   },
   {
     "id": "110002587",
     "title": "Black and white photographic negatives of Les Ballets des Champs-Elyseés production of 'La Sylphide' at the Winter Garden Theatre, London",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/007 File",
-    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/12/110002587_8312.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110002587&collection=Frank%20Sharman%20Photographic%20Collection&row=8&searchtype=collection&company=Les%20Ballets%20des%20Champs-Elys%C3%A9es",
+    "date": "1 June 1947",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/15/110002587_8315.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/15/110002587_8315.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=6&img=110002587_8315&ref=110002587&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/007 File"
+      "Reference code": "ROH/SHA/3/007",
+      "Date": "1 June 1947",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "7 negative strips, consisting of 29 frames",
+      "Scope and content": "The images feature Nina Vyroubova as the Sylph and Roland Petit as James.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "Two images from these negatives appeared in 'Ballet Annual' 1950 (no. 4), p60."
     }
   },
   {
@@ -3638,24 +3726,48 @@
     "id": "110002583",
     "title": "Black and white photographic negatives of The Marquis de Cuevas' Grand Ballet de Monte Carlo production of 'Del Amor y de la Muerte' at the Royal Opera House, Covent Garden",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/018 File",
-    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/06/110002583_8306.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110002583&collection=Frank%20Sharman%20Photographic%20Collection&row=2&searchtype=collection&company=The%20Marquis%20de%20Cuevas%27%20Grand%20Ballet%20de%20Monte%20Carlo",
+    "date": "1 July 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/51/110002583_8251.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/51/110002583_8251.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=16&img=110002583_8251&ref=110002583&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/018 File"
+      "Reference code": "ROH/SHA/3/018",
+      "Date": "1 July 1949",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "3 negative strips, consisting of 14 frames",
+      "Scope and content": "The featured dancers are Tamara Toumanova and George Skibine. For another image of this ballet, see one frame on the strips of 'Enchanted Mill'.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "One image from these negatives appeared in 'Ballet Annual' 1950 (no. 4), p134."
     }
   },
   {
     "id": "110002578",
     "title": "Black and white photographic negatives of The Marquis de Cuevas' Grand Ballet de Monte Carlo production of 'Enchanted Mill' at the Royal Opera House, Covent Garden",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/019 File",
-    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/43/110002578_8243.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110002578&collection=Frank%20Sharman%20Photographic%20Collection&row=3&searchtype=collection&company=The%20Marquis%20de%20Cuevas%27%20Grand%20Ballet%20de%20Monte%20Carlo",
+    "date": "1 July 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/07/110002578_8307.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/07/110002578_8307.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=17&img=110002578_8307&ref=110002578&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/019 File"
+      "Reference code": "ROH/SHA/3/019",
+      "Date": "1 July 1949",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "3 negatives strips, consisting of 13 frames",
+      "Scope and content": "The featured dancers are André Eglevsky and Rosella Hightower. One frame on these strips depicts 'Del Amor y de La Muerte'.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "One image from these negatives appeared in 'Ballet Annual' 1950 (no. 4), p134."
     }
   },
   {
@@ -4166,11 +4278,20 @@
     "id": "110001106",
     "title": "Colour transparencies of the Sadler's Wells Opera Ballet production of 'Khadra' (1946) at Sadler's Wells Theatre",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/2/010 File",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001106&collection=Frank%20Sharman%20Photographic%20Collection&row=0&searchtype=collection&keyword=%22Khadra%22",
+    "date": "1946",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001106&row=9&archive=ROH/SHA/2",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/2/010 File"
+      "Reference code": "ROH/SHA/2/010",
+      "Date": "1946",
+      "Date notes": "Transparencies undated; 1946 is the year of the production.",
+      "Level": "File",
+      "Extent": "14 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
     }
   },
   {
@@ -4844,11 +4965,20 @@
     "id": "110002573",
     "title": "Colour transparencies of the Sadler's Wells Opera Ballet production of 'Les Sylphides' (1946) at Sadler's Wells Theatre",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/2/011 File",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110002573&collection=Frank%20Sharman%20Photographic%20Collection&row=0&searchtype=collection&keyword=%22Sylphides%22",
+    "date": "1946",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/2&page=0&row=10&ref=110002573",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/2/011 File"
+      "Reference code": "ROH/SHA/2/011",
+      "Date": "1946",
+      "Date notes": "Transparencies undated; 1946 is the year of the production.",
+      "Level": "File",
+      "Extent": "1 colour transparency",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
     }
   },
   {
@@ -4924,11 +5054,20 @@
     "id": "110001108",
     "title": "Colour transparencies of the Sadler's Wells Opera Ballet production of 'The Gods Go A'Begging' (1946) at Sadler's Wells Theatre",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/2/009 File",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001108&collection=Frank%20Sharman%20Photographic%20Collection&row=0&searchtype=collection&keyword=%22The%20Gods%20Go%20A%27Begging%22",
+    "date": "1946",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001108&row=8&archive=ROH/SHA/2",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/2/009 File"
+      "Reference code": "ROH/SHA/2/009",
+      "Date": "1946",
+      "Date notes": "Transparencies undated; 1946 is the year of the production.",
+      "Level": "File",
+      "Extent": "9 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
     }
   },
   {
@@ -7969,12 +8108,25 @@
     "id": "110001339",
     "title": "Black and white photographic prints of the Sadler's Wells Ballet revival of 'Apparitions' (1936) at the Royal Opera House, Covent Garden",
     "collection": "Roger Wood Photographic Collection",
-    "objectNumber": "ROH/WOO/2/2/003 File",
-    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/95/110001339_10695.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001339&collection=Roger%20Wood%20Photographic%20Collection&row=5&searchtype=collection&title=%22Apparitions%22",
+    "date": "1 June 1949",
+    "creator": "Roger Wood",
+    "condition": "Good. Crop marks are drawn on some of the prints.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/99/110001339_10699.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/99/110001339_10699.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO/2/2&page=0&img=110001339_10699&row=2&ref=110001339",
     "metadata": {
       "Collection": "Roger Wood Photographic Collection",
-      "Object number": "ROH/WOO/2/2/003 File"
+      "Reference code": "ROH/WOO/2/2/003",
+      "Date": "1 June 1949",
+      "Date notes": "Prints undated; date derived from corresponding proof prints.",
+      "Level": "File",
+      "Extent": "60 black and white prints and 3 black and white contact sheets, including some duplicates",
+      "Scope and content": "Photographs featuring Robert Helpmann as The Poet, Margot Fonteyn as Woman in Ball Dress, Harold Turner as A Hussar, John Field as A Monk, and members of the Sadler's Wells Ballet.",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good. Crop marks are drawn on some of the prints.",
+      "Alternative number": "Photographer's own reference number: 87X/622, 87Y/125, 87Y/126, 87Y/133, 87Y/212, 87Y/213, 87Y/214, 87Y/532, 87Y/632, 487F/100, A3523, A3524, A3651, A3652, A3653, A3655, A3656, A3657, A3658, A3659, A3660, C3459, C3857.",
+      "Related production": "Apparitions (1936)"
     }
   },
   {
@@ -10180,12 +10332,24 @@
     "id": "110001639",
     "title": "Black and white photographic negatives of the Sadler's Wells Ballet production of 'Cinderella' (1948) at the Royal Opera House, Covent Garden",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/001 File",
-    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/21/110001639_8221.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001639&collection=Frank%20Sharman%20Photographic%20Collection&row=0&searchtype=collection&title=%22Cinderella%22",
+    "date": "1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/20/110001639_8220.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/20/110001639_8220.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=0&img=110001639_8220&ref=110001639&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/001 File"
+      "Reference code": "ROH/SHA/3/001",
+      "Date": "1949",
+      "Date notes": "Negatives undated. 1949 is the year of Fonteyn's debut as Cinderella.",
+      "Level": "File",
+      "Extent": "13 negative strips, consisting of 67 frames",
+      "Scope and content": "Featured dancers are Margot Fonteyn as Cinderella, Frederick Ashton and Robert Helpmann as Cinderella's Stepsisters, Michael Somes as The Prince, and Pamela May as The Fairy Godmother.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "Cinderella (1948)"
     }
   },
   {
@@ -10349,12 +10513,25 @@
     "id": "110001243",
     "title": "Black and white photographic negatives of the Sadler's Wells Ballet production of 'Coppélia' (1940) at the Royal Opera House, Covent Garden",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/3/002 File",
+    "date": "1 March 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/84/110001243_8284.jpg",
     "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/84/110001243_8284.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001243&collection=Frank%20Sharman%20Photographic%20Collection&row=0&searchtype=collection&title=%22Coppelia%22",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=1&img=110001243_8284&ref=110001243",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/3/002 File"
+      "Reference code": "ROH/SHA/3/002",
+      "Date": "1 March 1949",
+      "Date notes": "Negatives undated; Danilova and Franklin danced in this production in March 1949.",
+      "Level": "File",
+      "Extent": "7 negative strips, consisting of 40 frames",
+      "Scope and content": "The featured dancers are Alexandra Danilova as Swanilda, Frederick Franklin as Franz, Robert Helpmann as Dr Coppelius, Nadia Nerina as Aurora, and Beryl Grey as Prayer.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "Two images from these negatives appeared in Ballet Annual 1950 (no. 4), p30.",
+      "Related production": "Coppélia (1940)"
     }
   },
   {
@@ -10602,12 +10779,25 @@
     "id": "110001340",
     "title": "Black and white photographic prints of the Sadler's Wells Ballet production of 'Daphnis and Chloë' (1951) at the Royal Opera House, Covent Garden",
     "collection": "Roger Wood Photographic Collection",
-    "objectNumber": "ROH/WOO/2/2/004 File",
+    "date": "1 April 1951",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/00/110001340_10800.jpg",
     "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/00/110001340_10800.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001340&collection=Roger%20Wood%20Photographic%20Collection&row=4&searchtype=collection&title=%22Daphnis%20and%20Chloe%22",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO/2/2&page=0&img=110001340_10800&ref=110001340&row=3",
     "metadata": {
       "Collection": "Roger Wood Photographic Collection",
-      "Object number": "ROH/WOO/2/2/004 File"
+      "Reference code": "ROH/WOO/2/2/004",
+      "Date": "1 April 1951",
+      "Date notes": "Prints undated; date derived from corresponding proof prints.",
+      "Level": "File",
+      "Extent": "24 black and white prints",
+      "Scope and content": "Photographs featuring Margot Fonteyn as Chloë, Michael Somes as Daphnis, Alexander Grant as Bryaxis, Violetta Elvin as Lykanion, John Field as Dorkon, and members of the Sadler's Wells Ballet.",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good.",
+      "Alternative number": "Photographer's own reference number: 187F/243, 187F/306, 187F/313, 187F/337, 187F/339, 187F/340, 187F/344, 187F/413, 187F/441, 187F/527, 187F/606, 187F/635, 187F/642, 187F/645, 187G/129, 187G/202, 187G/204, 187G/206, 187G/210.",
+      "Related production": "Daphnis and Chloë (1951)"
     }
   },
   {
@@ -13031,11 +13221,21 @@
     "id": "110001095",
     "title": "Colour transparencies of the Sadler's Wells Ballet/Covent Garden Opera Company production of 'The Fairy Queen' (1946) at the Royal Opera House, Covent Garden",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/2/003 File",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001095&collection=Frank%20Sharman%20Photographic%20Collection&row=9&searchtype=collection&title=%22Fairy%20Queen%22",
+    "date": "1946",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001095&row=2&archive=ROH/SHA/2",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/2/003 File"
+      "Reference code": "ROH/SHA/2/003",
+      "Date": "1946",
+      "Date notes": "Transparencies undated; 1946 is the year of the production.",
+      "Level": "File",
+      "Extent": "17 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "The Fairy Queen (1946)"
     }
   },
   {
@@ -13879,11 +14079,21 @@
     "id": "110001096",
     "title": "Colour transparencies of the Sadler's Wells Ballet production of 'Giselle' (1946) at the Royal Opera House, Covent Garden",
     "collection": "Frank Sharman Photographic Collection",
-    "objectNumber": "ROH/SHA/2/004 File",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001096&collection=Frank%20Sharman%20Photographic%20Collection&row=0&searchtype=collection&title=%22Giselle%22",
+    "date": "1946",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001096&row=3&archive=ROH/SHA/2",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
-      "Object number": "ROH/SHA/2/004 File"
+      "Reference code": "ROH/SHA/2/004",
+      "Date": "1946",
+      "Date notes": "Transparencies undated; 1946 is the year of production",
+      "Level": "File",
+      "Extent": "16 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "Giselle (1946)"
     }
   },
   {
@@ -14450,12 +14660,25 @@
     "id": "110001342",
     "title": "Black and white photographic prints of the Sadler's Wells Ballet production of 'Giselle' (1946) at the Royal Opera House, Covent Garden",
     "collection": "Roger Wood Photographic Collection",
-    "objectNumber": "ROH/WOO/2/2/006 File",
+    "date": "1 June 1946 - 1 November 1946",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/39/110001342_10839.jpg",
     "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/39/110001342_10839.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001342&collection=Roger%20Wood%20Photographic%20Collection&row=13&searchtype=collection&title=%22Giselle%22",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO/2/2&page=0&row=5&ref=110001342",
     "metadata": {
       "Collection": "Roger Wood Photographic Collection",
-      "Object number": "ROH/WOO/2/2/006 File"
+      "Reference code": "ROH/WOO/2/2/006",
+      "Date": "1 June 1946 - 1 November 1946",
+      "Date notes": "Prints undated; date derived from research.",
+      "Level": "File",
+      "Extent": "12 black and white prints, including some duplicates",
+      "Scope and content": "Photographs featuring Margot Fonteyn as Giselle, Alexis Rassine as Count Albrecht, Beryl Grey as Myrtha, and members of the Sadler's Wells Ballet.",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good.",
+      "Alternative number": "Photographer's own reference number: 87D/403, 87D/407, 87D/440, 87D/610, 87D/638, and 2 unnumbered prints.",
+      "Related production": "Giselle (1946)"
     }
   },
   {
@@ -14993,12 +15216,25 @@
     "id": "110001343",
     "title": "Black and white photographic prints of the Sadler's Wells Ballet revival of 'Hamlet' (1942) at the Royal Opera House, Covent Garden",
     "collection": "Roger Wood Photographic Collection",
-    "objectNumber": "ROH/WOO/2/2/007 File",
+    "date": "6 June 1946",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/94/110001343_11594.jpg",
     "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/94/110001343_11594.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001343&collection=Roger%20Wood%20Photographic%20Collection&row=2&searchtype=collection&title=%22Hamlet%22",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO/2/2&page=0&row=6&ref=110001343",
     "metadata": {
       "Collection": "Roger Wood Photographic Collection",
-      "Object number": "ROH/WOO/2/2/007 File"
+      "Reference code": "ROH/WOO/2/2/007",
+      "Date": "6 June 1946",
+      "Date notes": "Prints undated; date derived from corresponding negatives.",
+      "Level": "File",
+      "Extent": "9 black and white prints, including some duplicates",
+      "Scope and content": "Photographs featuring David Paltenghi as Hamlet, Pauline Clayden as Ophelia, Paul Reymond as Polonius, Anthony Burke as the King of Denmark, Beryl Grey as the Queen of Denmark, Leslie Edwards as the Ghost of Hamlet's Father, and members of the Sadler's Wells Ballet.",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good.",
+      "Alternative number": "Photographer's own reference number: 87C/634, 87C/635, 87C/636, 87G/610, 87G/611, 87G/612, 87J/409A.",
+      "Related production": "Hamlet (1942)"
     }
   },
   {
@@ -15083,12 +15319,25 @@
     "id": "110001341",
     "title": "Black and white photographic prints of the Sadler's Wells Ballet revival of 'Homage to The Queen' (1953) at the Royal Opera House, Covent Garden",
     "collection": "Roger Wood Photographic Collection",
-    "objectNumber": "ROH/WOO/2/2/005 File",
+    "date": "1 August 1956",
+    "creator": "Roger Wood",
+    "condition": "Good. Many of the contact sheets are marked with crop lines, and some with ticks and crosses.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/00/110001341_11600.jpg",
     "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/00/110001341_11600.jpg",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001341&collection=Roger%20Wood%20Photographic%20Collection&row=3&searchtype=collection&title=%22Homage%20to%20The%20Queen%22",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO/2/2&page=0&row=4&ref=110001341",
     "metadata": {
       "Collection": "Roger Wood Photographic Collection",
-      "Object number": "ROH/WOO/2/2/005 File"
+      "Reference code": "ROH/WOO/2/2/005",
+      "Date": "1 August 1956",
+      "Date notes": "Prints are dated.",
+      "Level": "File",
+      "Extent": "17 black and white prints and 7 black and white contact sheets, including some duplicates",
+      "Scope and content": "Photographs featuring Svetlana Beriosova as The Queen of the Waters, Bryan Ashbridge as Her Consort, and members of the Sadler's Wells Ballet.",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good. Many of the contact sheets are marked with crop lines, and some with ticks and crosses.",
+      "Alternative number": "Photographer's own reference number: Prints: A32121, A32122, A32132, A32134, A32141, C32179, C32181. Contact sheets: A32117, A32118, A32119, A32120, A32121, A32122, A32132, A32133, A32134, A32135, A32136, A32137, A32138, A32139, A32140, A32141, A32142, C32179, C32180, C32181, C32182.",
+      "Related production": "Homage to The Queen (1953)"
     }
   },
   {
@@ -16556,7 +16805,7 @@
     "date": "1946 - 1947",
     "creator": "Frank Sharman",
     "condition": "Good.",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001094&row=6&archive=ROH/SHA/2",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/2&row=6&ref=110001094&page=0",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
       "Reference code": "ROH/SHA/2/007",
@@ -16577,7 +16826,7 @@
     "date": "1947",
     "creator": "Frank Sharman",
     "condition": "Good.",
-    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/2&row=0&ref=110001102&page=0",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001102&row=0&archive=ROH/SHA/2",
     "metadata": {
       "Collection": "Frank Sharman Photographic Collection",
       "Reference code": "ROH/SHA/2/001",
@@ -16589,6 +16838,551 @@
       "Copyright": "Images © Royal Opera House Collections",
       "Condition": "Good.",
       "Related production": "Der Rosenkavalier (1947)"
+    }
+  },
+  {
+    "id": "110001099",
+    "title": "Colour transparencies of the Sadler's Wells Ballet production of 'Checkmate' (1937) at the Royal Opera House, Covent Garden",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1947",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001099&row=1&archive=ROH/SHA/2",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/2/002",
+      "Date": "1947",
+      "Date notes": "Transparencies undated; 1947 is the year of the revival.",
+      "Level": "File",
+      "Extent": "2 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "Checkmate (1937)"
+    }
+  },
+  {
+    "id": "110002572",
+    "title": "Colour transparencies of the audience in the auditorium of the Royal Opera House, Covent Garden",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1946 - 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/2&page=0&row=11&ref=110002572",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/2/012",
+      "Date": "1946 - 1949",
+      "Date notes": "Transparencies undated, likely to be the late 1940s.",
+      "Level": "File",
+      "Extent": "3 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001100",
+    "title": "Colour transparencies of the Sadler's Wells Ballet production of 'Mam'zelle Angot' (1947) at the Royal Opera House, Covent Garden",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1947",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001100&row=4&archive=ROH/SHA/2",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/2/005",
+      "Date": "1947",
+      "Date notes": "Transparencies undated; 1947 is the year of the production.",
+      "Level": "File",
+      "Extent": "5 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "Mam'zelle Angot (1947)"
+    }
+  },
+  {
+    "id": "110001097",
+    "title": "Colour transparencies of the Sadler's Wells Ballet production of 'Les Sirènes' (1946) at the Royal Opera House, Covent Garden",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1946",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001097&row=5&archive=ROH/SHA/2",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/2/006",
+      "Date": "1946",
+      "Date notes": "Transparencies undated; 1946 is the year of the production.",
+      "Level": "File",
+      "Extent": "33 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "Les Sirènes (1946)"
+    }
+  },
+  {
+    "id": "110001107",
+    "title": "Colour transparencies of the Sadler's Wells Ballet production of 'The Three Cornered Hat' (1947) at the Royal Opera House, Covent Garden",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1947",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001107&row=7&archive=ROH/SHA/2",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/2/008",
+      "Date": "1947",
+      "Date notes": "Transparencies undated; 1947 is the year of the production.",
+      "Level": "File",
+      "Extent": "19 colour transparencies",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "The Three Cornered Hat (1947)"
+    }
+  },
+  {
+    "id": "110001103",
+    "title": "Lady de Grey photograph album volume 2",
+    "collection": "Lady de Grey Photographic Collection",
+    "date": "1878 - 1913",
+    "creator": "Constance Gwladys (Lady de Grey) | Marchioness of Ripon Robinson",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001103&row=1&archive=ROH/GRE",
+    "metadata": {
+      "Collection": "Lady de Grey Photographic Collection",
+      "Reference code": "ROH/GRE/2",
+      "Date": "1878 - 1913",
+      "Date notes": "This is an approximate year span for the album as not all the photographs are dated. The earliest dated item is 1883, although research suggests several are earlier than this. The latest dated item is 1913.",
+      "Level": "File",
+      "Extent": "5 boxes containing 73 sepia photographic prints, 22 black and white photographic prints, 1 colour-tinted photographic print, 10 sepia postcards, 4 black and white postcards, 1 paper postcard, and 1 sketch",
+      "Scope and content": "Portraits of opera singers, composers, actors, authors and others in the arts, many signed and inscribed by the subject. The majority are studio portraits. There are two amateur 'snapshots' and two other outdoor photographs. Lady de Grey wrote captions under most of the images.",
+      "Creator": "Constance Gwladys (Lady de Grey) | Marchioness of Ripon Robinson",
+      "Copyright": "Copies are available subject to the conditions of the originals and copyright restrictions.",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001154",
+    "title": "Black and white photographic negatives of Les Ballets de Paris production of 'Carmen' at the Princes Theatre, London",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1 February 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/10/110001154_8310.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/10/110001154_8310.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=7&img=110001154_8310&ref=110001154&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/008",
+      "Date": "1 February 1949",
+      "Date notes": "Negatives undated; the work premiered in London on 21 February 1949.",
+      "Level": "File",
+      "Extent": "17 strips, consisting of 80 frames",
+      "Scope and content": "Roland Petit choreographed this work to music by Georges Bizet and designs by Antoni Clavé. These photographs feature Renée Jeanmaire as Carmen and Roland Petit as Don José.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "Four images from these negatives appeared in 'Ballet Annual' 1950 (no. 4), pp5, 72.",
+      "Related work": "Carmen",
+      "Related work ID": "14450"
+    },
+    "relatedWorkId": "14450"
+  },
+  {
+    "id": "110001335",
+    "title": "Black and white photographic negatives of Moira Shearer in the Sadler's Wells Ballet production of 'Scènes de ballet' (1948) at the Royal Opera House, Covent Garden",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1948",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/25/110001335_8225.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/25/110001335_8225.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=2&img=110001335_8225&ref=110001335",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/003",
+      "Date": "1948",
+      "Date notes": "Negatives undated; 1948 is the year of the production.",
+      "Level": "File",
+      "Extent": "1 negative strip, consisting of 4 frames",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "Scènes de ballet (1948)"
+    }
+  },
+  {
+    "id": "110002591",
+    "title": "Black and white photographic negatives of the Sadler's Wells Ballet production of 'The Sleeping Beauty' (1946) at the Royal Opera House, Covent Garden",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1946",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=3&ref=110002591&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/004",
+      "Date": "1946",
+      "Date notes": "Negatives undated; 1946 is the year of the production.",
+      "Level": "File",
+      "Extent": "1 negative strip, consisting of 5 frames",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Related production": "The Sleeping Beauty (1946)"
+    }
+  },
+  {
+    "id": "110001244",
+    "title": "Black and white photographic negatives of Les Ballets de Paris production of 'Les Demoiselles de la nuit' (1949)",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1 February 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/90/110001244_8290.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/90/110001244_8290.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=8&img=110001244_8290&ref=110001244",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/009",
+      "Date": "1 February 1949",
+      "Date notes": "Prints undated; date derived through research",
+      "Level": "File",
+      "Extent": "11 negative strips, consisting of 60 frames",
+      "Scope and content": "Roland Petit choreographed this work for Les Ballets de Paris in 1948 to music by Jean Françaix, libretto by Jean Anouilh, and designs by Léonor Fini. Featured dancers are Petit as The Poet and Colette Marchand as Agathe, The White Cat. One frame on these strips depicts 'L'Oeuf à la coque'.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "One image from these negatives appeared in 'Ballet Annual' 1950 (no. 4), p24."
+    }
+  },
+  {
+    "id": "110001641",
+    "title": "Black and white photographic negatives of Les Ballets de Paris production of 'L'Oeuf à la coque' at the Princes Theatre, London",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1 February 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/08/110001641_8308.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/08/110001641_8308.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=9&img=110001641_8308&ref=110001641&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/010",
+      "Date": "1 February 1949",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "15 negative strips, consisting of 76 frames",
+      "Scope and content": "Roland Petit choreographed this work for Les Ballets des Champs-Elysées in 1948 to music by Maurice Thiriet and designs by Stanislas Lepri. These photographs feature Colette Marchand. For another image of this ballet, see one frame on the strips of 'Les Demoiselles de la nuit'.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "Two images from these negatives appeared in 'Ballet Annual' 1950 (no. 4), p36."
+    }
+  },
+  {
+    "id": "110002588",
+    "title": "Black and white photographic negatives of Les Ballets de Paris production of 'Pas d'action' at the Princes Theatre, London",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1 February 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/91/110002588_8291.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/91/110002588_8291.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=10&ref=110002588&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/011",
+      "Date": "1 February 1949",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "3 negative strips, consisting of 10 frames",
+      "Scope and content": "Roland Petit choreographed this work for Les Ballets de Paris in 1949 to music by Richard Wagner. The work was also known as 'Grand pas d'action'.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001640",
+    "title": "Black and white photographic negatives of Les Ballets de Paris production of 'Le Rêve de Léonor' at the Princes Theatre, London",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "26 April 1949",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/58/110001640_8258.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/58/110001640_8258.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=11&ref=110001640&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/013",
+      "Date": "26 April 1949",
+      "Date notes": "Negatives undated; the prints in the collection are labelled 'first night'.",
+      "Level": "File",
+      "Extent": "3 negative strips, consisting of 18 frames",
+      "Scope and content": "These images feature Renée Jeanmaire.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "Two images from these negatives appeared in 'Ballet Annual' 1950 (no. 4), pp5, 72.",
+      "Related work": "Le Rêve de Léonor",
+      "Related work ID": "11872"
+    },
+    "relatedWorkId": "11872"
+  },
+  {
+    "id": "110002582",
+    "title": "Black and white photographic negatives of the International Ballet production of 'Capriccio Espagnol' at the Royal Festival Hall, London",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1 July 1951",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/47/110002582_8247.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/47/110002582_8247.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=14&img=110002582_8247&ref=110002582&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/016",
+      "Date": "1 July 1951",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "5 negative strips, consisting of 20 frames",
+      "Scope and content": "Léonide Massine choreographed 'Capriccio Espagnol' in 1939, in collaboration with Argentinita, to music by Rimsky-Korsakov and designs by Mariano Andreu (originally for Michel Fokine’s 'Jota Aragonesa', 1937).",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "One image from in these negatives appeared in 'Ballet Annual' 1952 (no. 6), p57."
+    }
+  },
+  {
+    "id": "110002584",
+    "title": "Black and white photographic negatives of the International Ballet production of 'The Sleeping Princess' at the Gaumont State Cinema, Kilburn",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1 May 1948",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/03/110002584_8303.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/03/110002584_8303.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=15&img=110002584_8303&ref=110002584&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/017",
+      "Date": "1 May 1948",
+      "Date notes": "Negatives undated; 1948 is the year of the production.",
+      "Level": "File",
+      "Extent": "17 negative strips, consisting of 68 frames",
+      "Scope and content": "International Ballet's production, staged by Nicholas Sergeyev with designs by Prince A. Chervachidze and Nandi Heckroth, premiered on 24 May 1948 at the Gaumont State Cinema, Kilburn. These images feature Mona Inglesby as Princess Aurora.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good.",
+      "Publication note": "Two images from these negatives appeared in 'Ballet Annual' 1949 (no. 3), p20. One was published in 'Ballet', vol. 5, no. 6, June 1948."
+    }
+  },
+  {
+    "id": "110001645",
+    "title": "Black and white photographic negatives of the Original Ballet Russe production of 'Graduation Ball' at the Royal Opera House, Covent Garden",
+    "collection": "Frank Sharman Photographic Collection",
+    "date": "1 September 1947",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/00/110001645_8300.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/00/110001645_8300.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=18&img=110001645_8300&ref=110001645&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/020",
+      "Date": "1 September 1947",
+      "Date notes": "Negatives undated; date derived through research.",
+      "Level": "File",
+      "Extent": "2 negative strips, consisting of 12 frames",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110002592",
+    "title": "Black and white photographic negatives of unidentified dance productions",
+    "collection": "Frank Sharman Photographic Collection",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=19&ref=110002592&page=0",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/021",
+      "Date notes": "Negatives undated.",
+      "Level": "File",
+      "Extent": "138 negative strips",
+      "Scope and content": "As productions are identified, they will be catalogued separately under their title.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001646",
+    "title": "Black and white photographic negatives of circuses and other scenes",
+    "collection": "Frank Sharman Photographic Collection",
+    "creator": "Frank Sharman",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/SHA/3&row=0&ref=110001646&page=1",
+    "metadata": {
+      "Collection": "Frank Sharman Photographic Collection",
+      "Reference code": "ROH/SHA/3/022",
+      "Date notes": "Negatives undated.",
+      "Level": "File",
+      "Extent": "133 negative strips",
+      "Scope and content": "Scenes include circuses, landscapes, cottages, boats, and family portraits.",
+      "Creator": "Frank Sharman",
+      "Copyright": "Images © Royal Opera House Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001241",
+    "title": "Roger Wood Photographic Collection",
+    "collection": "Roger Wood Photographic Collection",
+    "date": "1946 - 1983",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROHB&page=1&childlist=full&ref=110001241",
+    "metadata": {
+      "Collection": "Roger Wood Photographic Collection",
+      "Reference code": "ROH/WOO",
+      "Date": "1946 - 1983",
+      "Level": "Fonds",
+      "Extent": "Black and white prints: 334 files of large prints and contact sheets; 158 files of proof prints. Black and white negatives: 230 files of 2.25\" x 2.25\"; 77 files of 4\" x 5\"; 45 files of 35mm (to date). Colour transparencies: 20 files of 2.25\" x 2.25\"; 37 files of 4\" x 5\"; 14 files of 35mm. 115 glass negatives. 16 files of documents (to date)"
+    }
+  },
+  {
+    "id": "110001329",
+    "title": "Photographic negatives",
+    "collection": "Roger Wood Photographic Collection",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO&page=0&row=0&ref=110001329",
+    "metadata": {
+      "Collection": "Roger Wood Photographic Collection",
+      "Reference code": "ROH/WOO/1",
+      "Level": "Series",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001330",
+    "title": "Black and white photographic prints",
+    "collection": "Roger Wood Photographic Collection",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO&ref=110001330&page=0",
+    "metadata": {
+      "Collection": "Roger Wood Photographic Collection",
+      "Reference code": "ROH/WOO/2",
+      "Level": "Series",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001877",
+    "title": "Colour transparencies",
+    "collection": "Roger Wood Photographic Collection",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO&page=0&row=2&ref=110001877",
+    "metadata": {
+      "Collection": "Roger Wood Photographic Collection",
+      "Reference code": "ROH/WOO/3",
+      "Level": "Series",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001331",
+    "title": "Black and white photographic prints and contact sheets",
+    "collection": "Roger Wood Photographic Collection",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO/2&row=1&ref=110001331&page=0",
+    "metadata": {
+      "Collection": "Roger Wood Photographic Collection",
+      "Reference code": "ROH/WOO/2/2",
+      "Level": "Sub-series",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001332",
+    "title": "Black and white photographic proof prints",
+    "collection": "Roger Wood Photographic Collection",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?ref=110001332&row=0&archive=ROH/WOO/2",
+    "metadata": {
+      "Collection": "Roger Wood Photographic Collection",
+      "Reference code": "ROH/WOO/2/1",
+      "Level": "Sub-series",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good."
+    }
+  },
+  {
+    "id": "110001336",
+    "title": "Black and white photographic prints and contact sheets of Margot Fonteyn",
+    "collection": "Roger Wood Photographic Collection",
+    "date": "7 August 1951",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/93/110001336_15593.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/93/110001336_15593.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO/2/2&page=0&img=110001336_15593&row=0&ref=110001336",
+    "metadata": {
+      "Collection": "Roger Wood Photographic Collection",
+      "Reference code": "ROH/WOO/2/2/001",
+      "Date": "7 August 1951",
+      "Date notes": "Prints undated; date derived from corresponding negatives.",
+      "Level": "File",
+      "Extent": "26 black and white prints and 22 black and white contact sheets, including some duplicates.",
+      "Scope and content": "Photographs and contact sheets featuring studio portraits of Margot Fonteyn in costume as Aurora for Acts I and II of 'The Sleeping Beauty', and as Odette and Odile for 'Swan Lake'.",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good.",
+      "Alternative number": "Photographer's own reference number: Prints: A14397, A14401, A14404, A14408, A14409, A14464, A14470, A14475, A14488, A14494, A14495, A14498, C14641, C14645, C14646, C14648. Contact sheets: A14378, A14379, A14380, A14381, A14382, A14383, A14384, A14385, A14386, A14387, A14388, A14389, A14390, A14391, A14392, A14393, A14394, A14395, A14396, A14397, A14398, A14399, A14400, A14401, A14402, A14403, A14404, A14405, A14406, A14407, A14408, A14409, A14410, A14411, A14412, A14459, A14460, A14461, A14462, A14463, A14464, A14465, A14466, A14467, A14468, A14469, A14470, A14471, A14472, A14473, A14474, A14475, A14476, A14477, A14478, A14479, A14480, A14481, A14482, A14483, A14484, A14485, A14486, A14482, A14488, A14489, A14490, A14491, A14492, A14493, A14494, A14495, A14496, A14497, A14498, A14499, A14500, A14501, A14502, A14503, A14504, A14505, A14506, A14507, A14508, A14509, A14510, A14511, A14512, A14513, C14641, C14642, C14644, C14646."
+    }
+  },
+  {
+    "id": "110001337",
+    "title": "Black and white photographic prints of the Covent Garden Opera Company revival of 'Boris Godunov' (1948) at the Royal Opera House, Covent Garden",
+    "collection": "Roger Wood Photographic Collection",
+    "date": "1 February 1951",
+    "creator": "Roger Wood",
+    "condition": "Good.",
+    "imageUrl": "https://www.rohcollections.org.uk/Roh_Images/main/68/110001337_11168.jpg",
+    "thumbnailUrl": "https://www.rohcollections.org.uk/Roh_Images/thumb/68/110001337_11168.jpg",
+    "sourceUrl": "https://www.rohcollections.org.uk/record.aspx?archive=ROH/WOO/2/2&page=0&img=110001337_11168&ref=110001337&row=1",
+    "metadata": {
+      "Collection": "Roger Wood Photographic Collection",
+      "Reference code": "ROH/WOO/2/2/002",
+      "Date": "1 February 1951",
+      "Date notes": "Prints undated; dated from corresponding negatives.",
+      "Level": "File",
+      "Extent": "2 black and white prints",
+      "Scope and content": "Photographs featuring Boris Christoff as Boris Godunov and Monica Sinclair as Feodor, with members of the Covent Garden Opera Company.",
+      "Creator": "Roger Wood",
+      "Copyright": "All images © ROH Collections",
+      "Condition": "Good.",
+      "Alternative number": "Photographer's own reference number: 82F/335, 82F/404",
+      "Related production": "Boris Godunov (1948)"
     }
   }
 ]
