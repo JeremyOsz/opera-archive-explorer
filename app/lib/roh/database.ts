@@ -53,6 +53,11 @@ export interface RohJsonIndex {
   facets: RohSearchResult['facets'];
 }
 
+export interface LoadRohJsonIndexOptions {
+  /** When true, eagerly read records/works/productions/performances JSON files into `index.dataset`. */
+  hydrateDataset?: boolean;
+}
+
 let memoizedIndex: RohJsonIndex | null | undefined;
 let memoizedIndexPath: string | null = null;
 let memoizedIndexMtimeMs: number | null = null;
@@ -465,27 +470,45 @@ export function createRohJsonIndex(dataset: RohDataset): RohJsonIndex {
 export function writeRohJsonIndex(dataset: RohDataset, dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR): RohJsonIndex {
   mkdirSync(dir, { recursive: true });
   const index = createRohJsonIndex(dataset);
+  const slimIndex = {
+    metadata: index.metadata,
+    searchDocuments: index.searchDocuments,
+    facets: index.facets,
+  };
   writeFileSync(join(dir, 'records.json'), JSON.stringify(index.dataset.records, null, 2));
   writeFileSync(join(dir, 'works.json'), JSON.stringify(index.dataset.works, null, 2));
   writeFileSync(join(dir, 'productions.json'), JSON.stringify(index.dataset.productions, null, 2));
   writeFileSync(join(dir, 'performances.json'), JSON.stringify(index.dataset.performances, null, 2));
-  writeFileSync(
-    join(dir, 'index.json'),
-    JSON.stringify(
-      {
-        metadata: index.metadata,
-        searchDocuments: index.searchDocuments,
-        facets: index.facets,
-      },
-      null,
-      2
-    )
-  );
+  writeFileSync(join(dir, 'index.json'), JSON.stringify(slimIndex, null, 2));
+  writeFileSync(join(dir, 'index-lite.json'), JSON.stringify(slimIndex, null, 2));
   const indexPath = join(dir, 'index.json');
   memoizedIndex = index;
   memoizedIndexPath = indexPath;
   memoizedIndexMtimeMs = existsSync(indexPath) ? statSync(indexPath).mtimeMs : null;
   return index;
+}
+
+function emptyDataset(): RohDataset {
+  return {
+    records: [],
+    works: [],
+    productions: [],
+    performances: [],
+  };
+}
+
+function readRohDatasetFromFiles(dir: string): RohDataset {
+  const recordsPath = join(dir, 'records.json');
+  const worksPath = join(dir, 'works.json');
+  const productionsPath = join(dir, 'productions.json');
+  const performancesPath = join(dir, 'performances.json');
+  const loadedDataset: RohDataset = {
+    records: existsSync(recordsPath) ? JSON.parse(readFileSync(recordsPath, 'utf8')) : [],
+    works: existsSync(worksPath) ? JSON.parse(readFileSync(worksPath, 'utf8')) : [],
+    productions: existsSync(productionsPath) ? JSON.parse(readFileSync(productionsPath, 'utf8')) : [],
+    performances: existsSync(performancesPath) ? JSON.parse(readFileSync(performancesPath, 'utf8')) : [],
+  };
+  return enrichRohDatasetMetadata(loadedDataset);
 }
 
 function queryTermsFromParams(params: RohSearchParams): string[] {
@@ -644,8 +667,12 @@ function reactiveFacets(searchDocuments: RohSearchDocument[], params: RohSearchP
   };
 }
 
-export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR): RohJsonIndex | null {
-  const indexPath = join(dir, 'index.json');
+export function loadRohJsonIndex(
+  dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR,
+  options: LoadRohJsonIndexOptions = {},
+): RohJsonIndex | null {
+  const indexLitePath = join(dir, 'index-lite.json');
+  const indexPath = existsSync(indexLitePath) ? indexLitePath : join(dir, 'index.json');
   const defaultDir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR;
   const shouldMemoize = dir === defaultDir;
   const indexExists = existsSync(indexPath);
@@ -666,21 +693,9 @@ export function loadRohJsonIndex(dir = process.env.ROH_INDEX_DIR || ROH_INDEX_DI
     return null;
   }
 
-  const recordsPath = join(dir, 'records.json');
-  const worksPath = join(dir, 'works.json');
-  const productionsPath = join(dir, 'productions.json');
-  const performancesPath = join(dir, 'performances.json');
   const partialIndex = JSON.parse(readFileSync(indexPath, 'utf8')) as Omit<RohJsonIndex, 'dataset'>;
-  const loadedDataset: RohDataset = {
-    records: existsSync(recordsPath) ? JSON.parse(readFileSync(recordsPath, 'utf8')) : [],
-    works: existsSync(worksPath) ? JSON.parse(readFileSync(worksPath, 'utf8')) : [],
-    productions: existsSync(productionsPath) ? JSON.parse(readFileSync(productionsPath, 'utf8')) : [],
-    performances: existsSync(performancesPath) ? JSON.parse(readFileSync(performancesPath, 'utf8')) : [],
-  };
-  const dataset = enrichRohDatasetMetadata(loadedDataset);
-  const searchDocuments = buildSearchDocuments(dataset);
-  const facets = buildFacets(dataset, searchDocuments);
-  const index: RohJsonIndex = { ...partialIndex, dataset, searchDocuments, facets };
+  const dataset = options.hydrateDataset ? readRohDatasetFromFiles(dir) : emptyDataset();
+  const index: RohJsonIndex = { ...partialIndex, dataset };
   if (shouldMemoize) {
     memoizedIndex = index;
     memoizedIndexPath = indexPath;

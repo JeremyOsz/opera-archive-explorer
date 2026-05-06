@@ -2,7 +2,7 @@ import { getRohStats, loadRohJsonIndex, ROH_INDEX_DIR } from '../app/lib/roh/dat
 
 function main(): void {
   const indexDir = process.env.ROH_INDEX_DIR || ROH_INDEX_DIR;
-  const index = loadRohJsonIndex(indexDir);
+  const index = loadRohJsonIndex(indexDir, { hydrateDataset: true });
   if (!index) {
     throw new Error(`ROH JSON index not found at ${indexDir}`);
   }
