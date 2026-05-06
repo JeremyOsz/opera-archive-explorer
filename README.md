@@ -90,3 +90,7 @@ The lightweight cache is bundled with your application, requiring no external de
 - [Tailwind CSS](https://tailwindcss.com)
 - [Shadcn UI](https://ui.shadcn.com)
 - [Internet Archive API](https://archive.org/help/aboutsite.php)
+- [API Documentation](./docs/API.md)
+- API Docs JSON endpoint: `/api/docs`
+- OpenAPI spec endpoint: `/api/openapi`
+- Swagger UI endpoint: `/api-docs`

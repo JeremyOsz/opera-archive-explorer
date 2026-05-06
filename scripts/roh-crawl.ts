@@ -28,6 +28,8 @@ interface CrawlOptions {
   recordsOnly: boolean;
 }
 
+type CrawlMode = 'discover' | 'fetch' | 'both';
+
 /** Path prefixes on `www.rohcollections.org.uk` used to discover and fetch archive records. */
 const RECORDS_ARCHIVE_PATH_PREFIXES = [
   '/collectionsroh.aspx',
@@ -69,6 +71,7 @@ const CACHE_DIR = process.env.ROH_CACHE_DIR || join(process.cwd(), '.roh-cache')
 const PAGES_DIR = join(CACHE_DIR, 'pages');
 const MANIFEST_PATH = join(CACHE_DIR, 'manifest.json');
 const QUEUE_PATH = join(CACHE_DIR, 'queue.json');
+const ENTITY_QUEUE_PATH = join(CACHE_DIR, 'entity-queue.json');
 const letters = ['0-9', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')];
 
 function argValue(name: string): string | undefined {
@@ -106,6 +109,14 @@ function resolveRecordsOnly(): boolean {
   return false;
 }
 
+function resolveCrawlMode(): CrawlMode {
+  if (process.argv.includes('--discover-only')) return 'discover';
+  if (process.argv.includes('--fetch-only')) return 'fetch';
+  const mode = (argValue('mode') || process.env.ROH_CRAWL_MODE || '').toLowerCase();
+  if (mode === 'discover' || mode === 'fetch' || mode === 'both') return mode;
+  return 'both';
+}
+
 /** Why records-only mode is on (helps distinguish `--records-only` from `ROH_CRAWL_RECORDS_ONLY` in shell profile). */
 function recordsOnlyExplanation(): string {
   if (process.argv.includes('--records-only')) return 'flag --records-only';
@@ -115,25 +126,59 @@ function recordsOnlyExplanation(): string {
   return 'unknown';
 }
 
+function pageKind(pathname: string): 'record' | 'work' | 'production' | 'performance' | 'other' {
+  if (pathname.endsWith('/record.aspx')) return 'record';
+  if (pathname.endsWith('/work.aspx')) return 'work';
+  if (pathname.endsWith('/production.aspx')) return 'production';
+  if (pathname.endsWith('/performance.aspx')) return 'performance';
+  return 'other';
+}
+
+function isMeaningfulEntityUrl(url: string, options: CrawlOptions): boolean {
+  if (!isAllowedCrawlUrl(url, options.recordsOnly)) return false;
+  const pathname = new URL(url, ROH_BASE_URL).pathname.toLowerCase();
+  const kind = pageKind(pathname);
+  if (kind === 'other') return false;
+  if (kind === 'performance' && options.skipPerformances) return false;
+  return true;
+}
+
+function isDiscoveryUrl(url: string, options: CrawlOptions): boolean {
+  if (!isAllowedCrawlUrl(url, options.recordsOnly)) return false;
+  return !isMeaningfulEntityUrl(url, options);
+}
+
 /**
- * Re-enqueue URLs that appear in saved `links` but are not yet in the manifest.
- * Without this, seeds already cached are dequeued and skipped without ever surfacing their stored links,
- * so queue.json can end up empty while many pages remain unfetched.
+ * Re-enqueue URLs from saved `links` that are not yet in the manifest.
  */
-export function rehydrateQueueFromManifestLinks(manifest: CrawlManifest, queued: Set<string>, options: CrawlOptions): number {
-  let added = 0;
+export function rehydrateQueueFromManifestLinks(
+  manifest: CrawlManifest,
+  queued: Set<string>,
+  entityQueued: Set<string>,
+  options: CrawlOptions,
+): { discoveryAdded: number; entityAdded: number } {
+  let discoveryAdded = 0;
+  let entityAdded = 0;
   for (const page of Object.values(manifest.pages)) {
     if (page.status >= 400) continue;
     for (const link of page.links ?? []) {
       if (manifest.pages[link]) continue;
       if (shouldSkipCrawlUrl(link, options)) continue;
-      if (!isAllowedCrawlUrl(link, options.recordsOnly)) continue;
-      if (queued.has(link)) continue;
-      queued.add(link);
-      added += 1;
+      if (isMeaningfulEntityUrl(link, options)) {
+        if (!entityQueued.has(link)) {
+          entityQueued.add(link);
+          entityAdded += 1;
+        }
+        continue;
+      }
+      if (!isDiscoveryUrl(link, options)) continue;
+      if (!queued.has(link)) {
+        queued.add(link);
+        discoveryAdded += 1;
+      }
     }
   }
-  return added;
+  return { discoveryAdded, entityAdded };
 }
 
 function readJson<T>(path: string, fallback: T): T {
@@ -294,6 +339,7 @@ async function main(): Promise<void> {
     DEFAULT_CONCURRENCY,
   );
   const maxPages = parsePositiveInt(argValue('max-pages') || process.env.ROH_CRAWL_MAX_PAGES, DEFAULT_MAX_PAGES_PER_RUN);
+  const mode = resolveCrawlMode();
   const seedOnly = process.argv.includes('--seed-only');
   const options: CrawlOptions = {
     skipPerformances: resolveSkipPerformances(),
@@ -307,10 +353,12 @@ async function main(): Promise<void> {
   manifest.crawlDelayMs = delayMs;
 
   const queued = new Set(readJson<string[]>(QUEUE_PATH, initialSeeds(options.recordsOnly)));
+  const entityQueued = new Set(readJson<string[]>(ENTITY_QUEUE_PATH, []));
   initialSeeds(options.recordsOnly).forEach((seed) => queued.add(seed));
 
   if (seedOnly) {
     writeJson(QUEUE_PATH, sortQueueUrls(queued));
+    writeJson(ENTITY_QUEUE_PATH, sortQueueUrls(entityQueued));
     writeJson(MANIFEST_PATH, {
       ...manifest,
       crawlConcurrency: concurrency,
@@ -334,18 +382,21 @@ async function main(): Promise<void> {
       crawlConcurrency: concurrency,
     });
     writeJson(QUEUE_PATH, sortQueueUrls(queued));
+    writeJson(ENTITY_QUEUE_PATH, sortQueueUrls(entityQueued));
   }
 
-  const rehydrated = rehydrateQueueFromManifestLinks(manifest, queued, options);
-  if (rehydrated > 0) {
-    console.log(`Re-queued ${rehydrated} unfetched URL(s) from cached manifest link lists.`);
+  const rehydrated = rehydrateQueueFromManifestLinks(manifest, queued, entityQueued, options);
+  if (rehydrated.discoveryAdded > 0 || rehydrated.entityAdded > 0) {
+    console.log(
+      `Re-queued ${rehydrated.discoveryAdded} discovery URL(s) and ${rehydrated.entityAdded} entity URL(s) from cached manifest links.`,
+    );
     persistState();
   }
 
   console.log(
     `Crawl pacing: ${delayMs}ms minimum between fetch starts · ${concurrency} parallel worker(s) · soft cap ${maxPages} new page commit(s) this run (in-flight fetches may finish a few over)${
       options.recordsOnly ? ` · records-only (${recordsOnlyExplanation()}; no work/production crawl)` : ''
-    }`,
+    } · mode=${mode}`,
   );
 
   async function spacedWaitFetchStart(): Promise<void> {
@@ -361,12 +412,18 @@ async function main(): Promise<void> {
 
   async function worker(): Promise<void> {
     for (;;) {
-      const pick = await mutex.runExclusive((): { kind: 'work'; url: string } | { kind: 'wait' } | { kind: 'stop' } => {
+      const pick = await mutex.runExclusive(
+        (): { kind: 'work'; url: string } | { kind: 'wait' } | { kind: 'stop' } => {
         if (pagesWrittenThisRun >= maxPages) {
           return { kind: 'stop' };
         }
         while (true) {
-          const url = dequeueNextUrl(queued);
+          const url =
+            mode === 'discover'
+              ? dequeueNextUrl(queued)
+              : mode === 'fetch'
+                ? dequeueNextUrl(entityQueued)
+                : dequeueNextUrl(queued) || dequeueNextUrl(entityQueued);
           if (!url) {
             if (inFlight > 0) {
               return { kind: 'wait' };
@@ -379,7 +436,14 @@ async function main(): Promise<void> {
           if (shouldSkipCrawlUrl(url, options)) {
             continue;
           }
-          if (!isAllowedCrawlUrl(url, options.recordsOnly)) {
+          const isEntity = isMeaningfulEntityUrl(url, options);
+          if (mode === 'discover' && isEntity) {
+            continue;
+          }
+          if (mode === 'fetch' && !isEntity) {
+            continue;
+          }
+          if (!isAllowedCrawlUrl(url, options.recordsOnly) || (!isEntity && !isDiscoveryUrl(url, options))) {
             continue;
           }
           inFlight += 1;
@@ -416,7 +480,11 @@ async function main(): Promise<void> {
           };
           for (const link of links) {
             if (!manifest.pages[link]) {
-              queued.add(link);
+              if (isMeaningfulEntityUrl(link, options)) {
+                entityQueued.add(link);
+              } else if (isDiscoveryUrl(link, options)) {
+                queued.add(link);
+              }
             }
           }
           pagesWrittenThisRun += 1;
@@ -439,7 +507,9 @@ async function main(): Promise<void> {
   await Promise.all(Array.from({ length: concurrency }, () => worker()));
 
   console.log(
-    `Committed ${pagesWrittenThisRun} page(s) this run (scheduled cap ${maxPages}). ${queued.size} URL(s) in queue.${queued.size > 0 ? ' Run pnpm roh:crawl again or raise --max-pages until the queue is empty.' : ''}`,
+    `Committed ${pagesWrittenThisRun} page(s) this run (scheduled cap ${maxPages}). Discovery queue: ${queued.size} URL(s). Entity queue: ${entityQueued.size} URL(s).${
+      queued.size + entityQueued.size > 0 ? ' Run pnpm roh:crawl again or raise --max-pages until queues are empty.' : ''
+    }`,
   );
 }
 

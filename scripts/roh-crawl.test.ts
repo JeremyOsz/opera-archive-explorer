@@ -86,7 +86,8 @@ test('isAllowedCrawlUrl rejects opera graph URLs in records-only mode', () => {
 
 test('rehydrateQueueFromManifestLinks refills queue for unfetched children of cached pages', () => {
   const hub = 'https://www.rohcollections.org.uk/CollectionsROH.aspx';
-  const child = 'https://www.rohcollections.org.uk/SearchResults.aspx?searchtype=collection&collection=z&page=0';
+  const listChild = 'https://www.rohcollections.org.uk/SearchResults.aspx?searchtype=collection&collection=z&page=0';
+  const entityChild = 'https://www.rohcollections.org.uk/Record.aspx?ref=123';
   const manifest = {
     generatedAt: '',
     crawlDelayMs: 0,
@@ -96,15 +97,18 @@ test('rehydrateQueueFromManifestLinks refills queue for unfetched children of ca
         file: 'a',
         fetchedAt: '',
         status: 200,
-        links: [child],
+        links: [listChild, entityChild],
       },
     },
   };
   const queued = new Set<string>([hub]);
+  const entityQueued = new Set<string>();
   const opts = { skipPerformances: true, recordsOnly: true };
-  const added = rehydrateQueueFromManifestLinks(manifest, queued, opts);
-  assert.equal(added, 1);
-  assert.equal(queued.has(child), true);
+  const added = rehydrateQueueFromManifestLinks(manifest, queued, entityQueued, opts);
+  assert.equal(added.discoveryAdded, 1);
+  assert.equal(added.entityAdded, 1);
+  assert.equal(queued.has(listChild), true);
+  assert.equal(entityQueued.has(entityChild), true);
 });
 
 test('initialSeeds uses only collection hubs in records-only mode', () => {
