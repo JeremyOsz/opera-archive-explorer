@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Music, Archive, BarChart3, Compass, Search } from 'lucide-react';
+import { Music, Archive, BarChart3, Compass, Database, Search } from 'lucide-react';
 import Link from 'next/link';
 import SearchInterface from '@/app/components/SearchInterface';
 import { Button } from '@/components/ui/button';
@@ -14,6 +14,7 @@ export default function Home() {
         tagline="Discover and explore opera recordings from the Internet Archive."
         links={[
           { href: '/', label: 'Search', icon: Search, active: true },
+          { href: '/roh', label: 'ROH Index', icon: Database },
           { href: '/sandbox', label: 'Sandbox', icon: Compass },
           { href: '/explore', label: 'Explore', icon: BarChart3 },
         ]}
